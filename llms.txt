@@ -1,0 +1,27 @@
+# ToolNest
+
+> ToolNest is an independent directory of software and AI tools. It helps people choose a tool for a specific job by comparing fit, trade-offs, pricing context, alternatives, and who should skip each option.
+
+## Primary pages
+
+- [Homepage](https://www.toolnestai.tech/): Start with a job, browse categories, or search the directory.
+- [AI tools directory](https://www.toolnestai.tech/tools/index.html): Browse the reviewed tool catalog by name, category, or use case.
+- [Categories](https://www.toolnestai.tech/category/index.html): Browse tools by the work they support.
+- [Comparisons](https://www.toolnestai.tech/compare/index.html): Compare two products by fit, limits, pricing context, and trade-offs.
+- [Alternatives](https://www.toolnestai.tech/alternatives/index.html): Find alternatives when a product is not the right fit.
+- [Best-of guides](https://www.toolnestai.tech/best/index.html): Shortlists organised around a job or audience.
+- [Goal guides](https://www.toolnestai.tech/goals/index.html): Start from an outcome instead of a product name.
+- [How ToolNest researches](https://www.toolnestai.tech/about.html): Editorial method, evidence labels, corrections, and affiliate policy.
+- [Contact](https://www.toolnestai.tech/contact.html): Report an error or suggest an update.
+
+## Editorial approach
+
+ToolNest uses official product pages, documentation, pricing pages, and published terms as primary sources. Pages distinguish source-verified facts from hands-on testing and state when a claim was checked. Recommendations explain both the best fit and the trade-offs; affiliate relationships do not determine rankings.
+
+## Scope
+
+The site is written for people choosing AI, productivity, writing, design, marketing, automation, research, sales, hosting, email, website-building, and voice/video tools. Product features, limits, and prices change; confirm current commercial details on the vendor's official site.
+
+## Full index
+
+For the complete page inventory and page-level summaries, see [llms-full.txt](https://www.toolnestai.tech/llms-full.txt).

@@ -19,6 +19,7 @@
   .top .mnav{display:flex;flex-direction:column;align-items:stretch;gap:2px;pointer-events:auto;width:100%;max-width:380px;margin:8px 0 0 auto;padding:8px;border-radius:24px;background:#052625;border:1px solid rgba(255,255,255,.14);color:#EAF4F1;font-size:16px;box-shadow:0 18px 40px -16px rgba(0,0,0,.55);max-height:calc(100vh - 96px);max-height:calc(100dvh - 96px);overflow-y:auto;overscroll-behavior:contain}
   .top.light .mnav{background:var(--surface,#fff);color:var(--ink,#0B2220);border-color:var(--line,#D9E4E1)}
   .top .mnav a:not(.btn){display:flex;align-items:center;min-height:48px;padding:0 16px;border-radius:14px;font-size:16px;font-weight:600;opacity:1;text-decoration:none;color:inherit}
+  .top .mnav a{margin-block:2px}
   .top .mnav a:not(.btn):hover{background:rgba(127,127,127,.16)}
   .top .mnav a:not(.btn):focus-visible,.top .mnav .btn:focus-visible{outline:2px solid var(--ring,#5FE3CB);outline-offset:-2px}
   .top .mnav a[aria-current]{background:rgba(95,227,203,.14);color:#5FE3CB}

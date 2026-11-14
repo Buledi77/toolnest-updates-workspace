@@ -1,0 +1,57 @@
+# ToolNest full content index
+
+This file is a machine-readable map of ToolNest's public editorial pages. URLs are canonical and use the production host. The linked pages contain the authoritative text, structured data, sources, and current review context.
+
+## How to interpret pages
+
+- `/tools/` pages are individual product profiles.
+- `/category/` pages group products by job.
+- `/compare/` pages answer a two-product decision.
+- `/alternatives/` pages explain replacement options.
+- `/best/` pages are curated shortlists.
+- `/goals/` pages begin with an outcome or task.
+- `/about.html` describes sourcing, evidence labels, authorship, corrections, and affiliate disclosure.
+
+## Directory and navigation
+
+- https://www.toolnestai.tech/
+- https://www.toolnestai.tech/tools/index.html
+- https://www.toolnestai.tech/category/index.html
+- https://www.toolnestai.tech/compare/index.html
+- https://www.toolnestai.tech/alternatives/index.html
+- https://www.toolnestai.tech/best/index.html
+- https://www.toolnestai.tech/goals/index.html
+- https://www.toolnestai.tech/about.html
+- https://www.toolnestai.tech/contact.html
+- https://www.toolnestai.tech/affiliate-disclosure.html
+- https://www.toolnestai.tech/privacy.html
+- https://www.toolnestai.tech/terms.html
+
+## Categories
+
+- AI Assistants: https://www.toolnestai.tech/category/ai-assistants.html
+- Automation: https://www.toolnestai.tech/category/automation.html
+- Design: https://www.toolnestai.tech/category/design.html
+- Email Marketing: https://www.toolnestai.tech/category/email-marketing.html
+- Hosting: https://www.toolnestai.tech/category/hosting.html
+- Image Generation: https://www.toolnestai.tech/category/image-generation.html
+- Marketing: https://www.toolnestai.tech/category/marketing.html
+- Productivity: https://www.toolnestai.tech/category/productivity.html
+- Research: https://www.toolnestai.tech/category/research.html
+- Sales: https://www.toolnestai.tech/category/sales.html
+- SEO: https://www.toolnestai.tech/category/seo.html
+- Voice and Video: https://www.toolnestai.tech/category/voice-video.html
+- Website Builders: https://www.toolnestai.tech/category/website-builders.html
+- Writing: https://www.toolnestai.tech/category/writing.html
+
+## Tool profiles
+
+The complete tool profile inventory is maintained in the [XML sitemap](https://www.toolnestai.tech/sitemap.xml). Each profile includes a direct answer, strengths, limitations, fit guidance, alternatives, and official-source context where applicable.
+
+## Comparisons, alternatives, guides
+
+Use the [comparison index](https://www.toolnestai.tech/compare/index.html), [alternative index](https://www.toolnestai.tech/alternatives/index.html), [best-of index](https://www.toolnestai.tech/best/index.html), and [goal index](https://www.toolnestai.tech/goals/index.html) to discover all current pages without relying on search-engine snippets.
+
+## Trust and freshness
+
+ToolNest is written and maintained by Abdul Muswir. The site does not claim hands-on testing unless a page explicitly says so. Pricing and product facts are dated snapshots, not guarantees; readers should verify current terms with the vendor.
