@@ -1,0 +1,541 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "title": "ToolNest Decision Graph tool record",
+  "description": "A single structured tool record. Factual claims live in the evidence ledger and are referenced by claim_id; editorial judgment and monetization are intentionally separate.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "identity",
+    "discovery",
+    "factual_profile",
+    "editorial",
+    "relationships",
+    "evidence",
+    "monetization",
+    "publishing",
+    "freshness"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri"
+    },
+    "schema_version": {
+      "const": "toolnest-tool-v1"
+    },
+    "identity": {
+      "$ref": "#/$defs/identity"
+    },
+    "discovery": {
+      "$ref": "#/$defs/discovery"
+    },
+    "factual_profile": {
+      "$ref": "#/$defs/factual_profile"
+    },
+    "editorial": {
+      "$ref": "#/$defs/editorial"
+    },
+    "relationships": {
+      "$ref": "#/$defs/relationships"
+    },
+    "evidence": {
+      "$ref": "#/$defs/evidence"
+    },
+    "monetization": {
+      "$ref": "#/$defs/monetization"
+    },
+    "publishing": {
+      "$ref": "#/$defs/publishing"
+    },
+    "freshness": {
+      "$ref": "#/$defs/freshness"
+    }
+  },
+  "$defs": {
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "date_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "claim_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "claim_id"
+      ],
+      "properties": {
+        "claim_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "slug",
+        "official_url",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "official_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "active",
+            "limited",
+            "discontinued",
+            "acquired",
+            "unknown"
+          ]
+        },
+        "logo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "discovery": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "use_cases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "audiences": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "platforms": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "integrations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "claim_refs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/claim_ref"
+      }
+    },
+    "factual_profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "concise_summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "primary_purpose": {
+          "type": "string",
+          "minLength": 1
+        },
+        "capabilities": {
+          "$ref": "#/$defs/claim_refs"
+        },
+        "limitations": {
+          "$ref": "#/$defs/claim_refs"
+        },
+        "free_plan_status": {
+          "$ref": "#/$defs/claim_refs"
+        },
+        "trial_status": {
+          "$ref": "#/$defs/claim_refs"
+        },
+        "pricing_status": {
+          "$ref": "#/$defs/claim_refs"
+        },
+        "pricing_regions": {
+          "$ref": "#/$defs/claim_refs"
+        },
+        "availability_regions": {
+          "$ref": "#/$defs/claim_refs"
+        }
+      }
+    },
+    "editorial": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "editorial_tier",
+        "review_status"
+      ],
+      "properties": {
+        "editorial_tier": {
+          "type": "string",
+          "enum": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        "best_for": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "not_recommended_for": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "editorial_summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "review_status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "in_review",
+            "published",
+            "needs_update",
+            "archived"
+          ]
+        },
+        "review_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri-reference"
+        },
+        "review_owner": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "editorial_last_reviewed": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        }
+      }
+    },
+    "relationships": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        },
+        "meaningful_comparisons": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        },
+        "related_tools": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        },
+        "compatible_tools": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        },
+        "replaces": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        },
+        "replaced_by": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "claim_refs": {
+          "$ref": "#/$defs/claim_refs"
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        }
+      }
+    },
+    "monetization": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "affiliate_status": {
+          "type": "string",
+          "enum": [
+            "unknown",
+            "needs_review",
+            "not_applied",
+            "pending",
+            "approved",
+            "rejected",
+            "expired",
+            "suspended"
+          ]
+        },
+        "affiliate_network": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "affiliate_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "official_non_affiliate_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "approved_regions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "restrictions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "disclosure_required": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "last_link_check": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        }
+      }
+    },
+    "publishing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "directory_visibility",
+        "standalone_page_status",
+        "indexability",
+        "sitemap_eligible",
+        "content_quality_status"
+      ],
+      "properties": {
+        "directory_visibility": {
+          "type": "string",
+          "enum": [
+            "public",
+            "private",
+            "hidden"
+          ]
+        },
+        "standalone_page_status": {
+          "type": "string",
+          "enum": [
+            "none",
+            "draft",
+            "published",
+            "archived"
+          ]
+        },
+        "indexability": {
+          "type": "string",
+          "enum": [
+            "index",
+            "noindex",
+            "blocked",
+            "pending"
+          ]
+        },
+        "sitemap_eligible": {
+          "type": "boolean"
+        },
+        "canonical_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "template_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "content_quality_status": {
+          "type": "string",
+          "enum": [
+            "unassessed",
+            "thin",
+            "improving",
+            "approved",
+            "needs_review"
+          ]
+        },
+        "prepublish_status": {
+          "type": "string",
+          "enum": [
+            "not_ready",
+            "ready",
+            "blocked",
+            "published"
+          ]
+        }
+      }
+    },
+    "freshness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "created_at",
+        "updated_at",
+        "last_verified_at",
+        "next_review_at"
+      ],
+      "properties": {
+        "created_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "last_verified_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "next_review_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "stale_fields": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "change_history_reference": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        }
+      }
+    }
+  }
+}

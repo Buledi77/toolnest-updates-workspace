@@ -1,0 +1,16 @@
+{
+  "schema_version": "toolnest-event-taxonomy-v1",
+  "events": [
+    {"name": "search_submitted", "required": ["query", "result_count"]},
+    {"name": "filter_applied", "required": ["filter_type", "filter_value"]},
+    {"name": "result_viewed", "required": ["tool_id", "position"]},
+    {"name": "tool_opened", "required": ["tool_id", "destination_type"]},
+    {"name": "comparison_opened", "required": ["comparison_id"]},
+    {"name": "source_opened", "required": ["tool_id", "source_id"]},
+    {"name": "tool_saved", "required": ["tool_id"]},
+    {"name": "stack_created", "required": ["requirement_ids", "tool_ids"]},
+    {"name": "recommendation_accepted", "required": ["task_id", "tool_id"]},
+    {"name": "recommendation_rejected", "required": ["task_id", "tool_id"]},
+    {"name": "correction_submitted", "required": ["tool_id", "field"]}
+  ]
+}

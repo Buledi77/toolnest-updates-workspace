@@ -1,0 +1,45 @@
+{
+  "schema_version": "toolnest-taxonomy-v1",
+  "hierarchy": [
+    "job",
+    "workflow",
+    "capability",
+    "category",
+    "format",
+    "integration",
+    "audience"
+  ],
+  "categories": [
+    {"slug": "ai-assistants", "label": "AI Assistants"},
+    {"slug": "automation", "label": "Automation"},
+    {"slug": "design", "label": "Design"},
+    {"slug": "developer-tools", "label": "Developer Tools"},
+    {"slug": "email-marketing", "label": "Email Marketing"},
+    {"slug": "hosting", "label": "Hosting"},
+    {"slug": "image-generation", "label": "Image Generation"},
+    {"slug": "marketing", "label": "Marketing"},
+    {"slug": "productivity", "label": "Productivity"},
+    {"slug": "research", "label": "Research"},
+    {"slug": "sales", "label": "Sales"},
+    {"slug": "seo", "label": "SEO"},
+    {"slug": "voice-video", "label": "Voice & Video"},
+    {"slug": "website-builders", "label": "Website Builder"},
+    {"slug": "writing", "label": "Writing"}
+  ],
+  "jobs": [
+    {"id": "write-better-english", "label": "Write better English"},
+    {"id": "organise-my-work", "label": "Organise my work"},
+    {"id": "add-voice-to-videos", "label": "Add a voice to videos"},
+    {"id": "edit-video-podcasts", "label": "Edit video or podcasts"},
+    {"id": "write-ad-copy", "label": "Write ad copy"},
+    {"id": "get-search-traffic", "label": "Get search traffic"},
+    {"id": "sell-online", "label": "Sell something online"},
+    {"id": "launch-online-course", "label": "Launch an online course"},
+    {"id": "launch-a-website", "label": "Launch a website"}
+  ],
+  "controlled_values": {
+    "platforms": ["web", "ios", "android", "windows", "macos", "linux", "api"],
+    "audiences": ["beginners", "freelancers", "small businesses", "agencies", "teams", "developers", "students"],
+    "evidence_tiers": ["A", "B", "C"]
+  }
+}

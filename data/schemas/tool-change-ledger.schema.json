@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.toolnestai.tech/schemas/tool-change-ledger-v1.json",
+  "title": "ToolNest tool change ledger",
+  "description": "Append-only record of verified changes. The initial ledger is intentionally empty; no historical changes are inferred.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "events"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "tool-change-ledger-v1"
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "event_id",
+          "tool_id",
+          "event_type",
+          "detected_at",
+          "status"
+        ],
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "tool_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "event_type": {
+            "type": "string",
+            "enum": [
+              "pricing_change",
+              "plan_change",
+              "feature_added",
+              "feature_removed",
+              "free_plan_change",
+              "status_change",
+              "acquisition",
+              "shutdown",
+              "url_change",
+              "verification_correction",
+              "editorial_tier_change"
+            ]
+          },
+          "detected_at": {
+            "type": "string",
+            "format": "date"
+          },
+          "effective_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "before": {},
+          "after": {},
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "detected",
+              "verified",
+              "disputed",
+              "retracted"
+            ]
+          },
+          "note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
