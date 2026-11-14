@@ -1,0 +1,68 @@
+{
+  "schema_version": "toolnest-task-catalog-v1",
+  "tasks": [
+    {
+      "id": "write-better-english",
+      "label": "Write better English",
+      "tool_ids": ["grammarly"],
+      "guide": "/goals/write-better-english.html",
+      "required_signals": ["writing", "grammar"]
+    },
+    {
+      "id": "organise-my-work",
+      "label": "Organise my work",
+      "tool_ids": ["notion"],
+      "guide": "/goals/organise-my-work.html",
+      "required_signals": ["productivity", "notes", "tasks"]
+    },
+    {
+      "id": "add-voice-to-videos",
+      "label": "Add a voice to videos",
+      "tool_ids": ["elevenlabs"],
+      "guide": "/goals/add-voice-to-videos.html",
+      "required_signals": ["voice", "video"]
+    },
+    {
+      "id": "edit-video-podcasts",
+      "label": "Edit video or podcasts",
+      "tool_ids": ["descript"],
+      "guide": "/goals/edit-video-podcasts.html",
+      "required_signals": ["video", "podcast", "editing"]
+    },
+    {
+      "id": "write-ad-copy",
+      "label": "Write ad copy",
+      "tool_ids": ["jasper"],
+      "guide": "/goals/write-ad-copy.html",
+      "required_signals": ["marketing", "copy"]
+    },
+    {
+      "id": "get-search-traffic",
+      "label": "Get search traffic",
+      "tool_ids": ["semrush"],
+      "guide": "/goals/get-search-traffic.html",
+      "required_signals": ["seo", "keywords", "search"]
+    },
+    {
+      "id": "sell-online",
+      "label": "Sell something online",
+      "tool_ids": ["systeme"],
+      "guide": "/goals/sell-online.html",
+      "required_signals": ["sales", "funnel", "commerce"]
+    },
+    {
+      "id": "launch-online-course",
+      "label": "Launch an online course",
+      "tool_ids": ["systeme"],
+      "guide": "/goals/launch-online-course.html",
+      "required_signals": ["course", "sales", "email"]
+    },
+    {
+      "id": "launch-a-website",
+      "label": "Launch a website",
+      "tool_ids": ["hostinger"],
+      "guide": "/goals/launch-a-website.html",
+      "required_signals": ["hosting", "website"]
+    }
+  ]
+}

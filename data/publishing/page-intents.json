@@ -1,0 +1,29 @@
+{
+  "schema_version": "toolnest-page-intents-v1",
+  "intents": [
+    {
+      "intent_id": "tool-review-hostinger",
+      "tool_id": "hostinger",
+      "path": "/tools/hostinger.html",
+      "canonical_url": "https://www.toolnestai.tech/tools/hostinger.html",
+      "template_type": "premium-review",
+      "status": "published"
+    },
+    {
+      "intent_id": "tool-review-semrush",
+      "tool_id": "semrush",
+      "path": "/tools/semrush.html",
+      "canonical_url": "https://www.toolnestai.tech/tools/semrush.html",
+      "template_type": "premium-review",
+      "status": "published"
+    },
+    {
+      "intent_id": "comparison-mozpro-vs-semrush",
+      "tool_id": "moz-pro",
+      "path": "/compare/mozpro-vs-semrush.html",
+      "canonical_url": "https://www.toolnestai.tech/compare/mozpro-vs-semrush.html",
+      "template_type": "comparison",
+      "status": "published"
+    }
+  ]
+}

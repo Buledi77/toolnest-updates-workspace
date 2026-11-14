@@ -1,0 +1,87 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "ifttt",
+    "name": "IFTTT",
+    "slug": "ifttt",
+    "official_url": "https://ifttt.com",
+    "status": "unknown",
+    "logo": "/assets/logos/ifttt.png",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Automation"
+    ],
+    "use_cases": [],
+    "audiences": [],
+    "platforms": [],
+    "integrations": [],
+    "tags": []
+  },
+  "factual_profile": {
+    "capabilities": [],
+    "limitations": [],
+    "free_plan_status": [],
+    "trial_status": [],
+    "pricing_status": [],
+    "pricing_regions": [],
+    "availability_regions": []
+  },
+  "editorial": {
+    "editorial_tier": "C",
+    "best_for": [],
+    "not_recommended_for": [],
+    "review_status": "draft",
+    "review_url": null,
+    "review_owner": null,
+    "editorial_last_reviewed": null
+  },
+  "relationships": {
+    "alternatives": [],
+    "meaningful_comparisons": [],
+    "related_tools": [],
+    "compatible_tools": [],
+    "replaces": [],
+    "replaced_by": []
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": []
+  },
+  "monetization": {
+    "affiliate_status": "unknown",
+    "affiliate_network": null,
+    "affiliate_url": null,
+    "official_non_affiliate_url": "https://ifttt.com",
+    "approved_regions": [],
+    "restrictions": [],
+    "disclosure_required": null,
+    "last_link_check": null
+  },
+  "publishing": {
+    "directory_visibility": "public",
+    "standalone_page_status": "none",
+    "indexability": "noindex",
+    "sitemap_eligible": false,
+    "canonical_url": null,
+    "template_type": "directory-only",
+    "content_quality_status": "unassessed",
+    "prepublish_status": "not_ready"
+  },
+  "freshness": {
+    "created_at": null,
+    "updated_at": null,
+    "last_verified_at": null,
+    "next_review_at": null,
+    "stale_fields": [
+      "identity.status",
+      "discovery",
+      "factual_profile",
+      "relationships",
+      "monetization"
+    ],
+    "change_history_reference": null
+  }
+}

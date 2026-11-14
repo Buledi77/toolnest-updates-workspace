@@ -1,0 +1,148 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "moz-pro",
+    "name": "Moz Pro",
+    "slug": "moz-pro",
+    "official_url": "https://moz.com/products/pro",
+    "status": "active",
+    "logo": "/assets/logos/mozpro.png",
+    "aliases": [
+      "Moz"
+    ]
+  },
+  "discovery": {
+    "categories": [
+      "SEO"
+    ],
+    "use_cases": [
+      "track rankings",
+      "research keywords",
+      "crawl a website",
+      "research links",
+      "monitor AI-search visibility"
+    ],
+    "audiences": [
+      "SEO freelancers",
+      "in-house marketers",
+      "small agencies",
+      "website owners"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "integrations": [],
+    "tags": [
+      "seo",
+      "keyword-research",
+      "rank-tracking",
+      "site-crawl",
+      "ai-search"
+    ]
+  },
+  "factual_profile": {
+    "concise_summary": "Moz Pro is a focused SEO platform with rank tracking, keyword research, crawling, link research and tier-specific AI visibility features.",
+    "primary_purpose": "Monitoring and improving websites with a focused SEO workflow.",
+    "capabilities": [
+      {
+        "claim_id": "moz-pro-ai-visibility"
+      }
+    ],
+    "limitations": [],
+    "free_plan_status": [],
+    "trial_status": [
+      {
+        "claim_id": "moz-pro-plan-structure"
+      }
+    ],
+    "pricing_status": [
+      {
+        "claim_id": "moz-pro-plan-structure"
+      }
+    ],
+    "pricing_regions": [
+      {
+        "claim_id": "moz-pro-plan-structure"
+      }
+    ],
+    "availability_regions": []
+  },
+  "editorial": {
+    "editorial_tier": "A",
+    "best_for": [
+      "Teams focused on rank tracking, site crawling, keyword research and link research.",
+      "Website owners who want a focused SEO workspace.",
+      "Users whose tracked-site, keyword and crawl quotas fit the selected tier."
+    ],
+    "not_recommended_for": [
+      "Teams that need paid-search intelligence or a broad marketing suite.",
+      "Buyers who need more capacity than the selected site, keyword or crawl quotas."
+    ],
+    "editorial_summary": "A focused SEO choice when recurring site improvement is the main job; compare its quotas and feature boundaries against broader platforms before deciding.",
+    "review_status": "in_review",
+    "review_url": null,
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-14"
+  },
+  "relationships": {
+    "alternatives": [
+      "semrush",
+      "ahrefs",
+      "screamingfrog"
+    ],
+    "meaningful_comparisons": [
+      "mozpro-vs-semrush",
+      "ahrefs-vs-mozpro"
+    ],
+    "related_tools": [
+      "semrush",
+      "ahrefs",
+      "screamingfrog"
+    ],
+    "compatible_tools": [],
+    "replaces": [],
+    "replaced_by": []
+  },
+  "evidence": {
+    "claim_refs": [
+      {
+        "claim_id": "moz-pro-plan-structure"
+      },
+      {
+        "claim_id": "moz-pro-ai-visibility"
+      }
+    ],
+    "source_ids": [
+      "moz-pro-pricing"
+    ]
+  },
+  "monetization": {
+    "affiliate_status": "not_applied",
+    "affiliate_network": null,
+    "affiliate_url": null,
+    "official_non_affiliate_url": "https://moz.com/products/pro",
+    "approved_regions": [],
+    "restrictions": [],
+    "disclosure_required": true,
+    "last_link_check": "2026-11-14"
+  },
+  "publishing": {
+    "directory_visibility": "public",
+    "standalone_page_status": "none",
+    "indexability": "pending",
+    "sitemap_eligible": false,
+    "canonical_url": null,
+    "template_type": "premium-review",
+    "content_quality_status": "needs_review",
+    "prepublish_status": "not_ready"
+  },
+  "freshness": {
+    "created_at": "2026-11-14T20:59:43Z",
+    "updated_at": "2026-11-14T20:59:43Z",
+    "last_verified_at": "2026-11-14T20:59:43Z",
+    "next_review_at": "2026-12-14T20:59:43Z",
+    "stale_fields": [],
+    "change_history_reference": null
+  }
+}

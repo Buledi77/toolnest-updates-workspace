@@ -1,0 +1,1486 @@
+{
+  "schema_version": "toolnest-search-index-v1",
+  "source": "data/tools-v2",
+  "documents": [
+    {
+      "id": "adobeexpress",
+      "name": "Adobe Express",
+      "slug": "adobeexpress",
+      "tokens": [
+        "adobe",
+        "design",
+        "express"
+      ],
+      "categories": [
+        "Design"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.adobe.com/express/"
+    },
+    {
+      "id": "ahrefs",
+      "name": "Ahrefs",
+      "slug": "ahrefs",
+      "tokens": [
+        "ahrefs",
+        "seo"
+      ],
+      "categories": [
+        "SEO"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://ahrefs.com"
+    },
+    {
+      "id": "asana",
+      "name": "Asana",
+      "slug": "asana",
+      "tokens": [
+        "asana",
+        "productivity"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://asana.com"
+    },
+    {
+      "id": "assemblyai",
+      "name": "AssemblyAI",
+      "slug": "assemblyai",
+      "tokens": [
+        "api",
+        "assemblyai",
+        "speech",
+        "transcription",
+        "video",
+        "voice",
+        "web"
+      ],
+      "categories": [
+        "Voice & Video"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": "2026-11-14T22:03:16Z",
+      "official_url": "https://www.assemblyai.com"
+    },
+    {
+      "id": "beehiiv",
+      "name": "beehiiv",
+      "slug": "beehiiv",
+      "tokens": [
+        "beehiiv",
+        "email",
+        "marketing"
+      ],
+      "categories": [
+        "Email Marketing"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.beehiiv.com"
+    },
+    {
+      "id": "bolt",
+      "name": "Bolt",
+      "slug": "bolt",
+      "tokens": [
+        "app",
+        "bolt",
+        "building",
+        "coding",
+        "developer",
+        "prototyping",
+        "tools",
+        "web"
+      ],
+      "categories": [
+        "Developer Tools"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": "2026-11-14T22:03:16Z",
+      "official_url": "https://bolt.new"
+    },
+    {
+      "id": "brevo",
+      "name": "Brevo",
+      "slug": "brevo",
+      "tokens": [
+        "brevo",
+        "email",
+        "marketing"
+      ],
+      "categories": [
+        "Email Marketing"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.brevo.com"
+    },
+    {
+      "id": "browserbase",
+      "name": "Browserbase",
+      "slug": "browserbase",
+      "tokens": [
+        "api",
+        "automation",
+        "browser",
+        "browserbase",
+        "developer",
+        "tools",
+        "web"
+      ],
+      "categories": [
+        "Developer Tools"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": "2026-11-14T22:03:16Z",
+      "official_url": "https://www.browserbase.com"
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "slug": "canva",
+      "tokens": [
+        "canva",
+        "design"
+      ],
+      "categories": [
+        "Design"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.canva.com"
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "slug": "chatgpt",
+      "tokens": [
+        "ai",
+        "assistants",
+        "chatgpt"
+      ],
+      "categories": [
+        "AI Assistants"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://chatgpt.com"
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "slug": "claude",
+      "tokens": [
+        "ai",
+        "assistants",
+        "claude"
+      ],
+      "categories": [
+        "AI Assistants"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://claude.ai"
+    },
+    {
+      "id": "clickup",
+      "name": "ClickUp",
+      "slug": "clickup",
+      "tokens": [
+        "clickup",
+        "productivity"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://clickup.com"
+    },
+    {
+      "id": "copyai",
+      "name": "Copy.ai",
+      "slug": "copyai",
+      "tokens": [
+        "ai",
+        "copy",
+        "marketing"
+      ],
+      "categories": [
+        "Marketing"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.copy.ai"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "slug": "cursor",
+      "tokens": [
+        "coding",
+        "cursor",
+        "developer",
+        "editor",
+        "tools",
+        "web"
+      ],
+      "categories": [
+        "Developer Tools"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": "2026-11-14T22:03:16Z",
+      "official_url": "https://www.cursor.com"
+    },
+    {
+      "id": "descript",
+      "name": "Descript",
+      "slug": "descript",
+      "tokens": [
+        "descript",
+        "video",
+        "voice"
+      ],
+      "categories": [
+        "Voice & Video"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.descript.com"
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "slug": "elevenlabs",
+      "tokens": [
+        "elevenlabs",
+        "video",
+        "voice"
+      ],
+      "categories": [
+        "Voice & Video"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://elevenlabs.io"
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "slug": "figma",
+      "tokens": [
+        "design",
+        "figma"
+      ],
+      "categories": [
+        "Design"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.figma.com"
+    },
+    {
+      "id": "firecrawl",
+      "name": "Firecrawl",
+      "slug": "firecrawl",
+      "tokens": [
+        "api",
+        "developer",
+        "firecrawl",
+        "research",
+        "scraping",
+        "tools",
+        "web"
+      ],
+      "categories": [
+        "Developer Tools"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": "2026-11-14T22:03:16Z",
+      "official_url": "https://firecrawl.dev"
+    },
+    {
+      "id": "fireflies",
+      "name": "Fireflies.ai",
+      "slug": "fireflies",
+      "tokens": [
+        "ai",
+        "fireflies",
+        "productivity"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://fireflies.ai"
+    },
+    {
+      "id": "framer",
+      "name": "Framer",
+      "slug": "framer",
+      "tokens": [
+        "builder",
+        "framer",
+        "website"
+      ],
+      "categories": [
+        "Website Builder"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.framer.com"
+    },
+    {
+      "id": "gamma",
+      "name": "Gamma",
+      "slug": "gamma",
+      "tokens": [
+        "design",
+        "documents",
+        "gamma",
+        "presentations",
+        "web"
+      ],
+      "categories": [
+        "Design"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": "2026-11-14T22:03:16Z",
+      "official_url": "https://gamma.app"
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "slug": "gemini",
+      "tokens": [
+        "ai",
+        "assistants",
+        "gemini"
+      ],
+      "categories": [
+        "AI Assistants"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://gemini.google.com"
+    },
+    {
+      "id": "glean",
+      "name": "Glean",
+      "slug": "glean",
+      "tokens": [
+        "enterprise",
+        "glean",
+        "knowledge",
+        "productivity",
+        "research",
+        "search",
+        "web"
+      ],
+      "categories": [
+        "Research"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": "2026-11-14T22:03:16Z",
+      "official_url": "https://www.glean.com"
+    },
+    {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "slug": "grammarly",
+      "tokens": [
+        "grammarly",
+        "writing"
+      ],
+      "categories": [
+        "Writing"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.grammarly.com"
+    },
+    {
+      "id": "granola",
+      "name": "Granola",
+      "slug": "granola",
+      "tokens": [
+        "granola",
+        "meetings",
+        "notes",
+        "productivity",
+        "web"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": "2026-11-14T22:03:16Z",
+      "official_url": "https://www.granola.ai"
+    },
+    {
+      "id": "hemingway",
+      "name": "Hemingway Editor",
+      "slug": "hemingway",
+      "tokens": [
+        "editor",
+        "hemingway",
+        "writing"
+      ],
+      "categories": [
+        "Writing"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://hemingwayapp.com"
+    },
+    {
+      "id": "heygen",
+      "name": "HeyGen",
+      "slug": "heygen",
+      "tokens": [
+        "avatars",
+        "heygen",
+        "video",
+        "voice",
+        "web"
+      ],
+      "categories": [
+        "Voice & Video"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": "2026-11-14T22:03:16Z",
+      "official_url": "https://www.heygen.com"
+    },
+    {
+      "id": "hostinger",
+      "name": "Hostinger",
+      "slug": "hostinger",
+      "tokens": [
+        "a",
+        "account",
+        "ai",
+        "an",
+        "and",
+        "assistance",
+        "assisted",
+        "beginner",
+        "beginners",
+        "build",
+        "builder",
+        "building",
+        "business",
+        "businesses",
+        "domains",
+        "ecommerce",
+        "email",
+        "fit",
+        "for",
+        "freelancer",
+        "freelancers",
+        "host",
+        "hosting",
+        "hostinger",
+        "in",
+        "launch",
+        "limits",
+        "one",
+        "online",
+        "or",
+        "plan",
+        "practical",
+        "products",
+        "provided",
+        "provides",
+        "renewal",
+        "selected",
+        "shortlist",
+        "site",
+        "small",
+        "store",
+        "stores",
+        "terms",
+        "that",
+        "the",
+        "tools",
+        "wants",
+        "web",
+        "website",
+        "websites",
+        "with",
+        "wordpress"
+      ],
+      "categories": [
+        "Hosting",
+        "Website Builder"
+      ],
+      "use_cases": [
+        "launch a small business website",
+        "host WordPress",
+        "build a website with AI assistance",
+        "host a small online store"
+      ],
+      "audiences": [
+        "beginners",
+        "freelancers",
+        "small businesses"
+      ],
+      "editorial_tier": "A",
+      "indexability": "index",
+      "evidence_age": "2026-11-14T20:59:43Z",
+      "official_url": "https://www.hostinger.com"
+    },
+    {
+      "id": "hubspot",
+      "name": "HubSpot",
+      "slug": "hubspot",
+      "tokens": [
+        "hubspot",
+        "sales"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.hubspot.com"
+    },
+    {
+      "id": "ideogram",
+      "name": "Ideogram",
+      "slug": "ideogram",
+      "tokens": [
+        "creative",
+        "design",
+        "generation",
+        "ideogram",
+        "image",
+        "web"
+      ],
+      "categories": [
+        "Image Generation"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": "2026-11-14T22:03:16Z",
+      "official_url": "https://ideogram.ai"
+    },
+    {
+      "id": "ifttt",
+      "name": "IFTTT",
+      "slug": "ifttt",
+      "tokens": [
+        "automation",
+        "ifttt"
+      ],
+      "categories": [
+        "Automation"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://ifttt.com"
+    },
+    {
+      "id": "invideo",
+      "name": "InVideo",
+      "slug": "invideo",
+      "tokens": [
+        "invideo",
+        "video",
+        "voice"
+      ],
+      "categories": [
+        "Voice & Video"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://invideo.io"
+    },
+    {
+      "id": "jasper",
+      "name": "Jasper",
+      "slug": "jasper",
+      "tokens": [
+        "jasper",
+        "marketing"
+      ],
+      "categories": [
+        "Marketing"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.jasper.ai"
+    },
+    {
+      "id": "kapwing",
+      "name": "Kapwing",
+      "slug": "kapwing",
+      "tokens": [
+        "kapwing",
+        "video",
+        "voice"
+      ],
+      "categories": [
+        "Voice & Video"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.kapwing.com"
+    },
+    {
+      "id": "kit",
+      "name": "Kit",
+      "slug": "kit",
+      "tokens": [
+        "email",
+        "kit",
+        "marketing"
+      ],
+      "categories": [
+        "Email Marketing"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://kit.com"
+    },
+    {
+      "id": "leonardo",
+      "name": "Leonardo AI",
+      "slug": "leonardo",
+      "tokens": [
+        "ai",
+        "generation",
+        "image",
+        "leonardo"
+      ],
+      "categories": [
+        "Image Generation"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://leonardo.ai"
+    },
+    {
+      "id": "lovable",
+      "name": "Lovable",
+      "slug": "lovable",
+      "tokens": [
+        "app",
+        "builder",
+        "building",
+        "lovable",
+        "prototyping",
+        "web",
+        "website"
+      ],
+      "categories": [
+        "Website Builder"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": "2026-11-14T22:03:16Z",
+      "official_url": "https://lovable.dev"
+    },
+    {
+      "id": "mailchimp",
+      "name": "Mailchimp",
+      "slug": "mailchimp",
+      "tokens": [
+        "email",
+        "mailchimp",
+        "marketing"
+      ],
+      "categories": [
+        "Email Marketing"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://mailchimp.com"
+    },
+    {
+      "id": "make",
+      "name": "Make",
+      "slug": "make",
+      "tokens": [
+        "automation",
+        "make"
+      ],
+      "categories": [
+        "Automation"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.make.com"
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "slug": "midjourney",
+      "tokens": [
+        "generation",
+        "image",
+        "midjourney"
+      ],
+      "categories": [
+        "Image Generation"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.midjourney.com"
+    },
+    {
+      "id": "mistral-le-chat",
+      "name": "Le Chat",
+      "slug": "mistral-le-chat",
+      "tokens": [
+        "ai",
+        "assistants",
+        "chat",
+        "le",
+        "research",
+        "web",
+        "writing"
+      ],
+      "categories": [
+        "AI Assistants"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": "2026-11-14T22:03:16Z",
+      "official_url": "https://chat.mistral.ai"
+    },
+    {
+      "id": "monday",
+      "name": "monday.com",
+      "slug": "monday",
+      "tokens": [
+        "com",
+        "monday",
+        "productivity"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://monday.com"
+    },
+    {
+      "id": "moz-pro",
+      "name": "Moz Pro",
+      "slug": "moz-pro",
+      "tokens": [
+        "a",
+        "against",
+        "agencies",
+        "ai",
+        "and",
+        "before",
+        "boundaries",
+        "broader",
+        "choice",
+        "compare",
+        "crawl",
+        "crawling",
+        "deciding",
+        "feature",
+        "features",
+        "focused",
+        "freelancers",
+        "house",
+        "improvement",
+        "improving",
+        "in",
+        "is",
+        "its",
+        "job",
+        "keyword",
+        "keywords",
+        "link",
+        "links",
+        "main",
+        "marketers",
+        "monitor",
+        "monitoring",
+        "moz",
+        "owners",
+        "platform",
+        "platforms",
+        "pro",
+        "quotas",
+        "rank",
+        "rankings",
+        "recurring",
+        "research",
+        "search",
+        "seo",
+        "site",
+        "small",
+        "specific",
+        "the",
+        "tier",
+        "track",
+        "tracking",
+        "visibility",
+        "web",
+        "website",
+        "websites",
+        "when",
+        "with",
+        "workflow"
+      ],
+      "categories": [
+        "SEO"
+      ],
+      "use_cases": [
+        "track rankings",
+        "research keywords",
+        "crawl a website",
+        "research links",
+        "monitor AI-search visibility"
+      ],
+      "audiences": [
+        "SEO freelancers",
+        "in-house marketers",
+        "small agencies",
+        "website owners"
+      ],
+      "editorial_tier": "A",
+      "indexability": "pending",
+      "evidence_age": "2026-11-14T20:59:43Z",
+      "official_url": "https://moz.com/products/pro"
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "slug": "n8n",
+      "tokens": [
+        "automation",
+        "n8n"
+      ],
+      "categories": [
+        "Automation"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://n8n.io"
+    },
+    {
+      "id": "notebooklm",
+      "name": "NotebookLM",
+      "slug": "notebooklm",
+      "tokens": [
+        "notebooklm",
+        "research"
+      ],
+      "categories": [
+        "Research"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://notebooklm.google.com"
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "slug": "notion",
+      "tokens": [
+        "notion",
+        "productivity"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.notion.com"
+    },
+    {
+      "id": "otter",
+      "name": "Otter.ai",
+      "slug": "otter",
+      "tokens": [
+        "ai",
+        "otter",
+        "productivity"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://otter.ai"
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "slug": "perplexity",
+      "tokens": [
+        "perplexity",
+        "research"
+      ],
+      "categories": [
+        "Research"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.perplexity.ai"
+    },
+    {
+      "id": "prowritingaid",
+      "name": "ProWritingAid",
+      "slug": "prowritingaid",
+      "tokens": [
+        "prowritingaid",
+        "writing"
+      ],
+      "categories": [
+        "Writing"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://prowritingaid.com"
+    },
+    {
+      "id": "quillbot",
+      "name": "QuillBot",
+      "slug": "quillbot",
+      "tokens": [
+        "quillbot",
+        "writing"
+      ],
+      "categories": [
+        "Writing"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://quillbot.com"
+    },
+    {
+      "id": "removebg",
+      "name": "remove.bg",
+      "slug": "removebg",
+      "tokens": [
+        "bg",
+        "design",
+        "remove"
+      ],
+      "categories": [
+        "Design"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.remove.bg"
+    },
+    {
+      "id": "replit",
+      "name": "Replit",
+      "slug": "replit",
+      "tokens": [
+        "app",
+        "building",
+        "coding",
+        "developer",
+        "hosting",
+        "replit",
+        "tools",
+        "web"
+      ],
+      "categories": [
+        "Developer Tools"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": "2026-11-14T22:03:16Z",
+      "official_url": "https://replit.com"
+    },
+    {
+      "id": "runway",
+      "name": "Runway",
+      "slug": "runway",
+      "tokens": [
+        "runway",
+        "video",
+        "voice"
+      ],
+      "categories": [
+        "Voice & Video"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://runwayml.com"
+    },
+    {
+      "id": "screamingfrog",
+      "name": "Screaming Frog",
+      "slug": "screamingfrog",
+      "tokens": [
+        "frog",
+        "screaming",
+        "seo"
+      ],
+      "categories": [
+        "SEO"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.screamingfrog.co.uk/seo-spider/"
+    },
+    {
+      "id": "semrush",
+      "name": "Semrush",
+      "slug": "semrush",
+      "tokens": [
+        "a",
+        "add",
+        "agencies",
+        "ai",
+        "an",
+        "and",
+        "audit",
+        "candidate",
+        "competitor",
+        "competitors",
+        "content",
+        "cost",
+        "crawl",
+        "freelancers",
+        "house",
+        "in",
+        "is",
+        "justify",
+        "keyword",
+        "keywords",
+        "lookup",
+        "marketing",
+        "monitor",
+        "need",
+        "occasional",
+        "on",
+        "only",
+        "or",
+        "plan",
+        "platform",
+        "poor",
+        "rank",
+        "rankings",
+        "recurring",
+        "research",
+        "search",
+        "semrush",
+        "seo",
+        "several",
+        "single",
+        "specific",
+        "strong",
+        "teams",
+        "the",
+        "track",
+        "tracking",
+        "value",
+        "visibility",
+        "web",
+        "website",
+        "when",
+        "with",
+        "workflows"
+      ],
+      "categories": [
+        "SEO",
+        "Marketing"
+      ],
+      "use_cases": [
+        "research keywords",
+        "track rankings",
+        "audit a website",
+        "research competitors",
+        "monitor AI-search visibility"
+      ],
+      "audiences": [
+        "SEO freelancers",
+        "agencies",
+        "content teams",
+        "in-house marketing teams"
+      ],
+      "editorial_tier": "A",
+      "indexability": "index",
+      "evidence_age": "2026-11-14T20:59:43Z",
+      "official_url": "https://www.semrush.com"
+    },
+    {
+      "id": "squarespace",
+      "name": "Squarespace",
+      "slug": "squarespace",
+      "tokens": [
+        "builder",
+        "squarespace",
+        "website"
+      ],
+      "categories": [
+        "Website Builder"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.squarespace.com"
+    },
+    {
+      "id": "surferseo",
+      "name": "Surfer SEO",
+      "slug": "surferseo",
+      "tokens": [
+        "seo",
+        "surfer"
+      ],
+      "categories": [
+        "SEO"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://surferseo.com"
+    },
+    {
+      "id": "synthesia",
+      "name": "Synthesia",
+      "slug": "synthesia",
+      "tokens": [
+        "synthesia",
+        "video",
+        "voice"
+      ],
+      "categories": [
+        "Voice & Video"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.synthesia.io"
+    },
+    {
+      "id": "systeme",
+      "name": "Systeme.io",
+      "slug": "systeme",
+      "tokens": [
+        "io",
+        "sales",
+        "systeme"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://systeme.io"
+    },
+    {
+      "id": "todoist",
+      "name": "Todoist",
+      "slug": "todoist",
+      "tokens": [
+        "productivity",
+        "todoist"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://todoist.com"
+    },
+    {
+      "id": "together-ai",
+      "name": "Together AI",
+      "slug": "together-ai",
+      "tokens": [
+        "ai",
+        "api",
+        "developer",
+        "models",
+        "together",
+        "tools",
+        "web"
+      ],
+      "categories": [
+        "Developer Tools"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": "2026-11-14T22:03:16Z",
+      "official_url": "https://www.together.ai"
+    },
+    {
+      "id": "v0",
+      "name": "v0",
+      "slug": "v0",
+      "tokens": [
+        "app",
+        "building",
+        "coding",
+        "developer",
+        "prototyping",
+        "tools",
+        "v0",
+        "web"
+      ],
+      "categories": [
+        "Developer Tools"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": "2026-11-14T22:03:16Z",
+      "official_url": "https://v0.dev"
+    },
+    {
+      "id": "webflow",
+      "name": "Webflow",
+      "slug": "webflow",
+      "tokens": [
+        "builder",
+        "webflow",
+        "website"
+      ],
+      "categories": [
+        "Website Builder"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://webflow.com"
+    },
+    {
+      "id": "windsurf",
+      "name": "Windsurf",
+      "slug": "windsurf",
+      "tokens": [
+        "coding",
+        "developer",
+        "editor",
+        "tools",
+        "web",
+        "windsurf"
+      ],
+      "categories": [
+        "Developer Tools"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": "2026-11-14T22:03:16Z",
+      "official_url": "https://windsurf.com"
+    },
+    {
+      "id": "writesonic",
+      "name": "Writesonic",
+      "slug": "writesonic",
+      "tokens": [
+        "writesonic",
+        "writing"
+      ],
+      "categories": [
+        "Writing"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://writesonic.com"
+    },
+    {
+      "id": "zapier",
+      "name": "Zapier",
+      "slug": "zapier",
+      "tokens": [
+        "automation",
+        "zapier"
+      ],
+      "categories": [
+        "Automation"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://zapier.com"
+    }
+  ]
+}

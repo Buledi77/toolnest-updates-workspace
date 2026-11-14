@@ -1,0 +1,134 @@
+{
+  "schema_version": "toolnest-catalog-intake-v1",
+  "batch_id": "2026-11-14-ai-tools-batches-01-02",
+  "candidates": [
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "official_url": "https://www.cursor.com",
+      "category": "Developer Tools",
+      "tags": ["coding", "developer", "editor"],
+      "source_note": "Official product homepage checked by the intake validator."
+    },
+    {
+      "id": "lovable",
+      "name": "Lovable",
+      "official_url": "https://lovable.dev",
+      "category": "Website Builder",
+      "tags": ["app building", "website", "prototyping"],
+      "source_note": "Official product homepage checked by the intake validator."
+    },
+    {
+      "id": "v0",
+      "name": "v0",
+      "official_url": "https://v0.dev",
+      "category": "Developer Tools",
+      "tags": ["coding", "app building", "prototyping"],
+      "source_note": "Official product homepage checked by the intake validator."
+    },
+    {
+      "id": "replit",
+      "name": "Replit",
+      "official_url": "https://replit.com",
+      "category": "Developer Tools",
+      "tags": ["coding", "hosting", "app building"],
+      "source_note": "Official product homepage checked by the intake validator."
+    },
+    {
+      "id": "gamma",
+      "name": "Gamma",
+      "official_url": "https://gamma.app",
+      "category": "Design",
+      "tags": ["presentations", "documents", "design"],
+      "source_note": "Official product homepage checked by the intake validator."
+    },
+    {
+      "id": "glean",
+      "name": "Glean",
+      "official_url": "https://www.glean.com",
+      "category": "Research",
+      "tags": ["enterprise search", "knowledge", "productivity"],
+      "source_note": "Official product homepage checked by the intake validator."
+    },
+    {
+      "id": "mistral-le-chat",
+      "name": "Le Chat",
+      "official_url": "https://chat.mistral.ai",
+      "category": "AI Assistants",
+      "tags": ["chat", "research", "writing"],
+      "source_note": "Official product homepage checked by the intake validator."
+    },
+    {
+      "id": "granola",
+      "name": "Granola",
+      "official_url": "https://www.granola.ai",
+      "category": "Productivity",
+      "tags": ["meetings", "notes", "productivity"],
+      "source_note": "Official product homepage checked by the intake validator."
+    },
+    {
+      "id": "windsurf",
+      "name": "Windsurf",
+      "official_url": "https://windsurf.com",
+      "category": "Developer Tools",
+      "tags": ["coding", "developer", "editor"],
+      "source_note": "Official product homepage checked by the intake validator."
+    },
+    {
+      "id": "bolt",
+      "name": "Bolt",
+      "official_url": "https://bolt.new",
+      "category": "Developer Tools",
+      "tags": ["coding", "app building", "prototyping"],
+      "source_note": "Official product homepage checked by the intake validator."
+    },
+    {
+      "id": "firecrawl",
+      "name": "Firecrawl",
+      "official_url": "https://firecrawl.dev",
+      "category": "Developer Tools",
+      "tags": ["web scraping", "research", "api"],
+      "source_note": "Official product homepage checked by the intake validator."
+    },
+    {
+      "id": "browserbase",
+      "name": "Browserbase",
+      "official_url": "https://www.browserbase.com",
+      "category": "Developer Tools",
+      "tags": ["browser automation", "developer", "api"],
+      "source_note": "Official product homepage checked by the intake validator."
+    },
+    {
+      "id": "assemblyai",
+      "name": "AssemblyAI",
+      "official_url": "https://www.assemblyai.com",
+      "category": "Voice & Video",
+      "tags": ["speech", "transcription", "api"],
+      "source_note": "Official product homepage checked by the intake validator."
+    },
+    {
+      "id": "together-ai",
+      "name": "Together AI",
+      "official_url": "https://www.together.ai",
+      "category": "Developer Tools",
+      "tags": ["models", "api", "developer"],
+      "source_note": "Official product homepage checked by the intake validator."
+    },
+    {
+      "id": "heygen",
+      "name": "HeyGen",
+      "official_url": "https://www.heygen.com",
+      "category": "Voice & Video",
+      "tags": ["video", "avatars", "voice"],
+      "source_note": "Official product homepage checked by the intake validator."
+    },
+    {
+      "id": "ideogram",
+      "name": "Ideogram",
+      "official_url": "https://ideogram.ai",
+      "category": "Image Generation",
+      "tags": ["image generation", "design", "creative"],
+      "source_note": "Official product homepage checked by the intake validator."
+    }
+  ]
+}
