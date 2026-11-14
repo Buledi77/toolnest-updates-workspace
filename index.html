@@ -66,13 +66,8 @@
 </head>
 <body>
 
-    <div class="max-w-4xl mx-auto my-6 px-4">
-        <div class="bg-gray-50 dark:bg-gray-800 border border-dashed border-gray-300 dark:border-gray-700 rounded-xl p-4 text-center text-xs text-gray-400">
-            <!-- High-RPM AdSense Optimized Slot -->
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        </div>
-    </div>
-    
+
+
 <a class="skip" href="#top">Skip to content</a>
 <div aria-hidden="true" class="progress" id="progress"></div>
 
@@ -430,7 +425,7 @@
 <div id="ai-stack-finder" class="max-w-6xl mx-auto px-4 my-10">
     <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-blue-950 rounded-3xl p-8 md:p-12 shadow-2xl border border-indigo-500/30 text-white relative overflow-hidden">
         <div class="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
-        
+
         <div class="max-w-3xl mb-8">
             <span class="bg-indigo-500/20 text-indigo-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider border border-indigo-500/30">AI Power Suite 2026</span>
             <h2 class="text-3xl md:text-4xl font-extrabold mt-3 tracking-tight">Find Your Exact AI SaaS Stack in 10 Seconds</h2>
@@ -473,18 +468,18 @@ function runAiFinder() {
     const budget = document.getElementById("quiz-budget").value;
     const resBox = document.getElementById("quiz-results");
     const outText = document.getElementById("quiz-output-text");
-    
+
     let recommendation = "";
     if(cat === "marketing") {
-        recommendation = "<strong>Top Pick: Semrush / Jasper AI Stack</strong> — Ideal for high-intent organic traffic scaling with built-in ROI tracking and automated SEO audits. <br><span class="text-xs text-indigo-300 mt-2 block">⚡ Verified Deal: Free trial available with 30% off annual plans.</span>";
+        recommendation = "<strong>Top Pick: Semrush / Jasper AI Stack</strong> — Ideal for high-intent organic traffic scaling with built-in ROI tracking and automated SEO audits. <br><span class='text-xs text-indigo-300 mt-2 block'>⚡ Verified Deal: Free trial available with 30% off annual plans.</span>";
     } else if(cat === "content") {
-        recommendation = "<strong>Top Pick: Copy.ai & Notion AI Suite</strong> — Best-in-class multi-model text generation designed for enterprise-grade copywriting and automated B2B funnels.<br><span class="text-xs text-indigo-300 mt-2 block">⚡ Verified Deal: Free tier active, Pro plans starting at $19/mo.</span>";
+        recommendation = "<strong>Top Pick: Copy.ai & Notion AI Suite</strong> — Best-in-class multi-model text generation designed for enterprise-grade copywriting and automated B2B funnels.<br><span class='text-xs text-indigo-300 mt-2 block'>⚡ Verified Deal: Free tier active, Pro plans starting at $19/mo.</span>";
     } else if(cat === "dev") {
-        recommendation = "<strong>Top Pick: GitHub Copilot & FastAPI Automation Stacks</strong> — Lightning-fast code scaffolding and backend automation boilerplate generation.<br><span class="text-xs text-indigo-300 mt-2 block">⚡ Verified Deal: Developer tier active.</span>";
+        recommendation = "<strong>Top Pick: GitHub Copilot & FastAPI Automation Stacks</strong> — Lightning-fast code scaffolding and backend automation boilerplate generation.<br><span class='text-xs text-indigo-300 mt-2 block'>⚡ Verified Deal: Developer tier active.</span>";
     } else {
-        recommendation = "<strong>Top Pick: Midjourney & Runway Gen-3</strong> — Industry leaders in generative image and cinematic video AI with maximum visual fidelity.<br><span class="text-xs text-indigo-300 mt-2 block">⚡ Verified Deal: Standard commercial licenses available.</span>";
+        recommendation = "<strong>Top Pick: Midjourney & Runway Gen-3</strong> — Industry leaders in generative image and cinematic video AI with maximum visual fidelity.<br><span class='text-xs text-indigo-300 mt-2 block'>⚡ Verified Deal: Standard commercial licenses available.</span>";
     }
-    
+
     outText.innerHTML = recommendation;
     resBox.classList.remove("hidden");
 }
