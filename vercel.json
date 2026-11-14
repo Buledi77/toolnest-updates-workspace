@@ -1,0 +1,1889 @@
+{
+  "redirects": [
+    {
+      "source": "/compare/semrush-vs-ahrefs.html",
+      "destination": "/compare/ahrefs-vs-semrush.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/semrush-vs-ahrefs",
+      "destination": "/compare/ahrefs-vs-semrush.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/zapier-vs-make.html",
+      "destination": "/compare/make-vs-zapier.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/zapier-vs-make",
+      "destination": "/compare/make-vs-zapier.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/notion-vs-clickup.html",
+      "destination": "/compare/clickup-vs-notion.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/notion-vs-clickup",
+      "destination": "/compare/clickup-vs-notion.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/canva-vs-adobeexpress.html",
+      "destination": "/compare/adobeexpress-vs-canva.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/canva-vs-adobeexpress",
+      "destination": "/compare/adobeexpress-vs-canva.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/descript-vs-elevenlabs.html",
+      "destination": "/compare/elevenlabs-vs-descript.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/descript-vs-elevenlabs",
+      "destination": "/compare/elevenlabs-vs-descript.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/ai-assistants.html",
+      "destination": "/category/ai-assistants.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/ai-assistants",
+      "destination": "/category/ai-assistants.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/automation.html",
+      "destination": "/category/automation.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/automation",
+      "destination": "/category/automation.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/design.html",
+      "destination": "/category/design.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/design",
+      "destination": "/category/design.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/email-marketing.html",
+      "destination": "/category/email-marketing.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/email-marketing",
+      "destination": "/category/email-marketing.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/hosting.html",
+      "destination": "/category/hosting.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/hosting",
+      "destination": "/category/hosting.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/image-generation.html",
+      "destination": "/category/image-generation.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/image-generation",
+      "destination": "/category/image-generation.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/marketing.html",
+      "destination": "/category/marketing.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/marketing",
+      "destination": "/category/marketing.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/productivity.html",
+      "destination": "/category/productivity.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/productivity",
+      "destination": "/category/productivity.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/research.html",
+      "destination": "/category/research.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/research",
+      "destination": "/category/research.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/sales.html",
+      "destination": "/category/sales.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/sales",
+      "destination": "/category/sales.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/seo.html",
+      "destination": "/category/seo.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/seo",
+      "destination": "/category/seo.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/voice-video.html",
+      "destination": "/category/voice-video.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/voice-video",
+      "destination": "/category/voice-video.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/website-builder.html",
+      "destination": "/category/website-builders.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/website-builder",
+      "destination": "/category/website-builders.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/writing.html",
+      "destination": "/category/writing.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/writing",
+      "destination": "/category/writing.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/index.html",
+      "destination": "/category/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/index",
+      "destination": "/category/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories/",
+      "destination": "/category/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/categories",
+      "destination": "/category/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/affiliate-disclosure",
+      "destination": "/affiliate-disclosure.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/adobeexpress-alternatives",
+      "destination": "/alternatives/adobeexpress-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/ahrefs-alternatives",
+      "destination": "/alternatives/ahrefs-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/asana-alternatives",
+      "destination": "/alternatives/asana-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/beehiiv-alternatives",
+      "destination": "/alternatives/beehiiv-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/brevo-alternatives",
+      "destination": "/alternatives/brevo-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/canva-alternatives",
+      "destination": "/alternatives/canva-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/chatgpt-alternatives",
+      "destination": "/alternatives/chatgpt-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/claude-alternatives",
+      "destination": "/alternatives/claude-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/clickup-alternatives",
+      "destination": "/alternatives/clickup-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/copyai-alternatives",
+      "destination": "/alternatives/copyai-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/descript-alternatives",
+      "destination": "/alternatives/descript-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/elevenlabs-alternatives",
+      "destination": "/alternatives/elevenlabs-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/figma-alternatives",
+      "destination": "/alternatives/figma-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/fireflies-alternatives",
+      "destination": "/alternatives/fireflies-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/framer-alternatives",
+      "destination": "/alternatives/framer-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/gemini-alternatives",
+      "destination": "/alternatives/gemini-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/grammarly-alternatives",
+      "destination": "/alternatives/grammarly-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/hemingway-alternatives",
+      "destination": "/alternatives/hemingway-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/hostinger-alternatives",
+      "destination": "/alternatives/hostinger-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/hubspot-alternatives",
+      "destination": "/alternatives/hubspot-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/ifttt-alternatives",
+      "destination": "/alternatives/ifttt-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/invideo-alternatives",
+      "destination": "/alternatives/invideo-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/jasper-alternatives",
+      "destination": "/alternatives/jasper-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/kapwing-alternatives",
+      "destination": "/alternatives/kapwing-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/kit-alternatives",
+      "destination": "/alternatives/kit-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/leonardo-alternatives",
+      "destination": "/alternatives/leonardo-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/mailchimp-alternatives",
+      "destination": "/alternatives/mailchimp-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/make-alternatives",
+      "destination": "/alternatives/make-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/midjourney-alternatives",
+      "destination": "/alternatives/midjourney-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/monday-alternatives",
+      "destination": "/alternatives/monday-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/mozpro-alternatives",
+      "destination": "/alternatives/mozpro-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/n8n-alternatives",
+      "destination": "/alternatives/n8n-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/notebooklm-alternatives",
+      "destination": "/alternatives/notebooklm-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/notion-alternatives",
+      "destination": "/alternatives/notion-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/otter-alternatives",
+      "destination": "/alternatives/otter-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/perplexity-alternatives",
+      "destination": "/alternatives/perplexity-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/prowritingaid-alternatives",
+      "destination": "/alternatives/prowritingaid-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/quillbot-alternatives",
+      "destination": "/alternatives/quillbot-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/removebg-alternatives",
+      "destination": "/alternatives/removebg-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/runway-alternatives",
+      "destination": "/alternatives/runway-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/screamingfrog-alternatives",
+      "destination": "/alternatives/screamingfrog-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/semrush-alternatives",
+      "destination": "/alternatives/semrush-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/squarespace-alternatives",
+      "destination": "/alternatives/squarespace-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/surferseo-alternatives",
+      "destination": "/alternatives/surferseo-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/synthesia-alternatives",
+      "destination": "/alternatives/synthesia-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/systeme-alternatives",
+      "destination": "/alternatives/systeme-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/todoist-alternatives",
+      "destination": "/alternatives/todoist-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/webflow-alternatives",
+      "destination": "/alternatives/webflow-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/writesonic-alternatives",
+      "destination": "/alternatives/writesonic-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/zapier-alternatives",
+      "destination": "/alternatives/zapier-alternatives.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-ai-assistants-tools",
+      "destination": "/best/best-ai-assistants-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-ai-assistants",
+      "destination": "/best/best-ai-assistants-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-ai-assistants.html",
+      "destination": "/best/best-ai-assistants-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-ai-tools-for-freelancers",
+      "destination": "/best/best-ai-tools-for-freelancers.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-ai-tools-for-students",
+      "destination": "/best/best-ai-tools-for-students.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-ai-tools-for-youtubers",
+      "destination": "/best/best-ai-tools-for-youtubers.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-ai-video-tools",
+      "destination": "/best/best-ai-video-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-ai-voice-tools",
+      "destination": "/best/best-ai-voice-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-ai-writing-tools",
+      "destination": "/best/best-ai-writing-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-automation-tools",
+      "destination": "/best/best-automation-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-design-tools",
+      "destination": "/best/best-design-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-email-marketing-tools",
+      "destination": "/best/best-email-marketing-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-hosting-tools",
+      "destination": "/best/best-hosting-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-image-generation-tools",
+      "destination": "/best/best-image-generation-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-marketing-tools",
+      "destination": "/best/best-marketing-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-productivity-tools",
+      "destination": "/best/best-productivity-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-research-tools",
+      "destination": "/best/best-research-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-sales-tools",
+      "destination": "/best/best-sales-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-seo-tools",
+      "destination": "/best/best-seo-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-voice-video-tools",
+      "destination": "/best/best-voice-video-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-website-and-hosting-tools",
+      "destination": "/best/best-website-and-hosting-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-website-builder-tools",
+      "destination": "/best/best-website-builder-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-writing-tools",
+      "destination": "/best/best-writing-tools.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/ai-assistants",
+      "destination": "/category/ai-assistants.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/automation",
+      "destination": "/category/automation.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/design",
+      "destination": "/category/design.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/email-marketing",
+      "destination": "/category/email-marketing.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/hosting",
+      "destination": "/category/hosting.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/image-generation",
+      "destination": "/category/image-generation.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/marketing",
+      "destination": "/category/marketing.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/productivity",
+      "destination": "/category/productivity.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/research",
+      "destination": "/category/research.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/sales",
+      "destination": "/category/sales.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/seo",
+      "destination": "/category/seo.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/voice-video",
+      "destination": "/category/voice-video.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/website-builders",
+      "destination": "/category/website-builders.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/writing",
+      "destination": "/category/writing.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/adobeexpress-vs-canva",
+      "destination": "/compare/adobeexpress-vs-canva.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/adobeexpress-vs-figma",
+      "destination": "/compare/adobeexpress-vs-figma.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/adobeexpress-vs-removebg",
+      "destination": "/compare/adobeexpress-vs-removebg.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/ahrefs-vs-mozpro",
+      "destination": "/compare/ahrefs-vs-mozpro.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/ahrefs-vs-screamingfrog",
+      "destination": "/compare/ahrefs-vs-screamingfrog.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/ahrefs-vs-semrush",
+      "destination": "/compare/ahrefs-vs-semrush.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/ahrefs-vs-surferseo",
+      "destination": "/compare/ahrefs-vs-surferseo.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/asana-vs-notion",
+      "destination": "/compare/asana-vs-notion.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/beehiiv-vs-brevo",
+      "destination": "/compare/beehiiv-vs-brevo.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/beehiiv-vs-kit",
+      "destination": "/compare/beehiiv-vs-kit.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/beehiiv-vs-mailchimp",
+      "destination": "/compare/beehiiv-vs-mailchimp.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/brevo-vs-kit",
+      "destination": "/compare/brevo-vs-kit.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/brevo-vs-mailchimp",
+      "destination": "/compare/brevo-vs-mailchimp.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/canva-vs-figma",
+      "destination": "/compare/canva-vs-figma.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/canva-vs-removebg",
+      "destination": "/compare/canva-vs-removebg.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/chatgpt-vs-claude",
+      "destination": "/compare/chatgpt-vs-claude.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/chatgpt-vs-gemini",
+      "destination": "/compare/chatgpt-vs-gemini.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/claude-vs-gemini",
+      "destination": "/compare/claude-vs-gemini.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/clickup-vs-notion",
+      "destination": "/compare/clickup-vs-notion.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/copyai-vs-grammarly",
+      "destination": "/compare/copyai-vs-grammarly.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/copyai-vs-jasper",
+      "destination": "/compare/copyai-vs-jasper.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/descript-vs-invideo",
+      "destination": "/compare/descript-vs-invideo.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/descript-vs-kapwing",
+      "destination": "/compare/descript-vs-kapwing.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/descript-vs-runway",
+      "destination": "/compare/descript-vs-runway.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/descript-vs-synthesia",
+      "destination": "/compare/descript-vs-synthesia.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/elevenlabs-vs-descript",
+      "destination": "/compare/elevenlabs-vs-descript.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/elevenlabs-vs-synthesia",
+      "destination": "/compare/elevenlabs-vs-synthesia.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/fireflies-vs-otter",
+      "destination": "/compare/fireflies-vs-otter.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/framer-vs-squarespace",
+      "destination": "/compare/framer-vs-squarespace.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/framer-vs-webflow",
+      "destination": "/compare/framer-vs-webflow.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/grammarly-vs-hemingway",
+      "destination": "/compare/grammarly-vs-hemingway.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/grammarly-vs-jasper",
+      "destination": "/compare/grammarly-vs-jasper.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/grammarly-vs-prowritingaid",
+      "destination": "/compare/grammarly-vs-prowritingaid.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/grammarly-vs-quillbot",
+      "destination": "/compare/grammarly-vs-quillbot.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/grammarly-vs-writesonic",
+      "destination": "/compare/grammarly-vs-writesonic.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/hemingway-vs-prowritingaid",
+      "destination": "/compare/hemingway-vs-prowritingaid.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/hemingway-vs-quillbot",
+      "destination": "/compare/hemingway-vs-quillbot.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/hostinger-vs-systeme",
+      "destination": "/compare/hostinger-vs-systeme.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/hubspot-vs-systeme",
+      "destination": "/compare/hubspot-vs-systeme.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/ifttt-vs-make",
+      "destination": "/compare/ifttt-vs-make.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/ifttt-vs-n8n",
+      "destination": "/compare/ifttt-vs-n8n.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/ifttt-vs-zapier",
+      "destination": "/compare/ifttt-vs-zapier.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/invideo-vs-runway",
+      "destination": "/compare/invideo-vs-runway.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/jasper-vs-semrush",
+      "destination": "/compare/jasper-vs-semrush.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/kapwing-vs-runway",
+      "destination": "/compare/kapwing-vs-runway.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/kit-vs-mailchimp",
+      "destination": "/compare/kit-vs-mailchimp.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/leonardo-vs-midjourney",
+      "destination": "/compare/leonardo-vs-midjourney.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/make-vs-n8n",
+      "destination": "/compare/make-vs-n8n.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/make-vs-zapier",
+      "destination": "/compare/make-vs-zapier.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/monday-vs-notion",
+      "destination": "/compare/monday-vs-notion.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/mozpro-vs-screamingfrog",
+      "destination": "/compare/mozpro-vs-screamingfrog.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/mozpro-vs-semrush",
+      "destination": "/compare/mozpro-vs-semrush.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/mozpro-vs-surferseo",
+      "destination": "/compare/mozpro-vs-surferseo.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/n8n-vs-zapier",
+      "destination": "/compare/n8n-vs-zapier.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/notebooklm-vs-perplexity",
+      "destination": "/compare/notebooklm-vs-perplexity.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/notion-vs-todoist",
+      "destination": "/compare/notion-vs-todoist.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/prowritingaid-vs-quillbot",
+      "destination": "/compare/prowritingaid-vs-quillbot.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/prowritingaid-vs-writesonic",
+      "destination": "/compare/prowritingaid-vs-writesonic.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/quillbot-vs-writesonic",
+      "destination": "/compare/quillbot-vs-writesonic.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/runway-vs-synthesia",
+      "destination": "/compare/runway-vs-synthesia.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/screamingfrog-vs-semrush",
+      "destination": "/compare/screamingfrog-vs-semrush.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/semrush-vs-surferseo",
+      "destination": "/compare/semrush-vs-surferseo.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/squarespace-vs-webflow",
+      "destination": "/compare/squarespace-vs-webflow.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/add-voice-to-videos",
+      "destination": "/goals/add-voice-to-videos.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/adobeexpress",
+      "destination": "/tools/adobeexpress.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/adobeexpress.html",
+      "destination": "/tools/adobeexpress.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/ahrefs",
+      "destination": "/tools/ahrefs.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/ahrefs.html",
+      "destination": "/tools/ahrefs.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/asana",
+      "destination": "/tools/asana.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/asana.html",
+      "destination": "/tools/asana.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/beehiiv",
+      "destination": "/tools/beehiiv.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/beehiiv.html",
+      "destination": "/tools/beehiiv.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/brevo",
+      "destination": "/tools/brevo.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/brevo.html",
+      "destination": "/tools/brevo.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/canva",
+      "destination": "/tools/canva.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/canva.html",
+      "destination": "/tools/canva.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/chatgpt",
+      "destination": "/tools/chatgpt.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/chatgpt.html",
+      "destination": "/tools/chatgpt.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/claude",
+      "destination": "/tools/claude.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/claude.html",
+      "destination": "/tools/claude.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/clickup",
+      "destination": "/tools/clickup.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/clickup.html",
+      "destination": "/tools/clickup.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/copyai",
+      "destination": "/tools/copyai.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/copyai.html",
+      "destination": "/tools/copyai.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/descript",
+      "destination": "/tools/descript.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/descript.html",
+      "destination": "/tools/descript.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/edit-video-podcasts",
+      "destination": "/goals/edit-video-podcasts.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/elevenlabs",
+      "destination": "/tools/elevenlabs.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/elevenlabs.html",
+      "destination": "/tools/elevenlabs.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/figma",
+      "destination": "/tools/figma.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/figma.html",
+      "destination": "/tools/figma.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/fireflies",
+      "destination": "/tools/fireflies.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/fireflies.html",
+      "destination": "/tools/fireflies.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/framer",
+      "destination": "/tools/framer.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/framer.html",
+      "destination": "/tools/framer.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/gemini",
+      "destination": "/tools/gemini.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/gemini.html",
+      "destination": "/tools/gemini.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/get-search-traffic",
+      "destination": "/goals/get-search-traffic.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/grammarly",
+      "destination": "/tools/grammarly.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/grammarly.html",
+      "destination": "/tools/grammarly.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/hemingway",
+      "destination": "/tools/hemingway.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/hemingway.html",
+      "destination": "/tools/hemingway.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/hostinger",
+      "destination": "/tools/hostinger.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/hostinger.html",
+      "destination": "/tools/hostinger.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/hubspot",
+      "destination": "/tools/hubspot.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/hubspot.html",
+      "destination": "/tools/hubspot.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/ifttt",
+      "destination": "/tools/ifttt.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/ifttt.html",
+      "destination": "/tools/ifttt.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/invideo",
+      "destination": "/tools/invideo.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/invideo.html",
+      "destination": "/tools/invideo.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/jasper",
+      "destination": "/tools/jasper.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/jasper.html",
+      "destination": "/tools/jasper.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/kapwing",
+      "destination": "/tools/kapwing.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/kapwing.html",
+      "destination": "/tools/kapwing.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/kit",
+      "destination": "/tools/kit.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/kit.html",
+      "destination": "/tools/kit.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/launch-a-website",
+      "destination": "/goals/launch-a-website.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/launch-online-course",
+      "destination": "/goals/launch-online-course.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/leonardo",
+      "destination": "/tools/leonardo.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/leonardo.html",
+      "destination": "/tools/leonardo.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/mailchimp",
+      "destination": "/tools/mailchimp.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/mailchimp.html",
+      "destination": "/tools/mailchimp.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/make",
+      "destination": "/tools/make.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/make.html",
+      "destination": "/tools/make.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/midjourney",
+      "destination": "/tools/midjourney.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/midjourney.html",
+      "destination": "/tools/midjourney.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/monday",
+      "destination": "/tools/monday.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/monday.html",
+      "destination": "/tools/monday.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/mozpro",
+      "destination": "/tools/mozpro.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/mozpro.html",
+      "destination": "/tools/mozpro.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/n8n",
+      "destination": "/tools/n8n.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/n8n.html",
+      "destination": "/tools/n8n.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/notebooklm",
+      "destination": "/tools/notebooklm.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/notebooklm.html",
+      "destination": "/tools/notebooklm.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/notion",
+      "destination": "/tools/notion.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/notion.html",
+      "destination": "/tools/notion.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/organise-my-work",
+      "destination": "/goals/organise-my-work.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/otter",
+      "destination": "/tools/otter.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/otter.html",
+      "destination": "/tools/otter.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/perplexity",
+      "destination": "/tools/perplexity.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/perplexity.html",
+      "destination": "/tools/perplexity.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/prowritingaid",
+      "destination": "/tools/prowritingaid.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/prowritingaid.html",
+      "destination": "/tools/prowritingaid.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/quillbot",
+      "destination": "/tools/quillbot.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/quillbot.html",
+      "destination": "/tools/quillbot.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/removebg",
+      "destination": "/tools/removebg.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/removebg.html",
+      "destination": "/tools/removebg.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/runway",
+      "destination": "/tools/runway.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/runway.html",
+      "destination": "/tools/runway.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/screamingfrog",
+      "destination": "/tools/screamingfrog.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/screamingfrog.html",
+      "destination": "/tools/screamingfrog.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/sell-online",
+      "destination": "/goals/sell-online.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/semrush",
+      "destination": "/tools/semrush.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/semrush.html",
+      "destination": "/tools/semrush.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/squarespace",
+      "destination": "/tools/squarespace.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/squarespace.html",
+      "destination": "/tools/squarespace.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/surferseo",
+      "destination": "/tools/surferseo.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/surferseo.html",
+      "destination": "/tools/surferseo.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/synthesia",
+      "destination": "/tools/synthesia.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/synthesia.html",
+      "destination": "/tools/synthesia.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/systeme",
+      "destination": "/tools/systeme.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/systeme.html",
+      "destination": "/tools/systeme.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/todoist",
+      "destination": "/tools/todoist.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/todoist.html",
+      "destination": "/tools/todoist.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/webflow",
+      "destination": "/tools/webflow.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/webflow.html",
+      "destination": "/tools/webflow.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/write-ad-copy",
+      "destination": "/goals/write-ad-copy.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/write-better-english",
+      "destination": "/goals/write-better-english.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/writesonic",
+      "destination": "/tools/writesonic.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/writesonic.html",
+      "destination": "/tools/writesonic.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/zapier",
+      "destination": "/tools/zapier.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/zapier.html",
+      "destination": "/tools/zapier.html",
+      "permanent": true
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html",
+      "permanent": true
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/adobeexpress",
+      "destination": "/tools/adobeexpress.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/ahrefs",
+      "destination": "/tools/ahrefs.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/asana",
+      "destination": "/tools/asana.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/beehiiv",
+      "destination": "/tools/beehiiv.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/brevo",
+      "destination": "/tools/brevo.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/canva",
+      "destination": "/tools/canva.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/chatgpt",
+      "destination": "/tools/chatgpt.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/claude",
+      "destination": "/tools/claude.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/clickup",
+      "destination": "/tools/clickup.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/copyai",
+      "destination": "/tools/copyai.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/descript",
+      "destination": "/tools/descript.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/elevenlabs",
+      "destination": "/tools/elevenlabs.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/figma",
+      "destination": "/tools/figma.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/fireflies",
+      "destination": "/tools/fireflies.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/framer",
+      "destination": "/tools/framer.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/gemini",
+      "destination": "/tools/gemini.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/grammarly",
+      "destination": "/tools/grammarly.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/hemingway",
+      "destination": "/tools/hemingway.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/hostinger",
+      "destination": "/tools/hostinger.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/hubspot",
+      "destination": "/tools/hubspot.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/ifttt",
+      "destination": "/tools/ifttt.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/invideo",
+      "destination": "/tools/invideo.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/jasper",
+      "destination": "/tools/jasper.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/kapwing",
+      "destination": "/tools/kapwing.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/kit",
+      "destination": "/tools/kit.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/leonardo",
+      "destination": "/tools/leonardo.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/mailchimp",
+      "destination": "/tools/mailchimp.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/make",
+      "destination": "/tools/make.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/midjourney",
+      "destination": "/tools/midjourney.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/monday",
+      "destination": "/tools/monday.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/mozpro",
+      "destination": "/tools/mozpro.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/n8n",
+      "destination": "/tools/n8n.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/notebooklm",
+      "destination": "/tools/notebooklm.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/notion",
+      "destination": "/tools/notion.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/otter",
+      "destination": "/tools/otter.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/perplexity",
+      "destination": "/tools/perplexity.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/prowritingaid",
+      "destination": "/tools/prowritingaid.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/quillbot",
+      "destination": "/tools/quillbot.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/removebg",
+      "destination": "/tools/removebg.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/runway",
+      "destination": "/tools/runway.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/screamingfrog",
+      "destination": "/tools/screamingfrog.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/semrush",
+      "destination": "/tools/semrush.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/squarespace",
+      "destination": "/tools/squarespace.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/surferseo",
+      "destination": "/tools/surferseo.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/synthesia",
+      "destination": "/tools/synthesia.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/systeme",
+      "destination": "/tools/systeme.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/todoist",
+      "destination": "/tools/todoist.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/webflow",
+      "destination": "/tools/webflow.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/writesonic",
+      "destination": "/tools/writesonic.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/zapier",
+      "destination": "/tools/zapier.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives",
+      "destination": "/alternatives/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/",
+      "destination": "/alternatives/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/index",
+      "destination": "/alternatives/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/best",
+      "destination": "/best/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/",
+      "destination": "/best/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/index",
+      "destination": "/best/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/category",
+      "destination": "/category/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/",
+      "destination": "/category/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/index",
+      "destination": "/category/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare",
+      "destination": "/compare/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/",
+      "destination": "/compare/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/index",
+      "destination": "/compare/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals",
+      "destination": "/goals/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/",
+      "destination": "/goals/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/index",
+      "destination": "/goals/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools",
+      "destination": "/tools/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/",
+      "destination": "/tools/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/tools/index",
+      "destination": "/tools/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "destination": "/index.html",
+      "permanent": true
+    }
+  ]
+}
