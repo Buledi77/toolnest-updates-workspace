@@ -1,5 +1,5 @@
 ﻿User-agent: *
 Allow: /
 
-Sitemap: https://toolnestai.tech/sitemap.xml
+Sitemap: https://www.toolnestai.tech/sitemap.xml
 
