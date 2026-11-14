@@ -394,4 +394,3 @@ http://toolnest-ai-hub.netlify.app/* https://www.toolnestai.tech/:splat 301!
 /index / 301!
 
 # Existing homepage rewrite.
-/ /index.html 200
