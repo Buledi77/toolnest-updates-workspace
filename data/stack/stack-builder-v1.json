@@ -1,0 +1,26 @@
+{
+  "schema_version": "toolnest-stack-builder-v1",
+  "requirements": [
+    {
+      "id": "content-workflow",
+      "label": "Content workflow",
+      "signals": ["writing", "design", "video"],
+      "preferred_categories": ["Writing", "Design", "Voice & Video"],
+      "max_tools": 3
+    },
+    {
+      "id": "website-launch",
+      "label": "Website launch",
+      "signals": ["website", "hosting", "app building"],
+      "preferred_categories": ["Hosting", "Website Builder", "Developer Tools"],
+      "max_tools": 3
+    },
+    {
+      "id": "research-and-knowledge",
+      "label": "Research and knowledge",
+      "signals": ["research", "knowledge", "search"],
+      "preferred_categories": ["Research", "AI Assistants", "Productivity"],
+      "max_tools": 3
+    }
+  ]
+}

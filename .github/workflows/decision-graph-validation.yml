@@ -1,0 +1,88 @@
+name: Decision Graph validation
+
+on:
+  pull_request:
+    paths:
+      - "data/schemas/**"
+      - "data/evidence/**"
+      - "data/changes/**"
+      - "data/tools-v2/**"
+      - "data/taxonomy/**"
+      - "data/recommendations/**"
+      - "data/monetization/**"
+      - "data/publishing/**"
+      - "data/intake/**"
+      - "data/stack/**"
+      - "data/analytics/**"
+      - "data/migrations/**"
+      - "scripts/build_search_index.py"
+      - "scripts/recommend_tasks.py"
+      - "scripts/decision_graph_common.py"
+      - "scripts/validate_decision_graph.py"
+      - "scripts/validate_evidence_ledger.py"
+      - "scripts/check_freshness.py"
+      - "scripts/check_affiliate_separation.py"
+      - "scripts/check_legacy_parity.py"
+      - "scripts/check_publishability.py"
+      - "scripts/validate_taxonomy.py"
+      - "scripts/build_affiliate_registry.py"
+      - "scripts/check_affiliate_registry.py"
+      - "scripts/check_publishing_registry.py"
+      - "scripts/ingest_catalog_candidates.py"
+      - "scripts/validate_analytics_taxonomy.py"
+      - "scripts/directory_adapter.py"
+      - "scripts/check_catalog_integrity.py"
+      - "scripts/check_site_quality.py"
+      - "tests/test_search_and_publishability.py"
+      - "tests/test_site_quality.py"
+      - "tests/test_catalog_intake.py"
+      - "tests/test_stack_builder.py"
+      - "tests/test_directory_adapter.py"
+      - "tests/test_decision_graph.py"
+      - ".github/workflows/decision-graph-validation.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate Decision Graph
+        run: python3 scripts/validate_decision_graph.py
+      - name: Validate evidence ledger
+        run: python3 scripts/validate_evidence_ledger.py
+      - name: Check evidence freshness
+        run: python3 scripts/check_freshness.py
+      - name: Check affiliate separation
+        run: python3 scripts/check_affiliate_separation.py
+      - name: Validate taxonomy
+        run: python3 scripts/validate_taxonomy.py
+      - name: Build affiliate registry
+        run: python3 scripts/build_affiliate_registry.py
+      - name: Check affiliate registry
+        run: python3 scripts/check_affiliate_registry.py
+      - name: Check publishing registry
+        run: python3 scripts/check_publishing_registry.py
+      - name: Validate catalog intake
+        run: python3 scripts/ingest_catalog_candidates.py --offline
+      - name: Validate analytics taxonomy
+        run: python3 scripts/validate_analytics_taxonomy.py
+      - name: Check catalog integrity
+        run: python3 scripts/check_catalog_integrity.py
+      - name: Check migration parity
+        run: python3 scripts/check_legacy_parity.py
+      - name: Check publishability
+        run: python3 scripts/check_publishability.py
+      - name: Build search index
+        run: python3 scripts/build_search_index.py
+      - name: Check site quality
+        run: python3 scripts/check_site_quality.py
+      - name: Run tests
+        run: python3 -m unittest discover -s tests -p 'test_*.py'

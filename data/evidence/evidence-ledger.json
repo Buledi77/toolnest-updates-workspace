@@ -1,0 +1,495 @@
+{
+  "schema_version": "evidence-ledger-v1",
+  "sources": [
+    {
+      "source_id": "hostinger-pricing",
+      "url": "https://www.hostinger.com/pricing",
+      "source_type": "official_pricing",
+      "publisher": "Hostinger",
+      "official": true,
+      "accessed_at": "2026-11-14",
+      "verified_at": "2026-11-14",
+      "region": "global-display-example",
+      "currency": "USD",
+      "billing_term": "48-month prepaid term",
+      "status": "active",
+      "source_history": []
+    },
+    {
+      "source_id": "hostinger-web-hosting",
+      "url": "https://www.hostinger.com/web-hosting",
+      "source_type": "official_product",
+      "publisher": "Hostinger",
+      "official": true,
+      "accessed_at": "2026-11-14",
+      "verified_at": "2026-11-14",
+      "region": "global-display-example",
+      "currency": "USD",
+      "billing_term": "varies by selected term",
+      "status": "active",
+      "source_history": []
+    },
+    {
+      "source_id": "hostinger-ai-builder",
+      "url": "https://www.hostinger.com/ai-website-builder",
+      "source_type": "official_product",
+      "publisher": "Hostinger",
+      "official": true,
+      "accessed_at": "2026-11-14",
+      "verified_at": "2026-11-14",
+      "region": null,
+      "currency": null,
+      "billing_term": null,
+      "status": "active",
+      "source_history": []
+    },
+    {
+      "source_id": "hostinger-hosting-agreement",
+      "url": "https://www.hostinger.com/legal/hosting-agreement",
+      "source_type": "official_legal",
+      "publisher": "Hostinger",
+      "official": true,
+      "accessed_at": "2026-11-14",
+      "verified_at": "2026-11-14",
+      "region": null,
+      "currency": null,
+      "billing_term": null,
+      "status": "active",
+      "source_history": []
+    },
+    {
+      "source_id": "semrush-pricing",
+      "url": "https://www.semrush.com/pricing/",
+      "source_type": "official_pricing",
+      "publisher": "Semrush",
+      "official": true,
+      "accessed_at": "2026-11-14",
+      "verified_at": "2026-11-14",
+      "region": "global-display-example",
+      "currency": "USD",
+      "billing_term": "monthly and annual billing options displayed",
+      "status": "active",
+      "source_history": []
+    },
+    {
+      "source_id": "semrush-ai-visibility-pricing",
+      "url": "https://www.semrush.com/pricing/ai/",
+      "source_type": "official_pricing",
+      "publisher": "Semrush",
+      "official": true,
+      "accessed_at": "2026-11-14",
+      "verified_at": "2026-11-14",
+      "region": "global-display-example",
+      "currency": "USD",
+      "billing_term": "billed annually",
+      "status": "active",
+      "source_history": []
+    },
+    {
+      "source_id": "moz-pro-pricing",
+      "url": "https://moz.com/products/pro/pricing",
+      "source_type": "official_pricing",
+      "publisher": "Moz",
+      "official": true,
+      "accessed_at": "2026-11-14",
+      "verified_at": "2026-11-14",
+      "region": "global-display-example",
+      "currency": "USD",
+      "billing_term": "monthly and yearly billing options displayed",
+      "status": "active",
+      "source_history": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "hostinger-capabilities",
+      "tool_id": "hostinger",
+      "field_path": "factual_profile.capabilities",
+      "claim_type": "capability",
+      "value": [
+        "web hosting",
+        "managed WordPress hosting",
+        "cloud hosting",
+        "VPS hosting",
+        "domains",
+        "business email",
+        "AI-assisted website builder"
+      ],
+      "source_ids": [
+        "hostinger-web-hosting",
+        "hostinger-ai-builder"
+      ],
+      "region": null,
+      "currency": null,
+      "billing_term": null,
+      "supporting_excerpt": "Hostinger's product and AI Builder pages list hosting products, domains, email and AI-assisted site creation.",
+      "evidence_note": "The exact feature set depends on product and plan.",
+      "accessed_at": "2026-11-14",
+      "verified_at": "2026-11-14",
+      "stale_after": "2026-12-14",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "hostinger-billing-context",
+      "tool_id": "hostinger",
+      "field_path": "factual_profile.pricing_status",
+      "claim_type": "billing",
+      "value": "Displayed monthly figures are the upfront total divided by a 48-month prepaid term in the captured example; renewal rates are shown separately.",
+      "source_ids": [
+        "hostinger-pricing"
+      ],
+      "region": "global-display-example",
+      "currency": "USD",
+      "billing_term": "48-month prepaid term",
+      "supporting_excerpt": "The pricing page displays 48-month prepaid examples and renewal rates.",
+      "evidence_note": "Promotions, taxes, currency, region, fair-use rules and checkout terms can vary.",
+      "accessed_at": "2026-11-14",
+      "verified_at": "2026-11-14",
+      "stale_after": "2026-12-14",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "hostinger-plan-examples",
+      "tool_id": "hostinger",
+      "field_path": "factual_profile.pricing_status",
+      "claim_type": "pricing",
+      "value": {
+        "term": "48-month prepaid",
+        "plans": [
+          {
+            "name": "Premium",
+            "displayed_monthly_usd": 1.99,
+            "upfront_usd": 95.52,
+            "renewal_monthly_usd": 10.99,
+            "selected_limits": [
+              "3 websites",
+              "20 GB SSD",
+              "weekly backups",
+              "500 AI credits"
+            ]
+          },
+          {
+            "name": "Unlimited",
+            "displayed_monthly_usd": 2.79,
+            "upfront_usd": 133.92,
+            "renewal_monthly_usd": 16.99,
+            "selected_limits": [
+              "unlimited websites",
+              "50 GB NVMe",
+              "daily backups",
+              "1000 AI credits"
+            ]
+          },
+          {
+            "name": "Cloud Startup",
+            "displayed_monthly_usd": 7.99,
+            "upfront_usd": 383.52,
+            "renewal_monthly_usd": 25.99,
+            "selected_limits": [
+              "unlimited websites",
+              "100 GB NVMe",
+              "daily and on-demand backups",
+              "2000 AI credits"
+            ]
+          }
+        ]
+      },
+      "source_ids": [
+        "hostinger-pricing"
+      ],
+      "region": "global-display-example",
+      "currency": "USD",
+      "billing_term": "48-month prepaid term",
+      "supporting_excerpt": "Displayed plan cards and comparison table on the official pricing page.",
+      "evidence_note": "These are captured examples, not a universal month-to-month price or guarantee of regional checkout terms.",
+      "accessed_at": "2026-11-14",
+      "verified_at": "2026-11-14",
+      "stale_after": "2026-12-14",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "hostinger-builder-features",
+      "tool_id": "hostinger",
+      "field_path": "factual_profile.capabilities",
+      "claim_type": "feature",
+      "value": [
+        "AI-assisted site creation",
+        "text and image editing",
+        "templates",
+        "localization",
+        "test environments",
+        "SEO and AI-search visibility",
+        "analytics integrations"
+      ],
+      "source_ids": [
+        "hostinger-ai-builder"
+      ],
+      "region": null,
+      "currency": null,
+      "billing_term": null,
+      "supporting_excerpt": "The official AI Builder page lists AI-assisted creation, editing, templates, localization, test environments and integrations.",
+      "evidence_note": "Plan-specific AI credits and ecommerce features must be checked separately.",
+      "accessed_at": "2026-11-14",
+      "verified_at": "2026-11-14",
+      "stale_after": "2026-12-14",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "hostinger-ecommerce-caveat",
+      "tool_id": "hostinger",
+      "field_path": "factual_profile.limitations",
+      "claim_type": "limitation",
+      "value": "Ecommerce availability and limits vary by plan; do not assume every payment, product, shipping, tax or checkout feature is included.",
+      "source_ids": [
+        "hostinger-pricing",
+        "hostinger-ai-builder"
+      ],
+      "region": null,
+      "currency": null,
+      "billing_term": null,
+      "supporting_excerpt": "The official comparison presents plan-specific ecommerce differences.",
+      "evidence_note": "The record intentionally preserves the caveat instead of inferring feature parity.",
+      "accessed_at": "2026-11-14",
+      "verified_at": "2026-11-14",
+      "stale_after": "2026-12-14",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "hostinger-fair-use",
+      "tool_id": "hostinger",
+      "field_path": "factual_profile.limitations",
+      "claim_type": "limitation",
+      "value": "Unlimited features remain subject to Hostinger's Fair Usage Policy.",
+      "source_ids": [
+        "hostinger-hosting-agreement"
+      ],
+      "region": null,
+      "currency": null,
+      "billing_term": null,
+      "supporting_excerpt": "Hosting agreement and Fair Usage Policy govern plan use.",
+      "evidence_note": null,
+      "accessed_at": "2026-11-14",
+      "verified_at": "2026-11-14",
+      "stale_after": "2027-02-14",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "semrush-current-plan-structure",
+      "tool_id": "semrush",
+      "field_path": "factual_profile.pricing_status",
+      "claim_type": "pricing",
+      "value": {
+        "plans": [
+          {
+            "name": "Free",
+            "monthly_usd": 0,
+            "projects": 1,
+            "reports_per_day": 10
+          },
+          {
+            "name": "SEO",
+            "monthly_usd": 139,
+            "annual_monthly_equivalent_usd": 117.33,
+            "websites": 5,
+            "daily_tracked_keywords": 500
+          },
+          {
+            "name": "Starter",
+            "monthly_usd": 199,
+            "annual_monthly_equivalent_usd": 165.17,
+            "websites": 5,
+            "daily_tracked_keywords": 500,
+            "daily_ai_prompts": 50
+          },
+          {
+            "name": "Pro+",
+            "monthly_usd": 299,
+            "annual_monthly_equivalent_usd": 248.17,
+            "websites": 15,
+            "daily_tracked_keywords": 1500,
+            "daily_ai_prompts": 100
+          },
+          {
+            "name": "Advanced",
+            "price": "custom",
+            "websites": "40+",
+            "daily_tracked_keywords": "5000+",
+            "daily_ai_prompts": "unlimited"
+          }
+        ]
+      },
+      "source_ids": [
+        "semrush-pricing"
+      ],
+      "region": "global-display-example",
+      "currency": "USD",
+      "billing_term": "monthly and annual billing options displayed",
+      "supporting_excerpt": "Current Semrush pricing page displayed Free, SEO, Starter, Pro+ and Advanced structures with the listed quotas.",
+      "evidence_note": "Taxes, regional prices, promotions and plan changes can alter checkout terms.",
+      "accessed_at": "2026-11-14",
+      "verified_at": "2026-11-14",
+      "stale_after": "2026-12-14",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "semrush-ai-visibility-addon",
+      "tool_id": "semrush",
+      "field_path": "factual_profile.capabilities",
+      "claim_type": "feature",
+      "value": {
+        "name": "AI Visibility Base",
+        "monthly_usd_per_domain_billed_annually": 99,
+        "daily_custom_prompts": 25,
+        "brand_performance_domains": 1,
+        "surfaces": [
+          "ChatGPT",
+          "Google AI",
+          "Gemini",
+          "Perplexity"
+        ],
+        "includes": [
+          "AI competitor and prompt research",
+          "AI-readiness site audit"
+        ]
+      },
+      "source_ids": [
+        "semrush-ai-visibility-pricing"
+      ],
+      "region": "global-display-example",
+      "currency": "USD",
+      "billing_term": "billed annually",
+      "supporting_excerpt": "Semrush AI Visibility pricing page lists the Base plan, prompts, domain and surfaces.",
+      "evidence_note": "This is separate from all core SEO-plan allowances.",
+      "accessed_at": "2026-11-14",
+      "verified_at": "2026-11-14",
+      "stale_after": "2026-12-14",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "semrush-workflow-coverage",
+      "tool_id": "semrush",
+      "field_path": "factual_profile.capabilities",
+      "claim_type": "capability",
+      "value": [
+        "keyword research",
+        "competitor research",
+        "Position Tracking",
+        "Site Audit",
+        "AI-search visibility",
+        "content optimization",
+        "keyword cannibalization analysis",
+        "advanced API integration on listed higher tier"
+      ],
+      "source_ids": [
+        "semrush-pricing"
+      ],
+      "region": null,
+      "currency": null,
+      "billing_term": null,
+      "supporting_excerpt": "The current pricing page lists these workflows across the plan family.",
+      "evidence_note": "Exact availability and limits are plan-specific.",
+      "accessed_at": "2026-11-14",
+      "verified_at": "2026-11-14",
+      "stale_after": "2026-12-14",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "moz-pro-plan-structure",
+      "tool_id": "moz-pro",
+      "field_path": "factual_profile.pricing_status",
+      "claim_type": "pricing",
+      "value": {
+        "plans": [
+          {
+            "name": "Standard",
+            "monthly_usd": 99,
+            "annual_monthly_equivalent_usd": 79,
+            "tracked_sites": 3,
+            "tracked_keywords": 300,
+            "pages_crawled_monthly": 400000
+          },
+          {
+            "name": "Medium",
+            "monthly_usd": 179,
+            "annual_monthly_equivalent_usd": 143,
+            "tracked_sites": 10,
+            "tracked_keywords": 1500,
+            "pages_crawled_monthly": 2000000
+          },
+          {
+            "name": "Large",
+            "monthly_usd": 299,
+            "annual_monthly_equivalent_usd": 239,
+            "tracked_sites": 25,
+            "tracked_keywords": 3000,
+            "pages_crawled_monthly": 5000000
+          }
+        ],
+        "starter_monthly_usd": 49
+      },
+      "source_ids": [
+        "moz-pro-pricing"
+      ],
+      "region": "global-display-example",
+      "currency": "USD",
+      "billing_term": "monthly and yearly billing options displayed",
+      "supporting_excerpt": "Moz Pro pricing page displayed Standard, Medium, Large and a starter option with the listed quotas.",
+      "evidence_note": "Plan names, prices, quotas and add-ons require rechecking before publication.",
+      "accessed_at": "2026-11-14",
+      "verified_at": "2026-11-14",
+      "stale_after": "2026-12-14",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "moz-pro-ai-visibility",
+      "tool_id": "moz-pro",
+      "field_path": "factual_profile.capabilities",
+      "claim_type": "feature",
+      "value": [
+        "AI visibility dashboards",
+        "tracked prompts",
+        "GPT tracking",
+        "Gemini tracking",
+        "Google AI Mode tracking",
+        "AI content briefs on applicable tiers"
+      ],
+      "source_ids": [
+        "moz-pro-pricing"
+      ],
+      "region": null,
+      "currency": null,
+      "billing_term": null,
+      "supporting_excerpt": "The current Moz Pro pricing page lists AI visibility and prompt-related features by tier.",
+      "evidence_note": "The exact tier and quota should be checked when a page makes a plan-specific claim.",
+      "accessed_at": "2026-11-14",
+      "verified_at": "2026-11-14",
+      "stale_after": "2026-12-14",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    }
+  ],
+  "disputes": [],
+  "replacements": [],
+  "audit_trail": []
+}
