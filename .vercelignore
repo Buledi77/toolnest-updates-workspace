@@ -1,0 +1,11 @@
+_headers
+_redirects
+docs/
+reports/
+tests/
+scripts/
+.env*
+*.md
+TOOLNEST-*.txt
+data/*
+!data/tools-v1.json

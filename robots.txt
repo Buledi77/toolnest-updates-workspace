@@ -1,4 +1,4 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
 
 # AI search and retrieval crawlers may access the public editorial corpus.

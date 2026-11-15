@@ -1,0 +1,144 @@
+#!/usr/bin/env python3
+"""Fail-fast quality checks for the built static site."""
+
+from __future__ import annotations
+
+import re
+import sys
+from collections import Counter
+from html.parser import HTMLParser
+from pathlib import Path
+from urllib.parse import urlparse
+import xml.etree.ElementTree as ET
+
+ROOT = Path(__file__).resolve().parents[1]
+PUBLIC_HOST = "www.toolnestai.tech"
+EXTENSIONS = {".html", ".xml", ".txt", ".json", ".css", ".js"}
+SKIP_SEO = {"googlef7f3d54afb5d5344.html"}
+
+
+class Parser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.title = []
+        self.descriptions = []
+        self.canonicals = []
+        self.h1_count = 0
+        self.lang = None
+        self.links = []
+        self.robots = ""
+        self.in_title = False
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == "html":
+            self.lang = attrs.get("lang")
+        elif tag == "title":
+            self.in_title = True
+        elif tag == "h1":
+            self.h1_count += 1
+        elif tag == "meta":
+            if attrs.get("name", "").lower() == "description":
+                self.descriptions.append(attrs.get("content", ""))
+            if attrs.get("name", "").lower() == "robots":
+                self.robots = attrs.get("content", "")
+        elif tag == "link" and "canonical" in attrs.get("rel", "").split():
+            self.canonicals.append(attrs.get("href", ""))
+        elif tag == "a":
+            self.links.append((attrs.get("href", ""), attrs.get("rel", "").split(), attrs.get("target")))
+
+    def handle_endtag(self, tag):
+        if tag == "title":
+            self.in_title = False
+
+    def handle_data(self, data):
+        if self.in_title:
+            self.title.append(data)
+
+
+def file_for_url(href: str, source: Path) -> Path | None:
+    parsed = urlparse(href)
+    if parsed.scheme or parsed.netloc:
+        if parsed.netloc and parsed.netloc not in {PUBLIC_HOST, "toolnestai.tech"}:
+            return None
+        href = parsed.path
+    else:
+        href = parsed.path
+    if not href.startswith("/"):
+        return None
+    target = ROOT / href.lstrip("/")
+    if parsed.path.endswith("/"):
+        target /= "index.html"
+    elif not target.exists() and target.suffix == "":
+        target = target.with_suffix(".html")
+    return target
+
+
+def main() -> int:
+    failures: list[str] = []
+    files = [p for p in ROOT.rglob("*") if p.is_file() and ".git" not in p.parts]
+    for path in files:
+        if path.suffix in EXTENSIONS and path.read_bytes().startswith(b"\xef\xbb\xbf"):
+            failures.append(f"BOM: {path.relative_to(ROOT)}")
+    pages = []
+    titles = []
+    descriptions = []
+    for path in sorted(ROOT.rglob("*.html")):
+        if path.relative_to(ROOT).as_posix() in SKIP_SEO:
+            continue
+        parser = Parser()
+        parser.feed(path.read_text(encoding="utf-8"))
+        title = "".join(parser.title).strip()
+        description = parser.descriptions[0] if parser.descriptions else ""
+        if len(parser.title) == 0 or not 50 <= len(title) <= 60:
+            failures.append(f"title: {path.relative_to(ROOT)} ({len(title)})")
+        if len(parser.descriptions) != 1 or not 140 <= len(description) <= 160:
+            failures.append(f"description: {path.relative_to(ROOT)} ({len(description)})")
+        if len(parser.canonicals) != 1 or not parser.canonicals[0].startswith("https://www.toolnestai.tech/"):
+            failures.append(f"canonical: {path.relative_to(ROOT)}")
+        if parser.h1_count != 1:
+            failures.append(f"h1: {path.relative_to(ROOT)} ({parser.h1_count})")
+        if parser.lang != "en":
+            failures.append(f"lang: {path.relative_to(ROOT)}")
+        if not re.search(r'property="og:image" content="https://www\.toolnestai\.tech/assets/og-default\.png"', path.read_text(encoding="utf-8")):
+            failures.append(f"og:image: {path.relative_to(ROOT)}")
+        titles.append((title, path))
+        descriptions.append((description, path))
+        pages.append((path, parser))
+        for href, rel, target in parser.links:
+            parsed = urlparse(href)
+            external = parsed.scheme in {"http", "https"} and parsed.netloc not in {PUBLIC_HOST, "toolnestai.tech"}
+            if external and ("sponsored" not in rel or "nofollow" not in rel or "noopener" not in rel or target != "_blank"):
+                failures.append(f"vendor-link: {path.relative_to(ROOT)} -> {href}")
+            if not external:
+                target_path = file_for_url(href, path)
+                if target_path and not target_path.exists():
+                    failures.append(f"broken-link: {path.relative_to(ROOT)} -> {href}")
+    for value, count in Counter(v for v, _ in titles).items():
+        if count > 1:
+            failures.append(f"duplicate-title: {value}")
+    for value, count in Counter(v for v, _ in descriptions).items():
+        if count > 1:
+            failures.append(f"duplicate-description: {value}")
+    sitemap = ROOT / "sitemap.xml"
+    try:
+        tree = ET.parse(sitemap)
+        for url in tree.getroot():
+            loc = next((child.text for child in url if child.tag.endswith("loc")), "")
+            target = file_for_url(loc or "", ROOT / "sitemap.xml")
+            if not target or not target.exists():
+                failures.append(f"sitemap-missing: {loc}")
+            elif "noindex" in next((p.robots for page, p in pages if page == target), "").lower():
+                failures.append(f"sitemap-noindex: {loc}")
+    except (ET.ParseError, OSError) as exc:
+        failures.append(f"sitemap-invalid: {exc}")
+    if failures:
+        print("\n".join(failures))
+        print(f"QA failed: {len(failures)} issue(s)")
+        return 1
+    print(f"QA passed: {len(pages)} HTML pages, {len(titles)} unique titles, {len(descriptions)} unique descriptions")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

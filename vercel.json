@@ -2,1883 +2,1915 @@
   "redirects": [
     {
       "source": "/compare/semrush-vs-ahrefs.html",
-      "destination": "/compare/ahrefs-vs-semrush.html",
+      "destination": "https://www.toolnestai.tech/compare/ahrefs-vs-semrush.html",
       "permanent": true
     },
     {
       "source": "/compare/semrush-vs-ahrefs",
-      "destination": "/compare/ahrefs-vs-semrush.html",
+      "destination": "https://www.toolnestai.tech/compare/ahrefs-vs-semrush.html",
       "permanent": true
     },
     {
       "source": "/compare/zapier-vs-make.html",
-      "destination": "/compare/make-vs-zapier.html",
+      "destination": "https://www.toolnestai.tech/compare/make-vs-zapier.html",
       "permanent": true
     },
     {
       "source": "/compare/zapier-vs-make",
-      "destination": "/compare/make-vs-zapier.html",
+      "destination": "https://www.toolnestai.tech/compare/make-vs-zapier.html",
       "permanent": true
     },
     {
       "source": "/compare/notion-vs-clickup.html",
-      "destination": "/compare/clickup-vs-notion.html",
+      "destination": "https://www.toolnestai.tech/compare/clickup-vs-notion.html",
       "permanent": true
     },
     {
       "source": "/compare/notion-vs-clickup",
-      "destination": "/compare/clickup-vs-notion.html",
+      "destination": "https://www.toolnestai.tech/compare/clickup-vs-notion.html",
       "permanent": true
     },
     {
       "source": "/compare/canva-vs-adobeexpress.html",
-      "destination": "/compare/adobeexpress-vs-canva.html",
+      "destination": "https://www.toolnestai.tech/compare/adobeexpress-vs-canva.html",
       "permanent": true
     },
     {
       "source": "/compare/canva-vs-adobeexpress",
-      "destination": "/compare/adobeexpress-vs-canva.html",
+      "destination": "https://www.toolnestai.tech/compare/adobeexpress-vs-canva.html",
       "permanent": true
     },
     {
       "source": "/compare/descript-vs-elevenlabs.html",
-      "destination": "/compare/elevenlabs-vs-descript.html",
+      "destination": "https://www.toolnestai.tech/compare/elevenlabs-vs-descript.html",
       "permanent": true
     },
     {
       "source": "/compare/descript-vs-elevenlabs",
-      "destination": "/compare/elevenlabs-vs-descript.html",
+      "destination": "https://www.toolnestai.tech/compare/elevenlabs-vs-descript.html",
       "permanent": true
     },
     {
       "source": "/categories/ai-assistants.html",
-      "destination": "/category/ai-assistants.html",
+      "destination": "https://www.toolnestai.tech/category/ai-assistants.html",
       "permanent": true
     },
     {
       "source": "/categories/ai-assistants",
-      "destination": "/category/ai-assistants.html",
+      "destination": "https://www.toolnestai.tech/category/ai-assistants.html",
       "permanent": true
     },
     {
       "source": "/categories/automation.html",
-      "destination": "/category/automation.html",
+      "destination": "https://www.toolnestai.tech/category/automation.html",
       "permanent": true
     },
     {
       "source": "/categories/automation",
-      "destination": "/category/automation.html",
+      "destination": "https://www.toolnestai.tech/category/automation.html",
       "permanent": true
     },
     {
       "source": "/categories/design.html",
-      "destination": "/category/design.html",
+      "destination": "https://www.toolnestai.tech/category/design.html",
       "permanent": true
     },
     {
       "source": "/categories/design",
-      "destination": "/category/design.html",
+      "destination": "https://www.toolnestai.tech/category/design.html",
       "permanent": true
     },
     {
       "source": "/categories/email-marketing.html",
-      "destination": "/category/email-marketing.html",
+      "destination": "https://www.toolnestai.tech/category/email-marketing.html",
       "permanent": true
     },
     {
       "source": "/categories/email-marketing",
-      "destination": "/category/email-marketing.html",
+      "destination": "https://www.toolnestai.tech/category/email-marketing.html",
       "permanent": true
     },
     {
       "source": "/categories/hosting.html",
-      "destination": "/category/hosting.html",
+      "destination": "https://www.toolnestai.tech/category/hosting.html",
       "permanent": true
     },
     {
       "source": "/categories/hosting",
-      "destination": "/category/hosting.html",
+      "destination": "https://www.toolnestai.tech/category/hosting.html",
       "permanent": true
     },
     {
       "source": "/categories/image-generation.html",
-      "destination": "/category/image-generation.html",
+      "destination": "https://www.toolnestai.tech/category/image-generation.html",
       "permanent": true
     },
     {
       "source": "/categories/image-generation",
-      "destination": "/category/image-generation.html",
+      "destination": "https://www.toolnestai.tech/category/image-generation.html",
       "permanent": true
     },
     {
       "source": "/categories/marketing.html",
-      "destination": "/category/marketing.html",
+      "destination": "https://www.toolnestai.tech/category/marketing.html",
       "permanent": true
     },
     {
       "source": "/categories/marketing",
-      "destination": "/category/marketing.html",
+      "destination": "https://www.toolnestai.tech/category/marketing.html",
       "permanent": true
     },
     {
       "source": "/categories/productivity.html",
-      "destination": "/category/productivity.html",
+      "destination": "https://www.toolnestai.tech/category/productivity.html",
       "permanent": true
     },
     {
       "source": "/categories/productivity",
-      "destination": "/category/productivity.html",
+      "destination": "https://www.toolnestai.tech/category/productivity.html",
       "permanent": true
     },
     {
       "source": "/categories/research.html",
-      "destination": "/category/research.html",
+      "destination": "https://www.toolnestai.tech/category/research.html",
       "permanent": true
     },
     {
       "source": "/categories/research",
-      "destination": "/category/research.html",
+      "destination": "https://www.toolnestai.tech/category/research.html",
       "permanent": true
     },
     {
       "source": "/categories/sales.html",
-      "destination": "/category/sales.html",
+      "destination": "https://www.toolnestai.tech/category/sales.html",
       "permanent": true
     },
     {
       "source": "/categories/sales",
-      "destination": "/category/sales.html",
+      "destination": "https://www.toolnestai.tech/category/sales.html",
       "permanent": true
     },
     {
       "source": "/categories/seo.html",
-      "destination": "/category/seo.html",
+      "destination": "https://www.toolnestai.tech/category/seo.html",
       "permanent": true
     },
     {
       "source": "/categories/seo",
-      "destination": "/category/seo.html",
+      "destination": "https://www.toolnestai.tech/category/seo.html",
       "permanent": true
     },
     {
       "source": "/categories/voice-video.html",
-      "destination": "/category/voice-video.html",
+      "destination": "https://www.toolnestai.tech/category/voice-video.html",
       "permanent": true
     },
     {
       "source": "/categories/voice-video",
-      "destination": "/category/voice-video.html",
+      "destination": "https://www.toolnestai.tech/category/voice-video.html",
       "permanent": true
     },
     {
       "source": "/categories/website-builder.html",
-      "destination": "/category/website-builders.html",
+      "destination": "https://www.toolnestai.tech/category/website-builders.html",
       "permanent": true
     },
     {
       "source": "/categories/website-builder",
-      "destination": "/category/website-builders.html",
+      "destination": "https://www.toolnestai.tech/category/website-builders.html",
       "permanent": true
     },
     {
       "source": "/categories/writing.html",
-      "destination": "/category/writing.html",
+      "destination": "https://www.toolnestai.tech/category/writing.html",
       "permanent": true
     },
     {
       "source": "/categories/writing",
-      "destination": "/category/writing.html",
+      "destination": "https://www.toolnestai.tech/category/writing.html",
       "permanent": true
     },
     {
       "source": "/categories/index.html",
-      "destination": "/category/index.html",
+      "destination": "https://www.toolnestai.tech/category/index.html",
       "permanent": true
     },
     {
       "source": "/categories/index",
-      "destination": "/category/index.html",
+      "destination": "https://www.toolnestai.tech/category/index.html",
       "permanent": true
     },
     {
       "source": "/categories/",
-      "destination": "/category/index.html",
+      "destination": "https://www.toolnestai.tech/category/index.html",
       "permanent": true
     },
     {
       "source": "/categories",
-      "destination": "/category/index.html",
+      "destination": "https://www.toolnestai.tech/category/index.html",
       "permanent": true
     },
     {
       "source": "/about",
-      "destination": "/about.html",
+      "destination": "https://www.toolnestai.tech/about.html",
       "permanent": true
     },
     {
       "source": "/affiliate-disclosure",
-      "destination": "/affiliate-disclosure.html",
+      "destination": "https://www.toolnestai.tech/affiliate-disclosure.html",
       "permanent": true
     },
     {
       "source": "/alternatives/adobeexpress-alternatives",
-      "destination": "/alternatives/adobeexpress-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/adobeexpress-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/ahrefs-alternatives",
-      "destination": "/alternatives/ahrefs-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/ahrefs-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/asana-alternatives",
-      "destination": "/alternatives/asana-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/asana-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/beehiiv-alternatives",
-      "destination": "/alternatives/beehiiv-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/beehiiv-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/brevo-alternatives",
-      "destination": "/alternatives/brevo-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/brevo-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/canva-alternatives",
-      "destination": "/alternatives/canva-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/canva-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/chatgpt-alternatives",
-      "destination": "/alternatives/chatgpt-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/chatgpt-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/claude-alternatives",
-      "destination": "/alternatives/claude-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/claude-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/clickup-alternatives",
-      "destination": "/alternatives/clickup-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/clickup-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/copyai-alternatives",
-      "destination": "/alternatives/copyai-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/copyai-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/descript-alternatives",
-      "destination": "/alternatives/descript-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/descript-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/elevenlabs-alternatives",
-      "destination": "/alternatives/elevenlabs-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/elevenlabs-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/figma-alternatives",
-      "destination": "/alternatives/figma-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/figma-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/fireflies-alternatives",
-      "destination": "/alternatives/fireflies-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/fireflies-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/framer-alternatives",
-      "destination": "/alternatives/framer-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/framer-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/gemini-alternatives",
-      "destination": "/alternatives/gemini-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/gemini-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/grammarly-alternatives",
-      "destination": "/alternatives/grammarly-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/grammarly-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/hemingway-alternatives",
-      "destination": "/alternatives/hemingway-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/hemingway-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/hostinger-alternatives",
-      "destination": "/alternatives/hostinger-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/hostinger-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/hubspot-alternatives",
-      "destination": "/alternatives/hubspot-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/hubspot-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/ifttt-alternatives",
-      "destination": "/alternatives/ifttt-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/ifttt-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/invideo-alternatives",
-      "destination": "/alternatives/invideo-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/invideo-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/jasper-alternatives",
-      "destination": "/alternatives/jasper-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/jasper-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/kapwing-alternatives",
-      "destination": "/alternatives/kapwing-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/kapwing-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/kit-alternatives",
-      "destination": "/alternatives/kit-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/kit-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/leonardo-alternatives",
-      "destination": "/alternatives/leonardo-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/leonardo-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/mailchimp-alternatives",
-      "destination": "/alternatives/mailchimp-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/mailchimp-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/make-alternatives",
-      "destination": "/alternatives/make-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/make-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/midjourney-alternatives",
-      "destination": "/alternatives/midjourney-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/midjourney-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/monday-alternatives",
-      "destination": "/alternatives/monday-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/monday-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/mozpro-alternatives",
-      "destination": "/alternatives/mozpro-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/mozpro-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/n8n-alternatives",
-      "destination": "/alternatives/n8n-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/n8n-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/notebooklm-alternatives",
-      "destination": "/alternatives/notebooklm-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/notebooklm-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/notion-alternatives",
-      "destination": "/alternatives/notion-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/notion-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/otter-alternatives",
-      "destination": "/alternatives/otter-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/otter-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/perplexity-alternatives",
-      "destination": "/alternatives/perplexity-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/perplexity-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/prowritingaid-alternatives",
-      "destination": "/alternatives/prowritingaid-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/prowritingaid-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/quillbot-alternatives",
-      "destination": "/alternatives/quillbot-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/quillbot-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/removebg-alternatives",
-      "destination": "/alternatives/removebg-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/removebg-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/runway-alternatives",
-      "destination": "/alternatives/runway-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/runway-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/screamingfrog-alternatives",
-      "destination": "/alternatives/screamingfrog-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/screamingfrog-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/semrush-alternatives",
-      "destination": "/alternatives/semrush-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/semrush-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/squarespace-alternatives",
-      "destination": "/alternatives/squarespace-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/squarespace-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/surferseo-alternatives",
-      "destination": "/alternatives/surferseo-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/surferseo-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/synthesia-alternatives",
-      "destination": "/alternatives/synthesia-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/synthesia-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/systeme-alternatives",
-      "destination": "/alternatives/systeme-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/systeme-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/todoist-alternatives",
-      "destination": "/alternatives/todoist-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/todoist-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/webflow-alternatives",
-      "destination": "/alternatives/webflow-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/webflow-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/writesonic-alternatives",
-      "destination": "/alternatives/writesonic-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/writesonic-alternatives.html",
       "permanent": true
     },
     {
       "source": "/alternatives/zapier-alternatives",
-      "destination": "/alternatives/zapier-alternatives.html",
+      "destination": "https://www.toolnestai.tech/alternatives/zapier-alternatives.html",
       "permanent": true
     },
     {
       "source": "/best/best-ai-assistants-tools",
-      "destination": "/best/best-ai-assistants-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-ai-assistants-tools.html",
       "permanent": true
     },
     {
       "source": "/best/best-ai-assistants",
-      "destination": "/best/best-ai-assistants-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-ai-assistants-tools.html",
       "permanent": true
     },
     {
       "source": "/best/best-ai-assistants.html",
-      "destination": "/best/best-ai-assistants-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-ai-assistants-tools.html",
       "permanent": true
     },
     {
       "source": "/best/best-ai-tools-for-freelancers",
-      "destination": "/best/best-ai-tools-for-freelancers.html",
+      "destination": "https://www.toolnestai.tech/best/best-ai-tools-for-freelancers.html",
       "permanent": true
     },
     {
       "source": "/best/best-ai-tools-for-students",
-      "destination": "/best/best-ai-tools-for-students.html",
+      "destination": "https://www.toolnestai.tech/best/best-ai-tools-for-students.html",
       "permanent": true
     },
     {
       "source": "/best/best-ai-tools-for-youtubers",
-      "destination": "/best/best-ai-tools-for-youtubers.html",
+      "destination": "https://www.toolnestai.tech/best/best-ai-tools-for-youtubers.html",
       "permanent": true
     },
     {
       "source": "/best/best-ai-video-tools",
-      "destination": "/best/best-ai-video-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-ai-video-tools.html",
       "permanent": true
     },
     {
       "source": "/best/best-ai-voice-tools",
-      "destination": "/best/best-ai-voice-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-ai-voice-tools.html",
       "permanent": true
     },
     {
       "source": "/best/best-ai-writing-tools",
-      "destination": "/best/best-ai-writing-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-ai-writing-tools.html",
       "permanent": true
     },
     {
       "source": "/best/best-automation-tools",
-      "destination": "/best/best-automation-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-automation-tools.html",
       "permanent": true
     },
     {
       "source": "/best/best-design-tools",
-      "destination": "/best/best-design-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-design-tools.html",
       "permanent": true
     },
     {
       "source": "/best/best-email-marketing-tools",
-      "destination": "/best/best-email-marketing-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-email-marketing-tools.html",
       "permanent": true
     },
     {
       "source": "/best/best-hosting-tools",
-      "destination": "/best/best-hosting-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-hosting-tools.html",
       "permanent": true
     },
     {
       "source": "/best/best-image-generation-tools",
-      "destination": "/best/best-image-generation-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-image-generation-tools.html",
       "permanent": true
     },
     {
       "source": "/best/best-marketing-tools",
-      "destination": "/best/best-marketing-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-marketing-tools.html",
       "permanent": true
     },
     {
       "source": "/best/best-productivity-tools",
-      "destination": "/best/best-productivity-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-productivity-tools.html",
       "permanent": true
     },
     {
       "source": "/best/best-research-tools",
-      "destination": "/best/best-research-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-research-tools.html",
       "permanent": true
     },
     {
       "source": "/best/best-sales-tools",
-      "destination": "/best/best-sales-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-sales-tools.html",
       "permanent": true
     },
     {
       "source": "/best/best-seo-tools",
-      "destination": "/best/best-seo-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-seo-tools.html",
       "permanent": true
     },
     {
       "source": "/best/best-voice-video-tools",
-      "destination": "/best/best-voice-video-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-voice-video-tools.html",
       "permanent": true
     },
     {
       "source": "/best/best-website-and-hosting-tools",
-      "destination": "/best/best-website-and-hosting-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-website-and-hosting-tools.html",
       "permanent": true
     },
     {
       "source": "/best/best-website-builder-tools",
-      "destination": "/best/best-website-builder-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-website-builder-tools.html",
       "permanent": true
     },
     {
       "source": "/best/best-writing-tools",
-      "destination": "/best/best-writing-tools.html",
+      "destination": "https://www.toolnestai.tech/best/best-writing-tools.html",
       "permanent": true
     },
     {
       "source": "/category/ai-assistants",
-      "destination": "/category/ai-assistants.html",
+      "destination": "https://www.toolnestai.tech/category/ai-assistants.html",
       "permanent": true
     },
     {
       "source": "/category/automation",
-      "destination": "/category/automation.html",
+      "destination": "https://www.toolnestai.tech/category/automation.html",
       "permanent": true
     },
     {
       "source": "/category/design",
-      "destination": "/category/design.html",
+      "destination": "https://www.toolnestai.tech/category/design.html",
       "permanent": true
     },
     {
       "source": "/category/email-marketing",
-      "destination": "/category/email-marketing.html",
+      "destination": "https://www.toolnestai.tech/category/email-marketing.html",
       "permanent": true
     },
     {
       "source": "/category/hosting",
-      "destination": "/category/hosting.html",
+      "destination": "https://www.toolnestai.tech/category/hosting.html",
       "permanent": true
     },
     {
       "source": "/category/image-generation",
-      "destination": "/category/image-generation.html",
+      "destination": "https://www.toolnestai.tech/category/image-generation.html",
       "permanent": true
     },
     {
       "source": "/category/marketing",
-      "destination": "/category/marketing.html",
+      "destination": "https://www.toolnestai.tech/category/marketing.html",
       "permanent": true
     },
     {
       "source": "/category/productivity",
-      "destination": "/category/productivity.html",
+      "destination": "https://www.toolnestai.tech/category/productivity.html",
       "permanent": true
     },
     {
       "source": "/category/research",
-      "destination": "/category/research.html",
+      "destination": "https://www.toolnestai.tech/category/research.html",
       "permanent": true
     },
     {
       "source": "/category/sales",
-      "destination": "/category/sales.html",
+      "destination": "https://www.toolnestai.tech/category/sales.html",
       "permanent": true
     },
     {
       "source": "/category/seo",
-      "destination": "/category/seo.html",
+      "destination": "https://www.toolnestai.tech/category/seo.html",
       "permanent": true
     },
     {
       "source": "/category/voice-video",
-      "destination": "/category/voice-video.html",
+      "destination": "https://www.toolnestai.tech/category/voice-video.html",
       "permanent": true
     },
     {
       "source": "/category/website-builders",
-      "destination": "/category/website-builders.html",
+      "destination": "https://www.toolnestai.tech/category/website-builders.html",
       "permanent": true
     },
     {
       "source": "/category/writing",
-      "destination": "/category/writing.html",
+      "destination": "https://www.toolnestai.tech/category/writing.html",
       "permanent": true
     },
     {
       "source": "/compare/adobeexpress-vs-canva",
-      "destination": "/compare/adobeexpress-vs-canva.html",
+      "destination": "https://www.toolnestai.tech/compare/adobeexpress-vs-canva.html",
       "permanent": true
     },
     {
       "source": "/compare/adobeexpress-vs-figma",
-      "destination": "/compare/adobeexpress-vs-figma.html",
+      "destination": "https://www.toolnestai.tech/compare/adobeexpress-vs-figma.html",
       "permanent": true
     },
     {
       "source": "/compare/adobeexpress-vs-removebg",
-      "destination": "/compare/adobeexpress-vs-removebg.html",
+      "destination": "https://www.toolnestai.tech/compare/adobeexpress-vs-removebg.html",
       "permanent": true
     },
     {
       "source": "/compare/ahrefs-vs-mozpro",
-      "destination": "/compare/ahrefs-vs-mozpro.html",
+      "destination": "https://www.toolnestai.tech/compare/ahrefs-vs-mozpro.html",
       "permanent": true
     },
     {
       "source": "/compare/ahrefs-vs-screamingfrog",
-      "destination": "/compare/ahrefs-vs-screamingfrog.html",
+      "destination": "https://www.toolnestai.tech/compare/ahrefs-vs-screamingfrog.html",
       "permanent": true
     },
     {
       "source": "/compare/ahrefs-vs-semrush",
-      "destination": "/compare/ahrefs-vs-semrush.html",
+      "destination": "https://www.toolnestai.tech/compare/ahrefs-vs-semrush.html",
       "permanent": true
     },
     {
       "source": "/compare/ahrefs-vs-surferseo",
-      "destination": "/compare/ahrefs-vs-surferseo.html",
+      "destination": "https://www.toolnestai.tech/compare/ahrefs-vs-surferseo.html",
       "permanent": true
     },
     {
       "source": "/compare/asana-vs-notion",
-      "destination": "/compare/asana-vs-notion.html",
+      "destination": "https://www.toolnestai.tech/compare/asana-vs-notion.html",
       "permanent": true
     },
     {
       "source": "/compare/beehiiv-vs-brevo",
-      "destination": "/compare/beehiiv-vs-brevo.html",
+      "destination": "https://www.toolnestai.tech/compare/beehiiv-vs-brevo.html",
       "permanent": true
     },
     {
       "source": "/compare/beehiiv-vs-kit",
-      "destination": "/compare/beehiiv-vs-kit.html",
+      "destination": "https://www.toolnestai.tech/compare/beehiiv-vs-kit.html",
       "permanent": true
     },
     {
       "source": "/compare/beehiiv-vs-mailchimp",
-      "destination": "/compare/beehiiv-vs-mailchimp.html",
+      "destination": "https://www.toolnestai.tech/compare/beehiiv-vs-mailchimp.html",
       "permanent": true
     },
     {
       "source": "/compare/brevo-vs-kit",
-      "destination": "/compare/brevo-vs-kit.html",
+      "destination": "https://www.toolnestai.tech/compare/brevo-vs-kit.html",
       "permanent": true
     },
     {
       "source": "/compare/brevo-vs-mailchimp",
-      "destination": "/compare/brevo-vs-mailchimp.html",
+      "destination": "https://www.toolnestai.tech/compare/brevo-vs-mailchimp.html",
       "permanent": true
     },
     {
       "source": "/compare/canva-vs-figma",
-      "destination": "/compare/canva-vs-figma.html",
+      "destination": "https://www.toolnestai.tech/compare/canva-vs-figma.html",
       "permanent": true
     },
     {
       "source": "/compare/canva-vs-removebg",
-      "destination": "/compare/canva-vs-removebg.html",
+      "destination": "https://www.toolnestai.tech/compare/canva-vs-removebg.html",
       "permanent": true
     },
     {
       "source": "/compare/chatgpt-vs-claude",
-      "destination": "/compare/chatgpt-vs-claude.html",
+      "destination": "https://www.toolnestai.tech/compare/chatgpt-vs-claude.html",
       "permanent": true
     },
     {
       "source": "/compare/chatgpt-vs-gemini",
-      "destination": "/compare/chatgpt-vs-gemini.html",
+      "destination": "https://www.toolnestai.tech/compare/chatgpt-vs-gemini.html",
       "permanent": true
     },
     {
       "source": "/compare/claude-vs-gemini",
-      "destination": "/compare/claude-vs-gemini.html",
+      "destination": "https://www.toolnestai.tech/compare/claude-vs-gemini.html",
       "permanent": true
     },
     {
       "source": "/compare/clickup-vs-notion",
-      "destination": "/compare/clickup-vs-notion.html",
+      "destination": "https://www.toolnestai.tech/compare/clickup-vs-notion.html",
       "permanent": true
     },
     {
       "source": "/compare/copyai-vs-grammarly",
-      "destination": "/compare/copyai-vs-grammarly.html",
+      "destination": "https://www.toolnestai.tech/compare/copyai-vs-grammarly.html",
       "permanent": true
     },
     {
       "source": "/compare/copyai-vs-jasper",
-      "destination": "/compare/copyai-vs-jasper.html",
+      "destination": "https://www.toolnestai.tech/compare/copyai-vs-jasper.html",
       "permanent": true
     },
     {
       "source": "/compare/descript-vs-invideo",
-      "destination": "/compare/descript-vs-invideo.html",
+      "destination": "https://www.toolnestai.tech/compare/descript-vs-invideo.html",
       "permanent": true
     },
     {
       "source": "/compare/descript-vs-kapwing",
-      "destination": "/compare/descript-vs-kapwing.html",
+      "destination": "https://www.toolnestai.tech/compare/descript-vs-kapwing.html",
       "permanent": true
     },
     {
       "source": "/compare/descript-vs-runway",
-      "destination": "/compare/descript-vs-runway.html",
+      "destination": "https://www.toolnestai.tech/compare/descript-vs-runway.html",
       "permanent": true
     },
     {
       "source": "/compare/descript-vs-synthesia",
-      "destination": "/compare/descript-vs-synthesia.html",
+      "destination": "https://www.toolnestai.tech/compare/descript-vs-synthesia.html",
       "permanent": true
     },
     {
       "source": "/compare/elevenlabs-vs-descript",
-      "destination": "/compare/elevenlabs-vs-descript.html",
+      "destination": "https://www.toolnestai.tech/compare/elevenlabs-vs-descript.html",
       "permanent": true
     },
     {
       "source": "/compare/elevenlabs-vs-synthesia",
-      "destination": "/compare/elevenlabs-vs-synthesia.html",
+      "destination": "https://www.toolnestai.tech/compare/elevenlabs-vs-synthesia.html",
       "permanent": true
     },
     {
       "source": "/compare/fireflies-vs-otter",
-      "destination": "/compare/fireflies-vs-otter.html",
+      "destination": "https://www.toolnestai.tech/compare/fireflies-vs-otter.html",
       "permanent": true
     },
     {
       "source": "/compare/framer-vs-squarespace",
-      "destination": "/compare/framer-vs-squarespace.html",
+      "destination": "https://www.toolnestai.tech/compare/framer-vs-squarespace.html",
       "permanent": true
     },
     {
       "source": "/compare/framer-vs-webflow",
-      "destination": "/compare/framer-vs-webflow.html",
+      "destination": "https://www.toolnestai.tech/compare/framer-vs-webflow.html",
       "permanent": true
     },
     {
       "source": "/compare/grammarly-vs-hemingway",
-      "destination": "/compare/grammarly-vs-hemingway.html",
+      "destination": "https://www.toolnestai.tech/compare/grammarly-vs-hemingway.html",
       "permanent": true
     },
     {
       "source": "/compare/grammarly-vs-jasper",
-      "destination": "/compare/grammarly-vs-jasper.html",
+      "destination": "https://www.toolnestai.tech/compare/grammarly-vs-jasper.html",
       "permanent": true
     },
     {
       "source": "/compare/grammarly-vs-prowritingaid",
-      "destination": "/compare/grammarly-vs-prowritingaid.html",
+      "destination": "https://www.toolnestai.tech/compare/grammarly-vs-prowritingaid.html",
       "permanent": true
     },
     {
       "source": "/compare/grammarly-vs-quillbot",
-      "destination": "/compare/grammarly-vs-quillbot.html",
+      "destination": "https://www.toolnestai.tech/compare/grammarly-vs-quillbot.html",
       "permanent": true
     },
     {
       "source": "/compare/grammarly-vs-writesonic",
-      "destination": "/compare/grammarly-vs-writesonic.html",
+      "destination": "https://www.toolnestai.tech/compare/grammarly-vs-writesonic.html",
       "permanent": true
     },
     {
       "source": "/compare/hemingway-vs-prowritingaid",
-      "destination": "/compare/hemingway-vs-prowritingaid.html",
+      "destination": "https://www.toolnestai.tech/compare/hemingway-vs-prowritingaid.html",
       "permanent": true
     },
     {
       "source": "/compare/hemingway-vs-quillbot",
-      "destination": "/compare/hemingway-vs-quillbot.html",
+      "destination": "https://www.toolnestai.tech/compare/hemingway-vs-quillbot.html",
       "permanent": true
     },
     {
       "source": "/compare/hostinger-vs-systeme",
-      "destination": "/compare/hostinger-vs-systeme.html",
+      "destination": "https://www.toolnestai.tech/compare/hostinger-vs-systeme.html",
       "permanent": true
     },
     {
       "source": "/compare/hubspot-vs-systeme",
-      "destination": "/compare/hubspot-vs-systeme.html",
+      "destination": "https://www.toolnestai.tech/compare/hubspot-vs-systeme.html",
       "permanent": true
     },
     {
       "source": "/compare/ifttt-vs-make",
-      "destination": "/compare/ifttt-vs-make.html",
+      "destination": "https://www.toolnestai.tech/compare/ifttt-vs-make.html",
       "permanent": true
     },
     {
       "source": "/compare/ifttt-vs-n8n",
-      "destination": "/compare/ifttt-vs-n8n.html",
+      "destination": "https://www.toolnestai.tech/compare/ifttt-vs-n8n.html",
       "permanent": true
     },
     {
       "source": "/compare/ifttt-vs-zapier",
-      "destination": "/compare/ifttt-vs-zapier.html",
+      "destination": "https://www.toolnestai.tech/compare/ifttt-vs-zapier.html",
       "permanent": true
     },
     {
       "source": "/compare/invideo-vs-runway",
-      "destination": "/compare/invideo-vs-runway.html",
+      "destination": "https://www.toolnestai.tech/compare/invideo-vs-runway.html",
       "permanent": true
     },
     {
       "source": "/compare/jasper-vs-semrush",
-      "destination": "/compare/jasper-vs-semrush.html",
+      "destination": "https://www.toolnestai.tech/compare/jasper-vs-semrush.html",
       "permanent": true
     },
     {
       "source": "/compare/kapwing-vs-runway",
-      "destination": "/compare/kapwing-vs-runway.html",
+      "destination": "https://www.toolnestai.tech/compare/kapwing-vs-runway.html",
       "permanent": true
     },
     {
       "source": "/compare/kit-vs-mailchimp",
-      "destination": "/compare/kit-vs-mailchimp.html",
+      "destination": "https://www.toolnestai.tech/compare/kit-vs-mailchimp.html",
       "permanent": true
     },
     {
       "source": "/compare/leonardo-vs-midjourney",
-      "destination": "/compare/leonardo-vs-midjourney.html",
+      "destination": "https://www.toolnestai.tech/compare/leonardo-vs-midjourney.html",
       "permanent": true
     },
     {
       "source": "/compare/make-vs-n8n",
-      "destination": "/compare/make-vs-n8n.html",
+      "destination": "https://www.toolnestai.tech/compare/make-vs-n8n.html",
       "permanent": true
     },
     {
       "source": "/compare/make-vs-zapier",
-      "destination": "/compare/make-vs-zapier.html",
+      "destination": "https://www.toolnestai.tech/compare/make-vs-zapier.html",
       "permanent": true
     },
     {
       "source": "/compare/monday-vs-notion",
-      "destination": "/compare/monday-vs-notion.html",
+      "destination": "https://www.toolnestai.tech/compare/monday-vs-notion.html",
       "permanent": true
     },
     {
       "source": "/compare/mozpro-vs-screamingfrog",
-      "destination": "/compare/mozpro-vs-screamingfrog.html",
+      "destination": "https://www.toolnestai.tech/compare/mozpro-vs-screamingfrog.html",
       "permanent": true
     },
     {
       "source": "/compare/mozpro-vs-semrush",
-      "destination": "/compare/mozpro-vs-semrush.html",
+      "destination": "https://www.toolnestai.tech/compare/mozpro-vs-semrush.html",
       "permanent": true
     },
     {
       "source": "/compare/mozpro-vs-surferseo",
-      "destination": "/compare/mozpro-vs-surferseo.html",
+      "destination": "https://www.toolnestai.tech/compare/mozpro-vs-surferseo.html",
       "permanent": true
     },
     {
       "source": "/compare/n8n-vs-zapier",
-      "destination": "/compare/n8n-vs-zapier.html",
+      "destination": "https://www.toolnestai.tech/compare/n8n-vs-zapier.html",
       "permanent": true
     },
     {
       "source": "/compare/notebooklm-vs-perplexity",
-      "destination": "/compare/notebooklm-vs-perplexity.html",
+      "destination": "https://www.toolnestai.tech/compare/notebooklm-vs-perplexity.html",
       "permanent": true
     },
     {
       "source": "/compare/notion-vs-todoist",
-      "destination": "/compare/notion-vs-todoist.html",
+      "destination": "https://www.toolnestai.tech/compare/notion-vs-todoist.html",
       "permanent": true
     },
     {
       "source": "/compare/prowritingaid-vs-quillbot",
-      "destination": "/compare/prowritingaid-vs-quillbot.html",
+      "destination": "https://www.toolnestai.tech/compare/prowritingaid-vs-quillbot.html",
       "permanent": true
     },
     {
       "source": "/compare/prowritingaid-vs-writesonic",
-      "destination": "/compare/prowritingaid-vs-writesonic.html",
+      "destination": "https://www.toolnestai.tech/compare/prowritingaid-vs-writesonic.html",
       "permanent": true
     },
     {
       "source": "/compare/quillbot-vs-writesonic",
-      "destination": "/compare/quillbot-vs-writesonic.html",
+      "destination": "https://www.toolnestai.tech/compare/quillbot-vs-writesonic.html",
       "permanent": true
     },
     {
       "source": "/compare/runway-vs-synthesia",
-      "destination": "/compare/runway-vs-synthesia.html",
+      "destination": "https://www.toolnestai.tech/compare/runway-vs-synthesia.html",
       "permanent": true
     },
     {
       "source": "/compare/screamingfrog-vs-semrush",
-      "destination": "/compare/screamingfrog-vs-semrush.html",
+      "destination": "https://www.toolnestai.tech/compare/screamingfrog-vs-semrush.html",
       "permanent": true
     },
     {
       "source": "/compare/semrush-vs-surferseo",
-      "destination": "/compare/semrush-vs-surferseo.html",
+      "destination": "https://www.toolnestai.tech/compare/semrush-vs-surferseo.html",
       "permanent": true
     },
     {
       "source": "/compare/squarespace-vs-webflow",
-      "destination": "/compare/squarespace-vs-webflow.html",
+      "destination": "https://www.toolnestai.tech/compare/squarespace-vs-webflow.html",
       "permanent": true
     },
     {
       "source": "/contact",
-      "destination": "/contact.html",
+      "destination": "https://www.toolnestai.tech/contact.html",
       "permanent": true
     },
     {
       "source": "/goals/add-voice-to-videos",
-      "destination": "/goals/add-voice-to-videos.html",
+      "destination": "https://www.toolnestai.tech/goals/add-voice-to-videos.html",
       "permanent": true
     },
     {
       "source": "/goals/adobeexpress",
-      "destination": "/tools/adobeexpress.html",
+      "destination": "https://www.toolnestai.tech/tools/adobeexpress.html",
       "permanent": true
     },
     {
       "source": "/goals/adobeexpress.html",
-      "destination": "/tools/adobeexpress.html",
+      "destination": "https://www.toolnestai.tech/tools/adobeexpress.html",
       "permanent": true
     },
     {
       "source": "/goals/ahrefs",
-      "destination": "/tools/ahrefs.html",
+      "destination": "https://www.toolnestai.tech/tools/ahrefs.html",
       "permanent": true
     },
     {
       "source": "/goals/ahrefs.html",
-      "destination": "/tools/ahrefs.html",
+      "destination": "https://www.toolnestai.tech/tools/ahrefs.html",
       "permanent": true
     },
     {
       "source": "/goals/asana",
-      "destination": "/tools/asana.html",
+      "destination": "https://www.toolnestai.tech/tools/asana.html",
       "permanent": true
     },
     {
       "source": "/goals/asana.html",
-      "destination": "/tools/asana.html",
+      "destination": "https://www.toolnestai.tech/tools/asana.html",
       "permanent": true
     },
     {
       "source": "/goals/beehiiv",
-      "destination": "/tools/beehiiv.html",
+      "destination": "https://www.toolnestai.tech/tools/beehiiv.html",
       "permanent": true
     },
     {
       "source": "/goals/beehiiv.html",
-      "destination": "/tools/beehiiv.html",
+      "destination": "https://www.toolnestai.tech/tools/beehiiv.html",
       "permanent": true
     },
     {
       "source": "/goals/brevo",
-      "destination": "/tools/brevo.html",
+      "destination": "https://www.toolnestai.tech/tools/brevo.html",
       "permanent": true
     },
     {
       "source": "/goals/brevo.html",
-      "destination": "/tools/brevo.html",
+      "destination": "https://www.toolnestai.tech/tools/brevo.html",
       "permanent": true
     },
     {
       "source": "/goals/canva",
-      "destination": "/tools/canva.html",
+      "destination": "https://www.toolnestai.tech/tools/canva.html",
       "permanent": true
     },
     {
       "source": "/goals/canva.html",
-      "destination": "/tools/canva.html",
+      "destination": "https://www.toolnestai.tech/tools/canva.html",
       "permanent": true
     },
     {
       "source": "/goals/chatgpt",
-      "destination": "/tools/chatgpt.html",
+      "destination": "https://www.toolnestai.tech/tools/chatgpt.html",
       "permanent": true
     },
     {
       "source": "/goals/chatgpt.html",
-      "destination": "/tools/chatgpt.html",
+      "destination": "https://www.toolnestai.tech/tools/chatgpt.html",
       "permanent": true
     },
     {
       "source": "/goals/claude",
-      "destination": "/tools/claude.html",
+      "destination": "https://www.toolnestai.tech/tools/claude.html",
       "permanent": true
     },
     {
       "source": "/goals/claude.html",
-      "destination": "/tools/claude.html",
+      "destination": "https://www.toolnestai.tech/tools/claude.html",
       "permanent": true
     },
     {
       "source": "/goals/clickup",
-      "destination": "/tools/clickup.html",
+      "destination": "https://www.toolnestai.tech/tools/clickup.html",
       "permanent": true
     },
     {
       "source": "/goals/clickup.html",
-      "destination": "/tools/clickup.html",
+      "destination": "https://www.toolnestai.tech/tools/clickup.html",
       "permanent": true
     },
     {
       "source": "/goals/copyai",
-      "destination": "/tools/copyai.html",
+      "destination": "https://www.toolnestai.tech/tools/copyai.html",
       "permanent": true
     },
     {
       "source": "/goals/copyai.html",
-      "destination": "/tools/copyai.html",
+      "destination": "https://www.toolnestai.tech/tools/copyai.html",
       "permanent": true
     },
     {
       "source": "/goals/descript",
-      "destination": "/tools/descript.html",
+      "destination": "https://www.toolnestai.tech/tools/descript.html",
       "permanent": true
     },
     {
       "source": "/goals/descript.html",
-      "destination": "/tools/descript.html",
+      "destination": "https://www.toolnestai.tech/tools/descript.html",
       "permanent": true
     },
     {
       "source": "/goals/edit-video-podcasts",
-      "destination": "/goals/edit-video-podcasts.html",
+      "destination": "https://www.toolnestai.tech/goals/edit-video-podcasts.html",
       "permanent": true
     },
     {
       "source": "/goals/elevenlabs",
-      "destination": "/tools/elevenlabs.html",
+      "destination": "https://www.toolnestai.tech/tools/elevenlabs.html",
       "permanent": true
     },
     {
       "source": "/goals/elevenlabs.html",
-      "destination": "/tools/elevenlabs.html",
+      "destination": "https://www.toolnestai.tech/tools/elevenlabs.html",
       "permanent": true
     },
     {
       "source": "/goals/figma",
-      "destination": "/tools/figma.html",
+      "destination": "https://www.toolnestai.tech/tools/figma.html",
       "permanent": true
     },
     {
       "source": "/goals/figma.html",
-      "destination": "/tools/figma.html",
+      "destination": "https://www.toolnestai.tech/tools/figma.html",
       "permanent": true
     },
     {
       "source": "/goals/fireflies",
-      "destination": "/tools/fireflies.html",
+      "destination": "https://www.toolnestai.tech/tools/fireflies.html",
       "permanent": true
     },
     {
       "source": "/goals/fireflies.html",
-      "destination": "/tools/fireflies.html",
+      "destination": "https://www.toolnestai.tech/tools/fireflies.html",
       "permanent": true
     },
     {
       "source": "/goals/framer",
-      "destination": "/tools/framer.html",
+      "destination": "https://www.toolnestai.tech/tools/framer.html",
       "permanent": true
     },
     {
       "source": "/goals/framer.html",
-      "destination": "/tools/framer.html",
+      "destination": "https://www.toolnestai.tech/tools/framer.html",
       "permanent": true
     },
     {
       "source": "/goals/gemini",
-      "destination": "/tools/gemini.html",
+      "destination": "https://www.toolnestai.tech/tools/gemini.html",
       "permanent": true
     },
     {
       "source": "/goals/gemini.html",
-      "destination": "/tools/gemini.html",
+      "destination": "https://www.toolnestai.tech/tools/gemini.html",
       "permanent": true
     },
     {
       "source": "/goals/get-search-traffic",
-      "destination": "/goals/get-search-traffic.html",
+      "destination": "https://www.toolnestai.tech/goals/get-search-traffic.html",
       "permanent": true
     },
     {
       "source": "/goals/grammarly",
-      "destination": "/tools/grammarly.html",
+      "destination": "https://www.toolnestai.tech/tools/grammarly.html",
       "permanent": true
     },
     {
       "source": "/goals/grammarly.html",
-      "destination": "/tools/grammarly.html",
+      "destination": "https://www.toolnestai.tech/tools/grammarly.html",
       "permanent": true
     },
     {
       "source": "/goals/hemingway",
-      "destination": "/tools/hemingway.html",
+      "destination": "https://www.toolnestai.tech/tools/hemingway.html",
       "permanent": true
     },
     {
       "source": "/goals/hemingway.html",
-      "destination": "/tools/hemingway.html",
+      "destination": "https://www.toolnestai.tech/tools/hemingway.html",
       "permanent": true
     },
     {
       "source": "/goals/hostinger",
-      "destination": "/tools/hostinger.html",
+      "destination": "https://www.toolnestai.tech/tools/hostinger.html",
       "permanent": true
     },
     {
       "source": "/goals/hostinger.html",
-      "destination": "/tools/hostinger.html",
+      "destination": "https://www.toolnestai.tech/tools/hostinger.html",
       "permanent": true
     },
     {
       "source": "/goals/hubspot",
-      "destination": "/tools/hubspot.html",
+      "destination": "https://www.toolnestai.tech/tools/hubspot.html",
       "permanent": true
     },
     {
       "source": "/goals/hubspot.html",
-      "destination": "/tools/hubspot.html",
+      "destination": "https://www.toolnestai.tech/tools/hubspot.html",
       "permanent": true
     },
     {
       "source": "/goals/ifttt",
-      "destination": "/tools/ifttt.html",
+      "destination": "https://www.toolnestai.tech/tools/ifttt.html",
       "permanent": true
     },
     {
       "source": "/goals/ifttt.html",
-      "destination": "/tools/ifttt.html",
+      "destination": "https://www.toolnestai.tech/tools/ifttt.html",
       "permanent": true
     },
     {
       "source": "/goals/invideo",
-      "destination": "/tools/invideo.html",
+      "destination": "https://www.toolnestai.tech/tools/invideo.html",
       "permanent": true
     },
     {
       "source": "/goals/invideo.html",
-      "destination": "/tools/invideo.html",
+      "destination": "https://www.toolnestai.tech/tools/invideo.html",
       "permanent": true
     },
     {
       "source": "/goals/jasper",
-      "destination": "/tools/jasper.html",
+      "destination": "https://www.toolnestai.tech/tools/jasper.html",
       "permanent": true
     },
     {
       "source": "/goals/jasper.html",
-      "destination": "/tools/jasper.html",
+      "destination": "https://www.toolnestai.tech/tools/jasper.html",
       "permanent": true
     },
     {
       "source": "/goals/kapwing",
-      "destination": "/tools/kapwing.html",
+      "destination": "https://www.toolnestai.tech/tools/kapwing.html",
       "permanent": true
     },
     {
       "source": "/goals/kapwing.html",
-      "destination": "/tools/kapwing.html",
+      "destination": "https://www.toolnestai.tech/tools/kapwing.html",
       "permanent": true
     },
     {
       "source": "/goals/kit",
-      "destination": "/tools/kit.html",
+      "destination": "https://www.toolnestai.tech/tools/kit.html",
       "permanent": true
     },
     {
       "source": "/goals/kit.html",
-      "destination": "/tools/kit.html",
+      "destination": "https://www.toolnestai.tech/tools/kit.html",
       "permanent": true
     },
     {
       "source": "/goals/launch-a-website",
-      "destination": "/goals/launch-a-website.html",
+      "destination": "https://www.toolnestai.tech/goals/launch-a-website.html",
       "permanent": true
     },
     {
       "source": "/goals/launch-online-course",
-      "destination": "/goals/launch-online-course.html",
+      "destination": "https://www.toolnestai.tech/goals/launch-online-course.html",
       "permanent": true
     },
     {
       "source": "/goals/leonardo",
-      "destination": "/tools/leonardo.html",
+      "destination": "https://www.toolnestai.tech/tools/leonardo.html",
       "permanent": true
     },
     {
       "source": "/goals/leonardo.html",
-      "destination": "/tools/leonardo.html",
+      "destination": "https://www.toolnestai.tech/tools/leonardo.html",
       "permanent": true
     },
     {
       "source": "/goals/mailchimp",
-      "destination": "/tools/mailchimp.html",
+      "destination": "https://www.toolnestai.tech/tools/mailchimp.html",
       "permanent": true
     },
     {
       "source": "/goals/mailchimp.html",
-      "destination": "/tools/mailchimp.html",
+      "destination": "https://www.toolnestai.tech/tools/mailchimp.html",
       "permanent": true
     },
     {
       "source": "/goals/make",
-      "destination": "/tools/make.html",
+      "destination": "https://www.toolnestai.tech/tools/make.html",
       "permanent": true
     },
     {
       "source": "/goals/make.html",
-      "destination": "/tools/make.html",
+      "destination": "https://www.toolnestai.tech/tools/make.html",
       "permanent": true
     },
     {
       "source": "/goals/midjourney",
-      "destination": "/tools/midjourney.html",
+      "destination": "https://www.toolnestai.tech/tools/midjourney.html",
       "permanent": true
     },
     {
       "source": "/goals/midjourney.html",
-      "destination": "/tools/midjourney.html",
+      "destination": "https://www.toolnestai.tech/tools/midjourney.html",
       "permanent": true
     },
     {
       "source": "/goals/monday",
-      "destination": "/tools/monday.html",
+      "destination": "https://www.toolnestai.tech/tools/monday.html",
       "permanent": true
     },
     {
       "source": "/goals/monday.html",
-      "destination": "/tools/monday.html",
+      "destination": "https://www.toolnestai.tech/tools/monday.html",
       "permanent": true
     },
     {
       "source": "/goals/mozpro",
-      "destination": "/tools/mozpro.html",
+      "destination": "https://www.toolnestai.tech/tools/mozpro.html",
       "permanent": true
     },
     {
       "source": "/goals/mozpro.html",
-      "destination": "/tools/mozpro.html",
+      "destination": "https://www.toolnestai.tech/tools/mozpro.html",
       "permanent": true
     },
     {
       "source": "/goals/n8n",
-      "destination": "/tools/n8n.html",
+      "destination": "https://www.toolnestai.tech/tools/n8n.html",
       "permanent": true
     },
     {
       "source": "/goals/n8n.html",
-      "destination": "/tools/n8n.html",
+      "destination": "https://www.toolnestai.tech/tools/n8n.html",
       "permanent": true
     },
     {
       "source": "/goals/notebooklm",
-      "destination": "/tools/notebooklm.html",
+      "destination": "https://www.toolnestai.tech/tools/notebooklm.html",
       "permanent": true
     },
     {
       "source": "/goals/notebooklm.html",
-      "destination": "/tools/notebooklm.html",
+      "destination": "https://www.toolnestai.tech/tools/notebooklm.html",
       "permanent": true
     },
     {
       "source": "/goals/notion",
-      "destination": "/tools/notion.html",
+      "destination": "https://www.toolnestai.tech/tools/notion.html",
       "permanent": true
     },
     {
       "source": "/goals/notion.html",
-      "destination": "/tools/notion.html",
+      "destination": "https://www.toolnestai.tech/tools/notion.html",
       "permanent": true
     },
     {
       "source": "/goals/organise-my-work",
-      "destination": "/goals/organise-my-work.html",
+      "destination": "https://www.toolnestai.tech/goals/organise-my-work.html",
       "permanent": true
     },
     {
       "source": "/goals/otter",
-      "destination": "/tools/otter.html",
+      "destination": "https://www.toolnestai.tech/tools/otter.html",
       "permanent": true
     },
     {
       "source": "/goals/otter.html",
-      "destination": "/tools/otter.html",
+      "destination": "https://www.toolnestai.tech/tools/otter.html",
       "permanent": true
     },
     {
       "source": "/goals/perplexity",
-      "destination": "/tools/perplexity.html",
+      "destination": "https://www.toolnestai.tech/tools/perplexity.html",
       "permanent": true
     },
     {
       "source": "/goals/perplexity.html",
-      "destination": "/tools/perplexity.html",
+      "destination": "https://www.toolnestai.tech/tools/perplexity.html",
       "permanent": true
     },
     {
       "source": "/goals/prowritingaid",
-      "destination": "/tools/prowritingaid.html",
+      "destination": "https://www.toolnestai.tech/tools/prowritingaid.html",
       "permanent": true
     },
     {
       "source": "/goals/prowritingaid.html",
-      "destination": "/tools/prowritingaid.html",
+      "destination": "https://www.toolnestai.tech/tools/prowritingaid.html",
       "permanent": true
     },
     {
       "source": "/goals/quillbot",
-      "destination": "/tools/quillbot.html",
+      "destination": "https://www.toolnestai.tech/tools/quillbot.html",
       "permanent": true
     },
     {
       "source": "/goals/quillbot.html",
-      "destination": "/tools/quillbot.html",
+      "destination": "https://www.toolnestai.tech/tools/quillbot.html",
       "permanent": true
     },
     {
       "source": "/goals/removebg",
-      "destination": "/tools/removebg.html",
+      "destination": "https://www.toolnestai.tech/tools/removebg.html",
       "permanent": true
     },
     {
       "source": "/goals/removebg.html",
-      "destination": "/tools/removebg.html",
+      "destination": "https://www.toolnestai.tech/tools/removebg.html",
       "permanent": true
     },
     {
       "source": "/goals/runway",
-      "destination": "/tools/runway.html",
+      "destination": "https://www.toolnestai.tech/tools/runway.html",
       "permanent": true
     },
     {
       "source": "/goals/runway.html",
-      "destination": "/tools/runway.html",
+      "destination": "https://www.toolnestai.tech/tools/runway.html",
       "permanent": true
     },
     {
       "source": "/goals/screamingfrog",
-      "destination": "/tools/screamingfrog.html",
+      "destination": "https://www.toolnestai.tech/tools/screamingfrog.html",
       "permanent": true
     },
     {
       "source": "/goals/screamingfrog.html",
-      "destination": "/tools/screamingfrog.html",
+      "destination": "https://www.toolnestai.tech/tools/screamingfrog.html",
       "permanent": true
     },
     {
       "source": "/goals/sell-online",
-      "destination": "/goals/sell-online.html",
+      "destination": "https://www.toolnestai.tech/goals/sell-online.html",
       "permanent": true
     },
     {
       "source": "/goals/semrush",
-      "destination": "/tools/semrush.html",
+      "destination": "https://www.toolnestai.tech/tools/semrush.html",
       "permanent": true
     },
     {
       "source": "/goals/semrush.html",
-      "destination": "/tools/semrush.html",
+      "destination": "https://www.toolnestai.tech/tools/semrush.html",
       "permanent": true
     },
     {
       "source": "/goals/squarespace",
-      "destination": "/tools/squarespace.html",
+      "destination": "https://www.toolnestai.tech/tools/squarespace.html",
       "permanent": true
     },
     {
       "source": "/goals/squarespace.html",
-      "destination": "/tools/squarespace.html",
+      "destination": "https://www.toolnestai.tech/tools/squarespace.html",
       "permanent": true
     },
     {
       "source": "/goals/surferseo",
-      "destination": "/tools/surferseo.html",
+      "destination": "https://www.toolnestai.tech/tools/surferseo.html",
       "permanent": true
     },
     {
       "source": "/goals/surferseo.html",
-      "destination": "/tools/surferseo.html",
+      "destination": "https://www.toolnestai.tech/tools/surferseo.html",
       "permanent": true
     },
     {
       "source": "/goals/synthesia",
-      "destination": "/tools/synthesia.html",
+      "destination": "https://www.toolnestai.tech/tools/synthesia.html",
       "permanent": true
     },
     {
       "source": "/goals/synthesia.html",
-      "destination": "/tools/synthesia.html",
+      "destination": "https://www.toolnestai.tech/tools/synthesia.html",
       "permanent": true
     },
     {
       "source": "/goals/systeme",
-      "destination": "/tools/systeme.html",
+      "destination": "https://www.toolnestai.tech/tools/systeme.html",
       "permanent": true
     },
     {
       "source": "/goals/systeme.html",
-      "destination": "/tools/systeme.html",
+      "destination": "https://www.toolnestai.tech/tools/systeme.html",
       "permanent": true
     },
     {
       "source": "/goals/todoist",
-      "destination": "/tools/todoist.html",
+      "destination": "https://www.toolnestai.tech/tools/todoist.html",
       "permanent": true
     },
     {
       "source": "/goals/todoist.html",
-      "destination": "/tools/todoist.html",
+      "destination": "https://www.toolnestai.tech/tools/todoist.html",
       "permanent": true
     },
     {
       "source": "/goals/webflow",
-      "destination": "/tools/webflow.html",
+      "destination": "https://www.toolnestai.tech/tools/webflow.html",
       "permanent": true
     },
     {
       "source": "/goals/webflow.html",
-      "destination": "/tools/webflow.html",
+      "destination": "https://www.toolnestai.tech/tools/webflow.html",
       "permanent": true
     },
     {
       "source": "/goals/write-ad-copy",
-      "destination": "/goals/write-ad-copy.html",
+      "destination": "https://www.toolnestai.tech/goals/write-ad-copy.html",
       "permanent": true
     },
     {
       "source": "/goals/write-better-english",
-      "destination": "/goals/write-better-english.html",
+      "destination": "https://www.toolnestai.tech/goals/write-better-english.html",
       "permanent": true
     },
     {
       "source": "/goals/writesonic",
-      "destination": "/tools/writesonic.html",
+      "destination": "https://www.toolnestai.tech/tools/writesonic.html",
       "permanent": true
     },
     {
       "source": "/goals/writesonic.html",
-      "destination": "/tools/writesonic.html",
+      "destination": "https://www.toolnestai.tech/tools/writesonic.html",
       "permanent": true
     },
     {
       "source": "/goals/zapier",
-      "destination": "/tools/zapier.html",
+      "destination": "https://www.toolnestai.tech/tools/zapier.html",
       "permanent": true
     },
     {
       "source": "/goals/zapier.html",
-      "destination": "/tools/zapier.html",
+      "destination": "https://www.toolnestai.tech/tools/zapier.html",
       "permanent": true
     },
     {
       "source": "/privacy",
-      "destination": "/privacy.html",
+      "destination": "https://www.toolnestai.tech/privacy.html",
       "permanent": true
     },
     {
       "source": "/terms",
-      "destination": "/terms.html",
+      "destination": "https://www.toolnestai.tech/terms.html",
       "permanent": true
     },
     {
       "source": "/tools/adobeexpress",
-      "destination": "/tools/adobeexpress.html",
+      "destination": "https://www.toolnestai.tech/tools/adobeexpress.html",
       "permanent": true
     },
     {
       "source": "/tools/ahrefs",
-      "destination": "/tools/ahrefs.html",
+      "destination": "https://www.toolnestai.tech/tools/ahrefs.html",
       "permanent": true
     },
     {
       "source": "/tools/asana",
-      "destination": "/tools/asana.html",
+      "destination": "https://www.toolnestai.tech/tools/asana.html",
       "permanent": true
     },
     {
       "source": "/tools/beehiiv",
-      "destination": "/tools/beehiiv.html",
+      "destination": "https://www.toolnestai.tech/tools/beehiiv.html",
       "permanent": true
     },
     {
       "source": "/tools/brevo",
-      "destination": "/tools/brevo.html",
+      "destination": "https://www.toolnestai.tech/tools/brevo.html",
       "permanent": true
     },
     {
       "source": "/tools/canva",
-      "destination": "/tools/canva.html",
+      "destination": "https://www.toolnestai.tech/tools/canva.html",
       "permanent": true
     },
     {
       "source": "/tools/chatgpt",
-      "destination": "/tools/chatgpt.html",
+      "destination": "https://www.toolnestai.tech/tools/chatgpt.html",
       "permanent": true
     },
     {
       "source": "/tools/claude",
-      "destination": "/tools/claude.html",
+      "destination": "https://www.toolnestai.tech/tools/claude.html",
       "permanent": true
     },
     {
       "source": "/tools/clickup",
-      "destination": "/tools/clickup.html",
+      "destination": "https://www.toolnestai.tech/tools/clickup.html",
       "permanent": true
     },
     {
       "source": "/tools/copyai",
-      "destination": "/tools/copyai.html",
+      "destination": "https://www.toolnestai.tech/tools/copyai.html",
       "permanent": true
     },
     {
       "source": "/tools/descript",
-      "destination": "/tools/descript.html",
+      "destination": "https://www.toolnestai.tech/tools/descript.html",
       "permanent": true
     },
     {
       "source": "/tools/elevenlabs",
-      "destination": "/tools/elevenlabs.html",
+      "destination": "https://www.toolnestai.tech/tools/elevenlabs.html",
       "permanent": true
     },
     {
       "source": "/tools/figma",
-      "destination": "/tools/figma.html",
+      "destination": "https://www.toolnestai.tech/tools/figma.html",
       "permanent": true
     },
     {
       "source": "/tools/fireflies",
-      "destination": "/tools/fireflies.html",
+      "destination": "https://www.toolnestai.tech/tools/fireflies.html",
       "permanent": true
     },
     {
       "source": "/tools/framer",
-      "destination": "/tools/framer.html",
+      "destination": "https://www.toolnestai.tech/tools/framer.html",
       "permanent": true
     },
     {
       "source": "/tools/gemini",
-      "destination": "/tools/gemini.html",
+      "destination": "https://www.toolnestai.tech/tools/gemini.html",
       "permanent": true
     },
     {
       "source": "/tools/grammarly",
-      "destination": "/tools/grammarly.html",
+      "destination": "https://www.toolnestai.tech/tools/grammarly.html",
       "permanent": true
     },
     {
       "source": "/tools/hemingway",
-      "destination": "/tools/hemingway.html",
+      "destination": "https://www.toolnestai.tech/tools/hemingway.html",
       "permanent": true
     },
     {
       "source": "/tools/hostinger",
-      "destination": "/tools/hostinger.html",
+      "destination": "https://www.toolnestai.tech/tools/hostinger.html",
       "permanent": true
     },
     {
       "source": "/tools/hubspot",
-      "destination": "/tools/hubspot.html",
+      "destination": "https://www.toolnestai.tech/tools/hubspot.html",
       "permanent": true
     },
     {
       "source": "/tools/ifttt",
-      "destination": "/tools/ifttt.html",
+      "destination": "https://www.toolnestai.tech/tools/ifttt.html",
       "permanent": true
     },
     {
       "source": "/tools/invideo",
-      "destination": "/tools/invideo.html",
+      "destination": "https://www.toolnestai.tech/tools/invideo.html",
       "permanent": true
     },
     {
       "source": "/tools/jasper",
-      "destination": "/tools/jasper.html",
+      "destination": "https://www.toolnestai.tech/tools/jasper.html",
       "permanent": true
     },
     {
       "source": "/tools/kapwing",
-      "destination": "/tools/kapwing.html",
+      "destination": "https://www.toolnestai.tech/tools/kapwing.html",
       "permanent": true
     },
     {
       "source": "/tools/kit",
-      "destination": "/tools/kit.html",
+      "destination": "https://www.toolnestai.tech/tools/kit.html",
       "permanent": true
     },
     {
       "source": "/tools/leonardo",
-      "destination": "/tools/leonardo.html",
+      "destination": "https://www.toolnestai.tech/tools/leonardo.html",
       "permanent": true
     },
     {
       "source": "/tools/mailchimp",
-      "destination": "/tools/mailchimp.html",
+      "destination": "https://www.toolnestai.tech/tools/mailchimp.html",
       "permanent": true
     },
     {
       "source": "/tools/make",
-      "destination": "/tools/make.html",
+      "destination": "https://www.toolnestai.tech/tools/make.html",
       "permanent": true
     },
     {
       "source": "/tools/midjourney",
-      "destination": "/tools/midjourney.html",
+      "destination": "https://www.toolnestai.tech/tools/midjourney.html",
       "permanent": true
     },
     {
       "source": "/tools/monday",
-      "destination": "/tools/monday.html",
+      "destination": "https://www.toolnestai.tech/tools/monday.html",
       "permanent": true
     },
     {
       "source": "/tools/mozpro",
-      "destination": "/tools/mozpro.html",
+      "destination": "https://www.toolnestai.tech/tools/mozpro.html",
       "permanent": true
     },
     {
       "source": "/tools/n8n",
-      "destination": "/tools/n8n.html",
+      "destination": "https://www.toolnestai.tech/tools/n8n.html",
       "permanent": true
     },
     {
       "source": "/tools/notebooklm",
-      "destination": "/tools/notebooklm.html",
+      "destination": "https://www.toolnestai.tech/tools/notebooklm.html",
       "permanent": true
     },
     {
       "source": "/tools/notion",
-      "destination": "/tools/notion.html",
+      "destination": "https://www.toolnestai.tech/tools/notion.html",
       "permanent": true
     },
     {
       "source": "/tools/otter",
-      "destination": "/tools/otter.html",
+      "destination": "https://www.toolnestai.tech/tools/otter.html",
       "permanent": true
     },
     {
       "source": "/tools/perplexity",
-      "destination": "/tools/perplexity.html",
+      "destination": "https://www.toolnestai.tech/tools/perplexity.html",
       "permanent": true
     },
     {
       "source": "/tools/prowritingaid",
-      "destination": "/tools/prowritingaid.html",
+      "destination": "https://www.toolnestai.tech/tools/prowritingaid.html",
       "permanent": true
     },
     {
       "source": "/tools/quillbot",
-      "destination": "/tools/quillbot.html",
+      "destination": "https://www.toolnestai.tech/tools/quillbot.html",
       "permanent": true
     },
     {
       "source": "/tools/removebg",
-      "destination": "/tools/removebg.html",
+      "destination": "https://www.toolnestai.tech/tools/removebg.html",
       "permanent": true
     },
     {
       "source": "/tools/runway",
-      "destination": "/tools/runway.html",
+      "destination": "https://www.toolnestai.tech/tools/runway.html",
       "permanent": true
     },
     {
       "source": "/tools/screamingfrog",
-      "destination": "/tools/screamingfrog.html",
+      "destination": "https://www.toolnestai.tech/tools/screamingfrog.html",
       "permanent": true
     },
     {
       "source": "/tools/semrush",
-      "destination": "/tools/semrush.html",
+      "destination": "https://www.toolnestai.tech/tools/semrush.html",
       "permanent": true
     },
     {
       "source": "/tools/squarespace",
-      "destination": "/tools/squarespace.html",
+      "destination": "https://www.toolnestai.tech/tools/squarespace.html",
       "permanent": true
     },
     {
       "source": "/tools/surferseo",
-      "destination": "/tools/surferseo.html",
+      "destination": "https://www.toolnestai.tech/tools/surferseo.html",
       "permanent": true
     },
     {
       "source": "/tools/synthesia",
-      "destination": "/tools/synthesia.html",
+      "destination": "https://www.toolnestai.tech/tools/synthesia.html",
       "permanent": true
     },
     {
       "source": "/tools/systeme",
-      "destination": "/tools/systeme.html",
+      "destination": "https://www.toolnestai.tech/tools/systeme.html",
       "permanent": true
     },
     {
       "source": "/tools/todoist",
-      "destination": "/tools/todoist.html",
+      "destination": "https://www.toolnestai.tech/tools/todoist.html",
       "permanent": true
     },
     {
       "source": "/tools/webflow",
-      "destination": "/tools/webflow.html",
+      "destination": "https://www.toolnestai.tech/tools/webflow.html",
       "permanent": true
     },
     {
       "source": "/tools/writesonic",
-      "destination": "/tools/writesonic.html",
+      "destination": "https://www.toolnestai.tech/tools/writesonic.html",
       "permanent": true
     },
     {
       "source": "/tools/zapier",
-      "destination": "/tools/zapier.html",
+      "destination": "https://www.toolnestai.tech/tools/zapier.html",
       "permanent": true
     },
     {
       "source": "/alternatives",
-      "destination": "/alternatives/index.html",
+      "destination": "https://www.toolnestai.tech/alternatives/index.html",
       "permanent": true
     },
     {
       "source": "/alternatives/",
-      "destination": "/alternatives/index.html",
+      "destination": "https://www.toolnestai.tech/alternatives/index.html",
       "permanent": true
     },
     {
       "source": "/alternatives/index",
-      "destination": "/alternatives/index.html",
+      "destination": "https://www.toolnestai.tech/alternatives/index.html",
       "permanent": true
     },
     {
       "source": "/best",
-      "destination": "/best/index.html",
+      "destination": "https://www.toolnestai.tech/best/index.html",
       "permanent": true
     },
     {
       "source": "/best/",
-      "destination": "/best/index.html",
+      "destination": "https://www.toolnestai.tech/best/index.html",
       "permanent": true
     },
     {
       "source": "/best/index",
-      "destination": "/best/index.html",
+      "destination": "https://www.toolnestai.tech/best/index.html",
       "permanent": true
     },
     {
       "source": "/category",
-      "destination": "/category/index.html",
+      "destination": "https://www.toolnestai.tech/category/index.html",
       "permanent": true
     },
     {
       "source": "/category/",
-      "destination": "/category/index.html",
+      "destination": "https://www.toolnestai.tech/category/index.html",
       "permanent": true
     },
     {
       "source": "/category/index",
-      "destination": "/category/index.html",
+      "destination": "https://www.toolnestai.tech/category/index.html",
       "permanent": true
     },
     {
       "source": "/compare",
-      "destination": "/compare/index.html",
+      "destination": "https://www.toolnestai.tech/compare/index.html",
       "permanent": true
     },
     {
       "source": "/compare/",
-      "destination": "/compare/index.html",
+      "destination": "https://www.toolnestai.tech/compare/index.html",
       "permanent": true
     },
     {
       "source": "/compare/index",
-      "destination": "/compare/index.html",
+      "destination": "https://www.toolnestai.tech/compare/index.html",
       "permanent": true
     },
     {
       "source": "/goals",
-      "destination": "/goals/index.html",
+      "destination": "https://www.toolnestai.tech/goals/index.html",
       "permanent": true
     },
     {
       "source": "/goals/",
-      "destination": "/goals/index.html",
+      "destination": "https://www.toolnestai.tech/goals/index.html",
       "permanent": true
     },
     {
       "source": "/goals/index",
-      "destination": "/goals/index.html",
+      "destination": "https://www.toolnestai.tech/goals/index.html",
       "permanent": true
     },
     {
       "source": "/tools",
-      "destination": "/tools/index.html",
+      "destination": "https://www.toolnestai.tech/tools/index.html",
       "permanent": true
     },
     {
       "source": "/tools/",
-      "destination": "/tools/index.html",
+      "destination": "https://www.toolnestai.tech/tools/index.html",
       "permanent": true
     },
     {
       "source": "/tools/index",
-      "destination": "/tools/index.html",
+      "destination": "https://www.toolnestai.tech/tools/index.html",
       "permanent": true
     },
     {
       "source": "/index.html",
-      "destination": "/",
+      "destination": "https://www.toolnestai.tech/",
       "permanent": true
     },
     {
       "source": "/index",
-      "destination": "/",
+      "destination": "https://www.toolnestai.tech/",
       "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "geolocation=(), microphone=(), camera=(), payment=(), usb=()"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, must-revalidate"
+        }
+      ]
     }
   ]
 }

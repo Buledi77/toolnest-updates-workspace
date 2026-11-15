@@ -4,18 +4,26 @@ Generated on 2026-11-14 for the `seo-v2` branch.
 
 ## a) Page build and data flow
 
-The public pages are committed static HTML files. No script in `scripts/` generates
-HTML in `tools/`, `compare/`, `alternatives/`, `best/`, `category/`,
-`categories/`, or `goals/`. The repository has no `package.json` and no root
-README with a site-build command. The root `generate_massive_tools.py` file is
-empty, so there is no whole-site rebuild command currently present.
+The public pages are committed static HTML files. `scripts/build_site.py` now
+normalizes and rebuilds the HTML corpus in `tools/`, `compare/`, `alternatives/`,
+`best/`, `category/`, and `goals/` from the committed HTML plus
+`data/site.json`. The repository has no `package.json` and no root README with
+an npm build command. The exact whole-site build command is:
+
+```bash
+python3 scripts/build_site.py
+```
 
 The current production catalog is `data/tools.json`; the repository documentation
 explicitly says that it remains the production dataset. `data/tools-v1.json` is a
 structured copy with additional fields, while `data/tools-v2/` is an additive
 Decision Graph/shadow dataset and is not wired to replace the public HTML.
 
-The scripts build or validate data artifacts, not page HTML:
+The scripts build or validate page and data artifacts:
+
+- `scripts/build_site.py` writes normalized UTF-8 HTML, `sitemap.xml`, and
+  optional `ads.txt`; it also injects configured analytics and verification
+  tags and normalizes outbound link attributes.
 
 - `scripts/build_search_index.py` reads `data/tools-v2/` and writes
   `data/indexes/tool-search-index.json`.
@@ -37,7 +45,9 @@ python3 -m unittest discover -s tests -p 'test_*.py'
 ```
 
 That workflow does not rebuild the public HTML. It runs the validators, rebuilds
-the search index and affiliate registry, and checks site quality.
+the search index and affiliate registry, and checks site quality. The static
+site build and SEO QA are local commands because the repository has no npm
+package manifest.
 
 ## b) Vercel and Netlify deployment rules
 
@@ -89,9 +99,8 @@ not write it. `404.html` is a committed static error page.
 
 ## e) Affiliate and outbound links
 
-There is no source template or renderer in this repository for the public HTML.
-The rendered tool pages contain outbound vendor links directly in the committed
-HTML. Representative links use:
+`scripts/build_site.py` is the shared renderer/normalizer for the committed HTML
+templates. It identifies external vendor URLs and writes:
 
 ```html
 rel="nofollow noopener" target="_blank"
@@ -104,8 +113,8 @@ metadata is maintained separately in v2 records and the generated
 
 ## f) Alternatives selection
 
-No current repository function generates the alternatives pages or selects their
-cards. The public alternatives are static HTML. The production catalog fields
+The alternatives pages are static source templates; the build normalizes their
+shared metadata and links but does not choose their cards. The production catalog fields
 `alternatives`, `comparisons`, and `goals` are empty for all 50 records in both
 `data/tools.json` and `data/tools-v1.json`, so those pages are not currently
 derived from those fields.
@@ -137,6 +146,12 @@ Run the test suite locally with:
 
 ```bash
 python3 -m unittest discover -s tests -p 'test_*.py'
+```
+
+Run the static SEO checker with:
+
+```bash
+scripts/qa-check
 ```
 
 To mirror the workflow's validation sequence, run:
