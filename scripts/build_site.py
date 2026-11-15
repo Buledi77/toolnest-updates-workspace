@@ -6,6 +6,7 @@ from __future__ import annotations
 import html
 import json
 import re
+import shutil
 import subprocess
 from datetime import date
 from html.parser import HTMLParser
@@ -17,6 +18,7 @@ from content_metrics import measure, section_name, unique_marked_sections
 ROOT = Path(__file__).resolve().parents[1]
 SITE_CONFIG = ROOT / "data" / "site.json"
 INDEX_ALLOWLIST = ROOT / "data" / "index-allowlist.json"
+REVIEW_DIR = ROOT / "data" / "reviews"
 PUBLIC_HOST = "https://www.toolnestai.tech"
 SEO_SUFFIXES = {".html", ".xml", ".txt", ".json", ".css", ".js"}
 SKIP_PAGES = {"googlef7f3d54afb5d5344.html"}
@@ -266,6 +268,19 @@ def add_jsonld(content: str, payload: dict, schema_type: str) -> str:
     return content.replace("</head>", script + "\n</head>", 1)
 
 
+def remove_jsonld_type(content: str, schema_type: str) -> str:
+    pattern = re.compile(
+        r'<script type="application/ld\+json">.*?</script>',
+        re.IGNORECASE | re.DOTALL,
+    )
+    return pattern.sub(
+        lambda match: ""
+        if f'"@type":"{schema_type}"' in match.group(0).replace(" ", "")
+        else match.group(0),
+        content,
+    )
+
+
 def person_schema(config: dict) -> dict:
     person = {
         "@type": "Person",
@@ -281,6 +296,57 @@ def person_schema(config: dict) -> dict:
 def add_structured_data(
     content: str, config: dict, relative: str, title: str, description: str, url: str
 ) -> str:
+    review_data = None
+    if relative.startswith(("tools/", "compare/")) and Path(relative).stem != "index":
+        review_data = load_review_data(Path(relative).stem)
+        if review_data and review_data.get("faqs"):
+            faqs = [
+                {
+                    "@type": "Question",
+                    "name": item["q"],
+                    "acceptedAnswer": {"@type": "Answer", "text": item["a"]},
+                }
+                for item in review_data["faqs"]
+                if isinstance(item, dict) and item.get("q") and item.get("a")
+            ]
+            if faqs:
+                content = add_jsonld(
+                    content,
+                    {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqs},
+                    "FAQPage",
+                )
+        elif relative.startswith(("tools/", "compare/")):
+            content = remove_jsonld_type(content, "FAQPage")
+    if relative.startswith("tools/") and Path(relative).stem != "index" and review_data:
+        if review_data.get("testStatus") == "tested":
+            content = remove_jsonld_type(content, "Article")
+            metadata = tool_metadata(Path(relative).stem)
+            review = {
+                "@context": "https://schema.org",
+                "@type": "Review",
+                "name": title,
+                "reviewBody": review_data.get("verdict", ""),
+                "url": url,
+                "author": person_schema(config),
+                "itemReviewed": {
+                    "@type": "Product",
+                    "name": metadata["name"],
+                    "url": metadata["url"],
+                },
+            }
+            _, rating = render_score(review_data)
+            if rating is not None:
+                review["reviewRating"] = {
+                    "@type": "Rating",
+                    "ratingValue": rating,
+                    "bestRating": 10,
+                    "worstRating": 1,
+                }
+            content = add_jsonld(content, review, "Review")
+        else:
+            content = remove_jsonld_type(content, "Review")
+    elif relative.startswith(("tools/", "compare/")):
+        content = remove_jsonld_type(content, "Review")
     if relative == "index.html":
         organization = {
             "@context": "https://schema.org",
@@ -296,7 +362,14 @@ def add_structured_data(
     elif relative == "authors/abdul-muswir.html":
         person = {"@context": "https://schema.org", **person_schema(config)}
         content = add_jsonld(content, person, "Person")
-    elif relative not in {"404.html", "privacy.html", "terms.html", *SKIP_PAGES}:
+    elif (
+        relative not in {"404.html", "privacy.html", "terms.html", *SKIP_PAGES}
+        and not (
+            relative.startswith("tools/")
+            and review_data
+            and review_data.get("testStatus") == "tested"
+        )
+    ):
         article = {
             "@context": "https://schema.org",
             "@type": "Article",
@@ -376,6 +449,311 @@ def add_editorial_strip(content: str, path: Path, config: dict) -> str:
     if marker == -1:
         return content
     return content[: marker + len("</section>")] + strip + content[marker + len("</section>") :]
+
+
+def load_review_data(slug: str) -> dict | None:
+    path = REVIEW_DIR / f"{slug}.json"
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text(encoding="utf-8"))
+    status = data.get("testStatus")
+    if status not in {"tested", "researched"}:
+        raise ValueError(f"{path}: testStatus must be tested or researched")
+    for screenshot in data.get("screenshots") or []:
+        if not isinstance(screenshot, dict) or not screenshot.get("src"):
+            continue
+        src = Path(str(screenshot["src"]))
+        if src.suffix.lower() == ".webp":
+            continue
+        source = ROOT / str(src).lstrip("/")
+        destination = source.with_suffix(".webp")
+        if not source.exists():
+            raise FileNotFoundError(f"{path}: screenshot does not exist: {source}")
+        converter = shutil.which("ffmpeg")
+        if not converter:
+            raise RuntimeError(f"{path}: ffmpeg is required to convert {source} to WebP")
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        subprocess.run(
+            [converter, "-y", "-i", str(source), str(destination)],
+            check=True,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.PIPE,
+        )
+        screenshot["src"] = "/" + destination.relative_to(ROOT).as_posix()
+    return data
+
+
+def tool_metadata(slug: str) -> dict:
+    v2_path = ROOT / "data" / "tools-v2" / f"{slug}.json"
+    if v2_path.exists():
+        data = json.loads(v2_path.read_text(encoding="utf-8"))
+        identity = data.get("identity", {})
+        editorial = data.get("editorial", {})
+        relationships = data.get("relationships", {})
+        return {
+            "name": identity.get("name", slug.replace("-", " ").title()),
+            "url": identity.get("official_url", ""),
+            "logo": identity.get("logo", ""),
+            "category": (data.get("discovery", {}).get("categories") or [""])[0],
+            "best": editorial.get("best_for", []),
+            "skip": editorial.get("not_recommended_for", []),
+            "alternatives": relationships.get("alternatives", []),
+            "comparisons": relationships.get("meaningful_comparisons", []),
+        }
+    legacy = json.loads((ROOT / "data" / "tools.json").read_text(encoding="utf-8"))
+    item = next((tool for tool in legacy.get("tools", []) if tool.get("id") == slug), {})
+    return {
+        "name": item.get("name", slug.replace("-", " ").title()),
+        "url": item.get("site", ""),
+        "logo": item.get("logo", ""),
+        "category": item.get("cat", ""),
+        "best": [item.get("best")] if item.get("best") else [],
+        "skip": [],
+        "alternatives": [],
+        "comparisons": [],
+    }
+
+
+def list_items(value: object) -> list[str]:
+    if not isinstance(value, list):
+        return []
+    return [str(item).strip() for item in value if str(item).strip()]
+
+
+def render_list(items: list[str], class_name: str = "tl") -> str:
+    return f'<ul class="{class_name}">' + "".join(
+        f"<li>{html.escape(item)}</li>" for item in items
+    ) + "</ul>"
+
+
+def tool_route(slug: str) -> str:
+    return f"/tools/{slug.replace('moz-pro', 'mozpro')}.html"
+
+
+def render_score(data: dict) -> tuple[str, float | None]:
+    scores = data.get("score") or data.get("scoreBreakdown") or {}
+    if not isinstance(scores, dict):
+        return "", None
+    values = [
+        float(value)
+        for value in scores.values()
+        if isinstance(value, (int, float)) and 1 <= float(value) <= 10
+    ]
+    if not values:
+        return "", None
+    average = round(sum(values) / len(values), 1)
+    rows = "".join(
+        f"<li><span>{html.escape(str(key).replace('_', ' ').title())}</span>"
+        f"<b>{html.escape(str(value))}/10</b></li>"
+        for key, value in scores.items()
+        if isinstance(value, (int, float)) and 1 <= float(value) <= 10
+    )
+    return f'<div class="proof-score"><b>Score: {average}/10</b><ul>{rows}</ul></div>', average
+
+
+def render_review_stack(data: dict, metadata: dict, slug: str) -> str:
+    name = html.escape(metadata["name"])
+    blocks: list[str] = []
+    score_html, _ = render_score(data)
+    best = list_items(data.get("whoShouldUse")) or list_items(metadata.get("best"))
+    skip = list_items(data.get("whoShouldSkip")) or list_items(metadata.get("skip"))
+    verdict = str(data.get("verdict", "")).strip()
+    price_from = str(data.get("priceFrom", data.get("price_from", ""))).strip()
+    cta_url = str(data.get("ctaUrl", metadata.get("url", ""))).strip()
+    if score_html or verdict or best or skip or price_from or cta_url:
+        parts = ['<section class="p-sec proof-stack" id="proof-verdict"><h2>Our verdict</h2>']
+        if verdict:
+            parts.append(f"<p>{html.escape(verdict)}</p>")
+        if score_html:
+            parts.append(score_html)
+        if best or skip or price_from:
+            parts.append('<div class="two proof-glance">')
+            if best:
+                parts.append(f'<div class="box"><h3>Best for</h3>{render_list(best, "tl yes")}</div>')
+            if skip:
+                parts.append(f'<div class="box"><h3>Skip if</h3>{render_list(skip, "tl no")}</div>')
+            if price_from:
+                parts.append(f'<div class="box"><h3>Price from</h3><p>{html.escape(price_from)}</p></div>')
+            parts.append("</div>")
+        if cta_url:
+            parts.append(
+                f'<a class="btn" href="{html.escape(cta_url, quote=True)}" '
+                'rel="sponsored nofollow noopener" target="_blank">'
+                f"Visit {name}<span class=\"sr\"> (opens the official site in a new tab)</span></a>"
+            )
+        blocks.append("".join(parts) + "</section>")
+
+    if data.get("testStatus") == "tested":
+        tasks = data.get("testTasks") or []
+        screenshots = data.get("screenshots") or []
+        if data.get("testedOn") or data.get("planTested") or tasks or screenshots:
+            parts = ['<section class="p-sec proof-stack" id="what-i-tested"><h2>What I tested</h2>']
+            details = []
+            if data.get("testedOn"):
+                details.append(f"<b>Tested on:</b> {html.escape(str(data['testedOn']))}")
+            if data.get("planTested"):
+                details.append(f"<b>Plan tested:</b> {html.escape(str(data['planTested']))}")
+            if details:
+                parts.append("<p>" + " · ".join(details) + "</p>")
+            if tasks:
+                parts.append(
+                    '<div class="tw"><table><caption class="sr">Hands-on test tasks</caption>'
+                    "<thead><tr><th scope=\"col\">Task</th><th scope=\"col\">Result</th>"
+                    "<th scope=\"col\">Time taken</th></tr></thead><tbody>"
+                )
+                for task in tasks:
+                    if not isinstance(task, dict):
+                        continue
+                    parts.append(
+                        "<tr>"
+                        f"<th scope=\"row\">{html.escape(str(task.get('task', '')))}</th>"
+                        f"<td>{html.escape(str(task.get('result', '')))}</td>"
+                        f"<td>{html.escape(str(task.get('timeTaken', task.get('time_taken', ''))))}</td>"
+                        "</tr>"
+                    )
+                parts.append("</tbody></table></div>")
+            if screenshots:
+                parts.append('<div class="proof-shots">')
+                for index, shot in enumerate(screenshots):
+                    if not isinstance(shot, dict) or not shot.get("src"):
+                        continue
+                    src = str(shot["src"])
+                    if Path(src).suffix.lower() != ".webp":
+                        raise ValueError(f"review screenshot must be WebP: {src}")
+                    loading = "" if index == 0 else ' loading="lazy"'
+                    parts.append(
+                        f'<figure><img src="{html.escape(src, quote=True)}" '
+                        f'alt="{html.escape(str(shot.get("alt", f"{name} test screenshot")), quote=True)}" '
+                        f'width="{html.escape(str(shot.get("width", 1200)), quote=True)}" '
+                        f'height="{html.escape(str(shot.get("height", 675)), quote=True)}" '
+                        f'decoding="async"{loading}>'
+                        f'<figcaption>{html.escape(str(shot.get("caption", "")))}</figcaption></figure>'
+                    )
+                parts.append("</div>")
+            blocks.append("".join(parts) + "</section>")
+
+    pros = list_items(data.get("pros"))
+    cons = list_items(data.get("cons"))
+    if pros or cons:
+        parts = ['<section class="p-sec proof-stack" id="proof-pros-cons"><h2>Pros and cons</h2><div class="two">']
+        if pros:
+            parts.append(f'<div class="box"><h3>Pros</h3>{render_list(pros, "tl yes")}</div>')
+        if cons:
+            parts.append(f'<div class="box"><h3>Cons</h3>{render_list(cons, "tl no")}</div>')
+        blocks.append("".join(parts) + "</div></section>")
+
+    pricing_date = str(data.get("pricingCheckedOn", "")).strip()
+    pricing_notes = str(data.get("pricingNotes", "")).strip()
+    if pricing_date or pricing_notes:
+        checked = f" Checked on {html.escape(pricing_date)}." if pricing_date else ""
+        blocks.append(
+            '<section class="p-sec proof-stack" id="proof-pricing"><h2>Pricing</h2>'
+            f"<p>{html.escape(pricing_notes)}{checked}</p></section>"
+        )
+
+    if data.get("whoShouldUse") or data.get("whoShouldSkip"):
+        parts = ['<section class="p-sec proof-stack" id="proof-fit"><h2>Who should use it</h2><div class="two">']
+        if data.get("whoShouldUse"):
+            parts.append(f'<div class="box"><h3>Who should use it</h3>{render_list(list_items(data["whoShouldUse"]), "tl yes")}</div>')
+        if data.get("whoShouldSkip"):
+            parts.append(f'<div class="box"><h3>Who should skip it</h3>{render_list(list_items(data["whoShouldSkip"]), "tl no")}</div>')
+        blocks.append("".join(parts) + "</div></section>")
+
+    alternatives = list_items(metadata.get("alternatives"))
+    if alternatives:
+        links = "".join(
+            f'<a class="lk" href="{tool_route(item)}"><span class="lk-tx"><b>{html.escape(item.replace("-", " ").title())}</b>'
+            "<small>Category alternative</small></span></a>"
+            for item in alternatives
+        )
+        blocks.append(
+            f'<section class="p-sec proof-stack" id="proof-alternatives"><h2>Alternatives</h2>'
+            f'<div class="linkgrid">{links}</div></section>'
+        )
+
+    faqs = data.get("faqs") or []
+    if faqs:
+        items = []
+        for faq in faqs:
+            if isinstance(faq, dict) and faq.get("q") and faq.get("a"):
+                items.append(
+                    f'<div class="qa"><h3>{html.escape(str(faq["q"]))}</h3>'
+                    f'<div class="ans"><p>{html.escape(str(faq["a"]))}</p></div></div>'
+                )
+        if items:
+            blocks.append(
+                '<section class="p-sec proof-stack" id="proof-faq"><h2>FAQ</h2>'
+                f'<div class="faq-grid">{"".join(items)}</div></section>'
+            )
+
+    comparisons = list_items(metadata.get("comparisons"))
+    if comparisons:
+        links = "".join(
+            f'<a class="lk" href="/compare/{html.escape(item, quote=True)}.html">'
+            f'<span class="lk-tx"><b>{html.escape(item.replace("-", " ").title())}</b>'
+            "<small>Related comparison</small></span></a>"
+            for item in comparisons
+        )
+        blocks.append(
+            '<section class="p-sec proof-stack" id="proof-comparisons"><h2>Related comparisons</h2>'
+            f'<div class="linkgrid">{links}</div></section>'
+        )
+    return "".join(blocks)
+
+
+def render_compare_evidence(slug: str) -> str:
+    if "-vs-" not in slug:
+        return ""
+    left, right = slug.split("-vs-", 1)
+    records = [(left, load_review_data(left)), (right, load_review_data(right))]
+    records = [(item, data) for item, data in records if data]
+    if not records:
+        return ""
+    cards = []
+    for item, data in records:
+        metadata = tool_metadata(item)
+        name = html.escape(metadata["name"])
+        status = "Hands-on tested" if data.get("testStatus") == "tested" else "Researched"
+        detail = []
+        if data.get("testedOn"):
+            detail.append(f"Tested on {html.escape(str(data['testedOn']))}")
+        if data.get("planTested"):
+            detail.append(f"Plan: {html.escape(str(data['planTested']))}")
+        if data.get("verdict"):
+            detail.append(f"<p>{html.escape(str(data['verdict']))}</p>")
+        cards.append(
+            f'<div class="box"><h3>{name}</h3><p><b>{status}</b>'
+            f"{(' · ' + ' · '.join(detail[:2])) if detail[:2] else ''}</p>"
+            f"{''.join(detail[2:])}</div>"
+        )
+    return (
+        '<section class="p-sec proof-stack" id="comparison-evidence">'
+        "<h2>Evidence behind this comparison</h2><div class=\"two\">"
+        + "".join(cards)
+        + "</div></section>"
+    )
+
+
+def add_proof_stack(content: str, relative: str) -> str:
+    if relative.startswith("tools/") and Path(relative).stem != "index":
+        data = load_review_data(Path(relative).stem)
+        if not data:
+            return content
+        stack = render_review_stack(data, tool_metadata(Path(relative).stem), Path(relative).stem)
+    elif relative.startswith("compare/") and Path(relative).stem != "index":
+        stack = render_compare_evidence(Path(relative).stem)
+    else:
+        return content
+    content = re.sub(
+        r'<section class="p-sec proof-stack".*?</section>',
+        "",
+        content,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    marker = re.search(r'<div class="wrap tn-trust-strip">.*?</div>', content, re.IGNORECASE | re.DOTALL)
+    if not stack or not marker:
+        return content
+    return content[: marker.end()] + stack + content[marker.end() :]
 
 
 def set_robots(content: str, indexable: bool) -> str:
@@ -566,6 +944,7 @@ def main() -> None:
         email = html.escape(config.get("CONTACT_EMAIL", "").strip(), quote=True)
         content = content.replace("{{CONTACT_EMAIL}}", email)
         content = add_editorial_strip(content, path, config)
+        content = add_proof_stack(content, relative)
         content = add_footer_trust_links(content)
         content = add_structured_data(content, config, relative, title, description, url)
         if relative in indexable:

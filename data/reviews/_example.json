@@ -1,0 +1,49 @@
+{
+  "testStatus": "tested",
+  "testedOn": "[YYYY-MM-DD]",
+  "planTested": "[Plan name]",
+  "testTasks": [
+    {
+      "task": "[A real task you performed]",
+      "result": "[What happened, including any limitation]",
+      "timeTaken": "[e.g. 12 minutes]"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/reviews/[slug]/[descriptive-screen].webp",
+      "alt": "[Describe what this screenshot shows]",
+      "caption": "[Explain why this screenshot matters]",
+      "width": 1200,
+      "height": 675
+    }
+  ],
+  "pros": [
+    "[A specific strength supported by the test]"
+  ],
+  "cons": [
+    "[A specific limitation supported by the test]"
+  ],
+  "whoShouldUse": [
+    "[The type of reader and workflow this fits]"
+  ],
+  "whoShouldSkip": [
+    "[The type of reader or workflow that should skip it]"
+  ],
+  "pricingCheckedOn": "[YYYY-MM-DD]",
+  "pricingNotes": "[Current price, billing caveat and plan limits]",
+  "priceFrom": "[Optional starting price]",
+  "verdict": "[Two or three honest sentences that explain the recommendation and its limits.]",
+  "scoreBreakdown": {
+    "easeOfUse":  "[1-10]",
+    "features": "[1-10]",
+    "value":    "[1-10]",
+    "support":  "[1-10]"
+  },
+  "faqs": [
+    {
+      "q": "[A question a buyer is likely to ask]",
+      "a": "[A concise answer based on your test or verified source]"
+    }
+  ]
+}
