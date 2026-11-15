@@ -287,6 +287,8 @@ def ensure_image_attributes(content: str, title: str) -> str:
             attrs += f' alt="{html.escape(fallback or title, quote=True)}"'
         if not re.search(r"\bdecoding\s*=", attrs, re.IGNORECASE):
             attrs += " decoding=\"async\""
+        if image_number == 0:
+            attrs = re.sub(r"\sloading\s*=\s*([\"'])lazy\1", "", attrs, flags=re.IGNORECASE)
         if image_number > 0 and not re.search(r"\bloading\s*=", attrs, re.IGNORECASE):
             attrs += ' loading="lazy"'
         if image_number == 0 and not re.search(r"\bfetchpriority\s*=", attrs, re.IGNORECASE):
@@ -361,6 +363,48 @@ def use_minified_assets(content: str) -> str:
         .replace("/assets/mobile-nav.js", "/assets/mobile-nav.min.js")
         .replace("/assets/measure.js", "/assets/measure.min.js")
     )
+
+
+def async_stylesheets(content: str) -> str:
+    for filename in ("site.min.css", "mobile-nav.min.css"):
+        tag = f'<link rel="stylesheet" href="/assets/{filename}">'
+        replacement = (
+            f'<link rel="preload" as="style" href="/assets/{filename}" '
+            'onload="this.onload=null;this.rel=\'stylesheet\'">'
+            f'<noscript>{tag}</noscript>'
+        )
+        content = content.replace(tag, replacement)
+    return content
+
+
+def ensure_favicon(content: str) -> str:
+    if 'rel="icon"' in content:
+        return content
+    return content.replace(
+        "</head>",
+        '<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">\n</head>',
+        1,
+    )
+
+
+def ensure_control_names(content: str) -> str:
+    for control_id, label in (
+        ("quiz-cat", "Tool category"),
+        ("quiz-budget", "Budget"),
+    ):
+        pattern = re.compile(
+            rf'<select\b([^>]*\bid="{re.escape(control_id)}"[^>]*)>',
+            re.IGNORECASE,
+        )
+        content = pattern.sub(
+            lambda match, label=label: (
+                match.group(0)
+                if re.search(r"\baria-label\s*=", match.group(1), re.IGNORECASE)
+                else f'<select{match.group(1)} aria-label="{label}">'
+            ),
+            content,
+        )
+    return content
 
 
 def add_jsonld(content: str, payload: dict, schema_type: str) -> str:
@@ -1368,6 +1412,8 @@ def main() -> None:
         content = ensure_h1(content, parser.h1_text or title)
         content = add_font_hints(content)
         content = use_minified_assets(content)
+        content = ensure_favicon(content)
+        content = ensure_control_names(content)
         content = ensure_image_attributes(content, title)
         content = add_analytics_and_verification(content, config, url, title, description)
         content = normalize_links(content)

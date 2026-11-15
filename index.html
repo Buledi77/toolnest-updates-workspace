@@ -26,8 +26,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Instrument+Sans:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Instrument+Sans:wght@400;500;600;700&display=swap"><style>.rv>span,.hero h1 .ln>span{transform:none}.lede,.ticks,.console{opacity:1;transform:none}</style></noscript>
-<link rel="stylesheet" href="/assets/site.min.css">
-<link rel="stylesheet" href="/assets/mobile-nav.min.css">
+<link rel="preload" as="style" href="/assets/site.min.css" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/site.min.css"></noscript>
+<link rel="preload" as="style" href="/assets/mobile-nav.min.css" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/mobile-nav.min.css"></noscript>
 <script src="/assets/mobile-nav.min.js" defer></script>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.toolnestai.tech/#website","name":"ToolNest","url":"https://www.toolnestai.tech/","description":"Find the right AI tool for the job, with plain-English reviews and comparisons.","inLanguage":"en","publisher":{"@id":"https://www.toolnestai.tech/#org"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.toolnestai.tech/tools/index.html?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
@@ -295,7 +295,7 @@
   function tile(t) {
     var letter = esc(t.name.charAt(0));
     if (t.logo) {
-      return '<div class="tile has-logo"><span class="logo-fallback" aria-hidden="true">' + letter + '</span><img src="' + esc(t.logo) + '" width="128" height="128" loading="lazy" decoding="async" alt="' + esc(t.name) + ' logo" fetchpriority="high"></div>';
+      return '<div class="tile has-logo"><span class="logo-fallback" aria-hidden="true">' + letter + '</span><img src="' + esc(t.logo) + '" width="128" height="128" decoding="async" alt="' + esc(t.name) + ' logo" fetchpriority="high"></div>';
     }
     return '<div class="tile" aria-hidden="true">' + letter + '</div>';
   }
@@ -445,7 +445,7 @@
         <div class="grid md:grid-cols-3 gap-4 mb-6">
             <div class="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/10">
                 <label class="block text-xs font-bold uppercase tracking-wider text-indigo-300 mb-2">1. Select Category</label>
-                <select id="quiz-cat" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl p-3 text-white text-sm focus:ring-2 focus:ring-indigo-500 outline-none">
+                <select id="quiz-cat" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl p-3 text-white text-sm focus:ring-2 focus:ring-indigo-500 outline-none" aria-label="Tool category">
                     <option value="marketing">Marketing & SEO</option>
                     <option value="content">Content & Writing</option>
                     <option value="dev">Coding & Automation</option>
@@ -454,7 +454,7 @@
             </div>
             <div class="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/10">
                 <label class="block text-xs font-bold uppercase tracking-wider text-indigo-300 mb-2">2. Monthly Budget</label>
-                <select id="quiz-budget" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl p-3 text-white text-sm focus:ring-2 focus:ring-indigo-500 outline-none">
+                <select id="quiz-budget" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl p-3 text-white text-sm focus:ring-2 focus:ring-indigo-500 outline-none" aria-label="Budget">
                     <option value="free">Free Tier / Trial</option>
                     <option value="starter">Under $50 / mo</option>
                     <option value="pro">Pro / Enterprise</option>

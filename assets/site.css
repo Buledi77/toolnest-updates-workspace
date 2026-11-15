@@ -1789,6 +1789,9 @@ a,button,select,summary,.chip,.goal,.card,.lg{touch-action:manipulation}
 .byline b a{color:inherit;text-underline-offset:3px}
 .byline small{display:block;font-size:13px;line-height:1.35;color:#9FC3BB}
 .byline .bl{font-size:13px;font-weight:600;color:#CFE6E1;text-underline-offset:3px;white-space:nowrap}
+.tn-trust-strip .byline{background:var(--surface);border-color:var(--line);color:var(--muted)}
+.tn-trust-strip .byline .bl,.tn-trust-strip .byline a{color:var(--brand)}
+.tn-trust-strip .byline small{color:var(--muted)}
 .hubnav{margin-top:22px}
 
 /* layout rhythm */
