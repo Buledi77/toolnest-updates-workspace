@@ -5,16 +5,20 @@ from __future__ import annotations
 
 import re
 import sys
+import json
 from collections import Counter
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlparse
 import xml.etree.ElementTree as ET
 
+from content_metrics import measure, page_route, unique_marked_sections
+
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_HOST = "www.toolnestai.tech"
 EXTENSIONS = {".html", ".xml", ".txt", ".json", ".css", ".js"}
 SKIP_SEO = {"googlef7f3d54afb5d5344.html"}
+CONTENT_EXCLUDED = {"404.html", *SKIP_SEO}
 
 
 class Parser(HTMLParser):
@@ -83,11 +87,13 @@ def main() -> int:
     pages = []
     titles = []
     descriptions = []
+    metrics = {}
     for path in sorted(ROOT.rglob("*.html")):
         if path.relative_to(ROOT).as_posix() in SKIP_SEO:
             continue
         parser = Parser()
-        parser.feed(path.read_text(encoding="utf-8"))
+        content = path.read_text(encoding="utf-8")
+        parser.feed(content)
         title = "".join(parser.title).strip()
         description = parser.descriptions[0] if parser.descriptions else ""
         if len(parser.title) == 0 or not 50 <= len(title) <= 60:
@@ -105,6 +111,9 @@ def main() -> int:
         titles.append((title, path))
         descriptions.append((description, path))
         pages.append((path, parser))
+        relative = path.relative_to(ROOT).as_posix()
+        if relative not in CONTENT_EXCLUDED:
+            metrics[relative] = measure(content)
         for href, rel, target in parser.links:
             parsed = urlparse(href)
             external = parsed.scheme in {"http", "https"} and parsed.netloc not in {PUBLIC_HOST, "toolnestai.tech"}
@@ -120,16 +129,41 @@ def main() -> int:
     for value, count in Counter(v for v, _ in descriptions).items():
         if count > 1:
             failures.append(f"duplicate-description: {value}")
+    allowlist_data = json.loads(
+        (ROOT / "data" / "index-allowlist.json").read_text(encoding="utf-8")
+    )
+    allowlist = set(allowlist_data.get("paths", []))
+    unique = unique_marked_sections(metrics)
+    expected_indexable = {
+        path: page_route(path) in allowlist
+        or (item.words >= 600 and bool(unique[path]))
+        for path, item in metrics.items()
+    }
+    for path, parser in pages:
+        relative = path.relative_to(ROOT).as_posix()
+        if relative not in expected_indexable:
+            continue
+        has_noindex = "noindex" in parser.robots.lower()
+        if has_noindex == expected_indexable[relative]:
+            expected = "indexable" if expected_indexable[relative] else "noindex"
+            failures.append(f"indexability: {relative} should be {expected}")
     sitemap = ROOT / "sitemap.xml"
     try:
         tree = ET.parse(sitemap)
+        sitemap_routes = set()
         for url in tree.getroot():
             loc = next((child.text for child in url if child.tag.endswith("loc")), "")
+            if loc:
+                sitemap_routes.add(urlparse(loc).path)
             target = file_for_url(loc or "", ROOT / "sitemap.xml")
             if not target or not target.exists():
                 failures.append(f"sitemap-missing: {loc}")
             elif "noindex" in next((p.robots for page, p in pages if page == target), "").lower():
                 failures.append(f"sitemap-noindex: {loc}")
+        for path, should_index in expected_indexable.items():
+            route = page_route(path)
+            if should_index != (route in sitemap_routes):
+                failures.append(f"sitemap-indexability: {path}")
     except (ET.ParseError, OSError) as exc:
         failures.append(f"sitemap-invalid: {exc}")
     if failures:

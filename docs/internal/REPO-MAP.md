@@ -7,7 +7,9 @@ Generated on 2026-11-14 for the `seo-v2` branch.
 The public pages are committed static HTML files. `scripts/build_site.py` now
 normalizes and rebuilds the HTML corpus in `tools/`, `compare/`, `alternatives/`,
 `best/`, `category/`, and `goals/` from the committed HTML plus
-`data/site.json`. The repository has no `package.json` and no root README with
+`data/site.json` and `data/index-allowlist.json`. It also applies the
+main-content indexability gate and writes the sitemap and indexability report.
+The repository has no `package.json` and no root README with
 an npm build command. The exact whole-site build command is:
 
 ```bash
@@ -23,7 +25,13 @@ The scripts build or validate page and data artifacts:
 
 - `scripts/build_site.py` writes normalized UTF-8 HTML, `sitemap.xml`, and
   optional `ads.txt`; it also injects configured analytics and verification
-  tags and normalizes outbound link attributes.
+  tags, normalizes outbound link attributes, and applies the indexability gate.
+- `scripts/content_metrics.py` extracts main-content word counts and unique
+  marked-section fingerprints while excluding shared navigation and related
+  content.
+- `scripts/count_main_content.py` prints the per-page content metrics.
+- `data/index-allowlist.json` contains explicit manual indexability overrides.
+- `docs/internal/INDEX-REPORT.md` records indexable/noindex counts and URLs.
 
 - `scripts/build_search_index.py` reads `data/tools-v2/` and writes
   `data/indexes/tool-search-index.json`.
