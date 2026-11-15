@@ -26,9 +26,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Instrument+Sans:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Instrument+Sans:wght@400;500;600;700&display=swap"><style>.rv>span,.hero h1 .ln>span{transform:none}.lede,.ticks,.console{opacity:1;transform:none}</style></noscript>
-<link rel="stylesheet" href="/assets/site.css">
-<link rel="stylesheet" href="/assets/mobile-nav.css">
-<script src="/assets/mobile-nav.js" defer></script>
+<link rel="stylesheet" href="/assets/site.min.css">
+<link rel="stylesheet" href="/assets/mobile-nav.min.css">
+<script src="/assets/mobile-nav.min.js" defer></script>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.toolnestai.tech/#website","name":"ToolNest","url":"https://www.toolnestai.tech/","description":"Find the right AI tool for the job, with plain-English reviews and comparisons.","inLanguage":"en","publisher":{"@id":"https://www.toolnestai.tech/#org"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.toolnestai.tech/tools/index.html?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"ToolNest: Compare Software and AI Tools Before You Buy","url":"https://www.toolnestai.tech/","description":"Compare software and AI tools by price, fit and trade-offs. See who each tool suits, who should skip it, and what to choose instead before you buy.","isPartOf":{"@id":"https://www.toolnestai.tech/#website"},"about":{"@id":"https://www.toolnestai.tech/#org"},"inLanguage":"en"}</script>
@@ -295,7 +295,7 @@
   function tile(t) {
     var letter = esc(t.name.charAt(0));
     if (t.logo) {
-      return '<div class="tile has-logo"><span class="logo-fallback" aria-hidden="true">' + letter + '</span><img src="' + esc(t.logo) + '" width="128" height="128" loading="lazy" decoding="async" alt="' + esc(t.name) + ' logo"></div>';
+      return '<div class="tile has-logo"><span class="logo-fallback" aria-hidden="true">' + letter + '</span><img src="' + esc(t.logo) + '" width="128" height="128" loading="lazy" decoding="async" alt="' + esc(t.name) + ' logo" fetchpriority="high"></div>';
     }
     return '<div class="tile" aria-hidden="true">' + letter + '</div>';
   }

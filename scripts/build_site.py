@@ -20,6 +20,11 @@ SITE_CONFIG = ROOT / "data" / "site.json"
 INDEX_ALLOWLIST = ROOT / "data" / "index-allowlist.json"
 REVIEW_DIR = ROOT / "data" / "reviews"
 PUBLIC_HOST = "https://www.toolnestai.tech"
+FONT_CSS_URL = (
+    "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:"
+    "opsz,wdth,wght@12..96,75..100,500..800&family=Instrument+Sans:"
+    "wght@400;500;600;700&display=swap"
+)
 SEO_SUFFIXES = {".html", ".xml", ".txt", ".json", ".css", ".js"}
 SKIP_PAGES = {"googlef7f3d54afb5d5344.html"}
 
@@ -247,6 +252,115 @@ def add_analytics_and_verification(content: str, config: dict, url: str, title: 
         )
         content = content.replace("</head>", snippet + "\n</head>", 1)
     return content
+
+
+def add_font_hints(content: str) -> str:
+    if "fonts.googleapis.com" in content:
+        return content
+    hints = (
+        '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
+        '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
+        f'<link rel="preload" as="style" href="{FONT_CSS_URL}" '
+        'onload="this.onload=null;this.rel=\'stylesheet\'">\n'
+        f'<noscript><link rel="stylesheet" href="{FONT_CSS_URL}"></noscript>\n'
+    )
+    return content.replace("</head>", hints + "</head>", 1)
+
+
+def ensure_image_attributes(content: str, title: str) -> str:
+    image_number = 0
+
+    def replace(match):
+        nonlocal image_number
+        attrs = match.group(1)
+        src_match = re.search(r'\bsrc\s*=\s*([\'"])(.*?)\1', attrs, re.IGNORECASE | re.DOTALL)
+        if not src_match:
+            return match.group(0)
+        src = src_match.group(2)
+        is_logo = "/logos/" in src or "logo" in attrs.lower()
+        if not re.search(r"\bwidth\s*=", attrs, re.IGNORECASE):
+            attrs += ' width="128"' if is_logo else ' width="1200"'
+        if not re.search(r"\bheight\s*=", attrs, re.IGNORECASE):
+            attrs += ' height="128"' if is_logo else ' height="675"'
+        if not re.search(r"\balt\s*=", attrs, re.IGNORECASE):
+            fallback = Path(src).stem.replace("-", " ").replace("_", " ").strip()
+            attrs += f' alt="{html.escape(fallback or title, quote=True)}"'
+        if not re.search(r"\bdecoding\s*=", attrs, re.IGNORECASE):
+            attrs += " decoding=\"async\""
+        if image_number > 0 and not re.search(r"\bloading\s*=", attrs, re.IGNORECASE):
+            attrs += ' loading="lazy"'
+        if image_number == 0 and not re.search(r"\bfetchpriority\s*=", attrs, re.IGNORECASE):
+            attrs += ' fetchpriority="high"'
+        image_number += 1
+        return f"<img{attrs}>"
+
+    return re.sub(r"<img\b([^>]*)>", replace, content, flags=re.IGNORECASE | re.DOTALL)
+
+
+def minify_asset(source: str, kind: str) -> str:
+    output = []
+    quote = None
+    index = 0
+    whitespace = False
+    while index < len(source):
+        char = source[index]
+        if quote:
+            output.append(char)
+            if char == "\\" and index + 1 < len(source):
+                index += 1
+                output.append(source[index])
+            elif char == quote:
+                quote = None
+            index += 1
+            continue
+        if char in "\"'`":
+            quote = char
+            output.append(char)
+            index += 1
+            continue
+        if source.startswith("/*", index):
+            end = source.find("*/", index + 2)
+            index = len(source) if end == -1 else end + 2
+            continue
+        if kind == "js" and source.startswith("//", index):
+            end = source.find("\n", index + 2)
+            index = len(source) if end == -1 else end + 1
+            continue
+        if char.isspace():
+            whitespace = True
+            index += 1
+            continue
+        if whitespace and output and output[-1][-1:] not in "{[(=,:;>+~-":
+            output.append(" ")
+        whitespace = False
+        output.append(char)
+        index += 1
+    result = "".join(output)
+    if kind == "css":
+        result = re.sub(r"\s*([{}:;,>+~])\s*", r"\1", result)
+    else:
+        result = re.sub(r"\s*([{}()[\];,:=+\-<>])\s*", r"\1", result)
+    return result.strip()
+
+
+def build_minified_assets() -> None:
+    for source_name, min_name, kind in (
+        ("site.css", "site.min.css", "css"),
+        ("mobile-nav.css", "mobile-nav.min.css", "css"),
+        ("mobile-nav.js", "mobile-nav.min.js", "js"),
+        ("measure.js", "measure.min.js", "js"),
+    ):
+        source = ROOT / "assets" / source_name
+        write_utf8(ROOT / "assets" / min_name, minify_asset(source.read_text(encoding="utf-8"), kind))
+
+
+def use_minified_assets(content: str) -> str:
+    return (
+        content.replace("/assets/site.css", "/assets/site.min.css")
+        .replace("/assets/mobile-nav.css", "/assets/mobile-nav.min.css")
+        .replace("/assets/mobile-nav.js", "/assets/mobile-nav.min.js")
+        .replace("/assets/measure.js", "/assets/measure.min.js")
+    )
 
 
 def add_jsonld(content: str, payload: dict, schema_type: str) -> str:
@@ -1216,6 +1330,7 @@ def build_ads(config: dict) -> None:
 
 def main() -> None:
     strip_boms()
+    build_minified_assets()
     config = json.loads(SITE_CONFIG.read_text(encoding="utf-8"))
     allowlist = load_allowlist()
     metrics = {}
@@ -1251,6 +1366,9 @@ def main() -> None:
         content = add_or_replace_head_meta(content, "description", description)
         content = ensure_canonical(content, url)
         content = ensure_h1(content, parser.h1_text or title)
+        content = add_font_hints(content)
+        content = use_minified_assets(content)
+        content = ensure_image_attributes(content, title)
         content = add_analytics_and_verification(content, config, url, title, description)
         content = normalize_links(content)
         email = html.escape(config.get("CONTACT_EMAIL", "").strip(), quote=True)
