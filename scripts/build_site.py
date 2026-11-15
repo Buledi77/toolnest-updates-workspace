@@ -247,6 +247,137 @@ def add_analytics_and_verification(content: str, config: dict, url: str, title: 
     return content
 
 
+def add_jsonld(content: str, payload: dict, schema_type: str) -> str:
+    pattern = re.compile(
+        r'<script type="application/ld\+json">.*?</script>',
+        re.IGNORECASE | re.DOTALL,
+    )
+    content = pattern.sub(
+        lambda match: ""
+        if f'"@type":"{schema_type}"' in match.group(0).replace(" ", "")
+        else match.group(0),
+        content,
+    )
+    script = (
+        '<script type="application/ld+json">'
+        + json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+        + "</script>"
+    )
+    return content.replace("</head>", script + "\n</head>", 1)
+
+
+def person_schema(config: dict) -> dict:
+    person = {
+        "@type": "Person",
+        "name": config.get("AUTHOR_NAME", "Abdul Muswir"),
+        "url": f"{PUBLIC_HOST}/authors/abdul-muswir.html",
+    }
+    same_as = [value for value in config.get("AUTHOR_SAME_AS", []) if value]
+    if same_as:
+        person["sameAs"] = same_as
+    return person
+
+
+def add_structured_data(
+    content: str, config: dict, relative: str, title: str, description: str, url: str
+) -> str:
+    if relative == "index.html":
+        organization = {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "ToolNest",
+            "url": PUBLIC_HOST + "/",
+            "logo": f"{PUBLIC_HOST}/assets/og-default.png",
+        }
+        same_as = [value for value in config.get("ORGANIZATION_SAME_AS", []) if value]
+        if same_as:
+            organization["sameAs"] = same_as
+        content = add_jsonld(content, organization, "Organization")
+    elif relative == "authors/abdul-muswir.html":
+        person = {"@context": "https://schema.org", **person_schema(config)}
+        content = add_jsonld(content, person, "Person")
+    elif relative not in {"404.html", "privacy.html", "terms.html", *SKIP_PAGES}:
+        article = {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": title,
+            "description": description,
+            "url": url,
+            "mainEntityOfPage": {"@type": "WebPage", "@id": url},
+            "author": person_schema(config),
+            "publisher": {
+                "@type": "Organization",
+                "name": "ToolNest",
+                "url": PUBLIC_HOST + "/",
+                "logo": {"@type": "ImageObject", "url": f"{PUBLIC_HOST}/assets/og-default.png"},
+            },
+            "image": f"{PUBLIC_HOST}/assets/og-default.png",
+        }
+        content = add_jsonld(content, article, "Article")
+    return content
+
+
+def add_footer_trust_links(content: str) -> str:
+    pattern = re.compile(
+        r'(<nav\b[^>]*aria-label="About this site"[^>]*>)(.*?)(</nav>)',
+        re.IGNORECASE | re.DOTALL,
+    )
+
+    def replace(match):
+        body = match.group(2)
+        links = (
+            '<a href="/authors/abdul-muswir.html">Author: Abdul Muswir</a>'
+            '<a href="/how-we-test.html">How we test</a>'
+            '<a href="/editorial-policy.html">Editorial policy</a>'
+        )
+        for href in (
+            "/authors/abdul-muswir.html",
+            "/how-we-test.html",
+            "/editorial-policy.html",
+        ):
+            if href in body:
+                links = links.replace(
+                    re.search(rf'<a href="{re.escape(href)}">.*?</a>', links).group(0),
+                    "",
+                )
+        return match.group(1) + body + links + match.group(3)
+
+    return pattern.sub(replace, content, count=1)
+
+
+def add_editorial_strip(content: str, path: Path, config: dict) -> str:
+    relative_parts = path.relative_to(ROOT).parts
+    if relative_parts[0] not in {"tools", "compare", "alternatives"} or path.stem == "index":
+        return content
+    content = re.sub(
+        r'<div class="wrap tn-trust-strip">.*?</div>',
+        "",
+        content,
+        count=1,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    status = (
+        "Hands-on tested"
+        if re.search(r"(?<!not )hands-on tested", content, re.IGNORECASE)
+        else "Researched"
+    )
+    updated = git_date(path)
+    name = html.escape(config.get("AUTHOR_NAME", "Abdul Muswir"))
+    strip = (
+        '<div class="wrap tn-trust-strip">'
+        f'<p class="byline">By <a href="/authors/abdul-muswir.html">{name}</a> '
+        f'&middot; Updated {updated} &middot; '
+        f'<a href="/how-we-test.html">{status}</a></p>'
+        '<p class="affiliate-note">Some links may be affiliate links; they never change the verdict. '
+        '<a href="/affiliate-disclosure.html">Affiliate disclosure</a>.</p>'
+        "</div>"
+    )
+    marker = content.find("</section>", content.find('<section class="hero phero"'))
+    if marker == -1:
+        return content
+    return content[: marker + len("</section>")] + strip + content[marker + len("</section>") :]
+
+
 def set_robots(content: str, indexable: bool) -> str:
     value = "index,follow,max-image-preview:large" if indexable else "noindex, follow"
     return add_or_replace_head_meta(content, "robots", value)
@@ -432,6 +563,11 @@ def main() -> None:
         content = ensure_h1(content, parser.h1_text or title)
         content = add_analytics_and_verification(content, config, url, title, description)
         content = normalize_links(content)
+        email = html.escape(config.get("CONTACT_EMAIL", "").strip(), quote=True)
+        content = content.replace("{{CONTACT_EMAIL}}", email)
+        content = add_editorial_strip(content, path, config)
+        content = add_footer_trust_links(content)
+        content = add_structured_data(content, config, relative, title, description, url)
         if relative in indexable:
             content = set_robots(content, indexable[relative])
         if relative == "index.html":
