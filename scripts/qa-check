@@ -108,10 +108,14 @@ def main() -> int:
             failures.append(f"lang: {path.relative_to(ROOT)}")
         if not re.search(r'property="og:image" content="https://www\.toolnestai\.tech/assets/og-default\.png"', path.read_text(encoding="utf-8")):
             failures.append(f"og:image: {path.relative_to(ROOT)}")
+        relative = path.relative_to(ROOT).as_posix()
+        if relative not in {"index.html", "404.html", *SKIP_SEO}:
+            breadcrumb_count = len(re.findall(r'"@type"\s*:\s*"BreadcrumbList"', content))
+            if breadcrumb_count != 1:
+                failures.append(f"breadcrumbs: {relative} ({breadcrumb_count})")
         titles.append((title, path))
         descriptions.append((description, path))
         pages.append((path, parser))
-        relative = path.relative_to(ROOT).as_posix()
         if relative not in CONTENT_EXCLUDED:
             metrics[relative] = measure(content)
         for href, rel, target in parser.links:
@@ -139,6 +143,18 @@ def main() -> int:
         or (item.words >= 600 and bool(unique[path]))
         for path, item in metrics.items()
     }
+    inbound_links = Counter()
+    for source, parser in pages:
+        for href, _, _ in parser.links:
+            target = file_for_url(href, source)
+            if target and target.exists() and target != source:
+                try:
+                    inbound_links[target.relative_to(ROOT).as_posix()] += 1
+                except ValueError:
+                    pass
+    for path, should_index in expected_indexable.items():
+        if should_index and inbound_links[path] == 0:
+            failures.append(f"orphan-indexable: {path}")
     for path, parser in pages:
         relative = path.relative_to(ROOT).as_posix()
         if relative not in expected_indexable:

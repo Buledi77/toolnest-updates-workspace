@@ -484,8 +484,13 @@ def load_review_data(slug: str) -> dict | None:
 
 
 def tool_metadata(slug: str) -> dict:
-    v2_path = ROOT / "data" / "tools-v2" / f"{slug}.json"
-    if v2_path.exists():
+    v2_paths = [
+        ROOT / "data" / "tools-v2" / f"{slug}.json",
+        ROOT / "data" / "tools-v2" / "legacy" / f"{slug}.json",
+        ROOT / "data" / "tools-v2" / "legacy" / f"{slug.replace('mozpro', 'moz-pro')}.json",
+    ]
+    v2_path = next((path for path in v2_paths if path.exists()), None)
+    if v2_path:
         data = json.loads(v2_path.read_text(encoding="utf-8"))
         identity = data.get("identity", {})
         editorial = data.get("editorial", {})
@@ -756,6 +761,312 @@ def add_proof_stack(content: str, relative: str) -> str:
     return content[: marker.end()] + stack + content[marker.end() :]
 
 
+def taxonomy_categories() -> dict[str, str]:
+    data = json.loads(
+        (ROOT / "data" / "taxonomy" / "taxonomy-v1.json").read_text(encoding="utf-8")
+    )
+    return {item["slug"]: item["label"] for item in data.get("categories", [])}
+
+
+def page_breadcrumbs(relative: str, title: str) -> list[tuple[str, str | None]]:
+    parts = Path(relative).parts
+    label = " ".join(Path(relative).stem.replace("-", " ").split()).title()
+    if relative in {"index.html", "404.html", *SKIP_PAGES}:
+        return []
+    if parts[0] == "tools":
+        metadata = tool_metadata(Path(relative).stem)
+        category = (metadata.get("category") or "").strip()
+        category_slug = next(
+            (slug for slug, name in taxonomy_categories().items() if name.lower() == category.lower()),
+            "",
+        )
+        if category_slug:
+            return [("Home", "/"), (category, f"/category/{category_slug}.html"), (title, None)]
+        return [("Home", "/"), ("Tools", "/tools/index.html"), (title, None)]
+    parents = {
+        "category": ("Categories", "/category/index.html"),
+        "best": ("Best tools", "/best/index.html"),
+        "compare": ("Compare", "/compare/index.html"),
+        "alternatives": ("Alternatives", "/alternatives/index.html"),
+        "goals": ("Goals", "/goals/index.html"),
+        "authors": ("Authors", "/authors/abdul-muswir.html"),
+    }
+    if parts[0] in parents:
+        parent_label, parent_url = parents[parts[0]]
+        return [("Home", "/"), (parent_label, parent_url), (title, None)]
+    return [("Home", "/"), (title, None)]
+
+
+def add_breadcrumbs(content: str, items: list[tuple[str, str | None]]) -> str:
+    if not items:
+        return content
+    content = re.sub(
+        r'<nav\b[^>]*class="crumbs"[^>]*>.*?</nav>',
+        "",
+        content,
+        count=1,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    links = []
+    for label, url in items:
+        escaped = html.escape(label)
+        if url:
+            links.append(f'<li><a href="{html.escape(url, quote=True)}">{escaped}</a></li>')
+        else:
+            links.append(f'<li aria-current="page">{escaped}</li>')
+    nav = '<nav aria-label="Breadcrumb" class="crumbs"><ol>' + "".join(links) + "</ol></nav>"
+    hero = re.search(r'<section class="hero phero"[^>]*>', content, re.IGNORECASE)
+    if hero:
+        wrap = re.search(r'<div class="wrap">', content[hero.end() :], re.IGNORECASE)
+        if wrap:
+            insert_at = hero.end() + wrap.end()
+            return content[:insert_at] + nav + content[insert_at:]
+        return content[: hero.end()] + nav + content[hero.end() :]
+    return content.replace("<main", f"<main>{nav}", 1)
+
+
+def add_breadcrumb_schema(
+    content: str, items: list[tuple[str, str | None]], current_url: str
+) -> str:
+    if not items:
+        return content
+    elements = []
+    for position, (name, url) in enumerate(items, start=1):
+        elements.append(
+            {
+                "@type": "ListItem",
+                "position": position,
+                "name": name,
+                "item": f"{PUBLIC_HOST}{url or current_url}",
+            }
+        )
+    return add_jsonld(
+        content,
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": elements,
+        },
+        "BreadcrumbList",
+    )
+
+
+def load_catalog() -> list[dict]:
+    return json.loads((ROOT / "data" / "tools.json").read_text(encoding="utf-8")).get("tools", [])
+
+
+def category_tool_ids(slug: str) -> list[str]:
+    label = taxonomy_categories().get(slug, "").lower()
+    return [
+        item["id"]
+        for item in load_catalog()
+        if str(item.get("cat", "")).lower() == label
+    ]
+
+
+def best_route_for_category(slug: str) -> str | None:
+    candidates = [
+        f"/best/best-{slug}-tools.html",
+        {
+            "website-builders": "/best/best-website-builder-tools.html",
+            "voice-video": "/best/best-ai-voice-tools.html",
+            "ai-assistants": "/best/best-ai-assistants-tools.html",
+        }.get(slug, ""),
+    ]
+    for route in candidates:
+        if route:
+            return route
+    return None
+
+
+def route_is_indexable(route: str, indexable: dict[str, bool]) -> bool:
+    relative = route.lstrip("/")
+    return indexable.get(relative, False)
+
+
+def category_comparisons(slug: str, indexable: dict[str, bool]) -> list[str]:
+    ids = set(category_tool_ids(slug))
+    matches = []
+    for path in sorted((ROOT / "compare").glob("*.html")):
+        if path.stem == "index" or not indexable.get(f"compare/{path.name}", False):
+            continue
+        left, _, right = path.stem.partition("-vs-")
+        if left in ids or right in ids:
+            matches.append(f"/compare/{path.name}")
+    return matches[:3]
+
+
+def category_alternatives(slug: str, indexable: dict[str, bool]) -> list[str]:
+    routes = []
+    for tool_id in category_tool_ids(slug):
+        route = f"/alternatives/{tool_id}-alternatives.html"
+        if route_is_indexable(route, indexable):
+            routes.append(route)
+    return routes[:3]
+
+
+def link_list(routes: list[str], label: str) -> str:
+    if not routes:
+        return ""
+    def display_name(route: str) -> str:
+        value = Path(route).stem.replace("-", " ").title()
+        return value.replace("Mozpro", "Moz Pro").replace("Seo", "SEO").replace("Ai ", "AI ")
+
+    links = "".join(
+        f'<a class="lk" href="{html.escape(route, quote=True)}">'
+        f'<span class="lk-tx"><b>{html.escape(display_name(route))}</b>'
+        f"<small>{html.escape(label)}</small></span></a>"
+        for route in routes
+    )
+    return f'<div class="linkgrid">{links}</div>'
+
+
+def add_category_hub(content: str, relative: str, indexable: dict[str, bool]) -> str:
+    parts = Path(relative).parts
+    if len(parts) != 2 or parts[0] != "category" or parts[1] == "index.html":
+        return content
+    slug = Path(parts[1]).stem
+    label = taxonomy_categories().get(slug, slug.replace("-", " ").title())
+    tool_ids = [
+        tool_id
+        for tool_id in category_tool_ids(slug)
+        if route_is_indexable(f"/tools/{tool_id}.html", indexable)
+    ]
+    tool_routes = [f"/tools/{tool_id}.html" for tool_id in tool_ids[:8]]
+    best_route = best_route_for_category(slug)
+    best_links = [best_route] if best_route and route_is_indexable(best_route, indexable) else []
+    comparison_routes = category_comparisons(slug, indexable)
+    alternative_routes = category_alternatives(slug, indexable)
+    buying_routes = best_links + ["/compare/index.html", "/alternatives/index.html", "/tools/index.html"]
+    buying_routes = [route for route in buying_routes if route_is_indexable(route, indexable)]
+    tool_list = link_list(tool_routes, f"{label} tool review")
+    sections = [
+        f'<section class="p-sec category-hub" id="category-intro"><h2>About {html.escape(label)} tools</h2>'
+        "<p>[WRITE INTRO]</p></section>",
+    ]
+    if tool_list:
+        sections.append(
+            f'<section class="p-sec category-hub" id="best-tools"><h2>Best {html.escape(label)} tools</h2>{tool_list}</section>'
+        )
+    if comparison_routes:
+        sections.append(
+            '<section class="p-sec category-hub" id="top-comparisons"><h2>Top comparisons</h2>'
+            f"{link_list(comparison_routes, f'{label} comparison')}</section>"
+        )
+    if alternative_routes:
+        sections.append(
+            '<section class="p-sec category-hub" id="top-alternatives"><h2>Top alternatives</h2>'
+            f"{link_list(alternative_routes, f'{label} alternative')}</section>"
+        )
+    if buying_routes:
+        sections.append(
+            '<section class="p-sec category-hub" id="buying-guides"><h2>Buying guides</h2>'
+            f"{link_list(buying_routes, 'Guide')}</section>"
+        )
+    hub = "".join(sections)
+    content = re.sub(
+        r'<section class="p-sec category-hub".*?</section>',
+        "",
+        content,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    marker = re.search(r'<div class="wrap tn-trust-strip">.*?</div>', content, re.IGNORECASE | re.DOTALL)
+    if marker:
+        return content[: marker.end()] + hub + content[marker.end() :]
+    return content.replace("</main>", hub + "</main>", 1)
+
+
+def tool_internal_links(content: str, relative: str, indexable: dict[str, bool]) -> str:
+    if not relative.startswith("tools/") or Path(relative).stem == "index":
+        return content
+    slug = Path(relative).stem
+    metadata = tool_metadata(slug)
+    category = str(metadata.get("category", "")).lower()
+    category_slug = next(
+        (key for key, value in taxonomy_categories().items() if value.lower() == category),
+        "",
+    )
+    routes: list[str] = []
+    if category_slug:
+        routes.append(f"/category/{category_slug}.html")
+    best_route = best_route_for_category(category_slug) if category_slug else None
+    if best_route:
+        routes.append(best_route)
+    comparisons = [
+        f"/compare/{name}.html"
+        for name in list_items(metadata.get("comparisons"))[:3]
+        if (ROOT / "compare" / f"{name}.html").exists()
+    ]
+    routes.extend(comparisons)
+    alternative_route = f"/alternatives/{slug}-alternatives.html"
+    routes.append(alternative_route)
+    routes = [route for route in routes if route_is_indexable(route, indexable)]
+    if not routes:
+        return content
+    cards = link_list(routes, "Related ToolNest guide")
+    section = f'<section class="p-sec tool-links" id="more-ways-to-choose"><h2>More ways to choose</h2>{cards}</section>'
+    content = re.sub(
+        r'<section class="p-sec tool-links".*?</section>',
+        "",
+        content,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    return content.replace("</main>", section + "</main>", 1)
+
+
+def homepage_quality_ids(indexable: dict[str, bool], metrics: dict[str, object]) -> list[str]:
+    candidates = []
+    for item in load_catalog():
+        slug = item.get("id", "")
+        relative = f"tools/{slug}.html"
+        if not indexable.get(relative, False):
+            continue
+        review = load_review_data(slug) or {}
+        candidates.append(
+            (
+                0 if review.get("testStatus") == "tested" else 1,
+                -int(getattr(metrics.get(relative), "words", 0)),
+                slug,
+            )
+        )
+    return [slug for _, _, slug in sorted(candidates)[:8]]
+
+
+def add_recently_tested(content: str, indexable: dict[str, bool]) -> str:
+    records = []
+    for item in load_catalog():
+        slug = item.get("id", "")
+        if not indexable.get(f"tools/{slug}.html", False):
+            continue
+        review = load_review_data(slug)
+        if review and review.get("testStatus") == "tested" and review.get("testedOn"):
+            records.append((str(review["testedOn"]), item))
+    records.sort(key=lambda pair: pair[0], reverse=True)
+    cards = "".join(
+        f'<a class="lk" href="/tools/{html.escape(item["id"], quote=True)}.html">'
+        f'<span class="lk-tx"><b>{html.escape(item.get("name", item["id"]))}</b>'
+        f"<small>Hands-on tested {html.escape(date_checked)}</small></span></a>"
+        for date_checked, item in records[:6]
+    )
+    body = f'<div class="linkgrid">{cards}</div>' if cards else (
+        '<p class="sub">No hands-on reviews have been published yet.</p>'
+    )
+    section = (
+        '<section class="recently-tested" aria-labelledby="recently-tested-title"><div class="wrap">'
+        '<p class="kicker">Proof first</p><h2 class="h2" id="recently-tested-title">Recently tested</h2>'
+        '<p class="sub">These pages include hands-on evidence with a test date and plan.</p>'
+        f"{body}</div></section>"
+    )
+    content = re.sub(
+        r'<section class="recently-tested".*?</section>',
+        "",
+        content,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    marker = content.find('<section id="categories"')
+    return content[:marker] + section + content[marker:] if marker >= 0 else content
+
+
 def set_robots(content: str, indexable: bool) -> str:
     value = "index,follow,max-image-preview:large" if indexable else "noindex, follow"
     return add_or_replace_head_meta(content, "robots", value)
@@ -770,15 +1081,15 @@ def page_route(relative: str) -> str:
     return "/" if relative == "index.html" else f"/{relative}"
 
 
-def filter_homepage_featured(content: str, indexable: dict[str, bool]) -> str:
+def filter_homepage_featured(
+    content: str, indexable: dict[str, bool], featured_ids: list[str] | None = None
+) -> str:
     match = re.search(r"var FEATURED = \[([^\]]*)\];", content)
     if not match:
         return content
     ids = re.findall(r'"([^"]+)"', match.group(1))
-    kept = [
-        tool_id
-        for tool_id in ids
-        if indexable.get(f"tools/{tool_id}.html", False)
+    kept = featured_ids if featured_ids is not None else [
+        tool_id for tool_id in ids if indexable.get(f"tools/{tool_id}.html", False)
     ]
     replacement = "var FEATURED = " + json.dumps(kept, separators=(", ", ": ")) + ";"
     return content[: match.start()] + replacement + content[match.end() :]
@@ -919,6 +1230,7 @@ def main() -> None:
         or (item.words >= 600 and bool(unique[relative]))
         for relative, item in metrics.items()
     }
+    featured_ids = homepage_quality_ids(indexable, metrics)
     pages = []
     used_titles: set[str] = set()
     used_descriptions: set[str] = set()
@@ -945,12 +1257,18 @@ def main() -> None:
         content = content.replace("{{CONTACT_EMAIL}}", email)
         content = add_editorial_strip(content, path, config)
         content = add_proof_stack(content, relative)
+        content = add_category_hub(content, relative, indexable)
+        content = tool_internal_links(content, relative, indexable)
         content = add_footer_trust_links(content)
+        breadcrumb_items = page_breadcrumbs(relative, parser.h1_text or title)
+        content = add_breadcrumbs(content, breadcrumb_items)
+        content = add_breadcrumb_schema(content, breadcrumb_items, route)
         content = add_structured_data(content, config, relative, title, description, url)
         if relative in indexable:
             content = set_robots(content, indexable[relative])
         if relative == "index.html":
-            content = filter_homepage_featured(content, indexable)
+            content = filter_homepage_featured(content, indexable, featured_ids)
+            content = add_recently_tested(content, indexable)
         content = re.sub(r"\n{4,}", "\n\n\n", content)
         write_utf8(path, content)
         pages.append((path, content))
