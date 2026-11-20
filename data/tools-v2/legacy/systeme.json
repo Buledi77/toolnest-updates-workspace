@@ -6,7 +6,7 @@
     "name": "Systeme.io",
     "slug": "systeme",
     "official_url": "https://systeme.io",
-    "status": "unknown",
+    "status": "active",
     "logo": "/assets/logos/systeme.png",
     "aliases": []
   },
@@ -14,14 +14,30 @@
     "categories": [
       "Sales"
     ],
-    "use_cases": [],
+    "use_cases": [
+      "sales pages, email lists and online courses"
+    ],
     "audiences": [],
-    "platforms": [],
+    "platforms": [
+      "web"
+    ],
     "integrations": [],
-    "tags": []
+    "tags": [
+      "sales"
+    ]
   },
   "factual_profile": {
-    "capabilities": [],
+    "capabilities": [
+      {
+        "description": "Pages, email and checkout together"
+      },
+      {
+        "description": "Easy to start with"
+      },
+      {
+        "description": "Can replace several separate subscriptions"
+      }
+    ],
     "limitations": [],
     "free_plan_status": [],
     "trial_status": [],
@@ -30,18 +46,30 @@
     "availability_regions": []
   },
   "editorial": {
-    "editorial_tier": "C",
-    "best_for": [],
+    "editorial_tier": "A",
+    "best_for": [
+      "Sales pages, email lists and online courses"
+    ],
     "not_recommended_for": [],
-    "review_status": "draft",
-    "review_url": null,
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/systeme.html",
     "review_owner": null,
     "editorial_last_reviewed": null
   },
   "relationships": {
-    "alternatives": [],
-    "meaningful_comparisons": [],
-    "related_tools": [],
+    "alternatives": [
+      "hubspot",
+      "notion",
+      "grammarly"
+    ],
+    "meaningful_comparisons": [
+      "hostinger-vs-systeme",
+      "hubspot-vs-systeme"
+    ],
+    "related_tools": [
+      "hostinger",
+      "hubspot"
+    ],
     "compatible_tools": [],
     "replaces": [],
     "replaced_by": []
@@ -51,7 +79,7 @@
     "source_ids": []
   },
   "monetization": {
-    "affiliate_status": "needs_review",
+    "affiliate_status": "approved",
     "affiliate_network": null,
     "affiliate_url": "https://systeme.io/?sa=sa0283786247d8d254e08d2d01d25a1e2069805f78",
     "official_non_affiliate_url": "https://systeme.io",
@@ -62,26 +90,20 @@
   },
   "publishing": {
     "directory_visibility": "public",
-    "standalone_page_status": "none",
-    "indexability": "noindex",
-    "sitemap_eligible": false,
-    "canonical_url": null,
-    "template_type": "directory-only",
-    "content_quality_status": "unassessed",
-    "prepublish_status": "not_ready"
+    "standalone_page_status": "published",
+    "indexability": "index",
+    "sitemap_eligible": true,
+    "canonical_url": "https://www.toolnestai.tech/tools/systeme.html",
+    "template_type": "review",
+    "content_quality_status": "assessed",
+    "prepublish_status": "published"
   },
   "freshness": {
-    "created_at": null,
-    "updated_at": null,
+    "created_at": "2026-11-20T15:27:01Z",
+    "updated_at": "2026-11-20T15:27:01Z",
     "last_verified_at": null,
     "next_review_at": null,
-    "stale_fields": [
-      "identity.status",
-      "discovery",
-      "factual_profile",
-      "relationships",
-      "monetization"
-    ],
+    "stale_fields": [],
     "change_history_reference": null
   }
 }

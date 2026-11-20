@@ -1,0 +1,1025 @@
+<!doctype html>
+<html lang="en">
+<head><title>Workflow Explorer Review: Features &amp; Pricing | ToolNest</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="ToolNest Editorial"><link rel="author" href="/about.html">
+<link rel="stylesheet" href="/assets/site.min.css">
+<link rel="stylesheet" href="/assets/mobile-nav.min.css">
+<script src="/assets/mobile-nav.min.js" defer></script>
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Instrument+Sans:wght@400;500;600;700&display=optional" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Instrument+Sans:wght@400;500;600;700&display=optional"></noscript>
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToolNest">
+<meta property="og:locale" content="en_US">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Workflow Explorer: Step-by-Step Tool Selection","url":"https://www.toolnestai.tech/tools/workflow-explorer.html","description":"Follow a structured workflow to select the right tool. Each path shows stages, decision questions, candidate tools, comparisons, and evidence confidence.","isPartOf":{"@type":"WebSite","name":"ToolNest","url":"https://www.toolnestai.tech/"}}</script>
+
+<style>
+.we-wrap{max-width:880px;margin:0 auto}
+.we-workflows{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:24px 0}
+.we-workflow-btn{display:flex;align-items:center;gap:10px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);cursor:pointer;text-align:left;transition:all .2s ease;font:500 15px var(--font-body);color:var(--ink)}
+.we-workflow-btn:hover,.we-workflow-btn:focus-visible{border-color:var(--brand);box-shadow:0 0 0 3px rgba(15,107,92,.12)}
+.we-workflow-btn[aria-checked="true"]{background:var(--soft);border-color:var(--brand);color:var(--brand)}
+.we-workflow-btn .we-icon{width:22px;height:22px;flex:none;color:var(--brand)}
+.we-workflow-btn .we-label{font-weight:600;font-size:15px}
+.we-workflow-btn .we-count{font-size:12px;color:var(--muted);margin-top:2px}
+.we-stage-nav{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}
+.we-stage-btn{padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-size:14px;font-weight:500;cursor:pointer;transition:all .2s ease}
+.we-stage-btn:hover,.we-stage-btn:focus-visible{border-color:var(--brand);color:var(--brand)}
+.we-stage-btn.active{background:var(--brand);color:#fff;border-color:var(--brand)}
+.we-result{display:none;margin-top:24px}
+.we-result.visible{display:block}
+.we-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:16px;box-shadow:var(--shadow)}
+.we-card h3{font-size:18px;margin:0 0 12px;color:var(--ink)}
+.we-card h4{font-size:15px;font-weight:600;margin:16px 0 8px;color:var(--ink)}
+.we-card p{font-size:15px;line-height:1.7;color:var(--muted);margin:0 0 12px}
+.we-card ul{margin:0 0 12px;padding-left:20px}
+.we-card li{font-size:14px;line-height:1.6;color:var(--muted);margin-bottom:4px}
+.we-card li::marker{color:var(--brand)}
+.we-confidence{display:inline-block;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.we-confidence.high{background:#D1FAE5;color:#065F46}
+.we-confidence.medium{background:#FEF3C7;color:#92400E}
+.we-confidence.low{background:#FEE2E2;color:#991B1B}
+.we-tool-link{display:inline-block;padding:6px 12px;margin:4px;border-radius:8px;background:var(--soft);color:var(--brand);font-size:13px;font-weight:600;text-decoration:none;transition:background .2s ease}
+.we-tool-link:hover{background:#d5ebe6}
+.we-compare-link{display:inline-block;padding:6px 12px;margin:4px;border-radius:8px;background:var(--surface);border:1px solid var(--line);color:var(--muted);font-size:13px;text-decoration:none;transition:all .2s ease}
+.we-compare-link:hover{border-color:var(--brand);color:var(--brand)}
+.we-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+.we-actions a{display:inline-block;padding:10px 18px;border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;transition:background .2s ease,transform .2s ease}
+.we-actions .we-primary{background:var(--brand);color:#fff}
+.we-actions .we-primary:hover{background:#0a5c50;transform:translateY(-1px)}
+.we-actions .we-secondary{background:var(--soft);color:var(--brand);border:1px solid var(--line)}
+.we-actions .we-secondary:hover{background:#d5ebe6}
+.we-empty{text-align:center;padding:40px 20px;color:var(--muted)}
+.we-empty p{font-size:16px;margin:0}
+.we-gaps{margin:12px 0;padding:12px 16px;background:#FEF3C7;border-radius:10px;border:1px solid #FDE68A}
+.we-gaps p{color:#92400E;font-size:14px;margin:0}
+.we-note{font-size:13px;color:var(--muted);margin-top:16px;line-height:1.6}
+.we-note a{color:var(--brand);text-decoration:underline;text-underline-offset:3px}
+.we-reset{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-size:13px;font-weight:500;cursor:pointer;transition:all .2s ease;margin-left:auto}
+.we-reset:hover{border-color:var(--brand);color:var(--brand)}
+.we-header{display:flex;align-items:center;justify-content:space-between;margin:16px 0}
+.we-stage-desc{font-size:14px;color:var(--muted);margin:0 0 16px;font-style:italic}
+.we-tool-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin:12px 0}
+.we-tool-item{padding:10px 12px;border-radius:10px;background:var(--soft);text-align:center}
+.we-tool-item a{font-size:14px;font-weight:600;color:var(--brand);text-decoration:none}
+.we-tool-item a:hover{text-decoration:underline}
+.we-compare-grid{display:grid;grid-template-columns:1fr;gap:6px;margin:12px 0}
+.we-compare-item{padding:8px 12px;border-radius:8px;background:var(--surface);border:1px solid var(--line)}
+.we-compare-item a{font-size:13px;color:var(--muted);text-decoration:none}
+.we-compare-item a:hover{color:var(--brand)}
+.we-alt-grid{display:grid;grid-template-columns:1fr;gap:6px;margin:12px 0}
+.we-alt-item{padding:8px 12px;border-radius:8px;background:var(--surface);border:1px solid var(--line)}
+.we-alt-item a{font-size:13px;color:var(--muted);text-decoration:none}
+.we-alt-item a:hover{color:var(--brand)}
+.we-questions{margin:12px 0}
+.we-questions li{padding:6px 0;border-bottom:1px solid var(--line)}
+.we-questions li:last-child{border-bottom:0}
+.we-questions li::marker{color:var(--brand)}
+.we-progress{display:flex;gap:4px;margin:16px 0}
+.we-progress-dot{width:10px;height:10px;border-radius:50%;background:var(--line);transition:background .2s ease}
+.we-progress-dot.active{background:var(--brand)}
+.we-progress-dot.completed{background:#065F46}
+@media(max-width:640px){
+  .we-workflows{grid-template-columns:1fr}
+  .we-tool-grid{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))}
+  .we-actions{flex-direction:column}
+  .we-actions a{text-align:center}
+  .we-header{flex-direction:column;align-items:flex-start;gap:8px}
+  .we-reset{margin-left:0}
+}
+</style>
+
+
+<meta name="description" content="Follow a structured workflow to select the right tool. Each path shows stages, decision questions, candidate tools, comparisons, and evidence confidence.">
+<link rel="canonical" href="https://www.toolnestai.tech/tools/workflow-explorer.html">
+<meta property="og:title" content="Workflow Explorer Review: Features &amp; Pricing | ToolNest">
+<meta property="og:description" content="Follow a structured workflow to select the right tool. Each path shows stages, decision questions, candidate tools, comparisons, and evidence confidence.">
+<meta property="og:url" content="https://www.toolnestai.tech/tools/workflow-explorer.html">
+<meta property="og:image" content="https://www.toolnestai.tech/assets/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Workflow Explorer Review: Features &amp; Pricing | ToolNest">
+<meta name="twitter:description" content="Follow a structured workflow to select the right tool. Each path shows stages, decision questions, candidate tools, comparisons, and evidence confidence.">
+<meta name="twitter:image" content="https://www.toolnestai.tech/assets/og-default.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.toolnestai.tech/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://www.toolnestai.tech/tools/index.html"},{"@type":"ListItem","position":3,"name":"Workflow Explorer","item":"https://www.toolnestai.tech/tools/workflow-explorer.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Workflow Explorer Review: Features & Pricing | ToolNest","description":"Follow a structured workflow to select the right tool. Each path shows stages, decision questions, candidate tools, comparisons, and evidence confidence.","url":"https://www.toolnestai.tech/tools/workflow-explorer.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.toolnestai.tech/tools/workflow-explorer.html"},"author":{"@type":"Organization","name":"ToolNest Editorial","url":"https://www.toolnestai.tech/editorial-policy.html"},"publisher":{"@type":"Organization","name":"ToolNest","url":"https://www.toolnestai.tech/","logo":{"@type":"ImageObject","url":"https://www.toolnestai.tech/assets/og-default.png"}},"image":"https://www.toolnestai.tech/assets/og-default.png"}</script>
+<meta name="robots" content="index,follow,max-image-preview:large">
+</head>
+<body>
+
+<a class="skip" href="#top">Skip to content</a>
+<header class="top">
+<div class="bar">
+<a aria-label="ToolNest home" class="logo" href="/">
+<span>Tool<i>Nest</i>
+</span>
+</a>
+<nav aria-label="Main">
+<a href="/tools/index.html">Tools</a>
+<a href="/category/index.html">Categories</a>
+<a href="/compare/index.html">Compare</a>
+<a href="/best/index.html">Best of</a>
+<a class="btn" href="/#picker">Find my tool</a>
+</nav>
+<button class="mnav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav">
+<span class="mnav-ico" aria-hidden="true">
+</span>
+</button>
+</div>
+<nav class="mnav" id="mnav" aria-label="Mobile" hidden>
+<a href="/">Home</a>
+<a href="/tools/index.html">Tools</a>
+<a href="/category/index.html">Categories</a>
+<a href="/compare/index.html">Compare</a>
+<a href="/alternatives/index.html">Alternatives</a>
+<a href="/best/index.html">Best of</a>
+<a class="btn" href="/#picker">Find my tool</a>
+</nav>
+</header>
+
+<main id="top">
+<section class="hero phero">
+<div class="wrap"><nav aria-label="Breadcrumb" class="crumbs"><ol><li><a href="/">Home</a></li><li><a href="/tools/index.html">Tools</a></li><li aria-current="page">Workflow Explorer</li></ol></nav>
+
+<p class="eyebrow">Interactive tool</p>
+<h1>Workflow Explorer</h1>
+<p class="lede">Follow a structured workflow to select the right tool. Each path shows stages, decision questions, candidate tools, comparisons, and evidence confidence.</p>
+</div>
+</section><div class="wrap tn-trust-strip"><p class="tn-research-line">ToolNest Research &middot; Editorial review 2026-11-20 &middot; <a href="/how-we-test.html">Research-based profile</a></p><p class="tn-trust-links"><a href="/how-we-test.html">Methodology</a><a href="/editorial-policy.html">Editorial policy</a><a href="/contact.html">Corrections</a><a href="/affiliate-disclosure.html">Affiliate disclosure</a></p></div>
+
+<div class="wrap p-flow">
+<div class="we-wrap">
+
+<section class="p-sec">
+<h2>How it works</h2>
+<p>ToolNest has mapped 9 common workflows based on existing review data, comparison pages, and alternatives pages. Each workflow guides you through a sequence of stages:</p>
+<ol>
+<li><strong>Identify requirements</strong> — Clarify your primary goal and constraints with decision questions.</li>
+<li><strong>Compare candidates</strong> — Review the candidate tools that fit this workflow.</li>
+<li><strong>Check alternatives</strong> — Explore alternatives pages for each candidate tool.</li>
+<li><strong>Make decision</strong> — Choose based on verified evidence and confidence ratings.</li>
+</ol>
+<p>Each workflow shows the evidence confidence level, any unresolved gaps, and links to relevant comparisons and alternatives. This tool uses structured data from existing ToolNest reviews and does not invent capabilities or pricing.</p>
+</section>
+
+<section class="p-sec">
+<h2>Select a workflow</h2>
+
+<div class="we-workflows" id="weWorkflows" role="radiogroup" aria-label="Available workflows">
+</div>
+
+<div class="we-result" id="weResult" role="region" aria-live="polite" aria-label="Workflow details">
+</div>
+
+</section>
+
+<section class="p-sec">
+<h2>Why workflows matter</h2>
+<div class="p-feats">
+<div class="p-feat">
+<b>Structured decisions</b>
+<p>Instead of browsing randomly, follow a proven path from goal identification through comparison to a final decision.</p>
+</div>
+<div class="p-feat">
+<b>Evidence confidence</b>
+<p>Each workflow is rated for evidence confidence so you know how much review data supports the recommendations.</p>
+</div>
+<div class="p-feat">
+<b>Decision questions</b>
+<p>Key questions help you narrow the field before comparing tools, saving time and reducing analysis paralysis.</p>
+</div>
+<div class="p-feat">
+<b>Unresolved gaps</b>
+<p>When data is incomplete, ToolNest flags the gap rather than guessing, so you know where to verify yourself.</p>
+</div>
+</div>
+</section>
+
+<section class="p-sec">
+<h2>Workflow data summary</h2>
+<p>ToolNest currently tracks 9 workflows covering 53 candidate tool references, 64 comparison pages, and 53 alternatives pages. The confidence distribution is 7 high-confidence workflows and 2 medium-confidence workflows. All workflows are derived from existing review data, comparison pages, and alternatives pages.</p>
+<p class="we-note">This tool is read-only and does not store your selections. To explore a specific workflow in depth, open the relevant goal guide from the <a href="/goals/index.html">goals index</a>.</p>
+</section>
+
+</div>
+</div>
+</main>
+
+<footer class="site-footer">
+<div class="wrap">
+<p>&copy; 2026 ToolNest. All rights reserved.</p>
+<nav>
+<a href="/about.html">About</a>
+<a href="/editorial-policy.html">Editorial policy</a>
+<a href="/privacy.html">Privacy</a>
+<a href="/terms.html">Terms</a>
+<a href="/contact.html">Contact</a>
+</nav>
+</div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  var WORKFLOWS = [
+          {
+            "goal_id": "write-better-english",
+            "goal_label": "Write better English",
+            "candidate_tools": [
+              "grammarly",
+              "quillbot",
+              "prowritingaid",
+              "hemingway",
+              "writesonic"
+            ],
+            "decision_questions": [
+              "Do you need grammar correction or full content generation?",
+              "Is this for professional or personal use?",
+              "Do you need a free option?"
+            ],
+            "stages": [
+              {
+                "step": 1,
+                "name": "Identify requirements",
+                "description": "Clarify your primary goal and constraints"
+              },
+              {
+                "step": 2,
+                "name": "Compare candidates",
+                "description": "Review 5 candidate tools"
+              },
+              {
+                "step": 3,
+                "name": "Check alternatives",
+                "description": "Explore 5 alternatives pages"
+              },
+              {
+                "step": 4,
+                "name": "Make decision",
+                "description": "Choose based on verified evidence"
+              }
+            ],
+            "evidence_confidence": "high",
+            "relevant_comparisons": [
+              "/compare/hemingway-vs-prowritingaid.html",
+              "/compare/prowritingaid-vs-writesonic.html",
+              "/compare/hemingway-vs-quillbot.html",
+              "/compare/grammarly-vs-hemingway.html",
+              "/compare/prowritingaid-vs-quillbot.html",
+              "/compare/quillbot-vs-writesonic.html",
+              "/compare/grammarly-vs-quillbot.html",
+              "/compare/grammarly-vs-prowritingaid.html",
+              "/compare/grammarly-vs-writesonic.html"
+            ],
+            "relevant_alternatives": [
+              "/alternatives/grammarly-alternatives.html",
+              "/alternatives/quillbot-alternatives.html",
+              "/alternatives/prowritingaid-alternatives.html",
+              "/alternatives/hemingway-alternatives.html",
+              "/alternatives/writesonic-alternatives.html"
+            ]
+          },
+          {
+            "goal_id": "organise-my-work",
+            "goal_label": "Organise my work",
+            "candidate_tools": [
+              "notion",
+              "otter",
+              "fireflies",
+              "clickup",
+              "asana",
+              "monday",
+              "todoist"
+            ],
+            "decision_questions": [
+              "Do you need team collaboration or solo use?",
+              "Do you prefer notes-first or tasks-first?",
+              "Do you need integrations with other tools?"
+            ],
+            "stages": [
+              {
+                "step": 1,
+                "name": "Identify requirements",
+                "description": "Clarify your primary goal and constraints"
+              },
+              {
+                "step": 2,
+                "name": "Compare candidates",
+                "description": "Review 7 candidate tools"
+              },
+              {
+                "step": 3,
+                "name": "Check alternatives",
+                "description": "Explore 7 alternatives pages"
+              },
+              {
+                "step": 4,
+                "name": "Make decision",
+                "description": "Choose based on verified evidence"
+              }
+            ],
+            "evidence_confidence": "high",
+            "relevant_comparisons": [
+              "/compare/asana-vs-notion.html",
+              "/compare/clickup-vs-notion.html",
+              "/compare/fireflies-vs-otter.html",
+              "/compare/notion-vs-todoist.html",
+              "/compare/monday-vs-notion.html"
+            ],
+            "relevant_alternatives": [
+              "/alternatives/notion-alternatives.html",
+              "/alternatives/otter-alternatives.html",
+              "/alternatives/fireflies-alternatives.html",
+              "/alternatives/clickup-alternatives.html",
+              "/alternatives/asana-alternatives.html",
+              "/alternatives/monday-alternatives.html",
+              "/alternatives/todoist-alternatives.html"
+            ]
+          },
+          {
+            "goal_id": "add-voice-to-videos",
+            "goal_label": "Add a voice to videos",
+            "candidate_tools": [
+              "jasper",
+              "copyai",
+              "elevenlabs",
+              "descript",
+              "runway",
+              "synthesia",
+              "invideo",
+              "kapwing"
+            ],
+            "decision_questions": [
+              "Do you need voice cloning or stock voices?",
+              "Is this for YouTube, podcasts, or other media?",
+              "Do you need editing capabilities?"
+            ],
+            "stages": [
+              {
+                "step": 1,
+                "name": "Identify requirements",
+                "description": "Clarify your primary goal and constraints"
+              },
+              {
+                "step": 2,
+                "name": "Compare candidates",
+                "description": "Review 8 candidate tools"
+              },
+              {
+                "step": 3,
+                "name": "Check alternatives",
+                "description": "Explore 8 alternatives pages"
+              },
+              {
+                "step": 4,
+                "name": "Make decision",
+                "description": "Choose based on verified evidence"
+              }
+            ],
+            "evidence_confidence": "high",
+            "relevant_comparisons": [
+              "/compare/descript-vs-invideo.html",
+              "/compare/descript-vs-synthesia.html",
+              "/compare/kapwing-vs-runway.html",
+              "/compare/elevenlabs-vs-descript.html",
+              "/compare/descript-vs-kapwing.html",
+              "/compare/descript-vs-runway.html",
+              "/compare/invideo-vs-runway.html",
+              "/compare/runway-vs-synthesia.html",
+              "/compare/elevenlabs-vs-synthesia.html",
+              "/compare/copyai-vs-jasper.html"
+            ],
+            "relevant_alternatives": [
+              "/alternatives/jasper-alternatives.html",
+              "/alternatives/copyai-alternatives.html",
+              "/alternatives/elevenlabs-alternatives.html",
+              "/alternatives/descript-alternatives.html",
+              "/alternatives/runway-alternatives.html",
+              "/alternatives/synthesia-alternatives.html",
+              "/alternatives/invideo-alternatives.html",
+              "/alternatives/kapwing-alternatives.html"
+            ]
+          },
+          {
+            "goal_id": "edit-video-podcasts",
+            "goal_label": "Edit video or podcasts",
+            "candidate_tools": [
+              "notion",
+              "otter",
+              "fireflies",
+              "clickup",
+              "asana",
+              "monday",
+              "todoist",
+              "elevenlabs",
+              "descript",
+              "runway",
+              "synthesia",
+              "invideo",
+              "kapwing"
+            ],
+            "decision_questions": [
+              "Do you need transcript-based editing or timeline editing?",
+              "Do you need to remove filler words automatically?",
+              "Do you need multi-track audio and video support?"
+            ],
+            "stages": [
+              {
+                "step": 1,
+                "name": "Identify requirements",
+                "description": "Clarify your primary goal and constraints"
+              },
+              {
+                "step": 2,
+                "name": "Compare candidates",
+                "description": "Review 13 candidate tools"
+              },
+              {
+                "step": 3,
+                "name": "Check alternatives",
+                "description": "Explore 13 alternatives pages"
+              },
+              {
+                "step": 4,
+                "name": "Make decision",
+                "description": "Choose based on verified evidence"
+              }
+            ],
+            "evidence_confidence": "high",
+            "relevant_comparisons": [
+              "/compare/descript-vs-invideo.html",
+              "/compare/descript-vs-synthesia.html",
+              "/compare/asana-vs-notion.html",
+              "/compare/kapwing-vs-runway.html",
+              "/compare/elevenlabs-vs-descript.html",
+              "/compare/descript-vs-kapwing.html",
+              "/compare/clickup-vs-notion.html",
+              "/compare/invideo-vs-runway.html",
+              "/compare/fireflies-vs-otter.html",
+              "/compare/runway-vs-synthesia.html",
+              "/compare/notion-vs-todoist.html",
+              "/compare/elevenlabs-vs-synthesia.html",
+              "/compare/descript-vs-runway.html",
+              "/compare/monday-vs-notion.html"
+            ],
+            "relevant_alternatives": [
+              "/alternatives/notion-alternatives.html",
+              "/alternatives/otter-alternatives.html",
+              "/alternatives/fireflies-alternatives.html",
+              "/alternatives/clickup-alternatives.html",
+              "/alternatives/asana-alternatives.html",
+              "/alternatives/monday-alternatives.html",
+              "/alternatives/todoist-alternatives.html",
+              "/alternatives/elevenlabs-alternatives.html",
+              "/alternatives/descript-alternatives.html",
+              "/alternatives/runway-alternatives.html",
+              "/alternatives/synthesia-alternatives.html",
+              "/alternatives/invideo-alternatives.html",
+              "/alternatives/kapwing-alternatives.html"
+            ]
+          },
+          {
+            "goal_id": "write-ad-copy",
+            "goal_label": "Write ad copy",
+            "candidate_tools": [
+              "jasper",
+              "copyai",
+              "grammarly",
+              "quillbot",
+              "prowritingaid",
+              "hemingway",
+              "writesonic"
+            ],
+            "decision_questions": [
+              "Do you need platform-specific ad formats?",
+              "Do you need A/B variant generation?",
+              "Is this for social media ads or search ads?"
+            ],
+            "stages": [
+              {
+                "step": 1,
+                "name": "Identify requirements",
+                "description": "Clarify your primary goal and constraints"
+              },
+              {
+                "step": 2,
+                "name": "Compare candidates",
+                "description": "Review 7 candidate tools"
+              },
+              {
+                "step": 3,
+                "name": "Check alternatives",
+                "description": "Explore 7 alternatives pages"
+              },
+              {
+                "step": 4,
+                "name": "Make decision",
+                "description": "Choose based on verified evidence"
+              }
+            ],
+            "evidence_confidence": "high",
+            "relevant_comparisons": [
+              "/compare/copyai-vs-jasper.html",
+              "/compare/hemingway-vs-prowritingaid.html",
+              "/compare/prowritingaid-vs-writesonic.html",
+              "/compare/copyai-vs-grammarly.html",
+              "/compare/hemingway-vs-quillbot.html",
+              "/compare/grammarly-vs-hemingway.html",
+              "/compare/prowritingaid-vs-quillbot.html",
+              "/compare/quillbot-vs-writesonic.html",
+              "/compare/grammarly-vs-jasper.html",
+              "/compare/grammarly-vs-quillbot.html",
+              "/compare/grammarly-vs-prowritingaid.html",
+              "/compare/grammarly-vs-writesonic.html"
+            ],
+            "relevant_alternatives": [
+              "/alternatives/jasper-alternatives.html",
+              "/alternatives/copyai-alternatives.html",
+              "/alternatives/grammarly-alternatives.html",
+              "/alternatives/quillbot-alternatives.html",
+              "/alternatives/prowritingaid-alternatives.html",
+              "/alternatives/hemingway-alternatives.html",
+              "/alternatives/writesonic-alternatives.html"
+            ]
+          },
+          {
+            "goal_id": "get-search-traffic",
+            "goal_label": "Get search traffic",
+            "candidate_tools": [
+              "semrush",
+              "ahrefs",
+              "mozpro",
+              "surferseo",
+              "screamingfrog"
+            ],
+            "decision_questions": [
+              "Do you need keyword research, rank tracking, or both?",
+              "Are you a beginner or experienced with SEO?",
+              "Do you need agency-level features?"
+            ],
+            "stages": [
+              {
+                "step": 1,
+                "name": "Identify requirements",
+                "description": "Clarify your primary goal and constraints"
+              },
+              {
+                "step": 2,
+                "name": "Compare candidates",
+                "description": "Review 5 candidate tools"
+              },
+              {
+                "step": 3,
+                "name": "Check alternatives",
+                "description": "Explore 5 alternatives pages"
+              },
+              {
+                "step": 4,
+                "name": "Make decision",
+                "description": "Choose based on verified evidence"
+              }
+            ],
+            "evidence_confidence": "high",
+            "relevant_comparisons": [
+              "/compare/ahrefs-vs-surferseo.html",
+              "/compare/ahrefs-vs-mozpro.html",
+              "/compare/mozpro-vs-surferseo.html",
+              "/compare/ahrefs-vs-semrush.html",
+              "/compare/mozpro-vs-screamingfrog.html",
+              "/compare/semrush-vs-surferseo.html",
+              "/compare/screamingfrog-vs-semrush.html",
+              "/compare/ahrefs-vs-screamingfrog.html",
+              "/compare/mozpro-vs-semrush.html"
+            ],
+            "relevant_alternatives": [
+              "/alternatives/semrush-alternatives.html",
+              "/alternatives/ahrefs-alternatives.html",
+              "/alternatives/mozpro-alternatives.html",
+              "/alternatives/surferseo-alternatives.html",
+              "/alternatives/screamingfrog-alternatives.html"
+            ]
+          },
+          {
+            "goal_id": "sell-online",
+            "goal_label": "Sell something online",
+            "candidate_tools": [
+              "jasper",
+              "copyai",
+              "systeme",
+              "hubspot"
+            ],
+            "decision_questions": [
+              "Do you need a website builder or e-commerce platform?",
+              "Do you need hosting included?",
+              "What is your expected traffic volume?"
+            ],
+            "stages": [
+              {
+                "step": 1,
+                "name": "Identify requirements",
+                "description": "Clarify your primary goal and constraints"
+              },
+              {
+                "step": 2,
+                "name": "Compare candidates",
+                "description": "Review 4 candidate tools"
+              },
+              {
+                "step": 3,
+                "name": "Check alternatives",
+                "description": "Explore 4 alternatives pages"
+              },
+              {
+                "step": 4,
+                "name": "Make decision",
+                "description": "Choose based on verified evidence"
+              }
+            ],
+            "evidence_confidence": "medium",
+            "relevant_comparisons": [
+              "/compare/hubspot-vs-systeme.html",
+              "/compare/copyai-vs-jasper.html"
+            ],
+            "relevant_alternatives": [
+              "/alternatives/jasper-alternatives.html",
+              "/alternatives/copyai-alternatives.html",
+              "/alternatives/systeme-alternatives.html",
+              "/alternatives/hubspot-alternatives.html"
+            ]
+          },
+          {
+            "goal_id": "launch-online-course",
+            "goal_label": "Launch an online course",
+            "candidate_tools": [
+              "beehiiv",
+              "kit",
+              "mailchimp",
+              "brevo",
+              "jasper",
+              "copyai",
+              "notion",
+              "otter",
+              "fireflies",
+              "clickup",
+              "asana",
+              "monday",
+              "todoist"
+            ],
+            "decision_questions": [
+              "Do you need course hosting or just content creation?",
+              "Do you need payment processing?",
+              "Do you need student management?"
+            ],
+            "stages": [
+              {
+                "step": 1,
+                "name": "Identify requirements",
+                "description": "Clarify your primary goal and constraints"
+              },
+              {
+                "step": 2,
+                "name": "Compare candidates",
+                "description": "Review 13 candidate tools"
+              },
+              {
+                "step": 3,
+                "name": "Check alternatives",
+                "description": "Explore 13 alternatives pages"
+              },
+              {
+                "step": 4,
+                "name": "Make decision",
+                "description": "Choose based on verified evidence"
+              }
+            ],
+            "evidence_confidence": "high",
+            "relevant_comparisons": [
+              "/compare/kit-vs-mailchimp.html",
+              "/compare/beehiiv-vs-brevo.html",
+              "/compare/asana-vs-notion.html",
+              "/compare/beehiiv-vs-kit.html",
+              "/compare/clickup-vs-notion.html",
+              "/compare/brevo-vs-mailchimp.html",
+              "/compare/brevo-vs-kit.html",
+              "/compare/fireflies-vs-otter.html",
+              "/compare/beehiiv-vs-mailchimp.html",
+              "/compare/notion-vs-todoist.html",
+              "/compare/copyai-vs-jasper.html",
+              "/compare/monday-vs-notion.html"
+            ],
+            "relevant_alternatives": [
+              "/alternatives/beehiiv-alternatives.html",
+              "/alternatives/kit-alternatives.html",
+              "/alternatives/mailchimp-alternatives.html",
+              "/alternatives/brevo-alternatives.html",
+              "/alternatives/jasper-alternatives.html",
+              "/alternatives/copyai-alternatives.html",
+              "/alternatives/notion-alternatives.html",
+              "/alternatives/otter-alternatives.html",
+              "/alternatives/fireflies-alternatives.html",
+              "/alternatives/clickup-alternatives.html",
+              "/alternatives/asana-alternatives.html",
+              "/alternatives/monday-alternatives.html",
+              "/alternatives/todoist-alternatives.html"
+            ]
+          },
+          {
+            "goal_id": "launch-a-website",
+            "goal_label": "Launch a website",
+            "candidate_tools": [
+              "hostinger",
+              "framer",
+              "webflow",
+              "squarespace"
+            ],
+            "decision_questions": [
+              "Do you need managed hosting or self-hosted?",
+              "Do you need a website builder or just a domain?",
+              "What is your expected monthly traffic?"
+            ],
+            "stages": [
+              {
+                "step": 1,
+                "name": "Identify requirements",
+                "description": "Clarify your primary goal and constraints"
+              },
+              {
+                "step": 2,
+                "name": "Compare candidates",
+                "description": "Review 4 candidate tools"
+              },
+              {
+                "step": 3,
+                "name": "Check alternatives",
+                "description": "Explore 4 alternatives pages"
+              },
+              {
+                "step": 4,
+                "name": "Make decision",
+                "description": "Choose based on verified evidence"
+              }
+            ],
+            "evidence_confidence": "medium",
+            "relevant_comparisons": [
+              "/compare/framer-vs-webflow.html",
+              "/compare/squarespace-vs-webflow.html",
+              "/compare/framer-vs-squarespace.html"
+            ],
+            "relevant_alternatives": [
+              "/alternatives/hostinger-alternatives.html",
+              "/alternatives/framer-alternatives.html",
+              "/alternatives/webflow-alternatives.html",
+              "/alternatives/squarespace-alternatives.html"
+            ]
+          }
+        ];
+
+  var VALID_IDS = {};
+  WORKFLOWS.forEach(function(w){ VALID_IDS[w.goal_id] = true; });
+
+  var ICON = '<svg class="we-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="8.5 12.5 11 15 16 9.5"/></svg>';
+
+  var workflowsEl = document.getElementById("weWorkflows");
+  var resultEl = document.getElementById("weResult");
+  var curWorkflow = -1;
+  var curStage = 0;
+
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function(c) {
+      return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':'&quot;'}[c];
+    });
+  }
+
+  function buildWorkflowButtons() {
+    workflowsEl.innerHTML = WORKFLOWS.map(function(w, i) {
+      return '<button class="we-workflow-btn" type="button" role="radio" aria-checked="false" tabindex="-1" data-i="' + i + '">' +
+        ICON +
+        '<div><div class="we-label">' + esc(w.goal_label) + '</div>' +
+        '<div class="we-count">' + w.candidate_tools.length + ' tools &middot; ' + w.evidence_confidence + ' confidence</div></div>' +
+        '</button>';
+    }).join("");
+
+    var buttons = Array.prototype.slice.call(workflowsEl.querySelectorAll(".we-workflow-btn"));
+    workflowsEl.addEventListener("click", function(e) {
+      var b = e.target.closest(".we-workflow-btn");
+      if (b) selectWorkflow(Number(b.getAttribute("data-i")));
+    });
+    workflowsEl.addEventListener("keydown", function(e) {
+      var n = null;
+      if (e.key === "ArrowDown" || e.key === "ArrowRight") n = (curWorkflow + 1) % WORKFLOWS.length;
+      else if (e.key === "ArrowUp" || e.key === "ArrowLeft") n = (curWorkflow - 1 + WORKFLOWS.length) % WORKFLOWS.length;
+      else if (e.key === "Home") n = 0;
+      else if (e.key === "End") n = WORKFLOWS.length - 1;
+      if (n !== null) {
+        e.preventDefault();
+        selectWorkflow(n);
+        buttons[n].focus();
+      }
+    });
+  }
+
+  function selectWorkflow(i) {
+    if (i < 0 || i >= WORKFLOWS.length) return;
+    curWorkflow = i;
+    curStage = 0;
+    var buttons = Array.prototype.slice.call(workflowsEl.querySelectorAll(".we-workflow-btn"));
+    buttons.forEach(function(b, n) {
+      var on = n === i;
+      b.setAttribute("aria-checked", on ? "true" : "false");
+      b.tabIndex = on ? 0 : -1;
+    });
+    renderWorkflow(WORKFLOWS[i], 0);
+    updateQueryString(WORKFLOWS[i].goal_id, 0);
+  }
+
+  function renderWorkflow(w, stage) {
+    curStage = stage;
+    var s = w.stages[stage];
+    if (!s) { resultEl.innerHTML = ''; resultEl.classList.remove('visible'); return; }
+
+    var html = '';
+
+    // Header with reset
+    html += '<div class="we-header">';
+    html += '<div><h3>' + esc(w.goal_label) + '</h3>';
+    html += '<span class="we-confidence ' + esc(w.evidence_confidence) + '">Evidence: ' + esc(w.evidence_confidence) + '</span></div>';
+    html += '<button class="we-reset" type="button" id="weReset">Reset selection</button>';
+    html += '</div>';
+
+    // Progress dots
+    html += '<div class="we-progress" aria-label="Workflow progress">';
+    for (var p = 0; p < w.stages.length; p++) {
+      var cls = p < stage ? 'completed' : (p === stage ? 'active' : '');
+      html += '<div class="we-progress-dot ' + cls + '" title="' + esc(w.stages[p].name) + '"></div>';
+    }
+    html += '</div>';
+
+    // Stage navigation
+    html += '<div class="we-stage-nav" role="tablist" aria-label="Workflow stages">';
+    for (var t = 0; t < w.stages.length; t++) {
+      var active = t === stage ? 'active' : '';
+      html += '<button class="we-stage-btn ' + active + '" type="button" role="tab" aria-selected="' + (t === stage ? 'true' : 'false') + '" data-stage="' + t + '">' +
+        'Step ' + (t + 1) + ': ' + esc(w.stages[t].name) + '</button>';
+    }
+    html += '</div>';
+
+    // Stage content
+    html += '<div class="we-card">';
+    html += '<h4>Step ' + s.step + ': ' + esc(s.name) + '</h4>';
+    html += '<p class="we-stage-desc">' + esc(s.description) + '</p>';
+
+    if (stage === 0) {
+      // Decision questions
+      html += '<h4>Decision questions</h4>';
+      html += '<ul class="we-questions">';
+      w.decision_questions.forEach(function(q) {
+        html += '<li>' + esc(q) + '</li>';
+      });
+      html += '</ul>';
+    } else if (stage === 1) {
+      // Candidate tools
+      html += '<h4>Candidate tools (' + w.candidate_tools.length + ')</h4>';
+      html += '<div class="we-tool-grid">';
+      w.candidate_tools.forEach(function(tool) {
+        html += '<div class="we-tool-item"><a href="/tools/' + esc(tool) + '.html">' + esc(tool) + '</a></div>';
+      });
+      html += '</div>';
+    } else if (stage === 2) {
+      // Alternatives
+      html += '<h4>Alternatives pages (' + w.relevant_alternatives.length + ')</h4>';
+      html += '<div class="we-alt-grid">';
+      w.relevant_alternatives.forEach(function(a) {
+        var label = a.replace('/alternatives/', '').replace('-alternatives.html', '');
+        html += '<div class="we-alt-item"><a href="' + esc(a) + '">' + esc(label) + ' alternatives</a></div>';
+      });
+      html += '</div>';
+    } else if (stage === 3) {
+      // Comparisons + decision
+      html += '<h4>Relevant comparisons (' + w.relevant_comparisons.length + ')</h4>';
+      html += '<div class="we-compare-grid">';
+      w.relevant_comparisons.forEach(function(c) {
+        var label = c.replace('/compare/', '').replace('.html', '').replace('-vs-', ' vs ');
+        html += '<div class="we-compare-item"><a href="' + esc(c) + '">' + esc(label) + '</a></div>';
+      });
+      html += '</div>';
+      html += '<h4>Decision summary</h4>';
+      html += '<p>This workflow has <strong>' + w.candidate_tools.length + ' candidate tools</strong>, <strong>' + w.relevant_comparisons.length + ' comparisons</strong>, and <strong>' + w.relevant_alternatives.length + ' alternatives pages</strong>. Evidence confidence is <strong>' + esc(w.evidence_confidence) + '</strong>.</p>';
+    }
+
+    // Unresolved gaps
+    if (w.unresolved_gaps && w.unresolved_gaps.length > 0) {
+      html += '<div class="we-gaps"><p><strong>Unresolved gaps:</strong> ' + w.unresolved_gaps.map(function(g){return esc(g);}).join('; ') + '</p></div>';
+    }
+
+    // Navigation actions
+    html += '<div class="we-actions">';
+    if (stage > 0) {
+      html += '<button class="we-secondary we-nav-btn" type="button" data-dir="prev">Previous step</button>';
+    }
+    if (stage < w.stages.length - 1) {
+      html += '<button class="we-primary we-nav-btn" type="button" data-dir="next">Next step</button>';
+    }
+    html += '<a class="we-secondary" href="/goals/' + esc(w.goal_id) + '.html">Open full goal guide</a>';
+    html += '</div>';
+
+    html += '<p class="we-note">Data sourced from ToolNest reviews, comparisons, and alternatives pages. <a href="/about.html">How we research</a>.</p>';
+    html += '</div>';
+
+    resultEl.innerHTML = html;
+    resultEl.classList.add('visible');
+
+    // Stage navigation
+    resultEl.querySelectorAll('.we-stage-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var s = Number(this.getAttribute('data-stage'));
+        renderWorkflow(w, s);
+        updateQueryString(w.goal_id, s);
+        if (window.innerWidth <= 640) resultEl.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    });
+
+    // Nav buttons
+    resultEl.querySelectorAll('.we-nav-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var dir = this.getAttribute('data-dir');
+        var ns = dir === 'next' ? stage + 1 : stage - 1;
+        renderWorkflow(w, ns);
+        updateQueryString(w.goal_id, ns);
+      });
+    });
+
+    // Reset button
+    var resetBtn = document.getElementById('weReset');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', function() {
+        curWorkflow = -1;
+        curStage = 0;
+        var buttons = Array.prototype.slice.call(workflowsEl.querySelectorAll(".we-workflow-btn"));
+        buttons.forEach(function(b) {
+          b.setAttribute("aria-checked", "false");
+          b.tabIndex = -1;
+        });
+        resultEl.innerHTML = '';
+        resultEl.classList.remove('visible');
+        clearQueryString();
+        workflowsEl.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    }
+  }
+
+  function updateQueryString(workflowId, stage) {
+    try {
+      var url = new URL(window.location.href);
+      url.searchParams.set('workflow', workflowId);
+      url.searchParams.set('stage', String(stage));
+      window.history.replaceState({}, '', url.toString());
+    } catch(e) {}
+  }
+
+  function clearQueryString() {
+    try {
+      var url = new URL(window.location.href);
+      url.searchParams.delete('workflow');
+      url.searchParams.delete('stage');
+      window.history.replaceState({}, '', url.toString());
+    } catch(e) {}
+  }
+
+  function restoreFromQuery() {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var wid = params.get('workflow');
+      var sid = params.get('stage');
+      if (wid && VALID_IDS[wid]) {
+        var idx = -1;
+        WORKFLOWS.forEach(function(w, i) { if (w.goal_id === wid) idx = i; });
+        if (idx >= 0) {
+          var stage = 0;
+          if (sid !== null) {
+            stage = parseInt(sid, 10);
+            if (isNaN(stage) || stage < 0 || stage >= WORKFLOWS[idx].stages.length) stage = 0;
+          }
+          selectWorkflow(idx);
+          renderWorkflow(WORKFLOWS[idx], stage);
+          return;
+        }
+      }
+    } catch(e) {}
+  }
+
+  buildWorkflowButtons();
+  restoreFromQuery();
+})();
+</script>
+
+</body>
+</html>

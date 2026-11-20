@@ -6,7 +6,7 @@
     "name": "Canva",
     "slug": "canva",
     "official_url": "https://www.canva.com",
-    "status": "unknown",
+    "status": "active",
     "logo": "/assets/logos/canva.png",
     "aliases": []
   },
@@ -14,14 +14,30 @@
     "categories": [
       "Design"
     ],
-    "use_cases": [],
+    "use_cases": [
+      "social graphics, presentations and simple brand designs"
+    ],
     "audiences": [],
-    "platforms": [],
+    "platforms": [
+      "web"
+    ],
     "integrations": [],
-    "tags": []
+    "tags": [
+      "design"
+    ]
   },
   "factual_profile": {
-    "capabilities": [],
+    "capabilities": [
+      {
+        "description": "Large template library"
+      },
+      {
+        "description": "Easy drag-and-drop editor"
+      },
+      {
+        "description": "Useful for teams and brand kits"
+      }
+    ],
     "limitations": [],
     "free_plan_status": [],
     "trial_status": [],
@@ -30,18 +46,32 @@
     "availability_regions": []
   },
   "editorial": {
-    "editorial_tier": "C",
-    "best_for": [],
+    "editorial_tier": "A",
+    "best_for": [
+      "Social graphics, presentations and simple brand designs"
+    ],
     "not_recommended_for": [],
-    "review_status": "draft",
-    "review_url": null,
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/canva.html",
     "review_owner": null,
     "editorial_last_reviewed": null
   },
   "relationships": {
-    "alternatives": [],
-    "meaningful_comparisons": [],
-    "related_tools": [],
+    "alternatives": [
+      "figma",
+      "adobeexpress",
+      "removebg"
+    ],
+    "meaningful_comparisons": [
+      "adobeexpress-vs-canva",
+      "canva-vs-figma",
+      "canva-vs-removebg"
+    ],
+    "related_tools": [
+      "removebg",
+      "adobeexpress",
+      "figma"
+    ],
     "compatible_tools": [],
     "replaces": [],
     "replaced_by": []
@@ -62,26 +92,20 @@
   },
   "publishing": {
     "directory_visibility": "public",
-    "standalone_page_status": "none",
-    "indexability": "noindex",
-    "sitemap_eligible": false,
-    "canonical_url": null,
-    "template_type": "directory-only",
-    "content_quality_status": "unassessed",
-    "prepublish_status": "not_ready"
+    "standalone_page_status": "published",
+    "indexability": "index",
+    "sitemap_eligible": true,
+    "canonical_url": "https://www.toolnestai.tech/tools/canva.html",
+    "template_type": "review",
+    "content_quality_status": "assessed",
+    "prepublish_status": "published"
   },
   "freshness": {
-    "created_at": null,
-    "updated_at": null,
+    "created_at": "2026-11-20T15:27:01Z",
+    "updated_at": "2026-11-20T15:27:01Z",
     "last_verified_at": null,
     "next_review_at": null,
-    "stale_fields": [
-      "identity.status",
-      "discovery",
-      "factual_profile",
-      "relationships",
-      "monetization"
-    ],
+    "stale_fields": [],
     "change_history_reference": null
   }
 }

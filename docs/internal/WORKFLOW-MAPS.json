@@ -1,0 +1,604 @@
+{
+  "schema_version": "workflow-maps-v1",
+  "generated_at": "2026-11-20",
+  "description": "Reusable structured workflow maps from existing goals, categories, and relationships. No new indexable pages created.",
+  "total_workflows": 9,
+  "workflows": [
+    {
+      "goal_id": "write-better-english",
+      "goal_label": "Write better English",
+      "stages": [
+        {
+          "step": 1,
+          "name": "Identify requirements",
+          "description": "Clarify your primary goal and constraints"
+        },
+        {
+          "step": 2,
+          "name": "Compare candidates",
+          "description": "Review 5 candidate tools"
+        },
+        {
+          "step": 3,
+          "name": "Check alternatives",
+          "description": "Explore 5 alternatives pages"
+        },
+        {
+          "step": 4,
+          "name": "Make decision",
+          "description": "Choose based on verified evidence"
+        }
+      ],
+      "decision_questions": [
+        "Do you need grammar correction or full content generation?",
+        "Is this for professional or personal use?",
+        "Do you need a free option?"
+      ],
+      "candidate_tools": [
+        "grammarly",
+        "quillbot",
+        "prowritingaid",
+        "hemingway",
+        "writesonic"
+      ],
+      "candidate_tool_count": 5,
+      "relevant_comparisons": [
+        "/compare/hemingway-vs-prowritingaid.html",
+        "/compare/prowritingaid-vs-writesonic.html",
+        "/compare/hemingway-vs-quillbot.html",
+        "/compare/grammarly-vs-hemingway.html",
+        "/compare/prowritingaid-vs-quillbot.html",
+        "/compare/quillbot-vs-writesonic.html",
+        "/compare/grammarly-vs-quillbot.html",
+        "/compare/grammarly-vs-prowritingaid.html",
+        "/compare/grammarly-vs-writesonic.html"
+      ],
+      "comparison_count": 9,
+      "relevant_alternatives": [
+        "/alternatives/grammarly-alternatives.html",
+        "/alternatives/quillbot-alternatives.html",
+        "/alternatives/prowritingaid-alternatives.html",
+        "/alternatives/hemingway-alternatives.html",
+        "/alternatives/writesonic-alternatives.html"
+      ],
+      "alternatives_count": 5,
+      "evidence_confidence": "high",
+      "unresolved_gaps": []
+    },
+    {
+      "goal_id": "organise-my-work",
+      "goal_label": "Organise my work",
+      "stages": [
+        {
+          "step": 1,
+          "name": "Identify requirements",
+          "description": "Clarify your primary goal and constraints"
+        },
+        {
+          "step": 2,
+          "name": "Compare candidates",
+          "description": "Review 7 candidate tools"
+        },
+        {
+          "step": 3,
+          "name": "Check alternatives",
+          "description": "Explore 7 alternatives pages"
+        },
+        {
+          "step": 4,
+          "name": "Make decision",
+          "description": "Choose based on verified evidence"
+        }
+      ],
+      "decision_questions": [
+        "Do you need team collaboration or solo use?",
+        "Do you prefer notes-first or tasks-first?",
+        "Do you need integrations with other tools?"
+      ],
+      "candidate_tools": [
+        "notion",
+        "otter",
+        "fireflies",
+        "clickup",
+        "asana",
+        "monday",
+        "todoist"
+      ],
+      "candidate_tool_count": 7,
+      "relevant_comparisons": [
+        "/compare/asana-vs-notion.html",
+        "/compare/clickup-vs-notion.html",
+        "/compare/fireflies-vs-otter.html",
+        "/compare/notion-vs-todoist.html",
+        "/compare/monday-vs-notion.html"
+      ],
+      "comparison_count": 5,
+      "relevant_alternatives": [
+        "/alternatives/notion-alternatives.html",
+        "/alternatives/otter-alternatives.html",
+        "/alternatives/fireflies-alternatives.html",
+        "/alternatives/clickup-alternatives.html",
+        "/alternatives/asana-alternatives.html",
+        "/alternatives/monday-alternatives.html",
+        "/alternatives/todoist-alternatives.html"
+      ],
+      "alternatives_count": 7,
+      "evidence_confidence": "high",
+      "unresolved_gaps": []
+    },
+    {
+      "goal_id": "add-voice-to-videos",
+      "goal_label": "Add a voice to videos",
+      "stages": [
+        {
+          "step": 1,
+          "name": "Identify requirements",
+          "description": "Clarify your primary goal and constraints"
+        },
+        {
+          "step": 2,
+          "name": "Compare candidates",
+          "description": "Review 8 candidate tools"
+        },
+        {
+          "step": 3,
+          "name": "Check alternatives",
+          "description": "Explore 8 alternatives pages"
+        },
+        {
+          "step": 4,
+          "name": "Make decision",
+          "description": "Choose based on verified evidence"
+        }
+      ],
+      "decision_questions": [
+        "Do you need voice cloning or stock voices?",
+        "Is this for YouTube, podcasts, or other media?",
+        "Do you need editing capabilities?"
+      ],
+      "candidate_tools": [
+        "jasper",
+        "copyai",
+        "elevenlabs",
+        "descript",
+        "runway",
+        "synthesia",
+        "invideo",
+        "kapwing"
+      ],
+      "candidate_tool_count": 8,
+      "relevant_comparisons": [
+        "/compare/descript-vs-invideo.html",
+        "/compare/descript-vs-synthesia.html",
+        "/compare/kapwing-vs-runway.html",
+        "/compare/elevenlabs-vs-descript.html",
+        "/compare/descript-vs-kapwing.html",
+        "/compare/descript-vs-runway.html",
+        "/compare/invideo-vs-runway.html",
+        "/compare/runway-vs-synthesia.html",
+        "/compare/elevenlabs-vs-synthesia.html",
+        "/compare/copyai-vs-jasper.html"
+      ],
+      "comparison_count": 10,
+      "relevant_alternatives": [
+        "/alternatives/jasper-alternatives.html",
+        "/alternatives/copyai-alternatives.html",
+        "/alternatives/elevenlabs-alternatives.html",
+        "/alternatives/descript-alternatives.html",
+        "/alternatives/runway-alternatives.html",
+        "/alternatives/synthesia-alternatives.html",
+        "/alternatives/invideo-alternatives.html",
+        "/alternatives/kapwing-alternatives.html"
+      ],
+      "alternatives_count": 8,
+      "evidence_confidence": "high",
+      "unresolved_gaps": []
+    },
+    {
+      "goal_id": "edit-video-podcasts",
+      "goal_label": "Edit video or podcasts",
+      "stages": [
+        {
+          "step": 1,
+          "name": "Identify requirements",
+          "description": "Clarify your primary goal and constraints"
+        },
+        {
+          "step": 2,
+          "name": "Compare candidates",
+          "description": "Review 13 candidate tools"
+        },
+        {
+          "step": 3,
+          "name": "Check alternatives",
+          "description": "Explore 13 alternatives pages"
+        },
+        {
+          "step": 4,
+          "name": "Make decision",
+          "description": "Choose based on verified evidence"
+        }
+      ],
+      "decision_questions": [
+        "Do you need transcript-based editing or timeline editing?",
+        "Do you need to remove filler words automatically?",
+        "Do you need multi-track audio and video support?"
+      ],
+      "candidate_tools": [
+        "notion",
+        "otter",
+        "fireflies",
+        "clickup",
+        "asana",
+        "monday",
+        "todoist",
+        "elevenlabs",
+        "descript",
+        "runway",
+        "synthesia",
+        "invideo",
+        "kapwing"
+      ],
+      "candidate_tool_count": 13,
+      "relevant_comparisons": [
+        "/compare/descript-vs-invideo.html",
+        "/compare/descript-vs-synthesia.html",
+        "/compare/asana-vs-notion.html",
+        "/compare/kapwing-vs-runway.html",
+        "/compare/elevenlabs-vs-descript.html",
+        "/compare/descript-vs-kapwing.html",
+        "/compare/clickup-vs-notion.html",
+        "/compare/invideo-vs-runway.html",
+        "/compare/fireflies-vs-otter.html",
+        "/compare/runway-vs-synthesia.html",
+        "/compare/notion-vs-todoist.html",
+        "/compare/elevenlabs-vs-synthesia.html",
+        "/compare/descript-vs-runway.html",
+        "/compare/monday-vs-notion.html"
+      ],
+      "comparison_count": 14,
+      "relevant_alternatives": [
+        "/alternatives/notion-alternatives.html",
+        "/alternatives/otter-alternatives.html",
+        "/alternatives/fireflies-alternatives.html",
+        "/alternatives/clickup-alternatives.html",
+        "/alternatives/asana-alternatives.html",
+        "/alternatives/monday-alternatives.html",
+        "/alternatives/todoist-alternatives.html",
+        "/alternatives/elevenlabs-alternatives.html",
+        "/alternatives/descript-alternatives.html",
+        "/alternatives/runway-alternatives.html",
+        "/alternatives/synthesia-alternatives.html",
+        "/alternatives/invideo-alternatives.html",
+        "/alternatives/kapwing-alternatives.html"
+      ],
+      "alternatives_count": 13,
+      "evidence_confidence": "high",
+      "unresolved_gaps": []
+    },
+    {
+      "goal_id": "write-ad-copy",
+      "goal_label": "Write ad copy",
+      "stages": [
+        {
+          "step": 1,
+          "name": "Identify requirements",
+          "description": "Clarify your primary goal and constraints"
+        },
+        {
+          "step": 2,
+          "name": "Compare candidates",
+          "description": "Review 7 candidate tools"
+        },
+        {
+          "step": 3,
+          "name": "Check alternatives",
+          "description": "Explore 7 alternatives pages"
+        },
+        {
+          "step": 4,
+          "name": "Make decision",
+          "description": "Choose based on verified evidence"
+        }
+      ],
+      "decision_questions": [
+        "Do you need platform-specific ad formats?",
+        "Do you need A/B variant generation?",
+        "Is this for social media ads or search ads?"
+      ],
+      "candidate_tools": [
+        "jasper",
+        "copyai",
+        "grammarly",
+        "quillbot",
+        "prowritingaid",
+        "hemingway",
+        "writesonic"
+      ],
+      "candidate_tool_count": 7,
+      "relevant_comparisons": [
+        "/compare/copyai-vs-jasper.html",
+        "/compare/hemingway-vs-prowritingaid.html",
+        "/compare/prowritingaid-vs-writesonic.html",
+        "/compare/copyai-vs-grammarly.html",
+        "/compare/hemingway-vs-quillbot.html",
+        "/compare/grammarly-vs-hemingway.html",
+        "/compare/prowritingaid-vs-quillbot.html",
+        "/compare/quillbot-vs-writesonic.html",
+        "/compare/grammarly-vs-jasper.html",
+        "/compare/grammarly-vs-quillbot.html",
+        "/compare/grammarly-vs-prowritingaid.html",
+        "/compare/grammarly-vs-writesonic.html"
+      ],
+      "comparison_count": 12,
+      "relevant_alternatives": [
+        "/alternatives/jasper-alternatives.html",
+        "/alternatives/copyai-alternatives.html",
+        "/alternatives/grammarly-alternatives.html",
+        "/alternatives/quillbot-alternatives.html",
+        "/alternatives/prowritingaid-alternatives.html",
+        "/alternatives/hemingway-alternatives.html",
+        "/alternatives/writesonic-alternatives.html"
+      ],
+      "alternatives_count": 7,
+      "evidence_confidence": "high",
+      "unresolved_gaps": []
+    },
+    {
+      "goal_id": "get-search-traffic",
+      "goal_label": "Get search traffic",
+      "stages": [
+        {
+          "step": 1,
+          "name": "Identify requirements",
+          "description": "Clarify your primary goal and constraints"
+        },
+        {
+          "step": 2,
+          "name": "Compare candidates",
+          "description": "Review 5 candidate tools"
+        },
+        {
+          "step": 3,
+          "name": "Check alternatives",
+          "description": "Explore 5 alternatives pages"
+        },
+        {
+          "step": 4,
+          "name": "Make decision",
+          "description": "Choose based on verified evidence"
+        }
+      ],
+      "decision_questions": [
+        "Do you need keyword research, rank tracking, or both?",
+        "Are you a beginner or experienced with SEO?",
+        "Do you need agency-level features?"
+      ],
+      "candidate_tools": [
+        "semrush",
+        "ahrefs",
+        "mozpro",
+        "surferseo",
+        "screamingfrog"
+      ],
+      "candidate_tool_count": 5,
+      "relevant_comparisons": [
+        "/compare/ahrefs-vs-surferseo.html",
+        "/compare/ahrefs-vs-mozpro.html",
+        "/compare/mozpro-vs-surferseo.html",
+        "/compare/ahrefs-vs-semrush.html",
+        "/compare/mozpro-vs-screamingfrog.html",
+        "/compare/semrush-vs-surferseo.html",
+        "/compare/screamingfrog-vs-semrush.html",
+        "/compare/ahrefs-vs-screamingfrog.html",
+        "/compare/mozpro-vs-semrush.html"
+      ],
+      "comparison_count": 9,
+      "relevant_alternatives": [
+        "/alternatives/semrush-alternatives.html",
+        "/alternatives/ahrefs-alternatives.html",
+        "/alternatives/mozpro-alternatives.html",
+        "/alternatives/surferseo-alternatives.html",
+        "/alternatives/screamingfrog-alternatives.html"
+      ],
+      "alternatives_count": 5,
+      "evidence_confidence": "high",
+      "unresolved_gaps": []
+    },
+    {
+      "goal_id": "sell-online",
+      "goal_label": "Sell something online",
+      "stages": [
+        {
+          "step": 1,
+          "name": "Identify requirements",
+          "description": "Clarify your primary goal and constraints"
+        },
+        {
+          "step": 2,
+          "name": "Compare candidates",
+          "description": "Review 4 candidate tools"
+        },
+        {
+          "step": 3,
+          "name": "Check alternatives",
+          "description": "Explore 4 alternatives pages"
+        },
+        {
+          "step": 4,
+          "name": "Make decision",
+          "description": "Choose based on verified evidence"
+        }
+      ],
+      "decision_questions": [
+        "Do you need a website builder or e-commerce platform?",
+        "Do you need hosting included?",
+        "What is your expected traffic volume?"
+      ],
+      "candidate_tools": [
+        "jasper",
+        "copyai",
+        "systeme",
+        "hubspot"
+      ],
+      "candidate_tool_count": 4,
+      "relevant_comparisons": [
+        "/compare/hubspot-vs-systeme.html",
+        "/compare/copyai-vs-jasper.html"
+      ],
+      "comparison_count": 2,
+      "relevant_alternatives": [
+        "/alternatives/jasper-alternatives.html",
+        "/alternatives/copyai-alternatives.html",
+        "/alternatives/systeme-alternatives.html",
+        "/alternatives/hubspot-alternatives.html"
+      ],
+      "alternatives_count": 4,
+      "evidence_confidence": "medium",
+      "unresolved_gaps": []
+    },
+    {
+      "goal_id": "launch-online-course",
+      "goal_label": "Launch an online course",
+      "stages": [
+        {
+          "step": 1,
+          "name": "Identify requirements",
+          "description": "Clarify your primary goal and constraints"
+        },
+        {
+          "step": 2,
+          "name": "Compare candidates",
+          "description": "Review 13 candidate tools"
+        },
+        {
+          "step": 3,
+          "name": "Check alternatives",
+          "description": "Explore 13 alternatives pages"
+        },
+        {
+          "step": 4,
+          "name": "Make decision",
+          "description": "Choose based on verified evidence"
+        }
+      ],
+      "decision_questions": [
+        "Do you need course hosting or just content creation?",
+        "Do you need payment processing?",
+        "Do you need student management?"
+      ],
+      "candidate_tools": [
+        "beehiiv",
+        "kit",
+        "mailchimp",
+        "brevo",
+        "jasper",
+        "copyai",
+        "notion",
+        "otter",
+        "fireflies",
+        "clickup",
+        "asana",
+        "monday",
+        "todoist"
+      ],
+      "candidate_tool_count": 13,
+      "relevant_comparisons": [
+        "/compare/kit-vs-mailchimp.html",
+        "/compare/beehiiv-vs-brevo.html",
+        "/compare/asana-vs-notion.html",
+        "/compare/beehiiv-vs-kit.html",
+        "/compare/clickup-vs-notion.html",
+        "/compare/brevo-vs-mailchimp.html",
+        "/compare/brevo-vs-kit.html",
+        "/compare/fireflies-vs-otter.html",
+        "/compare/beehiiv-vs-mailchimp.html",
+        "/compare/notion-vs-todoist.html",
+        "/compare/copyai-vs-jasper.html",
+        "/compare/monday-vs-notion.html"
+      ],
+      "comparison_count": 12,
+      "relevant_alternatives": [
+        "/alternatives/beehiiv-alternatives.html",
+        "/alternatives/kit-alternatives.html",
+        "/alternatives/mailchimp-alternatives.html",
+        "/alternatives/brevo-alternatives.html",
+        "/alternatives/jasper-alternatives.html",
+        "/alternatives/copyai-alternatives.html",
+        "/alternatives/notion-alternatives.html",
+        "/alternatives/otter-alternatives.html",
+        "/alternatives/fireflies-alternatives.html",
+        "/alternatives/clickup-alternatives.html",
+        "/alternatives/asana-alternatives.html",
+        "/alternatives/monday-alternatives.html",
+        "/alternatives/todoist-alternatives.html"
+      ],
+      "alternatives_count": 13,
+      "evidence_confidence": "high",
+      "unresolved_gaps": []
+    },
+    {
+      "goal_id": "launch-a-website",
+      "goal_label": "Launch a website",
+      "stages": [
+        {
+          "step": 1,
+          "name": "Identify requirements",
+          "description": "Clarify your primary goal and constraints"
+        },
+        {
+          "step": 2,
+          "name": "Compare candidates",
+          "description": "Review 4 candidate tools"
+        },
+        {
+          "step": 3,
+          "name": "Check alternatives",
+          "description": "Explore 4 alternatives pages"
+        },
+        {
+          "step": 4,
+          "name": "Make decision",
+          "description": "Choose based on verified evidence"
+        }
+      ],
+      "decision_questions": [
+        "Do you need managed hosting or self-hosted?",
+        "Do you need a website builder or just a domain?",
+        "What is your expected monthly traffic?"
+      ],
+      "candidate_tools": [
+        "hostinger",
+        "framer",
+        "webflow",
+        "squarespace"
+      ],
+      "candidate_tool_count": 4,
+      "relevant_comparisons": [
+        "/compare/framer-vs-webflow.html",
+        "/compare/squarespace-vs-webflow.html",
+        "/compare/framer-vs-squarespace.html"
+      ],
+      "comparison_count": 3,
+      "relevant_alternatives": [
+        "/alternatives/hostinger-alternatives.html",
+        "/alternatives/framer-alternatives.html",
+        "/alternatives/webflow-alternatives.html",
+        "/alternatives/squarespace-alternatives.html"
+      ],
+      "alternatives_count": 4,
+      "evidence_confidence": "medium",
+      "unresolved_gaps": []
+    }
+  ],
+  "summary": {
+    "confidence_distribution": {
+      "high": 7,
+      "medium": 2
+    },
+    "gap_distribution": {},
+    "total_candidate_tools": 66,
+    "total_comparisons": 76,
+    "total_alternatives": 66
+  }
+}

@@ -9,3 +9,5 @@ scripts/
 TOOLNEST-*.txt
 data/*
 !data/tools-v1.json
+
+chrome

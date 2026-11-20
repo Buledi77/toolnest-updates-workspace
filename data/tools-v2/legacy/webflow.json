@@ -6,7 +6,7 @@
     "name": "Webflow",
     "slug": "webflow",
     "official_url": "https://webflow.com",
-    "status": "unknown",
+    "status": "active",
     "logo": "/assets/logos/webflow.png",
     "aliases": []
   },
@@ -14,14 +14,30 @@
     "categories": [
       "Website Builder"
     ],
-    "use_cases": [],
+    "use_cases": [
+      "visual websites with cms and design control"
+    ],
     "audiences": [],
-    "platforms": [],
+    "platforms": [
+      "web"
+    ],
     "integrations": [],
-    "tags": []
+    "tags": [
+      "website-builder"
+    ]
   },
   "factual_profile": {
-    "capabilities": [],
+    "capabilities": [
+      {
+        "description": "Visual web design"
+      },
+      {
+        "description": "Built-in CMS"
+      },
+      {
+        "description": "Managed hosting"
+      }
+    ],
     "limitations": [],
     "free_plan_status": [],
     "trial_status": [],
@@ -30,18 +46,30 @@
     "availability_regions": []
   },
   "editorial": {
-    "editorial_tier": "C",
-    "best_for": [],
+    "editorial_tier": "A",
+    "best_for": [
+      "Visual websites with CMS and design control"
+    ],
     "not_recommended_for": [],
-    "review_status": "draft",
-    "review_url": null,
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/webflow.html",
     "review_owner": null,
     "editorial_last_reviewed": null
   },
   "relationships": {
-    "alternatives": [],
-    "meaningful_comparisons": [],
-    "related_tools": [],
+    "alternatives": [
+      "framer",
+      "squarespace",
+      "notion"
+    ],
+    "meaningful_comparisons": [
+      "framer-vs-webflow",
+      "squarespace-vs-webflow"
+    ],
+    "related_tools": [
+      "framer",
+      "squarespace"
+    ],
     "compatible_tools": [],
     "replaces": [],
     "replaced_by": []
@@ -62,26 +90,20 @@
   },
   "publishing": {
     "directory_visibility": "public",
-    "standalone_page_status": "none",
-    "indexability": "noindex",
-    "sitemap_eligible": false,
-    "canonical_url": null,
-    "template_type": "directory-only",
-    "content_quality_status": "unassessed",
-    "prepublish_status": "not_ready"
+    "standalone_page_status": "published",
+    "indexability": "index",
+    "sitemap_eligible": true,
+    "canonical_url": "https://www.toolnestai.tech/tools/webflow.html",
+    "template_type": "review",
+    "content_quality_status": "assessed",
+    "prepublish_status": "published"
   },
   "freshness": {
-    "created_at": null,
-    "updated_at": null,
+    "created_at": "2026-11-20T15:27:01Z",
+    "updated_at": "2026-11-20T15:27:01Z",
     "last_verified_at": null,
     "next_review_at": null,
-    "stale_fields": [
-      "identity.status",
-      "discovery",
-      "factual_profile",
-      "relationships",
-      "monetization"
-    ],
+    "stale_fields": [],
     "change_history_reference": null
   }
 }

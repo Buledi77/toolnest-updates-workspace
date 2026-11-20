@@ -16,13 +16,13 @@
     {
       "tool_id": "ahrefs",
       "official_non_affiliate_url": "https://ahrefs.com",
-      "affiliate_status": "unknown",
+      "affiliate_status": "not_applied",
       "affiliate_network": null,
       "affiliate_url": null,
       "approved_regions": [],
       "restrictions": [],
-      "disclosure_required": null,
-      "last_link_check": null
+      "disclosure_required": true,
+      "last_link_check": "2026-11-14"
     },
     {
       "tool_id": "asana",
@@ -170,13 +170,13 @@
     {
       "tool_id": "elevenlabs",
       "official_non_affiliate_url": "https://elevenlabs.io",
-      "affiliate_status": "unknown",
-      "affiliate_network": null,
-      "affiliate_url": null,
+      "affiliate_status": "approved",
+      "affiliate_network": "PartnerStack",
+      "affiliate_url": "https://try.elevenlabs.io/4kkksh8cm36q",
       "approved_regions": [],
       "restrictions": [],
-      "disclosure_required": null,
-      "last_link_check": null
+      "disclosure_required": true,
+      "last_link_check": "2026-11-18"
     },
     {
       "tool_id": "figma",
@@ -588,13 +588,13 @@
     {
       "tool_id": "screamingfrog",
       "official_non_affiliate_url": "https://www.screamingfrog.co.uk/seo-spider/",
-      "affiliate_status": "unknown",
+      "affiliate_status": "not_applied",
       "affiliate_network": null,
       "affiliate_url": null,
       "approved_regions": [],
       "restrictions": [],
-      "disclosure_required": null,
-      "last_link_check": null
+      "disclosure_required": true,
+      "last_link_check": "2026-11-14"
     },
     {
       "tool_id": "semrush",
@@ -621,13 +621,13 @@
     {
       "tool_id": "surferseo",
       "official_non_affiliate_url": "https://surferseo.com",
-      "affiliate_status": "unknown",
+      "affiliate_status": "not_applied",
       "affiliate_network": null,
       "affiliate_url": null,
       "approved_regions": [],
       "restrictions": [],
-      "disclosure_required": null,
-      "last_link_check": null
+      "disclosure_required": true,
+      "last_link_check": "2026-11-14"
     },
     {
       "tool_id": "synthesia",
@@ -643,7 +643,7 @@
     {
       "tool_id": "systeme",
       "official_non_affiliate_url": "https://systeme.io",
-      "affiliate_status": "needs_review",
+      "affiliate_status": "approved",
       "affiliate_network": null,
       "affiliate_url": "https://systeme.io/?sa=sa0283786247d8d254e08d2d01d25a1e2069805f78",
       "approved_regions": [],

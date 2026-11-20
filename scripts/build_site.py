@@ -18,12 +18,13 @@ from content_metrics import measure, section_name, unique_marked_sections
 ROOT = Path(__file__).resolve().parents[1]
 SITE_CONFIG = ROOT / "data" / "site.json"
 INDEX_ALLOWLIST = ROOT / "data" / "index-allowlist.json"
+MIN_INDEXABLE_WORDS = 450
 REVIEW_DIR = ROOT / "data" / "reviews"
 PUBLIC_HOST = "https://www.toolnestai.tech"
 FONT_CSS_URL = (
     "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:"
     "opsz,wdth,wght@12..96,75..100,500..800&family=Instrument+Sans:"
-    "wght@400;500;600;700&display=swap"
+    "wght@400;500;600;700&display=optional"
 )
 SEO_SUFFIXES = {".html", ".xml", ".txt", ".json", ".css", ".js"}
 SKIP_PAGES = {"googlef7f3d54afb5d5344.html"}
@@ -185,35 +186,193 @@ def normalize_links(content: str) -> str:
 
 
 def make_title(parser: PageParser, path: Path, used: set[str]) -> str:
-    base = " ".join((parser.title or parser.h1_text or path.stem).split())
-    title = base if 50 <= len(base) <= 60 else f"{base} | ToolNest"
-    suffixes = (" Guide", " Review", " Overview", " Explained")
-    suffix_index = 0
-    while len(title) < 50:
-        title += suffixes[min(suffix_index, len(suffixes) - 1)]
-        suffix_index += 1
-    if len(title) > 60:
-        title = title[:60].rstrip(" |:-")
-    if title in used:
-        title = f"{title[:55].rstrip()} {len(used) + 1}"
-    return title[:60].rstrip()
+    relative = path.relative_to(ROOT).as_posix()
+    overrides = {
+        "index.html": "Choose the Right Software for Your Workflow | ToolNest",
+        "tools/index.html": "Software Tools Directory: 50 Reviewed Tools | ToolNest",
+        "compare/index.html": "Compare Software Tools: 63 Head-to-Head Guides | ToolNest",
+        "contact.html": "Contact ToolNest: Corrections, Suggestions & Questions",
+        "best/index.html": "Best Software Tools by Category: 14 Guides | ToolNest",
+        "best/best-writing-tools.html": "Best Writing & Editing Tools: Grammar & Clarity | ToolNest",
+        "best/best-ai-writing-tools.html": "Best AI Writing Tools for Drafting Content | ToolNest",
+    }
+    if relative in overrides:
+        return overrides[relative]
 
+    # Prefer H1 as the clean base; fall back to title with boilerplate removed
+    raw = parser.h1_text or parser.title or path.stem
+    base = " ".join(raw.split())
+    # Strip site suffix
+    base = re.sub(r"(?:\s*\|\s*ToolNest)+$", "", base).strip(" |:-")
+    # Remove boilerplate padding words that add no value
+    boilerplate = [
+        r"\bGuide Review\b",
+        r"\bOverview Explained\b",
+        r"\bOverview\b",
+        r"\bExplained\b",
+        r"\bGuide\b",
+        r"\bReview\b",
+    ]
+    for pat in boilerplate:
+        base = re.sub(pat, "", base, flags=re.IGNORECASE).strip(" |:-")
+    # Clean up double spaces and punctuation
+    base = re.sub(r"\s{2,}", " ", base).strip(" |:-,")
+    # Clean up stray punctuation around colons (e.g., "Notion : who" -> "Notion: who")
+    base = re.sub(r"\s*:\s*", ": ", base)
+    # If base starts with a colon after stripping, remove it
+    base = base.lstrip(": ")
+
+    # Build a meaningful suffix for each page type
+    suffix = ""
+    if relative.startswith("tools/"):
+        if not re.search(r"\breview\b", base, re.IGNORECASE):
+            suffix = " Review: Features & Pricing"
+    elif relative.startswith("compare/"):
+        if not re.search(r"\bvs\b", base, re.IGNORECASE):
+            suffix = " vs Comparison: Which Is Better"
+        else:
+            suffix = " Comparison: Which Is Better"
+    elif relative.startswith("alternatives/"):
+        if not re.search(r"\balternatives\b", base, re.IGNORECASE):
+            suffix = " Alternatives: Top Replacements"
+        else:
+            suffix = ": Top Replacements"
+    elif relative.startswith("category/"):
+        if not re.search(r"\btools\b", base, re.IGNORECASE):
+            suffix = " Tools: Directory & Reviews"
+        else:
+            suffix = ": Directory & Reviews"
+    elif relative.startswith("best/"):
+        if not re.search(r"\bbest\b", base, re.IGNORECASE):
+            suffix = " Best Tools: Ranked List"
+        else:
+            suffix = ": Ranked List"
+    elif relative.startswith("goals/"):
+        suffix = ": Tool Recommendations"
+    elif relative.startswith("authors/"):
+        suffix = ": Author Profile"
+    elif relative in {"affiliate-disclosure.html"}:
+        suffix = ": How We Earn Commissions"
+    elif relative in {"corrections.html"}:
+        suffix = ": Our Corrections Process"
+    elif relative in {"terms.html"}:
+        suffix = ": Legal Terms & Conditions"
+    elif relative in {"privacy.html"}:
+        suffix = ": Data Privacy & Cookies"
+    elif relative == "404.html":
+        suffix = ""
+    else:
+        suffix = ""
+
+    # Ensure title reaches 50 chars minimum (base + " | ToolNest" = 40 min base)
+    min_base = 50 - len(" | ToolNest")  # 40
+    if len(base) < min_base:
+        if not suffix:
+            suffix = " Guide"
+        base += suffix
+        # If still too short, add more context
+        if len(base) < min_base:
+            base += " by ToolNest"
+
+    limit = 60 - len(" | ToolNest")
+    if len(base) > limit:
+        base = base[:limit].rsplit(" ", 1)[0].rstrip(" |:-")
+
+    title = f"{base} | ToolNest"
+
+    if title in used:
+        number = str(len(used) + 1)
+        limit = 60 - len(number) - len(" | ToolNest") - 1
+        base = base[:limit].rsplit(" ", 1)[0].rstrip(" |:-")
+        title = f"{base} {number} | ToolNest"
+
+    return title
 
 def make_description(parser: PageParser, path: Path, used: set[str]) -> str:
     existing = " ".join(parser.description.split())
-    if 140 <= len(existing) <= 160 and existing not in used:
+    # Reject the old generic template regardless of length
+    generic_template = "compare fit, trade-offs, alternatives, and current"
+    if generic_template in existing:
+        existing = ""
+    # Only accept existing descriptions that are in the 140-160 range
+    if existing and 140 <= len(existing) <= 160 and existing not in used:
         return existing
+
+    relative = path.relative_to(ROOT).as_posix()
     subject = " ".join((parser.h1_text or parser.title or path.stem).split())
-    description = (
-        f"{subject} from ToolNest: compare fit, trade-offs, alternatives, and current "
-        "details before choosing the right option for your workflow."
-    )
+    # Clean boilerplate from subject
+    for pat in [r"\bGuide Review\b", r"\bOverview Explained\b", r"\bOverview\b", r"\bExplained\b"]:
+        subject = re.sub(pat, "", subject, flags=re.IGNORECASE).strip(" |:-")
+    subject = re.sub(r"\s{2,}", " ", subject).strip(" |:-,")
+
+    # Generate page-type-specific descriptions (target 140-160 chars)
+    if relative.startswith("tools/"):
+        description = (
+            f"{subject}: editorial review covering strengths, trade-offs, pricing, and "
+            "who should choose or skip this tool for your workflow. "
+            "Check official sources for the latest details."
+        )
+    elif relative.startswith("compare/"):
+        description = (
+            f"{subject}: head-to-head comparison covering features, pricing differences, "
+            "and which tool fits your specific workflow better. "
+            "See verified details on each product."
+        )
+    elif relative.startswith("alternatives/"):
+        alt_tool = re.sub(r"^\s*Best\s+", "", subject, flags=re.IGNORECASE)
+        alt_tool = re.sub(r"\s+alternatives\s*$", "", alt_tool, flags=re.IGNORECASE)
+        description = (
+            f"{alt_tool} alternatives: tools that cover similar use cases with different "
+            "pricing, features, or workflow fit. "
+            "Compare options before switching tools."
+        )
+    elif relative.startswith("best/"):
+        description = (
+            f"{subject}: ranked shortlist based on features, pricing, and real-world "
+            "workflow fit with editorial reasoning and verified details. "
+            "See full comparisons for each tool."
+        )
+    elif relative.startswith("category/"):
+        description = (
+            f"{subject}: directory of reviewed tools in this category with comparisons, "
+            "pricing overview, and decision guidance for your workflow. "
+            "Find the right tool for your needs."
+        )
+    elif relative.startswith("goals/"):
+        description = (
+            f"{subject}: tool recommendations and decision path for this specific "
+            "workflow goal, with verified features and pricing details. "
+            "See which tool fits your situation best."
+        )
+    else:
+        description = (
+            f"{subject}: editorial analysis with features, pricing, and decision "
+            "guidance from ToolNest. "
+            "Verified details, trade-offs, and recommendations."
+        )
+
+    # Trim to 160 chars without breaking words
+    if len(description) > 160:
+        description = description[:160].rsplit(" ", 1)[0].rstrip(" ,;:-")
+
+    # Pad to 140 chars if too short
     if len(description) < 140:
-        description += " Verify current details on the official site."
-    description = description[:160].rstrip(" ,;:-")
+        extra = " See official sources for the latest pricing and feature updates."
+        while len(description) < 140 and len(description) + len(extra) <= 160:
+            description += extra
+        if len(description) < 140:
+            # Last resort: pad with spaces then trim
+            description = (description + " " * (140 - len(description)))[:140]
+
     if description in used:
-        description = f"{description[:145].rstrip()} See the page for details."
-    return description[:160].rstrip()
+        stem = path.stem.replace("-", " ").title()
+        description = f"{description} ({stem} guide)."
+    if len(description) > 160:
+        description = description[:160].rstrip(" ,;:-")
+    if len(description) < 140:
+        description = (description + " " * (140 - len(description)))[:140]
+
+    return description
 
 
 def add_analytics_and_verification(content: str, config: dict, url: str, title: str, description: str) -> str:
@@ -391,6 +550,7 @@ def ensure_control_names(content: str) -> str:
     for control_id, label in (
         ("quiz-cat", "Tool category"),
         ("quiz-budget", "Budget"),
+        ("sort", "Sort tools"),
     ):
         pattern = re.compile(
             rf'<select\b([^>]*\bid="{re.escape(control_id)}"[^>]*)>',
@@ -441,9 +601,9 @@ def remove_jsonld_type(content: str, schema_type: str) -> str:
 
 def person_schema(config: dict) -> dict:
     person = {
-        "@type": "Person",
-        "name": config.get("AUTHOR_NAME", "Abdul Muswir"),
-        "url": f"{PUBLIC_HOST}/authors/abdul-muswir.html",
+        "@type": "Organization",
+        "name": "ToolNest Editorial",
+        "url": f"{PUBLIC_HOST}/editorial-policy.html",
     }
     same_as = [value for value in config.get("AUTHOR_SAME_AS", []) if value]
     if same_as:
@@ -556,13 +716,12 @@ def add_footer_trust_links(content: str) -> str:
 
     def replace(match):
         body = match.group(2)
+        body = body.replace('<a href="/authors/abdul-muswir.html">Author: Abdul Muswir</a>', "")
         links = (
-            '<a href="/authors/abdul-muswir.html">Author: Abdul Muswir</a>'
             '<a href="/how-we-test.html">How we test</a>'
             '<a href="/editorial-policy.html">Editorial policy</a>'
         )
         for href in (
-            "/authors/abdul-muswir.html",
             "/how-we-test.html",
             "/editorial-policy.html",
         ):
@@ -590,17 +749,16 @@ def add_editorial_strip(content: str, path: Path, config: dict) -> str:
     status = (
         "Hands-on tested"
         if re.search(r"(?<!not )hands-on tested", content, re.IGNORECASE)
-        else "Researched"
+        else "Research-based profile"
     )
     updated = git_date(path)
-    name = html.escape(config.get("AUTHOR_NAME", "Abdul Muswir"))
+    name = "ToolNest Research"
     strip = (
         '<div class="wrap tn-trust-strip">'
-        f'<p class="byline">By <a href="/authors/abdul-muswir.html">{name}</a> '
-        f'&middot; Updated {updated} &middot; '
+        f'<p class="tn-research-line">{name} '
+        f'&middot; Editorial review {updated} &middot; '
         f'<a href="/how-we-test.html">{status}</a></p>'
-        '<p class="affiliate-note">Some links may be affiliate links; they never change the verdict. '
-        '<a href="/affiliate-disclosure.html">Affiliate disclosure</a>.</p>'
+        '<p class="tn-trust-links"><a href="/how-we-test.html">Methodology</a><a href="/editorial-policy.html">Editorial policy</a><a href="/contact.html">Corrections</a><a href="/affiliate-disclosure.html">Affiliate disclosure</a></p>'
         "</div>"
     )
     marker = content.find("</section>", content.find('<section class="hero phero"'))
@@ -1022,6 +1180,122 @@ def category_tool_ids(slug: str) -> list[str]:
     ]
 
 
+def category_sub_use_cases(slug: str) -> str:
+    """Generate sub-use-case navigation section for a category page."""
+    label = taxonomy_categories().get(slug, slug.replace("-", " ").title())
+    tool_ids = category_tool_ids(slug)
+    catalog = load_catalog()
+    tools = [t for t in catalog if t.get("id") in set(tool_ids)]
+
+    # Define sub-use-cases per category
+    sub_use_cases = {
+        "hosting": [
+            {"title": "Shared hosting for small sites", "description": "Budget-friendly hosting for personal sites and blogs with basic traffic."},
+            {"title": "Website builder with hosting", "description": "All-in-one solutions where hosting and site building are bundled."},
+            {"title": "Developer-focused hosting", "description": "Hosting with API access, CLI tools, and deployment automation."},
+        ],
+        "image-generation": [
+            {"title": "AI image creation from text", "description": "Generate images from text prompts for marketing, social media, or concept art."},
+            {"title": "Background removal and editing", "description": "Quick background removal and simple image editing for product photos."},
+            {"title": "Artistic image generation", "description": "High-quality artistic images for creative projects and design work."},
+        ],
+        "marketing": [
+            {"title": "Content creation and drafting", "description": "AI-assisted content writing for blogs, social media, and campaigns."},
+            {"title": "Email marketing automation", "description": "Automated email campaigns, segmentation, and delivery tracking."},
+            {"title": "Marketing analytics and insights", "description": "Track campaign performance and audience engagement."},
+        ],
+        "research": [
+            {"title": "AI-powered search and answers", "description": "Get sourced answers from AI search engines for quick research."},
+            {"title": "Note-taking and knowledge management", "description": "Organize research findings, notes, and references."},
+            {"title": "Audio and transcript research", "description": "Transcribe and search meeting recordings, podcasts, and interviews."},
+        ],
+        "sales": [
+            {"title": "CRM and pipeline management", "description": "Track leads, deals, and customer relationships."},
+            {"title": "Email outreach and sequencing", "description": "Automated email sequences for sales outreach."},
+            {"title": "Meeting and call recording", "description": "Record and analyze sales calls for insights and coaching."},
+        ],
+    }
+
+    cases = sub_use_cases.get(slug, [])
+    if not cases:
+        return ""
+
+    rows = []
+    for case in cases:
+        # Find matching tools
+        matching = []
+        for t in tools:
+            best = t.get("best", "").lower()
+            pros = " ".join(t.get("pros", [])).lower()
+            case_words = set(case["title"].lower().split())
+            tool_words = set(best.split()) | set(pros.split())
+            if case_words & tool_words:
+                matching.append(t)
+        if not matching:
+            matching = tools[:3]
+
+        tool_links = ""
+        for t in matching:
+            tool_links += f'<a class="lk" href="/tools/{t["id"]}.html"><span class="lk-tx"><b>{html.escape(t["name"])}</b><small>{html.escape(t.get("best", ""))}</small></span></a>'
+
+        rows.append(
+            f'<div class="p-feat"><h3>{html.escape(case["title"])}</h3>'
+            f'<p>{html.escape(case["description"])}</p>'
+            f'<div class="linkgrid">{tool_links}</div></div>'
+        )
+
+    return (
+        f'<section class="p-sec category-hub" id="sub-use-cases">'
+        f'<h2>Sub-use cases</h2>'
+        f'<p>These tools serve different use cases within this category. '
+        f'Start with the use case that matches your goal, then compare trade-offs.</p>'
+        f'<div class="p-feats">{"".join(rows)}</div>'
+        f'</section>'
+    )
+
+
+def category_tool_guidance(slug: str) -> str:
+    label = taxonomy_categories().get(slug, slug.replace("-", " ").title())
+    category_ids = set(category_tool_ids(slug))
+    rows = []
+
+    for item in load_catalog():
+        if item.get("id") not in category_ids:
+            continue
+
+        name = str(item.get("name", "")).strip()
+        best_for = str(item.get("best", "")).strip()
+        pros = [
+            str(value).strip()
+            for value in item.get("pros", [])
+            if str(value).strip()
+        ]
+
+        if not name or not best_for:
+            continue
+
+        detail = best_for
+        if pros:
+            detail += ". Useful strengths listed in the ToolNest catalog include " + ", ".join(pros[:3]) + "."
+
+        rows.append(
+            f'<div class="p-feat"><h3>{html.escape(name)}</h3>'
+            f'<p><strong>Best for:</strong> {html.escape(detail)}</p></div>'
+        )
+
+    if not rows:
+        return ""
+
+    return (
+        f'<section class="p-sec category-hub" id="category-tool-fit">'
+        f'<h2>Which {html.escape(label)} tool fits which job?</h2>'
+        f'<p>Start with the job you need to complete, then compare trade-offs rather than choosing by brand name alone. '
+        f'The notes below use the current ToolNest catalog descriptions and strengths for this category.</p>'
+        f'<div class="p-feats">{"".join(rows)}</div>'
+        f'</section>'
+    )
+
+
 def best_route_for_category(slug: str) -> str | None:
     candidates = [
         f"/best/best-{slug}-tools.html",
@@ -1079,6 +1353,85 @@ def link_list(routes: list[str], label: str) -> str:
     return f'<div class="linkgrid">{links}</div>'
 
 
+def best_page_category(relative: str) -> str:
+    name = Path(relative).name
+    aliases = {
+        "best-ai-writing-tools.html": "writing",
+        "best-writing-tools.html": "writing",
+        "best-website-builder-tools.html": "website-builders",
+        "best-ai-voice-tools.html": "voice-video",
+        "best-ai-video-tools.html": "voice-video",
+        "best-ai-assistants-tools.html": "ai-assistants",
+    }
+    if name in aliases:
+        return aliases[name]
+    if not name.startswith("best-") or not name.endswith("-tools.html"):
+        return ""
+    return name[len("best-"):-len("-tools.html")]
+
+
+def add_best_guidance(content: str, relative: str) -> str:
+    if not relative.startswith("best/") or relative == "best/index.html":
+        return content
+
+    slug = best_page_category(relative)
+    label = taxonomy_categories().get(slug)
+    if not label:
+        return content
+
+    candidates = []
+    for item in load_catalog():
+        if str(item.get("cat", "")).lower() != label.lower():
+            continue
+
+        name = str(item.get("name", "")).strip()
+        best_for = str(item.get("best", "")).strip()
+        pros = [str(v).strip() for v in item.get("pros", []) if str(v).strip()]
+
+        if not name or not best_for:
+            continue
+
+        strengths = ""
+        if pros:
+            strengths = (
+                "<p><strong>Catalog strengths:</strong> "
+                + html.escape("; ".join(pros[:3]))
+                + ".</p>"
+            )
+
+        candidates.append(
+            f'<div class="p-feat">'
+            f'<h3>{html.escape(name)}</h3>'
+            f'<p><strong>Best fit:</strong> {html.escape(best_for)}.</p>'
+            f'{strengths}'
+            f'</div>'
+        )
+
+    if not candidates:
+        return content
+
+    section = (
+        f'<section class="p-sec best-guidance" id="shortlist-fit">'
+        f'<h2>How the {html.escape(label)} shortlist differs</h2>'
+        f'<p>The strongest choice depends on the job you need to complete. '
+        f'ToolNest uses the catalog fit and recorded strengths below to make the shortlist easier to compare '
+        f'without treating every product as interchangeable.</p>'
+        f'<div class="p-feats">{"".join(candidates)}</div>'
+        f'<p>Use these differences as a starting point, then open the relevant review or comparison '
+        f'for deeper trade-offs before choosing a product.</p>'
+        f'</section>'
+    )
+
+    content = re.sub(
+        r'<section class="p-sec best-guidance".*?</section>',
+        "",
+        content,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+
+    return content.replace("</main>", section + "</main>", 1)
+
+
 def add_category_hub(content: str, relative: str, indexable: dict[str, bool]) -> str:
     parts = Path(relative).parts
     if len(parts) != 2 or parts[0] != "category" or parts[1] == "index.html":
@@ -1098,10 +1451,22 @@ def add_category_hub(content: str, relative: str, indexable: dict[str, bool]) ->
     buying_routes = best_links + ["/compare/index.html", "/alternatives/index.html", "/tools/index.html"]
     buying_routes = [route for route in buying_routes if route_is_indexable(route, indexable)]
     tool_list = link_list(tool_routes, f"{label} tool review")
+    tool_count = len(category_tool_ids(slug))
+    intro = (
+        f"Explore {tool_count} {label} tools available in the ToolNest catalog. "
+        f"Use the reviews, comparisons, alternatives and buying guides on this page "
+        f"to narrow the options by fit, trade-offs and workflow needs rather than choosing from a generic list."
+    )
+    guidance = category_tool_guidance(slug)
+    sub_cases = category_sub_use_cases(slug)
     sections = [
         f'<section class="p-sec category-hub" id="category-intro"><h2>About {html.escape(label)} tools</h2>'
-        "<p>[WRITE INTRO]</p></section>",
+        f"<p>{html.escape(intro)}</p></section>",
     ]
+    if guidance:
+        sections.append(guidance)
+    if sub_cases:
+        sections.append(sub_cases)
     if tool_list:
         sections.append(
             f'<section class="p-sec category-hub" id="best-tools"><h2>Best {html.escape(label)} tools</h2>{tool_list}</section>'
@@ -1206,15 +1571,12 @@ def add_recently_tested(content: str, indexable: dict[str, bool]) -> str:
         f"<small>Hands-on tested {html.escape(date_checked)}</small></span></a>"
         for date_checked, item in records[:6]
     )
-    body = f'<div class="linkgrid">{cards}</div>' if cards else (
-        '<p class="sub">No hands-on reviews have been published yet.</p>'
-    )
     section = (
         '<section class="recently-tested" aria-labelledby="recently-tested-title"><div class="wrap">'
         '<p class="kicker">Proof first</p><h2 class="h2" id="recently-tested-title">Recently tested</h2>'
         '<p class="sub">These pages include hands-on evidence with a test date and plan.</p>'
-        f"{body}</div></section>"
-    )
+        f'<div class="linkgrid">{cards}</div></div></section>'
+    ) if cards else ""
     content = re.sub(
         r'<section class="recently-tested".*?</section>',
         "",
@@ -1323,7 +1685,7 @@ def build_index_report(
         "",
         "Generated by `python3 scripts/build_site.py`.",
         "",
-        "A page is indexable when its main content has at least 600 words and it has",
+        f"A page is indexable when its main content has at least {MIN_INDEXABLE_WORDS} words and it has",
         "at least one marked section whose full text is unique across pages. Paths in",
         "`data/index-allowlist.json` are explicit overrides.",
         f"Current allowlist overrides: {', '.join(sorted(allowlist)) or 'none'}.",
@@ -1349,7 +1711,7 @@ def build_index_report(
         else:
             lines.extend(
                 f"- `/{path}` ({metrics[path].words} words; "
-                f"{'below 600 words' if metrics[path].words < 600 else 'no unique marked section'})"
+                f"{'below the configured minimum word threshold' if metrics[path].words < MIN_INDEXABLE_WORDS else 'no unique marked section'})"
                 for path in paths
             )
         lines.append("")
@@ -1386,7 +1748,7 @@ def main() -> None:
     unique = unique_marked_sections(metrics)
     indexable = {
         relative: page_route(relative) in allowlist
-        or (item.words >= 600 and bool(unique[relative]))
+        or (item.words >= MIN_INDEXABLE_WORDS and bool(unique[relative]))
         for relative, item in metrics.items()
     }
     featured_ids = homepage_quality_ids(indexable, metrics)
@@ -1408,10 +1770,25 @@ def main() -> None:
         content = ensure_lang(content)
         content = ensure_title(content, title)
         content = add_or_replace_head_meta(content, "description", description)
+        content = content.replace('<meta name="author" content="Abdul Muswir">', '<meta name="author" content="ToolNest Editorial">')
         content = ensure_canonical(content, url)
+        content = content.replace("&display=swap", "&display=optional")
         content = ensure_h1(content, parser.h1_text or title)
         content = add_font_hints(content)
         content = use_minified_assets(content)
+        content = re.sub(
+            r'<link rel="preload" as="style" href="/assets/site\.min\.css"[^>]*>'
+            r'<noscript><link rel="stylesheet" href="/assets/site\.min\.css"></noscript>',
+            '<link rel="stylesheet" href="/assets/site.min.css">',
+            content,
+        )
+        content = re.sub(
+            r'<link rel="preload" as="style" href="/assets/mobile-nav\.min\.css"[^>]*>'
+            r'<noscript><link rel="stylesheet" href="/assets/mobile-nav\.min\.css"></noscript>',
+            '<link rel="stylesheet" href="/assets/mobile-nav.min.css">',
+            content,
+        )
+        content = re.sub(r'<script type="application/ld\+json" id="tn-editorial-metadata">[^<]*</script>', "", content)
         content = ensure_favicon(content)
         content = ensure_control_names(content)
         content = ensure_image_attributes(content, title)
@@ -1422,6 +1799,7 @@ def main() -> None:
         content = add_editorial_strip(content, path, config)
         content = add_proof_stack(content, relative)
         content = add_category_hub(content, relative, indexable)
+        content = add_best_guidance(content, relative)
         content = tool_internal_links(content, relative, indexable)
         content = add_footer_trust_links(content)
         breadcrumb_items = page_breadcrumbs(relative, parser.h1_text or title)

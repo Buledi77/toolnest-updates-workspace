@@ -142,7 +142,7 @@
         "Narrate without recording"
       ],
       "logo": "/assets/logos/elevenlabs.png",
-      "affiliateUrl": "",
+      "affiliateUrl": "https://try.elevenlabs.io/4kkksh8cm36q",
       "shortDescription": null,
       "pricing": {
         "model": null,
@@ -165,10 +165,10 @@
       "sources": [],
       "lastVerified": null,
       "affiliate": {
-        "status": "unknown",
-        "url": "",
-        "network": null,
-        "disclosureRequired": null,
+        "status": "approved",
+        "url": "https://try.elevenlabs.io/4kkksh8cm36q",
+        "network": "PartnerStack",
+        "disclosureRequired": true,
         "lastVerified": null
       },
       "alternatives": [],

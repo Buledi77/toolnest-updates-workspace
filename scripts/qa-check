@@ -140,7 +140,7 @@ def main() -> int:
     unique = unique_marked_sections(metrics)
     expected_indexable = {
         path: page_route(path) in allowlist
-        or (item.words >= 600 and bool(unique[path]))
+        or (item.words >= 450 and bool(unique[path]))
         for path, item in metrics.items()
     }
     inbound_links = Counter()

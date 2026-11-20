@@ -47,7 +47,10 @@
               "shutdown",
               "url_change",
               "verification_correction",
-              "editorial_tier_change"
+              "editorial_tier_change",
+              "rebrand",
+              "discontinued_product",
+              "evidence_update"
             ]
           },
           "detected_at": {
@@ -69,6 +72,15 @@
               "type": "string"
             }
           },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low",
+              "unverified"
+            ]
+          },
           "status": {
             "type": "string",
             "enum": [
@@ -77,6 +89,18 @@
               "disputed",
               "retracted"
             ]
+          },
+          "correction_note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "affected_pages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "note": {
             "type": [

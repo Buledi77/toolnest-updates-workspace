@@ -1,0 +1,3824 @@
+{
+  "schema_version": "evidence-gap-registry-v2",
+  "generated_at": "2026-11-20",
+  "description": "Deterministic evidence-gap registry for ALL tool reviews with genuine evidence gaps. Tools-v2 structured relationships do not fill evidence gaps. Unknown fields remain null. No fabricated evidence.",
+  "total_tools": 50,
+  "tools": [
+    {
+      "tool_id": "jasper",
+      "page_path": "/tools/jasper.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 8,
+        "words": 605,
+        "sections": 10,
+        "unique_marked_sections": 2,
+        "missing_flags": [
+          "no_limitations",
+          "no_evidence_sources",
+          "no_verdict"
+        ],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": true,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": true,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": true,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "minimal",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 3,
+        "comparison_pages": [
+          "grammarly-vs-jasper.html",
+          "jasper-vs-semrush.html",
+          "copyai-vs-jasper.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 8,
+        "best_of_pages": [
+          "best-ai-tools-for-freelancers.html",
+          "best-ai-writing-tools.html",
+          "best-ai-video-tools.html",
+          "best-website-and-hosting-tools.html",
+          "best-ai-tools-for-youtubers.html",
+          "best-marketing-tools.html",
+          "best-ai-tools-for-students.html",
+          "best-ai-voice-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": false,
+        "has_limits_section": false,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": false,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": true,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": false,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Jasper",
+        "category": "Marketing",
+        "best_fit": "Ad copy and product page writing",
+        "site": "https://www.jasper.ai"
+      }
+    },
+    {
+      "tool_id": "descript",
+      "page_path": "/tools/descript.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 9,
+        "words": 604,
+        "sections": 10,
+        "unique_marked_sections": 3,
+        "missing_flags": [
+          "no_limitations",
+          "no_evidence_sources",
+          "no_verdict"
+        ],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": true,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": true,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": true,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "minimal",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 5,
+        "comparison_pages": [
+          "descript-vs-kapwing.html",
+          "elevenlabs-vs-descript.html",
+          "descript-vs-synthesia.html",
+          "descript-vs-runway.html",
+          "descript-vs-invideo.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 21,
+        "best_of_pages": [
+          "best-design-tools.html",
+          "best-ai-tools-for-freelancers.html",
+          "best-ai-writing-tools.html",
+          "best-image-generation-tools.html",
+          "best-seo-tools.html",
+          "best-voice-video-tools.html",
+          "best-automation-tools.html",
+          "best-website-builder-tools.html",
+          "best-ai-video-tools.html",
+          "best-writing-tools.html",
+          "best-research-tools.html",
+          "best-website-and-hosting-tools.html",
+          "best-ai-assistants-tools.html",
+          "best-ai-tools-for-youtubers.html",
+          "best-sales-tools.html",
+          "best-marketing-tools.html",
+          "best-ai-tools-for-students.html",
+          "best-ai-voice-tools.html",
+          "best-hosting-tools.html",
+          "best-email-marketing-tools.html",
+          "best-productivity-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": false,
+        "has_limits_section": false,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": false,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": true,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": false,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Descript",
+        "category": "Voice & Video",
+        "best_fit": "Editing video and podcasts like a document",
+        "site": "https://www.descript.com"
+      }
+    },
+    {
+      "tool_id": "grammarly",
+      "page_path": "/tools/grammarly.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 9,
+        "words": 613,
+        "sections": 10,
+        "unique_marked_sections": 4,
+        "missing_flags": [
+          "no_limitations",
+          "no_evidence_sources",
+          "no_verdict"
+        ],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": true,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": true,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": true,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "minimal",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 6,
+        "comparison_pages": [
+          "grammarly-vs-jasper.html",
+          "grammarly-vs-quillbot.html",
+          "grammarly-vs-writesonic.html",
+          "grammarly-vs-hemingway.html",
+          "grammarly-vs-prowritingaid.html",
+          "copyai-vs-grammarly.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 8,
+        "best_of_pages": [
+          "best-ai-tools-for-freelancers.html",
+          "best-ai-writing-tools.html",
+          "best-ai-video-tools.html",
+          "best-writing-tools.html",
+          "best-website-and-hosting-tools.html",
+          "best-ai-tools-for-youtubers.html",
+          "best-ai-tools-for-students.html",
+          "best-ai-voice-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": false,
+        "has_limits_section": false,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": false,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": true,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": false,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Grammarly",
+        "category": "Writing",
+        "best_fit": "Clear English in emails and proposals",
+        "site": "https://www.grammarly.com"
+      }
+    },
+    {
+      "tool_id": "notion",
+      "page_path": "/tools/notion.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 10,
+        "words": 604,
+        "sections": 8,
+        "unique_marked_sections": 5,
+        "missing_flags": [
+          "no_limitations",
+          "no_evidence_sources",
+          "no_verdict"
+        ],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": true,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": true,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "minimal",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 4,
+        "comparison_pages": [
+          "monday-vs-notion.html",
+          "clickup-vs-notion.html",
+          "notion-vs-todoist.html",
+          "asana-vs-notion.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 8,
+        "best_of_pages": [
+          "best-ai-tools-for-freelancers.html",
+          "best-ai-writing-tools.html",
+          "best-ai-video-tools.html",
+          "best-website-and-hosting-tools.html",
+          "best-ai-tools-for-youtubers.html",
+          "best-ai-tools-for-students.html",
+          "best-ai-voice-tools.html",
+          "best-productivity-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": false,
+        "has_limits_section": false,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": false,
+        "has_alternatives_section": false,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": true,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": false,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Notion",
+        "category": "Productivity",
+        "best_fit": "Notes, tasks and client work in one place",
+        "site": "https://www.notion.com"
+      }
+    },
+    {
+      "tool_id": "adobeexpress",
+      "page_path": "/tools/adobeexpress.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 592,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": true,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 3,
+        "comparison_pages": [
+          "adobeexpress-vs-removebg.html",
+          "adobeexpress-vs-canva.html",
+          "adobeexpress-vs-figma.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-design-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Adobe Express",
+        "category": "Design",
+        "best_fit": "Quick social graphics, videos and brand content",
+        "site": "https://www.adobe.com/express/"
+      }
+    },
+    {
+      "tool_id": "asana",
+      "page_path": "/tools/asana.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 521,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 1,
+        "comparison_pages": [
+          "asana-vs-notion.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-productivity-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Asana",
+        "category": "Productivity",
+        "best_fit": "Planning projects and coordinating team work",
+        "site": "https://asana.com"
+      }
+    },
+    {
+      "tool_id": "beehiiv",
+      "page_path": "/tools/beehiiv.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 12,
+        "words": 627,
+        "sections": 10,
+        "unique_marked_sections": 5,
+        "missing_flags": [
+          "no_evidence_sources"
+        ],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": true,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 3,
+        "comparison_pages": [
+          "beehiiv-vs-kit.html",
+          "beehiiv-vs-mailchimp.html",
+          "beehiiv-vs-brevo.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-email-marketing-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": false,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": false,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "beehiiv",
+        "category": "Email Marketing",
+        "best_fit": "Publishing and growing a monetized newsletter",
+        "site": "https://www.beehiiv.com"
+      }
+    },
+    {
+      "tool_id": "brevo",
+      "page_path": "/tools/brevo.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 557,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 3,
+        "comparison_pages": [
+          "brevo-vs-mailchimp.html",
+          "brevo-vs-kit.html",
+          "beehiiv-vs-brevo.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 2,
+        "best_of_pages": [
+          "best-sales-tools.html",
+          "best-email-marketing-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Brevo",
+        "category": "Email Marketing",
+        "best_fit": "Email, SMS and customer communication campaigns",
+        "site": "https://www.brevo.com"
+      }
+    },
+    {
+      "tool_id": "canva",
+      "page_path": "/tools/canva.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 12,
+        "words": 683,
+        "sections": 10,
+        "unique_marked_sections": 5,
+        "missing_flags": [
+          "no_evidence_sources"
+        ],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": true,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 3,
+        "comparison_pages": [
+          "adobeexpress-vs-canva.html",
+          "canva-vs-removebg.html",
+          "canva-vs-figma.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 4,
+        "best_of_pages": [
+          "best-design-tools.html",
+          "best-automation-tools.html",
+          "best-ai-assistants-tools.html",
+          "best-ai-tools-for-youtubers.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": false,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": false,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Canva",
+        "category": "Design",
+        "best_fit": "Social graphics, presentations and simple brand designs",
+        "site": "https://www.canva.com"
+      }
+    },
+    {
+      "tool_id": "chatgpt",
+      "page_path": "/tools/chatgpt.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 12,
+        "words": 812,
+        "sections": 12,
+        "unique_marked_sections": 6,
+        "missing_flags": [
+          "no_skip_if",
+          "no_evidence_sources"
+        ],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": true,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": false,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": true,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "minimal",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 2,
+        "comparison_pages": [
+          "chatgpt-vs-claude.html",
+          "chatgpt-vs-gemini.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-ai-assistants-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": false,
+        "has_limits_section": false,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": false,
+        "has_alternatives_section": false,
+        "has_best_for_section": false,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": true,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": false
+      },
+      "tools_json_entry": {
+        "name": "ChatGPT",
+        "category": "AI Assistants",
+        "best_fit": "General writing, brainstorming, analysis and everyday AI help",
+        "site": "https://chatgpt.com"
+      }
+    },
+    {
+      "tool_id": "claude",
+      "page_path": "/tools/claude.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 12,
+        "words": 897,
+        "sections": 12,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_skip_if",
+          "no_evidence_sources"
+        ],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": true,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": true,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "minimal",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 2,
+        "comparison_pages": [
+          "chatgpt-vs-claude.html",
+          "claude-vs-gemini.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-ai-assistants-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": false,
+        "has_limits_section": false,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": false,
+        "has_alternatives_section": false,
+        "has_best_for_section": false,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": false
+      },
+      "tools_json_entry": {
+        "name": "Claude",
+        "category": "AI Assistants",
+        "best_fit": "Long-form analysis, writing and structured reasoning",
+        "site": "https://claude.ai"
+      }
+    },
+    {
+      "tool_id": "clickup",
+      "page_path": "/tools/clickup.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 527,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": true,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 1,
+        "comparison_pages": [
+          "clickup-vs-notion.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-productivity-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "ClickUp",
+        "category": "Productivity",
+        "best_fit": "Tasks, documents and team project management",
+        "site": "https://clickup.com"
+      }
+    },
+    {
+      "tool_id": "copyai",
+      "page_path": "/tools/copyai.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 548,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": true,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 2,
+        "comparison_pages": [
+          "copyai-vs-jasper.html",
+          "copyai-vs-grammarly.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-marketing-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Copy.ai",
+        "category": "Marketing",
+        "best_fit": "Sales and marketing content workflows",
+        "site": "https://www.copy.ai"
+      }
+    },
+    {
+      "tool_id": "elevenlabs",
+      "page_path": "/tools/elevenlabs.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 12,
+        "words": 1171,
+        "sections": 11,
+        "unique_marked_sections": 5,
+        "missing_flags": [
+          "no_limitations",
+          "no_evidence_sources",
+          "no_verdict"
+        ],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": true,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": true,
+        "missing_free_plan_evidence": false,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": true,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "minimal",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 2,
+        "comparison_pages": [
+          "elevenlabs-vs-synthesia.html",
+          "elevenlabs-vs-descript.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 8,
+        "best_of_pages": [
+          "best-ai-tools-for-freelancers.html",
+          "best-ai-writing-tools.html",
+          "best-voice-video-tools.html",
+          "best-ai-video-tools.html",
+          "best-website-and-hosting-tools.html",
+          "best-ai-tools-for-youtubers.html",
+          "best-ai-tools-for-students.html",
+          "best-ai-voice-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": false,
+        "has_limits_section": false,
+        "has_evidence_status_section": false,
+        "has_pricing_section": true,
+        "has_verdict_section": false,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": true,
+        "mentions_tested": false,
+        "mentions_free_plan": true,
+        "mentions_trial": false,
+        "mentions_limitations": false,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "ElevenLabs",
+        "category": "Voice & Video",
+        "best_fit": "Voiceovers for videos and courses",
+        "site": "https://elevenlabs.io"
+      }
+    },
+    {
+      "tool_id": "figma",
+      "page_path": "/tools/figma.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 531,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": true,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 2,
+        "comparison_pages": [
+          "adobeexpress-vs-figma.html",
+          "canva-vs-figma.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-design-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Figma",
+        "category": "Design",
+        "best_fit": "Collaborative interface design and prototyping",
+        "site": "https://www.figma.com"
+      }
+    },
+    {
+      "tool_id": "fireflies",
+      "page_path": "/tools/fireflies.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 534,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": true,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 1,
+        "comparison_pages": [
+          "fireflies-vs-otter.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-productivity-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Fireflies.ai",
+        "category": "Productivity",
+        "best_fit": "Recording, transcribing and reviewing meetings",
+        "site": "https://fireflies.ai"
+      }
+    },
+    {
+      "tool_id": "framer",
+      "page_path": "/tools/framer.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 12,
+        "words": 667,
+        "sections": 10,
+        "unique_marked_sections": 5,
+        "missing_flags": [
+          "no_evidence_sources"
+        ],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": true,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 2,
+        "comparison_pages": [
+          "framer-vs-webflow.html",
+          "framer-vs-squarespace.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 2,
+        "best_of_pages": [
+          "best-website-builder-tools.html",
+          "best-website-and-hosting-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": false,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": false,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Framer",
+        "category": "Website Builder",
+        "best_fit": "Modern landing pages and design-led marketing websites",
+        "site": "https://www.framer.com"
+      }
+    },
+    {
+      "tool_id": "gemini",
+      "page_path": "/tools/gemini.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 590,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": true,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 2,
+        "comparison_pages": [
+          "chatgpt-vs-gemini.html",
+          "claude-vs-gemini.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-ai-assistants-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Gemini",
+        "category": "AI Assistants",
+        "best_fit": "AI help connected with Google products and multimodal work",
+        "site": "https://gemini.google.com"
+      }
+    },
+    {
+      "tool_id": "hemingway",
+      "page_path": "/tools/hemingway.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 595,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": true,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 3,
+        "comparison_pages": [
+          "hemingway-vs-quillbot.html",
+          "hemingway-vs-prowritingaid.html",
+          "grammarly-vs-hemingway.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 2,
+        "best_of_pages": [
+          "best-ai-writing-tools.html",
+          "best-writing-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Hemingway Editor",
+        "category": "Writing",
+        "best_fit": "Making sentences clearer and easier to read",
+        "site": "https://hemingwayapp.com"
+      }
+    },
+    {
+      "tool_id": "hubspot",
+      "page_path": "/tools/hubspot.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 540,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 1,
+        "comparison_pages": [
+          "hubspot-vs-systeme.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 2,
+        "best_of_pages": [
+          "best-sales-tools.html",
+          "best-email-marketing-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "HubSpot",
+        "category": "Sales",
+        "best_fit": "CRM, marketing and sales workflows in one platform",
+        "site": "https://www.hubspot.com"
+      }
+    },
+    {
+      "tool_id": "invideo",
+      "page_path": "/tools/invideo.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 545,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 2,
+        "comparison_pages": [
+          "invideo-vs-runway.html",
+          "descript-vs-invideo.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 3,
+        "best_of_pages": [
+          "best-voice-video-tools.html",
+          "best-ai-video-tools.html",
+          "best-ai-voice-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "InVideo",
+        "category": "Voice & Video",
+        "best_fit": "Creating marketing and social videos from prompts",
+        "site": "https://invideo.io"
+      }
+    },
+    {
+      "tool_id": "leonardo",
+      "page_path": "/tools/leonardo.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 546,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 1,
+        "comparison_pages": [
+          "leonardo-vs-midjourney.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-image-generation-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Leonardo AI",
+        "category": "Image Generation",
+        "best_fit": "AI images, assets and creative production",
+        "site": "https://leonardo.ai"
+      }
+    },
+    {
+      "tool_id": "mailchimp",
+      "page_path": "/tools/mailchimp.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 564,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 3,
+        "comparison_pages": [
+          "kit-vs-mailchimp.html",
+          "brevo-vs-mailchimp.html",
+          "beehiiv-vs-mailchimp.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 2,
+        "best_of_pages": [
+          "best-sales-tools.html",
+          "best-email-marketing-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Mailchimp",
+        "category": "Email Marketing",
+        "best_fit": "Email campaigns, basic automation and audience management",
+        "site": "https://mailchimp.com"
+      }
+    },
+    {
+      "tool_id": "make",
+      "page_path": "/tools/make.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 551,
+        "sections": 10,
+        "unique_marked_sections": 8,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": true,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 3,
+        "comparison_pages": [
+          "make-vs-n8n.html",
+          "ifttt-vs-make.html",
+          "make-vs-zapier.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 21,
+        "best_of_pages": [
+          "best-design-tools.html",
+          "best-ai-tools-for-freelancers.html",
+          "best-ai-writing-tools.html",
+          "best-image-generation-tools.html",
+          "best-seo-tools.html",
+          "best-voice-video-tools.html",
+          "best-automation-tools.html",
+          "best-website-builder-tools.html",
+          "best-ai-video-tools.html",
+          "best-writing-tools.html",
+          "best-research-tools.html",
+          "best-website-and-hosting-tools.html",
+          "best-ai-assistants-tools.html",
+          "best-ai-tools-for-youtubers.html",
+          "best-sales-tools.html",
+          "best-marketing-tools.html",
+          "best-ai-tools-for-students.html",
+          "best-ai-voice-tools.html",
+          "best-hosting-tools.html",
+          "best-email-marketing-tools.html",
+          "best-productivity-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Make",
+        "category": "Automation",
+        "best_fit": "Visual multi-step workflow automation across apps",
+        "site": "https://www.make.com"
+      }
+    },
+    {
+      "tool_id": "midjourney",
+      "page_path": "/tools/midjourney.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 534,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 1,
+        "comparison_pages": [
+          "leonardo-vs-midjourney.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-image-generation-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Midjourney",
+        "category": "Image Generation",
+        "best_fit": "Stylized AI images and creative visual concepts",
+        "site": "https://www.midjourney.com"
+      }
+    },
+    {
+      "tool_id": "monday",
+      "page_path": "/tools/monday.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 554,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": true,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 1,
+        "comparison_pages": [
+          "monday-vs-notion.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-productivity-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "monday.com",
+        "category": "Productivity",
+        "best_fit": "Custom work boards for projects and operations",
+        "site": "https://monday.com"
+      }
+    },
+    {
+      "tool_id": "n8n",
+      "page_path": "/tools/n8n.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 548,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": true,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 3,
+        "comparison_pages": [
+          "make-vs-n8n.html",
+          "ifttt-vs-n8n.html",
+          "n8n-vs-zapier.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-automation-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "n8n",
+        "category": "Automation",
+        "best_fit": "Flexible workflow automation with technical control",
+        "site": "https://n8n.io"
+      }
+    },
+    {
+      "tool_id": "notebooklm",
+      "page_path": "/tools/notebooklm.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 530,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 1,
+        "comparison_pages": [
+          "notebooklm-vs-perplexity.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-research-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "NotebookLM",
+        "category": "Research",
+        "best_fit": "Studying and asking questions across your own sources",
+        "site": "https://notebooklm.google.com"
+      }
+    },
+    {
+      "tool_id": "otter",
+      "page_path": "/tools/otter.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 534,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": true,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 1,
+        "comparison_pages": [
+          "fireflies-vs-otter.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-productivity-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Otter.ai",
+        "category": "Productivity",
+        "best_fit": "Meeting transcription and searchable notes",
+        "site": "https://otter.ai"
+      }
+    },
+    {
+      "tool_id": "perplexity",
+      "page_path": "/tools/perplexity.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 519,
+        "sections": 10,
+        "unique_marked_sections": 8,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 1,
+        "comparison_pages": [
+          "notebooklm-vs-perplexity.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 2,
+        "best_of_pages": [
+          "best-research-tools.html",
+          "best-ai-tools-for-students.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Perplexity",
+        "category": "Research",
+        "best_fit": "Web research with visible source links",
+        "site": "https://www.perplexity.ai"
+      }
+    },
+    {
+      "tool_id": "prowritingaid",
+      "page_path": "/tools/prowritingaid.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 571,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": true,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 4,
+        "comparison_pages": [
+          "hemingway-vs-prowritingaid.html",
+          "prowritingaid-vs-writesonic.html",
+          "grammarly-vs-prowritingaid.html",
+          "prowritingaid-vs-quillbot.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 2,
+        "best_of_pages": [
+          "best-ai-writing-tools.html",
+          "best-writing-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "ProWritingAid",
+        "category": "Writing",
+        "best_fit": "Detailed writing reports for long-form authors",
+        "site": "https://prowritingaid.com"
+      }
+    },
+    {
+      "tool_id": "quillbot",
+      "page_path": "/tools/quillbot.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 564,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": true,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 4,
+        "comparison_pages": [
+          "hemingway-vs-quillbot.html",
+          "grammarly-vs-quillbot.html",
+          "quillbot-vs-writesonic.html",
+          "prowritingaid-vs-quillbot.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 2,
+        "best_of_pages": [
+          "best-ai-writing-tools.html",
+          "best-writing-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "QuillBot",
+        "category": "Writing",
+        "best_fit": "Paraphrasing, rewriting and summarizing text",
+        "site": "https://quillbot.com"
+      }
+    },
+    {
+      "tool_id": "removebg",
+      "page_path": "/tools/removebg.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 548,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": true,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 2,
+        "comparison_pages": [
+          "adobeexpress-vs-removebg.html",
+          "canva-vs-removebg.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-design-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "remove.bg",
+        "category": "Design",
+        "best_fit": "Removing image backgrounds quickly",
+        "site": "https://www.remove.bg"
+      }
+    },
+    {
+      "tool_id": "runway",
+      "page_path": "/tools/runway.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 568,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 4,
+        "comparison_pages": [
+          "invideo-vs-runway.html",
+          "kapwing-vs-runway.html",
+          "runway-vs-synthesia.html",
+          "descript-vs-runway.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 3,
+        "best_of_pages": [
+          "best-voice-video-tools.html",
+          "best-ai-video-tools.html",
+          "best-ai-voice-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Runway",
+        "category": "Voice & Video",
+        "best_fit": "AI-assisted video generation and creative editing",
+        "site": "https://runwayml.com"
+      }
+    },
+    {
+      "tool_id": "squarespace",
+      "page_path": "/tools/squarespace.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 532,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 2,
+        "comparison_pages": [
+          "framer-vs-squarespace.html",
+          "squarespace-vs-webflow.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-website-builder-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Squarespace",
+        "category": "Website Builder",
+        "best_fit": "Polished websites and portfolios with templates",
+        "site": "https://www.squarespace.com"
+      }
+    },
+    {
+      "tool_id": "synthesia",
+      "page_path": "/tools/synthesia.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 544,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 3,
+        "comparison_pages": [
+          "elevenlabs-vs-synthesia.html",
+          "runway-vs-synthesia.html",
+          "descript-vs-synthesia.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 3,
+        "best_of_pages": [
+          "best-voice-video-tools.html",
+          "best-ai-video-tools.html",
+          "best-ai-voice-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Synthesia",
+        "category": "Voice & Video",
+        "best_fit": "Presenter-style videos using AI avatars",
+        "site": "https://www.synthesia.io"
+      }
+    },
+    {
+      "tool_id": "todoist",
+      "page_path": "/tools/todoist.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 524,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 1,
+        "comparison_pages": [
+          "notion-vs-todoist.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-productivity-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Todoist",
+        "category": "Productivity",
+        "best_fit": "Personal tasks and lightweight team planning",
+        "site": "https://todoist.com"
+      }
+    },
+    {
+      "tool_id": "webflow",
+      "page_path": "/tools/webflow.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 542,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 2,
+        "comparison_pages": [
+          "framer-vs-webflow.html",
+          "squarespace-vs-webflow.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-website-builder-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Webflow",
+        "category": "Website Builder",
+        "best_fit": "Visual websites with CMS and design control",
+        "site": "https://webflow.com"
+      }
+    },
+    {
+      "tool_id": "writesonic",
+      "page_path": "/tools/writesonic.html",
+      "quality_status": {
+        "grade": "B",
+        "score": 12,
+        "words": 569,
+        "sections": 10,
+        "unique_marked_sections": 7,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "medium"
+      },
+      "research_priority": "medium",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": true,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 3,
+        "comparison_pages": [
+          "quillbot-vs-writesonic.html",
+          "grammarly-vs-writesonic.html",
+          "prowritingaid-vs-writesonic.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 2,
+        "best_of_pages": [
+          "best-ai-writing-tools.html",
+          "best-writing-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Writesonic",
+        "category": "Writing",
+        "best_fit": "Marketing articles, landing pages and campaign drafts",
+        "site": "https://writesonic.com"
+      }
+    },
+    {
+      "tool_id": "ifttt",
+      "page_path": "/tools/ifttt.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 13,
+        "words": 1098,
+        "sections": 11,
+        "unique_marked_sections": 6,
+        "missing_flags": [
+          "no_limitations",
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": false,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": false,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": true,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [
+        {
+          "url": "https://ifttt.com/plans",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://ifttt.com/explore",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://help.ifttt.com/",
+          "type": "html_reference",
+          "verified": false
+        }
+      ],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 3,
+        "comparison_pages": [
+          "ifttt-vs-make.html",
+          "ifttt-vs-n8n.html",
+          "ifttt-vs-zapier.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-automation-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": false,
+        "has_evidence_status_section": false,
+        "has_pricing_section": true,
+        "has_verdict_section": false,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": true,
+        "mentions_hands_on": true,
+        "mentions_tested": false,
+        "mentions_free_plan": true,
+        "mentions_trial": false,
+        "mentions_limitations": false,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "IFTTT",
+        "category": "Automation",
+        "best_fit": "Simple personal and smart-device automations",
+        "site": "https://ifttt.com"
+      }
+    },
+    {
+      "tool_id": "kapwing",
+      "page_path": "/tools/kapwing.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 13,
+        "words": 1273,
+        "sections": 12,
+        "unique_marked_sections": 8,
+        "missing_flags": [
+          "no_limitations",
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": false,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": false,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": true,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [
+        {
+          "url": "https://www.kapwing.com/pricing",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://www.kapwing.com/tools",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://www.kapwing.com/help",
+          "type": "html_reference",
+          "verified": false
+        }
+      ],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 2,
+        "comparison_pages": [
+          "descript-vs-kapwing.html",
+          "kapwing-vs-runway.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 3,
+        "best_of_pages": [
+          "best-voice-video-tools.html",
+          "best-ai-video-tools.html",
+          "best-ai-voice-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": false,
+        "has_evidence_status_section": false,
+        "has_pricing_section": true,
+        "has_verdict_section": false,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": true,
+        "mentions_hands_on": true,
+        "mentions_tested": false,
+        "mentions_free_plan": true,
+        "mentions_trial": false,
+        "mentions_limitations": false,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Kapwing",
+        "category": "Voice & Video",
+        "best_fit": "Collaborative online video editing for social content",
+        "site": "https://www.kapwing.com"
+      }
+    },
+    {
+      "tool_id": "kit",
+      "page_path": "/tools/kit.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 13,
+        "words": 1236,
+        "sections": 11,
+        "unique_marked_sections": 8,
+        "missing_flags": [
+          "no_limitations",
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": false,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": false,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": true,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [
+        {
+          "url": "https://kit.com/pricing",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://kit.com/features",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://kit.com/compare/beehiiv",
+          "type": "html_reference",
+          "verified": false
+        }
+      ],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 3,
+        "comparison_pages": [
+          "kit-vs-mailchimp.html",
+          "beehiiv-vs-kit.html",
+          "brevo-vs-kit.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 4,
+        "best_of_pages": [
+          "best-design-tools.html",
+          "best-seo-tools.html",
+          "best-voice-video-tools.html",
+          "best-email-marketing-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": false,
+        "has_evidence_status_section": false,
+        "has_pricing_section": true,
+        "has_verdict_section": false,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": true,
+        "mentions_hands_on": true,
+        "mentions_tested": false,
+        "mentions_free_plan": true,
+        "mentions_trial": false,
+        "mentions_limitations": false,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Kit",
+        "category": "Email Marketing",
+        "best_fit": "Creator email lists, automations and digital product funnels",
+        "site": "https://kit.com"
+      }
+    },
+    {
+      "tool_id": "mozpro",
+      "page_path": "/tools/mozpro.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 13,
+        "words": 1309,
+        "sections": 12,
+        "unique_marked_sections": 9,
+        "missing_flags": [
+          "no_limitations",
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": false,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": false,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": true,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [
+        {
+          "url": "https://moz.com/products/pro/pricing",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://moz.com/products/pro",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://moz.com/products/pro/features",
+          "type": "html_reference",
+          "verified": false
+        }
+      ],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 4,
+        "comparison_pages": [
+          "mozpro-vs-screamingfrog.html",
+          "mozpro-vs-surferseo.html",
+          "ahrefs-vs-mozpro.html",
+          "mozpro-vs-semrush.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-seo-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": false,
+        "has_evidence_status_section": false,
+        "has_pricing_section": true,
+        "has_verdict_section": false,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": true,
+        "mentions_hands_on": true,
+        "mentions_tested": false,
+        "mentions_free_plan": true,
+        "mentions_trial": false,
+        "mentions_limitations": false,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Moz Pro",
+        "category": "SEO",
+        "best_fit": "Keyword tracking and site SEO campaigns",
+        "site": "https://moz.com/products/pro"
+      }
+    },
+    {
+      "tool_id": "zapier",
+      "page_path": "/tools/zapier.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 13,
+        "words": 1138,
+        "sections": 11,
+        "unique_marked_sections": 8,
+        "missing_flags": [
+          "no_limitations",
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": false,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": false,
+        "missing_trial_evidence": false,
+        "missing_limitation_evidence": true,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [
+        {
+          "url": "https://zapier.com/pricing",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://help.zapier.com/hc/en-us/articles/8496196837261",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://zapier.com/apps",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://zapier.com/mcp",
+          "type": "html_reference",
+          "verified": false
+        }
+      ],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 3,
+        "comparison_pages": [
+          "make-vs-zapier.html",
+          "ifttt-vs-zapier.html",
+          "n8n-vs-zapier.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-automation-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": false,
+        "has_evidence_status_section": false,
+        "has_pricing_section": true,
+        "has_verdict_section": false,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": true,
+        "mentions_hands_on": true,
+        "mentions_tested": false,
+        "mentions_free_plan": true,
+        "mentions_trial": true,
+        "mentions_limitations": false,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Zapier",
+        "category": "Automation",
+        "best_fit": "Connecting apps and automating repetitive workflows",
+        "site": "https://zapier.com"
+      }
+    },
+    {
+      "tool_id": "ahrefs",
+      "page_path": "/tools/ahrefs.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 14,
+        "words": 1203,
+        "sections": 11,
+        "unique_marked_sections": 8,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": false,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": false,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": true,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [
+        {
+          "url": "https://ahrefs.com/pricing",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://ahrefs.com/features",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://ahrefs.com/site-explorer",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://ahrefs.com/free-seo-tools",
+          "type": "html_reference",
+          "verified": false
+        }
+      ],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 4,
+        "comparison_pages": [
+          "ahrefs-vs-mozpro.html",
+          "ahrefs-vs-semrush.html",
+          "ahrefs-vs-surferseo.html",
+          "ahrefs-vs-screamingfrog.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-seo-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": false,
+        "has_evidence_status_section": false,
+        "has_pricing_section": true,
+        "has_verdict_section": false,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": true,
+        "mentions_hands_on": true,
+        "mentions_tested": false,
+        "mentions_free_plan": true,
+        "mentions_trial": false,
+        "mentions_limitations": false,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Ahrefs",
+        "category": "SEO",
+        "best_fit": "Backlink research, keywords and competitor SEO analysis",
+        "site": "https://ahrefs.com"
+      }
+    },
+    {
+      "tool_id": "screamingfrog",
+      "page_path": "/tools/screamingfrog.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 14,
+        "words": 1087,
+        "sections": 11,
+        "unique_marked_sections": 5,
+        "missing_flags": [
+          "no_evidence_sources",
+          "research_based"
+        ],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": false,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": false,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": true,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [
+        {
+          "url": "https://www.screamingfrog.co.uk/seo-spider/",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://www.screamingfrog.co.uk/seo-spider/pricing/",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://www.screamingfrog.co.uk/seo-spider/user-guide/",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://www.screamingfrog.co.uk/seo-spider/issues/",
+          "type": "html_reference",
+          "verified": false
+        }
+      ],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 3,
+        "comparison_pages": [
+          "mozpro-vs-screamingfrog.html",
+          "screamingfrog-vs-semrush.html",
+          "ahrefs-vs-screamingfrog.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-seo-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": false,
+        "has_evidence_status_section": false,
+        "has_pricing_section": true,
+        "has_verdict_section": false,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": true,
+        "mentions_hands_on": true,
+        "mentions_tested": false,
+        "mentions_free_plan": true,
+        "mentions_trial": false,
+        "mentions_limitations": false,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Screaming Frog",
+        "category": "SEO",
+        "best_fit": "Technical crawling and finding website SEO issues",
+        "site": "https://www.screamingfrog.co.uk/seo-spider/"
+      }
+    },
+    {
+      "tool_id": "surferseo",
+      "page_path": "/tools/surferseo.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 14,
+        "words": 1013,
+        "sections": 12,
+        "unique_marked_sections": 10,
+        "missing_flags": [
+          "no_evidence_sources"
+        ],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": false,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "moderate",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 3,
+        "comparison_pages": [
+          "semrush-vs-surferseo.html",
+          "mozpro-vs-surferseo.html",
+          "ahrefs-vs-surferseo.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 1,
+        "best_of_pages": [
+          "best-seo-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": true,
+        "has_pricing_section": true,
+        "has_verdict_section": false,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": true,
+        "mentions_hands_on": true,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Surfer SEO",
+        "category": "SEO",
+        "best_fit": "Optimizing articles around search intent and on-page signals",
+        "site": "https://surferseo.com"
+      }
+    },
+    {
+      "tool_id": "systeme",
+      "page_path": "/tools/systeme.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 14,
+        "words": 1997,
+        "sections": 19,
+        "unique_marked_sections": 11,
+        "missing_flags": [
+          "no_evidence_sources"
+        ],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": true,
+        "missing_verified_pricing_evidence": true,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": false,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "low",
+      "existing_source_references": [],
+      "last_known_evidence_review_date": null,
+      "infrastructure_status": {
+        "has_tools_v2_record": false,
+        "has_evidence_ledger_claims": false,
+        "evidence_ledger_claim_count": 0,
+        "evidence_ledger_source_count": 0,
+        "comparison_page_count": 2,
+        "comparison_pages": [
+          "hostinger-vs-systeme.html",
+          "hubspot-vs-systeme.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 8,
+        "best_of_pages": [
+          "best-ai-tools-for-freelancers.html",
+          "best-ai-writing-tools.html",
+          "best-ai-video-tools.html",
+          "best-website-and-hosting-tools.html",
+          "best-ai-tools-for-youtubers.html",
+          "best-sales-tools.html",
+          "best-ai-tools-for-students.html",
+          "best-ai-voice-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": false,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": false,
+        "has_verdict_section": true,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": false,
+        "mentions_hands_on": true,
+        "mentions_tested": false,
+        "mentions_free_plan": true,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Systeme.io",
+        "category": "Sales",
+        "best_fit": "Sales pages, email lists and online courses",
+        "site": "https://systeme.io"
+      }
+    },
+    {
+      "tool_id": "hostinger",
+      "page_path": "/tools/hostinger.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 15,
+        "words": 1157,
+        "sections": 12,
+        "unique_marked_sections": 9,
+        "missing_flags": [],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": false,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": true,
+        "missing_trial_evidence": true,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "moderate",
+      "existing_source_references": [
+        {
+          "url": "https://www.hostinger.com/pricing",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://www.hostinger.com/web-hosting",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://www.hostinger.com/ai-website-builder",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://www.hostinger.com/legal/hosting-agreement",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://www.hostinger.com/pricing",
+          "type": "official_pricing",
+          "verified": true,
+          "source_id": "hostinger-pricing",
+          "accessed_at": "2026-11-14",
+          "verified_at": "2026-11-14"
+        },
+        {
+          "url": "https://www.hostinger.com/web-hosting",
+          "type": "official_product",
+          "verified": true,
+          "source_id": "hostinger-web-hosting",
+          "accessed_at": "2026-11-14",
+          "verified_at": "2026-11-14"
+        },
+        {
+          "url": "https://www.hostinger.com/ai-website-builder",
+          "type": "official_product",
+          "verified": true,
+          "source_id": "hostinger-ai-builder",
+          "accessed_at": "2026-11-14",
+          "verified_at": "2026-11-14"
+        },
+        {
+          "url": "https://www.hostinger.com/legal/hosting-agreement",
+          "type": "official_legal",
+          "verified": true,
+          "source_id": "hostinger-hosting-agreement",
+          "accessed_at": "2026-11-14",
+          "verified_at": "2026-11-14"
+        }
+      ],
+      "last_known_evidence_review_date": "2026-11-14T20:59:43Z",
+      "infrastructure_status": {
+        "has_tools_v2_record": true,
+        "has_evidence_ledger_claims": true,
+        "evidence_ledger_claim_count": 6,
+        "evidence_ledger_source_count": 4,
+        "comparison_page_count": 1,
+        "comparison_pages": [
+          "hostinger-vs-systeme.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 8,
+        "best_of_pages": [
+          "best-ai-tools-for-freelancers.html",
+          "best-ai-writing-tools.html",
+          "best-ai-video-tools.html",
+          "best-website-and-hosting-tools.html",
+          "best-ai-tools-for-youtubers.html",
+          "best-ai-tools-for-students.html",
+          "best-ai-voice-tools.html",
+          "best-hosting-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": false,
+        "has_pricing_section": true,
+        "has_verdict_section": false,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": true,
+        "mentions_hands_on": false,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": false,
+        "mentions_limitations": true,
+        "mentions_skip": false
+      },
+      "tools_json_entry": {
+        "name": "Hostinger",
+        "category": "Hosting",
+        "best_fit": "Hosting and building a website or online store",
+        "site": "https://www.hostinger.com"
+      }
+    },
+    {
+      "tool_id": "semrush",
+      "page_path": "/tools/semrush.html",
+      "quality_status": {
+        "grade": "A",
+        "score": 15,
+        "words": 1346,
+        "sections": 15,
+        "unique_marked_sections": 12,
+        "missing_flags": [],
+        "priority": "none"
+      },
+      "research_priority": "none",
+      "evidence_gaps": {
+        "missing_official_source_coverage": false,
+        "missing_verified_pricing_evidence": false,
+        "missing_plan_limit_evidence": false,
+        "missing_free_plan_evidence": false,
+        "missing_trial_evidence": false,
+        "missing_limitation_evidence": false,
+        "missing_meaningful_competitor_differentiation": false,
+        "missing_hands_on_evidence": true
+      },
+      "recommendation_confidence": "moderate",
+      "existing_source_references": [
+        {
+          "url": "https://www.semrush.com/pricing/",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://www.semrush.com/pricing/ai/",
+          "type": "html_reference",
+          "verified": false
+        },
+        {
+          "url": "https://www.semrush.com/pricing/",
+          "type": "official_pricing",
+          "verified": true,
+          "source_id": "semrush-pricing",
+          "accessed_at": "2026-11-14",
+          "verified_at": "2026-11-14"
+        },
+        {
+          "url": "https://www.semrush.com/pricing/ai/",
+          "type": "official_pricing",
+          "verified": true,
+          "source_id": "semrush-ai-visibility-pricing",
+          "accessed_at": "2026-11-14",
+          "verified_at": "2026-11-14"
+        }
+      ],
+      "last_known_evidence_review_date": "2026-11-18",
+      "infrastructure_status": {
+        "has_tools_v2_record": true,
+        "has_evidence_ledger_claims": true,
+        "evidence_ledger_claim_count": 3,
+        "evidence_ledger_source_count": 2,
+        "comparison_page_count": 5,
+        "comparison_pages": [
+          "semrush-vs-surferseo.html",
+          "jasper-vs-semrush.html",
+          "mozpro-vs-semrush.html",
+          "ahrefs-vs-semrush.html",
+          "screamingfrog-vs-semrush.html"
+        ],
+        "has_alternatives_page": true,
+        "best_of_page_references": 8,
+        "best_of_pages": [
+          "best-ai-tools-for-freelancers.html",
+          "best-ai-writing-tools.html",
+          "best-seo-tools.html",
+          "best-ai-video-tools.html",
+          "best-website-and-hosting-tools.html",
+          "best-ai-tools-for-youtubers.html",
+          "best-ai-tools-for-students.html",
+          "best-ai-voice-tools.html"
+        ]
+      },
+      "html_signal_status": {
+        "has_sources_section": true,
+        "has_limits_section": true,
+        "has_evidence_status_section": true,
+        "has_pricing_section": true,
+        "has_verdict_section": false,
+        "has_alternatives_section": true,
+        "has_best_for_section": true,
+        "mentions_official_source": true,
+        "mentions_pricing_checked": true,
+        "mentions_hands_on": true,
+        "mentions_tested": false,
+        "mentions_free_plan": false,
+        "mentions_trial": true,
+        "mentions_limitations": true,
+        "mentions_skip": true
+      },
+      "tools_json_entry": {
+        "name": "Semrush",
+        "category": "SEO",
+        "best_fit": "Finding keywords and checking competitors",
+        "site": "https://www.semrush.com"
+      }
+    }
+  ],
+  "summary": {
+    "total_tools_with_gaps": 50,
+    "tools_with_tools_v2": 2,
+    "tools_with_evidence_ledger": 2,
+    "tools_with_comparison_pages": 50,
+    "tools_with_alternatives_pages": 50,
+    "gap_counts": {
+      "missing_official_source_coverage": 11,
+      "missing_verified_pricing_evidence": 40,
+      "missing_plan_limit_evidence": 19,
+      "missing_free_plan_evidence": 39,
+      "missing_trial_evidence": 48,
+      "missing_limitation_evidence": 14,
+      "missing_meaningful_competitor_differentiation": 0,
+      "missing_hands_on_evidence": 50
+    },
+    "confidence_distribution": {
+      "minimal": 7,
+      "low": 40,
+      "moderate": 3
+    }
+  }
+}

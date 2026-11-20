@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.toolnestai.tech/schemas/correction-registry-v1.json",
+  "title": "ToolNest correction registry",
+  "description": "Append-only record of corrections submitted, investigated, and resolved. Links to evidence ledger claims and affected pages.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "corrections"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "correction-registry-v1"
+    },
+    "corrections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "correction_id",
+          "submitted_at",
+          "status",
+          "tool_id",
+          "claim_description"
+        ],
+        "properties": {
+          "correction_id": {
+            "type": "string",
+            "pattern": "^corr-[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "tool_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "submitted_at": {
+            "type": "string",
+            "format": "date"
+          },
+          "submitted_by": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "submission_source": {
+            "type": "string",
+            "enum": [
+              "email",
+              "internal",
+              "reader_report",
+              "automated_check"
+            ]
+          },
+          "page_url": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "uri-reference"
+          },
+          "claim_description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "claimed_correction": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "related_claim_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "submitted",
+              "investigating",
+              "accepted",
+              "rejected",
+              "partially_accepted"
+            ]
+          },
+          "investigated_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "resolved_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "investigation_note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "resolution_note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "public_correction_note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "affected_pages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence_used": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "correction_date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          }
+        }
+      }
+    }
+  }
+}

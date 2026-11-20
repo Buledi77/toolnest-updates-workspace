@@ -1,0 +1,48 @@
+{
+  "schema_version": "disputed-claims-v1",
+  "generated_at": "2026-11-20",
+  "reference_date": "2026-11-20",
+  "description": "Deterministic report of disputed claims, active disputes, and related corrections. No fabricated data.",
+  "summary": {
+    "disputed_claims": 1,
+    "active_disputes": 0,
+    "related_corrections": 0,
+    "related_change_events": 1,
+    "tools_affected": 1
+  },
+  "disputed_claims": [
+    {
+      "claim_id": "semrush-current-plan-structure",
+      "tool_id": "semrush",
+      "claim_type": "pricing",
+      "field_path": "factual_profile.pricing_status",
+      "disputed_by": "semrush-official-source-conflict",
+      "verified_at": "2026-11-18",
+      "stale_after": "2026-12-18",
+      "source_ids": [
+        "semrush-pricing"
+      ],
+      "evidence_note": "Official Semrush sources currently conflict on the Advanced AI-prompt quota: the live pricing page says unlimited prompts to track daily, while the Semrush Knowledge Base states 200 prompts daily. Do not present either figure as settled until Semrush reconciles the documentation.",
+      "replacement_claim_id": null
+    }
+  ],
+  "active_disputes": [],
+  "related_corrections": [],
+  "related_change_events": [
+    {
+      "event_id": "ev-disputed-semrush-current-plan-structure",
+      "tool_id": "semrush",
+      "event_type": "verification_correction",
+      "detected_at": "2026-11-20",
+      "status": "disputed",
+      "correction_note": "Official Semrush sources currently conflict on the Advanced AI-prompt quota: the live pricing page says unlimited prompts to track daily, while the Semrush Knowledge Base states 200 prompts daily. Do not present either figure as settled until Semrush reconciles the documentation.",
+      "affected_pages": [
+        "/tools/ahrefs.html",
+        "/tools/jasper.html",
+        "/tools/screamingfrog.html",
+        "/tools/semrush.html",
+        "/tools/surferseo.html"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3831 @@
+{
+  "schema_version": "overlap-data-v1",
+  "generated_at": "2026-11-20",
+  "description": "Deterministic overlap data for Tool Overlap Checker. Derived from tools.json, STACK-OVERLAP-READINESS.json, and compare/ directory.",
+  "total_tools": 50,
+  "total_pairs": 302,
+  "total_comparisons": 63,
+  "tools": {
+    "notion": {
+      "id": "notion",
+      "name": "Notion",
+      "category": "Productivity",
+      "best_for": "Notes, tasks and client work in one place",
+      "pros": [
+        "One home for notes and to-dos",
+        "Templates to start fast",
+        "Good for solo work"
+      ],
+      "logo": "/assets/logos/notion.png",
+      "site": "https://www.notion.com"
+    },
+    "grammarly": {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "category": "Writing",
+      "best_for": "Clear English in emails and proposals",
+      "pros": [
+        "Fixes mistakes as you type",
+        "Works in many apps",
+        "Helps with polite tone"
+      ],
+      "logo": "/assets/logos/grammarly.png",
+      "site": "https://www.grammarly.com"
+    },
+    "elevenlabs": {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "category": "Voice & Video",
+      "best_for": "Voiceovers for videos and courses",
+      "pros": [
+        "Very natural voices",
+        "Many languages",
+        "Narrate without recording"
+      ],
+      "logo": "/assets/logos/elevenlabs.png",
+      "site": "https://elevenlabs.io"
+    },
+    "descript": {
+      "id": "descript",
+      "name": "Descript",
+      "category": "Voice & Video",
+      "best_for": "Editing video and podcasts like a document",
+      "pros": [
+        "Edit by editing the text",
+        "Automatic transcripts",
+        "Removes filler words fast"
+      ],
+      "logo": "/assets/logos/descript.png",
+      "site": "https://www.descript.com"
+    },
+    "jasper": {
+      "id": "jasper",
+      "name": "Jasper",
+      "category": "Marketing",
+      "best_for": "Ad copy and product page writing",
+      "pros": [
+        "Templates made for marketing",
+        "Keeps your brand voice",
+        "Good for teams"
+      ],
+      "logo": "/assets/logos/jasper.png",
+      "site": "https://www.jasper.ai"
+    },
+    "semrush": {
+      "id": "semrush",
+      "name": "Semrush",
+      "category": "SEO",
+      "best_for": "Finding keywords and checking competitors",
+      "pros": [
+        "Deep keyword research",
+        "Shows what rivals rank for",
+        "Many SEO tools in one"
+      ],
+      "logo": "/assets/logos/semrush.png",
+      "site": "https://www.semrush.com"
+    },
+    "systeme": {
+      "id": "systeme",
+      "name": "Systeme.io",
+      "category": "Sales",
+      "best_for": "Sales pages, email lists and online courses",
+      "pros": [
+        "Pages, email and checkout together",
+        "Easy to start with",
+        "Can replace several separate subscriptions"
+      ],
+      "logo": "/assets/logos/systeme.png",
+      "site": "https://systeme.io"
+    },
+    "hostinger": {
+      "id": "hostinger",
+      "name": "Hostinger",
+      "category": "Hosting",
+      "best_for": "Hosting and building a website or online store",
+      "pros": [
+        "Hosting, domain and site builder in one account",
+        "Beginner-friendly plans",
+        "Free SSL listed on its plans"
+      ],
+      "logo": "/assets/logos/hostinger.png",
+      "site": "https://www.hostinger.com"
+    },
+    "canva": {
+      "id": "canva",
+      "name": "Canva",
+      "category": "Design",
+      "best_for": "Social graphics, presentations and simple brand designs",
+      "pros": [
+        "Large template library",
+        "Easy drag-and-drop editor",
+        "Useful for teams and brand kits"
+      ],
+      "logo": "/assets/logos/canva.png",
+      "site": "https://www.canva.com"
+    },
+    "framer": {
+      "id": "framer",
+      "name": "Framer",
+      "category": "Website Builder",
+      "best_for": "Modern landing pages and design-led marketing websites",
+      "pros": [
+        "Visual responsive design",
+        "Fast publishing and hosting",
+        "Strong animation and interaction tools"
+      ],
+      "logo": "/assets/logos/framer.png",
+      "site": "https://www.framer.com"
+    },
+    "beehiiv": {
+      "id": "beehiiv",
+      "name": "beehiiv",
+      "category": "Email Marketing",
+      "best_for": "Publishing and growing a monetized newsletter",
+      "pros": [
+        "Newsletter publishing tools",
+        "Audience growth features",
+        "Built-in monetization options"
+      ],
+      "logo": "/assets/logos/beehiiv.png",
+      "site": "https://www.beehiiv.com"
+    },
+    "kit": {
+      "id": "kit",
+      "name": "Kit",
+      "category": "Email Marketing",
+      "best_for": "Creator email lists, automations and digital product funnels",
+      "pros": [
+        "Creator-focused automations",
+        "Landing pages and forms",
+        "Tag-based subscriber organization"
+      ],
+      "logo": "/assets/logos/kit.png",
+      "site": "https://kit.com"
+    },
+    "zapier": {
+      "id": "zapier",
+      "name": "Zapier",
+      "category": "Automation",
+      "best_for": "Connecting apps and automating repetitive workflows",
+      "pros": [
+        "Large app integration ecosystem",
+        "No-code workflow builder",
+        "Useful templates for common automations"
+      ],
+      "logo": "/assets/logos/zapier.png",
+      "site": "https://zapier.com"
+    },
+    "chatgpt": {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "category": "AI Assistants",
+      "best_for": "General writing, brainstorming, analysis and everyday AI help",
+      "pros": [
+        "Flexible general assistant",
+        "Works across many task types",
+        "Supports iterative conversations"
+      ],
+      "logo": "/assets/logos/chatgpt.png",
+      "site": "https://chatgpt.com"
+    },
+    "claude": {
+      "id": "claude",
+      "name": "Claude",
+      "category": "AI Assistants",
+      "best_for": "Long-form analysis, writing and structured reasoning",
+      "pros": [
+        "Handles long documents",
+        "Clear structured responses",
+        "Useful for writing and coding"
+      ],
+      "logo": "/assets/logos/claude.png",
+      "site": "https://claude.ai"
+    },
+    "gemini": {
+      "id": "gemini",
+      "name": "Gemini",
+      "category": "AI Assistants",
+      "best_for": "AI help connected with Google products and multimodal work",
+      "pros": [
+        "Google ecosystem fit",
+        "Multimodal prompts",
+        "General research and drafting"
+      ],
+      "logo": "/assets/logos/gemini.png",
+      "site": "https://gemini.google.com"
+    },
+    "perplexity": {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "category": "Research",
+      "best_for": "Web research with visible source links",
+      "pros": [
+        "Source-led answers",
+        "Fast topic summaries",
+        "Useful follow-up questions"
+      ],
+      "logo": "/assets/logos/perplexity.png",
+      "site": "https://www.perplexity.ai"
+    },
+    "notebooklm": {
+      "id": "notebooklm",
+      "name": "NotebookLM",
+      "category": "Research",
+      "best_for": "Studying and asking questions across your own sources",
+      "pros": [
+        "Source-grounded notebooks",
+        "Document summaries",
+        "Research organization"
+      ],
+      "logo": "/assets/logos/notebooklm.png",
+      "site": "https://notebooklm.google.com"
+    },
+    "quillbot": {
+      "id": "quillbot",
+      "name": "QuillBot",
+      "category": "Writing",
+      "best_for": "Paraphrasing, rewriting and summarizing text",
+      "pros": [
+        "Multiple rewrite modes",
+        "Summarizer included",
+        "Browser-based workflow"
+      ],
+      "logo": "/assets/logos/quillbot.png",
+      "site": "https://quillbot.com"
+    },
+    "prowritingaid": {
+      "id": "prowritingaid",
+      "name": "ProWritingAid",
+      "category": "Writing",
+      "best_for": "Detailed writing reports for long-form authors",
+      "pros": [
+        "Style reports",
+        "Grammar checking",
+        "Long-form writing focus"
+      ],
+      "logo": "/assets/logos/prowritingaid.png",
+      "site": "https://prowritingaid.com"
+    },
+    "hemingway": {
+      "id": "hemingway",
+      "name": "Hemingway Editor",
+      "category": "Writing",
+      "best_for": "Making sentences clearer and easier to read",
+      "pros": [
+        "Readability guidance",
+        "Highlights complex sentences",
+        "Simple editing workflow"
+      ],
+      "logo": "/assets/logos/hemingway.png",
+      "site": "https://hemingwayapp.com"
+    },
+    "copyai": {
+      "id": "copyai",
+      "name": "Copy.ai",
+      "category": "Marketing",
+      "best_for": "Sales and marketing content workflows",
+      "pros": [
+        "Marketing templates",
+        "Workflow automation",
+        "Team-oriented content"
+      ],
+      "logo": "/assets/logos/copyai.png",
+      "site": "https://www.copy.ai"
+    },
+    "writesonic": {
+      "id": "writesonic",
+      "name": "Writesonic",
+      "category": "Writing",
+      "best_for": "Marketing articles, landing pages and campaign drafts",
+      "pros": [
+        "Content drafting",
+        "Marketing use cases",
+        "Built-in editing tools"
+      ],
+      "logo": "/assets/logos/writesonic.png",
+      "site": "https://writesonic.com"
+    },
+    "ahrefs": {
+      "id": "ahrefs",
+      "name": "Ahrefs",
+      "category": "SEO",
+      "best_for": "Backlink research, keywords and competitor SEO analysis",
+      "pros": [
+        "Backlink data",
+        "Keyword research",
+        "Competitive analysis"
+      ],
+      "logo": "/assets/logos/ahrefs.png",
+      "site": "https://ahrefs.com"
+    },
+    "mozpro": {
+      "id": "mozpro",
+      "name": "Moz Pro",
+      "category": "SEO",
+      "best_for": "Keyword tracking and site SEO campaigns",
+      "pros": [
+        "Rank tracking",
+        "Site crawling",
+        "Keyword research"
+      ],
+      "logo": "/assets/logos/mozpro.png",
+      "site": "https://moz.com/products/pro"
+    },
+    "surferseo": {
+      "id": "surferseo",
+      "name": "Surfer SEO",
+      "category": "SEO",
+      "best_for": "Optimizing articles around search intent and on-page signals",
+      "pros": [
+        "Content editor",
+        "On-page guidance",
+        "SERP-based suggestions"
+      ],
+      "logo": "/assets/logos/surferseo.png",
+      "site": "https://surferseo.com"
+    },
+    "screamingfrog": {
+      "id": "screamingfrog",
+      "name": "Screaming Frog",
+      "category": "SEO",
+      "best_for": "Technical crawling and finding website SEO issues",
+      "pros": [
+        "Deep site crawl",
+        "Redirect checks",
+        "Metadata auditing"
+      ],
+      "logo": "/assets/logos/screamingfrog.png",
+      "site": "https://www.screamingfrog.co.uk/seo-spider/"
+    },
+    "make": {
+      "id": "make",
+      "name": "Make",
+      "category": "Automation",
+      "best_for": "Visual multi-step workflow automation across apps",
+      "pros": [
+        "Visual scenario builder",
+        "Advanced branching",
+        "Large integration library"
+      ],
+      "logo": "/assets/logos/make.png",
+      "site": "https://www.make.com"
+    },
+    "n8n": {
+      "id": "n8n",
+      "name": "n8n",
+      "category": "Automation",
+      "best_for": "Flexible workflow automation with technical control",
+      "pros": [
+        "Self-hosting option",
+        "Custom workflow logic",
+        "Developer-friendly integrations"
+      ],
+      "logo": "/assets/logos/n8n.png",
+      "site": "https://n8n.io"
+    },
+    "ifttt": {
+      "id": "ifttt",
+      "name": "IFTTT",
+      "category": "Automation",
+      "best_for": "Simple personal and smart-device automations",
+      "pros": [
+        "Easy applets",
+        "Consumer app support",
+        "Quick trigger-action setup"
+      ],
+      "logo": "/assets/logos/ifttt.png",
+      "site": "https://ifttt.com"
+    },
+    "figma": {
+      "id": "figma",
+      "name": "Figma",
+      "category": "Design",
+      "best_for": "Collaborative interface design and prototyping",
+      "pros": [
+        "Real-time collaboration",
+        "Interactive prototypes",
+        "Reusable design systems"
+      ],
+      "logo": "/assets/logos/figma.png",
+      "site": "https://www.figma.com"
+    },
+    "adobeexpress": {
+      "id": "adobeexpress",
+      "name": "Adobe Express",
+      "category": "Design",
+      "best_for": "Quick social graphics, videos and brand content",
+      "pros": [
+        "Ready-made templates",
+        "Simple editing tools",
+        "Adobe asset connections"
+      ],
+      "logo": "/assets/logos/adobeexpress.png",
+      "site": "https://www.adobe.com/express/"
+    },
+    "midjourney": {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "category": "Image Generation",
+      "best_for": "Stylized AI images and creative visual concepts",
+      "pros": [
+        "Strong artistic output",
+        "Style exploration",
+        "Rapid visual ideation"
+      ],
+      "logo": "/assets/logos/midjourney.png",
+      "site": "https://www.midjourney.com"
+    },
+    "leonardo": {
+      "id": "leonardo",
+      "name": "Leonardo AI",
+      "category": "Image Generation",
+      "best_for": "AI images, assets and creative production",
+      "pros": [
+        "Multiple image models",
+        "Asset generation",
+        "Creative controls"
+      ],
+      "logo": "/assets/logos/leonardo.png",
+      "site": "https://leonardo.ai"
+    },
+    "removebg": {
+      "id": "removebg",
+      "name": "remove.bg",
+      "category": "Design",
+      "best_for": "Removing image backgrounds quickly",
+      "pros": [
+        "Automatic cutouts",
+        "Fast web workflow",
+        "API available"
+      ],
+      "logo": "/assets/logos/removebg.png",
+      "site": "https://www.remove.bg"
+    },
+    "runway": {
+      "id": "runway",
+      "name": "Runway",
+      "category": "Voice & Video",
+      "best_for": "AI-assisted video generation and creative editing",
+      "pros": [
+        "Generative video tools",
+        "Browser-based editing",
+        "Visual effects workflows"
+      ],
+      "logo": "/assets/logos/runway.png",
+      "site": "https://runwayml.com"
+    },
+    "synthesia": {
+      "id": "synthesia",
+      "name": "Synthesia",
+      "category": "Voice & Video",
+      "best_for": "Presenter-style videos using AI avatars",
+      "pros": [
+        "Avatar presentations",
+        "Multiple languages",
+        "Business video templates"
+      ],
+      "logo": "/assets/logos/synthesia.png",
+      "site": "https://www.synthesia.io"
+    },
+    "invideo": {
+      "id": "invideo",
+      "name": "InVideo",
+      "category": "Voice & Video",
+      "best_for": "Creating marketing and social videos from prompts",
+      "pros": [
+        "Template library",
+        "Prompt-based creation",
+        "Stock media workflow"
+      ],
+      "logo": "/assets/logos/invideo.png",
+      "site": "https://invideo.io"
+    },
+    "kapwing": {
+      "id": "kapwing",
+      "name": "Kapwing",
+      "category": "Voice & Video",
+      "best_for": "Collaborative online video editing for social content",
+      "pros": [
+        "Browser-based editor",
+        "Captions and resizing",
+        "Team collaboration"
+      ],
+      "logo": "/assets/logos/kapwing.png",
+      "site": "https://www.kapwing.com"
+    },
+    "otter": {
+      "id": "otter",
+      "name": "Otter.ai",
+      "category": "Productivity",
+      "best_for": "Meeting transcription and searchable notes",
+      "pros": [
+        "Live transcription",
+        "Speaker notes",
+        "Meeting summaries"
+      ],
+      "logo": "/assets/logos/otter.png",
+      "site": "https://otter.ai"
+    },
+    "fireflies": {
+      "id": "fireflies",
+      "name": "Fireflies.ai",
+      "category": "Productivity",
+      "best_for": "Recording, transcribing and reviewing meetings",
+      "pros": [
+        "Meeting transcripts",
+        "Searchable conversations",
+        "CRM integrations"
+      ],
+      "logo": "/assets/logos/fireflies.png",
+      "site": "https://fireflies.ai"
+    },
+    "clickup": {
+      "id": "clickup",
+      "name": "ClickUp",
+      "category": "Productivity",
+      "best_for": "Tasks, documents and team project management",
+      "pros": [
+        "Flexible task views",
+        "Docs and goals",
+        "Team workflows"
+      ],
+      "logo": "/assets/logos/clickup.png",
+      "site": "https://clickup.com"
+    },
+    "asana": {
+      "id": "asana",
+      "name": "Asana",
+      "category": "Productivity",
+      "best_for": "Planning projects and coordinating team work",
+      "pros": [
+        "Project timelines",
+        "Task dependencies",
+        "Team reporting"
+      ],
+      "logo": "/assets/logos/asana.png",
+      "site": "https://asana.com"
+    },
+    "monday": {
+      "id": "monday",
+      "name": "monday.com",
+      "category": "Productivity",
+      "best_for": "Custom work boards for projects and operations",
+      "pros": [
+        "Customizable boards",
+        "Automation recipes",
+        "Visual dashboards"
+      ],
+      "logo": "/assets/logos/monday.png",
+      "site": "https://monday.com"
+    },
+    "todoist": {
+      "id": "todoist",
+      "name": "Todoist",
+      "category": "Productivity",
+      "best_for": "Personal tasks and lightweight team planning",
+      "pros": [
+        "Quick task capture",
+        "Recurring tasks",
+        "Cross-device apps"
+      ],
+      "logo": "/assets/logos/todoist.png",
+      "site": "https://todoist.com"
+    },
+    "webflow": {
+      "id": "webflow",
+      "name": "Webflow",
+      "category": "Website Builder",
+      "best_for": "Visual websites with CMS and design control",
+      "pros": [
+        "Visual web design",
+        "Built-in CMS",
+        "Managed hosting"
+      ],
+      "logo": "/assets/logos/webflow.png",
+      "site": "https://webflow.com"
+    },
+    "squarespace": {
+      "id": "squarespace",
+      "name": "Squarespace",
+      "category": "Website Builder",
+      "best_for": "Polished websites and portfolios with templates",
+      "pros": [
+        "Professional templates",
+        "Built-in commerce",
+        "Managed hosting"
+      ],
+      "logo": "/assets/logos/squarespace.png",
+      "site": "https://www.squarespace.com"
+    },
+    "mailchimp": {
+      "id": "mailchimp",
+      "name": "Mailchimp",
+      "category": "Email Marketing",
+      "best_for": "Email campaigns, basic automation and audience management",
+      "pros": [
+        "Campaign builder",
+        "Audience segmentation",
+        "Marketing automations"
+      ],
+      "logo": "/assets/logos/mailchimp.png",
+      "site": "https://mailchimp.com"
+    },
+    "brevo": {
+      "id": "brevo",
+      "name": "Brevo",
+      "category": "Email Marketing",
+      "best_for": "Email, SMS and customer communication campaigns",
+      "pros": [
+        "Email automation",
+        "SMS options",
+        "Contact management"
+      ],
+      "logo": "/assets/logos/brevo.png",
+      "site": "https://www.brevo.com"
+    },
+    "hubspot": {
+      "id": "hubspot",
+      "name": "HubSpot",
+      "category": "Sales",
+      "best_for": "CRM, marketing and sales workflows in one platform",
+      "pros": [
+        "Free CRM entry point",
+        "Marketing automation",
+        "Sales pipeline tools"
+      ],
+      "logo": "/assets/logos/hubspot.png",
+      "site": "https://www.hubspot.com"
+    }
+  },
+  "categories": {
+    "AI Assistants": [
+      "chatgpt",
+      "claude",
+      "gemini"
+    ],
+    "Automation": [
+      "ifttt",
+      "make",
+      "n8n",
+      "zapier"
+    ],
+    "Design": [
+      "adobeexpress",
+      "canva",
+      "figma",
+      "removebg"
+    ],
+    "Email Marketing": [
+      "beehiiv",
+      "brevo",
+      "kit",
+      "mailchimp"
+    ],
+    "Hosting": [
+      "hostinger"
+    ],
+    "Image Generation": [
+      "leonardo",
+      "midjourney"
+    ],
+    "Marketing": [
+      "copyai",
+      "jasper"
+    ],
+    "Productivity": [
+      "asana",
+      "clickup",
+      "fireflies",
+      "monday",
+      "notion",
+      "otter",
+      "todoist"
+    ],
+    "Research": [
+      "notebooklm",
+      "perplexity"
+    ],
+    "SEO": [
+      "ahrefs",
+      "mozpro",
+      "screamingfrog",
+      "semrush",
+      "surferseo"
+    ],
+    "Sales": [
+      "hubspot",
+      "systeme"
+    ],
+    "Voice & Video": [
+      "descript",
+      "elevenlabs",
+      "invideo",
+      "kapwing",
+      "runway",
+      "synthesia"
+    ],
+    "Website Builder": [
+      "framer",
+      "squarespace",
+      "webflow"
+    ],
+    "Writing": [
+      "grammarly",
+      "hemingway",
+      "prowritingaid",
+      "quillbot",
+      "writesonic"
+    ]
+  },
+  "alternatives": {
+    "adobeexpress": [
+      "canva",
+      "removebg",
+      "figma",
+      "descript",
+      "kit"
+    ],
+    "ahrefs": [
+      "screamingfrog",
+      "semrush",
+      "mozpro",
+      "descript",
+      "surferseo",
+      "make"
+    ],
+    "asana": [
+      "notion",
+      "descript",
+      "otter",
+      "fireflies"
+    ],
+    "beehiiv": [
+      "descript",
+      "kit",
+      "mailchimp",
+      "brevo"
+    ],
+    "brevo": [
+      "beehiiv",
+      "descript",
+      "kit",
+      "mailchimp"
+    ],
+    "canva": [
+      "descript",
+      "figma",
+      "adobeexpress",
+      "removebg",
+      "kapwing",
+      "ifttt",
+      "zapier"
+    ],
+    "chatgpt": [
+      "notion",
+      "descript",
+      "claude",
+      "gemini"
+    ],
+    "claude": [
+      "chatgpt",
+      "gemini",
+      "notion",
+      "descript"
+    ],
+    "clickup": [
+      "fireflies",
+      "notion",
+      "descript",
+      "otter"
+    ],
+    "copyai": [
+      "jasper",
+      "notion",
+      "grammarly",
+      "descript"
+    ],
+    "descript": [
+      "chatgpt",
+      "asana",
+      "canva",
+      "fireflies",
+      "todoist",
+      "leonardo",
+      "removebg",
+      "hostinger",
+      "monday",
+      "screamingfrog",
+      "jasper",
+      "elevenlabs",
+      "runway",
+      "synthesia",
+      "gemini",
+      "framer",
+      "systeme",
+      "notebooklm",
+      "prowritingaid",
+      "claude",
+      "beehiiv",
+      "semrush",
+      "kapwing",
+      "clickup",
+      "hubspot",
+      "invideo",
+      "writesonic",
+      "copyai",
+      "notion",
+      "ifttt",
+      "midjourney",
+      "hemingway",
+      "quillbot",
+      "brevo",
+      "mailchimp",
+      "webflow",
+      "squarespace",
+      "perplexity",
+      "make",
+      "mozpro",
+      "n8n",
+      "otter",
+      "ahrefs",
+      "surferseo",
+      "figma",
+      "grammarly",
+      "adobeexpress",
+      "zapier",
+      "kit"
+    ],
+    "elevenlabs": [
+      "hostinger",
+      "descript",
+      "invideo",
+      "synthesia",
+      "runway"
+    ],
+    "figma": [
+      "canva",
+      "removebg",
+      "kapwing",
+      "descript",
+      "kit",
+      "adobeexpress"
+    ],
+    "fireflies": [
+      "asana",
+      "notion",
+      "descript",
+      "otter",
+      "clickup",
+      "todoist",
+      "monday"
+    ],
+    "framer": [
+      "notion",
+      "descript",
+      "webflow",
+      "squarespace"
+    ],
+    "gemini": [
+      "chatgpt",
+      "notion",
+      "descript",
+      "claude"
+    ],
+    "grammarly": [
+      "leonardo",
+      "hostinger",
+      "jasper",
+      "systeme",
+      "notebooklm",
+      "prowritingaid",
+      "hubspot",
+      "writesonic",
+      "copyai",
+      "midjourney",
+      "hemingway",
+      "quillbot",
+      "perplexity",
+      "descript"
+    ],
+    "hemingway": [
+      "prowritingaid",
+      "grammarly",
+      "descript",
+      "quillbot"
+    ],
+    "hostinger": [
+      "notion",
+      "grammarly",
+      "elevenlabs",
+      "descript"
+    ],
+    "hubspot": [
+      "systeme",
+      "notion",
+      "grammarly",
+      "descript"
+    ],
+    "ifttt": [
+      "descript",
+      "canva",
+      "zapier",
+      "make",
+      "n8n"
+    ],
+    "invideo": [
+      "elevenlabs",
+      "descript",
+      "runway"
+    ],
+    "jasper": [
+      "notion",
+      "grammarly",
+      "descript",
+      "copyai"
+    ],
+    "kapwing": [
+      "descript",
+      "canva",
+      "kit",
+      "figma",
+      "runway"
+    ],
+    "kit": [
+      "removebg",
+      "beehiiv",
+      "kapwing",
+      "brevo",
+      "mailchimp",
+      "figma",
+      "adobeexpress",
+      "descript"
+    ],
+    "leonardo": [
+      "notion",
+      "grammarly",
+      "descript",
+      "midjourney"
+    ],
+    "mailchimp": [
+      "beehiiv",
+      "brevo",
+      "descript",
+      "kit"
+    ],
+    "make": [
+      "ifttt",
+      "descript",
+      "zapier",
+      "n8n",
+      "mozpro",
+      "ahrefs"
+    ],
+    "midjourney": [
+      "leonardo",
+      "notion",
+      "grammarly",
+      "descript"
+    ],
+    "monday": [
+      "notion",
+      "descript",
+      "otter",
+      "fireflies"
+    ],
+    "mozpro": [
+      "screamingfrog",
+      "semrush",
+      "descript",
+      "ahrefs",
+      "surferseo",
+      "make"
+    ],
+    "n8n": [
+      "ifttt",
+      "make",
+      "descript",
+      "zapier"
+    ],
+    "notebooklm": [
+      "notion",
+      "grammarly",
+      "descript",
+      "perplexity"
+    ],
+    "notion": [
+      "chatgpt",
+      "asana",
+      "fireflies",
+      "todoist",
+      "leonardo",
+      "hostinger",
+      "monday",
+      "jasper",
+      "gemini",
+      "framer",
+      "systeme",
+      "notebooklm",
+      "claude",
+      "clickup",
+      "hubspot",
+      "copyai",
+      "descript",
+      "otter",
+      "midjourney",
+      "webflow",
+      "squarespace",
+      "perplexity"
+    ],
+    "otter": [
+      "asana",
+      "fireflies",
+      "todoist",
+      "monday",
+      "clickup",
+      "notion",
+      "descript"
+    ],
+    "perplexity": [
+      "notebooklm",
+      "notion",
+      "grammarly",
+      "descript"
+    ],
+    "prowritingaid": [
+      "grammarly",
+      "descript",
+      "quillbot",
+      "hemingway",
+      "writesonic"
+    ],
+    "quillbot": [
+      "prowritingaid",
+      "writesonic",
+      "hemingway",
+      "grammarly",
+      "descript"
+    ],
+    "removebg": [
+      "canva",
+      "descript",
+      "kit",
+      "figma",
+      "adobeexpress"
+    ],
+    "runway": [
+      "descript",
+      "kapwing",
+      "invideo",
+      "synthesia",
+      "elevenlabs"
+    ],
+    "screamingfrog": [
+      "descript",
+      "semrush",
+      "ahrefs",
+      "mozpro"
+    ],
+    "semrush": [
+      "screamingfrog",
+      "descript",
+      "ahrefs",
+      "mozpro",
+      "surferseo"
+    ],
+    "squarespace": [
+      "framer",
+      "webflow",
+      "notion",
+      "descript"
+    ],
+    "surferseo": [
+      "semrush",
+      "mozpro",
+      "ahrefs",
+      "descript"
+    ],
+    "synthesia": [
+      "descript",
+      "elevenlabs",
+      "runway"
+    ],
+    "systeme": [
+      "notion",
+      "grammarly",
+      "descript",
+      "hubspot"
+    ],
+    "todoist": [
+      "notion",
+      "descript",
+      "otter",
+      "fireflies"
+    ],
+    "webflow": [
+      "framer",
+      "notion",
+      "descript",
+      "squarespace"
+    ],
+    "writesonic": [
+      "grammarly",
+      "descript",
+      "quillbot",
+      "prowritingaid"
+    ],
+    "zapier": [
+      "ifttt",
+      "make",
+      "n8n",
+      "descript",
+      "canva"
+    ]
+  },
+  "shared_jobs": {
+    "adobeexpress": [
+      "canva",
+      "figma",
+      "removebg"
+    ],
+    "ahrefs": [
+      "semrush",
+      "mozpro",
+      "surferseo",
+      "screamingfrog"
+    ],
+    "asana": [
+      "notion",
+      "otter",
+      "fireflies",
+      "clickup",
+      "monday",
+      "todoist"
+    ],
+    "beehiiv": [
+      "kit",
+      "mailchimp",
+      "brevo"
+    ],
+    "brevo": [
+      "beehiiv",
+      "kit",
+      "mailchimp"
+    ],
+    "canva": [
+      "figma",
+      "adobeexpress",
+      "removebg"
+    ],
+    "chatgpt": [
+      "claude",
+      "gemini"
+    ],
+    "claude": [
+      "chatgpt",
+      "gemini"
+    ],
+    "clickup": [
+      "notion",
+      "otter",
+      "fireflies",
+      "asana",
+      "monday",
+      "todoist"
+    ],
+    "copyai": [
+      "jasper"
+    ],
+    "descript": [
+      "elevenlabs",
+      "runway",
+      "synthesia",
+      "invideo",
+      "kapwing"
+    ],
+    "elevenlabs": [
+      "descript",
+      "runway",
+      "synthesia",
+      "invideo",
+      "kapwing"
+    ],
+    "figma": [
+      "canva",
+      "adobeexpress",
+      "removebg"
+    ],
+    "fireflies": [
+      "notion",
+      "otter",
+      "clickup",
+      "asana",
+      "monday",
+      "todoist"
+    ],
+    "framer": [
+      "webflow",
+      "squarespace"
+    ],
+    "gemini": [
+      "chatgpt",
+      "claude"
+    ],
+    "grammarly": [
+      "quillbot",
+      "prowritingaid",
+      "hemingway",
+      "writesonic"
+    ],
+    "hemingway": [
+      "grammarly",
+      "quillbot",
+      "prowritingaid",
+      "writesonic"
+    ],
+    "hostinger": [],
+    "hubspot": [
+      "systeme"
+    ],
+    "ifttt": [
+      "zapier",
+      "make",
+      "n8n"
+    ],
+    "invideo": [
+      "elevenlabs",
+      "descript",
+      "runway",
+      "synthesia",
+      "kapwing"
+    ],
+    "jasper": [
+      "copyai"
+    ],
+    "kapwing": [
+      "elevenlabs",
+      "descript",
+      "runway",
+      "synthesia",
+      "invideo"
+    ],
+    "kit": [
+      "beehiiv",
+      "mailchimp",
+      "brevo"
+    ],
+    "leonardo": [
+      "midjourney"
+    ],
+    "mailchimp": [
+      "beehiiv",
+      "kit",
+      "brevo"
+    ],
+    "make": [
+      "zapier",
+      "n8n",
+      "ifttt"
+    ],
+    "midjourney": [
+      "leonardo"
+    ],
+    "monday": [
+      "notion",
+      "otter",
+      "fireflies",
+      "clickup",
+      "asana",
+      "todoist"
+    ],
+    "mozpro": [
+      "semrush",
+      "ahrefs",
+      "surferseo",
+      "screamingfrog"
+    ],
+    "n8n": [
+      "zapier",
+      "make",
+      "ifttt"
+    ],
+    "notebooklm": [
+      "perplexity"
+    ],
+    "notion": [
+      "otter",
+      "fireflies",
+      "clickup",
+      "asana",
+      "monday",
+      "todoist"
+    ],
+    "otter": [
+      "notion",
+      "fireflies",
+      "clickup",
+      "asana",
+      "monday",
+      "todoist"
+    ],
+    "perplexity": [
+      "notebooklm"
+    ],
+    "prowritingaid": [
+      "grammarly",
+      "quillbot",
+      "hemingway",
+      "writesonic"
+    ],
+    "quillbot": [
+      "grammarly",
+      "prowritingaid",
+      "hemingway",
+      "writesonic"
+    ],
+    "removebg": [
+      "canva",
+      "figma",
+      "adobeexpress"
+    ],
+    "runway": [
+      "elevenlabs",
+      "descript",
+      "synthesia",
+      "invideo",
+      "kapwing"
+    ],
+    "screamingfrog": [
+      "semrush",
+      "ahrefs",
+      "mozpro",
+      "surferseo"
+    ],
+    "semrush": [
+      "ahrefs",
+      "mozpro",
+      "surferseo",
+      "screamingfrog"
+    ],
+    "squarespace": [
+      "framer",
+      "webflow"
+    ],
+    "surferseo": [
+      "semrush",
+      "ahrefs",
+      "mozpro",
+      "screamingfrog"
+    ],
+    "synthesia": [
+      "elevenlabs",
+      "descript",
+      "runway",
+      "invideo",
+      "kapwing"
+    ],
+    "systeme": [
+      "hubspot"
+    ],
+    "todoist": [
+      "notion",
+      "otter",
+      "fireflies",
+      "clickup",
+      "asana",
+      "monday"
+    ],
+    "webflow": [
+      "framer",
+      "squarespace"
+    ],
+    "writesonic": [
+      "grammarly",
+      "quillbot",
+      "prowritingaid",
+      "hemingway"
+    ],
+    "zapier": [
+      "make",
+      "n8n",
+      "ifttt"
+    ]
+  },
+  "overlap_pairs": [
+    {
+      "tool_a": "adobeexpress",
+      "tool_b": "canva",
+      "shared_category": "Design",
+      "has_comparison": true,
+      "comparison_url": "/compare/adobeexpress-vs-canva.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "adobeexpress",
+      "tool_b": "removebg",
+      "shared_category": "Design",
+      "has_comparison": true,
+      "comparison_url": "/compare/adobeexpress-vs-removebg.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "adobeexpress",
+      "tool_b": "figma",
+      "shared_category": "Design",
+      "has_comparison": true,
+      "comparison_url": "/compare/adobeexpress-vs-figma.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "adobeexpress",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "adobeexpress",
+      "tool_b": "kit",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "ahrefs",
+      "tool_b": "screamingfrog",
+      "shared_category": "SEO",
+      "has_comparison": true,
+      "comparison_url": "/compare/ahrefs-vs-screamingfrog.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "ahrefs",
+      "tool_b": "semrush",
+      "shared_category": "SEO",
+      "has_comparison": true,
+      "comparison_url": "/compare/ahrefs-vs-semrush.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "ahrefs",
+      "tool_b": "mozpro",
+      "shared_category": "SEO",
+      "has_comparison": true,
+      "comparison_url": "/compare/ahrefs-vs-mozpro.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "ahrefs",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "ahrefs",
+      "tool_b": "surferseo",
+      "shared_category": "SEO",
+      "has_comparison": true,
+      "comparison_url": "/compare/ahrefs-vs-surferseo.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "ahrefs",
+      "tool_b": "make",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "asana",
+      "tool_b": "notion",
+      "shared_category": "Productivity",
+      "has_comparison": true,
+      "comparison_url": "/compare/asana-vs-notion.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "asana",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "asana",
+      "tool_b": "otter",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "asana",
+      "tool_b": "fireflies",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "beehiiv",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "beehiiv",
+      "tool_b": "kit",
+      "shared_category": "Email Marketing",
+      "has_comparison": true,
+      "comparison_url": "/compare/beehiiv-vs-kit.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "beehiiv",
+      "tool_b": "mailchimp",
+      "shared_category": "Email Marketing",
+      "has_comparison": true,
+      "comparison_url": "/compare/beehiiv-vs-mailchimp.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "beehiiv",
+      "tool_b": "brevo",
+      "shared_category": "Email Marketing",
+      "has_comparison": true,
+      "comparison_url": "/compare/beehiiv-vs-brevo.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "brevo",
+      "tool_b": "beehiiv",
+      "shared_category": "Email Marketing",
+      "has_comparison": true,
+      "comparison_url": "/compare/beehiiv-vs-brevo.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "brevo",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "brevo",
+      "tool_b": "kit",
+      "shared_category": "Email Marketing",
+      "has_comparison": true,
+      "comparison_url": "/compare/brevo-vs-kit.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "brevo",
+      "tool_b": "mailchimp",
+      "shared_category": "Email Marketing",
+      "has_comparison": true,
+      "comparison_url": "/compare/brevo-vs-mailchimp.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "canva",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "canva",
+      "tool_b": "figma",
+      "shared_category": "Design",
+      "has_comparison": true,
+      "comparison_url": "/compare/canva-vs-figma.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "canva",
+      "tool_b": "adobeexpress",
+      "shared_category": "Design",
+      "has_comparison": true,
+      "comparison_url": "/compare/adobeexpress-vs-canva.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "canva",
+      "tool_b": "removebg",
+      "shared_category": "Design",
+      "has_comparison": true,
+      "comparison_url": "/compare/canva-vs-removebg.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "canva",
+      "tool_b": "kapwing",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "canva",
+      "tool_b": "ifttt",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "canva",
+      "tool_b": "zapier",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "chatgpt",
+      "tool_b": "notion",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "chatgpt",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "chatgpt",
+      "tool_b": "claude",
+      "shared_category": "AI Assistants",
+      "has_comparison": true,
+      "comparison_url": "/compare/chatgpt-vs-claude.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "chatgpt",
+      "tool_b": "gemini",
+      "shared_category": "AI Assistants",
+      "has_comparison": true,
+      "comparison_url": "/compare/chatgpt-vs-gemini.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "claude",
+      "tool_b": "chatgpt",
+      "shared_category": "AI Assistants",
+      "has_comparison": true,
+      "comparison_url": "/compare/chatgpt-vs-claude.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "claude",
+      "tool_b": "gemini",
+      "shared_category": "AI Assistants",
+      "has_comparison": true,
+      "comparison_url": "/compare/claude-vs-gemini.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "claude",
+      "tool_b": "notion",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "claude",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "clickup",
+      "tool_b": "fireflies",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "clickup",
+      "tool_b": "notion",
+      "shared_category": "Productivity",
+      "has_comparison": true,
+      "comparison_url": "/compare/clickup-vs-notion.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "clickup",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "clickup",
+      "tool_b": "otter",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "copyai",
+      "tool_b": "jasper",
+      "shared_category": "Marketing",
+      "has_comparison": true,
+      "comparison_url": "/compare/copyai-vs-jasper.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "copyai",
+      "tool_b": "notion",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "copyai",
+      "tool_b": "grammarly",
+      "shared_category": "",
+      "has_comparison": true,
+      "comparison_url": "/compare/copyai-vs-grammarly.html",
+      "shared_job": false
+    },
+    {
+      "tool_a": "copyai",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "chatgpt",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "asana",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "canva",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "fireflies",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "todoist",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "leonardo",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "removebg",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "hostinger",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "monday",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "screamingfrog",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "jasper",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "elevenlabs",
+      "shared_category": "Voice & Video",
+      "has_comparison": true,
+      "comparison_url": "/compare/elevenlabs-vs-descript.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "runway",
+      "shared_category": "Voice & Video",
+      "has_comparison": true,
+      "comparison_url": "/compare/descript-vs-runway.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "synthesia",
+      "shared_category": "Voice & Video",
+      "has_comparison": true,
+      "comparison_url": "/compare/descript-vs-synthesia.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "gemini",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "framer",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "systeme",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "notebooklm",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "prowritingaid",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "claude",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "beehiiv",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "semrush",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "kapwing",
+      "shared_category": "Voice & Video",
+      "has_comparison": true,
+      "comparison_url": "/compare/descript-vs-kapwing.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "clickup",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "hubspot",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "invideo",
+      "shared_category": "Voice & Video",
+      "has_comparison": true,
+      "comparison_url": "/compare/descript-vs-invideo.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "writesonic",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "copyai",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "notion",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "ifttt",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "midjourney",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "hemingway",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "quillbot",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "brevo",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "mailchimp",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "webflow",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "squarespace",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "perplexity",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "make",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "mozpro",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "n8n",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "otter",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "ahrefs",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "surferseo",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "figma",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "grammarly",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "adobeexpress",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "zapier",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "descript",
+      "tool_b": "kit",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "elevenlabs",
+      "tool_b": "hostinger",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "elevenlabs",
+      "tool_b": "descript",
+      "shared_category": "Voice & Video",
+      "has_comparison": true,
+      "comparison_url": "/compare/elevenlabs-vs-descript.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "elevenlabs",
+      "tool_b": "invideo",
+      "shared_category": "Voice & Video",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "elevenlabs",
+      "tool_b": "synthesia",
+      "shared_category": "Voice & Video",
+      "has_comparison": true,
+      "comparison_url": "/compare/elevenlabs-vs-synthesia.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "elevenlabs",
+      "tool_b": "runway",
+      "shared_category": "Voice & Video",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "figma",
+      "tool_b": "canva",
+      "shared_category": "Design",
+      "has_comparison": true,
+      "comparison_url": "/compare/canva-vs-figma.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "figma",
+      "tool_b": "removebg",
+      "shared_category": "Design",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "figma",
+      "tool_b": "kapwing",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "figma",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "figma",
+      "tool_b": "kit",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "figma",
+      "tool_b": "adobeexpress",
+      "shared_category": "Design",
+      "has_comparison": true,
+      "comparison_url": "/compare/adobeexpress-vs-figma.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "fireflies",
+      "tool_b": "asana",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "fireflies",
+      "tool_b": "notion",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "fireflies",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "fireflies",
+      "tool_b": "otter",
+      "shared_category": "Productivity",
+      "has_comparison": true,
+      "comparison_url": "/compare/fireflies-vs-otter.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "fireflies",
+      "tool_b": "clickup",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "fireflies",
+      "tool_b": "todoist",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "fireflies",
+      "tool_b": "monday",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "framer",
+      "tool_b": "notion",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "framer",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "framer",
+      "tool_b": "webflow",
+      "shared_category": "Website Builder",
+      "has_comparison": true,
+      "comparison_url": "/compare/framer-vs-webflow.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "framer",
+      "tool_b": "squarespace",
+      "shared_category": "Website Builder",
+      "has_comparison": true,
+      "comparison_url": "/compare/framer-vs-squarespace.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "gemini",
+      "tool_b": "chatgpt",
+      "shared_category": "AI Assistants",
+      "has_comparison": true,
+      "comparison_url": "/compare/chatgpt-vs-gemini.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "gemini",
+      "tool_b": "notion",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "gemini",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "gemini",
+      "tool_b": "claude",
+      "shared_category": "AI Assistants",
+      "has_comparison": true,
+      "comparison_url": "/compare/claude-vs-gemini.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "grammarly",
+      "tool_b": "leonardo",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "grammarly",
+      "tool_b": "hostinger",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "grammarly",
+      "tool_b": "jasper",
+      "shared_category": "",
+      "has_comparison": true,
+      "comparison_url": "/compare/grammarly-vs-jasper.html",
+      "shared_job": false
+    },
+    {
+      "tool_a": "grammarly",
+      "tool_b": "systeme",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "grammarly",
+      "tool_b": "notebooklm",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "grammarly",
+      "tool_b": "prowritingaid",
+      "shared_category": "Writing",
+      "has_comparison": true,
+      "comparison_url": "/compare/grammarly-vs-prowritingaid.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "grammarly",
+      "tool_b": "hubspot",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "grammarly",
+      "tool_b": "writesonic",
+      "shared_category": "Writing",
+      "has_comparison": true,
+      "comparison_url": "/compare/grammarly-vs-writesonic.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "grammarly",
+      "tool_b": "copyai",
+      "shared_category": "",
+      "has_comparison": true,
+      "comparison_url": "/compare/copyai-vs-grammarly.html",
+      "shared_job": false
+    },
+    {
+      "tool_a": "grammarly",
+      "tool_b": "midjourney",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "grammarly",
+      "tool_b": "hemingway",
+      "shared_category": "Writing",
+      "has_comparison": true,
+      "comparison_url": "/compare/grammarly-vs-hemingway.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "grammarly",
+      "tool_b": "quillbot",
+      "shared_category": "Writing",
+      "has_comparison": true,
+      "comparison_url": "/compare/grammarly-vs-quillbot.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "grammarly",
+      "tool_b": "perplexity",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "grammarly",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "hemingway",
+      "tool_b": "prowritingaid",
+      "shared_category": "Writing",
+      "has_comparison": true,
+      "comparison_url": "/compare/hemingway-vs-prowritingaid.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "hemingway",
+      "tool_b": "grammarly",
+      "shared_category": "Writing",
+      "has_comparison": true,
+      "comparison_url": "/compare/grammarly-vs-hemingway.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "hemingway",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "hemingway",
+      "tool_b": "quillbot",
+      "shared_category": "Writing",
+      "has_comparison": true,
+      "comparison_url": "/compare/hemingway-vs-quillbot.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "hostinger",
+      "tool_b": "notion",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "hostinger",
+      "tool_b": "grammarly",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "hostinger",
+      "tool_b": "elevenlabs",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "hostinger",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "hubspot",
+      "tool_b": "systeme",
+      "shared_category": "Sales",
+      "has_comparison": true,
+      "comparison_url": "/compare/hubspot-vs-systeme.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "hubspot",
+      "tool_b": "notion",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "hubspot",
+      "tool_b": "grammarly",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "hubspot",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "ifttt",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "ifttt",
+      "tool_b": "canva",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "ifttt",
+      "tool_b": "zapier",
+      "shared_category": "Automation",
+      "has_comparison": true,
+      "comparison_url": "/compare/ifttt-vs-zapier.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "ifttt",
+      "tool_b": "make",
+      "shared_category": "Automation",
+      "has_comparison": true,
+      "comparison_url": "/compare/ifttt-vs-make.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "ifttt",
+      "tool_b": "n8n",
+      "shared_category": "Automation",
+      "has_comparison": true,
+      "comparison_url": "/compare/ifttt-vs-n8n.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "invideo",
+      "tool_b": "elevenlabs",
+      "shared_category": "Voice & Video",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "invideo",
+      "tool_b": "descript",
+      "shared_category": "Voice & Video",
+      "has_comparison": true,
+      "comparison_url": "/compare/descript-vs-invideo.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "invideo",
+      "tool_b": "runway",
+      "shared_category": "Voice & Video",
+      "has_comparison": true,
+      "comparison_url": "/compare/invideo-vs-runway.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "jasper",
+      "tool_b": "notion",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "jasper",
+      "tool_b": "grammarly",
+      "shared_category": "",
+      "has_comparison": true,
+      "comparison_url": "/compare/grammarly-vs-jasper.html",
+      "shared_job": false
+    },
+    {
+      "tool_a": "jasper",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "jasper",
+      "tool_b": "copyai",
+      "shared_category": "Marketing",
+      "has_comparison": true,
+      "comparison_url": "/compare/copyai-vs-jasper.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "kapwing",
+      "tool_b": "descript",
+      "shared_category": "Voice & Video",
+      "has_comparison": true,
+      "comparison_url": "/compare/descript-vs-kapwing.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "kapwing",
+      "tool_b": "canva",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "kapwing",
+      "tool_b": "kit",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "kapwing",
+      "tool_b": "figma",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "kapwing",
+      "tool_b": "runway",
+      "shared_category": "Voice & Video",
+      "has_comparison": true,
+      "comparison_url": "/compare/kapwing-vs-runway.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "kit",
+      "tool_b": "removebg",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "kit",
+      "tool_b": "beehiiv",
+      "shared_category": "Email Marketing",
+      "has_comparison": true,
+      "comparison_url": "/compare/beehiiv-vs-kit.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "kit",
+      "tool_b": "kapwing",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "kit",
+      "tool_b": "brevo",
+      "shared_category": "Email Marketing",
+      "has_comparison": true,
+      "comparison_url": "/compare/brevo-vs-kit.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "kit",
+      "tool_b": "mailchimp",
+      "shared_category": "Email Marketing",
+      "has_comparison": true,
+      "comparison_url": "/compare/kit-vs-mailchimp.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "kit",
+      "tool_b": "figma",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "kit",
+      "tool_b": "adobeexpress",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "kit",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "leonardo",
+      "tool_b": "notion",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "leonardo",
+      "tool_b": "grammarly",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "leonardo",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "leonardo",
+      "tool_b": "midjourney",
+      "shared_category": "Image Generation",
+      "has_comparison": true,
+      "comparison_url": "/compare/leonardo-vs-midjourney.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "mailchimp",
+      "tool_b": "beehiiv",
+      "shared_category": "Email Marketing",
+      "has_comparison": true,
+      "comparison_url": "/compare/beehiiv-vs-mailchimp.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "mailchimp",
+      "tool_b": "brevo",
+      "shared_category": "Email Marketing",
+      "has_comparison": true,
+      "comparison_url": "/compare/brevo-vs-mailchimp.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "mailchimp",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "mailchimp",
+      "tool_b": "kit",
+      "shared_category": "Email Marketing",
+      "has_comparison": true,
+      "comparison_url": "/compare/kit-vs-mailchimp.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "make",
+      "tool_b": "ifttt",
+      "shared_category": "Automation",
+      "has_comparison": true,
+      "comparison_url": "/compare/ifttt-vs-make.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "make",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "make",
+      "tool_b": "zapier",
+      "shared_category": "Automation",
+      "has_comparison": true,
+      "comparison_url": "/compare/make-vs-zapier.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "make",
+      "tool_b": "n8n",
+      "shared_category": "Automation",
+      "has_comparison": true,
+      "comparison_url": "/compare/make-vs-n8n.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "make",
+      "tool_b": "mozpro",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "make",
+      "tool_b": "ahrefs",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "midjourney",
+      "tool_b": "leonardo",
+      "shared_category": "Image Generation",
+      "has_comparison": true,
+      "comparison_url": "/compare/leonardo-vs-midjourney.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "midjourney",
+      "tool_b": "notion",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "midjourney",
+      "tool_b": "grammarly",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "midjourney",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "monday",
+      "tool_b": "notion",
+      "shared_category": "Productivity",
+      "has_comparison": true,
+      "comparison_url": "/compare/monday-vs-notion.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "monday",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "monday",
+      "tool_b": "otter",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "monday",
+      "tool_b": "fireflies",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "mozpro",
+      "tool_b": "screamingfrog",
+      "shared_category": "SEO",
+      "has_comparison": true,
+      "comparison_url": "/compare/mozpro-vs-screamingfrog.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "mozpro",
+      "tool_b": "semrush",
+      "shared_category": "SEO",
+      "has_comparison": true,
+      "comparison_url": "/compare/mozpro-vs-semrush.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "mozpro",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "mozpro",
+      "tool_b": "ahrefs",
+      "shared_category": "SEO",
+      "has_comparison": true,
+      "comparison_url": "/compare/ahrefs-vs-mozpro.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "mozpro",
+      "tool_b": "surferseo",
+      "shared_category": "SEO",
+      "has_comparison": true,
+      "comparison_url": "/compare/mozpro-vs-surferseo.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "mozpro",
+      "tool_b": "make",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "n8n",
+      "tool_b": "ifttt",
+      "shared_category": "Automation",
+      "has_comparison": true,
+      "comparison_url": "/compare/ifttt-vs-n8n.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "n8n",
+      "tool_b": "make",
+      "shared_category": "Automation",
+      "has_comparison": true,
+      "comparison_url": "/compare/make-vs-n8n.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "n8n",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "n8n",
+      "tool_b": "zapier",
+      "shared_category": "Automation",
+      "has_comparison": true,
+      "comparison_url": "/compare/n8n-vs-zapier.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "notebooklm",
+      "tool_b": "notion",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "notebooklm",
+      "tool_b": "grammarly",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "notebooklm",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "notebooklm",
+      "tool_b": "perplexity",
+      "shared_category": "Research",
+      "has_comparison": true,
+      "comparison_url": "/compare/notebooklm-vs-perplexity.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "chatgpt",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "asana",
+      "shared_category": "Productivity",
+      "has_comparison": true,
+      "comparison_url": "/compare/asana-vs-notion.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "fireflies",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "todoist",
+      "shared_category": "Productivity",
+      "has_comparison": true,
+      "comparison_url": "/compare/notion-vs-todoist.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "leonardo",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "hostinger",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "monday",
+      "shared_category": "Productivity",
+      "has_comparison": true,
+      "comparison_url": "/compare/monday-vs-notion.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "jasper",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "gemini",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "framer",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "systeme",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "notebooklm",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "claude",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "clickup",
+      "shared_category": "Productivity",
+      "has_comparison": true,
+      "comparison_url": "/compare/clickup-vs-notion.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "hubspot",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "copyai",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "otter",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "midjourney",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "webflow",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "squarespace",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "notion",
+      "tool_b": "perplexity",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "otter",
+      "tool_b": "asana",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "otter",
+      "tool_b": "fireflies",
+      "shared_category": "Productivity",
+      "has_comparison": true,
+      "comparison_url": "/compare/fireflies-vs-otter.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "otter",
+      "tool_b": "todoist",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "otter",
+      "tool_b": "monday",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "otter",
+      "tool_b": "clickup",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "otter",
+      "tool_b": "notion",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "otter",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "perplexity",
+      "tool_b": "notebooklm",
+      "shared_category": "Research",
+      "has_comparison": true,
+      "comparison_url": "/compare/notebooklm-vs-perplexity.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "perplexity",
+      "tool_b": "notion",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "perplexity",
+      "tool_b": "grammarly",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "perplexity",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "prowritingaid",
+      "tool_b": "grammarly",
+      "shared_category": "Writing",
+      "has_comparison": true,
+      "comparison_url": "/compare/grammarly-vs-prowritingaid.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "prowritingaid",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "prowritingaid",
+      "tool_b": "quillbot",
+      "shared_category": "Writing",
+      "has_comparison": true,
+      "comparison_url": "/compare/prowritingaid-vs-quillbot.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "prowritingaid",
+      "tool_b": "hemingway",
+      "shared_category": "Writing",
+      "has_comparison": true,
+      "comparison_url": "/compare/hemingway-vs-prowritingaid.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "prowritingaid",
+      "tool_b": "writesonic",
+      "shared_category": "Writing",
+      "has_comparison": true,
+      "comparison_url": "/compare/prowritingaid-vs-writesonic.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "quillbot",
+      "tool_b": "prowritingaid",
+      "shared_category": "Writing",
+      "has_comparison": true,
+      "comparison_url": "/compare/prowritingaid-vs-quillbot.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "quillbot",
+      "tool_b": "writesonic",
+      "shared_category": "Writing",
+      "has_comparison": true,
+      "comparison_url": "/compare/quillbot-vs-writesonic.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "quillbot",
+      "tool_b": "hemingway",
+      "shared_category": "Writing",
+      "has_comparison": true,
+      "comparison_url": "/compare/hemingway-vs-quillbot.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "quillbot",
+      "tool_b": "grammarly",
+      "shared_category": "Writing",
+      "has_comparison": true,
+      "comparison_url": "/compare/grammarly-vs-quillbot.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "quillbot",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "removebg",
+      "tool_b": "canva",
+      "shared_category": "Design",
+      "has_comparison": true,
+      "comparison_url": "/compare/canva-vs-removebg.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "removebg",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "removebg",
+      "tool_b": "kit",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "removebg",
+      "tool_b": "figma",
+      "shared_category": "Design",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "removebg",
+      "tool_b": "adobeexpress",
+      "shared_category": "Design",
+      "has_comparison": true,
+      "comparison_url": "/compare/adobeexpress-vs-removebg.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "runway",
+      "tool_b": "descript",
+      "shared_category": "Voice & Video",
+      "has_comparison": true,
+      "comparison_url": "/compare/descript-vs-runway.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "runway",
+      "tool_b": "kapwing",
+      "shared_category": "Voice & Video",
+      "has_comparison": true,
+      "comparison_url": "/compare/kapwing-vs-runway.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "runway",
+      "tool_b": "invideo",
+      "shared_category": "Voice & Video",
+      "has_comparison": true,
+      "comparison_url": "/compare/invideo-vs-runway.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "runway",
+      "tool_b": "synthesia",
+      "shared_category": "Voice & Video",
+      "has_comparison": true,
+      "comparison_url": "/compare/runway-vs-synthesia.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "runway",
+      "tool_b": "elevenlabs",
+      "shared_category": "Voice & Video",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "screamingfrog",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "screamingfrog",
+      "tool_b": "semrush",
+      "shared_category": "SEO",
+      "has_comparison": true,
+      "comparison_url": "/compare/screamingfrog-vs-semrush.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "screamingfrog",
+      "tool_b": "ahrefs",
+      "shared_category": "SEO",
+      "has_comparison": true,
+      "comparison_url": "/compare/ahrefs-vs-screamingfrog.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "screamingfrog",
+      "tool_b": "mozpro",
+      "shared_category": "SEO",
+      "has_comparison": true,
+      "comparison_url": "/compare/mozpro-vs-screamingfrog.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "semrush",
+      "tool_b": "screamingfrog",
+      "shared_category": "SEO",
+      "has_comparison": true,
+      "comparison_url": "/compare/screamingfrog-vs-semrush.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "semrush",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "semrush",
+      "tool_b": "ahrefs",
+      "shared_category": "SEO",
+      "has_comparison": true,
+      "comparison_url": "/compare/ahrefs-vs-semrush.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "semrush",
+      "tool_b": "mozpro",
+      "shared_category": "SEO",
+      "has_comparison": true,
+      "comparison_url": "/compare/mozpro-vs-semrush.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "semrush",
+      "tool_b": "surferseo",
+      "shared_category": "SEO",
+      "has_comparison": true,
+      "comparison_url": "/compare/semrush-vs-surferseo.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "squarespace",
+      "tool_b": "framer",
+      "shared_category": "Website Builder",
+      "has_comparison": true,
+      "comparison_url": "/compare/framer-vs-squarespace.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "squarespace",
+      "tool_b": "webflow",
+      "shared_category": "Website Builder",
+      "has_comparison": true,
+      "comparison_url": "/compare/squarespace-vs-webflow.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "squarespace",
+      "tool_b": "notion",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "squarespace",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "surferseo",
+      "tool_b": "semrush",
+      "shared_category": "SEO",
+      "has_comparison": true,
+      "comparison_url": "/compare/semrush-vs-surferseo.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "surferseo",
+      "tool_b": "mozpro",
+      "shared_category": "SEO",
+      "has_comparison": true,
+      "comparison_url": "/compare/mozpro-vs-surferseo.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "surferseo",
+      "tool_b": "ahrefs",
+      "shared_category": "SEO",
+      "has_comparison": true,
+      "comparison_url": "/compare/ahrefs-vs-surferseo.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "surferseo",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "synthesia",
+      "tool_b": "descript",
+      "shared_category": "Voice & Video",
+      "has_comparison": true,
+      "comparison_url": "/compare/descript-vs-synthesia.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "synthesia",
+      "tool_b": "elevenlabs",
+      "shared_category": "Voice & Video",
+      "has_comparison": true,
+      "comparison_url": "/compare/elevenlabs-vs-synthesia.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "synthesia",
+      "tool_b": "runway",
+      "shared_category": "Voice & Video",
+      "has_comparison": true,
+      "comparison_url": "/compare/runway-vs-synthesia.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "systeme",
+      "tool_b": "notion",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "systeme",
+      "tool_b": "grammarly",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "systeme",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "systeme",
+      "tool_b": "hubspot",
+      "shared_category": "Sales",
+      "has_comparison": true,
+      "comparison_url": "/compare/hubspot-vs-systeme.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "todoist",
+      "tool_b": "notion",
+      "shared_category": "Productivity",
+      "has_comparison": true,
+      "comparison_url": "/compare/notion-vs-todoist.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "todoist",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "todoist",
+      "tool_b": "otter",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "todoist",
+      "tool_b": "fireflies",
+      "shared_category": "Productivity",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": true
+    },
+    {
+      "tool_a": "webflow",
+      "tool_b": "framer",
+      "shared_category": "Website Builder",
+      "has_comparison": true,
+      "comparison_url": "/compare/framer-vs-webflow.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "webflow",
+      "tool_b": "notion",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "webflow",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "webflow",
+      "tool_b": "squarespace",
+      "shared_category": "Website Builder",
+      "has_comparison": true,
+      "comparison_url": "/compare/squarespace-vs-webflow.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "writesonic",
+      "tool_b": "grammarly",
+      "shared_category": "Writing",
+      "has_comparison": true,
+      "comparison_url": "/compare/grammarly-vs-writesonic.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "writesonic",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "writesonic",
+      "tool_b": "quillbot",
+      "shared_category": "Writing",
+      "has_comparison": true,
+      "comparison_url": "/compare/quillbot-vs-writesonic.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "writesonic",
+      "tool_b": "prowritingaid",
+      "shared_category": "Writing",
+      "has_comparison": true,
+      "comparison_url": "/compare/prowritingaid-vs-writesonic.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "zapier",
+      "tool_b": "ifttt",
+      "shared_category": "Automation",
+      "has_comparison": true,
+      "comparison_url": "/compare/ifttt-vs-zapier.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "zapier",
+      "tool_b": "make",
+      "shared_category": "Automation",
+      "has_comparison": true,
+      "comparison_url": "/compare/make-vs-zapier.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "zapier",
+      "tool_b": "n8n",
+      "shared_category": "Automation",
+      "has_comparison": true,
+      "comparison_url": "/compare/n8n-vs-zapier.html",
+      "shared_job": true
+    },
+    {
+      "tool_a": "zapier",
+      "tool_b": "descript",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    },
+    {
+      "tool_a": "zapier",
+      "tool_b": "canva",
+      "shared_category": "",
+      "has_comparison": false,
+      "comparison_url": "",
+      "shared_job": false
+    }
+  ]
+}

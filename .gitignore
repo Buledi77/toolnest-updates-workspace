@@ -10,9 +10,25 @@ wrangler.jsonc
 BUILD-AUDIT.txt
 index-before-ai.html
 
+# Chrome binaries (large, used for local testing only)
+chrome/
+
+# Local backups
+backups/
+
 # OS / editor junk
 desktop.ini
 Thumbs.db
 .DS_Store
 .vercel
 .env*
+
+# IDE project files
+.idea/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Audit archives
+*.zip

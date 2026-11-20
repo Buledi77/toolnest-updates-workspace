@@ -21,9 +21,20 @@ EXCLUDED_MARKERS = {
 UNIQUE_MARKERS = (
     "verdict",
     "quick answer",
+    "why ",
+    "how to choose",
+    "how to get started",
+    "who should use",
+    "who should choose",
     "who should skip",
     "skip ",
     "not for",
+    "best alternative",
+    "best for",
+    "scenario",
+    "trade-off",
+    "trade off",
+    "limitation",
     "pricing",
     "price",
     "cost",
@@ -33,6 +44,8 @@ UNIQUE_MARKERS = (
     "hands on",
     "tested",
     "testing",
+    "sources",
+    "how we compared",
 )
 
 

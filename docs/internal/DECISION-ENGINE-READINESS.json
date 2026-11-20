@@ -1,0 +1,2047 @@
+{
+  "schema_version": "decision-engine-readiness-v1",
+  "generated_at": "2026-11-20",
+  "description": "Decision Engine readiness classification for all tools. No opaque scores \u2014 only explainable attributes.",
+  "total_tools": 50,
+  "tools": [
+    {
+      "tool_id": "adobeexpress",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Design",
+        "best_fit": "Quick social graphics, videos and brand content",
+        "strengths": [
+          "Ready-made templates",
+          "Simple editing tools",
+          "Adobe asset connections"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/adobeexpress-alternatives.html",
+        "comparisons": [
+          "/compare/adobeexpress-vs-removebg.html",
+          "/compare/adobeexpress-vs-canva.html",
+          "/compare/adobeexpress-vs-figma.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 3,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "ahrefs",
+      "status": "ready",
+      "attributes_present": 7,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "SEO",
+        "best_fit": "Backlink research, keywords and competitor SEO analysis",
+        "strengths": [
+          "Backlink data",
+          "Keyword research",
+          "Competitive analysis"
+        ],
+        "jobs": [
+          "Backlink research, keyword analysis and competitor SEO intelligence."
+        ],
+        "limitations": [
+          "tools_v2_limitations_present"
+        ],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/ahrefs-alternatives.html",
+        "comparisons": [
+          "/compare/ahrefs-vs-mozpro.html",
+          "/compare/ahrefs-vs-semrush.html",
+          "/compare/ahrefs-vs-surferseo.html",
+          "/compare/ahrefs-vs-screamingfrog.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 4,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "asana",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Productivity",
+        "best_fit": "Planning projects and coordinating team work",
+        "strengths": [
+          "Project timelines",
+          "Task dependencies",
+          "Team reporting"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/asana-alternatives.html",
+        "comparisons": [
+          "/compare/asana-vs-notion.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 1,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "beehiiv",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Email Marketing",
+        "best_fit": "Publishing and growing a monetized newsletter",
+        "strengths": [
+          "Newsletter publishing tools",
+          "Audience growth features",
+          "Built-in monetization options"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/beehiiv-alternatives.html",
+        "comparisons": [
+          "/compare/beehiiv-vs-kit.html",
+          "/compare/beehiiv-vs-mailchimp.html",
+          "/compare/beehiiv-vs-brevo.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 3,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "brevo",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Email Marketing",
+        "best_fit": "Email, SMS and customer communication campaigns",
+        "strengths": [
+          "Email automation",
+          "SMS options",
+          "Contact management"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/brevo-alternatives.html",
+        "comparisons": [
+          "/compare/brevo-vs-mailchimp.html",
+          "/compare/brevo-vs-kit.html",
+          "/compare/beehiiv-vs-brevo.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 3,
+        "has_alternatives_page": true,
+        "best_of_references": 2
+      }
+    },
+    {
+      "tool_id": "canva",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Design",
+        "best_fit": "Social graphics, presentations and simple brand designs",
+        "strengths": [
+          "Large template library",
+          "Easy drag-and-drop editor",
+          "Useful for teams and brand kits"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/canva-alternatives.html",
+        "comparisons": [
+          "/compare/adobeexpress-vs-canva.html",
+          "/compare/canva-vs-removebg.html",
+          "/compare/canva-vs-figma.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 3,
+        "has_alternatives_page": true,
+        "best_of_references": 4
+      }
+    },
+    {
+      "tool_id": "chatgpt",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "AI Assistants",
+        "best_fit": "General writing, brainstorming, analysis and everyday AI help",
+        "strengths": [
+          "Flexible general assistant",
+          "Works across many task types",
+          "Supports iterative conversations"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/chatgpt-alternatives.html",
+        "comparisons": [
+          "/compare/chatgpt-vs-claude.html",
+          "/compare/chatgpt-vs-gemini.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 2,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "claude",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "AI Assistants",
+        "best_fit": "Long-form analysis, writing and structured reasoning",
+        "strengths": [
+          "Handles long documents",
+          "Clear structured responses",
+          "Useful for writing and coding"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/claude-alternatives.html",
+        "comparisons": [
+          "/compare/chatgpt-vs-claude.html",
+          "/compare/claude-vs-gemini.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 2,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "clickup",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Productivity",
+        "best_fit": "Tasks, documents and team project management",
+        "strengths": [
+          "Flexible task views",
+          "Docs and goals",
+          "Team workflows"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/clickup-alternatives.html",
+        "comparisons": [
+          "/compare/clickup-vs-notion.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 1,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "copyai",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Marketing",
+        "best_fit": "Sales and marketing content workflows",
+        "strengths": [
+          "Marketing templates",
+          "Workflow automation",
+          "Team-oriented content"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/copyai-alternatives.html",
+        "comparisons": [
+          "/compare/copyai-vs-jasper.html",
+          "/compare/copyai-vs-grammarly.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 2,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "descript",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Voice & Video",
+        "best_fit": "Editing video and podcasts like a document",
+        "strengths": [
+          "Edit by editing the text",
+          "Automatic transcripts",
+          "Removes filler words fast"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/descript-alternatives.html",
+        "comparisons": [
+          "/compare/descript-vs-kapwing.html",
+          "/compare/elevenlabs-vs-descript.html",
+          "/compare/descript-vs-synthesia.html",
+          "/compare/descript-vs-runway.html",
+          "/compare/descript-vs-invideo.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 5,
+        "has_alternatives_page": true,
+        "best_of_references": 21
+      }
+    },
+    {
+      "tool_id": "elevenlabs",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Voice & Video",
+        "best_fit": "Voiceovers for videos and courses",
+        "strengths": [
+          "Very natural voices",
+          "Many languages",
+          "Narrate without recording"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/elevenlabs-alternatives.html",
+        "comparisons": [
+          "/compare/elevenlabs-vs-synthesia.html",
+          "/compare/elevenlabs-vs-descript.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 2,
+        "has_alternatives_page": true,
+        "best_of_references": 8
+      }
+    },
+    {
+      "tool_id": "figma",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Design",
+        "best_fit": "Collaborative interface design and prototyping",
+        "strengths": [
+          "Real-time collaboration",
+          "Interactive prototypes",
+          "Reusable design systems"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/figma-alternatives.html",
+        "comparisons": [
+          "/compare/adobeexpress-vs-figma.html",
+          "/compare/canva-vs-figma.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 2,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "fireflies",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Productivity",
+        "best_fit": "Recording, transcribing and reviewing meetings",
+        "strengths": [
+          "Meeting transcripts",
+          "Searchable conversations",
+          "CRM integrations"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/fireflies-alternatives.html",
+        "comparisons": [
+          "/compare/fireflies-vs-otter.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 1,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "framer",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Website Builder",
+        "best_fit": "Modern landing pages and design-led marketing websites",
+        "strengths": [
+          "Visual responsive design",
+          "Fast publishing and hosting",
+          "Strong animation and interaction tools"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/framer-alternatives.html",
+        "comparisons": [
+          "/compare/framer-vs-webflow.html",
+          "/compare/framer-vs-squarespace.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 2,
+        "has_alternatives_page": true,
+        "best_of_references": 2
+      }
+    },
+    {
+      "tool_id": "gemini",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "AI Assistants",
+        "best_fit": "AI help connected with Google products and multimodal work",
+        "strengths": [
+          "Google ecosystem fit",
+          "Multimodal prompts",
+          "General research and drafting"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/gemini-alternatives.html",
+        "comparisons": [
+          "/compare/chatgpt-vs-gemini.html",
+          "/compare/claude-vs-gemini.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 2,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "grammarly",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Writing",
+        "best_fit": "Clear English in emails and proposals",
+        "strengths": [
+          "Fixes mistakes as you type",
+          "Works in many apps",
+          "Helps with polite tone"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/grammarly-alternatives.html",
+        "comparisons": [
+          "/compare/grammarly-vs-jasper.html",
+          "/compare/grammarly-vs-quillbot.html",
+          "/compare/grammarly-vs-writesonic.html",
+          "/compare/grammarly-vs-hemingway.html",
+          "/compare/grammarly-vs-prowritingaid.html",
+          "/compare/copyai-vs-grammarly.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 6,
+        "has_alternatives_page": true,
+        "best_of_references": 8
+      }
+    },
+    {
+      "tool_id": "hemingway",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Writing",
+        "best_fit": "Making sentences clearer and easier to read",
+        "strengths": [
+          "Readability guidance",
+          "Highlights complex sentences",
+          "Simple editing workflow"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/hemingway-alternatives.html",
+        "comparisons": [
+          "/compare/hemingway-vs-quillbot.html",
+          "/compare/hemingway-vs-prowritingaid.html",
+          "/compare/grammarly-vs-hemingway.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 3,
+        "has_alternatives_page": true,
+        "best_of_references": 2
+      }
+    },
+    {
+      "tool_id": "hostinger",
+      "status": "ready",
+      "attributes_present": 9,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Hosting",
+        "best_fit": "Hosting and building a website or online store",
+        "strengths": [
+          "Hosting, domain and site builder in one account",
+          "Beginner-friendly plans",
+          "Free SSL listed on its plans"
+        ],
+        "jobs": [
+          "Hosting and building websites or small online stores."
+        ],
+        "limitations": [
+          "tools_v2_limitations_present"
+        ],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/hostinger-alternatives.html",
+        "comparisons": [
+          "/compare/hostinger-vs-systeme.html"
+        ],
+        "pricing_fit": "subscription",
+        "free_plan_fit": null,
+        "evidence_confidence": "high"
+      },
+      "blockers": [
+        "missing_free_plan_fit"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": true,
+        "comparison_pages": 1,
+        "has_alternatives_page": true,
+        "best_of_references": 8
+      }
+    },
+    {
+      "tool_id": "hubspot",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Sales",
+        "best_fit": "CRM, marketing and sales workflows in one platform",
+        "strengths": [
+          "Free CRM entry point",
+          "Marketing automation",
+          "Sales pipeline tools"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/hubspot-alternatives.html",
+        "comparisons": [
+          "/compare/hubspot-vs-systeme.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 1,
+        "has_alternatives_page": true,
+        "best_of_references": 2
+      }
+    },
+    {
+      "tool_id": "ifttt",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Automation",
+        "best_fit": "Simple personal and smart-device automations",
+        "strengths": [
+          "Easy applets",
+          "Consumer app support",
+          "Quick trigger-action setup"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/ifttt-alternatives.html",
+        "comparisons": [
+          "/compare/ifttt-vs-make.html",
+          "/compare/ifttt-vs-n8n.html",
+          "/compare/ifttt-vs-zapier.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 3,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "invideo",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Voice & Video",
+        "best_fit": "Creating marketing and social videos from prompts",
+        "strengths": [
+          "Template library",
+          "Prompt-based creation",
+          "Stock media workflow"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/invideo-alternatives.html",
+        "comparisons": [
+          "/compare/invideo-vs-runway.html",
+          "/compare/descript-vs-invideo.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 2,
+        "has_alternatives_page": true,
+        "best_of_references": 3
+      }
+    },
+    {
+      "tool_id": "jasper",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Marketing",
+        "best_fit": "Ad copy and product page writing",
+        "strengths": [
+          "Templates made for marketing",
+          "Keeps your brand voice",
+          "Good for teams"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/jasper-alternatives.html",
+        "comparisons": [
+          "/compare/grammarly-vs-jasper.html",
+          "/compare/jasper-vs-semrush.html",
+          "/compare/copyai-vs-jasper.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 3,
+        "has_alternatives_page": true,
+        "best_of_references": 8
+      }
+    },
+    {
+      "tool_id": "kapwing",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Voice & Video",
+        "best_fit": "Collaborative online video editing for social content",
+        "strengths": [
+          "Browser-based editor",
+          "Captions and resizing",
+          "Team collaboration"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/kapwing-alternatives.html",
+        "comparisons": [
+          "/compare/descript-vs-kapwing.html",
+          "/compare/kapwing-vs-runway.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 2,
+        "has_alternatives_page": true,
+        "best_of_references": 3
+      }
+    },
+    {
+      "tool_id": "kit",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Email Marketing",
+        "best_fit": "Creator email lists, automations and digital product funnels",
+        "strengths": [
+          "Creator-focused automations",
+          "Landing pages and forms",
+          "Tag-based subscriber organization"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/kit-alternatives.html",
+        "comparisons": [
+          "/compare/kit-vs-mailchimp.html",
+          "/compare/beehiiv-vs-kit.html",
+          "/compare/brevo-vs-kit.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 3,
+        "has_alternatives_page": true,
+        "best_of_references": 4
+      }
+    },
+    {
+      "tool_id": "leonardo",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Image Generation",
+        "best_fit": "AI images, assets and creative production",
+        "strengths": [
+          "Multiple image models",
+          "Asset generation",
+          "Creative controls"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/leonardo-alternatives.html",
+        "comparisons": [
+          "/compare/leonardo-vs-midjourney.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 1,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "mailchimp",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Email Marketing",
+        "best_fit": "Email campaigns, basic automation and audience management",
+        "strengths": [
+          "Campaign builder",
+          "Audience segmentation",
+          "Marketing automations"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/mailchimp-alternatives.html",
+        "comparisons": [
+          "/compare/kit-vs-mailchimp.html",
+          "/compare/brevo-vs-mailchimp.html",
+          "/compare/beehiiv-vs-mailchimp.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 3,
+        "has_alternatives_page": true,
+        "best_of_references": 2
+      }
+    },
+    {
+      "tool_id": "make",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Automation",
+        "best_fit": "Visual multi-step workflow automation across apps",
+        "strengths": [
+          "Visual scenario builder",
+          "Advanced branching",
+          "Large integration library"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/make-alternatives.html",
+        "comparisons": [
+          "/compare/make-vs-n8n.html",
+          "/compare/ifttt-vs-make.html",
+          "/compare/make-vs-zapier.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 3,
+        "has_alternatives_page": true,
+        "best_of_references": 21
+      }
+    },
+    {
+      "tool_id": "midjourney",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Image Generation",
+        "best_fit": "Stylized AI images and creative visual concepts",
+        "strengths": [
+          "Strong artistic output",
+          "Style exploration",
+          "Rapid visual ideation"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/midjourney-alternatives.html",
+        "comparisons": [
+          "/compare/leonardo-vs-midjourney.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 1,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "monday",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Productivity",
+        "best_fit": "Custom work boards for projects and operations",
+        "strengths": [
+          "Customizable boards",
+          "Automation recipes",
+          "Visual dashboards"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/monday-alternatives.html",
+        "comparisons": [
+          "/compare/monday-vs-notion.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 1,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "mozpro",
+      "status": "ready",
+      "attributes_present": 8,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "SEO",
+        "best_fit": "Keyword tracking and site SEO campaigns",
+        "strengths": [
+          "Rank tracking",
+          "Site crawling",
+          "Keyword research"
+        ],
+        "jobs": [
+          "Monitoring and improving websites with a focused SEO workflow."
+        ],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/mozpro-alternatives.html",
+        "comparisons": [
+          "/compare/mozpro-vs-screamingfrog.html",
+          "/compare/mozpro-vs-surferseo.html",
+          "/compare/ahrefs-vs-mozpro.html",
+          "/compare/mozpro-vs-semrush.html"
+        ],
+        "pricing_fit": "subscription",
+        "free_plan_fit": null,
+        "evidence_confidence": "low"
+      },
+      "blockers": [
+        "missing_limitations",
+        "missing_free_plan_fit"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 4,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "n8n",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Automation",
+        "best_fit": "Flexible workflow automation with technical control",
+        "strengths": [
+          "Self-hosting option",
+          "Custom workflow logic",
+          "Developer-friendly integrations"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/n8n-alternatives.html",
+        "comparisons": [
+          "/compare/make-vs-n8n.html",
+          "/compare/ifttt-vs-n8n.html",
+          "/compare/n8n-vs-zapier.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 3,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "notebooklm",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Research",
+        "best_fit": "Studying and asking questions across your own sources",
+        "strengths": [
+          "Source-grounded notebooks",
+          "Document summaries",
+          "Research organization"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/notebooklm-alternatives.html",
+        "comparisons": [
+          "/compare/notebooklm-vs-perplexity.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 1,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "notion",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Productivity",
+        "best_fit": "Notes, tasks and client work in one place",
+        "strengths": [
+          "One home for notes and to-dos",
+          "Templates to start fast",
+          "Good for solo work"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/notion-alternatives.html",
+        "comparisons": [
+          "/compare/monday-vs-notion.html",
+          "/compare/clickup-vs-notion.html",
+          "/compare/notion-vs-todoist.html",
+          "/compare/asana-vs-notion.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 4,
+        "has_alternatives_page": true,
+        "best_of_references": 8
+      }
+    },
+    {
+      "tool_id": "otter",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Productivity",
+        "best_fit": "Meeting transcription and searchable notes",
+        "strengths": [
+          "Live transcription",
+          "Speaker notes",
+          "Meeting summaries"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/otter-alternatives.html",
+        "comparisons": [
+          "/compare/fireflies-vs-otter.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 1,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "perplexity",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Research",
+        "best_fit": "Web research with visible source links",
+        "strengths": [
+          "Source-led answers",
+          "Fast topic summaries",
+          "Useful follow-up questions"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/perplexity-alternatives.html",
+        "comparisons": [
+          "/compare/notebooklm-vs-perplexity.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 1,
+        "has_alternatives_page": true,
+        "best_of_references": 2
+      }
+    },
+    {
+      "tool_id": "prowritingaid",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Writing",
+        "best_fit": "Detailed writing reports for long-form authors",
+        "strengths": [
+          "Style reports",
+          "Grammar checking",
+          "Long-form writing focus"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/prowritingaid-alternatives.html",
+        "comparisons": [
+          "/compare/hemingway-vs-prowritingaid.html",
+          "/compare/prowritingaid-vs-writesonic.html",
+          "/compare/grammarly-vs-prowritingaid.html",
+          "/compare/prowritingaid-vs-quillbot.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 4,
+        "has_alternatives_page": true,
+        "best_of_references": 2
+      }
+    },
+    {
+      "tool_id": "quillbot",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Writing",
+        "best_fit": "Paraphrasing, rewriting and summarizing text",
+        "strengths": [
+          "Multiple rewrite modes",
+          "Summarizer included",
+          "Browser-based workflow"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/quillbot-alternatives.html",
+        "comparisons": [
+          "/compare/hemingway-vs-quillbot.html",
+          "/compare/grammarly-vs-quillbot.html",
+          "/compare/quillbot-vs-writesonic.html",
+          "/compare/prowritingaid-vs-quillbot.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 4,
+        "has_alternatives_page": true,
+        "best_of_references": 2
+      }
+    },
+    {
+      "tool_id": "removebg",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Design",
+        "best_fit": "Removing image backgrounds quickly",
+        "strengths": [
+          "Automatic cutouts",
+          "Fast web workflow",
+          "API available"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/removebg-alternatives.html",
+        "comparisons": [
+          "/compare/adobeexpress-vs-removebg.html",
+          "/compare/canva-vs-removebg.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 2,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "runway",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Voice & Video",
+        "best_fit": "AI-assisted video generation and creative editing",
+        "strengths": [
+          "Generative video tools",
+          "Browser-based editing",
+          "Visual effects workflows"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/runway-alternatives.html",
+        "comparisons": [
+          "/compare/invideo-vs-runway.html",
+          "/compare/kapwing-vs-runway.html",
+          "/compare/runway-vs-synthesia.html",
+          "/compare/descript-vs-runway.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 4,
+        "has_alternatives_page": true,
+        "best_of_references": 3
+      }
+    },
+    {
+      "tool_id": "screamingfrog",
+      "status": "ready",
+      "attributes_present": 7,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "SEO",
+        "best_fit": "Technical crawling and finding website SEO issues",
+        "strengths": [
+          "Deep site crawl",
+          "Redirect checks",
+          "Metadata auditing"
+        ],
+        "jobs": [
+          "Technical website crawling and SEO issue detection."
+        ],
+        "limitations": [
+          "tools_v2_limitations_present"
+        ],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/screamingfrog-alternatives.html",
+        "comparisons": [
+          "/compare/mozpro-vs-screamingfrog.html",
+          "/compare/screamingfrog-vs-semrush.html",
+          "/compare/ahrefs-vs-screamingfrog.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 3,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "semrush",
+      "status": "ready",
+      "attributes_present": 9,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "SEO",
+        "best_fit": "Finding keywords and checking competitors",
+        "strengths": [
+          "Deep keyword research",
+          "Shows what rivals rank for",
+          "Many SEO tools in one"
+        ],
+        "jobs": [
+          "Recurring SEO, competitor and AI-search research."
+        ],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/semrush-alternatives.html",
+        "comparisons": [
+          "/compare/semrush-vs-surferseo.html",
+          "/compare/jasper-vs-semrush.html",
+          "/compare/mozpro-vs-semrush.html",
+          "/compare/ahrefs-vs-semrush.html",
+          "/compare/screamingfrog-vs-semrush.html"
+        ],
+        "pricing_fit": "freemium",
+        "free_plan_fit": "limited_free_account",
+        "evidence_confidence": "high"
+      },
+      "blockers": [
+        "missing_limitations"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": true,
+        "comparison_pages": 5,
+        "has_alternatives_page": true,
+        "best_of_references": 8
+      }
+    },
+    {
+      "tool_id": "squarespace",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Website Builder",
+        "best_fit": "Polished websites and portfolios with templates",
+        "strengths": [
+          "Professional templates",
+          "Built-in commerce",
+          "Managed hosting"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/squarespace-alternatives.html",
+        "comparisons": [
+          "/compare/framer-vs-squarespace.html",
+          "/compare/squarespace-vs-webflow.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 2,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "surferseo",
+      "status": "ready",
+      "attributes_present": 7,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "SEO",
+        "best_fit": "Optimizing articles around search intent and on-page signals",
+        "strengths": [
+          "Content editor",
+          "On-page guidance",
+          "SERP-based suggestions"
+        ],
+        "jobs": [
+          "On-page content optimization guided by live SERP data."
+        ],
+        "limitations": [
+          "tools_v2_limitations_present"
+        ],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/surferseo-alternatives.html",
+        "comparisons": [
+          "/compare/semrush-vs-surferseo.html",
+          "/compare/mozpro-vs-surferseo.html",
+          "/compare/ahrefs-vs-surferseo.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 3,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "synthesia",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Voice & Video",
+        "best_fit": "Presenter-style videos using AI avatars",
+        "strengths": [
+          "Avatar presentations",
+          "Multiple languages",
+          "Business video templates"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/synthesia-alternatives.html",
+        "comparisons": [
+          "/compare/elevenlabs-vs-synthesia.html",
+          "/compare/runway-vs-synthesia.html",
+          "/compare/descript-vs-synthesia.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 3,
+        "has_alternatives_page": true,
+        "best_of_references": 3
+      }
+    },
+    {
+      "tool_id": "systeme",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Sales",
+        "best_fit": "Sales pages, email lists and online courses",
+        "strengths": [
+          "Pages, email and checkout together",
+          "Easy to start with",
+          "Can replace several separate subscriptions"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/systeme-alternatives.html",
+        "comparisons": [
+          "/compare/hostinger-vs-systeme.html",
+          "/compare/hubspot-vs-systeme.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 2,
+        "has_alternatives_page": true,
+        "best_of_references": 8
+      }
+    },
+    {
+      "tool_id": "todoist",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Productivity",
+        "best_fit": "Personal tasks and lightweight team planning",
+        "strengths": [
+          "Quick task capture",
+          "Recurring tasks",
+          "Cross-device apps"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/todoist-alternatives.html",
+        "comparisons": [
+          "/compare/notion-vs-todoist.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 1,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "webflow",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Website Builder",
+        "best_fit": "Visual websites with CMS and design control",
+        "strengths": [
+          "Visual web design",
+          "Built-in CMS",
+          "Managed hosting"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/webflow-alternatives.html",
+        "comparisons": [
+          "/compare/framer-vs-webflow.html",
+          "/compare/squarespace-vs-webflow.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 2,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    },
+    {
+      "tool_id": "writesonic",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Writing",
+        "best_fit": "Marketing articles, landing pages and campaign drafts",
+        "strengths": [
+          "Content drafting",
+          "Marketing use cases",
+          "Built-in editing tools"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/writesonic-alternatives.html",
+        "comparisons": [
+          "/compare/quillbot-vs-writesonic.html",
+          "/compare/grammarly-vs-writesonic.html",
+          "/compare/prowritingaid-vs-writesonic.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 3,
+        "has_alternatives_page": true,
+        "best_of_references": 2
+      }
+    },
+    {
+      "tool_id": "zapier",
+      "status": "partially_ready",
+      "attributes_present": 5,
+      "attributes_total": 10,
+      "explainable_attributes": {
+        "category": "Automation",
+        "best_fit": "Connecting apps and automating repetitive workflows",
+        "strengths": [
+          "Large app integration ecosystem",
+          "No-code workflow builder",
+          "Useful templates for common automations"
+        ],
+        "jobs": [],
+        "limitations": [],
+        "skip_conditions": [],
+        "alternatives": "/alternatives/zapier-alternatives.html",
+        "comparisons": [
+          "/compare/make-vs-zapier.html",
+          "/compare/ifttt-vs-zapier.html",
+          "/compare/n8n-vs-zapier.html"
+        ],
+        "pricing_fit": null,
+        "free_plan_fit": null,
+        "evidence_confidence": "none"
+      },
+      "blockers": [
+        "missing_jobs",
+        "missing_limitations",
+        "missing_pricing_fit",
+        "missing_free_plan_fit",
+        "missing_evidence_confidence"
+      ],
+      "infrastructure": {
+        "has_tools_v2": true,
+        "has_evidence_claims": false,
+        "comparison_pages": 3,
+        "has_alternatives_page": true,
+        "best_of_references": 1
+      }
+    }
+  ],
+  "summary": {
+    "status_distribution": {
+      "partially_ready": 44,
+      "ready": 6
+    },
+    "ready_count": 6,
+    "partially_ready_count": 44,
+    "blocked_count": 0,
+    "avg_attributes_present": 5.34
+  }
+}

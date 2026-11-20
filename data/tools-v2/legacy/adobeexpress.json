@@ -6,7 +6,7 @@
     "name": "Adobe Express",
     "slug": "adobeexpress",
     "official_url": "https://www.adobe.com/express/",
-    "status": "unknown",
+    "status": "active",
     "logo": "/assets/logos/adobeexpress.png",
     "aliases": []
   },
@@ -14,14 +14,30 @@
     "categories": [
       "Design"
     ],
-    "use_cases": [],
+    "use_cases": [
+      "quick social graphics, videos and brand content"
+    ],
     "audiences": [],
-    "platforms": [],
+    "platforms": [
+      "web"
+    ],
     "integrations": [],
-    "tags": []
+    "tags": [
+      "design"
+    ]
   },
   "factual_profile": {
-    "capabilities": [],
+    "capabilities": [
+      {
+        "description": "Ready-made templates"
+      },
+      {
+        "description": "Simple editing tools"
+      },
+      {
+        "description": "Adobe asset connections"
+      }
+    ],
     "limitations": [],
     "free_plan_status": [],
     "trial_status": [],
@@ -30,18 +46,32 @@
     "availability_regions": []
   },
   "editorial": {
-    "editorial_tier": "C",
-    "best_for": [],
+    "editorial_tier": "A",
+    "best_for": [
+      "Quick social graphics, videos and brand content"
+    ],
     "not_recommended_for": [],
-    "review_status": "draft",
-    "review_url": null,
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/adobeexpress.html",
     "review_owner": null,
     "editorial_last_reviewed": null
   },
   "relationships": {
-    "alternatives": [],
-    "meaningful_comparisons": [],
-    "related_tools": [],
+    "alternatives": [
+      "canva",
+      "figma",
+      "removebg"
+    ],
+    "meaningful_comparisons": [
+      "adobeexpress-vs-canva",
+      "adobeexpress-vs-figma",
+      "adobeexpress-vs-removebg"
+    ],
+    "related_tools": [
+      "figma",
+      "removebg",
+      "canva"
+    ],
     "compatible_tools": [],
     "replaces": [],
     "replaced_by": []
@@ -62,26 +92,20 @@
   },
   "publishing": {
     "directory_visibility": "public",
-    "standalone_page_status": "none",
-    "indexability": "noindex",
-    "sitemap_eligible": false,
-    "canonical_url": null,
-    "template_type": "directory-only",
-    "content_quality_status": "unassessed",
-    "prepublish_status": "not_ready"
+    "standalone_page_status": "published",
+    "indexability": "index",
+    "sitemap_eligible": true,
+    "canonical_url": "https://www.toolnestai.tech/tools/adobeexpress.html",
+    "template_type": "review",
+    "content_quality_status": "assessed",
+    "prepublish_status": "published"
   },
   "freshness": {
-    "created_at": null,
-    "updated_at": null,
+    "created_at": "2026-11-20T15:27:01Z",
+    "updated_at": "2026-11-20T15:27:01Z",
     "last_verified_at": null,
     "next_review_at": null,
-    "stale_fields": [
-      "identity.status",
-      "discovery",
-      "factual_profile",
-      "relationships",
-      "monetization"
-    ],
+    "stale_fields": [],
     "change_history_reference": null
   }
 }

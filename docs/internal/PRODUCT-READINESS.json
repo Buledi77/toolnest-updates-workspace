@@ -1,0 +1,133 @@
+{
+  "schema_version": "product-readiness-v1",
+  "generated_at": "2026-11-20",
+  "description": "Product readiness classification based on existing data foundations. No UI built.",
+  "products": [
+    {
+      "product": "Decision Engine V2",
+      "status": "partial",
+      "coverage": "6/50 tools ready, 44/50 partially ready",
+      "blockers": [
+        "44 of 50 tools lack tools-v2 structured data for limitations and jobs",
+        "Only 3 of 50 tools have verified commercial pricing data",
+        "Boilerplate content in 29 tool reviews reduces decision reliability"
+      ],
+      "data_foundations": [
+        "DECISION-ENGINE-READINESS.json",
+        "COMMERCIAL-DATA.json"
+      ],
+      "safest_subset": "6 ready tools can power a limited Decision Engine for high-coverage categories",
+      "recommendation": "Build with partial data \u2014 show confidence levels to users"
+    },
+    {
+      "product": "Free Plan Finder",
+      "status": "blocked",
+      "coverage": "1/50 tools have free plan evidence",
+      "blockers": [
+        "Only 1 of 50 tools has verified free plan status (semrush)",
+        "49 tools have unknown free plan status",
+        "Cannot build a useful finder with 98% unknown data"
+      ],
+      "data_foundations": [
+        "FREE-PLAN-TRIAL-FOUNDATION.json"
+      ],
+      "safest_subset": "None \u2014 insufficient data for any meaningful feature",
+      "recommendation": "Block until free plan evidence is collected for at least 10+ tools"
+    },
+    {
+      "product": "Trial Reality Checker",
+      "status": "blocked",
+      "coverage": "1/50 tools have trial evidence",
+      "blockers": [
+        "Only 1 of 50 tools has verified trial status (mozpro)",
+        "49 tools have unknown trial status",
+        "Cannot verify trial availability without evidence"
+      ],
+      "data_foundations": [
+        "FREE-PLAN-TRIAL-FOUNDATION.json"
+      ],
+      "safest_subset": "None \u2014 insufficient data for any meaningful feature",
+      "recommendation": "Block until trial evidence is collected for at least 10+ tools"
+    },
+    {
+      "product": "Plan Limit Fit Checker",
+      "status": "blocked",
+      "coverage": "2/50 tools have verified commercial data",
+      "blockers": [
+        "Only 2 of 50 tools have verified pricing data (hostinger, semrush)",
+        "No verified plan limits exist in evidence ledger",
+        "Cannot match user needs to plan limits without limit data"
+      ],
+      "data_foundations": [
+        "COMMERCIAL-DATA.json"
+      ],
+      "safest_subset": "None \u2014 no plan limit data exists",
+      "recommendation": "Block until plan limit evidence is collected for multiple tools"
+    },
+    {
+      "product": "Tool Overlap Checker",
+      "status": "ready",
+      "coverage": "50/50 tools overlap-ready, 205 overlap pairs",
+      "blockers": [],
+      "data_foundations": [
+        "STACK-OVERLAP-READINESS.json",
+        "DECISION-ENGINE-READINESS.json"
+      ],
+      "safest_subset": "All 50 tools have alternatives data from 50 alternatives pages",
+      "recommendation": "Safest to build \u2014 all tools have overlap data from alternatives pages"
+    },
+    {
+      "product": "Stack Budget Planner",
+      "status": "blocked",
+      "coverage": "2/50 tools budget-ready",
+      "blockers": [
+        "Only 2 of 50 tools have verified commercial cost",
+        "Cannot calculate stack budgets without pricing data",
+        "48 tools have unknown pricing"
+      ],
+      "data_foundations": [
+        "STACK-OVERLAP-READINESS.json",
+        "COMMERCIAL-DATA.json"
+      ],
+      "safest_subset": "None \u2014 insufficient pricing data for budget calculation",
+      "recommendation": "Block until commercial pricing is verified for at least 15+ tools"
+    },
+    {
+      "product": "Workflow Explorer",
+      "status": "partial",
+      "coverage": "9 workflows, 7/9 high confidence",
+      "blockers": [
+        "Some workflows have limited candidate tools due to category matching",
+        "Decision questions are template-based, not evidence-based",
+        "No user testing data to validate workflow paths"
+      ],
+      "data_foundations": [
+        "WORKFLOW-MAPS.json",
+        "DECISION-ENGINE-READINESS.json"
+      ],
+      "safest_subset": "7 of 9 workflows have high evidence confidence",
+      "recommendation": "Build with existing 9 workflows \u2014 show confidence levels"
+    }
+  ],
+  "summary": {
+    "ready": 1,
+    "partial": 2,
+    "blocked": 4
+  },
+  "recommendation": {
+    "safest_to_build": "Tool Overlap Checker",
+    "reason": "All 50 tools have overlap data from 50 alternatives pages with 205+ overlap pairs. No commercial data required. Can provide immediate user value by showing which tools serve similar purposes.",
+    "second_safest": "Workflow Explorer",
+    "second_reason": "9 workflows exist with 7 at high confidence. Provides structured navigation without requiring new evidence.",
+    "blocked_products": [
+      "Free Plan Finder (1/50 tools with evidence)",
+      "Trial Reality Checker (1/50 tools with evidence)",
+      "Plan Limit Fit Checker (0 plan limits verified)",
+      "Stack Budget Planner (2/50 tools with pricing)"
+    ],
+    "partial_products": [
+      "Decision Engine V2 (6/50 ready, 44/50 partial)",
+      "Workflow Explorer (7/9 high confidence)"
+    ]
+  }
+}

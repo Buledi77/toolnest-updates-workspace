@@ -1,0 +1,1335 @@
+{
+  "schema_version": "stack-overlap-readiness-v1",
+  "generated_at": "2026-11-20",
+  "description": "Structured foundation for Tool Overlap Checker and Stack Budget Planner. Never estimates price or infers overlap merely from category.",
+  "total_tools": 50,
+  "tools": [
+    {
+      "tool_id": "adobeexpress",
+      "primary_jobs": [
+        "Design"
+      ],
+      "shared_jobs_with": [
+        "canva",
+        "figma",
+        "removebg"
+      ],
+      "alternatives": [
+        "canva",
+        "removebg",
+        "figma",
+        "descript",
+        "canva",
+        "kit",
+        "figma",
+        "removebg"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "ahrefs",
+      "primary_jobs": [
+        "SEO",
+        "Backlink research, keyword analysis and competitor SEO intelligence."
+      ],
+      "shared_jobs_with": [
+        "semrush",
+        "mozpro",
+        "surferseo",
+        "screamingfrog"
+      ],
+      "alternatives": [
+        "screamingfrog",
+        "semrush",
+        "mozpro",
+        "descript",
+        "semrush",
+        "mozpro",
+        "surferseo",
+        "screamingfrog",
+        "make",
+        "surferseo"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "asana",
+      "primary_jobs": [
+        "Productivity"
+      ],
+      "shared_jobs_with": [
+        "notion",
+        "otter",
+        "fireflies",
+        "clickup",
+        "monday",
+        "todoist"
+      ],
+      "alternatives": [
+        "notion",
+        "descript",
+        "otter",
+        "fireflies"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "beehiiv",
+      "primary_jobs": [
+        "Email Marketing"
+      ],
+      "shared_jobs_with": [
+        "kit",
+        "mailchimp",
+        "brevo"
+      ],
+      "alternatives": [
+        "descript",
+        "kit",
+        "mailchimp",
+        "brevo",
+        "brevo",
+        "mailchimp",
+        "kit"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "brevo",
+      "primary_jobs": [
+        "Email Marketing"
+      ],
+      "shared_jobs_with": [
+        "beehiiv",
+        "kit",
+        "mailchimp"
+      ],
+      "alternatives": [
+        "beehiiv",
+        "descript",
+        "beehiiv",
+        "kit",
+        "mailchimp",
+        "mailchimp",
+        "kit"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "canva",
+      "primary_jobs": [
+        "Design"
+      ],
+      "shared_jobs_with": [
+        "figma",
+        "adobeexpress",
+        "removebg"
+      ],
+      "alternatives": [
+        "descript",
+        "figma",
+        "adobeexpress",
+        "removebg",
+        "removebg",
+        "kapwing",
+        "ifttt",
+        "figma",
+        "adobeexpress",
+        "zapier"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "chatgpt",
+      "primary_jobs": [
+        "AI Assistants"
+      ],
+      "shared_jobs_with": [
+        "claude",
+        "gemini"
+      ],
+      "alternatives": [
+        "notion",
+        "descript",
+        "claude",
+        "gemini",
+        "gemini",
+        "claude"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "claude",
+      "primary_jobs": [
+        "AI Assistants"
+      ],
+      "shared_jobs_with": [
+        "chatgpt",
+        "gemini"
+      ],
+      "alternatives": [
+        "chatgpt",
+        "gemini",
+        "notion",
+        "descript",
+        "chatgpt",
+        "gemini"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "clickup",
+      "primary_jobs": [
+        "Productivity"
+      ],
+      "shared_jobs_with": [
+        "notion",
+        "otter",
+        "fireflies",
+        "asana",
+        "monday",
+        "todoist"
+      ],
+      "alternatives": [
+        "fireflies",
+        "notion",
+        "descript",
+        "otter",
+        "fireflies",
+        "notion",
+        "otter"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "copyai",
+      "primary_jobs": [
+        "Marketing"
+      ],
+      "shared_jobs_with": [
+        "jasper"
+      ],
+      "alternatives": [
+        "jasper",
+        "notion",
+        "grammarly",
+        "descript",
+        "jasper"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "descript",
+      "primary_jobs": [
+        "Voice & Video"
+      ],
+      "shared_jobs_with": [
+        "elevenlabs",
+        "runway",
+        "synthesia",
+        "invideo",
+        "kapwing"
+      ],
+      "alternatives": [
+        "chatgpt",
+        "asana",
+        "canva",
+        "fireflies",
+        "todoist",
+        "leonardo",
+        "removebg",
+        "hostinger",
+        "monday",
+        "screamingfrog",
+        "jasper",
+        "elevenlabs",
+        "runway",
+        "synthesia",
+        "gemini",
+        "framer",
+        "systeme",
+        "notebooklm",
+        "prowritingaid",
+        "claude",
+        "beehiiv",
+        "semrush",
+        "kapwing",
+        "clickup",
+        "hubspot",
+        "invideo",
+        "writesonic",
+        "synthesia",
+        "copyai",
+        "notion",
+        "runway",
+        "ifttt",
+        "midjourney",
+        "hemingway",
+        "elevenlabs",
+        "quillbot",
+        "brevo",
+        "mailchimp",
+        "webflow",
+        "squarespace",
+        "perplexity",
+        "make",
+        "mozpro",
+        "n8n",
+        "otter",
+        "ahrefs",
+        "surferseo",
+        "figma",
+        "grammarly",
+        "adobeexpress",
+        "zapier",
+        "kit"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "elevenlabs",
+      "primary_jobs": [
+        "Voice & Video"
+      ],
+      "shared_jobs_with": [
+        "descript",
+        "runway",
+        "synthesia",
+        "invideo",
+        "kapwing"
+      ],
+      "alternatives": [
+        "hostinger",
+        "descript",
+        "invideo",
+        "synthesia",
+        "runway",
+        "descript",
+        "runway",
+        "synthesia"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "figma",
+      "primary_jobs": [
+        "Design"
+      ],
+      "shared_jobs_with": [
+        "canva",
+        "adobeexpress",
+        "removebg"
+      ],
+      "alternatives": [
+        "canva",
+        "removebg",
+        "kapwing",
+        "descript",
+        "canva",
+        "kit",
+        "adobeexpress",
+        "removebg",
+        "adobeexpress"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "fireflies",
+      "primary_jobs": [
+        "Productivity"
+      ],
+      "shared_jobs_with": [
+        "notion",
+        "otter",
+        "clickup",
+        "asana",
+        "monday",
+        "todoist"
+      ],
+      "alternatives": [
+        "asana",
+        "notion",
+        "descript",
+        "otter",
+        "clickup",
+        "todoist",
+        "monday",
+        "clickup",
+        "notion",
+        "otter"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "framer",
+      "primary_jobs": [
+        "Website Builder"
+      ],
+      "shared_jobs_with": [
+        "webflow",
+        "squarespace"
+      ],
+      "alternatives": [
+        "notion",
+        "descript",
+        "webflow",
+        "squarespace",
+        "webflow",
+        "squarespace"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "gemini",
+      "primary_jobs": [
+        "AI Assistants"
+      ],
+      "shared_jobs_with": [
+        "chatgpt",
+        "claude"
+      ],
+      "alternatives": [
+        "chatgpt",
+        "notion",
+        "descript",
+        "chatgpt",
+        "claude",
+        "claude"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "grammarly",
+      "primary_jobs": [
+        "Writing"
+      ],
+      "shared_jobs_with": [
+        "quillbot",
+        "prowritingaid",
+        "hemingway",
+        "writesonic"
+      ],
+      "alternatives": [
+        "leonardo",
+        "hostinger",
+        "jasper",
+        "systeme",
+        "notebooklm",
+        "prowritingaid",
+        "hubspot",
+        "writesonic",
+        "copyai",
+        "midjourney",
+        "hemingway",
+        "quillbot",
+        "perplexity",
+        "descript",
+        "quillbot",
+        "prowritingaid",
+        "hemingway"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "hemingway",
+      "primary_jobs": [
+        "Writing"
+      ],
+      "shared_jobs_with": [
+        "grammarly",
+        "quillbot",
+        "prowritingaid",
+        "writesonic"
+      ],
+      "alternatives": [
+        "prowritingaid",
+        "grammarly",
+        "descript",
+        "quillbot",
+        "prowritingaid",
+        "quillbot",
+        "grammarly"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "hostinger",
+      "primary_jobs": [
+        "Hosting",
+        "Hosting and building websites or small online stores."
+      ],
+      "shared_jobs_with": [],
+      "alternatives": [
+        "notion",
+        "grammarly",
+        "elevenlabs",
+        "descript"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": true,
+      "overlap_status": "overlap-ready",
+      "budget_status": "budget-ready"
+    },
+    {
+      "tool_id": "hubspot",
+      "primary_jobs": [
+        "Sales"
+      ],
+      "shared_jobs_with": [
+        "systeme"
+      ],
+      "alternatives": [
+        "systeme",
+        "notion",
+        "grammarly",
+        "descript",
+        "systeme"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "ifttt",
+      "primary_jobs": [
+        "Automation"
+      ],
+      "shared_jobs_with": [
+        "zapier",
+        "make",
+        "n8n"
+      ],
+      "alternatives": [
+        "descript",
+        "canva",
+        "zapier",
+        "make",
+        "n8n",
+        "make",
+        "n8n",
+        "zapier"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "invideo",
+      "primary_jobs": [
+        "Voice & Video"
+      ],
+      "shared_jobs_with": [
+        "elevenlabs",
+        "descript",
+        "runway",
+        "synthesia",
+        "kapwing"
+      ],
+      "alternatives": [
+        "elevenlabs",
+        "descript",
+        "runway"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "jasper",
+      "primary_jobs": [
+        "Marketing"
+      ],
+      "shared_jobs_with": [
+        "copyai"
+      ],
+      "alternatives": [
+        "notion",
+        "grammarly",
+        "descript",
+        "copyai",
+        "copyai"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "kapwing",
+      "primary_jobs": [
+        "Voice & Video"
+      ],
+      "shared_jobs_with": [
+        "elevenlabs",
+        "descript",
+        "runway",
+        "synthesia",
+        "invideo"
+      ],
+      "alternatives": [
+        "descript",
+        "canva",
+        "kit",
+        "figma",
+        "runway"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "kit",
+      "primary_jobs": [
+        "Email Marketing"
+      ],
+      "shared_jobs_with": [
+        "beehiiv",
+        "mailchimp",
+        "brevo"
+      ],
+      "alternatives": [
+        "removebg",
+        "beehiiv",
+        "kapwing",
+        "brevo",
+        "mailchimp",
+        "figma",
+        "adobeexpress",
+        "descript",
+        "beehiiv",
+        "mailchimp",
+        "brevo"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "leonardo",
+      "primary_jobs": [
+        "Image Generation"
+      ],
+      "shared_jobs_with": [
+        "midjourney"
+      ],
+      "alternatives": [
+        "notion",
+        "grammarly",
+        "descript",
+        "midjourney",
+        "midjourney"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "mailchimp",
+      "primary_jobs": [
+        "Email Marketing"
+      ],
+      "shared_jobs_with": [
+        "beehiiv",
+        "kit",
+        "brevo"
+      ],
+      "alternatives": [
+        "beehiiv",
+        "brevo",
+        "descript",
+        "beehiiv",
+        "kit",
+        "brevo",
+        "kit"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "make",
+      "primary_jobs": [
+        "Automation"
+      ],
+      "shared_jobs_with": [
+        "zapier",
+        "n8n",
+        "ifttt"
+      ],
+      "alternatives": [
+        "ifttt",
+        "descript",
+        "zapier",
+        "n8n",
+        "ifttt",
+        "mozpro",
+        "n8n",
+        "ahrefs",
+        "zapier"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "midjourney",
+      "primary_jobs": [
+        "Image Generation"
+      ],
+      "shared_jobs_with": [
+        "leonardo"
+      ],
+      "alternatives": [
+        "leonardo",
+        "notion",
+        "grammarly",
+        "descript",
+        "leonardo"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "monday",
+      "primary_jobs": [
+        "Productivity"
+      ],
+      "shared_jobs_with": [
+        "notion",
+        "otter",
+        "fireflies",
+        "clickup",
+        "asana",
+        "todoist"
+      ],
+      "alternatives": [
+        "notion",
+        "descript",
+        "otter",
+        "fireflies"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "mozpro",
+      "primary_jobs": [
+        "SEO",
+        "Monitoring and improving websites with a focused SEO workflow."
+      ],
+      "shared_jobs_with": [
+        "semrush",
+        "ahrefs",
+        "surferseo",
+        "screamingfrog"
+      ],
+      "alternatives": [
+        "screamingfrog",
+        "semrush",
+        "descript",
+        "semrush",
+        "ahrefs",
+        "surferseo",
+        "screamingfrog",
+        "make",
+        "ahrefs",
+        "surferseo"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "n8n",
+      "primary_jobs": [
+        "Automation"
+      ],
+      "shared_jobs_with": [
+        "zapier",
+        "make",
+        "ifttt"
+      ],
+      "alternatives": [
+        "ifttt",
+        "make",
+        "descript",
+        "zapier",
+        "make",
+        "ifttt",
+        "zapier"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "notebooklm",
+      "primary_jobs": [
+        "Research"
+      ],
+      "shared_jobs_with": [
+        "perplexity"
+      ],
+      "alternatives": [
+        "notion",
+        "grammarly",
+        "descript",
+        "perplexity",
+        "perplexity"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "notion",
+      "primary_jobs": [
+        "Productivity"
+      ],
+      "shared_jobs_with": [
+        "otter",
+        "fireflies",
+        "clickup",
+        "asana",
+        "monday",
+        "todoist"
+      ],
+      "alternatives": [
+        "chatgpt",
+        "asana",
+        "fireflies",
+        "todoist",
+        "leonardo",
+        "hostinger",
+        "monday",
+        "jasper",
+        "gemini",
+        "framer",
+        "systeme",
+        "notebooklm",
+        "claude",
+        "clickup",
+        "hubspot",
+        "copyai",
+        "descript",
+        "otter",
+        "fireflies",
+        "clickup",
+        "midjourney",
+        "webflow",
+        "squarespace",
+        "perplexity",
+        "otter"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "otter",
+      "primary_jobs": [
+        "Productivity"
+      ],
+      "shared_jobs_with": [
+        "notion",
+        "fireflies",
+        "clickup",
+        "asana",
+        "monday",
+        "todoist"
+      ],
+      "alternatives": [
+        "asana",
+        "fireflies",
+        "todoist",
+        "monday",
+        "clickup",
+        "notion",
+        "notion",
+        "descript",
+        "fireflies",
+        "clickup"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "perplexity",
+      "primary_jobs": [
+        "Research"
+      ],
+      "shared_jobs_with": [
+        "notebooklm"
+      ],
+      "alternatives": [
+        "notebooklm",
+        "notion",
+        "grammarly",
+        "descript",
+        "notebooklm"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "prowritingaid",
+      "primary_jobs": [
+        "Writing"
+      ],
+      "shared_jobs_with": [
+        "grammarly",
+        "quillbot",
+        "hemingway",
+        "writesonic"
+      ],
+      "alternatives": [
+        "grammarly",
+        "descript",
+        "quillbot",
+        "hemingway",
+        "writesonic",
+        "hemingway",
+        "quillbot",
+        "grammarly"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "quillbot",
+      "primary_jobs": [
+        "Writing"
+      ],
+      "shared_jobs_with": [
+        "grammarly",
+        "prowritingaid",
+        "hemingway",
+        "writesonic"
+      ],
+      "alternatives": [
+        "prowritingaid",
+        "writesonic",
+        "hemingway",
+        "grammarly",
+        "descript",
+        "prowritingaid",
+        "hemingway",
+        "grammarly"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "removebg",
+      "primary_jobs": [
+        "Design"
+      ],
+      "shared_jobs_with": [
+        "canva",
+        "figma",
+        "adobeexpress"
+      ],
+      "alternatives": [
+        "canva",
+        "descript",
+        "canva",
+        "kit",
+        "figma",
+        "adobeexpress",
+        "figma",
+        "adobeexpress"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "runway",
+      "primary_jobs": [
+        "Voice & Video"
+      ],
+      "shared_jobs_with": [
+        "elevenlabs",
+        "descript",
+        "synthesia",
+        "invideo",
+        "kapwing"
+      ],
+      "alternatives": [
+        "descript",
+        "kapwing",
+        "invideo",
+        "synthesia",
+        "elevenlabs",
+        "descript",
+        "synthesia",
+        "elevenlabs"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "screamingfrog",
+      "primary_jobs": [
+        "SEO",
+        "Technical website crawling and SEO issue detection."
+      ],
+      "shared_jobs_with": [
+        "semrush",
+        "ahrefs",
+        "mozpro",
+        "surferseo"
+      ],
+      "alternatives": [
+        "descript",
+        "semrush",
+        "ahrefs",
+        "mozpro",
+        "mozpro",
+        "ahrefs"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "semrush",
+      "primary_jobs": [
+        "SEO",
+        "Recurring SEO, competitor and AI-search research."
+      ],
+      "shared_jobs_with": [
+        "ahrefs",
+        "mozpro",
+        "surferseo",
+        "screamingfrog"
+      ],
+      "alternatives": [
+        "screamingfrog",
+        "descript",
+        "ahrefs",
+        "mozpro",
+        "surferseo",
+        "mozpro",
+        "ahrefs",
+        "surferseo"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": true,
+      "overlap_status": "overlap-ready",
+      "budget_status": "budget-ready"
+    },
+    {
+      "tool_id": "squarespace",
+      "primary_jobs": [
+        "Website Builder"
+      ],
+      "shared_jobs_with": [
+        "framer",
+        "webflow"
+      ],
+      "alternatives": [
+        "framer",
+        "webflow",
+        "notion",
+        "descript",
+        "framer",
+        "webflow"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "surferseo",
+      "primary_jobs": [
+        "SEO",
+        "On-page content optimization guided by live SERP data."
+      ],
+      "shared_jobs_with": [
+        "semrush",
+        "ahrefs",
+        "mozpro",
+        "screamingfrog"
+      ],
+      "alternatives": [
+        "semrush",
+        "mozpro",
+        "ahrefs",
+        "descript",
+        "semrush",
+        "ahrefs",
+        "mozpro"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "synthesia",
+      "primary_jobs": [
+        "Voice & Video"
+      ],
+      "shared_jobs_with": [
+        "elevenlabs",
+        "descript",
+        "runway",
+        "invideo",
+        "kapwing"
+      ],
+      "alternatives": [
+        "descript",
+        "elevenlabs",
+        "descript",
+        "runway",
+        "runway",
+        "elevenlabs"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "systeme",
+      "primary_jobs": [
+        "Sales"
+      ],
+      "shared_jobs_with": [
+        "hubspot"
+      ],
+      "alternatives": [
+        "notion",
+        "grammarly",
+        "descript",
+        "hubspot",
+        "hubspot"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "todoist",
+      "primary_jobs": [
+        "Productivity"
+      ],
+      "shared_jobs_with": [
+        "notion",
+        "otter",
+        "fireflies",
+        "clickup",
+        "asana",
+        "monday"
+      ],
+      "alternatives": [
+        "notion",
+        "descript",
+        "otter",
+        "fireflies"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "webflow",
+      "primary_jobs": [
+        "Website Builder"
+      ],
+      "shared_jobs_with": [
+        "framer",
+        "squarespace"
+      ],
+      "alternatives": [
+        "framer",
+        "notion",
+        "descript",
+        "framer",
+        "squarespace",
+        "squarespace"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "writesonic",
+      "primary_jobs": [
+        "Writing"
+      ],
+      "shared_jobs_with": [
+        "grammarly",
+        "quillbot",
+        "prowritingaid",
+        "hemingway"
+      ],
+      "alternatives": [
+        "grammarly",
+        "descript",
+        "quillbot",
+        "prowritingaid"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    },
+    {
+      "tool_id": "zapier",
+      "primary_jobs": [
+        "Automation"
+      ],
+      "shared_jobs_with": [
+        "make",
+        "n8n",
+        "ifttt"
+      ],
+      "alternatives": [
+        "ifttt",
+        "make",
+        "n8n",
+        "descript",
+        "canva",
+        "make",
+        "n8n",
+        "ifttt"
+      ],
+      "complementary_tools": [],
+      "has_verified_cost": false,
+      "overlap_status": "overlap-ready",
+      "budget_status": "partial"
+    }
+  ],
+  "summary": {
+    "overlap_distribution": {
+      "overlap-ready": 50
+    },
+    "budget_distribution": {
+      "partial": 48,
+      "budget-ready": 2
+    },
+    "total_overlap_pairs": 205,
+    "total_complementary_pairs": 0,
+    "tools_with_verified_cost": 2,
+    "stack_workflows": [
+      {
+        "id": "content-workflow",
+        "label": "Content workflow",
+        "preferred_categories": [
+          "Writing",
+          "Design",
+          "Voice & Video"
+        ],
+        "max_tools": 3
+      },
+      {
+        "id": "website-launch",
+        "label": "Website launch",
+        "preferred_categories": [
+          "Hosting",
+          "Website Builder",
+          "Developer Tools"
+        ],
+        "max_tools": 3
+      },
+      {
+        "id": "research-and-knowledge",
+        "label": "Research and knowledge",
+        "preferred_categories": [
+          "Research",
+          "AI Assistants",
+          "Productivity"
+        ],
+        "max_tools": 3
+      }
+    ]
+  }
+}

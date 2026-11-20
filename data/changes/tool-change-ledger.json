@@ -1,4 +1,35 @@
 {
   "schema_version": "tool-change-ledger-v1",
-  "events": []
+  "events": [
+    {
+      "event_id": "ev-disputed-semrush-current-plan-structure",
+      "tool_id": "semrush",
+      "event_type": "verification_correction",
+      "detected_at": "2026-11-20",
+      "effective_at": null,
+      "before": {
+        "claim_id": "semrush-current-plan-structure",
+        "claim_status": "verified"
+      },
+      "after": {
+        "claim_id": "semrush-current-plan-structure",
+        "claim_status": "disputed",
+        "disputed_by": "semrush-official-source-conflict"
+      },
+      "source_ids": [
+        "semrush-pricing"
+      ],
+      "confidence": "medium",
+      "status": "disputed",
+      "correction_note": "Official Semrush sources currently conflict on the Advanced AI-prompt quota: the live pricing page says unlimited prompts to track daily, while the Semrush Knowledge Base states 200 prompts daily. Do not present either figure as settled until Semrush reconciles the documentation.",
+      "affected_pages": [
+        "/tools/ahrefs.html",
+        "/tools/jasper.html",
+        "/tools/screamingfrog.html",
+        "/tools/semrush.html",
+        "/tools/surferseo.html"
+      ],
+      "note": "Claim semrush-current-plan-structure marked disputed by semrush-official-source-conflict"
+    }
+  ]
 }

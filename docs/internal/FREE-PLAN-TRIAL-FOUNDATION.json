@@ -1,0 +1,485 @@
+{
+  "schema_version": "free-plan-trial-foundation-v1",
+  "generated_at": "2026-11-20",
+  "description": "Structured free plan and trial classification for future Free Plan Finder, Trial Reality Checker, and Plan Limit Fit Checker. Only classified when evidence supports it.",
+  "supported_statuses": [
+    "permanent_free_plan",
+    "limited_free_account",
+    "free_trial",
+    "demo_only",
+    "paid_only",
+    "unknown",
+    "disputed",
+    "not_applicable"
+  ],
+  "total_tools": 50,
+  "tools": [
+    {
+      "tool_id": "adobeexpress",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "ahrefs",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "asana",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "beehiiv",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "brevo",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "canva",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "chatgpt",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "claude",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "clickup",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "copyai",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "descript",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "elevenlabs",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "figma",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "fireflies",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "framer",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "gemini",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "grammarly",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "hemingway",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "hostinger",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 6,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "hubspot",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "ifttt",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "invideo",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "jasper",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "kapwing",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "kit",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "leonardo",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "mailchimp",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "make",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "midjourney",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "monday",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "mozpro",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "free_trial",
+      "trial_reasons": [
+        "tools_v2_trial_status"
+      ],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "n8n",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "notebooklm",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "notion",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "otter",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "perplexity",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "prowritingaid",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "quillbot",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "removebg",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "runway",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "screamingfrog",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "semrush",
+      "free_plan_status": "limited_free_account",
+      "free_plan_reasons": [
+        "tools_v2_free_plan_status"
+      ],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 3,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "squarespace",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "surferseo",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "synthesia",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "systeme",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "todoist",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "webflow",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "writesonic",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    },
+    {
+      "tool_id": "zapier",
+      "free_plan_status": "unknown",
+      "free_plan_reasons": [],
+      "trial_status": "unknown",
+      "trial_reasons": [],
+      "evidence_claims_count": 0,
+      "has_disputes": false
+    }
+  ],
+  "summary": {
+    "free_plan_distribution": {
+      "unknown": 49,
+      "limited_free_account": 1
+    },
+    "trial_distribution": {
+      "unknown": 49,
+      "free_trial": 1
+    },
+    "tools_with_free_plan_evidence": 1,
+    "tools_with_trial_evidence": 1,
+    "tools_with_disputes": 0
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "trust-summary-v1",
+  "generated_at": "2026-11-20",
+  "trust_score": 81.8,
+  "claims": {
+    "total": 11,
+    "healthy": 9,
+    "stale": 1,
+    "disputed": 1,
+    "stale_claims": [
+      {
+        "claim_id": "semrush-current-plan-structure",
+        "tool_id": "semrush",
+        "status": "disputed",
+        "reason": "status is 'disputed'",
+        "stale_after": "2026-12-18"
+      }
+    ],
+    "disputed_claims": [
+      {
+        "claim_id": "semrush-current-plan-structure",
+        "tool_id": "semrush",
+        "disputed_by": "semrush-official-source-conflict",
+        "note": ""
+      }
+    ]
+  },
+  "changes": {
+    "total_events": 1,
+    "by_type": {
+      "verification_correction": 1
+    },
+    "by_tool": {
+      "semrush": 1
+    },
+    "recent_30_days": 1,
+    "recent_events": [
+      {
+        "event_id": "ev-disputed-semrush-current-plan-structure",
+        "tool_id": "semrush",
+        "type": "verification_correction",
+        "detected_at": "2026-11-20",
+        "days_ago": 0
+      }
+    ]
+  },
+  "corrections_page": {
+    "exists": true,
+    "has_workflow": true,
+    "has_evidence_standards": true,
+    "has_submission_info": true
+  },
+  "tools_with_issues": {
+    "stale_claims": [
+      "semrush"
+    ],
+    "disputed_claims": [
+      "semrush"
+    ],
+    "recent_changes": [
+      "semrush"
+    ]
+  },
+  "sources": {
+    "total": 7
+  },
+  "readiness": {
+    "corrections_page_exists": true,
+    "corrections_page_complete": true,
+    "change_ledger_active": true,
+    "evidence_ledger_active": true
+  }
+}

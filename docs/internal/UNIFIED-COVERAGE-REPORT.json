@@ -1,0 +1,278 @@
+{
+  "schema_version": "unified-coverage-report-v1",
+  "generated_at": "2026-11-20",
+  "description": "Unified coverage report combining all data foundations. All totals reconcile with source records.",
+  "total_tools_in_catalog": 50,
+  "total_pages_evaluated": 198,
+  "assertions": [
+    {
+      "check": "no_duplicate_evidence_gap_ids",
+      "pass": true,
+      "detail": "50 tools, 50 unique"
+    },
+    {
+      "check": "no_duplicate_freshness_ids",
+      "pass": true,
+      "detail": "198 pages, 198 unique"
+    },
+    {
+      "check": "commercial_data_matches_catalog",
+      "pass": true,
+      "detail": "50 tools vs 50 in catalog"
+    },
+    {
+      "check": "no_duplicate_commercial_ids",
+      "pass": true,
+      "detail": "50 tools, 50 unique"
+    },
+    {
+      "check": "free_trial_matches_catalog",
+      "pass": true,
+      "detail": "50 tools vs 50 in catalog"
+    },
+    {
+      "check": "decision_engine_matches_catalog",
+      "pass": true,
+      "detail": "50 tools vs 50 in catalog"
+    },
+    {
+      "check": "stack_overlap_matches_catalog",
+      "pass": true,
+      "detail": "50 tools vs 50 in catalog"
+    },
+    {
+      "check": "grade_sum_tool_review",
+      "pass": true,
+      "detail": "tool_review: 50 pages, grade sum = 50"
+    },
+    {
+      "check": "grade_sum_compare",
+      "pass": true,
+      "detail": "compare: 63 pages, grade sum = 63"
+    },
+    {
+      "check": "grade_sum_best",
+      "pass": true,
+      "detail": "best: 21 pages, grade sum = 21"
+    },
+    {
+      "check": "grade_sum_category",
+      "pass": true,
+      "detail": "category: 14 pages, grade sum = 14"
+    },
+    {
+      "check": "grade_sum_alternatives",
+      "pass": true,
+      "detail": "alternatives: 50 pages, grade sum = 50"
+    }
+  ],
+  "assertions_passed": 12,
+  "assertions_failed": 0,
+  "coverage": {
+    "evidence_gaps": {
+      "tools_analyzed": 50,
+      "summary": {
+        "total_tools_with_gaps": 50,
+        "tools_with_tools_v2": 2,
+        "tools_with_evidence_ledger": 2,
+        "tools_with_comparison_pages": 50,
+        "tools_with_alternatives_pages": 50,
+        "gap_counts": {
+          "missing_official_source_coverage": 11,
+          "missing_verified_pricing_evidence": 40,
+          "missing_plan_limit_evidence": 19,
+          "missing_free_plan_evidence": 39,
+          "missing_trial_evidence": 48,
+          "missing_limitation_evidence": 14,
+          "missing_meaningful_competitor_differentiation": 0,
+          "missing_hands_on_evidence": 50
+        },
+        "confidence_distribution": {
+          "minimal": 7,
+          "low": 40,
+          "moderate": 3
+        }
+      }
+    },
+    "freshness": {
+      "pages_analyzed": 198,
+      "summary": {
+        "total_pages": 198,
+        "by_type": {
+          "tool_review": 50,
+          "compare": 63,
+          "alternatives": 50,
+          "best": 21,
+          "category": 14
+        },
+        "editorial_review_distribution": {
+          "current": 163,
+          "missing_evidence": 35
+        },
+        "commercial_facts_distribution": {
+          "missing_evidence": 196,
+          "current": 2
+        },
+        "hands_on_tested_distribution": {
+          "not_applicable": 198
+        },
+        "overall_freshness_distribution": {
+          "missing_evidence": 196,
+          "current": 2
+        },
+        "pages_with_tools_v2": 2,
+        "pages_with_evidence_ledger": 2,
+        "pages_with_review_data": 0,
+        "pages_with_html_date": 163
+      }
+    },
+    "commercial": {
+      "tools_analyzed": 50,
+      "verified_count": 3,
+      "unknown_count": 47,
+      "disputed_count": 0,
+      "summary": {
+        "pricing_model_distribution": {
+          "unknown": 47,
+          "subscription": 2,
+          "freemium": 1
+        },
+        "confidence_distribution": {
+          "none": 47,
+          "high": 2,
+          "low": 1
+        },
+        "status_distribution": {
+          "unknown": 47,
+          "verified": 2,
+          "unverified": 1
+        },
+        "free_plan_distribution": {
+          "unknown": 49,
+          "limited_free_account": 1
+        },
+        "trial_distribution": {
+          "unknown": 49,
+          "free_trial": 1
+        },
+        "tools_with_verified_data": 3,
+        "tools_with_disputed_data": 0,
+        "tools_with_unknown_data": 47
+      }
+    },
+    "free_plan_trial": {
+      "tools_analyzed": 50,
+      "free_plan_evidence": 1,
+      "trial_evidence": 1,
+      "summary": {
+        "free_plan_distribution": {
+          "unknown": 49,
+          "limited_free_account": 1
+        },
+        "trial_distribution": {
+          "unknown": 49,
+          "free_trial": 1
+        },
+        "tools_with_free_plan_evidence": 1,
+        "tools_with_trial_evidence": 1,
+        "tools_with_disputes": 0
+      }
+    },
+    "decision_engine": {
+      "tools_analyzed": 50,
+      "ready": 6,
+      "partially_ready": 44,
+      "blocked": 0,
+      "summary": {
+        "status_distribution": {
+          "partially_ready": 44,
+          "ready": 6
+        },
+        "ready_count": 6,
+        "partially_ready_count": 44,
+        "blocked_count": 0,
+        "avg_attributes_present": 5.34
+      }
+    },
+    "stack_overlap": {
+      "tools_analyzed": 50,
+      "overlap_ready": 50,
+      "overlap_partial": 0,
+      "overlap_blocked": 0,
+      "budget_ready": 2,
+      "budget_partial": 48,
+      "budget_blocked": 0,
+      "summary": {
+        "overlap_distribution": {
+          "overlap-ready": 50
+        },
+        "budget_distribution": {
+          "partial": 48,
+          "budget-ready": 2
+        },
+        "total_overlap_pairs": 205,
+        "total_complementary_pairs": 0,
+        "tools_with_verified_cost": 2,
+        "stack_workflows": [
+          {
+            "id": "content-workflow",
+            "label": "Content workflow",
+            "preferred_categories": [
+              "Writing",
+              "Design",
+              "Voice & Video"
+            ],
+            "max_tools": 3
+          },
+          {
+            "id": "website-launch",
+            "label": "Website launch",
+            "preferred_categories": [
+              "Hosting",
+              "Website Builder",
+              "Developer Tools"
+            ],
+            "max_tools": 3
+          },
+          {
+            "id": "research-and-knowledge",
+            "label": "Research and knowledge",
+            "preferred_categories": [
+              "Research",
+              "AI Assistants",
+              "Productivity"
+            ],
+            "max_tools": 3
+          }
+        ]
+      }
+    },
+    "workflows": {
+      "workflows_created": 9,
+      "summary": {
+        "confidence_distribution": {
+          "high": 7,
+          "medium": 2
+        },
+        "gap_distribution": {},
+        "total_candidate_tools": 53,
+        "total_comparisons": 64,
+        "total_alternatives": 53
+      }
+    },
+    "category": {
+      "total_categories": 14,
+      "grade_a": 14,
+      "grade_b": 0,
+      "grade_c": 0
+    }
+  },
+  "quality_distribution": {
+    "tool_review:B": 29,
+    "tool_review:A": 21,
+    "compare:A": 63,
+    "alternatives:A": 50,
+    "best:A": 21,
+    "category:A": 14
+  }
+}

@@ -1,0 +1,409 @@
+{
+  "schema_version": "stale-commercial-facts-v1",
+  "generated_at": "2026-11-20",
+  "reference_date": "2026-11-20",
+  "description": "Deterministic report of stale, approaching-stale, and missing commercial facts. No fabricated data.",
+  "summary": {
+    "stale_or_disputed_claims": 1,
+    "approaching_stale_claims": 0,
+    "tools_missing_commercial_evidence": 47,
+    "pages_with_stale_commercial_facts": 0
+  },
+  "stale_or_disputed_claims": [
+    {
+      "claim_id": "semrush-current-plan-structure",
+      "tool_id": "semrush",
+      "claim_type": "pricing",
+      "field_path": "factual_profile.pricing_status",
+      "verified_at": "2026-11-18",
+      "stale_after": "2026-12-18",
+      "days_until_stale": 28,
+      "status": "disputed",
+      "source_ids": [
+        "semrush-pricing"
+      ],
+      "evidence_note": "Official Semrush sources currently conflict on the Advanced AI-prompt quota: the live pricing page says unlimited prompts to track daily, while the Semrush Knowledge Base states 200 prompts daily. Do not present either figure as settled until Semrush reconciles the documentation.",
+      "dispute_reason": "semrush-official-source-conflict"
+    }
+  ],
+  "approaching_stale_claims": [],
+  "tools_missing_commercial_evidence": [
+    {
+      "tool_id": "adobeexpress",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "ahrefs",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "asana",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "beehiiv",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "brevo",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "canva",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "chatgpt",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "claude",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "clickup",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "copyai",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "descript",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "elevenlabs",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "figma",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "fireflies",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "framer",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "gemini",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "grammarly",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "hemingway",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "hubspot",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "ifttt",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "invideo",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "jasper",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "kapwing",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "kit",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "leonardo",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "mailchimp",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "make",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "midjourney",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "monday",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "n8n",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "notebooklm",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "notion",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "otter",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "perplexity",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "prowritingaid",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "quillbot",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "removebg",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "runway",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "screamingfrog",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "squarespace",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "surferseo",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "synthesia",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "systeme",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "todoist",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "webflow",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "writesonic",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    },
+    {
+      "tool_id": "zapier",
+      "pricing_model": "unknown",
+      "free_plan_status": "unknown",
+      "trial_status": "unknown",
+      "confidence": "none",
+      "status": "unknown"
+    }
+  ],
+  "pages_with_stale_commercial_facts": []
+}

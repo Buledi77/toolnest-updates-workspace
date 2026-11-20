@@ -91,7 +91,7 @@ ul{list-style:none;margin:0;padding:0}
 .blob{position:absolute;border-radius:50%;filter:blur(80px)}
 .b1{width:560px;height:560px;left:-160px;top:-180px;background:#0E8C77;opacity:.6;animation:drift 20s ease-in-out infinite}
 .b2{width:480px;height:480px;right:-140px;top:140px;background:#E2512F;opacity:.26;animation:drift 26s ease-in-out infinite reverse}
-.b3{width:420px;height:420px;left:38%;bottom:-220px;background:#1D6FD1;opacity:.22;animation:drift 24s ease-in-out -8s infinite}
+.b3{width:420px;height:420px;left:38%;bottom:-220px;background:#2ED3B7;opacity:.18;animation:drift 24s ease-in-out -8s infinite}
 .gridlines{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);background-size:60px 60px;-webkit-mask-image:radial-gradient(75% 65% at 50% 32%,#000,transparent);mask-image:radial-gradient(75% 65% at 50% 32%,#000,transparent)}
 .spot{position:absolute;inset:0;background:radial-gradient(460px circle at var(--sx,68%) var(--sy,28%),rgba(95,227,203,.17),transparent 65%)}
 .grain{position:absolute;inset:0;opacity:.09;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
@@ -2211,7 +2211,7 @@ section{scroll-margin-top:82px}
 #tools .card .tile{position:relative!important;display:grid!important;place-items:center!important;width:38px!important;height:38px!important;min-width:38px!important;padding:5px!important;border:1px solid var(--line)!important;border-radius:11px!important;background:#fff!important;overflow:hidden!important;box-shadow:none!important}
 #tools .card .tile img{position:relative!important;z-index:2!important;display:block!important;width:100%!important;height:100%!important;object-fit:contain!important;border-radius:6px!important}
 #tools .card .logo-fallback{position:absolute!important;inset:0!important;display:grid!important;place-items:center!important;font-weight:800!important;color:var(--brand)!important;background:var(--soft)!important}
-#tools .card .c-top h3{display:block!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important;font-size:14px!important;line-height:1.12!important;min-height:0!important;margin:0!important;overflow-wrap:anywhere!important}
+#tools .card .c-top h3{display:block!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important;font-size:14px!important;line-height:1.12!important;min-height:0!important;margin:0!important;word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
 #tools .card .cat{display:block!important;margin-top:3px!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important;font-size:10.5px!important;line-height:1.15!important}
 #tools .card .badge{position:static!important;margin:0!important;align-self:start!important;white-space:nowrap!important;font-size:8.5px!important;padding:4px 6px!important}
 #tools .card .wm{display:none!important}
@@ -2250,3 +2250,46 @@ section{scroll-margin-top:82px}
   .card .c-act .btn,.c-act .btn,.rk-act .btn{min-height:44px;display:inline-flex;align-items:center}
   .card .c-act .rlink{min-height:44px;display:inline-flex;align-items:center}
 }
+
+/* Mobile reviewer-card stability */
+@media (max-width:760px){
+  .reviewer{
+    grid-template-columns:1fr;
+    align-items:start;
+    gap:10px;
+  }
+  .reviewer > *{
+    min-width:0;
+    max-width:100%;
+  }
+  .reviewer b,
+  .reviewer small{
+    overflow-wrap:break-word;
+    word-break:normal;
+  }
+  .reviewer .rlink{
+    grid-column:1;
+    width:100%;
+    margin-left:0;
+  }
+}
+.tn-trust-strip{margin-top:18px}
+.tn-research-line{display:flex;flex-wrap:wrap;align-items:center;gap:7px 10px;margin:0;padding:12px 16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--muted);font-size:13.5px;line-height:1.45}
+.tn-research-line:first-letter{color:var(--text)}
+.tn-research-line a{color:var(--brand);font-weight:700;text-decoration:none}
+.tn-research-line a:hover{text-decoration:underline}
+@media(max-width:760px){.tn-research-line{padding:11px 13px;border-radius:12px;font-size:13px}}
+.tn-trust-links{display:flex;flex-wrap:wrap;gap:8px 16px;margin:10px 0 0;font-size:13px}
+.tn-trust-links a{color:var(--brand);font-weight:650;text-decoration:none}
+.tn-trust-links a:hover{text-decoration:underline}
+@media(max-width:760px){.tn-trust-links{gap:7px 12px;font-size:12.5px}}
+
+/* Site-wide commercial CTA: professional deep-teal for external product links.
+   Applies to review-page hero CTAs, mid-article CTAs, side CTAs, bottom final CTAs,
+   and floating dock CTAs. Does NOT affect navigation CTAs like "Find my tool". */
+.phero .s-cta .btn,.phero .s-cta .btn.big,.p-cta .btn,.p-cta .pc-a .btn,.p-side-cta .btn,.proof-stack .btn,.final .btn,.final .btn.big,.dock .btn{--cta:#087a6a;--cta-ink:#fff;background:#087a6a;color:#fff!important;box-shadow:0 8px 20px rgba(8,122,106,.18);border:1px solid #087a6a}
+.phero .s-cta .btn:hover,.phero .s-cta .btn.big:hover,.p-cta .btn:hover,.p-cta .pc-a .btn:hover,.p-side-cta .btn:hover,.proof-stack .btn:hover,.final .btn:hover,.final .btn.big:hover,.dock .btn:hover{background:#06685b;border-color:#06685b;box-shadow:0 10px 24px rgba(8,122,106,.24)}
+.phero .s-cta .btn:focus-visible,.phero .s-cta .btn.big:focus-visible,.p-cta .btn:focus-visible,.p-cta .pc-a .btn:focus-visible,.p-side-cta .btn:focus-visible,.proof-stack .btn:focus-visible,.final .btn:focus-visible,.final .btn.big:focus-visible,.dock .btn:focus-visible{outline:3px solid rgba(8,122,106,.28);outline-offset:3px}
+.phero .s-cta .btn:active,.phero .s-cta .btn.big:active,.p-cta .btn:active,.p-cta .pc-a .btn:active,.p-side-cta .btn:active,.proof-stack .btn:active,.final .btn:active,.final .btn.big:active,.dock .btn:active{transform:scale(.97)!important;box-shadow:0 5px 14px rgba(8,122,106,.18)}
+/* Keep the shimmer effect neutral on deep-teal buttons */
+.phero .s-cta .btn::after,.phero .s-cta .btn.big::after,.p-cta .btn::after,.p-cta .pc-a .btn::after,.p-side-cta .btn::after,.proof-stack .btn::after,.final .btn::after,.final .btn.big::after,.dock .btn::after{background:linear-gradient(105deg,transparent 38%,rgba(255,255,255,.35) 50%,transparent 62%)}

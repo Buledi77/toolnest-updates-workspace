@@ -326,7 +326,7 @@
             "price": "custom",
             "websites": "40+",
             "daily_tracked_keywords": "5000+",
-            "daily_ai_prompts": "unlimited"
+            "daily_ai_prompts": "official sources conflict: pricing page says unlimited; Knowledge Base says 200"
           }
         ]
       },
@@ -337,12 +337,12 @@
       "currency": "USD",
       "billing_term": "monthly and annual billing options displayed",
       "supporting_excerpt": "Current Semrush pricing page displayed Free, SEO, Starter, Pro+ and Advanced structures with the listed quotas.",
-      "evidence_note": "Taxes, regional prices, promotions and plan changes can alter checkout terms.",
-      "accessed_at": "2026-11-14",
-      "verified_at": "2026-11-14",
-      "stale_after": "2026-12-14",
-      "status": "verified",
-      "disputed_by": null,
+      "evidence_note": "Official Semrush sources currently conflict on the Advanced AI-prompt quota: the live pricing page says unlimited prompts to track daily, while the Semrush Knowledge Base states 200 prompts daily. Do not present either figure as settled until Semrush reconciles the documentation.",
+      "accessed_at": "2026-11-18",
+      "verified_at": "2026-11-18",
+      "stale_after": "2026-12-18",
+      "status": "disputed",
+      "disputed_by": "semrush-official-source-conflict",
       "replacement_claim_id": null
     },
     {
@@ -442,8 +442,7 @@
             "tracked_keywords": 3000,
             "pages_crawled_monthly": 5000000
           }
-        ],
-        "starter_monthly_usd": 49
+        ]
       },
       "source_ids": [
         "moz-pro-pricing"
@@ -453,9 +452,9 @@
       "billing_term": "monthly and yearly billing options displayed",
       "supporting_excerpt": "Moz Pro pricing page displayed Standard, Medium, Large and a starter option with the listed quotas.",
       "evidence_note": "Plan names, prices, quotas and add-ons require rechecking before publication.",
-      "accessed_at": "2026-11-14",
-      "verified_at": "2026-11-14",
-      "stale_after": "2026-12-14",
+      "accessed_at": "2026-11-18",
+      "verified_at": "2026-11-18",
+      "stale_after": "2026-12-18",
       "status": "verified",
       "disputed_by": null,
       "replacement_claim_id": null
