@@ -11,3 +11,27 @@ data/*
 !data/tools-v1.json
 
 chrome
+
+# Required build-time data exceptions
+!data/index-allowlist.json
+!data/pricing-seed.json
+
+# Local backups and audit archives
+backups/
+*.zip
+
+# Local IDE, caches and temporary files
+.idea/
+.pytest_cache/
+__pycache__/
+*.pyc
+node_modules/
+.junie/
+=
+
+# Temporary/non-production utilities
+generate_massive_tools.py
+check-grammarly.js
+check_logos.js
+check_review_logos.js
+screenshot_logos.js

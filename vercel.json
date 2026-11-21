@@ -1,6 +1,17 @@
 {
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "toolnestai.tech"
+        }
+      ],
+      "destination": "https://www.toolnestai.tech/$1",
+      "permanent": true
+    },
+    {
       "source": "/compare/semrush-vs-ahrefs.html",
       "destination": "https://www.toolnestai.tech/compare/ahrefs-vs-semrush.html",
       "permanent": true
@@ -1912,5 +1923,7 @@
         }
       ]
     }
-  ]
+  ],
+  "buildCommand": "true",
+  "outputDirectory": "."
 }
