@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "spiky",
+    "name": "Spiky",
+    "slug": "spiky",
+    "official_url": "https://www.spiky.ai",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Sales"
+    ],
+    "use_cases": [
+      "sales engagement",
+      "conversation intelligence",
+      "call coaching"
+    ],
+    "audiences": [
+      "sales teams",
+      "sales managers",
+      "B2B companies"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "AI-powered conversation intelligence",
+      "Call recording and transcription",
+      "Sales coaching and insights"
+    ],
+    "not_recommended_for": [
+      "Entry price at $49/mo is above market median",
+      "Advanced features require higher tiers",
+      "No free plan"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/spiky.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "close",
+      "nutshell",
+      "pipedrive"
+    ],
+    "comparisons": [
+      "close"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.spiky.ai"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/spiky.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

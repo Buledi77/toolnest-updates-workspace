@@ -12,6 +12,7 @@
   "categories": [
     {"slug": "ai-assistants", "label": "AI Assistants"},
     {"slug": "automation", "label": "Automation"},
+    {"slug": "customer-support", "label": "Customer Support"},
     {"slug": "design", "label": "Design"},
     {"slug": "developer-tools", "label": "Developer Tools"},
     {"slug": "email-marketing", "label": "Email Marketing"},

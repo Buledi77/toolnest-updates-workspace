@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "intercom",
+    "name": "Intercom",
+    "slug": "intercom",
+    "official_url": "https://www.intercom.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Customer Support"
+    ],
+    "use_cases": [
+      "customer messaging",
+      "live chat",
+      "AI support"
+    ],
+    "audiences": [
+      "SaaS companies",
+      "eCommerce brands",
+      "customer support teams"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "AI-powered customer messaging",
+      "Live chat and help center",
+      "Strong for SaaS"
+    ],
+    "not_recommended_for": [
+      "Expensive for small teams",
+      "Complex setup",
+      "AI features require higher tiers"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/intercom.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "freshdesk",
+      "gorgias",
+      "helpscout"
+    ],
+    "comparisons": [
+      "freshdesk"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.intercom.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/intercom.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

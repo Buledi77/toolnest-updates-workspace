@@ -1,0 +1,47 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "beautifulai",
+    "name": "Beautiful.ai",
+    "slug": "beautifulai",
+    "official_url": "https://www.beautiful.ai",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Productivity"
+    ],
+    "use_cases": [],
+    "audiences": []
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [],
+    "not_recommended_for": [],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/beautifulai.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {},
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.beautiful.ai"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/beautifulai.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

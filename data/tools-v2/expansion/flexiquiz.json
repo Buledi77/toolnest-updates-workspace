@@ -1,0 +1,70 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "flexiquiz",
+    "name": "FlexiQuiz",
+    "slug": "flexiquiz",
+    "official_url": "https://www.flexiquiz.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Marketing"
+    ],
+    "use_cases": [
+      "interactive quiz creation",
+      "lead generation",
+      "user engagement"
+    ],
+    "audiences": [
+      "marketers",
+      "content creators",
+      "educators"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Easy quiz creation and embedding",
+      "Lead capture and analytics",
+      "Custom branding options"
+    ],
+    "not_recommended_for": [
+      "Advanced features require higher tiers",
+      "No free plan",
+      "Limited customization on lower tiers"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/flexiquiz.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "getresponse",
+      "manychat",
+      "adcreative"
+    ],
+    "comparisons": []
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.flexiquiz.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/flexiquiz.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

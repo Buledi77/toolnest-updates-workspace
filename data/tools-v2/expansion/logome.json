@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "logome",
+    "name": "Logome.ai",
+    "slug": "logome",
+    "official_url": "https://www.logome.ai",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Design"
+    ],
+    "use_cases": [
+      "AI logo design",
+      "brand kit generation",
+      "branding"
+    ],
+    "audiences": [
+      "startups",
+      "small businesses",
+      "entrepreneurs"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "AI-powered logo generation",
+      "Brand kit creation",
+      "No design experience needed"
+    ],
+    "not_recommended_for": [
+      "AI-generated logos may lack uniqueness",
+      "Limited fine-tuning control",
+      "Not a replacement for professional branding"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/logome.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "canva",
+      "canva",
+      "adobeexpress"
+    ],
+    "comparisons": [
+      "canva"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.logome.ai"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/logome.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

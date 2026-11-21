@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "xtiles",
+    "name": "xTiles",
+    "slug": "xtiles",
+    "official_url": "https://www.xtiles.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Design"
+    ],
+    "use_cases": [
+      "visual productivity",
+      "notes and tasks",
+      "project organization"
+    ],
+    "audiences": [
+      "visual thinkers",
+      "project managers",
+      "creative teams"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Visual drag-and-drop canvas",
+      "Flexible organization",
+      "Free plan available"
+    ],
+    "not_recommended_for": [
+      "Not a full project management tool",
+      "Limited for text-heavy workflows",
+      "Smaller ecosystem than Notion"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/xtiles.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "notion",
+      "clickup",
+      "asana"
+    ],
+    "comparisons": [
+      "notion"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.xtiles.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/xtiles.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

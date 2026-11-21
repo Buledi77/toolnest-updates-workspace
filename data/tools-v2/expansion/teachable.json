@@ -1,0 +1,73 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "teachable",
+    "name": "Teachable",
+    "slug": "teachable",
+    "official_url": "https://www.teachable.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Sales"
+    ],
+    "use_cases": [
+      "online course creation",
+      "course hosting",
+      "digital product sales"
+    ],
+    "audiences": [
+      "creators",
+      "coaches",
+      "educators",
+      "consultants"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Easy course creation and hosting",
+      "Unlimited students on all plans",
+      "Quizzes, certificates, and drip content"
+    ],
+    "not_recommended_for": [
+      "Transaction fees on top of plan price",
+      "Course limit on lower tiers",
+      "No free plan"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/teachable.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "circle",
+      "getresponse",
+      "systeme"
+    ],
+    "comparisons": [
+      "circle"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.teachable.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/teachable.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

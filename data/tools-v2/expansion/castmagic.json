@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "castmagic",
+    "name": "Castmagic",
+    "slug": "castmagic",
+    "official_url": "https://castmagic.ai",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Voice & Video"
+    ],
+    "use_cases": [
+      "media content workflow",
+      "podcast repurposing",
+      "video transcription"
+    ],
+    "audiences": [
+      "podcasters",
+      "content creators",
+      "marketers"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Transforms audio/video into blog posts and social content",
+      "AI-powered transcription",
+      "Multi-format export"
+    ],
+    "not_recommended_for": [
+      "Transcription accuracy varies by audio quality",
+      "Limited editing capabilities",
+      "Storage constraints on free tier"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/castmagic.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "otter",
+      "fireflies",
+      "descript"
+    ],
+    "comparisons": [
+      "descript"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://castmagic.ai"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/castmagic.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

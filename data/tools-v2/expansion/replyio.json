@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "replyio",
+    "name": "Reply.io",
+    "slug": "replyio",
+    "official_url": "https://www.reply.io",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Sales"
+    ],
+    "use_cases": [
+      "sales engagement",
+      "multi-channel outreach",
+      "sequencing"
+    ],
+    "audiences": [
+      "mid-market sales teams",
+      "SDRs",
+      "AEs"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Multi-channel outreach",
+      "Email, call, LinkedIn sequences",
+      "AI-powered personalization"
+    ],
+    "not_recommended_for": [
+      "Per-user pricing scales cost",
+      "Complex setup",
+      "Expensive for small teams"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/replyio.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "apollo",
+      "close",
+      "pipedrive"
+    ],
+    "comparisons": [
+      "apollo"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.reply.io"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/replyio.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

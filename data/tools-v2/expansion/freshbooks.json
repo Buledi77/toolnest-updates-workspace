@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "freshbooks",
+    "name": "FreshBooks",
+    "slug": "freshbooks",
+    "official_url": "https://www.freshbooks.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Productivity"
+    ],
+    "use_cases": [
+      "accounting",
+      "invoicing",
+      "expense tracking"
+    ],
+    "audiences": [
+      "freelancers",
+      "small businesses",
+      "agencies"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Intuitive accounting for SMB",
+      "Invoice and expense tracking",
+      "Time tracking included"
+    ],
+    "not_recommended_for": [
+      "Limited for complex accounting needs",
+      "Client limits on lower tiers",
+      "Not suitable for large enterprises"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/freshbooks.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "deel",
+      "shoeboxed",
+      "connecteam"
+    ],
+    "comparisons": [
+      "deel"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.freshbooks.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/freshbooks.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

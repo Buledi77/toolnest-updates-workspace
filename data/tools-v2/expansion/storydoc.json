@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "storydoc",
+    "name": "Storydoc",
+    "slug": "storydoc",
+    "official_url": "https://www.storydoc.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Writing"
+    ],
+    "use_cases": [
+      "interactive content",
+      "proposals",
+      "sales enablement"
+    ],
+    "audiences": [
+      "sales teams",
+      "agencies",
+      "B2B companies"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Interactive content and proposals",
+      "Engagement analytics",
+      "Clean design"
+    ],
+    "not_recommended_for": [
+      "Focused on interactive docs",
+      "Not a general writing tool",
+      "Limited for non-sales content"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/storydoc.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "pandadoc",
+      "notion",
+      "gamma"
+    ],
+    "comparisons": [
+      "pandadoc"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.storydoc.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/storydoc.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

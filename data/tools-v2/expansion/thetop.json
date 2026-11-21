@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "thetop",
+    "name": "TheTop",
+    "slug": "thetop",
+    "official_url": "https://www.thetop.ai",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "AI Assistants"
+    ],
+    "use_cases": [
+      "AI Chief of Staff",
+      "daily briefing",
+      "task prioritization"
+    ],
+    "audiences": [
+      "executives",
+      "founders",
+      "busy professionals"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Consolidates notifications into one daily brief",
+      "AI-powered prioritization",
+      "Clean interface"
+    ],
+    "not_recommended_for": [
+      "Relatively new product with limited track record",
+      "AI briefings may miss context",
+      "Limited customization on lower tiers"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/thetop.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "chatgpt",
+      "claude",
+      "gemini"
+    ],
+    "comparisons": [
+      "chatgpt"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.thetop.ai"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/thetop.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

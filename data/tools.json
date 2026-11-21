@@ -1,532 +1,35 @@
 {
   "source": "index.html TOOLS array (extracted read-only)",
-  "count": 50,
+  "count": 147,
   "tools": [
     {
-      "id": "notion",
-      "name": "Notion",
-      "cat": "Productivity",
-      "h": 260,
-      "site": "https://www.notion.com",
-      "badge": "Featured",
-      "featured": false,
-      "best": "Notes, tasks and client work in one place",
-      "pros": [
-        "One home for notes and to-dos",
-        "Templates to start fast",
-        "Good for solo work"
-      ],
-      "logo": "/assets/logos/notion.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "grammarly",
-      "name": "Grammarly",
-      "cat": "Writing",
-      "h": 150,
-      "site": "https://www.grammarly.com",
-      "badge": "Featured",
-      "featured": false,
-      "best": "Clear English in emails and proposals",
-      "pros": [
-        "Fixes mistakes as you type",
-        "Works in many apps",
-        "Helps with polite tone"
-      ],
-      "logo": "/assets/logos/grammarly.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "elevenlabs",
-      "name": "ElevenLabs",
-      "cat": "Voice & Video",
-      "h": 30,
-      "site": "https://elevenlabs.io",
-      "badge": "",
-      "featured": false,
-      "best": "Voiceovers for videos and courses",
-      "pros": [
-        "Very natural voices",
-        "Many languages",
-        "Narrate without recording"
-      ],
-      "logo": "/assets/logos/elevenlabs.png",
-      "affiliateUrl": "https://try.elevenlabs.io/4kkksh8cm36q"
-    },
-    {
-      "id": "descript",
-      "name": "Descript",
-      "cat": "Voice & Video",
-      "h": 330,
-      "site": "https://www.descript.com",
-      "badge": "",
-      "featured": false,
-      "best": "Editing video and podcasts like a document",
-      "pros": [
-        "Edit by editing the text",
-        "Automatic transcripts",
-        "Removes filler words fast"
-      ],
-      "logo": "/assets/logos/descript.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "jasper",
-      "name": "Jasper",
-      "cat": "Marketing",
-      "h": 20,
-      "site": "https://www.jasper.ai",
-      "badge": "",
-      "featured": false,
-      "best": "Ad copy and product page writing",
-      "pros": [
-        "Templates made for marketing",
-        "Keeps your brand voice",
-        "Good for teams"
-      ],
-      "logo": "/assets/logos/jasper.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "semrush",
-      "name": "Semrush",
-      "cat": "SEO",
-      "h": 170,
-      "site": "https://www.semrush.com",
-      "badge": "",
-      "featured": false,
-      "best": "Finding keywords and checking competitors",
-      "pros": [
-        "Deep keyword research",
-        "Shows what rivals rank for",
-        "Many SEO tools in one"
-      ],
-      "logo": "/assets/logos/semrush.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "systeme",
-      "name": "Systeme.io",
-      "cat": "Sales",
-      "h": 100,
-      "site": "https://systeme.io",
-      "badge": "",
-      "featured": false,
-      "best": "Sales pages, email lists and online courses",
-      "pros": [
-        "Pages, email and checkout together",
-        "Easy to start with",
-        "Can replace several separate subscriptions"
-      ],
-      "logo": "/assets/logos/systeme.png",
-      "affiliateUrl": "https://systeme.io/?sa=sa0283786247d8d254e08d2d01d25a1e2069805f78"
-    },
-    {
-      "id": "hostinger",
-      "name": "Hostinger",
-      "cat": "Hosting",
-      "h": 262,
-      "site": "https://www.hostinger.com",
-      "badge": "",
-      "featured": false,
-      "best": "Hosting and building a website or online store",
-      "pros": [
-        "Hosting, domain and site builder in one account",
-        "Beginner-friendly plans",
-        "Free SSL listed on its plans"
-      ],
-      "logo": "/assets/logos/hostinger.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "canva",
-      "name": "Canva",
-      "cat": "Design",
-      "h": 150,
-      "site": "https://www.canva.com",
-      "badge": "",
-      "featured": false,
-      "best": "Social graphics, presentations and simple brand designs",
-      "pros": [
-        "Large template library",
-        "Easy drag-and-drop editor",
-        "Useful for teams and brand kits"
-      ],
-      "logo": "/assets/logos/canva.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "framer",
-      "name": "Framer",
-      "cat": "Website Builder",
-      "h": 210,
-      "site": "https://www.framer.com",
-      "badge": "",
-      "featured": false,
-      "best": "Modern landing pages and design-led marketing websites",
-      "pros": [
-        "Visual responsive design",
-        "Fast publishing and hosting",
-        "Strong animation and interaction tools"
-      ],
-      "logo": "/assets/logos/framer.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "beehiiv",
-      "name": "beehiiv",
+      "id": "activecampaign",
+      "name": "ActiveCampaign",
       "cat": "Email Marketing",
-      "h": 45,
-      "site": "https://www.beehiiv.com",
-      "badge": "",
-      "featured": false,
-      "best": "Publishing and growing a monetized newsletter",
-      "pros": [
-        "Newsletter publishing tools",
-        "Audience growth features",
-        "Built-in monetization options"
-      ],
-      "logo": "/assets/logos/beehiiv.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "kit",
-      "name": "Kit",
-      "cat": "Email Marketing",
-      "h": 180,
-      "site": "https://kit.com",
-      "badge": "",
-      "featured": false,
-      "best": "Creator email lists, automations and digital product funnels",
-      "pros": [
-        "Creator-focused automations",
-        "Landing pages and forms",
-        "Tag-based subscriber organization"
-      ],
-      "logo": "/assets/logos/kit.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "zapier",
-      "name": "Zapier",
-      "cat": "Automation",
-      "h": 110,
-      "site": "https://zapier.com",
-      "badge": "",
-      "featured": false,
-      "best": "Connecting apps and automating repetitive workflows",
-      "pros": [
-        "Large app integration ecosystem",
-        "No-code workflow builder",
-        "Useful templates for common automations"
-      ],
-      "logo": "/assets/logos/zapier.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "chatgpt",
-      "name": "ChatGPT",
-      "cat": "AI Assistants",
       "h": 120,
-      "site": "https://chatgpt.com",
+      "site": "https://www.activecampaign.com",
       "badge": "",
       "featured": false,
-      "best": "General writing, brainstorming, analysis and everyday AI help",
-      "pros": [
-        "Flexible general assistant",
-        "Works across many task types",
-        "Supports iterative conversations"
-      ],
-      "logo": "/assets/logos/chatgpt.png",
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/activecampaign.png",
       "affiliateUrl": ""
     },
     {
-      "id": "claude",
-      "name": "Claude",
-      "cat": "AI Assistants",
-      "h": 120,
-      "site": "https://claude.ai",
-      "badge": "",
-      "featured": false,
-      "best": "Long-form analysis, writing and structured reasoning",
-      "pros": [
-        "Handles long documents",
-        "Clear structured responses",
-        "Useful for writing and coding"
-      ],
-      "logo": "/assets/logos/claude.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "gemini",
-      "name": "Gemini",
-      "cat": "AI Assistants",
-      "h": 120,
-      "site": "https://gemini.google.com",
-      "badge": "",
-      "featured": false,
-      "best": "AI help connected with Google products and multimodal work",
-      "pros": [
-        "Google ecosystem fit",
-        "Multimodal prompts",
-        "General research and drafting"
-      ],
-      "logo": "/assets/logos/gemini.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "perplexity",
-      "name": "Perplexity",
-      "cat": "Research",
-      "h": 120,
-      "site": "https://www.perplexity.ai",
-      "badge": "",
-      "featured": false,
-      "best": "Web research with visible source links",
-      "pros": [
-        "Source-led answers",
-        "Fast topic summaries",
-        "Useful follow-up questions"
-      ],
-      "logo": "/assets/logos/perplexity.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "notebooklm",
-      "name": "NotebookLM",
-      "cat": "Research",
-      "h": 120,
-      "site": "https://notebooklm.google.com",
-      "badge": "",
-      "featured": false,
-      "best": "Studying and asking questions across your own sources",
-      "pros": [
-        "Source-grounded notebooks",
-        "Document summaries",
-        "Research organization"
-      ],
-      "logo": "/assets/logos/notebooklm.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "quillbot",
-      "name": "QuillBot",
-      "cat": "Writing",
-      "h": 120,
-      "site": "https://quillbot.com",
-      "badge": "",
-      "featured": false,
-      "best": "Paraphrasing, rewriting and summarizing text",
-      "pros": [
-        "Multiple rewrite modes",
-        "Summarizer included",
-        "Browser-based workflow"
-      ],
-      "logo": "/assets/logos/quillbot.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "prowritingaid",
-      "name": "ProWritingAid",
-      "cat": "Writing",
-      "h": 120,
-      "site": "https://prowritingaid.com",
-      "badge": "",
-      "featured": false,
-      "best": "Detailed writing reports for long-form authors",
-      "pros": [
-        "Style reports",
-        "Grammar checking",
-        "Long-form writing focus"
-      ],
-      "logo": "/assets/logos/prowritingaid.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "hemingway",
-      "name": "Hemingway Editor",
-      "cat": "Writing",
-      "h": 120,
-      "site": "https://hemingwayapp.com",
-      "badge": "",
-      "featured": false,
-      "best": "Making sentences clearer and easier to read",
-      "pros": [
-        "Readability guidance",
-        "Highlights complex sentences",
-        "Simple editing workflow"
-      ],
-      "logo": "/assets/logos/hemingway.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "copyai",
-      "name": "Copy.ai",
+      "id": "adcreative",
+      "name": "AdCreative.ai",
       "cat": "Marketing",
       "h": 120,
-      "site": "https://www.copy.ai",
+      "site": "https://www.adcreative.ai",
       "badge": "",
       "featured": false,
-      "best": "Sales and marketing content workflows",
+      "best": "AI-generated ad creatives with proven templates",
       "pros": [
-        "Marketing templates",
-        "Workflow automation",
-        "Team-oriented content"
+        "AI-generated ad creatives with proven templates",
+        "Copywriting suggestions included",
+        "Fast generation of multiple ad variations"
       ],
-      "logo": "/assets/logos/copyai.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "writesonic",
-      "name": "Writesonic",
-      "cat": "Writing",
-      "h": 120,
-      "site": "https://writesonic.com",
-      "badge": "",
-      "featured": false,
-      "best": "Marketing articles, landing pages and campaign drafts",
-      "pros": [
-        "Content drafting",
-        "Marketing use cases",
-        "Built-in editing tools"
-      ],
-      "logo": "/assets/logos/writesonic.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "ahrefs",
-      "name": "Ahrefs",
-      "cat": "SEO",
-      "h": 120,
-      "site": "https://ahrefs.com",
-      "badge": "",
-      "featured": false,
-      "best": "Backlink research, keywords and competitor SEO analysis",
-      "pros": [
-        "Backlink data",
-        "Keyword research",
-        "Competitive analysis"
-      ],
-      "logo": "/assets/logos/ahrefs.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "mozpro",
-      "name": "Moz Pro",
-      "cat": "SEO",
-      "h": 120,
-      "site": "https://moz.com/products/pro",
-      "badge": "",
-      "featured": false,
-      "best": "Keyword tracking and site SEO campaigns",
-      "pros": [
-        "Rank tracking",
-        "Site crawling",
-        "Keyword research"
-      ],
-      "logo": "/assets/logos/mozpro.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "surferseo",
-      "name": "Surfer SEO",
-      "cat": "SEO",
-      "h": 120,
-      "site": "https://surferseo.com",
-      "badge": "",
-      "featured": false,
-      "best": "Optimizing articles around search intent and on-page signals",
-      "pros": [
-        "Content editor",
-        "On-page guidance",
-        "SERP-based suggestions"
-      ],
-      "logo": "/assets/logos/surferseo.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "screamingfrog",
-      "name": "Screaming Frog",
-      "cat": "SEO",
-      "h": 120,
-      "site": "https://www.screamingfrog.co.uk/seo-spider/",
-      "badge": "",
-      "featured": false,
-      "best": "Technical crawling and finding website SEO issues",
-      "pros": [
-        "Deep site crawl",
-        "Redirect checks",
-        "Metadata auditing"
-      ],
-      "logo": "/assets/logos/screamingfrog.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "make",
-      "name": "Make",
-      "cat": "Automation",
-      "h": 120,
-      "site": "https://www.make.com",
-      "badge": "",
-      "featured": false,
-      "best": "Visual multi-step workflow automation across apps",
-      "pros": [
-        "Visual scenario builder",
-        "Advanced branching",
-        "Large integration library"
-      ],
-      "logo": "/assets/logos/make.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "n8n",
-      "name": "n8n",
-      "cat": "Automation",
-      "h": 120,
-      "site": "https://n8n.io",
-      "badge": "",
-      "featured": false,
-      "best": "Flexible workflow automation with technical control",
-      "pros": [
-        "Self-hosting option",
-        "Custom workflow logic",
-        "Developer-friendly integrations"
-      ],
-      "logo": "/assets/logos/n8n.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "ifttt",
-      "name": "IFTTT",
-      "cat": "Automation",
-      "h": 120,
-      "site": "https://ifttt.com",
-      "badge": "",
-      "featured": false,
-      "best": "Simple personal and smart-device automations",
-      "pros": [
-        "Easy applets",
-        "Consumer app support",
-        "Quick trigger-action setup"
-      ],
-      "logo": "/assets/logos/ifttt.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "figma",
-      "name": "Figma",
-      "cat": "Design",
-      "h": 120,
-      "site": "https://www.figma.com",
-      "badge": "",
-      "featured": false,
-      "best": "Collaborative interface design and prototyping",
-      "pros": [
-        "Real-time collaboration",
-        "Interactive prototypes",
-        "Reusable design systems"
-      ],
-      "logo": "/assets/logos/figma.png",
+      "logo": "/assets/logos/adcreative.png",
       "affiliateUrl": ""
     },
     {
@@ -547,173 +50,88 @@
       "affiliateUrl": ""
     },
     {
-      "id": "midjourney",
-      "name": "Midjourney",
-      "cat": "Image Generation",
+      "id": "adwisely",
+      "name": "Adwisely",
+      "cat": "Marketing",
       "h": 120,
-      "site": "https://www.midjourney.com",
+      "site": "https://www.adwisely.com",
       "badge": "",
       "featured": false,
-      "best": "Stylized AI images and creative visual concepts",
+      "best": "AI-powered Meta and Google ads",
       "pros": [
-        "Strong artistic output",
-        "Style exploration",
-        "Rapid visual ideation"
+        "AI-powered Meta and Google ads",
+        "Shopify integration",
+        "6x ROAS guarantee"
       ],
-      "logo": "/assets/logos/midjourney.png",
+      "logo": "/assets/logos/adwisely.png",
       "affiliateUrl": ""
     },
     {
-      "id": "leonardo",
-      "name": "Leonardo AI",
-      "cat": "Image Generation",
+      "id": "ahrefs",
+      "name": "Ahrefs",
+      "cat": "SEO",
       "h": 120,
-      "site": "https://leonardo.ai",
+      "site": "https://ahrefs.com",
       "badge": "",
       "featured": false,
-      "best": "AI images, assets and creative production",
+      "best": "Backlink research, keywords and competitor SEO analysis",
       "pros": [
-        "Multiple image models",
-        "Asset generation",
-        "Creative controls"
+        "Backlink data",
+        "Keyword research",
+        "Competitive analysis"
       ],
-      "logo": "/assets/logos/leonardo.png",
+      "logo": "/assets/logos/ahrefs.png",
       "affiliateUrl": ""
     },
     {
-      "id": "removebg",
-      "name": "remove.bg",
-      "cat": "Design",
+      "id": "aircall",
+      "name": "Aircall",
+      "cat": "Customer Support",
       "h": 120,
-      "site": "https://www.remove.bg",
+      "site": "https://www.aircall.io",
       "badge": "",
       "featured": false,
-      "best": "Removing image backgrounds quickly",
+      "best": "Clean, modern cloud phone interface",
       "pros": [
-        "Automatic cutouts",
-        "Fast web workflow",
-        "API available"
+        "Clean, modern cloud phone interface",
+        "Deep CRM integrations (Salesforce, HubSpot, Pipedrive)",
+        "Call recording and transcription"
       ],
-      "logo": "/assets/logos/removebg.png",
+      "logo": "/assets/logos/aircall.png",
       "affiliateUrl": ""
     },
     {
-      "id": "runway",
-      "name": "Runway",
-      "cat": "Voice & Video",
+      "id": "amplitude",
+      "name": "Amplitude",
+      "cat": "Marketing",
       "h": 120,
-      "site": "https://runwayml.com",
+      "site": "https://amplitude.com",
       "badge": "",
       "featured": false,
-      "best": "AI-assisted video generation and creative editing",
+      "best": "Generous free plan with 1M events/mo",
       "pros": [
-        "Generative video tools",
-        "Browser-based editing",
-        "Visual effects workflows"
+        "Generous free plan with 1M events/mo",
+        "Advanced product analytics and insights",
+        "Experimentation and A/B testing"
       ],
-      "logo": "/assets/logos/runway.png",
+      "logo": "/assets/logos/amplitude.png",
       "affiliateUrl": ""
     },
     {
-      "id": "synthesia",
-      "name": "Synthesia",
-      "cat": "Voice & Video",
+      "id": "apollo",
+      "name": "Apollo.io",
+      "cat": "Sales",
       "h": 120,
-      "site": "https://www.synthesia.io",
+      "site": "https://www.apollo.io",
       "badge": "",
       "featured": false,
-      "best": "Presenter-style videos using AI avatars",
+      "best": "275M+ contact database",
       "pros": [
-        "Avatar presentations",
-        "Multiple languages",
-        "Business video templates"
+        "275M+ contact database",
+        "Built-in email sequences",
+        "Free plan available"
       ],
-      "logo": "/assets/logos/synthesia.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "invideo",
-      "name": "InVideo",
-      "cat": "Voice & Video",
-      "h": 120,
-      "site": "https://invideo.io",
-      "badge": "",
-      "featured": false,
-      "best": "Creating marketing and social videos from prompts",
-      "pros": [
-        "Template library",
-        "Prompt-based creation",
-        "Stock media workflow"
-      ],
-      "logo": "/assets/logos/invideo.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "kapwing",
-      "name": "Kapwing",
-      "cat": "Voice & Video",
-      "h": 120,
-      "site": "https://www.kapwing.com",
-      "badge": "",
-      "featured": false,
-      "best": "Collaborative online video editing for social content",
-      "pros": [
-        "Browser-based editor",
-        "Captions and resizing",
-        "Team collaboration"
-      ],
-      "logo": "/assets/logos/kapwing.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "otter",
-      "name": "Otter.ai",
-      "cat": "Productivity",
-      "h": 120,
-      "site": "https://otter.ai",
-      "badge": "",
-      "featured": false,
-      "best": "Meeting transcription and searchable notes",
-      "pros": [
-        "Live transcription",
-        "Speaker notes",
-        "Meeting summaries"
-      ],
-      "logo": "/assets/logos/otter.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "fireflies",
-      "name": "Fireflies.ai",
-      "cat": "Productivity",
-      "h": 120,
-      "site": "https://fireflies.ai",
-      "badge": "",
-      "featured": false,
-      "best": "Recording, transcribing and reviewing meetings",
-      "pros": [
-        "Meeting transcripts",
-        "Searchable conversations",
-        "CRM integrations"
-      ],
-      "logo": "/assets/logos/fireflies.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "clickup",
-      "name": "ClickUp",
-      "cat": "Productivity",
-      "h": 120,
-      "site": "https://clickup.com",
-      "badge": "",
-      "featured": false,
-      "best": "Tasks, documents and team project management",
-      "pros": [
-        "Flexible task views",
-        "Docs and goals",
-        "Team workflows"
-      ],
-      "logo": "/assets/logos/clickup.png",
+      "logo": "/assets/logos/apollo.png",
       "affiliateUrl": ""
     },
     {
@@ -734,88 +152,84 @@
       "affiliateUrl": ""
     },
     {
-      "id": "monday",
-      "name": "monday.com",
+      "id": "beautifulai",
+      "name": "Beautiful.ai",
       "cat": "Productivity",
       "h": 120,
-      "site": "https://monday.com",
+      "site": "https://www.beautiful.ai",
       "badge": "",
       "featured": false,
-      "best": "Custom work boards for projects and operations",
-      "pros": [
-        "Customizable boards",
-        "Automation recipes",
-        "Visual dashboards"
-      ],
-      "logo": "/assets/logos/monday.png",
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/beautifulai.png",
       "affiliateUrl": ""
     },
     {
-      "id": "todoist",
-      "name": "Todoist",
-      "cat": "Productivity",
-      "h": 120,
-      "site": "https://todoist.com",
-      "badge": "",
-      "featured": false,
-      "best": "Personal tasks and lightweight team planning",
-      "pros": [
-        "Quick task capture",
-        "Recurring tasks",
-        "Cross-device apps"
-      ],
-      "logo": "/assets/logos/todoist.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "webflow",
-      "name": "Webflow",
-      "cat": "Website Builder",
-      "h": 120,
-      "site": "https://webflow.com",
-      "badge": "",
-      "featured": false,
-      "best": "Visual websites with CMS and design control",
-      "pros": [
-        "Visual web design",
-        "Built-in CMS",
-        "Managed hosting"
-      ],
-      "logo": "/assets/logos/webflow.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "squarespace",
-      "name": "Squarespace",
-      "cat": "Website Builder",
-      "h": 120,
-      "site": "https://www.squarespace.com",
-      "badge": "",
-      "featured": false,
-      "best": "Polished websites and portfolios with templates",
-      "pros": [
-        "Professional templates",
-        "Built-in commerce",
-        "Managed hosting"
-      ],
-      "logo": "/assets/logos/squarespace.png",
-      "affiliateUrl": ""
-    },
-    {
-      "id": "mailchimp",
-      "name": "Mailchimp",
+      "id": "beehiiv",
+      "name": "beehiiv",
       "cat": "Email Marketing",
-      "h": 120,
-      "site": "https://mailchimp.com",
+      "h": 45,
+      "site": "https://www.beehiiv.com",
       "badge": "",
       "featured": false,
-      "best": "Email campaigns, basic automation and audience management",
+      "best": "Publishing and growing a monetized newsletter",
       "pros": [
-        "Campaign builder",
-        "Audience segmentation",
-        "Marketing automations"
+        "Newsletter publishing tools",
+        "Audience growth features",
+        "Built-in monetization options"
       ],
-      "logo": "/assets/logos/mailchimp.png",
+      "logo": "/assets/logos/beehiiv.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "bill",
+      "name": "BILL",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://www.bill.com",
+      "badge": "",
+      "featured": false,
+      "best": "AP/automation",
+      "pros": [
+        "AP/automation",
+        "Payment processing",
+        "Accountant collaboration"
+      ],
+      "logo": "/assets/logos/bill.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "brand24",
+      "name": "Brand24",
+      "cat": "Marketing",
+      "h": 120,
+      "site": "https://brand24.com",
+      "badge": "",
+      "featured": false,
+      "best": "Comprehensive brand monitoring",
+      "pros": [
+        "Comprehensive brand monitoring",
+        "Social listening and sentiment analysis",
+        "Real-time alerts"
+      ],
+      "logo": "/assets/logos/brand24.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "breadbutter",
+      "name": "Bread & Butter",
+      "cat": "Research",
+      "h": 120,
+      "site": "https://www.breadandbutter.io",
+      "badge": "",
+      "featured": false,
+      "best": "Tracks what converts into revenue",
+      "pros": [
+        "Tracks what converts into revenue",
+        "AI-powered lead intelligence",
+        "CRM integration"
+      ],
+      "logo": "/assets/logos/breadbutter.png",
       "affiliateUrl": ""
     },
     {
@@ -836,6 +250,688 @@
       "affiliateUrl": ""
     },
     {
+      "id": "browseai",
+      "name": "Browse AI",
+      "cat": "Automation",
+      "h": 120,
+      "site": "https://www.browse.ai",
+      "badge": "",
+      "featured": false,
+      "best": "web scraping",
+      "pros": [
+        "Self-healing AI adapts to website layout changes",
+        "No-code point-and-click setup",
+        "Residential proxies included on all plans"
+      ],
+      "logo": "/assets/logos/browseai.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "callrail",
+      "name": "CallRail",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://www.callrail.com",
+      "badge": "",
+      "featured": false,
+      "best": "call tracking",
+      "pros": [
+        "Dynamic number insertion for source attribution",
+        "220,000+ businesses use CallRail",
+        "Call recording and transcription"
+      ],
+      "logo": "/assets/logos/callrail.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "campaignmonitor",
+      "name": "Campaign Monitor by Marigold",
+      "cat": "Email Marketing",
+      "h": 120,
+      "site": "https://www.campaignmonitor.com",
+      "badge": "",
+      "featured": false,
+      "best": "email marketing",
+      "pros": [
+        "Premium email templates and design tools",
+        "Multi-brand agency features",
+        "Drag-and-drop email builder"
+      ],
+      "logo": "/assets/logos/campaignmonitor.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "cat": "Design",
+      "h": 150,
+      "site": "https://www.canva.com",
+      "badge": "",
+      "featured": false,
+      "best": "Social graphics, presentations and simple brand designs",
+      "pros": [
+        "Large template library",
+        "Easy drag-and-drop editor",
+        "Useful for teams and brand kits"
+      ],
+      "logo": "/assets/logos/canva.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "capsule",
+      "name": "Capsule",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://www.capsulecrm.com",
+      "badge": "",
+      "featured": false,
+      "best": "Simple and intuitive CRM",
+      "pros": [
+        "Simple and intuitive CRM",
+        "Affordable for small teams",
+        "Pipeline management"
+      ],
+      "logo": "/assets/logos/capsule.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "castmagic",
+      "name": "Castmagic",
+      "cat": "Voice & Video",
+      "h": 120,
+      "site": "https://castmagic.ai",
+      "badge": "",
+      "featured": false,
+      "best": "Transforms audio/video into blog posts and social content",
+      "pros": [
+        "Transforms audio/video into blog posts and social content",
+        "AI-powered transcription",
+        "Multi-format export"
+      ],
+      "logo": "/assets/logos/castmagic.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "cat": "AI Assistants",
+      "h": 120,
+      "site": "https://chatgpt.com",
+      "badge": "",
+      "featured": false,
+      "best": "General writing, brainstorming, analysis and everyday AI help",
+      "pros": [
+        "Flexible general assistant",
+        "Works across many task types",
+        "Supports iterative conversations"
+      ],
+      "logo": "/assets/logos/chatgpt.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "circle",
+      "name": "Circle",
+      "cat": "Marketing",
+      "h": 120,
+      "site": "https://www.circle.so",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/circle.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "cat": "AI Assistants",
+      "h": 120,
+      "site": "https://claude.ai",
+      "badge": "",
+      "featured": false,
+      "best": "Long-form analysis, writing and structured reasoning",
+      "pros": [
+        "Handles long documents",
+        "Clear structured responses",
+        "Useful for writing and coding"
+      ],
+      "logo": "/assets/logos/claude.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "clevertap",
+      "name": "CleverTap",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://www.clevertap.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-native customer engagement",
+      "pros": [
+        "AI-native customer engagement",
+        "Real-time decisioning",
+        "Multi-channel marketing"
+      ],
+      "logo": "/assets/logos/clevertap.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "clickup",
+      "name": "ClickUp",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://clickup.com",
+      "badge": "",
+      "featured": false,
+      "best": "Tasks, documents and team project management",
+      "pros": [
+        "Flexible task views",
+        "Docs and goals",
+        "Team workflows"
+      ],
+      "logo": "/assets/logos/clickup.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://www.closerm.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/close.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "closely",
+      "name": "Closely",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://www.closely.com",
+      "badge": "",
+      "featured": false,
+      "best": "Sales engagement platform",
+      "pros": [
+        "Sales engagement platform",
+        "Email sequencing",
+        "Outbound automation"
+      ],
+      "logo": "/assets/logos/closely.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "cloudtalk",
+      "name": "CloudTalk",
+      "cat": "Customer Support",
+      "h": 120,
+      "site": "https://www.cloudtalk.io",
+      "badge": "",
+      "featured": false,
+      "best": "All-in-one cloud contact center",
+      "pros": [
+        "All-in-one cloud contact center",
+        "AI-powered call features",
+        "CRM integrations"
+      ],
+      "logo": "/assets/logos/cloudtalk.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "confetti",
+      "name": "Confetti",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://www.confetti.life",
+      "badge": "",
+      "featured": false,
+      "best": "Employee experience platform",
+      "pros": [
+        "Employee experience platform",
+        "Internal communications",
+        "Company culture tools"
+      ],
+      "logo": "/assets/logos/confetti.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "connecteam",
+      "name": "Connecteam",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://www.connecteam.com",
+      "badge": "",
+      "featured": false,
+      "best": "Free plan for up to 10 users",
+      "pros": [
+        "Free plan for up to 10 users",
+        "All-in-one workforce management",
+        "Employee messaging and scheduling"
+      ],
+      "logo": "/assets/logos/connecteam.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "consensus",
+      "name": "Consensus",
+      "cat": "Research",
+      "h": 120,
+      "site": "https://consensus.app",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/consensus.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "copyai",
+      "name": "Copy.ai",
+      "cat": "Marketing",
+      "h": 120,
+      "site": "https://www.copy.ai",
+      "badge": "",
+      "featured": false,
+      "best": "Sales and marketing content workflows",
+      "pros": [
+        "Marketing templates",
+        "Workflow automation",
+        "Team-oriented content"
+      ],
+      "logo": "/assets/logos/copyai.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "deel",
+      "name": "Deel",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://www.deel.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/deel.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "descript",
+      "name": "Descript",
+      "cat": "Voice & Video",
+      "h": 330,
+      "site": "https://www.descript.com",
+      "badge": "",
+      "featured": false,
+      "best": "Editing video and podcasts like a document",
+      "pros": [
+        "Edit by editing the text",
+        "Automatic transcripts",
+        "Removes filler words fast"
+      ],
+      "logo": "/assets/logos/descript.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "dext",
+      "name": "Dext",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://www.go-dext.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered receipt scanning",
+      "pros": [
+        "AI-powered receipt scanning",
+        "Tax deduction tracking",
+        "Accountant collaboration"
+      ],
+      "logo": "/assets/logos/dext.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "dripify",
+      "name": "Dripify",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://dripify.org",
+      "badge": "",
+      "featured": false,
+      "best": "LinkedIn outreach automation",
+      "pros": [
+        "LinkedIn outreach automation",
+        "Visual workflow builder",
+        "Lead scraping"
+      ],
+      "logo": "/assets/logos/dripify.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "cat": "Voice & Video",
+      "h": 30,
+      "site": "https://elevenlabs.io",
+      "badge": "",
+      "featured": false,
+      "best": "Voiceovers for videos and courses",
+      "pros": [
+        "Very natural voices",
+        "Many languages",
+        "Narrate without recording"
+      ],
+      "logo": "/assets/logos/elevenlabs.png",
+      "affiliateUrl": "https://try.elevenlabs.io/4kkksh8cm36q"
+    },
+    {
+      "id": "expertex",
+      "name": "ExpertEx",
+      "cat": "Image Generation",
+      "h": 120,
+      "site": "https://www.expertex.ai",
+      "badge": "",
+      "featured": false,
+      "best": "Studio-quality product photos from basic images",
+      "pros": [
+        "Studio-quality product photos from basic images",
+        "Video ad generation",
+        "UGC-style content creation"
+      ],
+      "logo": "/assets/logos/expertex.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "cat": "Design",
+      "h": 120,
+      "site": "https://www.figma.com",
+      "badge": "",
+      "featured": false,
+      "best": "Collaborative interface design and prototyping",
+      "pros": [
+        "Real-time collaboration",
+        "Interactive prototypes",
+        "Reusable design systems"
+      ],
+      "logo": "/assets/logos/figma.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "fireflies",
+      "name": "Fireflies.ai",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://fireflies.ai",
+      "badge": "",
+      "featured": false,
+      "best": "Recording, transcribing and reviewing meetings",
+      "pros": [
+        "Meeting transcripts",
+        "Searchable conversations",
+        "CRM integrations"
+      ],
+      "logo": "/assets/logos/fireflies.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "flexiquiz",
+      "name": "FlexiQuiz",
+      "cat": "Marketing",
+      "h": 120,
+      "site": "https://www.flexiquiz.com",
+      "badge": "",
+      "featured": false,
+      "best": "Easy quiz creation and embedding",
+      "pros": [
+        "Easy quiz creation and embedding",
+        "Lead capture and analytics",
+        "Custom branding options"
+      ],
+      "logo": "/assets/logos/flexiquiz.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "flocksy",
+      "name": "Flocksy",
+      "cat": "Email Marketing",
+      "h": 120,
+      "site": "https://www.flocksy.com",
+      "badge": "",
+      "featured": false,
+      "best": "Cold email outreach with AI copywriting",
+      "pros": [
+        "Cold email outreach with AI copywriting",
+        "Email warmup included",
+        "Lead generation tools"
+      ],
+      "logo": "/assets/logos/flocksy.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "framer",
+      "name": "Framer",
+      "cat": "Website Builder",
+      "h": 210,
+      "site": "https://www.framer.com",
+      "badge": "",
+      "featured": false,
+      "best": "Modern landing pages and design-led marketing websites",
+      "pros": [
+        "Visual responsive design",
+        "Fast publishing and hosting",
+        "Strong animation and interaction tools"
+      ],
+      "logo": "/assets/logos/framer.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "freshbooks",
+      "name": "FreshBooks",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://www.freshbooks.com",
+      "badge": "",
+      "featured": false,
+      "best": "Intuitive accounting for SMB",
+      "pros": [
+        "Intuitive accounting for SMB",
+        "Invoice and expense tracking",
+        "Time tracking included"
+      ],
+      "logo": "/assets/logos/freshbooks.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "freshdesk",
+      "name": "Freshdesk",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://www.freshworks.com/freshdesk",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/freshdesk.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "gamma",
+      "name": "Gamma",
+      "cat": "Design",
+      "h": 120,
+      "site": "https://gamma.app",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/gamma.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "cat": "AI Assistants",
+      "h": 120,
+      "site": "https://gemini.google.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI help connected with Google products and multimodal work",
+      "pros": [
+        "Google ecosystem fit",
+        "Multimodal prompts",
+        "General research and drafting"
+      ],
+      "logo": "/assets/logos/gemini.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "getresponse",
+      "name": "GetResponse",
+      "cat": "Email Marketing",
+      "h": 120,
+      "site": "https://www.getresponse.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/getresponse.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "glide",
+      "name": "Glide",
+      "cat": "Website Builder",
+      "h": 120,
+      "site": "https://www.glideapps.com",
+      "badge": "",
+      "featured": false,
+      "best": "No-code app builder from spreadsheets",
+      "pros": [
+        "No-code app builder from spreadsheets",
+        "Google Sheets/Airtable integration",
+        "Free plan available"
+      ],
+      "logo": "/assets/logos/glide.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "gorgias",
+      "name": "Gorgias",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://www.gorgias.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/gorgias.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "cat": "Writing",
+      "h": 150,
+      "site": "https://www.grammarly.com",
+      "badge": "Featured",
+      "featured": false,
+      "best": "Clear English in emails and proposals",
+      "pros": [
+        "Fixes mistakes as you type",
+        "Works in many apps",
+        "Helps with polite tone"
+      ],
+      "logo": "/assets/logos/grammarly.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "helpscout",
+      "name": "Help Scout",
+      "cat": "Customer Support",
+      "h": 120,
+      "site": "https://www.helpscout.com",
+      "badge": "",
+      "featured": false,
+      "best": "Clean email-first interface",
+      "pros": [
+        "Clean email-first interface",
+        "AI Answers for automated resolution",
+        "Knowledge base included"
+      ],
+      "logo": "/assets/logos/helpscout.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "hemingway",
+      "name": "Hemingway Editor",
+      "cat": "Writing",
+      "h": 120,
+      "site": "https://hemingwayapp.com",
+      "badge": "",
+      "featured": false,
+      "best": "Making sentences clearer and easier to read",
+      "pros": [
+        "Readability guidance",
+        "Highlights complex sentences",
+        "Simple editing workflow"
+      ],
+      "logo": "/assets/logos/hemingway.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "hibob",
+      "name": "HiBob",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://www.hibob.com",
+      "badge": "",
+      "featured": false,
+      "best": "Modern HRIS platform",
+      "pros": [
+        "Modern HRIS platform",
+        "Scalable for growing companies",
+        "All-in-one people management"
+      ],
+      "logo": "/assets/logos/hibob.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "hightouch",
+      "name": "Hightouch",
+      "cat": "Automation",
+      "h": 120,
+      "site": "https://www.hightouch.com",
+      "badge": "",
+      "featured": false,
+      "best": "Reverse ETL leader",
+      "pros": [
+        "Reverse ETL leader",
+        "Syncs data to 200+ tools",
+        "No-code configuration"
+      ],
+      "logo": "/assets/logos/hightouch.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "hostinger",
+      "name": "Hostinger",
+      "cat": "Hosting",
+      "h": 262,
+      "site": "https://www.hostinger.com",
+      "badge": "",
+      "featured": false,
+      "best": "Hosting and building a website or online store",
+      "pros": [
+        "Hosting, domain and site builder in one account",
+        "Beginner-friendly plans",
+        "Free SSL listed on its plans"
+      ],
+      "logo": "/assets/logos/hostinger.png",
+      "affiliateUrl": ""
+    },
+    {
       "id": "hubspot",
       "name": "HubSpot",
       "cat": "Sales",
@@ -850,6 +946,1475 @@
         "Sales pipeline tools"
       ],
       "logo": "/assets/logos/hubspot.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "ifttt",
+      "name": "IFTTT",
+      "cat": "Automation",
+      "h": 120,
+      "site": "https://ifttt.com",
+      "badge": "",
+      "featured": false,
+      "best": "Simple personal and smart-device automations",
+      "pros": [
+        "Easy applets",
+        "Consumer app support",
+        "Quick trigger-action setup"
+      ],
+      "logo": "/assets/logos/ifttt.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "instantly",
+      "name": "Instantly",
+      "cat": "Email Marketing",
+      "h": 120,
+      "site": "https://instantly.ai",
+      "badge": "",
+      "featured": false,
+      "best": "Built-in email warmup",
+      "pros": [
+        "Built-in email warmup",
+        "Unlimited inboxes",
+        "AI-powered email writing"
+      ],
+      "logo": "/assets/logos/instantly.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "instapage",
+      "name": "Instapage",
+      "cat": "Marketing",
+      "h": 120,
+      "site": "https://www.instapage.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/instapage.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "intercom",
+      "name": "Intercom",
+      "cat": "Customer Support",
+      "h": 120,
+      "site": "https://www.intercom.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered customer messaging",
+      "pros": [
+        "AI-powered customer messaging",
+        "Live chat and help center",
+        "Strong for SaaS"
+      ],
+      "logo": "/assets/logos/intercom.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "invideo",
+      "name": "InVideo",
+      "cat": "Voice & Video",
+      "h": 120,
+      "site": "https://invideo.io",
+      "badge": "",
+      "featured": false,
+      "best": "Creating marketing and social videos from prompts",
+      "pros": [
+        "Template library",
+        "Prompt-based creation",
+        "Stock media workflow"
+      ],
+      "logo": "/assets/logos/invideo.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "jasper",
+      "name": "Jasper",
+      "cat": "Marketing",
+      "h": 20,
+      "site": "https://www.jasper.ai",
+      "badge": "",
+      "featured": false,
+      "best": "Ad copy and product page writing",
+      "pros": [
+        "Templates made for marketing",
+        "Keeps your brand voice",
+        "Good for teams"
+      ],
+      "logo": "/assets/logos/jasper.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "kapwing",
+      "name": "Kapwing",
+      "cat": "Voice & Video",
+      "h": 120,
+      "site": "https://www.kapwing.com",
+      "badge": "",
+      "featured": false,
+      "best": "Collaborative online video editing for social content",
+      "pros": [
+        "Browser-based editor",
+        "Captions and resizing",
+        "Team collaboration"
+      ],
+      "logo": "/assets/logos/kapwing.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "keap",
+      "name": "Keap (formerly Infusionsoft)",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://www.keap.com",
+      "badge": "",
+      "featured": false,
+      "best": "CRM",
+      "pros": [
+        "All-in-one CRM, marketing, sales, and payments",
+        "Deep automation workflows",
+        "Built-in invoicing and payment processing"
+      ],
+      "logo": "/assets/logos/keap.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "kit",
+      "name": "Kit",
+      "cat": "Email Marketing",
+      "h": 180,
+      "site": "https://kit.com",
+      "badge": "",
+      "featured": false,
+      "best": "Creator email lists, automations and digital product funnels",
+      "pros": [
+        "Creator-focused automations",
+        "Landing pages and forms",
+        "Tag-based subscriber organization"
+      ],
+      "logo": "/assets/logos/kit.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "krispcall",
+      "name": "KrispCall",
+      "cat": "Customer Support",
+      "h": 120,
+      "site": "https://www.krispcall.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI noise cancellation included on all plans",
+      "pros": [
+        "AI noise cancellation included on all plans",
+        "Affordable entry point at $15/mo",
+        "Call recording and transcription"
+      ],
+      "logo": "/assets/logos/krispcall.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "learnworlds",
+      "name": "LearnWorlds",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://www.learnworlds.com",
+      "badge": "",
+      "featured": false,
+      "best": "Interactive course builder",
+      "pros": [
+        "Interactive course builder",
+        "Built-in monetization",
+        "Certification and assessments"
+      ],
+      "logo": "/assets/logos/learnworlds.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "lemlist",
+      "name": "lemlist",
+      "cat": "Marketing",
+      "h": 120,
+      "site": "https://www.lemlist.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/lemlist.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "leonardo",
+      "name": "Leonardo AI",
+      "cat": "Image Generation",
+      "h": 120,
+      "site": "https://leonardo.ai",
+      "badge": "",
+      "featured": false,
+      "best": "AI images, assets and creative production",
+      "pros": [
+        "Multiple image models",
+        "Asset generation",
+        "Creative controls"
+      ],
+      "logo": "/assets/logos/leonardo.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "logome",
+      "name": "Logome.ai",
+      "cat": "Design",
+      "h": 120,
+      "site": "https://www.logome.ai",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered logo generation",
+      "pros": [
+        "AI-powered logo generation",
+        "Brand kit creation",
+        "No design experience needed"
+      ],
+      "logo": "/assets/logos/logome.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "lusha",
+      "name": "Lusha",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://www.lusha.com",
+      "badge": "",
+      "featured": false,
+      "best": "Contact and company data platform",
+      "pros": [
+        "Contact and company data platform",
+        "CRM integrations",
+        "Focus on data compliance"
+      ],
+      "logo": "/assets/logos/lusha.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "mailchimp",
+      "name": "Mailchimp",
+      "cat": "Email Marketing",
+      "h": 120,
+      "site": "https://mailchimp.com",
+      "badge": "",
+      "featured": false,
+      "best": "Email campaigns, basic automation and audience management",
+      "pros": [
+        "Campaign builder",
+        "Audience segmentation",
+        "Marketing automations"
+      ],
+      "logo": "/assets/logos/mailchimp.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "make",
+      "name": "Make",
+      "cat": "Automation",
+      "h": 120,
+      "site": "https://www.make.com",
+      "badge": "",
+      "featured": false,
+      "best": "Visual multi-step workflow automation across apps",
+      "pros": [
+        "Visual scenario builder",
+        "Advanced branching",
+        "Large integration library"
+      ],
+      "logo": "/assets/logos/make.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "manychat",
+      "name": "Manychat",
+      "cat": "Marketing",
+      "h": 120,
+      "site": "https://manychat.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/manychat.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "meetgeek",
+      "name": "MeetGeek",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://www.meetgeek.ai",
+      "badge": "",
+      "featured": false,
+      "best": "AI meeting automation",
+      "pros": [
+        "AI meeting automation",
+        "Transcription and notes",
+        "Team collaboration"
+      ],
+      "logo": "/assets/logos/meetgeek.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "cat": "Image Generation",
+      "h": 120,
+      "site": "https://www.midjourney.com",
+      "badge": "",
+      "featured": false,
+      "best": "Stylized AI images and creative visual concepts",
+      "pros": [
+        "Strong artistic output",
+        "Style exploration",
+        "Rapid visual ideation"
+      ],
+      "logo": "/assets/logos/midjourney.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "mixpanel",
+      "name": "Mixpanel",
+      "cat": "Marketing",
+      "h": 120,
+      "site": "https://mixpanel.com",
+      "badge": "",
+      "featured": false,
+      "best": "Free plan with 10,000 tracked users",
+      "pros": [
+        "Free plan with 10,000 tracked users",
+        "Powerful funnel and cohort analysis",
+        "Real-time event tracking"
+      ],
+      "logo": "/assets/logos/mixpanel.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "monday",
+      "name": "monday.com",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://monday.com",
+      "badge": "",
+      "featured": false,
+      "best": "Custom work boards for projects and operations",
+      "pros": [
+        "Customizable boards",
+        "Automation recipes",
+        "Visual dashboards"
+      ],
+      "logo": "/assets/logos/monday.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "moosend",
+      "name": "Moosend",
+      "cat": "Email Marketing",
+      "h": 120,
+      "site": "https://www.moosend.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/moosend.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "mozpro",
+      "name": "Moz Pro",
+      "cat": "SEO",
+      "h": 120,
+      "site": "https://moz.com/products/pro",
+      "badge": "",
+      "featured": false,
+      "best": "Keyword tracking and site SEO campaigns",
+      "pros": [
+        "Rank tracking",
+        "Site crawling",
+        "Keyword research"
+      ],
+      "logo": "/assets/logos/mozpro.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "murf",
+      "name": "Murf AI",
+      "cat": "Voice & Video",
+      "h": 120,
+      "site": "https://murf.ai",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/murf.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "cat": "Automation",
+      "h": 120,
+      "site": "https://n8n.io",
+      "badge": "",
+      "featured": false,
+      "best": "Flexible workflow automation with technical control",
+      "pros": [
+        "Self-hosting option",
+        "Custom workflow logic",
+        "Developer-friendly integrations"
+      ],
+      "logo": "/assets/logos/n8n.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "netlify",
+      "name": "Netlify",
+      "cat": "Website Builder",
+      "h": 120,
+      "site": "https://www.netlify.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/netlify.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "notebooklm",
+      "name": "NotebookLM",
+      "cat": "Research",
+      "h": 120,
+      "site": "https://notebooklm.google.com",
+      "badge": "",
+      "featured": false,
+      "best": "Studying and asking questions across your own sources",
+      "pros": [
+        "Source-grounded notebooks",
+        "Document summaries",
+        "Research organization"
+      ],
+      "logo": "/assets/logos/notebooklm.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "cat": "Productivity",
+      "h": 260,
+      "site": "https://www.notion.com",
+      "badge": "Featured",
+      "featured": false,
+      "best": "Notes, tasks and client work in one place",
+      "pros": [
+        "One home for notes and to-dos",
+        "Templates to start fast",
+        "Good for solo work"
+      ],
+      "logo": "/assets/logos/notion.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "nutshell",
+      "name": "Nutshell",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://www.nutshell.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/nutshell.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "omnisend",
+      "name": "Omnisend",
+      "cat": "Email Marketing",
+      "h": 120,
+      "site": "https://www.omnisend.com",
+      "badge": "",
+      "featured": false,
+      "best": "eCommerce-focused marketing automation",
+      "pros": [
+        "eCommerce-focused marketing automation",
+        "Free plan available",
+        "Multi-channel (email, SMS, push)"
+      ],
+      "logo": "/assets/logos/omnisend.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "omniseo",
+      "name": "OmniSEO",
+      "cat": "Marketing",
+      "h": 120,
+      "site": "https://www.omniseo.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI visibility measurement platform",
+      "pros": [
+        "AI visibility measurement platform",
+        "Tracks brand mentions in AI search",
+        "Helps optimize for AI chat platforms"
+      ],
+      "logo": "/assets/logos/omniseo.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "otter",
+      "name": "Otter.ai",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://otter.ai",
+      "badge": "",
+      "featured": false,
+      "best": "Meeting transcription and searchable notes",
+      "pros": [
+        "Live transcription",
+        "Speaker notes",
+        "Meeting summaries"
+      ],
+      "logo": "/assets/logos/otter.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "pandadoc",
+      "name": "PandaDoc",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://www.pandadoc.com",
+      "badge": "",
+      "featured": false,
+      "best": "Document automation and e-signatures",
+      "pros": [
+        "Document automation and e-signatures",
+        "Proposal builder",
+        "Payment integration"
+      ],
+      "logo": "/assets/logos/pandadoc.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "cat": "Research",
+      "h": 120,
+      "site": "https://www.perplexity.ai",
+      "badge": "",
+      "featured": false,
+      "best": "Web research with visible source links",
+      "pros": [
+        "Source-led answers",
+        "Fast topic summaries",
+        "Useful follow-up questions"
+      ],
+      "logo": "/assets/logos/perplexity.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "pipedrive",
+      "name": "Pipedrive",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://www.pipedrive.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/pipedrive.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "pixelunion",
+      "name": "Pixel Union",
+      "cat": "Design",
+      "h": 120,
+      "site": "https://www.pixelunion.ai",
+      "badge": "",
+      "featured": false,
+      "best": "AI product photography",
+      "pros": [
+        "AI product photography",
+        "Background removal and replacement",
+        "eCommerce integrations"
+      ],
+      "logo": "/assets/logos/pixelunion.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "prowritingaid",
+      "name": "ProWritingAid",
+      "cat": "Writing",
+      "h": 120,
+      "site": "https://prowritingaid.com",
+      "badge": "",
+      "featured": false,
+      "best": "Detailed writing reports for long-form authors",
+      "pros": [
+        "Style reports",
+        "Grammar checking",
+        "Long-form writing focus"
+      ],
+      "logo": "/assets/logos/prowritingaid.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "quickbooks",
+      "name": "QuickBooks",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://quickbooks.intuit.com",
+      "badge": "",
+      "featured": false,
+      "best": "Industry-standard accounting",
+      "pros": [
+        "Industry-standard accounting",
+        "Strong integrations",
+        "Invoicing and billing"
+      ],
+      "logo": "/assets/logos/quickbooks.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "quillbot",
+      "name": "QuillBot",
+      "cat": "Writing",
+      "h": 120,
+      "site": "https://quillbot.com",
+      "badge": "",
+      "featured": false,
+      "best": "Paraphrasing, rewriting and summarizing text",
+      "pros": [
+        "Multiple rewrite modes",
+        "Summarizer included",
+        "Browser-based workflow"
+      ],
+      "logo": "/assets/logos/quillbot.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "quo",
+      "name": "Quo",
+      "cat": "Customer Support",
+      "h": 120,
+      "site": "https://www.quo.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/quo.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "rgestudio",
+      "name": "Really Good Emails",
+      "cat": "Email Marketing",
+      "h": 120,
+      "site": "https://www.reallygoodemails.com",
+      "badge": "",
+      "featured": false,
+      "best": "Email design platform and inspiration",
+      "pros": [
+        "Email design platform and inspiration",
+        "Drag-and-drop editor",
+        "Email template library"
+      ],
+      "logo": "/assets/logos/rgestudio.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "removebg",
+      "name": "remove.bg",
+      "cat": "Design",
+      "h": 120,
+      "site": "https://www.remove.bg",
+      "badge": "",
+      "featured": false,
+      "best": "Removing image backgrounds quickly",
+      "pros": [
+        "Automatic cutouts",
+        "Fast web workflow",
+        "API available"
+      ],
+      "logo": "/assets/logos/removebg.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "replyio",
+      "name": "Reply.io",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://www.reply.io",
+      "badge": "",
+      "featured": false,
+      "best": "Multi-channel outreach",
+      "pros": [
+        "Multi-channel outreach",
+        "Email, call, LinkedIn sequences",
+        "AI-powered personalization"
+      ],
+      "logo": "/assets/logos/replyio.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "runway",
+      "name": "Runway",
+      "cat": "Voice & Video",
+      "h": 120,
+      "site": "https://runwayml.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-assisted video generation and creative editing",
+      "pros": [
+        "Generative video tools",
+        "Browser-based editing",
+        "Visual effects workflows"
+      ],
+      "logo": "/assets/logos/runway.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "salesforce-smb",
+      "name": "Salesforce Essentials",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://www.salesforce.com/products/crm/essentials/",
+      "badge": "",
+      "featured": false,
+      "best": "Salesforce ecosystem access",
+      "pros": [
+        "Salesforce ecosystem access",
+        "Scalable to higher tiers",
+        "Strong CRM foundation"
+      ],
+      "logo": "/assets/logos/salesforce-smb.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "screamingfrog",
+      "name": "Screaming Frog",
+      "cat": "SEO",
+      "h": 120,
+      "site": "https://www.screamingfrog.co.uk/seo-spider/",
+      "badge": "",
+      "featured": false,
+      "best": "Technical crawling and finding website SEO issues",
+      "pros": [
+        "Deep site crawl",
+        "Redirect checks",
+        "Metadata auditing"
+      ],
+      "logo": "/assets/logos/screamingfrog.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "semrush",
+      "name": "Semrush",
+      "cat": "SEO",
+      "h": 170,
+      "site": "https://www.semrush.com",
+      "badge": "",
+      "featured": false,
+      "best": "Finding keywords and checking competitors",
+      "pros": [
+        "Deep keyword research",
+        "Shows what rivals rank for",
+        "Many SEO tools in one"
+      ],
+      "logo": "/assets/logos/semrush.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "shoeboxed",
+      "name": "Shoeboxed",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://www.shoeboxed.com",
+      "badge": "",
+      "featured": false,
+      "best": "Unlimited receipt scanning",
+      "pros": [
+        "Unlimited receipt scanning",
+        "OCR technology for data extraction",
+        "Expense reports and tax preparation"
+      ],
+      "logo": "/assets/logos/shoeboxed.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "simpletexting",
+      "name": "SimpleTexting",
+      "cat": "Marketing",
+      "h": 120,
+      "site": "https://www.simpletexting.com",
+      "badge": "",
+      "featured": false,
+      "best": "SMS marketing platform",
+      "pros": [
+        "SMS marketing platform",
+        "Two-way texting",
+        "Easy setup"
+      ],
+      "logo": "/assets/logos/simpletexting.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "smartlead",
+      "name": "Smartlead",
+      "cat": "Email Marketing",
+      "h": 120,
+      "site": "https://www.smartlead.ai",
+      "badge": "",
+      "featured": false,
+      "best": "Cold email automation",
+      "pros": [
+        "Cold email automation",
+        "Multi-inbox support",
+        "AI-powered features"
+      ],
+      "logo": "/assets/logos/smartlead.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "smartli",
+      "name": "Smartli",
+      "cat": "Writing",
+      "h": 120,
+      "site": "https://www.smartli.io",
+      "badge": "",
+      "featured": false,
+      "best": "eCommerce-specific AI copywriting",
+      "pros": [
+        "eCommerce-specific AI copywriting",
+        "SEO-optimized output",
+        "Product description generation"
+      ],
+      "logo": "/assets/logos/smartli.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "softr",
+      "name": "Softr",
+      "cat": "Website Builder",
+      "h": 120,
+      "site": "https://www.softr.io",
+      "badge": "",
+      "featured": false,
+      "best": "No-code app and portal builder",
+      "pros": [
+        "No-code app and portal builder",
+        "Airtable and Google Sheets integration",
+        "Free plan available"
+      ],
+      "logo": "/assets/logos/softr.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "softsync",
+      "name": "SoftSync AI",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://www.softsync.ai",
+      "badge": "",
+      "featured": false,
+      "best": "CRM inside Claude and ChatGPT",
+      "pros": [
+        "CRM inside Claude and ChatGPT",
+        "AI-powered follow-ups",
+        "Automated data entry"
+      ],
+      "logo": "/assets/logos/softsync.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "spiky",
+      "name": "Spiky",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://www.spiky.ai",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered conversation intelligence",
+      "pros": [
+        "AI-powered conversation intelligence",
+        "Call recording and transcription",
+        "Sales coaching and insights"
+      ],
+      "logo": "/assets/logos/spiky.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "sproutsocial",
+      "name": "Sprout Social",
+      "cat": "Marketing",
+      "h": 120,
+      "site": "https://sproutsocial.com",
+      "badge": "",
+      "featured": false,
+      "best": "Comprehensive social media management",
+      "pros": [
+        "Comprehensive social media management",
+        "Advanced analytics and reporting",
+        "Social listening"
+      ],
+      "logo": "/assets/logos/sproutsocial.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "squarespace",
+      "name": "Squarespace",
+      "cat": "Website Builder",
+      "h": 120,
+      "site": "https://www.squarespace.com",
+      "badge": "",
+      "featured": false,
+      "best": "Polished websites and portfolios with templates",
+      "pros": [
+        "Professional templates",
+        "Built-in commerce",
+        "Managed hosting"
+      ],
+      "logo": "/assets/logos/squarespace.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "stamped",
+      "name": "Stamped.io",
+      "cat": "Marketing",
+      "h": 120,
+      "site": "https://www.stamped.io",
+      "badge": "",
+      "featured": false,
+      "best": "Product review platform",
+      "pros": [
+        "Product review platform",
+        "Loyalty programs",
+        "UGC marketing"
+      ],
+      "logo": "/assets/logos/stamped.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "storydoc",
+      "name": "Storydoc",
+      "cat": "Writing",
+      "h": 120,
+      "site": "https://www.storydoc.com",
+      "badge": "",
+      "featured": false,
+      "best": "Interactive content and proposals",
+      "pros": [
+        "Interactive content and proposals",
+        "Engagement analytics",
+        "Clean design"
+      ],
+      "logo": "/assets/logos/storydoc.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "storylane",
+      "name": "Storylane",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://www.storylane.com",
+      "badge": "",
+      "featured": false,
+      "best": "All-in-one sales enablement platform",
+      "pros": [
+        "All-in-one sales enablement platform",
+        "Content library and sales playbooks",
+        "Training modules and assessments"
+      ],
+      "logo": "/assets/logos/storylane.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "streak",
+      "name": "Streak",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://www.streak.com",
+      "badge": "",
+      "featured": false,
+      "best": "CRM inside Gmail",
+      "pros": [
+        "CRM inside Gmail",
+        "Free plan available",
+        "Simple pipeline management"
+      ],
+      "logo": "/assets/logos/streak.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "surferseo",
+      "name": "Surfer SEO",
+      "cat": "SEO",
+      "h": 120,
+      "site": "https://surferseo.com",
+      "badge": "",
+      "featured": false,
+      "best": "Optimizing articles around search intent and on-page signals",
+      "pros": [
+        "Content editor",
+        "On-page guidance",
+        "SERP-based suggestions"
+      ],
+      "logo": "/assets/logos/surferseo.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "surveymonkey",
+      "name": "SurveyMonkey",
+      "cat": "Marketing",
+      "h": 120,
+      "site": "https://www.surveymonkey.com",
+      "badge": "",
+      "featured": false,
+      "best": "Industry-standard survey platform",
+      "pros": [
+        "Industry-standard survey platform",
+        "Large template library",
+        "Advanced analytics"
+      ],
+      "logo": "/assets/logos/surveymonkey.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "survicate",
+      "name": "Survicate",
+      "cat": "Customer Support",
+      "h": 120,
+      "site": "https://www.survicate.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/survicate.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "synthesia",
+      "name": "Synthesia",
+      "cat": "Voice & Video",
+      "h": 120,
+      "site": "https://www.synthesia.io",
+      "badge": "",
+      "featured": false,
+      "best": "Presenter-style videos using AI avatars",
+      "pros": [
+        "Avatar presentations",
+        "Multiple languages",
+        "Business video templates"
+      ],
+      "logo": "/assets/logos/synthesia.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "systeme",
+      "name": "Systeme.io",
+      "cat": "Sales",
+      "h": 100,
+      "site": "https://systeme.io",
+      "badge": "",
+      "featured": false,
+      "best": "Sales pages, email lists and online courses",
+      "pros": [
+        "Pages, email and checkout together",
+        "Easy to start with",
+        "Can replace several separate subscriptions"
+      ],
+      "logo": "/assets/logos/systeme.png",
+      "affiliateUrl": "https://systeme.io/?sa=sa0283786247d8d254e08d2d01d25a1e2069805f78"
+    },
+    {
+      "id": "teachable",
+      "name": "Teachable",
+      "cat": "Sales",
+      "h": 120,
+      "site": "https://www.teachable.com",
+      "badge": "",
+      "featured": false,
+      "best": "Easy course creation and hosting",
+      "pros": [
+        "Easy course creation and hosting",
+        "Unlimited students on all plans",
+        "Quizzes, certificates, and drip content"
+      ],
+      "logo": "/assets/logos/teachable.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "teamwork",
+      "name": "Teamwork",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://www.teamwork.com",
+      "badge": "",
+      "featured": false,
+      "best": "Project management for client work",
+      "pros": [
+        "Project management for client work",
+        "Time tracking and reporting",
+        "Goal tracking"
+      ],
+      "logo": "/assets/logos/teamwork.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "teikametrics",
+      "name": "Teikametrics",
+      "cat": "SEO",
+      "h": 120,
+      "site": "https://www.teikametrics.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered marketplace optimization",
+      "pros": [
+        "AI-powered marketplace optimization",
+        "Amazon/Walmart/TikTok Shop support",
+        "Automated advertising"
+      ],
+      "logo": "/assets/logos/teikametrics.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "textline",
+      "name": "Textline",
+      "cat": "Customer Support",
+      "h": 120,
+      "site": "https://www.textline.com",
+      "badge": "",
+      "featured": false,
+      "best": "Two-way SMS for customer communication",
+      "pros": [
+        "Two-way SMS for customer communication",
+        "Appointment reminders and auto-replies",
+        "CRM integrations"
+      ],
+      "logo": "/assets/logos/textline.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "thetop",
+      "name": "TheTop",
+      "cat": "AI Assistants",
+      "h": 120,
+      "site": "https://www.thetop.ai",
+      "badge": "",
+      "featured": false,
+      "best": "Consolidates notifications into one daily brief",
+      "pros": [
+        "Consolidates notifications into one daily brief",
+        "AI-powered prioritization",
+        "Clean interface"
+      ],
+      "logo": "/assets/logos/thetop.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "tidio",
+      "name": "Tidio",
+      "cat": "Customer Support",
+      "h": 120,
+      "site": "https://www.tidio.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered tool",
+      "pros": [],
+      "logo": "/assets/logos/tidio.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "timedoctor",
+      "name": "Time Doctor",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://www.timedoctor.com",
+      "badge": "",
+      "featured": false,
+      "best": "Affordable time tracking",
+      "pros": [
+        "Affordable time tracking",
+        "Productivity analytics",
+        "Automatic time tracking"
+      ],
+      "logo": "/assets/logos/timedoctor.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "todoist",
+      "name": "Todoist",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://todoist.com",
+      "badge": "",
+      "featured": false,
+      "best": "Personal tasks and lightweight team planning",
+      "pros": [
+        "Quick task capture",
+        "Recurring tasks",
+        "Cross-device apps"
+      ],
+      "logo": "/assets/logos/todoist.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "trainual",
+      "name": "Trainual",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://www.trainual.com",
+      "badge": "",
+      "featured": false,
+      "best": "SOP and training platform",
+      "pros": [
+        "SOP and training platform",
+        "Video-based documentation",
+        "Onboarding workflows"
+      ],
+      "logo": "/assets/logos/trainual.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "transpond",
+      "name": "Transpond",
+      "cat": "Marketing",
+      "h": 120,
+      "site": "https://www.transpond.com",
+      "badge": "",
+      "featured": false,
+      "best": "Email marketing for CRM users",
+      "pros": [
+        "Email marketing for CRM users",
+        "Capsule CRM integration",
+        "Affordable for SMB"
+      ],
+      "logo": "/assets/logos/transpond.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "ueni",
+      "name": "UENI",
+      "cat": "Voice & Video",
+      "h": 120,
+      "site": "https://ueni.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI video creation",
+      "pros": [
+        "AI video creation",
+        "Voice generation",
+        "Easy-to-use interface"
+      ],
+      "logo": "/assets/logos/ueni.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "unbounce",
+      "name": "Unbounce",
+      "cat": "Website Builder",
+      "h": 120,
+      "site": "https://unbounce.com",
+      "badge": "",
+      "featured": false,
+      "best": "Purpose-built for landing pages",
+      "pros": [
+        "Purpose-built for landing pages",
+        "AI-powered page suggestions",
+        "A/B testing built in"
+      ],
+      "logo": "/assets/logos/unbounce.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "upfluence",
+      "name": "Upfluence",
+      "cat": "Marketing",
+      "h": 120,
+      "site": "https://www.upfluence.com",
+      "badge": "",
+      "featured": false,
+      "best": "Influencer marketing platform",
+      "pros": [
+        "Influencer marketing platform",
+        "Discovery and outreach",
+        "Campaign management"
+      ],
+      "logo": "/assets/logos/upfluence.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "upwork",
+      "name": "Upwork",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://www.upwork.com",
+      "badge": "",
+      "featured": false,
+      "best": "Large talent pool",
+      "pros": [
+        "Large talent pool",
+        "20+ years of operation",
+        "AI-powered matching"
+      ],
+      "logo": "/assets/logos/upwork.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "webflow",
+      "name": "Webflow",
+      "cat": "Website Builder",
+      "h": 120,
+      "site": "https://webflow.com",
+      "badge": "",
+      "featured": false,
+      "best": "Visual websites with CMS and design control",
+      "pros": [
+        "Visual web design",
+        "Built-in CMS",
+        "Managed hosting"
+      ],
+      "logo": "/assets/logos/webflow.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "windsorai",
+      "name": "Windsor.ai",
+      "cat": "Marketing",
+      "h": 120,
+      "site": "https://www.windsor.ai",
+      "badge": "",
+      "featured": false,
+      "best": "Automated review generation",
+      "pros": [
+        "Automated review generation",
+        "UGC content management",
+        "Social proof widgets"
+      ],
+      "logo": "/assets/logos/windsorai.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "wingify",
+      "name": "Wingify (now VWO)",
+      "cat": "Marketing",
+      "h": 120,
+      "site": "https://vwo.com",
+      "badge": "",
+      "featured": false,
+      "best": "A/B testing and visual editor",
+      "pros": [
+        "A/B testing and visual editor",
+        "Conversion optimization tools",
+        "User testing and heatmaps"
+      ],
+      "logo": "/assets/logos/wingify.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "wrike",
+      "name": "Wrike",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://www.wrike.com",
+      "badge": "",
+      "featured": false,
+      "best": "Collaborative work management",
+      "pros": [
+        "Collaborative work management",
+        "Free plan for small teams",
+        "20,000+ clients"
+      ],
+      "logo": "/assets/logos/wrike.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "writesonic",
+      "name": "Writesonic",
+      "cat": "Writing",
+      "h": 120,
+      "site": "https://writesonic.com",
+      "badge": "",
+      "featured": false,
+      "best": "Marketing articles, landing pages and campaign drafts",
+      "pros": [
+        "Content drafting",
+        "Marketing use cases",
+        "Built-in editing tools"
+      ],
+      "logo": "/assets/logos/writesonic.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "xero",
+      "name": "Xero",
+      "cat": "Productivity",
+      "h": 120,
+      "site": "https://www.xero.com",
+      "badge": "",
+      "featured": false,
+      "best": "Cloud accounting for SMB",
+      "pros": [
+        "Cloud accounting for SMB",
+        "Strong integrations",
+        "Invoicing and billing"
+      ],
+      "logo": "/assets/logos/xero.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "xtiles",
+      "name": "xTiles",
+      "cat": "Design",
+      "h": 120,
+      "site": "https://www.xtiles.com",
+      "badge": "",
+      "featured": false,
+      "best": "Visual drag-and-drop canvas",
+      "pros": [
+        "Visual drag-and-drop canvas",
+        "Flexible organization",
+        "Free plan available"
+      ],
+      "logo": "/assets/logos/xtiles.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "zapier",
+      "name": "Zapier",
+      "cat": "Automation",
+      "h": 110,
+      "site": "https://zapier.com",
+      "badge": "",
+      "featured": false,
+      "best": "Connecting apps and automating repetitive workflows",
+      "pros": [
+        "Large app integration ecosystem",
+        "No-code workflow builder",
+        "Useful templates for common automations"
+      ],
+      "logo": "/assets/logos/zapier.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "zendesk",
+      "name": "Zendesk",
+      "cat": "Customer Support",
+      "h": 120,
+      "site": "https://www.zendesk.com",
+      "badge": "",
+      "featured": false,
+      "best": "Industry-standard omnichannel platform",
+      "pros": [
+        "Industry-standard omnichannel platform",
+        "Extensive integrations",
+        "Advanced automation and AI"
+      ],
+      "logo": "/assets/logos/zendesk.png",
       "affiliateUrl": ""
     }
   ]

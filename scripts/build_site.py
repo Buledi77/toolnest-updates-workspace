@@ -189,12 +189,15 @@ def make_title(parser: PageParser, path: Path, used: set[str]) -> str:
     relative = path.relative_to(ROOT).as_posix()
     overrides = {
         "index.html": "Choose the Right Software for Your Workflow | ToolNest",
-        "tools/index.html": "Software Tools Directory: 50 Reviewed Tools | ToolNest",
+        "tools/index.html": "Software Tools Directory: {count} Reviewed Tools | ToolNest".format(count=len(load_catalog())),
         "compare/index.html": "Compare Software Tools: 63 Head-to-Head Guides | ToolNest",
         "contact.html": "Contact ToolNest: Corrections, Suggestions & Questions",
         "best/index.html": "Best Software Tools by Category: 14 Guides | ToolNest",
         "best/best-writing-tools.html": "Best Writing & Editing Tools: Grammar & Clarity | ToolNest",
         "best/best-ai-writing-tools.html": "Best AI Writing Tools for Drafting Content | ToolNest",
+        "terms.html": "Terms of Use | ToolNest",
+        "privacy.html": "Privacy Policy | ToolNest",
+        "corrections.html": "Corrections Log | ToolNest",
     }
     if relative in overrides:
         return overrides[relative]
@@ -263,16 +266,6 @@ def make_title(parser: PageParser, path: Path, used: set[str]) -> str:
         suffix = ""
     else:
         suffix = ""
-
-    # Ensure title reaches 50 chars minimum (base + " | ToolNest" = 40 min base)
-    min_base = 50 - len(" | ToolNest")  # 40
-    if len(base) < min_base:
-        if not suffix:
-            suffix = " Guide"
-        base += suffix
-        # If still too short, add more context
-        if len(base) < min_base:
-            base += " by ToolNest"
 
     limit = 60 - len(" | ToolNest")
     if len(base) > limit:
@@ -1171,6 +1164,76 @@ def load_catalog() -> list[dict]:
     return json.loads((ROOT / "data" / "tools.json").read_text(encoding="utf-8")).get("tools", [])
 
 
+def ensure_tools_directory_noscript(content: str, relative: str) -> str:
+    """Inject all catalog tools into the noscript fallback of tools/index.html
+    so crawlers that do not execute JavaScript can discover every tool review."""
+    if relative != "tools/index.html":
+        return content
+
+    tools = sorted(load_catalog(), key=lambda t: t["name"].lower())
+    count = len(tools)
+
+    # Build the noscript list
+    lines = ['  <div class="empty">']
+    lines.append('    <b>JavaScript is off, so here is the full list of tool reviews</b>')
+    lines.append('    <p>Search and filtering need JavaScript. Every review is still available below, and you can also <a href="/sitemap.xml">browse the sitemap</a>.</p>')
+    lines.append('  </div>')
+    lines.append('  <nav class="catlinks" aria-label="All tool reviews">')
+    lines.append(f'    <h2>All {count} tool reviews</h2>')
+    lines.append('    <ul>')
+    for t in tools:
+        name = html.escape(t["name"])
+        cat = html.escape(t["cat"])
+        slug = t["id"]
+        lines.append(f'      <li><a href="/tools/{slug}.html">{name}</a> &mdash; {cat}</li>')
+    lines.append('    </ul>')
+    lines.append('  </nav>')
+    noscript_block = "\n".join(lines)
+
+    # Replace existing noscript block (the build may have already added a font noscript)
+    # We need to find the noscript that contains the tool list placeholder or remove old one
+    noscript_match = re.search(
+        r'<noscript>\s*<div class="empty">.*?</noscript>',
+        content,
+        re.DOTALL
+    )
+    if noscript_match:
+        content = content[:noscript_match.start()] + f'<noscript>\n{noscript_block}\n</noscript>' + content[noscript_match.end():]
+    else:
+        # Insert before the closing </section> of the tools section
+        # Find a safe insertion point — before the catlinks nav that's outside noscript
+        catlinks_match = re.search(r'(<nav class="catlinks" id="catlinks"', content)
+        if catlinks_match:
+            insert = f'<noscript>\n{noscript_block}\n</noscript>\n    '
+            content = content[:catlinks_match.start()] + insert + content[catlinks_match.start():]
+
+    # Update hardcoded count references in this page
+    content = re.sub(
+        r'("name":\s*)"AI Tools Directory: \d+"',
+        rf'\g<1>"AI Tools Directory: {count}"',
+        content
+    )
+    content = re.sub(
+        r'("numberOfItems":)\d+',
+        rf'\g<1>{count}',
+        content
+    )
+    # Update meta description count
+    content = re.sub(
+        r'(Search )\d+( AI and business tools)',
+        rf'\g<1>{count}\g<2>',
+        content
+    )
+    # Update OG/Twitter title count
+    content = re.sub(
+        r'(Software Tools Directory: )\d+( Reviewed Tools)',
+        rf'\g<1>{count}\g<2>',
+        content
+    )
+
+    return content
+
+
 def category_tool_ids(slug: str) -> list[str]:
     label = taxonomy_categories().get(slug, "").lower()
     return [
@@ -1811,6 +1874,7 @@ def main() -> None:
         if relative == "index.html":
             content = filter_homepage_featured(content, indexable, featured_ids)
             content = add_recently_tested(content, indexable)
+        content = ensure_tools_directory_noscript(content, relative)
         content = re.sub(r"\n{4,}", "\n\n\n", content)
         write_utf8(path, content)
         pages.append((path, content))

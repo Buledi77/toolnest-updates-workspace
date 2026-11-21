@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "smartli",
+    "name": "Smartli",
+    "slug": "smartli",
+    "official_url": "https://www.smartli.io",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Writing"
+    ],
+    "use_cases": [
+      "AI eCommerce copywriting",
+      "product descriptions",
+      "SEO content"
+    ],
+    "audiences": [
+      "eCommerce businesses",
+      "online retailers",
+      "content marketers"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "eCommerce-specific AI copywriting",
+      "SEO-optimized output",
+      "Product description generation"
+    ],
+    "not_recommended_for": [
+      "Narrowed to eCommerce use cases",
+      "May not suit non-eCommerce writing",
+      "Limited multilingual support"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/smartli.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "jasper",
+      "copyai",
+      "writesonic"
+    ],
+    "comparisons": [
+      "jasper"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.smartli.io"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/smartli.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

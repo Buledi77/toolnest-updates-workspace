@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "trainual",
+    "name": "Trainual",
+    "slug": "trainual",
+    "official_url": "https://www.trainual.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Productivity"
+    ],
+    "use_cases": [
+      "SOP documentation",
+      "onboarding",
+      "training"
+    ],
+    "audiences": [
+      "growing businesses",
+      "agencies",
+      "operations teams"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "SOP and training platform",
+      "Video-based documentation",
+      "Onboarding workflows"
+    ],
+    "not_recommended_for": [
+      "Primarily for SMB",
+      "Limited advanced LMS features",
+      "Requires content creation effort"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/trainual.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "notion",
+      "connecteam",
+      "deel"
+    ],
+    "comparisons": [
+      "notion"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.trainual.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/trainual.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

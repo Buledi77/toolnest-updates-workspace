@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "stamped",
+    "name": "Stamped.io",
+    "slug": "stamped",
+    "official_url": "https://www.stamped.io",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Marketing"
+    ],
+    "use_cases": [
+      "product reviews",
+      "loyalty programs",
+      "UGC marketing"
+    ],
+    "audiences": [
+      "eCommerce brands",
+      "Shopify merchants",
+      "online retailers"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Product review platform",
+      "Loyalty programs",
+      "UGC marketing"
+    ],
+    "not_recommended_for": [
+      "eCommerce-focused",
+      "Limited for non-Shopify",
+      "Review verification required"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/stamped.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "manychat",
+      "manychat",
+      "getresponse"
+    ],
+    "comparisons": [
+      "yotpo"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.stamped.io"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/stamped.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

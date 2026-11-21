@@ -27,7 +27,9 @@
       "site auditors"
     ],
     "platforms": [
-      "desktop"
+      "windows",
+      "macos",
+      "linux"
     ],
     "integrations": [],
     "tags": [

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "teikametrics",
+    "name": "Teikametrics",
+    "slug": "teikametrics",
+    "official_url": "https://www.teikametrics.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "SEO"
+    ],
+    "use_cases": [
+      "marketplace optimization",
+      "Amazon ads",
+      "eCommerce SEO"
+    ],
+    "audiences": [
+      "Amazon sellers",
+      "eCommerce brands",
+      "marketplace sellers"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "AI-powered marketplace optimization",
+      "Amazon/Walmart/TikTok Shop support",
+      "Automated advertising"
+    ],
+    "not_recommended_for": [
+      "Expensive for small sellers",
+      "Marketplace-focused, not general SEO",
+      "Requires existing marketplace presence"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/teikametrics.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "semrush",
+      "surferseo",
+      "ahrefs"
+    ],
+    "comparisons": [
+      "semrush"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.teikametrics.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/teikametrics.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

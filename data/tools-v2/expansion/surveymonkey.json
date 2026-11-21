@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "surveymonkey",
+    "name": "SurveyMonkey",
+    "slug": "surveymonkey",
+    "official_url": "https://www.surveymonkey.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Marketing"
+    ],
+    "use_cases": [
+      "surveys",
+      "forms",
+      "customer feedback"
+    ],
+    "audiences": [
+      "businesses",
+      "marketers",
+      "researchers"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Industry-standard survey platform",
+      "Large template library",
+      "Advanced analytics"
+    ],
+    "not_recommended_for": [
+      "Limited free plan",
+      "Branded surveys without payment",
+      "Advanced features expensive"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/surveymonkey.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "flexiquiz",
+      "getresponse",
+      "survicate"
+    ],
+    "comparisons": [
+      "survicate"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.surveymonkey.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/surveymonkey.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "transpond",
+    "name": "Transpond",
+    "slug": "transpond",
+    "official_url": "https://www.transpond.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Marketing"
+    ],
+    "use_cases": [
+      "email marketing",
+      "CRM integration",
+      "small business marketing"
+    ],
+    "audiences": [
+      "small businesses",
+      "agencies",
+      "CRM users"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Email marketing for CRM users",
+      "Capsule CRM integration",
+      "Affordable for SMB"
+    ],
+    "not_recommended_for": [
+      "Tied to Capsule CRM ecosystem",
+      "Limited standalone value",
+      "Less feature-rich than ActiveCampaign"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/transpond.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "getresponse",
+      "mailchimp",
+      "activecampaign"
+    ],
+    "comparisons": [
+      "getresponse"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.transpond.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/transpond.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

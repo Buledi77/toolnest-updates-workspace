@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "dext",
+    "name": "Dext",
+    "slug": "dext",
+    "official_url": "https://www.go-dext.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Productivity"
+    ],
+    "use_cases": [
+      "expense management",
+      "receipt scanning",
+      "tax deduction tracking"
+    ],
+    "audiences": [
+      "accountants",
+      "small businesses",
+      "freelancers"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "AI-powered receipt scanning",
+      "Tax deduction tracking",
+      "Accountant collaboration"
+    ],
+    "not_recommended_for": [
+      "Focused on expense management",
+      "Requires accounting software",
+      "Limited for non-accounting use"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/dext.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "shoeboxed",
+      "freshbooks",
+      "quickbooks"
+    ],
+    "comparisons": [
+      "shoeboxed"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.go-dext.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/dext.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

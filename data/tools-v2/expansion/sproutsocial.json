@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "sproutsocial",
+    "name": "Sprout Social",
+    "slug": "sproutsocial",
+    "official_url": "https://sproutsocial.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Marketing"
+    ],
+    "use_cases": [
+      "social media management",
+      "publishing",
+      "analytics"
+    ],
+    "audiences": [
+      "marketing teams",
+      "agencies",
+      "mid-market businesses"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Comprehensive social media management",
+      "Advanced analytics and reporting",
+      "Social listening"
+    ],
+    "not_recommended_for": [
+      "Expensive for small teams",
+      "Per-user pricing",
+      "Overkill for simple social needs"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/sproutsocial.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "manychat",
+      "getresponse",
+      "semrush"
+    ],
+    "comparisons": [
+      "manychat"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://sproutsocial.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/sproutsocial.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

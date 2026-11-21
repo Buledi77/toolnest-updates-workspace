@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head><title>Automation Budget Estimator | ToolNest</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="ToolNest Editorial">
+<link rel="author" href="/about.html">
+<link rel="stylesheet" href="/assets/site.min.css">
+<link rel="stylesheet" href="/assets/mobile-nav.min.css">
+<script src="/assets/mobile-nav.min.js" defer></script>
+<script src="/assets/measure.min.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Automation Budget Estimator","url":"https://www.toolnestai.tech/tools/automation-budget-estimator.html","description":"Estimate your monthly automation costs across Zapier, Make, n8n, and IFTTT based on your expected usage. Enter your own numbers for a transparent comparison.","isPartOf":{"@type":"WebSite","name":"ToolNest","url":"https://www.toolnestai.tech/"}}</script>
+<meta property="og:site_name" content="ToolNest"><meta property="og:type" content="article"><meta property="og:locale" content="en_US"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Instrument+Sans:wght@400;500;600;700&display=optional" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Instrument+Sans:wght@400;500;600;700&display=optional"></noscript>
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+
+<style>
+.estimator{max-width:800px;margin:0 auto;padding:24px 0}
+.estimator .form-group{margin-bottom:20px}
+.estimator label{display:block;font-weight:600;margin-bottom:6px;font-size:14px}
+.estimator input[type="number"],.estimator select{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:6px;font-size:16px;font-family:inherit;box-sizing:border-box}
+.estimator input[type="number"]:focus,.estimator select:focus{outline:none;border-color:#12A68E;box-shadow:0 0 0 3px rgba(18,166,142,0.15)}
+.estimator .tool-checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:20px}
+.estimator .tool-check{display:flex;align-items:center;gap:8px;padding:12px;border:1px solid #e5e7eb;border-radius:8px;cursor:pointer}
+.estimator .tool-check input{width:auto;cursor:pointer}
+.estimator .tool-check label{margin:0;cursor:pointer;font-weight:500}
+.estimator .results{display:none;margin-top:24px}
+.estimator .results.visible{display:block}
+.estimator .result-card{padding:16px;border:1px solid #e5e7eb;border-radius:8px;margin-bottom:12px}
+.estimator .result-card h3{margin:0 0 8px;font-size:18px}
+.estimator .result-card .price{font-size:24px;font-weight:700;color:#12A68E}
+.estimator .result-card .note{font-size:13px;color:#6b7280;margin-top:4px}
+.estimator .disclaimer{background:#fef3c7;border:1px solid #f59e0b;border-radius:8px;padding:16px;margin-top:20px;font-size:14px}
+.estimator .disclaimer strong{color:#92400e}
+.estimator .btn-calc{background:#12A68E;color:#fff;border:none;padding:12px 24px;border-radius:6px;font-size:16px;font-weight:600;cursor:pointer;width:100%;margin-top:8px}
+.estimator .btn-calc:hover{background:#0e8a73}
+.estimator .btn-calc:focus{outline:2px solid #12A68E;outline-offset:2px}
+.estimator .empty-state{text-align:center;padding:40px 20px;color:#6b7280}
+.estimator .error-msg{color:#dc2626;font-size:13px;margin-top:4px;display:none}
+.estimator .error-msg.visible{display:block}
+.estimator .pricing-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;padding:12px;border:1px solid #e5e7eb;border-radius:8px;margin-bottom:12px}
+.estimator .pricing-row label{font-size:13px;font-weight:500}
+.estimator .pricing-row input{padding:8px;border:1px solid #d1d5db;border-radius:4px;font-size:14px;font-family:inherit;box-sizing:border-box;width:100%}
+.estimator .pricing-row .tool-label{grid-column:1/-1;font-weight:600;font-size:15px;margin-bottom:4px;padding-bottom:4px;border-bottom:1px solid #e5e7eb}
+.estimator .pricing-row.hidden{display:none}
+</style>
+
+
+<script>window.TOOLNEST_CONFIG=window.TOOLNEST_CONFIG||{};window.TOOLNEST_CONFIG.ga4Id="G-VS0TB85N2G";</script>
+
+
+<meta name="description" content="Estimate your monthly automation costs across Zapier, Make, n8n, and IFTTT based on your expected usage. Enter your own numbers for a transparent comparison.">
+<link rel="canonical" href="https://www.toolnestai.tech/tools/automation-budget-estimator.html">
+<meta property="og:title" content="Automation Budget Estimator | ToolNest">
+<meta property="og:description" content="Estimate your monthly automation costs across Zapier, Make, n8n, and IFTTT based on your expected usage. Enter your own numbers for a transparent comparison.">
+<meta property="og:url" content="https://www.toolnestai.tech/tools/automation-budget-estimator.html">
+<meta property="og:image" content="https://www.toolnestai.tech/assets/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Automation Budget Estimator | ToolNest">
+<meta name="twitter:description" content="Estimate your monthly automation costs across Zapier, Make, n8n, and IFTTT based on your expected usage. Enter your own numbers for a transparent comparison.">
+<meta name="twitter:image" content="https://www.toolnestai.tech/assets/og-default.png">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VS0TB85N2G"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-VS0TB85N2G");</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.toolnestai.tech/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://www.toolnestai.tech/tools/index.html"},{"@type":"ListItem","position":3,"name":"Automation Budget Estimator","item":"https://www.toolnestai.tech/tools/automation-budget-estimator.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Automation Budget Estimator | ToolNest","description":"Estimate your monthly automation costs across Zapier, Make, n8n, and IFTTT based on your expected usage. Enter your own numbers for a transparent comparison.","url":"https://www.toolnestai.tech/tools/automation-budget-estimator.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.toolnestai.tech/tools/automation-budget-estimator.html"},"author":{"@type":"Organization","name":"ToolNest Editorial","url":"https://www.toolnestai.tech/editorial-policy.html"},"publisher":{"@type":"Organization","name":"ToolNest","url":"https://www.toolnestai.tech/","logo":{"@type":"ImageObject","url":"https://www.toolnestai.tech/assets/og-default.png"}},"image":"https://www.toolnestai.tech/assets/og-default.png"}</script>
+<meta name="robots" content="index,follow,max-image-preview:large">
+</head>
+<body>
+<a class="skip" href="#top">Skip to content</a>
+<div aria-hidden="true" class="progress" id="progress"></div>
+<header class="top" id="topbar"><div class="bar"><a aria-label="ToolNest home" class="logo" href="/"><svg aria-hidden="true" viewbox="0 0 36 36"><defs><lineargradient id="lgA" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#12A68E"></stop><stop offset="1" stop-color="#38BDF8"></stop></lineargradient></defs><rect fill="url(#lgA)" height="36" rx="11" width="36"></rect><g transform="translate(6 6)"><g class="l3"><polyline fill="none" opacity=".5" points="2 17 12 22 22 17" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline></g><g class="l2"><polyline fill="none" opacity=".78" points="2 12 12 17 22 12" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline></g><g class="l1"><polygon fill="#fff" points="12 2 2 7 12 12 22 7" stroke="#fff" stroke-linejoin="round" stroke-width="2"></polygon></g></g></svg><span>Tool<i>Nest</i></span></a><nav aria-label="Main"><a href="/tools/index.html">Tools</a><a href="/category/index.html">Categories</a><a href="/compare/index.html">Compare</a><a href="/best/index.html">Best of</a><a class="btn" href="/#picker">Find my tool</a></nav><button class="mnav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><span class="mnav-ico" aria-hidden="true"></span></button></div><nav class="mnav" id="mnav" aria-label="Mobile" hidden><a href="/">Home</a><a href="/tools/index.html">Tools</a><a href="/category/index.html">Categories</a><a href="/compare/index.html">Compare</a><a href="/alternatives/index.html">Alternatives</a><a href="/best/index.html">Best of</a><a class="btn" href="/#picker">Find my tool</a></nav></header>
+<main id="top" tabindex="-1">
+<section class="hero phero"><div class="wrap"><nav aria-label="Breadcrumb" class="crumbs"><ol><li><a href="/">Home</a></li><li><a href="/tools/index.html">Tools</a></li><li aria-current="page">Automation Budget Estimator</li></ol></nav>
+<p class="eyebrow">Interactive tool</p>
+<h1>Automation Budget Estimator</h1>
+<p class="lede">Compare estimated monthly costs across Zapier, Make, n8n, and IFTTT based on your expected usage. Enter your own numbers — we do not guess your pricing.</p>
+<div class="pmeta">
+<span>Last updated November 2026</span>
+<a href="/about.html">How ToolNest reviews tools</a>
+</div>
+</div></section><div class="wrap tn-trust-strip"><p class="tn-research-line">ToolNest Research &middot; Editorial review 2026-11-21 &middot; <a href="/how-we-test.html">Research-based profile</a></p><p class="tn-trust-links"><a href="/how-we-test.html">Methodology</a><a href="/editorial-policy.html">Editorial policy</a><a href="/contact.html">Corrections</a><a href="/affiliate-disclosure.html">Affiliate disclosure</a></p></div>
+
+<div class="wrap estimator">
+<section class="p-sec" id="how-it-works">
+<h2>How it works</h2>
+<p>Select the tools you want to compare, enter your expected monthly usage, then provide your own pricing assumptions for each tool. The estimator calculates your estimated usage per tool and shows whether it fits within your entered allowance.</p>
+<p><strong>How it works:</strong> You supply the price, included allowance, and optional overage rate for each tool. The calculator estimates your usage based on runs, steps, and complexity — then compares that usage against your entered allowance. Results are rough estimates based on your input, not verified vendor pricing.</p>
+</section>
+<section class="p-sec" id="estimator-form">
+<h2>Enter your usage</h2>
+<div class="form-group">
+<label for="tool-select">Which tools do you want to compare?</label>
+<div class="tool-checks" role="group" aria-label="Select tools to compare">
+<div class="tool-check"><input type="checkbox" id="chk-zapier" value="zapier" checked><label for="chk-zapier">Zapier</label></div>
+<div class="tool-check"><input type="checkbox" id="chk-make" value="make" checked><label for="chk-make">Make</label></div>
+<div class="tool-check"><input type="checkbox" id="chk-n8n" value="n8n" checked><label for="chk-n8n">n8n</label></div>
+<div class="tool-check"><input type="checkbox" id="chk-ifttt" value="ifttt" checked><label for="chk-ifttt">IFTTT</label></div>
+</div>
+</div>
+<div class="form-group">
+<h3>Your pricing assumptions</h3>
+<p style="color:#6b7280;margin-bottom:12px">Enter the price and included allowance for each selected tool. Leave blank if you don't know — the estimator will still show your estimated usage.</p>
+<div id="pricing-inputs"></div>
+</div>
+<div class="form-group">
+<label for="monthly-runs">Estimated workflow runs per month</label>
+<input type="number" id="monthly-runs" min="1" max="100000" placeholder="e.g. 5000" aria-describedby="runs-help">
+<small id="runs-help" style="color:#6b7280">How many times your workflows execute per month (triggers)</small>
+<div class="error-msg" id="runs-error">Please enter a number between 1 and 100,000</div>
+</div>
+<div class="form-group">
+<label for="steps-per-run">Average steps per workflow run</label>
+<input type="number" id="steps-per-run" min="1" max="50" placeholder="e.g. 3" aria-describedby="steps-help">
+<small id="steps-help" style="color:#6b7280">How many actions each workflow performs (e.g., 3 = trigger + 2 actions)</small>
+<div class="error-msg" id="steps-error">Please enter a number between 1 and 50</div>
+</div>
+<div class="form-group">
+<label for="complexity">Workflow complexity</label>
+<select id="complexity" aria-describedby="complexity-help">
+<option value="simple">Simple (trigger → action)</option>
+<option value="medium" selected>Medium (some branching or filters)</option>
+<option value="complex">Complex (multiple branches, error handling)</option>
+</select>
+<small id="complexity-help" style="color:#6b7280">Affects how each tool counts your usage</small>
+</div>
+<button class="btn-calc" type="button" id="calc-btn" data-event-name="utility_start">Estimate my costs</button>
+</section>
+<section class="results" id="results" aria-live="polite">
+<h2>Your estimated costs</h2>
+<div id="results-container"></div>
+<div class="disclaimer">
+<strong>Limitations.</strong> These results are rough estimates based on the pricing assumptions you entered, not verified vendor data. Actual costs may differ based on your specific usage patterns, available discounts, billing cycle, and current pricing. This tool does not account for add-ons, enterprise custom pricing, or regional currency differences. Always verify current pricing on the official site before making a decision.
+</div>
+</section>
+<section class="p-sec" id="related">
+<h2>Related resources</h2>
+<div class="linkgrid">
+<a class="lk" href="/category/automation.html"><span class="lk-tx"><b>Automation category</b><small>Browse all automation tools</small></span></a>
+<a class="lk" href="/best/best-automation-tools.html"><span class="lk-tx"><b>Best automation tools</b><small>Our hand-picked list</small></span></a>
+<a class="lk" href="/tools/zapier.html"><span class="lk-tx"><b>Zapier review</b><small>Full profile and pricing</small></span></a>
+<a class="lk" href="/tools/make.html"><span class="lk-tx"><b>Make review</b><small>Full profile and pricing</small></span></a>
+<a class="lk" href="/tools/n8n.html"><span class="lk-tx"><b>n8n review</b><small>Full profile and pricing</small></span></a>
+<a class="lk" href="/tools/ifttt.html"><span class="lk-tx"><b>IFTTT review</b><small>Full profile and pricing</small></span></a>
+</div>
+</section>
+</div>
+</main>
+<footer><div class="wrap"><div class="f-grid five"><div class="f-brand"><a aria-label="ToolNest home" class="logo" href="/"><span>Tool<i>Nest</i></span></a><p>Hand-picked AI tools, explained in plain English.</p></div><nav aria-label="Guides" class="f-col"><h2>Guides</h2><a href="/tools/index.html">All tool reviews</a><a href="/goals/index.html">Pick by goal</a><a href="/compare/index.html">Comparisons</a><a href="/alternatives/index.html">Alternatives</a><a href="/best/index.html">Best tools lists</a><a class="btn" href="/#picker">Find my tool</a></nav><nav aria-label="Categories" class="f-col"><h2>Categories</h2><a href="/category/hosting.html">Hosting</a><a href="/category/marketing.html">Marketing</a><a href="/category/productivity.html">Productivity</a><a href="/category/seo.html">SEO</a></nav><nav aria-label="Tool reviews" class="f-col"><h2>Tool reviews</h2><a href="/tools/hostinger.html">Hostinger</a><a href="/tools/systeme.html">Systeme.io</a><a href="/tools/framer.html">Framer</a><a href="/tools/webflow.html">Webflow</a></nav><nav aria-label="About this site" class="f-col"><h2>About</h2><a href="/about.html">How we research and choose tools</a><a href="/affiliate-disclosure.html">Disclosure</a><a href="/privacy.html">Privacy policy</a><a href="/terms.html">Terms of use</a><a href="/contact.html">Contact</a><a href="/how-we-test.html">How we test</a><a href="/editorial-policy.html">Editorial policy</a></nav></div><div class="f-base"><p><strong>Disclosure.</strong> Some links on this site are affiliate links, so we may earn a commission if you buy through them, at no extra cost to you. Product names belong to their owners. Features and prices change, so verify on the official site.</p><div class="f-end"><p>© 2026 ToolNest</p><a class="totop" href="#top">Back to top</a></div></div></div></footer>
+<script>
+(function(){
+  // Tool metadata only — no embedded pricing data
+  // Users enter their own price and allowance assumptions
+  var TOOLS = {
+    zapier: {
+      name: "Zapier",
+      reviewUrl: "/tools/zapier.html",
+      officialUrl: "https://zapier.com",
+      billingModel: "tasks",
+      unitLabel: "tasks"
+    },
+    make: {
+      name: "Make",
+      reviewUrl: "/tools/make.html",
+      officialUrl: "https://www.make.com",
+      billingModel: "credits",
+      unitLabel: "credits"
+    },
+    n8n: {
+      name: "n8n",
+      reviewUrl: "/tools/n8n.html",
+      officialUrl: "https://n8n.io",
+      billingModel: "executions",
+      unitLabel: "executions"
+    },
+    ifttt: {
+      name: "IFTTT",
+      reviewUrl: "/tools/ifttt.html",
+      officialUrl: "https://ifttt.com",
+      billingModel: "credits",
+      unitLabel: "credits"
+    }
+  };
+
+  function getSelectedTools() {
+    var selected = [];
+    document.querySelectorAll('.tool-checks input:checked').forEach(function(chk) {
+      selected.push(chk.value);
+    });
+    return selected;
+  }
+
+  function renderPricingInputs() {
+    var container = document.getElementById('pricing-inputs');
+    container.innerHTML = '';
+
+    var toolIds = ['zapier', 'make', 'n8n', 'ifttt'];
+    toolIds.forEach(function(toolId) {
+      var tool = TOOLS[toolId];
+      var chk = document.getElementById('chk-' + toolId);
+      var row = document.createElement('div');
+      row.className = 'pricing-row' + (chk && chk.checked ? '' : ' hidden');
+      row.id = 'pricing-' + toolId;
+
+      var unitHint = tool.unitLabel + '/mo';
+
+      row.innerHTML =
+        '<div class="tool-label">' + tool.name + '</div>' +
+        '<div><label for="price-' + toolId + '">Price ($/mo)</label>' +
+        '<input type="number" id="price-' + toolId + '" min="0" step="0.01" placeholder="e.g. 20"></div>' +
+        '<div><label for="allowance-' + toolId + '">Included allowance (' + unitHint + ')</label>' +
+        '<input type="number" id="allowance-' + toolId + '" min="0" step="1" placeholder="e.g. 2000"></div>' +
+        '<div><label for="overage-' + toolId + '">Overage rate ($ per ' + tool.unitLabel + ')</label>' +
+        '<input type="number" id="overage-' + toolId + '" min="0" step="0.001" placeholder="Optional"></div>';
+
+      container.appendChild(row);
+    });
+  }
+
+  function updatePricingInputs() {
+    var toolIds = ['zapier', 'make', 'n8n', 'ifttt'];
+    toolIds.forEach(function(toolId) {
+      var chk = document.getElementById('chk-' + toolId);
+      var row = document.getElementById('pricing-' + toolId);
+      if (row && chk) {
+        if (chk.checked) {
+          row.classList.remove('hidden');
+        } else {
+          row.classList.add('hidden');
+        }
+      }
+    });
+  }
+
+  // Render pricing inputs on load and watch checkbox changes
+  renderPricingInputs();
+  document.querySelectorAll('.tool-checks input').forEach(function(chk) {
+    chk.addEventListener('change', updatePricingInputs);
+  });
+
+  function calculateUsage(runs, steps, complexity) {
+    // Different tools count usage differently
+    var usage = {};
+
+    // Zapier: each step in a Zap counts as 1 task
+    usage.zapier = runs * steps;
+
+    // Make: each operation counts as 1 credit (similar to steps)
+    usage.make = runs * steps;
+
+    // n8n: each workflow execution counts as 1 execution regardless of steps
+    usage.n8n = runs;
+
+    // IFTTT: each trigger counts as 1 credit
+    usage.ifttt = runs;
+
+    // Complexity multiplier for Make (complex workflows use more credits)
+    if (complexity === 'complex') {
+      usage.make = Math.round(usage.make * 1.5);
+    } else if (complexity === 'medium') {
+      usage.make = Math.round(usage.make * 1.2);
+    }
+
+    return usage;
+  }
+
+  function getUserInput(toolId) {
+    var priceEl = document.getElementById('price-' + toolId);
+    var allowanceEl = document.getElementById('allowance-' + toolId);
+    var overageEl = document.getElementById('overage-' + toolId);
+
+    var price = priceEl ? parseFloat(priceEl.value) : null;
+    var allowance = allowanceEl ? parseInt(allowanceEl.value, 10) : null;
+    var overageRate = overageEl ? parseFloat(overageEl.value) : null;
+
+    return {
+      price: isNaN(price) || price < 0 ? null : price,
+      allowance: isNaN(allowance) || allowance < 0 ? null : allowance,
+      overageRate: isNaN(overageRate) || overageRate < 0 ? null : overageRate
+    };
+  }
+
+  function compareUsage(usageAmount, userInput) {
+    // Compare estimated usage against user-entered allowance
+    var fits = false;
+    var overageUnits = 0;
+    var overageCost = 0;
+
+    if (userInput.allowance !== null && userInput.allowance > 0) {
+      if (usageAmount <= userInput.allowance) {
+        fits = true;
+      } else {
+        overageUnits = usageAmount - userInput.allowance;
+        if (userInput.overageRate !== null && userInput.overageRate > 0) {
+          overageCost = overageUnits * userInput.overageRate;
+        }
+      }
+    } else if (userInput.allowance === 0) {
+      // User entered 0 allowance — usage exceeds
+      overageUnits = usageAmount;
+      if (userInput.overageRate !== null && userInput.overageRate > 0) {
+        overageCost = overageUnits * userInput.overageRate;
+      }
+    }
+
+    return {
+      fits: fits,
+      overageUnits: overageUnits,
+      overageCost: overageCost,
+      allowanceEntered: userInput.allowance !== null
+    };
+  }
+
+  function validateInputs() {
+    var valid = true;
+    var runs = document.getElementById('monthly-runs');
+    var steps = document.getElementById('steps-per-run');
+    var runsError = document.getElementById('runs-error');
+    var stepsError = document.getElementById('steps-error');
+
+    runsError.classList.remove('visible');
+    stepsError.classList.remove('visible');
+
+    var runsVal = parseInt(runs.value, 10);
+    if (isNaN(runsVal) || runsVal < 1 || runsVal > 100000) {
+      runsError.classList.add('visible');
+      valid = false;
+    }
+
+    var stepsVal = parseInt(steps.value, 10);
+    if (isNaN(stepsVal) || stepsVal < 1 || stepsVal > 50) {
+      stepsError.classList.add('visible');
+      valid = false;
+    }
+
+    return valid ? {runs: runsVal, steps: stepsVal} : null;
+  }
+
+  function renderResults(selectedTools, usage, runs, steps) {
+    var container = document.getElementById('results-container');
+    var resultsSection = document.getElementById('results');
+    container.innerHTML = '';
+
+    if (selectedTools.length === 0) {
+      container.innerHTML = '<div class="empty-state"><p>Please select at least one tool to compare.</p></div>';
+      resultsSection.classList.add('visible');
+      return;
+    }
+
+    selectedTools.forEach(function(toolId) {
+      var tool = TOOLS[toolId];
+      if (!tool) return;
+
+      var usageAmount = usage[toolId];
+      var userInput = getUserInput(toolId);
+      var comparison = compareUsage(usageAmount, userInput);
+
+      var card = document.createElement('div');
+      card.className = 'result-card';
+
+      var priceHtml = '';
+      if (userInput.price !== null) {
+        if (userInput.price === 0) {
+          priceHtml = '<span class="price">Free</span>';
+        } else {
+          priceHtml = '<span class="price">$' + userInput.price.toFixed(2) + '/mo</span>';
+        }
+      } else {
+        priceHtml = '<span class="price">Price not entered</span>';
+      }
+
+      var usageLabel = usageAmount.toLocaleString() + ' ' + tool.unitLabel + '/mo';
+
+      var fitHtml = '';
+      if (comparison.allowanceEntered) {
+        if (comparison.fits) {
+          fitHtml = '<p class="note" style="color:#16a34a">✓ Your estimated usage fits within your entered allowance of ' + userInput.allowance.toLocaleString() + ' ' + tool.unitLabel + '/mo.</p>';
+        } else {
+          fitHtml = '<p class="note" style="color:#dc2626">✗ Your estimated usage exceeds your entered allowance by ' + comparison.overageUnits.toLocaleString() + ' ' + tool.unitLabel + '/mo.</p>';
+          if (comparison.overageCost > 0) {
+            fitHtml += '<p class="note">Estimated overage cost: $' + comparison.overageCost.toFixed(2) + '/mo</p>';
+          }
+        }
+      } else {
+        fitHtml = '<p class="note">Enter your allowance above to see if your usage fits.</p>';
+      }
+
+      card.innerHTML =
+        '<h3>' + tool.name + '</h3>' +
+        priceHtml +
+        '<p class="note">Estimated usage: ' + usageLabel + ' (based on ' + runs.toLocaleString() + ' runs × ' + steps + ' steps)</p>' +
+        fitHtml +
+        '<p style="margin-top:8px"><a class="rlink" href="' + tool.reviewUrl + '">Read the ' + tool.name + ' review &rarr;</a> · <a class="rlink" href="' + tool.officialUrl + '" target="_blank" rel="noopener">Visit ' + tool.name + ' &rarr;</a></p>';
+
+      container.appendChild(card);
+    });
+
+    resultsSection.classList.add('visible');
+
+    // Fire completion event
+    if (typeof toolnestTrack === 'function') {
+      toolnestTrack('utility_completion', {utility: 'automation-budget-estimator'});
+    }
+  }
+
+  document.getElementById('calc-btn').addEventListener('click', function() {
+    var inputs = validateInputs();
+    if (!inputs) return;
+
+    var selectedTools = getSelectedTools();
+    var complexity = document.getElementById('complexity').value;
+    var usage = calculateUsage(inputs.runs, inputs.steps, complexity);
+
+    renderResults(selectedTools, usage, inputs.runs, inputs.steps);
+
+    // Fire start event
+    if (typeof toolnestTrack === 'function') {
+      toolnestTrack('utility_start', {utility: 'automation-budget-estimator'});
+    }
+  });
+})();
+</script>
+</body>
+</html>

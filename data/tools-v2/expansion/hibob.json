@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "hibob",
+    "name": "HiBob",
+    "slug": "hibob",
+    "official_url": "https://www.hibob.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Productivity"
+    ],
+    "use_cases": [
+      "HRIS",
+      "people management",
+      "performance management"
+    ],
+    "audiences": [
+      "fast-growing companies",
+      "HR teams",
+      "mid-market businesses"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Modern HRIS platform",
+      "Scalable for growing companies",
+      "All-in-one people management"
+    ],
+    "not_recommended_for": [
+      "Custom pricing unclear for SMB",
+      "Enterprise-focused",
+      "Complex implementation"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/hibob.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "connecteam",
+      "deel",
+      "clickup"
+    ],
+    "comparisons": [
+      "connecteam"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.hibob.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/hibob.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

@@ -32,3 +32,37 @@ __pycache__/
 
 # Audit archives
 *.zip
+
+# Junie session artifacts
+.junie/
+
+# Internal documentation
+docs/internal/
+
+# Temporary reports
+reports/
+
+# Research dossiers
+data/research-dossiers/
+
+# Temporary batch/planning data files
+data/batch*-selected.json
+data/general-research-backlog.json
+data/gsc-tracking.json
+data/logo-provenance-ledger.json
+data/partnerstack-*.json
+data/prioritized-shortlist.json
+data/task-page-backlog.json
+data/evidence/
+
+# Temporary scripts
+generate_massive_tools.py
+
+# Accidental files
+=
+
+# Utility scripts (not production)
+check-grammarly.js
+check_logos.js
+check_review_logos.js
+screenshot_logos.js

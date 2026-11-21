@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "clevertap",
+    "name": "CleverTap",
+    "slug": "clevertap",
+    "official_url": "https://www.clevertap.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Sales"
+    ],
+    "use_cases": [
+      "customer engagement",
+      "retention",
+      "AI-powered marketing"
+    ],
+    "audiences": [
+      "digital brands",
+      "eCommerce",
+      "SaaS companies"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "AI-native customer engagement",
+      "Real-time decisioning",
+      "Multi-channel marketing"
+    ],
+    "not_recommended_for": [
+      "Expensive for SMB",
+      "Complex implementation",
+      "Requires technical resources"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/clevertap.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "activecampaign",
+      "hubspot",
+      "activecampaign"
+    ],
+    "comparisons": [
+      "activecampaign"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.clevertap.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/clevertap.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

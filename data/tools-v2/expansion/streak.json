@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "streak",
+    "name": "Streak",
+    "slug": "streak",
+    "official_url": "https://www.streak.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Sales"
+    ],
+    "use_cases": [
+      "Gmail-based CRM",
+      "pipeline management",
+      "email tracking"
+    ],
+    "audiences": [
+      "small businesses",
+      "sales teams",
+      "freelancers"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "CRM inside Gmail",
+      "Free plan available",
+      "Simple pipeline management"
+    ],
+    "not_recommended_for": [
+      "Gmail-only, no Outlook support",
+      "Limited for complex sales processes",
+      "Basic reporting"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/streak.html",
+    "review_owner": "Abdul Muswir",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "pipedrive",
+      "close",
+      "hubspot"
+    ],
+    "comparisons": [
+      "pipedrive"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.streak.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/streak.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}
