@@ -4,12 +4,5 @@
   },
   "allowScripts": {
     "puppeteer@25.18.1": true
-  },
-  "scripts": {
-    "validate-data": "python3 scripts/validate_data.py",
-    "build": "python3 scripts/build_site.py",
-    "gsc-report": "python3 scripts/gsc_report.py",
-    "audit": "python3 scripts/audit.py",
-    "indexnow": "python3 scripts/indexnow.py"
   }
 }

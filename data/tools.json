@@ -13,10 +13,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/activecampaign.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "adcreative",
@@ -33,22 +30,7 @@
         "Fast generation of multiple ad variations"
       ],
       "logo": "/assets/logos/adcreative.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Creative quality varies by prompt and niche",
-        "Limited customization on lower tiers",
-        "No free plan"
-      ],
-      "bestFor": [
-        "AI-generated ad creatives with proven templates",
-        "Copywriting suggestions included",
-        "Fast generation of multiple ad variations"
-      ],
-      "skipIf": [
-        "Creative quality varies by prompt and niche",
-        "Limited customization on lower tiers",
-        "No free plan"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "adobeexpress",
@@ -65,10 +47,7 @@
         "Adobe asset connections"
       ],
       "logo": "/assets/logos/adobeexpress.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "adwisely",
@@ -85,22 +64,7 @@
         "6x ROAS guarantee"
       ],
       "logo": "/assets/logos/adwisely.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Shopify-only, not for other platforms",
-        "Requires ad spend budget",
-        "ROAS guarantee has conditions"
-      ],
-      "bestFor": [
-        "AI-powered Meta and Google ads",
-        "Shopify integration",
-        "6x ROAS guarantee"
-      ],
-      "skipIf": [
-        "Shopify-only, not for other platforms",
-        "Requires ad spend budget",
-        "ROAS guarantee has conditions"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "ahrefs",
@@ -117,10 +81,7 @@
         "Competitive analysis"
       ],
       "logo": "/assets/logos/ahrefs.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "aircall",
@@ -137,22 +98,7 @@
         "Call recording and transcription"
       ],
       "logo": "/assets/logos/aircall.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Entry price at $34/mo is above market median",
-        "International calling incurs per-minute fees",
-        "Advanced features require higher tiers"
-      ],
-      "bestFor": [
-        "Clean, modern cloud phone interface",
-        "Deep CRM integrations (Salesforce, HubSpot, Pipedrive)",
-        "Call recording and transcription"
-      ],
-      "skipIf": [
-        "Entry price at $34/mo is above market median",
-        "International calling incurs per-minute fees",
-        "Advanced features require higher tiers"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "amplitude",
@@ -169,22 +115,7 @@
         "Experimentation and A/B testing"
       ],
       "logo": "/assets/logos/amplitude.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Pricing scales with event volume",
-        "Advanced features require paid plans",
-        "Learning curve for advanced analytics"
-      ],
-      "bestFor": [
-        "Generous free plan with 1M events/mo",
-        "Advanced product analytics and insights",
-        "Experimentation and A/B testing"
-      ],
-      "skipIf": [
-        "Pricing scales with event volume",
-        "Advanced features require paid plans",
-        "Learning curve for advanced analytics"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "apollo",
@@ -201,22 +132,7 @@
         "Free plan available"
       ],
       "logo": "/assets/logos/apollo.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Data accuracy outside US is lower",
-        "Credit system can be confusing",
-        "Email deliverability depends on setup"
-      ],
-      "bestFor": [
-        "275M+ contact database",
-        "Built-in email sequences",
-        "Free plan available"
-      ],
-      "skipIf": [
-        "Data accuracy outside US is lower",
-        "Credit system can be confusing",
-        "Email deliverability depends on setup"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "asana",
@@ -233,10 +149,7 @@
         "Team reporting"
       ],
       "logo": "/assets/logos/asana.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "beautifulai",
@@ -249,10 +162,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/beautifulai.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "beehiiv",
@@ -269,10 +179,7 @@
         "Built-in monetization options"
       ],
       "logo": "/assets/logos/beehiiv.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "bill",
@@ -289,22 +196,7 @@
         "Accountant collaboration"
       ],
       "logo": "/assets/logos/bill.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Premium pricing",
-        "Focused on AP/AR",
-        "Not a full accounting suite"
-      ],
-      "bestFor": [
-        "AP/automation",
-        "Payment processing",
-        "Accountant collaboration"
-      ],
-      "skipIf": [
-        "Premium pricing",
-        "Focused on AP/AR",
-        "Not a full accounting suite"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "brand24",
@@ -321,22 +213,7 @@
         "Real-time alerts"
       ],
       "logo": "/assets/logos/brand24.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Entry price at $79/mo is above market median",
-        "Advanced features require higher tiers",
-        "No free plan"
-      ],
-      "bestFor": [
-        "Comprehensive brand monitoring",
-        "Social listening and sentiment analysis",
-        "Real-time alerts"
-      ],
-      "skipIf": [
-        "Entry price at $79/mo is above market median",
-        "Advanced features require higher tiers",
-        "No free plan"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "breadbutter",
@@ -353,22 +230,7 @@
         "CRM integration"
       ],
       "logo": "/assets/logos/breadbutter.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Expensive for small teams",
-        "Requires existing analytics setup",
-        "Needs sufficient data volume for AI insights"
-      ],
-      "bestFor": [
-        "Tracks what converts into revenue",
-        "AI-powered lead intelligence",
-        "CRM integration"
-      ],
-      "skipIf": [
-        "Expensive for small teams",
-        "Requires existing analytics setup",
-        "Needs sufficient data volume for AI insights"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "brevo",
@@ -385,10 +247,7 @@
         "Contact management"
       ],
       "logo": "/assets/logos/brevo.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "browseai",
@@ -405,23 +264,7 @@
         "Residential proxies included on all plans"
       ],
       "logo": "/assets/logos/browseai.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Credit system can be expensive for large-scale scraping",
-        "Free plan very limited (50 credits/mo)",
-        "Learning curve for advanced workflows"
-      ],
-      "bestFor": [
-        "web scraping",
-        "data monitoring",
-        "no-code data extraction"
-      ],
-      "skipIf": [
-        "Credit system can be expensive for large-scale scraping",
-        "Free plan very limited (50 credits/mo)",
-        "Learning curve for advanced workflows",
-        "Subpage scraping requires manual setup"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "callrail",
@@ -438,23 +281,7 @@
         "Call recording and transcription"
       ],
       "logo": "/assets/logos/callrail.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Usage fees can significantly increase total cost",
-        "No free plan",
-        "AI features require expensive tiers"
-      ],
-      "bestFor": [
-        "call tracking",
-        "lead attribution",
-        "conversation intelligence"
-      ],
-      "skipIf": [
-        "Usage fees can significantly increase total cost",
-        "No free plan",
-        "AI features require expensive tiers",
-        "Primarily US/Canada/Australia/UK focused"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "campaignmonitor",
@@ -471,23 +298,7 @@
         "Drag-and-drop email builder"
       ],
       "logo": "/assets/logos/campaignmonitor.png",
-      "affiliateUrl": "",
-      "cons": [
-        "High price for feature set compared to competitors",
-        "No free plan",
-        "Send limits on Lite plan"
-      ],
-      "bestFor": [
-        "email marketing",
-        "design-focused campaigns",
-        "agency email management"
-      ],
-      "skipIf": [
-        "High price for feature set compared to competitors",
-        "No free plan",
-        "Send limits on Lite plan",
-        "Dashboard and support in English only"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "canva",
@@ -504,10 +315,7 @@
         "Useful for teams and brand kits"
       ],
       "logo": "/assets/logos/canva.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "capsule",
@@ -524,22 +332,7 @@
         "Pipeline management"
       ],
       "logo": "/assets/logos/capsule.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Very basic CRM",
-        "Limited automation",
-        "Not suitable for complex sales processes"
-      ],
-      "bestFor": [
-        "Simple and intuitive CRM",
-        "Affordable for small teams",
-        "Pipeline management"
-      ],
-      "skipIf": [
-        "Very basic CRM",
-        "Limited automation",
-        "Not suitable for complex sales processes"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "castmagic",
@@ -556,22 +349,7 @@
         "Multi-format export"
       ],
       "logo": "/assets/logos/castmagic.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Transcription accuracy varies by audio quality",
-        "Limited editing capabilities",
-        "Storage constraints on free tier"
-      ],
-      "bestFor": [
-        "Transforms audio/video into blog posts and social content",
-        "AI-powered transcription",
-        "Multi-format export"
-      ],
-      "skipIf": [
-        "Transcription accuracy varies by audio quality",
-        "Limited editing capabilities",
-        "Storage constraints on free tier"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "chatgpt",
@@ -588,10 +366,7 @@
         "Supports iterative conversations"
       ],
       "logo": "/assets/logos/chatgpt.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "circle",
@@ -604,10 +379,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/circle.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "claude",
@@ -624,10 +396,7 @@
         "Useful for writing and coding"
       ],
       "logo": "/assets/logos/claude.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "clevertap",
@@ -644,22 +413,7 @@
         "Multi-channel marketing"
       ],
       "logo": "/assets/logos/clevertap.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Expensive for SMB",
-        "Complex implementation",
-        "Requires technical resources"
-      ],
-      "bestFor": [
-        "AI-native customer engagement",
-        "Real-time decisioning",
-        "Multi-channel marketing"
-      ],
-      "skipIf": [
-        "Expensive for SMB",
-        "Complex implementation",
-        "Requires technical resources"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "clickup",
@@ -676,10 +430,7 @@
         "Team workflows"
       ],
       "logo": "/assets/logos/clickup.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "close",
@@ -692,10 +443,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/close.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "closely",
@@ -712,22 +460,7 @@
         "Outbound automation"
       ],
       "logo": "/assets/logos/closely.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Focused on outbound",
-        "Limited for inbound",
-        "Per-user pricing scales cost"
-      ],
-      "bestFor": [
-        "Sales engagement platform",
-        "Email sequencing",
-        "Outbound automation"
-      ],
-      "skipIf": [
-        "Focused on outbound",
-        "Limited for inbound",
-        "Per-user pricing scales cost"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "cloudtalk",
@@ -744,22 +477,7 @@
         "CRM integrations"
       ],
       "logo": "/assets/logos/cloudtalk.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Per-agent pricing can be expensive for large teams",
-        "Limited self-serve options",
-        "Advanced analytics on higher tiers only"
-      ],
-      "bestFor": [
-        "All-in-one cloud contact center",
-        "AI-powered call features",
-        "CRM integrations"
-      ],
-      "skipIf": [
-        "Per-agent pricing can be expensive for large teams",
-        "Limited self-serve options",
-        "Advanced analytics on higher tiers only"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "confetti",
@@ -776,22 +494,7 @@
         "Company culture tools"
       ],
       "logo": "/assets/logos/confetti.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Primarily for culture/EX",
-        "Limited HR functionality",
-        "Requires active participation"
-      ],
-      "bestFor": [
-        "Employee experience platform",
-        "Internal communications",
-        "Company culture tools"
-      ],
-      "skipIf": [
-        "Primarily for culture/EX",
-        "Limited HR functionality",
-        "Requires active participation"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "connecteam",
@@ -808,22 +511,7 @@
         "Employee messaging and scheduling"
       ],
       "logo": "/assets/logos/connecteam.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Free plan limited to 10 users",
-        "Advanced features require paid plans",
-        "Learning curve for setup"
-      ],
-      "bestFor": [
-        "Free plan for up to 10 users",
-        "All-in-one workforce management",
-        "Employee messaging and scheduling"
-      ],
-      "skipIf": [
-        "Free plan limited to 10 users",
-        "Advanced features require paid plans",
-        "Learning curve for setup"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "consensus",
@@ -836,10 +524,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/consensus.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "copyai",
@@ -856,10 +541,7 @@
         "Team-oriented content"
       ],
       "logo": "/assets/logos/copyai.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "deel",
@@ -872,10 +554,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/deel.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "descript",
@@ -892,10 +571,7 @@
         "Removes filler words fast"
       ],
       "logo": "/assets/logos/descript.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "dext",
@@ -912,22 +588,7 @@
         "Accountant collaboration"
       ],
       "logo": "/assets/logos/dext.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Focused on expense management",
-        "Requires accounting software",
-        "Limited for non-accounting use"
-      ],
-      "bestFor": [
-        "AI-powered receipt scanning",
-        "Tax deduction tracking",
-        "Accountant collaboration"
-      ],
-      "skipIf": [
-        "Focused on expense management",
-        "Requires accounting software",
-        "Limited for non-accounting use"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "dripify",
@@ -944,22 +605,7 @@
         "Lead scraping"
       ],
       "logo": "/assets/logos/dripify.png",
-      "affiliateUrl": "",
-      "cons": [
-        "LinkedIn account risk with automation",
-        "Limited to LinkedIn ecosystem",
-        "Action limits to prevent detection"
-      ],
-      "bestFor": [
-        "LinkedIn outreach automation",
-        "Visual workflow builder",
-        "Lead scraping"
-      ],
-      "skipIf": [
-        "LinkedIn account risk with automation",
-        "Limited to LinkedIn ecosystem",
-        "Action limits to prevent detection"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "elevenlabs",
@@ -976,10 +622,7 @@
         "Narrate without recording"
       ],
       "logo": "/assets/logos/elevenlabs.png",
-      "affiliateUrl": "https://try.elevenlabs.io/4kkksh8cm36q",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": "https://try.elevenlabs.io/4kkksh8cm36q"
     },
     {
       "id": "expertex",
@@ -996,22 +639,7 @@
         "UGC-style content creation"
       ],
       "logo": "/assets/logos/expertex.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Focused on eCommerce product photography",
-        "Not a general-purpose image generator",
-        "Requires existing product photos"
-      ],
-      "bestFor": [
-        "Studio-quality product photos from basic images",
-        "Video ad generation",
-        "UGC-style content creation"
-      ],
-      "skipIf": [
-        "Focused on eCommerce product photography",
-        "Not a general-purpose image generator",
-        "Requires existing product photos"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "figma",
@@ -1028,10 +656,7 @@
         "Reusable design systems"
       ],
       "logo": "/assets/logos/figma.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "fireflies",
@@ -1048,10 +673,7 @@
         "CRM integrations"
       ],
       "logo": "/assets/logos/fireflies.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "flexiquiz",
@@ -1068,22 +690,7 @@
         "Custom branding options"
       ],
       "logo": "/assets/logos/flexiquiz.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Advanced features require higher tiers",
-        "No free plan",
-        "Limited customization on lower tiers"
-      ],
-      "bestFor": [
-        "Easy quiz creation and embedding",
-        "Lead capture and analytics",
-        "Custom branding options"
-      ],
-      "skipIf": [
-        "Advanced features require higher tiers",
-        "No free plan",
-        "Limited customization on lower tiers"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "flocksy",
@@ -1100,22 +707,7 @@
         "Lead generation tools"
       ],
       "logo": "/assets/logos/flocksy.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Email volume capped by plan tier",
-        "Single user on Starter plan",
-        "No free plan"
-      ],
-      "bestFor": [
-        "Cold email outreach with AI copywriting",
-        "Email warmup included",
-        "Lead generation tools"
-      ],
-      "skipIf": [
-        "Email volume capped by plan tier",
-        "Single user on Starter plan",
-        "No free plan"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "framer",
@@ -1132,10 +724,7 @@
         "Strong animation and interaction tools"
       ],
       "logo": "/assets/logos/framer.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "freshbooks",
@@ -1152,22 +741,7 @@
         "Time tracking included"
       ],
       "logo": "/assets/logos/freshbooks.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Limited for complex accounting needs",
-        "Client limits on lower tiers",
-        "Not suitable for large enterprises"
-      ],
-      "bestFor": [
-        "Intuitive accounting for SMB",
-        "Invoice and expense tracking",
-        "Time tracking included"
-      ],
-      "skipIf": [
-        "Limited for complex accounting needs",
-        "Client limits on lower tiers",
-        "Not suitable for large enterprises"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "freshdesk",
@@ -1180,10 +754,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/freshdesk.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "gamma",
@@ -1196,10 +767,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/gamma.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "gemini",
@@ -1216,10 +784,7 @@
         "General research and drafting"
       ],
       "logo": "/assets/logos/gemini.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "getresponse",
@@ -1232,10 +797,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/getresponse.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "glide",
@@ -1252,22 +814,7 @@
         "Free plan available"
       ],
       "logo": "/assets/logos/glide.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Dependent on spreadsheet backend",
-        "Limited design customization",
-        "Not for complex web apps"
-      ],
-      "bestFor": [
-        "No-code app builder from spreadsheets",
-        "Google Sheets/Airtable integration",
-        "Free plan available"
-      ],
-      "skipIf": [
-        "Dependent on spreadsheet backend",
-        "Limited design customization",
-        "Not for complex web apps"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "gorgias",
@@ -1280,10 +827,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/gorgias.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "grammarly",
@@ -1300,10 +844,7 @@
         "Helps with polite tone"
       ],
       "logo": "/assets/logos/grammarly.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "helpscout",
@@ -1320,22 +861,7 @@
         "Knowledge base included"
       ],
       "logo": "/assets/logos/helpscout.png",
-      "affiliateUrl": "",
-      "cons": [
-        "AI Answers costs extra ($0.75/resolution)",
-        "No free plan",
-        "Less feature-rich than Zendesk for enterprise"
-      ],
-      "bestFor": [
-        "Clean email-first interface",
-        "AI Answers for automated resolution",
-        "Knowledge base included"
-      ],
-      "skipIf": [
-        "AI Answers costs extra ($0.75/resolution)",
-        "No free plan",
-        "Less feature-rich than Zendesk for enterprise"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "hemingway",
@@ -1352,10 +878,7 @@
         "Simple editing workflow"
       ],
       "logo": "/assets/logos/hemingway.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "hibob",
@@ -1372,22 +895,7 @@
         "All-in-one people management"
       ],
       "logo": "/assets/logos/hibob.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Custom pricing unclear for SMB",
-        "Enterprise-focused",
-        "Complex implementation"
-      ],
-      "bestFor": [
-        "Modern HRIS platform",
-        "Scalable for growing companies",
-        "All-in-one people management"
-      ],
-      "skipIf": [
-        "Custom pricing unclear for SMB",
-        "Enterprise-focused",
-        "Complex implementation"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "hightouch",
@@ -1404,22 +912,7 @@
         "No-code configuration"
       ],
       "logo": "/assets/logos/hightouch.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Expensive for small teams",
-        "Requires data warehouse",
-        "Steep learning curve for complex mappings"
-      ],
-      "bestFor": [
-        "Reverse ETL leader",
-        "Syncs data to 200+ tools",
-        "No-code configuration"
-      ],
-      "skipIf": [
-        "Expensive for small teams",
-        "Requires data warehouse",
-        "Steep learning curve for complex mappings"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "hostinger",
@@ -1436,10 +929,7 @@
         "Free SSL listed on its plans"
       ],
       "logo": "/assets/logos/hostinger.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "hubspot",
@@ -1456,10 +946,7 @@
         "Sales pipeline tools"
       ],
       "logo": "/assets/logos/hubspot.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "ifttt",
@@ -1476,10 +963,7 @@
         "Quick trigger-action setup"
       ],
       "logo": "/assets/logos/ifttt.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "instantly",
@@ -1496,22 +980,7 @@
         "AI-powered email writing"
       ],
       "logo": "/assets/logos/instantly.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Cold email only, not for marketing campaigns",
-        "Requires domain setup for best results",
-        "Learning curve for optimal configuration"
-      ],
-      "bestFor": [
-        "Built-in email warmup",
-        "Unlimited inboxes",
-        "AI-powered email writing"
-      ],
-      "skipIf": [
-        "Cold email only, not for marketing campaigns",
-        "Requires domain setup for best results",
-        "Learning curve for optimal configuration"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "instapage",
@@ -1524,10 +993,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/instapage.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "intercom",
@@ -1544,22 +1010,7 @@
         "Strong for SaaS"
       ],
       "logo": "/assets/logos/intercom.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Expensive for small teams",
-        "Complex setup",
-        "AI features require higher tiers"
-      ],
-      "bestFor": [
-        "AI-powered customer messaging",
-        "Live chat and help center",
-        "Strong for SaaS"
-      ],
-      "skipIf": [
-        "Expensive for small teams",
-        "Complex setup",
-        "AI features require higher tiers"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "invideo",
@@ -1576,10 +1027,7 @@
         "Stock media workflow"
       ],
       "logo": "/assets/logos/invideo.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "jasper",
@@ -1596,10 +1044,7 @@
         "Good for teams"
       ],
       "logo": "/assets/logos/jasper.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "kapwing",
@@ -1616,10 +1061,7 @@
         "Team collaboration"
       ],
       "logo": "/assets/logos/kapwing.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "keap",
@@ -1636,23 +1078,7 @@
         "Built-in invoicing and payment processing"
       ],
       "logo": "/assets/logos/keap.png",
-      "affiliateUrl": "",
-      "cons": [
-        "High starting price at $299/mo",
-        "Required $500 implementation fee",
-        "Steep price increase for additional contacts"
-      ],
-      "bestFor": [
-        "CRM",
-        "marketing automation",
-        "small business automation"
-      ],
-      "skipIf": [
-        "High starting price at $299/mo",
-        "Required $500 implementation fee",
-        "Steep price increase for additional contacts",
-        "Trustpilot rating 1.1/5 \u2014 billing and cancellation complaints"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "kit",
@@ -1669,10 +1095,7 @@
         "Tag-based subscriber organization"
       ],
       "logo": "/assets/logos/kit.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "krispcall",
@@ -1689,22 +1112,7 @@
         "Call recording and transcription"
       ],
       "logo": "/assets/logos/krispcall.png",
-      "affiliateUrl": "",
-      "cons": [
-        "AI features limited on Starter plan",
-        "International calling incurs per-minute fees",
-        "CRM integrations require higher tier"
-      ],
-      "bestFor": [
-        "AI noise cancellation included on all plans",
-        "Affordable entry point at $15/mo",
-        "Call recording and transcription"
-      ],
-      "skipIf": [
-        "AI features limited on Starter plan",
-        "International calling incurs per-minute fees",
-        "CRM integrations require higher tier"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "learnworlds",
@@ -1721,22 +1129,7 @@
         "Certification and assessments"
       ],
       "logo": "/assets/logos/learnworlds.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Transaction fees on entry plan",
-        "Steeper learning curve than Teachable",
-        "Limited free options"
-      ],
-      "bestFor": [
-        "Interactive course builder",
-        "Built-in monetization",
-        "Certification and assessments"
-      ],
-      "skipIf": [
-        "Transaction fees on entry plan",
-        "Steeper learning curve than Teachable",
-        "Limited free options"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "lemlist",
@@ -1749,10 +1142,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/lemlist.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "leonardo",
@@ -1769,10 +1159,7 @@
         "Creative controls"
       ],
       "logo": "/assets/logos/leonardo.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "logome",
@@ -1789,22 +1176,7 @@
         "No design experience needed"
       ],
       "logo": "/assets/logos/logome.png",
-      "affiliateUrl": "",
-      "cons": [
-        "AI-generated logos may lack uniqueness",
-        "Limited fine-tuning control",
-        "Not a replacement for professional branding"
-      ],
-      "bestFor": [
-        "AI-powered logo generation",
-        "Brand kit creation",
-        "No design experience needed"
-      ],
-      "skipIf": [
-        "AI-generated logos may lack uniqueness",
-        "Limited fine-tuning control",
-        "Not a replacement for professional branding"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "lusha",
@@ -1821,22 +1193,7 @@
         "Focus on data compliance"
       ],
       "logo": "/assets/logos/lusha.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Credit-based system limits usage",
-        "Data accuracy varies by region",
-        "Expensive for high-volume needs"
-      ],
-      "bestFor": [
-        "Contact and company data platform",
-        "CRM integrations",
-        "Focus on data compliance"
-      ],
-      "skipIf": [
-        "Credit-based system limits usage",
-        "Data accuracy varies by region",
-        "Expensive for high-volume needs"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "mailchimp",
@@ -1853,10 +1210,7 @@
         "Marketing automations"
       ],
       "logo": "/assets/logos/mailchimp.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "make",
@@ -1873,10 +1227,7 @@
         "Large integration library"
       ],
       "logo": "/assets/logos/make.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "manychat",
@@ -1889,10 +1240,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/manychat.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "meetgeek",
@@ -1909,22 +1257,7 @@
         "Team collaboration"
       ],
       "logo": "/assets/logos/meetgeek.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Meeting limits on free tier",
-        "Transcription accuracy varies",
-        "Limited integrations on entry plan"
-      ],
-      "bestFor": [
-        "AI meeting automation",
-        "Transcription and notes",
-        "Team collaboration"
-      ],
-      "skipIf": [
-        "Meeting limits on free tier",
-        "Transcription accuracy varies",
-        "Limited integrations on entry plan"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "midjourney",
@@ -1941,10 +1274,7 @@
         "Rapid visual ideation"
       ],
       "logo": "/assets/logos/midjourney.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "mixpanel",
@@ -1961,22 +1291,7 @@
         "Real-time event tracking"
       ],
       "logo": "/assets/logos/mixpanel.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Pricing scales with event volume",
-        "Free plan limited to 6-month retention",
-        "Advanced features require paid plans"
-      ],
-      "bestFor": [
-        "Free plan with 10,000 tracked users",
-        "Powerful funnel and cohort analysis",
-        "Real-time event tracking"
-      ],
-      "skipIf": [
-        "Pricing scales with event volume",
-        "Free plan limited to 6-month retention",
-        "Advanced features require paid plans"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "monday",
@@ -1993,10 +1308,7 @@
         "Visual dashboards"
       ],
       "logo": "/assets/logos/monday.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "moosend",
@@ -2009,10 +1321,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/moosend.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "mozpro",
@@ -2029,10 +1338,7 @@
         "Keyword research"
       ],
       "logo": "/assets/logos/mozpro.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "murf",
@@ -2045,10 +1351,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/murf.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "n8n",
@@ -2065,10 +1368,7 @@
         "Developer-friendly integrations"
       ],
       "logo": "/assets/logos/n8n.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "netlify",
@@ -2081,10 +1381,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/netlify.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "notebooklm",
@@ -2101,10 +1398,7 @@
         "Research organization"
       ],
       "logo": "/assets/logos/notebooklm.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "notion",
@@ -2121,10 +1415,7 @@
         "Good for solo work"
       ],
       "logo": "/assets/logos/notion.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "nutshell",
@@ -2137,10 +1428,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/nutshell.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "omnisend",
@@ -2157,22 +1445,7 @@
         "Multi-channel (email, SMS, push)"
       ],
       "logo": "/assets/logos/omnisend.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Primarily for eCommerce",
-        "Limited for non-eCommerce use cases",
-        "Advanced features on higher tiers"
-      ],
-      "bestFor": [
-        "eCommerce-focused marketing automation",
-        "Free plan available",
-        "Multi-channel (email, SMS, push)"
-      ],
-      "skipIf": [
-        "Primarily for eCommerce",
-        "Limited for non-eCommerce use cases",
-        "Advanced features on higher tiers"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "omniseo",
@@ -2189,22 +1462,7 @@
         "Helps optimize for AI chat platforms"
       ],
       "logo": "/assets/logos/omniseo.png",
-      "affiliateUrl": "",
-      "cons": [
-        "New category with limited benchmarks",
-        "Premium pricing",
-        "AI visibility metrics still evolving"
-      ],
-      "bestFor": [
-        "AI visibility measurement platform",
-        "Tracks brand mentions in AI search",
-        "Helps optimize for AI chat platforms"
-      ],
-      "skipIf": [
-        "New category with limited benchmarks",
-        "Premium pricing",
-        "AI visibility metrics still evolving"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "otter",
@@ -2221,10 +1479,7 @@
         "Meeting summaries"
       ],
       "logo": "/assets/logos/otter.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "pandadoc",
@@ -2241,22 +1496,7 @@
         "Payment integration"
       ],
       "logo": "/assets/logos/pandadoc.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Per-user pricing scales cost",
-        "Limited free plan",
-        "Not a full contract management solution"
-      ],
-      "bestFor": [
-        "Document automation and e-signatures",
-        "Proposal builder",
-        "Payment integration"
-      ],
-      "skipIf": [
-        "Per-user pricing scales cost",
-        "Limited free plan",
-        "Not a full contract management solution"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "perplexity",
@@ -2273,10 +1513,7 @@
         "Useful follow-up questions"
       ],
       "logo": "/assets/logos/perplexity.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "pipedrive",
@@ -2289,10 +1526,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/pipedrive.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "pixelunion",
@@ -2309,22 +1543,7 @@
         "eCommerce integrations"
       ],
       "logo": "/assets/logos/pixelunion.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Primarily for eCommerce products",
-        "Limited for non-product photography",
-        "Quality depends on input images"
-      ],
-      "bestFor": [
-        "AI product photography",
-        "Background removal and replacement",
-        "eCommerce integrations"
-      ],
-      "skipIf": [
-        "Primarily for eCommerce products",
-        "Limited for non-product photography",
-        "Quality depends on input images"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "prowritingaid",
@@ -2341,10 +1560,7 @@
         "Long-form writing focus"
       ],
       "logo": "/assets/logos/prowritingaid.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "quickbooks",
@@ -2361,22 +1577,7 @@
         "Invoicing and billing"
       ],
       "logo": "/assets/logos/quickbooks.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Can be complex for simple needs",
-        "Per-user pricing scales cost",
-        "Limited for enterprise"
-      ],
-      "bestFor": [
-        "Industry-standard accounting",
-        "Strong integrations",
-        "Invoicing and billing"
-      ],
-      "skipIf": [
-        "Can be complex for simple needs",
-        "Per-user pricing scales cost",
-        "Limited for enterprise"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "quillbot",
@@ -2393,10 +1594,7 @@
         "Browser-based workflow"
       ],
       "logo": "/assets/logos/quillbot.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "quo",
@@ -2409,10 +1607,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/quo.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "rgestudio",
@@ -2429,22 +1624,7 @@
         "Email template library"
       ],
       "logo": "/assets/logos/rgestudio.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Design-focused, not full email marketing",
-        "No sending capabilities",
-        "Requires email service provider"
-      ],
-      "bestFor": [
-        "Email design platform and inspiration",
-        "Drag-and-drop editor",
-        "Email template library"
-      ],
-      "skipIf": [
-        "Design-focused, not full email marketing",
-        "No sending capabilities",
-        "Requires email service provider"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "removebg",
@@ -2461,10 +1641,7 @@
         "API available"
       ],
       "logo": "/assets/logos/removebg.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "replyio",
@@ -2481,22 +1658,7 @@
         "AI-powered personalization"
       ],
       "logo": "/assets/logos/replyio.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Per-user pricing scales cost",
-        "Complex setup",
-        "Expensive for small teams"
-      ],
-      "bestFor": [
-        "Multi-channel outreach",
-        "Email, call, LinkedIn sequences",
-        "AI-powered personalization"
-      ],
-      "skipIf": [
-        "Per-user pricing scales cost",
-        "Complex setup",
-        "Expensive for small teams"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "runway",
@@ -2513,10 +1675,7 @@
         "Visual effects workflows"
       ],
       "logo": "/assets/logos/runway.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "salesforce-smb",
@@ -2533,22 +1692,7 @@
         "Strong CRM foundation"
       ],
       "logo": "/assets/logos/salesforce-smb.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Expensive per-user pricing",
-        "Limited for very small teams",
-        "Complex for simple needs"
-      ],
-      "bestFor": [
-        "Salesforce ecosystem access",
-        "Scalable to higher tiers",
-        "Strong CRM foundation"
-      ],
-      "skipIf": [
-        "Expensive per-user pricing",
-        "Limited for very small teams",
-        "Complex for simple needs"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "screamingfrog",
@@ -2565,10 +1709,7 @@
         "Metadata auditing"
       ],
       "logo": "/assets/logos/screamingfrog.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "semrush",
@@ -2585,10 +1726,7 @@
         "Many SEO tools in one"
       ],
       "logo": "/assets/logos/semrush.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "shoeboxed",
@@ -2605,22 +1743,7 @@
         "Expense reports and tax preparation"
       ],
       "logo": "/assets/logos/shoeboxed.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Advanced features require higher tiers",
-        "No free plan",
-        "Mail-in receipts may have delays"
-      ],
-      "bestFor": [
-        "Unlimited receipt scanning",
-        "OCR technology for data extraction",
-        "Expense reports and tax preparation"
-      ],
-      "skipIf": [
-        "Advanced features require higher tiers",
-        "No free plan",
-        "Mail-in receipts may have delays"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "simpletexting",
@@ -2637,22 +1760,7 @@
         "Easy setup"
       ],
       "logo": "/assets/logos/simpletexting.png",
-      "affiliateUrl": "",
-      "cons": [
-        "SMS-only, no MMS on entry",
-        "Message costs extra",
-        "Limited for complex campaigns"
-      ],
-      "bestFor": [
-        "SMS marketing platform",
-        "Two-way texting",
-        "Easy setup"
-      ],
-      "skipIf": [
-        "SMS-only, no MMS on entry",
-        "Message costs extra",
-        "Limited for complex campaigns"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "smartlead",
@@ -2669,22 +1777,7 @@
         "AI-powered features"
       ],
       "logo": "/assets/logos/smartlead.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Per-seat pricing scales cost",
-        "Requires technical setup",
-        "Cold email only, not for marketing campaigns"
-      ],
-      "bestFor": [
-        "Cold email automation",
-        "Multi-inbox support",
-        "AI-powered features"
-      ],
-      "skipIf": [
-        "Per-seat pricing scales cost",
-        "Requires technical setup",
-        "Cold email only, not for marketing campaigns"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "smartli",
@@ -2701,22 +1794,7 @@
         "Product description generation"
       ],
       "logo": "/assets/logos/smartli.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Narrowed to eCommerce use cases",
-        "May not suit non-eCommerce writing",
-        "Limited multilingual support"
-      ],
-      "bestFor": [
-        "eCommerce-specific AI copywriting",
-        "SEO-optimized output",
-        "Product description generation"
-      ],
-      "skipIf": [
-        "Narrowed to eCommerce use cases",
-        "May not suit non-eCommerce writing",
-        "Limited multilingual support"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "softr",
@@ -2733,22 +1811,7 @@
         "Free plan available"
       ],
       "logo": "/assets/logos/softr.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Dependent on Airtable/Google Sheets backend",
-        "Limited design customization",
-        "Not for complex web apps"
-      ],
-      "bestFor": [
-        "No-code app and portal builder",
-        "Airtable and Google Sheets integration",
-        "Free plan available"
-      ],
-      "skipIf": [
-        "Dependent on Airtable/Google Sheets backend",
-        "Limited design customization",
-        "Not for complex web apps"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "softsync",
@@ -2765,22 +1828,7 @@
         "Automated data entry"
       ],
       "logo": "/assets/logos/softsync.png",
-      "affiliateUrl": "",
-      "cons": [
-        "New product, limited track record",
-        "Dependent on AI platforms",
-        "Limited for traditional CRM needs"
-      ],
-      "bestFor": [
-        "CRM inside Claude and ChatGPT",
-        "AI-powered follow-ups",
-        "Automated data entry"
-      ],
-      "skipIf": [
-        "New product, limited track record",
-        "Dependent on AI platforms",
-        "Limited for traditional CRM needs"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "spiky",
@@ -2797,22 +1845,7 @@
         "Sales coaching and insights"
       ],
       "logo": "/assets/logos/spiky.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Entry price at $49/mo is above market median",
-        "Advanced features require higher tiers",
-        "No free plan"
-      ],
-      "bestFor": [
-        "AI-powered conversation intelligence",
-        "Call recording and transcription",
-        "Sales coaching and insights"
-      ],
-      "skipIf": [
-        "Entry price at $49/mo is above market median",
-        "Advanced features require higher tiers",
-        "No free plan"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "sproutsocial",
@@ -2829,22 +1862,7 @@
         "Social listening"
       ],
       "logo": "/assets/logos/sproutsocial.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Expensive for small teams",
-        "Per-user pricing",
-        "Overkill for simple social needs"
-      ],
-      "bestFor": [
-        "Comprehensive social media management",
-        "Advanced analytics and reporting",
-        "Social listening"
-      ],
-      "skipIf": [
-        "Expensive for small teams",
-        "Per-user pricing",
-        "Overkill for simple social needs"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "squarespace",
@@ -2861,10 +1879,7 @@
         "Managed hosting"
       ],
       "logo": "/assets/logos/squarespace.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "stamped",
@@ -2881,22 +1896,7 @@
         "UGC marketing"
       ],
       "logo": "/assets/logos/stamped.png",
-      "affiliateUrl": "",
-      "cons": [
-        "eCommerce-focused",
-        "Limited for non-Shopify",
-        "Review verification required"
-      ],
-      "bestFor": [
-        "Product review platform",
-        "Loyalty programs",
-        "UGC marketing"
-      ],
-      "skipIf": [
-        "eCommerce-focused",
-        "Limited for non-Shopify",
-        "Review verification required"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "storydoc",
@@ -2913,22 +1913,7 @@
         "Clean design"
       ],
       "logo": "/assets/logos/storydoc.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Focused on interactive docs",
-        "Not a general writing tool",
-        "Limited for non-sales content"
-      ],
-      "bestFor": [
-        "Interactive content and proposals",
-        "Engagement analytics",
-        "Clean design"
-      ],
-      "skipIf": [
-        "Focused on interactive docs",
-        "Not a general writing tool",
-        "Limited for non-sales content"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "storylane",
@@ -2945,22 +1930,7 @@
         "Training modules and assessments"
       ],
       "logo": "/assets/logos/storylane.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Entry price at $49/mo is above market median",
-        "Advanced features require higher tiers",
-        "No free plan"
-      ],
-      "bestFor": [
-        "All-in-one sales enablement platform",
-        "Content library and sales playbooks",
-        "Training modules and assessments"
-      ],
-      "skipIf": [
-        "Entry price at $49/mo is above market median",
-        "Advanced features require higher tiers",
-        "No free plan"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "streak",
@@ -2977,22 +1947,7 @@
         "Simple pipeline management"
       ],
       "logo": "/assets/logos/streak.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Gmail-only, no Outlook support",
-        "Limited for complex sales processes",
-        "Basic reporting"
-      ],
-      "bestFor": [
-        "CRM inside Gmail",
-        "Free plan available",
-        "Simple pipeline management"
-      ],
-      "skipIf": [
-        "Gmail-only, no Outlook support",
-        "Limited for complex sales processes",
-        "Basic reporting"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "surferseo",
@@ -3009,10 +1964,7 @@
         "SERP-based suggestions"
       ],
       "logo": "/assets/logos/surferseo.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "surveymonkey",
@@ -3029,22 +1981,7 @@
         "Advanced analytics"
       ],
       "logo": "/assets/logos/surveymonkey.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Limited free plan",
-        "Branded surveys without payment",
-        "Advanced features expensive"
-      ],
-      "bestFor": [
-        "Industry-standard survey platform",
-        "Large template library",
-        "Advanced analytics"
-      ],
-      "skipIf": [
-        "Limited free plan",
-        "Branded surveys without payment",
-        "Advanced features expensive"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "survicate",
@@ -3057,10 +1994,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/survicate.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "synthesia",
@@ -3077,10 +2011,7 @@
         "Business video templates"
       ],
       "logo": "/assets/logos/synthesia.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "systeme",
@@ -3097,10 +2028,7 @@
         "Can replace several separate subscriptions"
       ],
       "logo": "/assets/logos/systeme.png",
-      "affiliateUrl": "https://systeme.io/?sa=sa0283786247d8d254e08d2d01d25a1e2069805f78",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": "https://systeme.io/?sa=sa0283786247d8d254e08d2d01d25a1e2069805f78"
     },
     {
       "id": "teachable",
@@ -3117,22 +2045,7 @@
         "Quizzes, certificates, and drip content"
       ],
       "logo": "/assets/logos/teachable.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Transaction fees on top of plan price",
-        "Course limit on lower tiers",
-        "No free plan"
-      ],
-      "bestFor": [
-        "Easy course creation and hosting",
-        "Unlimited students on all plans",
-        "Quizzes, certificates, and drip content"
-      ],
-      "skipIf": [
-        "Transaction fees on top of plan price",
-        "Course limit on lower tiers",
-        "No free plan"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "teamwork",
@@ -3149,22 +2062,7 @@
         "Goal tracking"
       ],
       "logo": "/assets/logos/teamwork.png",
-      "affiliateUrl": "",
-      "cons": [
-        "No free plan",
-        "Per-user pricing scales cost",
-        "Less flexible than ClickUp for general use"
-      ],
-      "bestFor": [
-        "Project management for client work",
-        "Time tracking and reporting",
-        "Goal tracking"
-      ],
-      "skipIf": [
-        "No free plan",
-        "Per-user pricing scales cost",
-        "Less flexible than ClickUp for general use"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "teikametrics",
@@ -3181,22 +2079,7 @@
         "Automated advertising"
       ],
       "logo": "/assets/logos/teikametrics.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Expensive for small sellers",
-        "Marketplace-focused, not general SEO",
-        "Requires existing marketplace presence"
-      ],
-      "bestFor": [
-        "AI-powered marketplace optimization",
-        "Amazon/Walmart/TikTok Shop support",
-        "Automated advertising"
-      ],
-      "skipIf": [
-        "Expensive for small sellers",
-        "Marketplace-focused, not general SEO",
-        "Requires existing marketplace presence"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "textline",
@@ -3213,22 +2096,7 @@
         "CRM integrations"
       ],
       "logo": "/assets/logos/textline.png",
-      "affiliateUrl": "",
-      "cons": [
-        "SMS volume capped by plan tier",
-        "Advanced features require higher tiers",
-        "No free plan"
-      ],
-      "bestFor": [
-        "Two-way SMS for customer communication",
-        "Appointment reminders and auto-replies",
-        "CRM integrations"
-      ],
-      "skipIf": [
-        "SMS volume capped by plan tier",
-        "Advanced features require higher tiers",
-        "No free plan"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "thetop",
@@ -3245,22 +2113,7 @@
         "Clean interface"
       ],
       "logo": "/assets/logos/thetop.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Relatively new product with limited track record",
-        "AI briefings may miss context",
-        "Limited customization on lower tiers"
-      ],
-      "bestFor": [
-        "Consolidates notifications into one daily brief",
-        "AI-powered prioritization",
-        "Clean interface"
-      ],
-      "skipIf": [
-        "Relatively new product with limited track record",
-        "AI briefings may miss context",
-        "Limited customization on lower tiers"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "tidio",
@@ -3273,10 +2126,7 @@
       "best": "AI-powered tool",
       "pros": [],
       "logo": "/assets/logos/tidio.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "timedoctor",
@@ -3293,22 +2143,7 @@
         "Automatic time tracking"
       ],
       "logo": "/assets/logos/timedoctor.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Privacy concerns with activity monitoring",
-        "Can feel invasive to employees",
-        "Limited project management features"
-      ],
-      "bestFor": [
-        "Affordable time tracking",
-        "Productivity analytics",
-        "Automatic time tracking"
-      ],
-      "skipIf": [
-        "Privacy concerns with activity monitoring",
-        "Can feel invasive to employees",
-        "Limited project management features"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "todoist",
@@ -3325,10 +2160,7 @@
         "Cross-device apps"
       ],
       "logo": "/assets/logos/todoist.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "trainual",
@@ -3345,22 +2177,7 @@
         "Onboarding workflows"
       ],
       "logo": "/assets/logos/trainual.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Primarily for SMB",
-        "Limited advanced LMS features",
-        "Requires content creation effort"
-      ],
-      "bestFor": [
-        "SOP and training platform",
-        "Video-based documentation",
-        "Onboarding workflows"
-      ],
-      "skipIf": [
-        "Primarily for SMB",
-        "Limited advanced LMS features",
-        "Requires content creation effort"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "transpond",
@@ -3377,22 +2194,7 @@
         "Affordable for SMB"
       ],
       "logo": "/assets/logos/transpond.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Tied to Capsule CRM ecosystem",
-        "Limited standalone value",
-        "Less feature-rich than ActiveCampaign"
-      ],
-      "bestFor": [
-        "Email marketing for CRM users",
-        "Capsule CRM integration",
-        "Affordable for SMB"
-      ],
-      "skipIf": [
-        "Tied to Capsule CRM ecosystem",
-        "Limited standalone value",
-        "Less feature-rich than ActiveCampaign"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "ueni",
@@ -3409,22 +2211,7 @@
         "Easy-to-use interface"
       ],
       "logo": "/assets/logos/ueni.png",
-      "affiliateUrl": "",
-      "cons": [
-        "AI video quality improving but not perfect",
-        "Limited advanced editing",
-        "Generation limits on entry plan"
-      ],
-      "bestFor": [
-        "AI video creation",
-        "Voice generation",
-        "Easy-to-use interface"
-      ],
-      "skipIf": [
-        "AI video quality improving but not perfect",
-        "Limited advanced editing",
-        "Generation limits on entry plan"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "unbounce",
@@ -3441,22 +2228,7 @@
         "A/B testing built in"
       ],
       "logo": "/assets/logos/unbounce.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Premium pricing for SMB",
-        "Not a full website builder",
-        "Limited design flexibility vs Webflow"
-      ],
-      "bestFor": [
-        "Purpose-built for landing pages",
-        "AI-powered page suggestions",
-        "A/B testing built in"
-      ],
-      "skipIf": [
-        "Premium pricing for SMB",
-        "Not a full website builder",
-        "Limited design flexibility vs Webflow"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "upfluence",
@@ -3473,22 +2245,7 @@
         "Campaign management"
       ],
       "logo": "/assets/logos/upfluence.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Expensive for SMB",
-        "Complex implementation",
-        "Requires influencer network"
-      ],
-      "bestFor": [
-        "Influencer marketing platform",
-        "Discovery and outreach",
-        "Campaign management"
-      ],
-      "skipIf": [
-        "Expensive for SMB",
-        "Complex implementation",
-        "Requires influencer network"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "upwork",
@@ -3505,22 +2262,7 @@
         "AI-powered matching"
       ],
       "logo": "/assets/logos/upwork.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Client service fee",
-        "Talent quality varies widely",
-        "Platform communication required"
-      ],
-      "bestFor": [
-        "Large talent pool",
-        "20+ years of operation",
-        "AI-powered matching"
-      ],
-      "skipIf": [
-        "Client service fee",
-        "Talent quality varies widely",
-        "Platform communication required"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "webflow",
@@ -3537,10 +2279,7 @@
         "Managed hosting"
       ],
       "logo": "/assets/logos/webflow.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "windsorai",
@@ -3557,22 +2296,7 @@
         "Social proof widgets"
       ],
       "logo": "/assets/logos/windsorai.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Primarily for eCommerce",
-        "Requires existing sales for reviews",
-        "Premium pricing for small stores"
-      ],
-      "bestFor": [
-        "Automated review generation",
-        "UGC content management",
-        "Social proof widgets"
-      ],
-      "skipIf": [
-        "Primarily for eCommerce",
-        "Requires existing sales for reviews",
-        "Premium pricing for small stores"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "wingify",
@@ -3589,22 +2313,7 @@
         "User testing and heatmaps"
       ],
       "logo": "/assets/logos/wingify.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Pageview limits on lower tiers",
-        "Advanced features require higher tiers",
-        "No free plan"
-      ],
-      "bestFor": [
-        "A/B testing and visual editor",
-        "Conversion optimization tools",
-        "User testing and heatmaps"
-      ],
-      "skipIf": [
-        "Pageview limits on lower tiers",
-        "Advanced features require higher tiers",
-        "No free plan"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "wrike",
@@ -3621,22 +2330,7 @@
         "20,000+ clients"
       ],
       "logo": "/assets/logos/wrike.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Can feel complex for simple needs",
-        "Per-user pricing scales cost",
-        "Learning curve for advanced features"
-      ],
-      "bestFor": [
-        "Collaborative work management",
-        "Free plan for small teams",
-        "20,000+ clients"
-      ],
-      "skipIf": [
-        "Can feel complex for simple needs",
-        "Per-user pricing scales cost",
-        "Learning curve for advanced features"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "writesonic",
@@ -3653,10 +2347,7 @@
         "Built-in editing tools"
       ],
       "logo": "/assets/logos/writesonic.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "xero",
@@ -3673,22 +2364,7 @@
         "Invoicing and billing"
       ],
       "logo": "/assets/logos/xero.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Limited for complex accounting",
-        "No built-in CRM",
-        "Inventory management basic"
-      ],
-      "bestFor": [
-        "Cloud accounting for SMB",
-        "Strong integrations",
-        "Invoicing and billing"
-      ],
-      "skipIf": [
-        "Limited for complex accounting",
-        "No built-in CRM",
-        "Inventory management basic"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "xtiles",
@@ -3705,22 +2381,7 @@
         "Free plan available"
       ],
       "logo": "/assets/logos/xtiles.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Not a full project management tool",
-        "Limited for text-heavy workflows",
-        "Smaller ecosystem than Notion"
-      ],
-      "bestFor": [
-        "Visual drag-and-drop canvas",
-        "Flexible organization",
-        "Free plan available"
-      ],
-      "skipIf": [
-        "Not a full project management tool",
-        "Limited for text-heavy workflows",
-        "Smaller ecosystem than Notion"
-      ]
+      "affiliateUrl": ""
     },
     {
       "id": "zapier",
@@ -3737,10 +2398,7 @@
         "Useful templates for common automations"
       ],
       "logo": "/assets/logos/zapier.png",
-      "affiliateUrl": "",
-      "cons": [],
-      "bestFor": [],
-      "skipIf": []
+      "affiliateUrl": ""
     },
     {
       "id": "zendesk",
@@ -3757,22 +2415,7 @@
         "Advanced automation and AI"
       ],
       "logo": "/assets/logos/zendesk.png",
-      "affiliateUrl": "",
-      "cons": [
-        "Expensive for small teams",
-        "Complex configuration",
-        "Can feel bloated for simple needs"
-      ],
-      "bestFor": [
-        "Industry-standard omnichannel platform",
-        "Extensive integrations",
-        "Advanced automation and AI"
-      ],
-      "skipIf": [
-        "Expensive for small teams",
-        "Complex configuration",
-        "Can feel bloated for simple needs"
-      ]
+      "affiliateUrl": ""
     }
   ]
 }

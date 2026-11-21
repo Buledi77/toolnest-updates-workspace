@@ -66,6 +66,4 @@ check-grammarly.js
 check_logos.js
 check_review_logos.js
 screenshot_logos.js
-
-# Node modules
 node_modules/
