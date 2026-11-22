@@ -1,0 +1,98 @@
+{
+  "slug": "ahrefs",
+  "compiledOn": "2026-11-22",
+  "status": "official-snippet-seen",
+  "officialUrls": [
+    "https://ahrefs.com/pricing"
+  ],
+  "pricing": {
+    "currency": "USD",
+    "plans": [
+      {
+        "name": "Starter",
+        "priceMonthly": 29,
+        "source": "third-party",
+        "notes": "Not visible on official pricing page; reported by third-party sources only"
+      },
+      {
+        "name": "Lite",
+        "priceMonthly": 129,
+        "priceAnnualMonthlyEquivalent": 108,
+        "source": "official",
+        "limits": {
+          "users": 1,
+          "extraUsers": 2,
+          "extraUserCost": 40,
+          "trackedKeywords": 750,
+          "crawlCredits": 1000,
+          "projects": null
+        }
+      },
+      {
+        "name": "Standard",
+        "priceMonthly": 249,
+        "priceAnnualMonthlyEquivalent": 208,
+        "source": "official",
+        "limits": {
+          "users": 1,
+          "extraUsers": 5,
+          "extraUserCost": 60,
+          "trackedKeywords": 2000,
+          "crawlCredits": "unlimited",
+          "projects": null
+        }
+      },
+      {
+        "name": "Advanced",
+        "priceMonthly": 449,
+        "priceAnnualMonthlyEquivalent": 374,
+        "source": "official",
+        "limits": {
+          "users": 1,
+          "extraUsers": 10,
+          "extraUserCost": 80,
+          "trackedKeywords": 5000,
+          "crawlCredits": "unlimited",
+          "projects": null
+        }
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": 1499,
+        "source": "official",
+        "limits": {
+          "users": 3,
+          "extraUserCost": 100,
+          "trackedKeywords": 10000
+        },
+        "notes": "Annual commitment required"
+      }
+    ],
+    "addOns": [
+      {
+        "name": "Brand Radar",
+        "packages": [
+          {"tier": "Basic", "price": 99, "unit": "per month"},
+          {"tier": "Pro", "price": 199, "unit": "per month"}
+        ]
+      },
+      {
+        "name": "Traffic Analytics",
+        "price": 149,
+        "unit": "per month"
+      },
+      {
+        "name": "Project Boost Pro",
+        "price": 99,
+        "unit": "per month"
+      }
+    ],
+    "policies": {
+      "contracts": "No contracts; month-to-month billing available",
+      "cancellation": "Cancel anytime",
+      "refunds": "Refunds generally not issued; 7-day money-back guarantee on annual plans only",
+      "discounts": "No discounts offered",
+      "tax": "Prices exclusive of tax"
+    }
+  }
+}

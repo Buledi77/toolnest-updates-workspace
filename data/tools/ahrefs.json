@@ -161,84 +161,94 @@
         "name": "Starter",
         "priceMonthly": 29,
         "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "reported",
         "limits": {
           "credits": 200,
           "users": 1
         },
-        "notes": "Keyword research and competitor checks only; no extra users allowed"
+        "notes": "Reported by multiple sources on 2026-11-22; vendor page not confirmed. Keyword research and competitor checks only; no extra users allowed"
       },
       {
         "name": "Lite",
         "priceMonthly": 129,
         "priceAnnualMonthlyEquivalent": 108,
+        "sourceTier": "official-snippet",
         "limits": {
           "credits": 1000,
           "users": 1,
           "extraUsers": 2,
           "extraUserCost": 40,
           "trackedKeywords": 750,
+          "crawlCredits": 1000,
           "reportRows": 2500
         },
-        "notes": "6 months historical data; API and MCP access included; price reported by multiple sources; official page is JS-rendered for this tier"
+        "notes": "Prices from the vendor's pricing page as of 2026-11-22. 6 months historical data; API and MCP access included"
       },
       {
         "name": "Standard",
         "priceMonthly": 249,
         "priceAnnualMonthlyEquivalent": 208,
+        "sourceTier": "official-snippet",
         "limits": {
           "credits": "unlimited",
           "users": 1,
           "extraUsers": 5,
           "extraUserCost": 60,
           "trackedKeywords": 2000,
+          "crawlCredits": "unlimited",
           "reportRows": 30000
         },
-        "notes": "2 years historical data; most popular for consultants; price reported by multiple sources; official page is JS-rendered for this tier"
+        "notes": "Prices from the vendor's pricing page as of 2026-11-22. 2 years historical data; most popular for consultants"
       },
       {
         "name": "Advanced",
         "priceMonthly": 449,
         "priceAnnualMonthlyEquivalent": 374,
+        "sourceTier": "official-snippet",
         "limits": {
           "credits": "unlimited",
           "users": 1,
           "extraUsers": 10,
           "extraUserCost": 80,
           "trackedKeywords": 5000,
+          "crawlCredits": "unlimited",
           "reportRows": 75000
         },
-        "notes": "5 years historical data; Looker Studio integration; price reported by multiple sources; official page is JS-rendered for this tier"
+        "notes": "Prices from the vendor's pricing page as of 2026-11-22. 5 years historical data; Looker Studio integration"
       },
       {
         "name": "Enterprise",
-        "priceMonthly": 999,
+        "priceMonthly": 1499,
         "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
         "limits": {
           "users": 3,
           "extraUserCost": 100,
           "trackedKeywords": 10000
         },
-        "notes": "Annual commitment required; custom limits"
+        "notes": "Prices from the vendor's pricing page as of 2026-11-22. Annual commitment required; custom limits"
       }
     ],
     "addOns": [
       {
-        "name": "Content Kit",
-        "price": 99,
+        "name": "Brand Radar",
+        "packages": [
+          {"tier": "Basic", "price": 99, "unit": "per month"},
+          {"tier": "Pro", "price": 199, "unit": "per month"}
+        ]
+      },
+      {
+        "name": "Traffic Analytics",
+        "price": 149,
         "unit": "per month"
       },
       {
-        "name": "Report Builder",
+        "name": "Project Boost Pro",
         "price": 99,
-        "unit": "per month"
-      },
-      {
-        "name": "Brand Radar AI",
-        "price": 199,
         "unit": "per month"
       }
     ],
-    "billingCaveat": "Annual billing saves up to 17 percent. Ahrefs states it never runs discounts. Extra users and credit top-ups are charged automatically when you exceed limits. Regional pricing and taxes vary.",
+    "billingCaveat": "Annual billing saves up to 17 percent. No contracts; cancel anytime. Refunds generally not issued; 7-day money-back guarantee on annual plans only. No discounts offered. Prices exclusive of tax. Extra users and credit top-ups are charged automatically when you exceed limits. Regional pricing and taxes vary.",
     "conflicts": [],
     "changeLog": []
   },
@@ -365,6 +375,26 @@
     {
       "q": "Is Ahrefs better than Semrush?",
       "a": "Ahrefs excels at backlink analysis with a fresher index. Semrush offers broader marketing features including PPC and social media. Choose Ahrefs for link-building focus; choose Semrush for broader marketing needs.",
+      "sourceUrl": "https://ahrefs.com/pricing"
+    },
+    {
+      "q": "Can I cancel Ahrefs anytime?",
+      "a": "Yes. Ahrefs has no contracts and you can cancel anytime. Monthly plans cancel immediately; annual plans have a 7-day money-back guarantee.",
+      "sourceUrl": "https://ahrefs.com/pricing"
+    },
+    {
+      "q": "Does Ahrefs offer refunds?",
+      "a": "Refunds are generally not issued. Annual plans include a 7-day money-back guarantee. Monthly plans have no refund option.",
+      "sourceUrl": "https://ahrefs.com/pricing"
+    },
+    {
+      "q": "Does Ahrefs offer discounts?",
+      "a": "No. Ahrefs states it never runs discounts. The only savings come from annual billing, which saves up to 17 percent compared to monthly.",
+      "sourceUrl": "https://ahrefs.com/pricing"
+    },
+    {
+      "q": "Are Ahrefs prices inclusive of tax?",
+      "a": "No. Ahrefs prices are exclusive of tax. Regional pricing and taxes vary by location.",
       "sourceUrl": "https://ahrefs.com/pricing"
     }
   ],
