@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "glide",
+    "name": "Glide",
+    "slug": "glide",
+    "official_url": "https://www.glideapps.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Website Builder"
+    ],
+    "use_cases": [
+      "no-code app building",
+      "internal tools",
+      "customer portals"
+    ],
+    "audiences": [
+      "business teams",
+      "no-code builders",
+      "agencies"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "No-code app builder from spreadsheets",
+      "Google Sheets/Airtable integration",
+      "Free plan available"
+    ],
+    "not_recommended_for": [
+      "Dependent on spreadsheet backend",
+      "Limited design customization",
+      "Not for complex web apps"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/glide.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "webflow",
+      "softr",
+      "unbounce"
+    ],
+    "comparisons": [
+      "softr"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.glideapps.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/glide.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

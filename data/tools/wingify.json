@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "wingify",
+    "name": "Wingify (now VWO)",
+    "slug": "wingify",
+    "official_url": "https://vwo.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Marketing"
+    ],
+    "use_cases": [
+      "A/B testing",
+      "conversion optimization",
+      "user testing"
+    ],
+    "audiences": [
+      "marketers",
+      "product teams",
+      "web developers"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "A/B testing and visual editor",
+      "Conversion optimization tools",
+      "User testing and heatmaps"
+    ],
+    "not_recommended_for": [
+      "Pageview limits on lower tiers",
+      "Advanced features require higher tiers",
+      "No free plan"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/wingify.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "mixpanel",
+      "amplitude",
+      "semrush"
+    ],
+    "comparisons": [
+      "mixpanel"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://vwo.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/wingify.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

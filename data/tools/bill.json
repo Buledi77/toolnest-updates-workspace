@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "bill",
+    "name": "BILL",
+    "slug": "bill",
+    "official_url": "https://www.bill.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Productivity"
+    ],
+    "use_cases": [
+      "business financial management",
+      "AP/automation",
+      "payments"
+    ],
+    "audiences": [
+      "small businesses",
+      "accountants",
+      "CPAs"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "AP/automation",
+      "Payment processing",
+      "Accountant collaboration"
+    ],
+    "not_recommended_for": [
+      "Premium pricing",
+      "Focused on AP/AR",
+      "Not a full accounting suite"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/bill.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "quickbooks",
+      "xero",
+      "freshbooks"
+    ],
+    "comparisons": [
+      "quickbooks"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.bill.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/bill.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

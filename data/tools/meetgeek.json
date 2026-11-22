@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "meetgeek",
+    "name": "MeetGeek",
+    "slug": "meetgeek",
+    "official_url": "https://www.meetgeek.ai",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Productivity"
+    ],
+    "use_cases": [
+      "meeting automation",
+      "transcription",
+      "meeting notes"
+    ],
+    "audiences": [
+      "teams",
+      "sales teams",
+      "remote workers"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "AI meeting automation",
+      "Transcription and notes",
+      "Team collaboration"
+    ],
+    "not_recommended_for": [
+      "Meeting limits on free tier",
+      "Transcription accuracy varies",
+      "Limited integrations on entry plan"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/meetgeek.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "otter",
+      "fireflies",
+      "descript"
+    ],
+    "comparisons": [
+      "otter"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.meetgeek.ai"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/meetgeek.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

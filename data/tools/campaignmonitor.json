@@ -1,0 +1,81 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "campaignmonitor",
+    "name": "Campaign Monitor by Marigold",
+    "slug": "campaignmonitor",
+    "official_url": "https://www.campaignmonitor.com",
+    "status": "active",
+    "logo": "/assets/logos/campaignmonitor.png",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Email Marketing"
+    ],
+    "use_cases": [],
+    "audiences": [],
+    "platforms": [
+      "web"
+    ],
+    "integrations": [],
+    "tags": []
+  },
+  "factual_profile": {
+    "capabilities": [
+      {
+        "description": "Premium email templates and design tools"
+      },
+      {
+        "description": "Multi-brand agency features"
+      },
+      {
+        "description": "Drag-and-drop email builder"
+      }
+    ],
+    "limitations": [],
+    "free_plan_status": [],
+    "trial_status": [],
+    "pricing_status": [],
+    "pricing_regions": [],
+    "availability_regions": []
+  },
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "email marketing"
+    ],
+    "not_recommended_for": [],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/campaignmonitor.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": null
+  },
+  "relationships": {
+    "alternatives": [],
+    "meaningful_comparisons": [],
+    "related_tools": [],
+    "compatible_tools": [],
+    "replaces": [],
+    "replaced_by": []
+  },
+  "evidence": {
+    "handsOn": false,
+    "confidence": "unverified",
+    "sources": [],
+    "claim_refs": [],
+    "source_ids": [],
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.campaignmonitor.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/campaignmonitor.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

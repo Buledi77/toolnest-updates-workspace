@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "krispcall",
+    "name": "KrispCall",
+    "slug": "krispcall",
+    "official_url": "https://www.krispcall.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Customer Support"
+    ],
+    "use_cases": [
+      "cloud contact center",
+      "AI-powered calling",
+      "customer support"
+    ],
+    "audiences": [
+      "customer support teams",
+      "sales teams",
+      "SMBs"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "AI noise cancellation included on all plans",
+      "Affordable entry point at $15/mo",
+      "Call recording and transcription"
+    ],
+    "not_recommended_for": [
+      "AI features limited on Starter plan",
+      "International calling incurs per-minute fees",
+      "CRM integrations require higher tier"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/krispcall.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "aircall",
+      "quo"
+    ],
+    "comparisons": [
+      "aircall",
+      "quo"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.krispcall.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/krispcall.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

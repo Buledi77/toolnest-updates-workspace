@@ -1,0 +1,113 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "prowritingaid",
+    "name": "ProWritingAid",
+    "slug": "prowritingaid",
+    "official_url": "https://prowritingaid.com",
+    "status": "active",
+    "logo": "/assets/logos/prowritingaid.png",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Writing"
+    ],
+    "use_cases": [
+      "long-form authors"
+    ],
+    "audiences": [],
+    "platforms": [
+      "web"
+    ],
+    "integrations": [],
+    "tags": [
+      "writing"
+    ]
+  },
+  "factual_profile": {
+    "capabilities": [
+      {
+        "description": "Style reports"
+      },
+      {
+        "description": "Grammar checking"
+      },
+      {
+        "description": "Long-form writing focus"
+      }
+    ],
+    "limitations": [],
+    "free_plan_status": [],
+    "trial_status": [],
+    "pricing_status": [],
+    "pricing_regions": [],
+    "availability_regions": []
+  },
+  "editorial": {
+    "editorial_tier": "A",
+    "best_for": [
+      "Detailed writing reports for long-form authors"
+    ],
+    "not_recommended_for": [],
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/prowritingaid.html",
+    "review_owner": null,
+    "editorial_last_reviewed": null
+  },
+  "relationships": {
+    "alternatives": [
+      "grammarly",
+      "quillbot",
+      "hemingway"
+    ],
+    "meaningful_comparisons": [
+      "grammarly-vs-prowritingaid",
+      "hemingway-vs-prowritingaid",
+      "prowritingaid-vs-quillbot",
+      "prowritingaid-vs-writesonic"
+    ],
+    "related_tools": [
+      "grammarly",
+      "writesonic",
+      "quillbot",
+      "hemingway"
+    ],
+    "compatible_tools": [],
+    "replaces": [],
+    "replaced_by": []
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": []
+  },
+  "monetization": {
+    "affiliate_status": "unknown",
+    "affiliate_network": null,
+    "affiliate_url": null,
+    "official_non_affiliate_url": "https://prowritingaid.com",
+    "approved_regions": [],
+    "restrictions": [],
+    "disclosure_required": null,
+    "last_link_check": null
+  },
+  "publishing": {
+    "directory_visibility": "public",
+    "standalone_page_status": "published",
+    "indexability": "index",
+    "sitemap_eligible": true,
+    "canonical_url": "https://www.toolnestai.tech/tools/prowritingaid.html",
+    "template_type": "review",
+    "content_quality_status": "assessed",
+    "prepublish_status": "published"
+  },
+  "freshness": {
+    "created_at": "2026-11-20T15:27:01Z",
+    "updated_at": "2026-11-20T15:27:01Z",
+    "last_verified_at": null,
+    "next_review_at": null,
+    "stale_fields": [],
+    "change_history_reference": null
+  }
+}

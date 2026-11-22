@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "wrike",
+    "name": "Wrike",
+    "slug": "wrike",
+    "official_url": "https://www.wrike.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Productivity"
+    ],
+    "use_cases": [
+      "work management",
+      "project collaboration",
+      "team productivity"
+    ],
+    "audiences": [
+      "teams",
+      "agencies",
+      "project managers"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Collaborative work management",
+      "Free plan for small teams",
+      "20,000+ clients"
+    ],
+    "not_recommended_for": [
+      "Can feel complex for simple needs",
+      "Per-user pricing scales cost",
+      "Learning curve for advanced features"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/wrike.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "clickup",
+      "asana",
+      "monday"
+    ],
+    "comparisons": [
+      "clickup"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.wrike.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/wrike.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

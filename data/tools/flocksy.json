@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "flocksy",
+    "name": "Flocksy",
+    "slug": "flocksy",
+    "official_url": "https://www.flocksy.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Email Marketing"
+    ],
+    "use_cases": [
+      "cold email outreach",
+      "lead generation",
+      "email automation"
+    ],
+    "audiences": [
+      "sales teams",
+      "agencies",
+      "SMBs"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Cold email outreach with AI copywriting",
+      "Email warmup included",
+      "Lead generation tools"
+    ],
+    "not_recommended_for": [
+      "Email volume capped by plan tier",
+      "Single user on Starter plan",
+      "No free plan"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/flocksy.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "lemlist",
+      "mailchimp",
+      "activecampaign"
+    ],
+    "comparisons": [
+      "lemlist"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.flocksy.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/flocksy.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

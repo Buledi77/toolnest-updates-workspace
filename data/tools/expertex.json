@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "expertex",
+    "name": "ExpertEx",
+    "slug": "expertex",
+    "official_url": "https://www.expertex.ai",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Image Generation"
+    ],
+    "use_cases": [
+      "AI product photography",
+      "video ads",
+      "UGC content"
+    ],
+    "audiences": [
+      "eCommerce sellers",
+      "Shopify merchants",
+      "Amazon sellers"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Studio-quality product photos from basic images",
+      "Video ad generation",
+      "UGC-style content creation"
+    ],
+    "not_recommended_for": [
+      "Focused on eCommerce product photography",
+      "Not a general-purpose image generator",
+      "Requires existing product photos"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/expertex.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "midjourney",
+      "leonardo",
+      "canva"
+    ],
+    "comparisons": [
+      "midjourney"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.expertex.ai"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/expertex.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

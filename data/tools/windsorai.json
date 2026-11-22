@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "windsorai",
+    "name": "Windsor.ai",
+    "slug": "windsorai",
+    "official_url": "https://www.windsor.ai",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Marketing"
+    ],
+    "use_cases": [
+      "UGC management",
+      "review generation",
+      "social proof"
+    ],
+    "audiences": [
+      "eCommerce brands",
+      "DTC businesses",
+      "online retailers"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Automated review generation",
+      "UGC content management",
+      "Social proof widgets"
+    ],
+    "not_recommended_for": [
+      "Primarily for eCommerce",
+      "Requires existing sales for reviews",
+      "Premium pricing for small stores"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/windsorai.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "brand24",
+      "semrush",
+      "getresponse"
+    ],
+    "comparisons": [
+      "brand24"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.windsor.ai"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/windsorai.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

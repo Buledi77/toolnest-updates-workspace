@@ -1,0 +1,109 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "figma",
+    "name": "Figma",
+    "slug": "figma",
+    "official_url": "https://www.figma.com",
+    "status": "active",
+    "logo": "/assets/logos/figma.png",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Design"
+    ],
+    "use_cases": [
+      "collaborative interface design and prototyping"
+    ],
+    "audiences": [],
+    "platforms": [
+      "web"
+    ],
+    "integrations": [],
+    "tags": [
+      "design"
+    ]
+  },
+  "factual_profile": {
+    "capabilities": [
+      {
+        "description": "Real-time collaboration"
+      },
+      {
+        "description": "Interactive prototypes"
+      },
+      {
+        "description": "Reusable design systems"
+      }
+    ],
+    "limitations": [],
+    "free_plan_status": [],
+    "trial_status": [],
+    "pricing_status": [],
+    "pricing_regions": [],
+    "availability_regions": []
+  },
+  "editorial": {
+    "editorial_tier": "A",
+    "best_for": [
+      "Collaborative interface design and prototyping"
+    ],
+    "not_recommended_for": [],
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/figma.html",
+    "review_owner": null,
+    "editorial_last_reviewed": null
+  },
+  "relationships": {
+    "alternatives": [
+      "canva",
+      "adobeexpress",
+      "removebg"
+    ],
+    "meaningful_comparisons": [
+      "adobeexpress-vs-figma",
+      "canva-vs-figma"
+    ],
+    "related_tools": [
+      "adobeexpress",
+      "canva"
+    ],
+    "compatible_tools": [],
+    "replaces": [],
+    "replaced_by": []
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": []
+  },
+  "monetization": {
+    "affiliate_status": "unknown",
+    "affiliate_network": null,
+    "affiliate_url": null,
+    "official_non_affiliate_url": "https://www.figma.com",
+    "approved_regions": [],
+    "restrictions": [],
+    "disclosure_required": null,
+    "last_link_check": null
+  },
+  "publishing": {
+    "directory_visibility": "public",
+    "standalone_page_status": "published",
+    "indexability": "index",
+    "sitemap_eligible": true,
+    "canonical_url": "https://www.toolnestai.tech/tools/figma.html",
+    "template_type": "review",
+    "content_quality_status": "assessed",
+    "prepublish_status": "published"
+  },
+  "freshness": {
+    "created_at": "2026-11-20T15:27:01Z",
+    "updated_at": "2026-11-20T15:27:01Z",
+    "last_verified_at": null,
+    "next_review_at": null,
+    "stale_fields": [],
+    "change_history_reference": null
+  }
+}

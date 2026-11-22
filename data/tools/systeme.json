@@ -1,0 +1,109 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "systeme",
+    "name": "Systeme.io",
+    "slug": "systeme",
+    "official_url": "https://systeme.io",
+    "status": "active",
+    "logo": "/assets/logos/systeme.png",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Sales"
+    ],
+    "use_cases": [
+      "sales pages, email lists and online courses"
+    ],
+    "audiences": [],
+    "platforms": [
+      "web"
+    ],
+    "integrations": [],
+    "tags": [
+      "sales"
+    ]
+  },
+  "factual_profile": {
+    "capabilities": [
+      {
+        "description": "Pages, email and checkout together"
+      },
+      {
+        "description": "Easy to start with"
+      },
+      {
+        "description": "Can replace several separate subscriptions"
+      }
+    ],
+    "limitations": [],
+    "free_plan_status": [],
+    "trial_status": [],
+    "pricing_status": [],
+    "pricing_regions": [],
+    "availability_regions": []
+  },
+  "editorial": {
+    "editorial_tier": "A",
+    "best_for": [
+      "Sales pages, email lists and online courses"
+    ],
+    "not_recommended_for": [],
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/systeme.html",
+    "review_owner": null,
+    "editorial_last_reviewed": null
+  },
+  "relationships": {
+    "alternatives": [
+      "hubspot",
+      "notion",
+      "grammarly"
+    ],
+    "meaningful_comparisons": [
+      "hostinger-vs-systeme",
+      "hubspot-vs-systeme"
+    ],
+    "related_tools": [
+      "hostinger",
+      "hubspot"
+    ],
+    "compatible_tools": [],
+    "replaces": [],
+    "replaced_by": []
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": []
+  },
+  "monetization": {
+    "affiliate_status": "approved",
+    "affiliate_network": null,
+    "affiliate_url": "https://systeme.io/?sa=sa0283786247d8d254e08d2d01d25a1e2069805f78",
+    "official_non_affiliate_url": "https://systeme.io",
+    "approved_regions": [],
+    "restrictions": [],
+    "disclosure_required": true,
+    "last_link_check": null
+  },
+  "publishing": {
+    "directory_visibility": "public",
+    "standalone_page_status": "published",
+    "indexability": "index",
+    "sitemap_eligible": true,
+    "canonical_url": "https://www.toolnestai.tech/tools/systeme.html",
+    "template_type": "review",
+    "content_quality_status": "assessed",
+    "prepublish_status": "published"
+  },
+  "freshness": {
+    "created_at": "2026-11-20T15:27:01Z",
+    "updated_at": "2026-11-20T15:27:01Z",
+    "last_verified_at": null,
+    "next_review_at": null,
+    "stale_fields": [],
+    "change_history_reference": null
+  }
+}

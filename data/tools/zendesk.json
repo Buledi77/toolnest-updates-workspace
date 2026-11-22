@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "zendesk",
+    "name": "Zendesk",
+    "slug": "zendesk",
+    "official_url": "https://www.zendesk.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Customer Support"
+    ],
+    "use_cases": [
+      "omnichannel support",
+      "help desk",
+      "customer service platform"
+    ],
+    "audiences": [
+      "mid-market",
+      "enterprise",
+      "scaling businesses"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Industry-standard omnichannel platform",
+      "Extensive integrations",
+      "Advanced automation and AI"
+    ],
+    "not_recommended_for": [
+      "Expensive for small teams",
+      "Complex configuration",
+      "Can feel bloated for simple needs"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/zendesk.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "freshdesk",
+      "helpscout",
+      "gorgias"
+    ],
+    "comparisons": [
+      "freshdesk"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.zendesk.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/zendesk.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

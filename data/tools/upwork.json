@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "upwork",
+    "name": "Upwork",
+    "slug": "upwork",
+    "official_url": "https://www.upwork.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Productivity"
+    ],
+    "use_cases": [
+      "freelance marketplace",
+      "talent sourcing",
+      "work outsourcing"
+    ],
+    "audiences": [
+      "businesses",
+      "startups",
+      "enterprises"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Large talent pool",
+      "20+ years of operation",
+      "AI-powered matching"
+    ],
+    "not_recommended_for": [
+      "Client service fee",
+      "Talent quality varies widely",
+      "Platform communication required"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/upwork.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "deel",
+      "connecteam",
+      "clickup"
+    ],
+    "comparisons": [
+      "deel"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.upwork.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/upwork.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

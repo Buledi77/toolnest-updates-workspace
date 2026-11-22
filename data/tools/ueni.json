@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "ueni",
+    "name": "UENI",
+    "slug": "ueni",
+    "official_url": "https://ueni.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Voice & Video"
+    ],
+    "use_cases": [
+      "AI video creation",
+      "voice generation",
+      "video editing"
+    ],
+    "audiences": [
+      "content creators",
+      "marketers",
+      "educators"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "AI video creation",
+      "Voice generation",
+      "Easy-to-use interface"
+    ],
+    "not_recommended_for": [
+      "AI video quality improving but not perfect",
+      "Limited advanced editing",
+      "Generation limits on entry plan"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/ueni.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "synthesia",
+      "murf",
+      "runway"
+    ],
+    "comparisons": [
+      "synthesia"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://ueni.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/ueni.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

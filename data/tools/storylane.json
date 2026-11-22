@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "storylane",
+    "name": "Storylane",
+    "slug": "storylane",
+    "official_url": "https://www.storylane.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Sales"
+    ],
+    "use_cases": [
+      "sales enablement",
+      "content management",
+      "sales training"
+    ],
+    "audiences": [
+      "sales teams",
+      "sales operations",
+      "marketing teams"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "All-in-one sales enablement platform",
+      "Content library and sales playbooks",
+      "Training modules and assessments"
+    ],
+    "not_recommended_for": [
+      "Entry price at $49/mo is above market median",
+      "Advanced features require higher tiers",
+      "No free plan"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/storylane.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "pipedrive",
+      "close",
+      "spiky"
+    ],
+    "comparisons": [
+      "pipedrive"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.storylane.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/storylane.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

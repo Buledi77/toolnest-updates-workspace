@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "softr",
+    "name": "Softr",
+    "slug": "softr",
+    "official_url": "https://www.softr.io",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Website Builder"
+    ],
+    "use_cases": [
+      "no-code app building",
+      "portal creation",
+      "internal tools"
+    ],
+    "audiences": [
+      "business teams",
+      "no-code builders",
+      "agencies"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "No-code app and portal builder",
+      "Airtable and Google Sheets integration",
+      "Free plan available"
+    ],
+    "not_recommended_for": [
+      "Dependent on Airtable/Google Sheets backend",
+      "Limited design customization",
+      "Not for complex web apps"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/softr.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "webflow",
+      "framer",
+      "unbounce"
+    ],
+    "comparisons": [
+      "webflow"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.softr.io"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/softr.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

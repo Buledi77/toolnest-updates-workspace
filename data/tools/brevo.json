@@ -1,0 +1,111 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "brevo",
+    "name": "Brevo",
+    "slug": "brevo",
+    "official_url": "https://www.brevo.com",
+    "status": "active",
+    "logo": "/assets/logos/brevo.png",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Email Marketing"
+    ],
+    "use_cases": [
+      "email, sms and customer communication campaigns"
+    ],
+    "audiences": [],
+    "platforms": [
+      "web"
+    ],
+    "integrations": [],
+    "tags": [
+      "email-marketing"
+    ]
+  },
+  "factual_profile": {
+    "capabilities": [
+      {
+        "description": "Email automation"
+      },
+      {
+        "description": "SMS options"
+      },
+      {
+        "description": "Contact management"
+      }
+    ],
+    "limitations": [],
+    "free_plan_status": [],
+    "trial_status": [],
+    "pricing_status": [],
+    "pricing_regions": [],
+    "availability_regions": []
+  },
+  "editorial": {
+    "editorial_tier": "A",
+    "best_for": [
+      "Email, SMS and customer communication campaigns"
+    ],
+    "not_recommended_for": [],
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/brevo.html",
+    "review_owner": null,
+    "editorial_last_reviewed": null
+  },
+  "relationships": {
+    "alternatives": [
+      "beehiiv",
+      "kit",
+      "mailchimp"
+    ],
+    "meaningful_comparisons": [
+      "beehiiv-vs-brevo",
+      "brevo-vs-kit",
+      "brevo-vs-mailchimp"
+    ],
+    "related_tools": [
+      "beehiiv",
+      "mailchimp",
+      "kit"
+    ],
+    "compatible_tools": [],
+    "replaces": [],
+    "replaced_by": []
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": []
+  },
+  "monetization": {
+    "affiliate_status": "unknown",
+    "affiliate_network": null,
+    "affiliate_url": null,
+    "official_non_affiliate_url": "https://www.brevo.com",
+    "approved_regions": [],
+    "restrictions": [],
+    "disclosure_required": null,
+    "last_link_check": null
+  },
+  "publishing": {
+    "directory_visibility": "public",
+    "standalone_page_status": "published",
+    "indexability": "index",
+    "sitemap_eligible": true,
+    "canonical_url": "https://www.toolnestai.tech/tools/brevo.html",
+    "template_type": "review",
+    "content_quality_status": "assessed",
+    "prepublish_status": "published"
+  },
+  "freshness": {
+    "created_at": "2026-11-20T15:27:01Z",
+    "updated_at": "2026-11-20T15:27:01Z",
+    "last_verified_at": null,
+    "next_review_at": null,
+    "stale_fields": [],
+    "change_history_reference": null
+  }
+}

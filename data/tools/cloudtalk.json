@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "cloudtalk",
+    "name": "CloudTalk",
+    "slug": "cloudtalk",
+    "official_url": "https://www.cloudtalk.io",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Customer Support"
+    ],
+    "use_cases": [
+      "cloud contact center",
+      "call management",
+      "team communication"
+    ],
+    "audiences": [
+      "contact centers",
+      "sales teams",
+      "support teams"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "All-in-one cloud contact center",
+      "AI-powered call features",
+      "CRM integrations"
+    ],
+    "not_recommended_for": [
+      "Per-agent pricing can be expensive for large teams",
+      "Limited self-serve options",
+      "Advanced analytics on higher tiers only"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/cloudtalk.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "aircall",
+      "krispcall",
+      "zendesk"
+    ],
+    "comparisons": [
+      "aircall"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.cloudtalk.io"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/cloudtalk.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

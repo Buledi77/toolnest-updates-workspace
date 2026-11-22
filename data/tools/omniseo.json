@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "omniseo",
+    "name": "OmniSEO",
+    "slug": "omniseo",
+    "official_url": "https://www.omniseo.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Marketing"
+    ],
+    "use_cases": [
+      "AI visibility",
+      "AI search optimization",
+      "brand monitoring"
+    ],
+    "audiences": [
+      "marketing teams",
+      "SEO professionals",
+      "brand managers"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "AI visibility measurement platform",
+      "Tracks brand mentions in AI search",
+      "Helps optimize for AI chat platforms"
+    ],
+    "not_recommended_for": [
+      "New category with limited benchmarks",
+      "Premium pricing",
+      "AI visibility metrics still evolving"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/omniseo.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "semrush",
+      "surferseo",
+      "ahrefs"
+    ],
+    "comparisons": [
+      "semrush"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.omniseo.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/omniseo.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

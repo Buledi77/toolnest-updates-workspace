@@ -1,0 +1,70 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "brand24",
+    "name": "Brand24",
+    "slug": "brand24",
+    "official_url": "https://brand24.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Marketing"
+    ],
+    "use_cases": [
+      "brand monitoring",
+      "reputation management",
+      "social listening"
+    ],
+    "audiences": [
+      "marketing teams",
+      "PR teams",
+      "customer support teams"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Comprehensive brand monitoring",
+      "Social listening and sentiment analysis",
+      "Real-time alerts"
+    ],
+    "not_recommended_for": [
+      "Entry price at $79/mo is above market median",
+      "Advanced features require higher tiers",
+      "No free plan"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/brand24.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "manychat",
+      "getresponse",
+      "semrush"
+    ],
+    "comparisons": []
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://brand24.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/brand24.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

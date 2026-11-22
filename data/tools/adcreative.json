@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "adcreative",
+    "name": "AdCreative.ai",
+    "slug": "adcreative",
+    "official_url": "https://www.adcreative.ai",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Marketing"
+    ],
+    "use_cases": [
+      "ad creative generation",
+      "banner ad design",
+      "copywriting"
+    ],
+    "audiences": [
+      "marketers",
+      "advertisers",
+      "e-commerce brands"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "AI-generated ad creatives with proven templates",
+      "Copywriting suggestions included",
+      "Fast generation of multiple ad variations"
+    ],
+    "not_recommended_for": [
+      "Creative quality varies by prompt and niche",
+      "Limited customization on lower tiers",
+      "No free plan"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/adcreative.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "canva",
+      "adobeexpress",
+      "figma"
+    ],
+    "comparisons": [
+      "canva"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.adcreative.ai"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/adcreative.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

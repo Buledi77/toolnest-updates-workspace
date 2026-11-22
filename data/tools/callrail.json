@@ -1,0 +1,81 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "callrail",
+    "name": "CallRail",
+    "slug": "callrail",
+    "official_url": "https://www.callrail.com",
+    "status": "active",
+    "logo": "/assets/logos/callrail.png",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Sales"
+    ],
+    "use_cases": [],
+    "audiences": [],
+    "platforms": [
+      "web"
+    ],
+    "integrations": [],
+    "tags": []
+  },
+  "factual_profile": {
+    "capabilities": [
+      {
+        "description": "Dynamic number insertion for source attribution"
+      },
+      {
+        "description": "220,000+ businesses use CallRail"
+      },
+      {
+        "description": "Call recording and transcription"
+      }
+    ],
+    "limitations": [],
+    "free_plan_status": [],
+    "trial_status": [],
+    "pricing_status": [],
+    "pricing_regions": [],
+    "availability_regions": []
+  },
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "call tracking"
+    ],
+    "not_recommended_for": [],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/callrail.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": null
+  },
+  "relationships": {
+    "alternatives": [],
+    "meaningful_comparisons": [],
+    "related_tools": [],
+    "compatible_tools": [],
+    "replaces": [],
+    "replaced_by": []
+  },
+  "evidence": {
+    "handsOn": false,
+    "confidence": "unverified",
+    "sources": [],
+    "claim_refs": [],
+    "source_ids": [],
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.callrail.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/callrail.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "shoeboxed",
+    "name": "Shoeboxed",
+    "slug": "shoeboxed",
+    "official_url": "https://www.shoeboxed.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Productivity"
+    ],
+    "use_cases": [
+      "receipt scanning",
+      "expense management",
+      "tax preparation"
+    ],
+    "audiences": [
+      "small businesses",
+      "freelancers",
+      "accountants"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Unlimited receipt scanning",
+      "OCR technology for data extraction",
+      "Expense reports and tax preparation"
+    ],
+    "not_recommended_for": [
+      "Advanced features require higher tiers",
+      "No free plan",
+      "Mail-in receipts may have delays"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/shoeboxed.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "deel",
+      "connecteam",
+      "notion"
+    ],
+    "comparisons": [
+      "deel"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.shoeboxed.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/shoeboxed.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

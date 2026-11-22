@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "learnworlds",
+    "name": "LearnWorlds",
+    "slug": "learnworlds",
+    "official_url": "https://www.learnworlds.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Sales"
+    ],
+    "use_cases": [
+      "online course creation",
+      "LMS",
+      "digital education"
+    ],
+    "audiences": [
+      "course creators",
+      "educators",
+      "coaches"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Interactive course builder",
+      "Built-in monetization",
+      "Certification and assessments"
+    ],
+    "not_recommended_for": [
+      "Transaction fees on entry plan",
+      "Steeper learning curve than Teachable",
+      "Limited free options"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/learnworlds.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "teachable",
+      "circle",
+      "getresponse"
+    ],
+    "comparisons": [
+      "teachable"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.learnworlds.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/learnworlds.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

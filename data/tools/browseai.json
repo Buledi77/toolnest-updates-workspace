@@ -1,0 +1,81 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "browseai",
+    "name": "Browse AI",
+    "slug": "browseai",
+    "official_url": "https://www.browse.ai",
+    "status": "active",
+    "logo": "/assets/logos/browseai.png",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Automation"
+    ],
+    "use_cases": [],
+    "audiences": [],
+    "platforms": [
+      "web"
+    ],
+    "integrations": [],
+    "tags": []
+  },
+  "factual_profile": {
+    "capabilities": [
+      {
+        "description": "Self-healing AI adapts to website layout changes"
+      },
+      {
+        "description": "No-code point-and-click setup"
+      },
+      {
+        "description": "Residential proxies included on all plans"
+      }
+    ],
+    "limitations": [],
+    "free_plan_status": [],
+    "trial_status": [],
+    "pricing_status": [],
+    "pricing_regions": [],
+    "availability_regions": []
+  },
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "web scraping"
+    ],
+    "not_recommended_for": [],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/browseai.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": null
+  },
+  "relationships": {
+    "alternatives": [],
+    "meaningful_comparisons": [],
+    "related_tools": [],
+    "compatible_tools": [],
+    "replaces": [],
+    "replaced_by": []
+  },
+  "evidence": {
+    "handsOn": false,
+    "confidence": "unverified",
+    "sources": [],
+    "claim_refs": [],
+    "source_ids": [],
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.browse.ai"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/browseai.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

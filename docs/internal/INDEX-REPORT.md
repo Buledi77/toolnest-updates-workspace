@@ -12,6 +12,7 @@ Current allowlist overrides: paths.
 | Section | Indexable | Noindex | Total |
 | --- | ---: | ---: | ---: |
 | `alternatives` | 8 | 131 | 139 |
+| `authors` | 0 | 1 | 1 |
 | `best` | 21 | 1 | 22 |
 | `category` | 15 | 2 | 17 |
 | `compare` | 21 | 43 | 64 |
@@ -153,6 +154,9 @@ Current allowlist overrides: paths.
 - `/alternatives/xero-alternatives.html` (131 words; below the configured minimum word threshold)
 - `/alternatives/xtiles-alternatives.html` (131 words; below the configured minimum word threshold)
 - `/alternatives/zendesk-alternatives.html` (133 words; below the configured minimum word threshold)
+
+### `authors`
+- `/authors/abdul-muswir.html` (313 words; below the configured minimum word threshold)
 
 ### `best`
 - `/best/index.html` (211 words; below the configured minimum word threshold)

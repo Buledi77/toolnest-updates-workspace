@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "confetti",
+    "name": "Confetti",
+    "slug": "confetti",
+    "official_url": "https://www.confetti.life",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Productivity"
+    ],
+    "use_cases": [
+      "employee experience",
+      "company culture",
+      "internal communications"
+    ],
+    "audiences": [
+      "growing companies",
+      "remote teams",
+      "HR teams"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Employee experience platform",
+      "Internal communications",
+      "Company culture tools"
+    ],
+    "not_recommended_for": [
+      "Primarily for culture/EX",
+      "Limited HR functionality",
+      "Requires active participation"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/confetti.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "connecteam",
+      "deel",
+      "notion"
+    ],
+    "comparisons": [
+      "connecteam"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.confetti.life"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/confetti.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

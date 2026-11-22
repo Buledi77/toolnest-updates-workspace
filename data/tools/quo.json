@@ -1,0 +1,48 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "quo",
+    "name": "Quo",
+    "slug": "quo",
+    "official_url": "https://www.quo.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Customer Support",
+      "Sales"
+    ],
+    "use_cases": [],
+    "audiences": []
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "C",
+    "best_for": [],
+    "not_recommended_for": [],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/quo.html",
+    "review_owner": "",
+    "editorial_last_reviewed": ""
+  },
+  "relationships": {},
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.quo.com"
+  },
+  "publishing": {
+    "indexability": "noindex",
+    "canonical_url": "https://www.toolnestai.tech/tools/quo.html",
+    "sitemap_eligible": false
+  },
+  "freshness": {}
+}

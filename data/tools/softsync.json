@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "softsync",
+    "name": "SoftSync AI",
+    "slug": "softsync",
+    "official_url": "https://www.softsync.ai",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Sales"
+    ],
+    "use_cases": [
+      "CRM automation",
+      "AI follow-ups",
+      "data entry automation"
+    ],
+    "audiences": [
+      "sales teams",
+      "AI power users",
+      "Claude/ChatGPT users"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "CRM inside Claude and ChatGPT",
+      "AI-powered follow-ups",
+      "Automated data entry"
+    ],
+    "not_recommended_for": [
+      "New product, limited track record",
+      "Dependent on AI platforms",
+      "Limited for traditional CRM needs"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/softsync.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "pipedrive",
+      "hubspot",
+      "close"
+    ],
+    "comparisons": [
+      "pipedrive"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.softsync.ai"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/softsync.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "closely",
+    "name": "Closely",
+    "slug": "closely",
+    "official_url": "https://www.closely.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Sales"
+    ],
+    "use_cases": [
+      "sales engagement",
+      "outbound automation",
+      "email sequencing"
+    ],
+    "audiences": [
+      "sales teams",
+      "SDRs",
+      "B2B companies"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Sales engagement platform",
+      "Email sequencing",
+      "Outbound automation"
+    ],
+    "not_recommended_for": [
+      "Focused on outbound",
+      "Limited for inbound",
+      "Per-user pricing scales cost"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/closely.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "close",
+      "replyio",
+      "apollo"
+    ],
+    "comparisons": [
+      "close"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.closely.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/closely.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

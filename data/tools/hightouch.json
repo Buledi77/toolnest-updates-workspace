@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "hightouch",
+    "name": "Hightouch",
+    "slug": "hightouch",
+    "official_url": "https://www.hightouch.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Automation"
+    ],
+    "use_cases": [
+      "data integration",
+      "reverse ETL",
+      "customer data sync"
+    ],
+    "audiences": [
+      "data teams",
+      "marketing ops",
+      "revenue ops"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Reverse ETL leader",
+      "Syncs data to 200+ tools",
+      "No-code configuration"
+    ],
+    "not_recommended_for": [
+      "Expensive for small teams",
+      "Requires data warehouse",
+      "Steep learning curve for complex mappings"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/hightouch.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "zapier",
+      "make",
+      "n8n"
+    ],
+    "comparisons": [
+      "zapier"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.hightouch.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/hightouch.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

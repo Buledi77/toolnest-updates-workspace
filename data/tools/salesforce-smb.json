@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "salesforce-smb",
+    "name": "Salesforce Essentials",
+    "slug": "salesforce-smb",
+    "official_url": "https://www.salesforce.com/products/crm/essentials/",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Sales"
+    ],
+    "use_cases": [
+      "CRM for small business",
+      "sales pipeline",
+      "customer management"
+    ],
+    "audiences": [
+      "small businesses",
+      "startups",
+      "growing teams"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Salesforce ecosystem access",
+      "Scalable to higher tiers",
+      "Strong CRM foundation"
+    ],
+    "not_recommended_for": [
+      "Expensive per-user pricing",
+      "Limited for very small teams",
+      "Complex for simple needs"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/salesforce-smb.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "hubspot",
+      "pipedrive",
+      "close"
+    ],
+    "comparisons": [
+      "hubspot"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.salesforce.com/products/crm/essentials/"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/salesforce-smb.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

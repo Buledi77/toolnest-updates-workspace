@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "lusha",
+    "name": "Lusha",
+    "slug": "lusha",
+    "official_url": "https://www.lusha.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Sales"
+    ],
+    "use_cases": [
+      "contact data",
+      "lead enrichment",
+      "B2B database"
+    ],
+    "audiences": [
+      "sales teams",
+      "recruiters",
+      "BDRs"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Contact and company data platform",
+      "CRM integrations",
+      "Focus on data compliance"
+    ],
+    "not_recommended_for": [
+      "Credit-based system limits usage",
+      "Data accuracy varies by region",
+      "Expensive for high-volume needs"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/lusha.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "apollo",
+      "close",
+      "pipedrive"
+    ],
+    "comparisons": [
+      "apollo"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.lusha.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/lusha.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

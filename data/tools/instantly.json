@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "instantly",
+    "name": "Instantly",
+    "slug": "instantly",
+    "official_url": "https://instantly.ai",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Email Marketing"
+    ],
+    "use_cases": [
+      "cold email outreach",
+      "email warmup",
+      "lead generation"
+    ],
+    "audiences": [
+      "agencies",
+      "SaaS companies",
+      "sales teams"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Built-in email warmup",
+      "Unlimited inboxes",
+      "AI-powered email writing"
+    ],
+    "not_recommended_for": [
+      "Cold email only, not for marketing campaigns",
+      "Requires domain setup for best results",
+      "Learning curve for optimal configuration"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/instantly.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "lemlist",
+      "flocksy",
+      "smartlead"
+    ],
+    "comparisons": [
+      "lemlist"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://instantly.ai"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/instantly.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

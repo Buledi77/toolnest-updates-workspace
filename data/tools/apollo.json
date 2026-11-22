@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "apollo",
+    "name": "Apollo.io",
+    "slug": "apollo",
+    "official_url": "https://www.apollo.io",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Sales"
+    ],
+    "use_cases": [
+      "sales intelligence",
+      "prospecting",
+      "email sequences"
+    ],
+    "audiences": [
+      "sales teams",
+      "SDRs",
+      "founders"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "275M+ contact database",
+      "Built-in email sequences",
+      "Free plan available"
+    ],
+    "not_recommended_for": [
+      "Data accuracy outside US is lower",
+      "Credit system can be confusing",
+      "Email deliverability depends on setup"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/apollo.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "close",
+      "pipedrive",
+      "lusha"
+    ],
+    "comparisons": [
+      "close"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.apollo.io"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/apollo.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

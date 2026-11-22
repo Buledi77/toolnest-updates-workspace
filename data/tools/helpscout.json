@@ -1,0 +1,72 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "helpscout",
+    "name": "Help Scout",
+    "slug": "helpscout",
+    "official_url": "https://www.helpscout.com",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Customer Support"
+    ],
+    "use_cases": [
+      "shared inbox",
+      "help desk",
+      "knowledge base"
+    ],
+    "audiences": [
+      "SMB support teams",
+      "SaaS companies",
+      "email-first support"
+    ]
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Clean email-first interface",
+      "AI Answers for automated resolution",
+      "Knowledge base included"
+    ],
+    "not_recommended_for": [
+      "AI Answers costs extra ($0.75/resolution)",
+      "No free plan",
+      "Less feature-rich than Zendesk for enterprise"
+    ],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/helpscout.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-20"
+  },
+  "relationships": {
+    "alternatives": [
+      "freshdesk",
+      "gorgias",
+      "tidio"
+    ],
+    "comparisons": [
+      "freshdesk"
+    ]
+  },
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": [],
+    "confidence": "unverified",
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.helpscout.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/helpscout.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "keap",
+    "name": "Keap (formerly Infusionsoft)",
+    "slug": "keap",
+    "official_url": "https://www.keap.com",
+    "status": "active",
+    "logo": "/assets/logos/keap.png",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Sales"
+    ],
+    "use_cases": [],
+    "audiences": [],
+    "platforms": [
+      "web"
+    ],
+    "integrations": [],
+    "tags": []
+  },
+  "factual_profile": {
+    "capabilities": [
+      {
+        "description": "All-in-one CRM, marketing, sales, and payments"
+      },
+      {
+        "description": "Deep automation workflows"
+      },
+      {
+        "description": "Built-in invoicing and payment processing"
+      }
+    ],
+    "limitations": [],
+    "free_plan_status": [],
+    "trial_status": [],
+    "pricing_status": [],
+    "pricing_regions": [],
+    "availability_regions": []
+  },
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "CRM"
+    ],
+    "not_recommended_for": [],
+    "editorial_summary": "",
+    "review_status": "published",
+    "review_url": "https://www.toolnestai.tech/tools/keap.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": null
+  },
+  "relationships": {
+    "alternatives": [],
+    "meaningful_comparisons": [],
+    "related_tools": [],
+    "compatible_tools": [],
+    "replaces": [],
+    "replaced_by": []
+  },
+  "evidence": {
+    "handsOn": false,
+    "confidence": "unverified",
+    "sources": [],
+    "claim_refs": [],
+    "source_ids": [],
+    "test_status": "research_only"
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.keap.com"
+  },
+  "publishing": {
+    "indexability": "index",
+    "canonical_url": "https://www.toolnestai.tech/tools/keap.html",
+    "sitemap_eligible": true
+  },
+  "freshness": {}
+}
