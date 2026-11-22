@@ -59,7 +59,8 @@
     "test_status": "research_only"
   },
   "monetization": {
-    "official_non_affiliate_url": "https://www.connecteam.com"
+    "official_non_affiliate_url": "https://www.connecteam.com",
+    "affiliate_status": "active"
   },
   "publishing": {
     "indexability": "index",

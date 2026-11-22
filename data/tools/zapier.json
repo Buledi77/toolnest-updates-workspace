@@ -38,12 +38,32 @@
         "description": "Useful templates for common automations"
       }
     ],
-    "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
+    "limitations": [
+      "Free plan limited to single-step Zaps",
+      "Task limits can be expensive for high-volume automation",
+      "No native error handling on lower tiers",
+      "Complex workflows require higher tiers"
+    ],
+    "free_plan_status": [
+      "Free plan with 100 tasks/month"
+    ],
+    "trial_status": [
+      "No time-limited trial; free plan serves as ongoing trial"
+    ],
     "pricing_status": [],
     "pricing_regions": [],
-    "availability_regions": []
+    "availability_regions": [],
+    "audiences": [
+      "solopreneurs and freelancers",
+      "small business teams",
+      "marketing teams",
+      "developers",
+      "operations teams"
+    ],
+    "platforms": [
+      "web",
+      "api"
+    ]
   },
   "editorial": {
     "editorial_tier": "A",
@@ -81,7 +101,7 @@
     "source_ids": []
   },
   "monetization": {
-    "affiliate_status": "unknown",
+    "affiliate_status": "active",
     "affiliate_network": null,
     "affiliate_url": null,
     "official_non_affiliate_url": "https://zapier.com",
@@ -107,5 +127,88 @@
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
-  }
+  },
+  "pricing": {
+    "checkedOn": "2026-11-22",
+    "sourceUrls": [
+      "https://zapier.com/pricing/"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 0,
+    "freePlan": true,
+    "freeLimits": "100 tasks/month, single-step Zaps, 1 active Zap",
+    "trial": "No free trial; free plan available indefinitely",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "tasks": 100,
+          "zaps": 1,
+          "steps": "single-step"
+        },
+        "notes": "Basic automation for testing"
+      },
+      {
+        "name": "Platform",
+        "priceMonthly": 29,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "tasks": 1000,
+          "zaps": "unlimited",
+          "steps": "multi-step"
+        },
+        "notes": "Multi-step Zaps, paths"
+      },
+      {
+        "name": "Professional",
+        "priceMonthly": 69,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "tasks": 4000,
+          "zaps": "unlimited"
+        },
+        "notes": "Table steps, code steps"
+      },
+      {
+        "name": "Team",
+        "priceMonthly": 129,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "tasks": 5000,
+          "users": 2
+        },
+        "notes": "Team collaboration, shared apps"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "tasks": "custom"
+        },
+        "notes": "SSO, audit logs, dedicated support"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "text": "Zapier Platform costs $29/month for 1,000 tasks",
+      "sourceUrl": "https://zapier.com/pricing/",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Zapier Free plan includes 100 tasks per month",
+      "sourceUrl": "https://zapier.com/pricing/",
+      "checkedOn": "2026-11-22"
+    }
+  ],
+  "lastReviewed": "2026-11-22"
 }

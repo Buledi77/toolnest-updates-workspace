@@ -38,12 +38,31 @@
         "description": "Sales pipeline tools"
       }
     ],
-    "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
+    "limitations": [
+      "Professional plan jumps from $20 to $1,200/month",
+      "Advanced features locked behind expensive Enterprise tier",
+      "Can become complex for small teams",
+      "Custom reporting requires Enterprise plan"
+    ],
+    "free_plan_status": [
+      "Free CRM with unlimited contacts"
+    ],
+    "trial_status": [
+      "14-day free trial on paid plans"
+    ],
     "pricing_status": [],
     "pricing_regions": [],
-    "availability_regions": []
+    "availability_regions": [],
+    "audiences": [
+      "small to mid-size businesses",
+      "marketing teams",
+      "sales teams",
+      "startups scaling their CRM",
+      "agencies"
+    ],
+    "platforms": [
+      "web"
+    ]
   },
   "editorial": {
     "editorial_tier": "A",
@@ -77,7 +96,7 @@
     "source_ids": []
   },
   "monetization": {
-    "affiliate_status": "unknown",
+    "affiliate_status": "active",
     "affiliate_network": null,
     "affiliate_url": null,
     "official_non_affiliate_url": "https://www.hubspot.com",
@@ -103,5 +122,83 @@
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
-  }
+  },
+  "pricing": {
+    "checkedOn": "2026-11-22",
+    "sourceUrls": [
+      "https://www.hubspot.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 0,
+    "freePlan": true,
+    "freeLimits": "Free CRM with contacts, deals, email marketing (up to 2,000 emails/month), forms, live chat",
+    "trial": "14-day free trial on paid plans",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "contacts": "unlimited",
+          "emails": "2000/month",
+          "users": 1
+        },
+        "notes": "Core CRM features"
+      },
+      {
+        "name": "Starter",
+        "priceMonthly": 20,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "contacts": "unlimited",
+          "emails": "10000/month",
+          "users": 3
+        },
+        "notes": "Email scheduling, ad management, basic automation"
+      },
+      {
+        "name": "Professional",
+        "priceMonthly": 1200,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "contacts": "unlimited",
+          "users": 5
+        },
+        "notes": "Advanced marketing, sales, and service hubs"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": 5000,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "contacts": "unlimited",
+          "users": 10
+        },
+        "notes": "AI-powered features, custom reporting"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "text": "HubSpot Starter costs $20/month for up to 3 users",
+      "sourceUrl": "https://www.hubspot.com/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "HubSpot Professional costs $1,200/month for up to 5 users",
+      "sourceUrl": "https://www.hubspot.com/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "HubSpot Free CRM includes unlimited contacts",
+      "sourceUrl": "https://www.hubspot.com/pricing",
+      "checkedOn": "2026-11-22"
+    }
+  ],
+  "lastReviewed": "2026-11-22"
 }

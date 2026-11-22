@@ -37,7 +37,8 @@
     "test_status": "research_only"
   },
   "monetization": {
-    "official_non_affiliate_url": "https://www.survicate.com"
+    "official_non_affiliate_url": "https://www.survicate.com",
+    "affiliate_status": "active"
   },
   "publishing": {
     "indexability": "noindex",

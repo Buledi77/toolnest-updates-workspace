@@ -38,12 +38,31 @@
         "description": "Managed hosting"
       }
     ],
-    "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
+    "limitations": [
+      "Free plan limited to 2 pages on Webflow subdomain",
+      "Steep learning curve for non-designers",
+      "CMS item limits can be restrictive on lower tiers",
+      "No native e-commerce on lower tiers"
+    ],
+    "free_plan_status": [
+      "Free plan with 2 pages on Webflow subdomain"
+    ],
+    "trial_status": [
+      "14-day free trial on paid plans"
+    ],
     "pricing_status": [],
     "pricing_regions": [],
-    "availability_regions": []
+    "availability_regions": [],
+    "audiences": [
+      "web designers",
+      "freelancers and agencies",
+      "small businesses",
+      "startups",
+      "marketing teams"
+    ],
+    "platforms": [
+      "web"
+    ]
   },
   "editorial": {
     "editorial_tier": "A",
@@ -79,7 +98,7 @@
     "source_ids": []
   },
   "monetization": {
-    "affiliate_status": "unknown",
+    "affiliate_status": "active",
     "affiliate_network": null,
     "affiliate_url": null,
     "official_non_affiliate_url": "https://webflow.com",
@@ -105,5 +124,86 @@
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
-  }
+  },
+  "pricing": {
+    "checkedOn": "2026-11-22",
+    "sourceUrls": [
+      "https://webflow.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 0,
+    "freePlan": true,
+    "freeLimits": "2 pages, Webflow subdomain, basic CMS, no custom domain",
+    "trial": "14-day free trial on paid plans",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "pages": 2,
+          "cms": "basic"
+        },
+        "notes": "Learning and prototyping only"
+      },
+      {
+        "name": "Basic",
+        "priceMonthly": 14,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "pages": 50,
+          "cms": "1000 items"
+        },
+        "notes": "Custom domain, SSL, basic CMS"
+      },
+      {
+        "name": "CMS",
+        "priceMonthly": 23,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "pages": "unlimited",
+          "cms": "17500 items"
+        },
+        "notes": "Advanced CMS, sitemaps, redirects"
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 39,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "pages": "unlimited",
+          "cms": "unlimited"
+        },
+        "notes": "Form payments, member areas"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "pages": "unlimited"
+        },
+        "notes": "SSO, audit logs, dedicated support"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "text": "Webflow Basic costs $14/month for custom domain and 50 pages",
+      "sourceUrl": "https://webflow.com/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Webflow offers a 14-day free trial on paid plans",
+      "sourceUrl": "https://webflow.com/pricing",
+      "checkedOn": "2026-11-22"
+    }
+  ],
+  "lastReviewed": "2026-11-22"
 }

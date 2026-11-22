@@ -36,7 +36,8 @@
     "test_status": "research_only"
   },
   "monetization": {
-    "official_non_affiliate_url": "https://murf.ai"
+    "official_non_affiliate_url": "https://murf.ai",
+    "affiliate_status": "active"
   },
   "publishing": {
     "indexability": "index",

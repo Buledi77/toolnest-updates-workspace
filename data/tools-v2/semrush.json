@@ -296,6 +296,21 @@
     "conflicts": [
       "Advanced plan price was listed at $549/mo but changed to custom pricing. Some third-party sources still quote the old price.",
       "SEO Toolkit pricing (Pro $139.95, Guru $249.95, Business $499.95) is reported by multiple sources; official page is JS-rendered and could not be confirmed via curl."
+    ],
+    "claim_refs": [
+      {
+        "claim_id": "semrush-current-plan-structure"
+      },
+      {
+        "claim_id": "semrush-ai-visibility-addon"
+      },
+      {
+        "claim_id": "semrush-workflow-coverage"
+      }
+    ],
+    "source_ids": [
+      "semrush-pricing",
+      "semrush-ai-visibility-pricing"
     ]
   },
   "claims": [

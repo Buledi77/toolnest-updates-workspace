@@ -49,15 +49,17 @@
       }
     ],
     "limitations": [
-      {
-        "claim_id": "hostinger-ecommerce-caveat"
-      },
-      {
-        "claim_id": "hostinger-fair-use"
-      }
+      "Renewal prices significantly higher than introductory rates",
+      "No free plan available",
+      "Customer support can be slow during peak times",
+      "Limited server locations compared to competitors"
     ],
-    "free_plan_status": [],
-    "trial_status": [],
+    "free_plan_status": [
+      "No free plan"
+    ],
+    "trial_status": [
+      "No free trial; 30-day money-back guarantee"
+    ],
     "pricing_status": [
       {
         "claim_id": "hostinger-billing-context"
@@ -71,7 +73,17 @@
         "claim_id": "hostinger-plan-examples"
       }
     ],
-    "availability_regions": []
+    "availability_regions": [],
+    "audiences": [
+      "budget-conscious website owners",
+      "beginners and small businesses",
+      "bloggers and content creators",
+      "students",
+      "portfolio sites"
+    ],
+    "platforms": [
+      "web"
+    ]
   },
   "editorial": {
     "editorial_tier": "A",
@@ -163,5 +175,68 @@
     "next_review_at": "2026-12-14T20:59:43Z",
     "stale_fields": [],
     "change_history_reference": null
-  }
+  },
+  "pricing": {
+    "checkedOn": "2026-11-22",
+    "sourceUrls": [
+      "https://www.hostinger.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 75,
+    "freePlan": false,
+    "freeLimits": "No free plan; 30-day money-back guarantee",
+    "trial": "No free trial; 30-day money-back guarantee",
+    "plans": [
+      {
+        "name": "Premium Shared",
+        "priceMonthly": 3.99,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "sites": 100,
+          "storage": "100GB SSD",
+          "bandwidth": "unlimited"
+        },
+        "notes": "Free domain, SSL, weekly backups"
+      },
+      {
+        "name": "Business Web Hosting",
+        "priceMonthly": 7.99,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "sites": 100,
+          "storage": "200GB NVMe",
+          "bandwidth": "unlimited"
+        },
+        "notes": "Daily backups, CDN, advanced email"
+      },
+      {
+        "name": "Cloud Startup",
+        "priceMonthly": 14.99,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "sites": 300,
+          "storage": "200GB NVMe",
+          "cpu": "4 cores"
+        },
+        "notes": "Dedicated resources, staging, priority support"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "text": "Hostinger Premium Shared starts at $3.99/month on annual billing",
+      "sourceUrl": "https://www.hostinger.com/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Hostinger offers a 30-day money-back guarantee",
+      "sourceUrl": "https://www.hostinger.com/pricing",
+      "checkedOn": "2026-11-22"
+    }
+  ],
+  "lastReviewed": "2026-11-22"
 }

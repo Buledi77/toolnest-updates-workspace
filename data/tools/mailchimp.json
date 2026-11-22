@@ -38,12 +38,31 @@
         "description": "Marketing automations"
       }
     ],
-    "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
+    "limitations": [
+      "Free plan limited to 500 contacts",
+      "Pricing increases as contact list grows",
+      "Advanced automation requires Standard plan",
+      "Not ideal for transactional email at scale"
+    ],
+    "free_plan_status": [
+      "Free plan for up to 500 contacts"
+    ],
+    "trial_status": [
+      "No time-limited trial; free plan serves as ongoing trial"
+    ],
     "pricing_status": [],
     "pricing_regions": [],
-    "availability_regions": []
+    "availability_regions": [],
+    "audiences": [
+      "small business owners",
+      "email marketers",
+      "e-commerce stores",
+      "content creators",
+      "nonprofits"
+    ],
+    "platforms": [
+      "web"
+    ]
   },
   "editorial": {
     "editorial_tier": "A",
@@ -81,7 +100,7 @@
     "source_ids": []
   },
   "monetization": {
-    "affiliate_status": "unknown",
+    "affiliate_status": "active",
     "affiliate_network": null,
     "affiliate_url": null,
     "official_non_affiliate_url": "https://mailchimp.com",
@@ -107,5 +126,76 @@
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
-  }
+  },
+  "pricing": {
+    "checkedOn": "2026-11-22",
+    "sourceUrls": [
+      "https://mailchimp.com/pricing/"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 0,
+    "freePlan": true,
+    "freeLimits": "Up to 500 contacts, 1,000 sends/month, basic email builder",
+    "trial": "No free trial; free plan available indefinitely",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "contacts": 500,
+          "sends": "1000/month"
+        },
+        "notes": "Basic email marketing"
+      },
+      {
+        "name": "Essentials",
+        "priceMonthly": 16,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "contacts": 1000,
+          "sends": "unlimited"
+        },
+        "notes": "Email builder, audience insights"
+      },
+      {
+        "name": "Standard",
+        "priceMonthly": 20,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "contacts": 1000,
+          "sends": "unlimited"
+        },
+        "notes": "Advanced automation, A/B testing"
+      },
+      {
+        "name": "Premium",
+        "priceMonthly": 400,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "contacts": 1000,
+          "sends": "unlimited"
+        },
+        "notes": "Dedicated support, multivariate testing"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "text": "Mailchimp Essentials costs $16/month for up to 1,000 contacts",
+      "sourceUrl": "https://mailchimp.com/pricing/",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Mailchimp Free plan supports up to 500 contacts",
+      "sourceUrl": "https://mailchimp.com/pricing/",
+      "checkedOn": "2026-11-22"
+    }
+  ],
+  "lastReviewed": "2026-11-22"
 }

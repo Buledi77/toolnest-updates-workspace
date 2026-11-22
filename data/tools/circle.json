@@ -36,7 +36,8 @@
     "test_status": "research_only"
   },
   "monetization": {
-    "official_non_affiliate_url": "https://www.circle.so"
+    "official_non_affiliate_url": "https://www.circle.so",
+    "affiliate_status": "active"
   },
   "publishing": {
     "indexability": "noindex",

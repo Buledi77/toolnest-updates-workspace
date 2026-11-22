@@ -36,7 +36,8 @@
     "test_status": "research_only"
   },
   "monetization": {
-    "official_non_affiliate_url": "https://www.beautiful.ai"
+    "official_non_affiliate_url": "https://www.beautiful.ai",
+    "affiliate_status": "active"
   },
   "publishing": {
     "indexability": "index",

@@ -83,7 +83,7 @@
   "relationships": {
     "alternatives": [
       "semrush",
-      "moz-pro",
+      "mozpro",
       "screamingfrog"
     ],
     "meaningful_comparisons": [
@@ -93,7 +93,7 @@
     ],
     "related_tools": [
       "semrush",
-      "moz-pro",
+      "mozpro",
       "screamingfrog"
     ],
     "compatible_tools": [],

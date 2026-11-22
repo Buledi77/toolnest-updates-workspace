@@ -59,7 +59,8 @@
     "test_status": "research_only"
   },
   "monetization": {
-    "official_non_affiliate_url": "https://brand24.com"
+    "official_non_affiliate_url": "https://brand24.com",
+    "affiliate_status": "active"
   },
   "publishing": {
     "indexability": "index",

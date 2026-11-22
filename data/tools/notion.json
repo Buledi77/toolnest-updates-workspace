@@ -38,12 +38,36 @@
         "description": "Good for solo work"
       }
     ],
-    "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
+    "limitations": [
+      "5 MB file upload limit on Free plan restricts media-heavy workflows",
+      "7-day page history on Free plan means accidental deletions older than a week cannot be recovered",
+      "Notion AI features require Business plan ($20/user/month) \u2014 not available on Plus",
+      "No native email or calendar integration; relies on third-party connections",
+      "Offline access is limited; requires internet connection for full functionality"
+    ],
+    "free_plan_status": [
+      "Free plan available indefinitely with limitations"
+    ],
+    "trial_status": [
+      "No time-limited trial; free plan serves as ongoing trial"
+    ],
     "pricing_status": [],
     "pricing_regions": [],
-    "availability_regions": []
+    "availability_regions": [],
+    "audiences": [
+      "solo professionals and knowledge workers",
+      "small teams (2-20 people) building wikis and project trackers",
+      "startups using Notion as an all-in-one workspace",
+      "students and educators",
+      "content teams managing documentation and databases"
+    ],
+    "platforms": [
+      "web",
+      "ios",
+      "android",
+      "windows",
+      "macos"
+    ]
   },
   "editorial": {
     "editorial_tier": "A",
@@ -83,7 +107,7 @@
     "source_ids": []
   },
   "monetization": {
-    "affiliate_status": "unknown",
+    "affiliate_status": "active",
     "affiliate_network": null,
     "affiliate_url": null,
     "official_non_affiliate_url": "https://www.notion.com",
@@ -109,5 +133,91 @@
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
-  }
+  },
+  "pricing": {
+    "checkedOn": "2026-11-22",
+    "sourceUrls": [
+      "https://www.notion.so/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 17,
+    "freePlan": true,
+    "freeLimits": "Unlimited blocks for solo use; 1,000 blocks for teams, 5 MB file uploads, 10 guests, 7-day page history",
+    "trial": "No free trial; free plan available indefinitely",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "blocks": "unlimited for solo, 1000 for teams",
+          "fileUpload": "5 MB",
+          "guests": 10,
+          "history": "7 days"
+        },
+        "notes": "Unlimited for one person. Block limit applies when 2+ members."
+      },
+      {
+        "name": "Plus",
+        "priceMonthly": 12,
+        "priceAnnualMonthlyEquivalent": 10,
+        "sourceTier": "official",
+        "limits": {
+          "blocks": "unlimited",
+          "fileUpload": "unlimited",
+          "guests": 100,
+          "history": "30 days"
+        },
+        "notes": "Unlimited blocks and files for teams. Custom forms, published sites, charts."
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 24,
+        "priceAnnualMonthlyEquivalent": 20,
+        "sourceTier": "official",
+        "limits": {
+          "blocks": "unlimited",
+          "fileUpload": "unlimited",
+          "guests": "unlimited",
+          "history": "90 days"
+        },
+        "notes": "Full Notion AI, Notion Agent, AI Meeting Notes, SAML SSO, private teamspaces."
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "history": "unlimited"
+        },
+        "notes": "SCIM provisioning, audit log, zero data retention, custom security."
+      }
+    ]
+  },
+  "claims": [
+    {
+      "text": "Notion Plus costs $12 per member per month on monthly billing or $10 on annual billing",
+      "sourceUrl": "https://www.notion.so/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Notion Business costs $24 per member per month on monthly billing or $20 on annual billing",
+      "sourceUrl": "https://www.notion.so/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Notion Free plan offers unlimited blocks for solo users with 5 MB file upload limit",
+      "sourceUrl": "https://www.notion.so/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Full Notion AI including Notion Agent is available on Business plan and above",
+      "sourceUrl": "https://www.notion.so/pricing",
+      "checkedOn": "2026-11-22"
+    }
+  ],
+  "lastReviewed": "2026-11-22"
 }

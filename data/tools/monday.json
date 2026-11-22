@@ -38,12 +38,33 @@
         "description": "Visual dashboards"
       }
     ],
-    "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
+    "limitations": [
+      "No free plan, only a 20-day trial",
+      "Minimum 3 seats required on all plans",
+      "Advanced features require expensive higher tiers",
+      "Can be overkill for simple project tracking"
+    ],
+    "free_plan_status": [
+      "No free plan"
+    ],
+    "trial_status": [
+      "20-day free trial"
+    ],
     "pricing_status": [],
     "pricing_regions": [],
-    "availability_regions": []
+    "availability_regions": [],
+    "audiences": [
+      "project managers",
+      "marketing teams",
+      "software development teams",
+      "HR and operations teams",
+      "creative agencies"
+    ],
+    "platforms": [
+      "web",
+      "ios",
+      "android"
+    ]
   },
   "editorial": {
     "editorial_tier": "B",
@@ -77,7 +98,7 @@
     "source_ids": []
   },
   "monetization": {
-    "affiliate_status": "unknown",
+    "affiliate_status": "active",
     "affiliate_network": null,
     "affiliate_url": null,
     "official_non_affiliate_url": "https://monday.com",
@@ -103,5 +124,75 @@
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
-  }
+  },
+  "pricing": {
+    "checkedOn": "2026-11-22",
+    "sourceUrls": [
+      "https://monday.com/pricing/"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 17,
+    "freePlan": false,
+    "freeLimits": "No free plan; 20-day free trial available",
+    "trial": "20-day free trial",
+    "plans": [
+      {
+        "name": "Basic",
+        "priceMonthly": 9,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "seats": 3,
+          "storage": "10GB"
+        },
+        "notes": "Kanban, Gantt, timeline views"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 16,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "seats": 3,
+          "storage": "50GB"
+        },
+        "notes": "Time tracking, dependencies"
+      },
+      {
+        "name": "Plans",
+        "priceMonthly": 21,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "seats": 3,
+          "storage": "100GB"
+        },
+        "notes": "Portfolio management, workload view"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "storage": "unlimited"
+        },
+        "notes": "SSO, advanced security"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "text": "monday.com Basic costs $9 per seat per month",
+      "sourceUrl": "https://monday.com/pricing/",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "monday.com offers a 20-day free trial",
+      "sourceUrl": "https://monday.com/pricing/",
+      "checkedOn": "2026-11-22"
+    }
+  ],
+  "lastReviewed": "2026-11-22"
 }

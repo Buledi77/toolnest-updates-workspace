@@ -38,12 +38,33 @@
         "description": "Useful for teams and brand kits"
       }
     ],
-    "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
+    "limitations": [
+      "AI credit caps shared across all Magic Studio features",
+      "No volume discounts on Business plan",
+      "Not suitable for professional vector design or developer handoff",
+      "Limited offline functionality"
+    ],
+    "free_plan_status": [
+      "Free plan available indefinitely with 250K+ templates"
+    ],
+    "trial_status": [
+      "Free trial available for Pro and Business"
+    ],
     "pricing_status": [],
     "pricing_regions": [],
-    "availability_regions": []
+    "availability_regions": [],
+    "audiences": [
+      "solo content creators and freelance marketers",
+      "small marketing teams",
+      "social media managers",
+      "small business owners",
+      "educators and students"
+    ],
+    "platforms": [
+      "web",
+      "ios",
+      "android"
+    ]
   },
   "editorial": {
     "editorial_tier": "A",
@@ -81,7 +102,7 @@
     "source_ids": []
   },
   "monetization": {
-    "affiliate_status": "unknown",
+    "affiliate_status": "active",
     "affiliate_network": null,
     "affiliate_url": null,
     "official_non_affiliate_url": "https://www.canva.com",
@@ -107,5 +128,87 @@
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
-  }
+  },
+  "pricing": {
+    "checkedOn": "2026-11-22",
+    "sourceUrls": [
+      "https://www.canva.com/pricing/"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 17,
+    "freePlan": true,
+    "freeLimits": "250K+ templates, 5GB storage, basic tools, limited AI features, 1 Brand Kit with 3 colors",
+    "trial": "Free trial available for Pro and Business plans",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "templates": "250K+",
+          "storage": "5GB",
+          "brandKits": 1,
+          "aiUses": "200 Standard or 20 Premium"
+        },
+        "notes": "Generous free tier for casual design"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 18,
+        "priceAnnualMonthlyEquivalent": 12,
+        "sourceTier": "official",
+        "limits": {
+          "templates": "3.6M+",
+          "storage": "100GB",
+          "brandKits": 5,
+          "aiUses": "2000 Standard or 200 Premium"
+        },
+        "notes": "Background remover, premium assets, Magic Studio AI"
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 25,
+        "priceAnnualMonthlyEquivalent": 21,
+        "sourceTier": "official",
+        "limits": {
+          "templates": "3.6M+",
+          "storage": "500GB",
+          "brandKits": 100,
+          "aiUses": "4000 Standard or 400 Premium"
+        },
+        "notes": "Team admin, collaboration, approval workflows"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "storage": "1TB",
+          "brandKits": 1000
+        },
+        "notes": "SSO, SCIM, audit logs, dedicated support"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "text": "Canva Pro costs $18/month or $144/year per person",
+      "sourceUrl": "https://www.canva.com/pricing/",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Canva Business costs $25/month or $250/year per person",
+      "sourceUrl": "https://www.canva.com/pricing/",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Canva Free offers 250K+ templates and 5GB storage",
+      "sourceUrl": "https://www.canva.com/pricing/",
+      "checkedOn": "2026-11-22"
+    }
+  ],
+  "lastReviewed": "2026-11-22"
 }

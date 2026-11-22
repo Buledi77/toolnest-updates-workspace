@@ -38,12 +38,35 @@
         "description": "Helps with polite tone"
       }
     ],
-    "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
+    "limitations": [
+      "Free plan is very limited",
+      "Premium is expensive at $30/month on monthly billing",
+      "Plagiarism detection requires Premium plan",
+      "AI suggestions can sometimes be overly prescriptive"
+    ],
+    "free_plan_status": [
+      "Free plan with basic grammar and spelling"
+    ],
+    "trial_status": [
+      "No time-limited trial; free plan serves as ongoing trial"
+    ],
     "pricing_status": [],
     "pricing_regions": [],
-    "availability_regions": []
+    "availability_regions": [],
+    "audiences": [
+      "writers and content creators",
+      "students",
+      "business professionals",
+      "non-native English speakers",
+      "marketing teams"
+    ],
+    "platforms": [
+      "web",
+      "ios",
+      "android",
+      "windows",
+      "macos"
+    ]
   },
   "editorial": {
     "editorial_tier": "A",
@@ -87,7 +110,7 @@
     "source_ids": []
   },
   "monetization": {
-    "affiliate_status": "unknown",
+    "affiliate_status": "active",
     "affiliate_network": null,
     "affiliate_url": null,
     "official_non_affiliate_url": "https://www.grammarly.com",
@@ -113,5 +136,73 @@
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
-  }
+  },
+  "pricing": {
+    "checkedOn": "2026-11-22",
+    "sourceUrls": [
+      "https://www.grammarly.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 40,
+    "freePlan": true,
+    "freeLimits": "Basic grammar and spelling checks, limited style suggestions",
+    "trial": "No free trial; free plan available indefinitely",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "features": "basic grammar and spelling"
+        },
+        "notes": "Browser extension, desktop app, MS Office add-in"
+      },
+      {
+        "name": "Premium",
+        "priceMonthly": 30,
+        "priceAnnualMonthlyEquivalent": 12,
+        "sourceTier": "official",
+        "limits": {
+          "features": "advanced grammar, tone, clarity, plagiarism"
+        },
+        "notes": "Full AI writing assistant, plagiarism detection"
+      },
+      {
+        "name": "Team",
+        "priceMonthly": 30,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "users": "unlimited",
+          "features": "all Premium + team management"
+        },
+        "notes": "Style guides, usage analytics"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "users": "unlimited"
+        },
+        "notes": "SSO, advanced security, dedicated support"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "text": "Grammarly Premium costs $30/month or $12/month billed annually",
+      "sourceUrl": "https://www.grammarly.com/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Grammarly Free offers basic grammar and spelling checks",
+      "sourceUrl": "https://www.grammarly.com/pricing",
+      "checkedOn": "2026-11-22"
+    }
+  ],
+  "lastReviewed": "2026-11-22"
 }
