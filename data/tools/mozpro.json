@@ -1,0 +1,419 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "mozpro",
+    "name": "Moz Pro",
+    "slug": "mozpro",
+    "official_url": "https://moz.com/products/pro",
+    "status": "active",
+    "logo": "/assets/logos/mozpro.png",
+    "aliases": [
+      "Moz"
+    ]
+  },
+  "discovery": {
+    "categories": [
+      "SEO"
+    ],
+    "use_cases": [
+      "track rankings",
+      "research keywords",
+      "crawl a website",
+      "research links",
+      "monitor AI-search visibility"
+    ],
+    "audiences": [
+      "SEO freelancers",
+      "in-house marketers",
+      "small agencies",
+      "website owners"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "integrations": [],
+    "tags": [
+      "seo",
+      "keyword-research",
+      "rank-tracking",
+      "site-crawl",
+      "ai-search"
+    ]
+  },
+  "pricing": {
+    "checkedOn": "2026-11-22",
+    "sourceUrls": [
+      "https://moz.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 20,
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "7-day free trial available on Standard and above",
+    "columns": [
+      "plan",
+      "priceMonthly",
+      "priceAnnual",
+      "users",
+      "sites",
+      "keywords",
+      "pagesCrawled"
+    ],
+    "plans": [
+      {
+        "name": "Starter",
+        "priceMonthly": 49,
+        "priceAnnualMonthlyEquivalent": null,
+        "limits": {
+          "users": 1,
+          "trackedSites": 1,
+          "trackedKeywords": 50,
+          "pagesCrawledPerMonth": 20000,
+          "keywordQueriesPerMonth": 75
+        },
+        "notes": "No annual billing published; no AI Visibility tracking; no scheduled reports Entry-level plan mentioned on Enterprise page; not a separate plan tier on pricing page."
+      },
+      {
+        "name": "Standard",
+        "priceMonthly": 99,
+        "priceAnnualMonthlyEquivalent": 79,
+        "limits": {
+          "users": 1,
+          "trackedSites": 3,
+          "trackedKeywords": 300,
+          "pagesCrawledPerMonth": 400000,
+          "keywordQueriesPerMonth": 150,
+          "backlinkQueriesPerMonth": 5000
+        },
+        "notes": "Includes AI Visibility tracking, unlimited scheduled reports, full backlink analysis"
+      },
+      {
+        "name": "Medium",
+        "priceMonthly": 179,
+        "priceAnnualMonthlyEquivalent": 143,
+        "limits": {
+          "users": 2,
+          "trackedSites": 10,
+          "trackedKeywords": 1500,
+          "pagesCrawledPerMonth": 2000000,
+          "keywordQueriesPerMonth": 5000
+        },
+        "notes": "Most popular; branded client reports, AI Visibility dashboards, report templates"
+      },
+      {
+        "name": "Large",
+        "priceMonthly": 299,
+        "priceAnnualMonthlyEquivalent": 239,
+        "limits": {
+          "users": 3,
+          "trackedSites": 25,
+          "trackedKeywords": 3000,
+          "pagesCrawledPerMonth": 5000000,
+          "keywordQueriesPerMonth": 10000
+        },
+        "notes": "Highest self-serve tier; all features at maximum quotas"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "limits": {},
+        "notes": "Custom pricing; contact Moz sales team for quote"
+      }
+    ],
+    "addOns": [
+      {
+        "name": "Extra seat",
+        "price": 49,
+        "unit": "per month per user"
+      },
+      {
+        "name": "Extra campaign",
+        "price": 10,
+        "unit": "per month per site"
+      },
+      {
+        "name": "Extra crawl pages",
+        "price": 15,
+        "unit": "per month per 50,000 pages"
+      },
+      {
+        "name": "Extra tracked keywords",
+        "price": 20,
+        "unit": "per month per 200 keywords"
+      },
+      {
+        "name": "Extra keyword queries",
+        "price": 10,
+        "unit": "per month per 10,000 queries"
+      },
+      {
+        "name": "Extra AI Visibility dashboard",
+        "price": 20,
+        "unit": "per month"
+      },
+      {
+        "name": "Extra tracked prompts",
+        "price": 50,
+        "unit": "per month per 100 prompts"
+      }
+    ],
+    "billingCaveat": "Annual billing saves approximately 20 percent. Extra seats cost $49 per month each. Starter plan does not offer annual billing. Regional pricing and taxes vary.",
+    "conflicts": [
+      "Trial length varies by source: some report 7 days, others report 30 days. Confirm on the official trial page before entering card details."
+    ],
+    "changeLog": []
+  },
+  "overview": {
+    "tagline": "Focused SEO suite with Domain Authority, rank tracking, and site crawling",
+    "description": "Moz Pro is a focused SEO platform offering Keyword Explorer, Link Explorer, Rank Tracker, Site Crawl, and AI visibility tracking. Known for Domain Authority and Page Authority metrics, it serves freelancers, small agencies, and in-house SEO teams who need core SEO tools without the breadth of larger platforms.",
+    "founded": "2004",
+    "headquarters": "Boston, Massachusetts, USA",
+    "parentCompany": "Ziff Davis"
+  },
+  "decision": {
+    "pick": [
+      "SEO freelancers managing 1-3 client sites who need rank tracking and keyword research",
+      "Small agencies that value Domain Authority metrics for client reporting",
+      "Teams that want AI visibility tracking alongside traditional SEO tools",
+      "Users who prefer a focused SEO tool over a broad marketing platform"
+    ],
+    "skip": [
+      "Teams that need PPC advertising data or content marketing suites",
+      "Buyers who need daily rank updates (Moz updates weekly)",
+      "Agencies managing more than 25 sites without wanting to pay for Enterprise",
+      "Users who need JavaScript rendering in site crawls"
+    ]
+  },
+  "features": [
+    {
+      "name": "Keyword Explorer",
+      "description": "Keyword research with search volume, difficulty score, organic CTR estimates, and Priority scoring that weights volume, difficulty, and CTR into a single number. Shows AI Overviews by keyword."
+    },
+    {
+      "name": "Link Explorer",
+      "description": "Backlink analysis with Domain Authority, Page Authority, and Spam Score metrics. Access to a link index of trillions of links for competitive backlink research."
+    },
+    {
+      "name": "Rank Tracker",
+      "description": "Weekly keyword position tracking across Google, Bing, and Yahoo. Supports local tracking by city or postcode. Tracks up to 3 competitors per keyword."
+    },
+    {
+      "name": "Site Crawl",
+      "description": "Automated weekly website crawls that surface technical SEO issues with prioritized recommendations. Crawl capacity ranges from 20,000 pages on Starter to 5 million on Large."
+    },
+    {
+      "name": "AI Visibility Tracking",
+      "description": "Monitor how your brand appears in AI-generated answers from ChatGPT, Google AI Overviews, and Gemini. Track custom prompts and brand mentions across AI platforms. Available from Standard plan upward."
+    },
+    {
+      "name": "On-Page Grader",
+      "description": "Page-level optimization analysis that identifies content issues and provides prioritized recommendations for improving on-page SEO factors."
+    },
+    {
+      "name": "Competitive Research",
+      "description": "Compare your domain against competitors using Domain Authority, backlink profiles, and keyword overlap analysis to identify opportunities and threats."
+    },
+    {
+      "name": "Branded Reports",
+      "description": "Logo-branded client reports available from Medium plan. Schedule automated reports and customize templates for client delivery."
+    }
+  ],
+  "bestFor": [
+    "SEO freelancers tracking 1-3 client sites with recurring keyword and rank monitoring",
+    "Small agencies that rely on Domain Authority for client reporting and benchmarking",
+    "In-house SEO teams that need core SEO tools without PPC or content marketing features",
+    "Users who want AI visibility tracking integrated with traditional SEO workflows"
+  ],
+  "notBestFor": [
+    "Teams that need paid search intelligence or a broad marketing suite beyond SEO",
+    "Buyers who require daily rank updates instead of weekly refreshes",
+    "Agencies managing 25+ sites without wanting custom Enterprise pricing",
+    "Users who need JavaScript rendering capabilities in site crawls"
+  ],
+  "limitations": [
+    "Rank tracking and site crawls update weekly, not daily - too slow for monitoring launches hour by hour",
+    "No JavaScript rendering in site crawls, limiting analysis of modern single-page applications",
+    "Backlink analysis depth trails Ahrefs and Semrush in index freshness and coverage",
+    "Tight query allowances on lower plans - Starter allows only 75 keyword queries per month",
+    "Limited content planning capabilities compared to dedicated content strategy tools",
+    "Extra seats cost $49 per month each, making team expansion expensive on lower tiers"
+  ],
+  "freeAccess": "Moz Pro offers a 7-day free trial on Standard plan and above. No permanent free plan. The trial requires a credit card. Moz also provides free tools like MozBar browser extension and Link Explorer with limited queries.",
+  "alternatives": [
+    {
+      "slug": "semrush",
+      "name": "Semrush",
+      "whyChoose": "Broader marketing platform with PPC data, content marketing tools, and daily rank updates. Better for teams that need more than just SEO."
+    },
+    {
+      "slug": "ahrefs",
+      "name": "Ahrefs",
+      "whyChoose": "Superior backlink analysis with fresher index data and more detailed competitor research. Better for link-building focused workflows."
+    },
+    {
+      "slug": "screamingfrog",
+      "name": "Screaming Frog",
+      "whyChoose": "Specialized technical crawler with deeper site audit capabilities, JavaScript rendering, and one-time purchase option. Better for technical SEO audits."
+    }
+  ],
+  "comparePairs": [
+    "mozpro-vs-semrush",
+    "ahrefs-vs-mozpro"
+  ],
+  "faqs": [
+    {
+      "q": "How much does Moz Pro cost?",
+      "a": "Moz Pro pricing starts at $49 per month for Starter, $99 per month for Standard ($79 billed annually), $179 per month for Medium ($143 annually), and $299 per month for Large ($239 annually). Annual billing saves approximately 20 percent.",
+      "sourceUrl": "https://moz.com/products/pricing"
+    },
+    {
+      "q": "Does Moz Pro have a free plan?",
+      "a": "No permanent free plan. Moz Pro offers a 7-day free trial on Standard plan and above, requiring a credit card. Free tools like MozBar and limited Link Explorer access are available separately.",
+      "sourceUrl": "https://moz.com/products/pricing"
+    },
+    {
+      "q": "What is Domain Authority in Moz Pro?",
+      "a": "Domain Authority is Moz's proprietary 1-to-100 logarithmic score predicting how likely a domain is to rank. Google does not use it, and it is only meaningful comparatively against domains in the same SERP alongside Spam Score.",
+      "sourceUrl": "https://moz.com/products/pro"
+    },
+    {
+      "q": "How often does Moz Pro update rankings?",
+      "a": "Rank tracking updates weekly, not daily. This is sufficient for monthly client reporting but too slow for monitoring launches or rapid ranking changes in real time.",
+      "sourceUrl": "https://moz.com/products/pro"
+    },
+    {
+      "q": "Can Moz Pro track AI search visibility?",
+      "a": "Yes, from Standard plan upward. Moz Pro tracks AI visibility across ChatGPT, Google AI Overviews, and Gemini. Standard includes 150 tracked prompts, Medium includes 300, and Large includes 600.",
+      "sourceUrl": "https://moz.com/products/pricing"
+    },
+    {
+      "q": "How many users are included in each Moz Pro plan?",
+      "a": "Starter includes 1 user, Standard includes 1 user, Medium includes 2 users, and Large includes 3 users. Extra seats cost $49 per month each.",
+      "sourceUrl": "https://moz.com/products/pricing"
+    },
+    {
+      "q": "Is Moz Pro better than Semrush or Ahrefs?",
+      "a": "Moz Pro is better value for focused SEO work at a lower price point. Semrush offers broader marketing features including PPC and content tools. Ahrefs provides superior backlink analysis. Choose Moz Pro when you need core SEO without the breadth or cost of larger platforms.",
+      "sourceUrl": "https://moz.com/products/pro"
+    }
+  ],
+  "evidence": {
+    "handsOn": false,
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://moz.com/products/pricing",
+        "type": "official",
+        "checkedOn": "2026-11-22"
+      },
+      {
+        "url": "https://moz.com/products/pro",
+        "type": "official",
+        "checkedOn": "2026-11-22"
+      }
+    ],
+    "conflicts": [
+      "Trial length varies by source: some report 7 days, others report 30 days. The official pricing page shows trial buttons but does not state the exact length in visible text."
+    ]
+  },
+  "claims": [
+    {
+      "text": "Moz Pro Starter plan costs $49 per month with 1 tracked site and 50 tracked keywords",
+      "sourceUrl": "https://moz.com/products/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Moz Pro Standard plan costs $99 per month or $79 per month billed annually",
+      "sourceUrl": "https://moz.com/products/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Moz Pro Medium plan costs $179 per month or $143 per month billed annually",
+      "sourceUrl": "https://moz.com/products/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Moz Pro Large plan costs $299 per month or $239 per month billed annually",
+      "sourceUrl": "https://moz.com/products/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Extra seats cost $49 per month each",
+      "sourceUrl": "https://moz.com/products/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Annual billing saves approximately 20 percent on Standard, Medium, and Large plans",
+      "sourceUrl": "https://moz.com/products/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Rank tracking updates weekly across Google, Bing, and Yahoo",
+      "sourceUrl": "https://moz.com/products/pro",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "AI Visibility tracking is available from Standard plan upward",
+      "sourceUrl": "https://moz.com/products/pricing",
+      "checkedOn": "2026-11-22"
+    }
+  ],
+  "relationships": {
+    "alternatives": [
+      "semrush",
+      "ahrefs",
+      "screamingfrog"
+    ],
+    "meaningful_comparisons": [
+      "mozpro-vs-semrush",
+      "ahrefs-vs-mozpro"
+    ],
+    "related_tools": [
+      "semrush",
+      "ahrefs",
+      "screamingfrog"
+    ],
+    "compatible_tools": [],
+    "replaces": [],
+    "replaced_by": []
+  },
+  "editorial": {
+    "editorial_tier": "A",
+    "editorial_summary": "Moz Pro is the pragmatic choice for focused SEO work: familiar Domain Authority metrics, a clean interface, and an entry price below full Semrush and Ahrefs suites. The core tools are sufficient for most freelancers and small agencies. Limitations appear in depth: backlink analysis trails Ahrefs, query allowances are tight on lower plans, and there is no PPC or content module like Semrush.",
+    "review_status": "ready",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-22"
+  },
+  "monetization": {
+    "affiliate_status": "not_applied",
+    "affiliate_network": null,
+    "affiliate_url": null,
+    "official_non_affiliate_url": "https://moz.com/products/pro",
+    "approved_regions": [],
+    "restrictions": [],
+    "disclosure_required": true,
+    "last_link_check": "2026-11-22"
+  },
+  "publishing": {
+    "directory_visibility": "public",
+    "standalone_page_status": "ready",
+    "indexability": "index",
+    "sitemap_eligible": true,
+    "canonical_url": "https://www.toolnestai.tech/tools/mozpro.html",
+    "template_type": "premium-review",
+    "content_quality_status": "ready",
+    "prepublish_status": "ready"
+  },
+  "freshness": {
+    "created_at": "2026-11-14T20:59:43Z",
+    "updated_at": "2026-11-22T00:00:00Z",
+    "last_verified_at": "2026-11-22T00:00:00Z",
+    "next_review_at": "2026-12-22T00:00:00Z",
+    "stale_fields": [],
+    "change_history_reference": null
+  },
+  "lastReviewed": "2026-11-22"
+}

@@ -863,6 +863,24 @@ def load_review_data(slug: str) -> dict | None:
 
 
 def tool_metadata(slug: str) -> dict:
+    # Primary source: data/tools/{slug}.json
+    primary = ROOT / "data" / "tools" / f"{slug}.json"
+    if primary.exists():
+        data = json.loads(primary.read_text(encoding="utf-8"))
+        identity = data.get("identity", {})
+        editorial = data.get("editorial", {})
+        relationships = data.get("relationships", {})
+        return {
+            "name": identity.get("name", slug.replace("-", " ").title()),
+            "url": identity.get("official_url", ""),
+            "logo": identity.get("logo", ""),
+            "category": (data.get("discovery", {}).get("categories") or [""])[0],
+            "best": editorial.get("best_for", []),
+            "skip": editorial.get("not_recommended_for", []),
+            "alternatives": relationships.get("alternatives", []),
+            "comparisons": relationships.get("meaningful_comparisons", []),
+        }
+    # Fallback: data/tools-v2/ for backward compatibility
     v2_paths = [
         ROOT / "data" / "tools-v2" / f"{slug}.json",
         ROOT / "data" / "tools-v2" / "legacy" / f"{slug}.json",
