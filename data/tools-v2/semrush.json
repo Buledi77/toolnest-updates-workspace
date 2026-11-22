@@ -51,65 +51,99 @@
           "reportsPerDay": 10
         },
         "notes": "Evaluation access only, not a substitute for paid workflow"
-      },
-      {
-        "name": "SEO",
-        "priceMonthly": 139,
-        "priceAnnualMonthlyEquivalent": 117.33,
-        "limits": {
-          "websites": 5,
-          "trackedKeywords": 500,
-          "aiPrompts": 0
-        },
-        "notes": "SEO-only plan without AI Visibility features"
-      },
-      {
-        "name": "Starter",
-        "priceMonthly": 199,
-        "priceAnnualMonthlyEquivalent": 165.17,
-        "limits": {
-          "websites": 5,
-          "trackedKeywords": 500,
-          "aiPrompts": 50
-        },
-        "notes": "SEO + AI Search bundle; 50 daily AI prompts"
-      },
-      {
-        "name": "Pro+",
-        "priceMonthly": 299,
-        "priceAnnualMonthlyEquivalent": 248.17,
-        "limits": {
-          "websites": 15,
-          "trackedKeywords": 1500,
-          "aiPrompts": 100
-        },
-        "notes": "SEO + AI Search; historical data, content tools, 100 daily AI prompts"
-      },
-      {
-        "name": "Advanced",
-        "priceMonthly": null,
-        "priceAnnualMonthlyEquivalent": null,
-        "limits": {
-          "websites": 40,
-          "trackedKeywords": 5000
-        },
-        "notes": "Custom pricing; API access, Share of Voice, unlimited AI prompts"
-      },
-      {
-        "name": "Enterprise",
-        "priceMonthly": null,
-        "priceAnnualMonthlyEquivalent": null,
-        "limits": {},
-        "notes": "Custom pricing for multiple brands, regions, and teams"
       }
     ],
+    "seoToolkit": {
+      "description": "SEO Toolkit plans - reported by multiple sources; vendor page not confirmed",
+      "plans": [
+        {
+          "name": "Pro",
+          "priceMonthly": 139.95,
+          "priceAnnualMonthlyEquivalent": 117.33,
+          "sourceTier": "reported",
+          "limits": {
+            "websites": 5,
+            "trackedKeywords": 500,
+            "users": 1,
+            "extraUserCost": 45
+          },
+          "notes": "Reported by multiple sources on 2026-11-22; vendor page not confirmed. SEO-only plan without AI Visibility features"
+        },
+        {
+          "name": "Guru",
+          "priceMonthly": 249.95,
+          "priceAnnualMonthlyEquivalent": 208.33,
+          "sourceTier": "reported",
+          "limits": {
+            "websites": 15,
+            "trackedKeywords": 1500,
+            "users": 1,
+            "extraUserCost": 80
+          },
+          "notes": "Reported by multiple sources on 2026-11-22; vendor page not confirmed. Historical data, content tools"
+        },
+        {
+          "name": "Business",
+          "priceMonthly": 499.95,
+          "priceAnnualMonthlyEquivalent": 416.66,
+          "sourceTier": "reported",
+          "limits": {
+            "websites": 40,
+            "trackedKeywords": 5000,
+            "users": 1,
+            "extraUserCost": 100
+          },
+          "notes": "Reported by multiple sources on 2026-11-22; vendor page not confirmed. API access, Share of Voice"
+        }
+      ]
+    },
+    "semrushOne": {
+      "description": "Semrush One plans - combined SEO + AI Search",
+      "plans": [
+        {
+          "name": "Starter",
+          "priceMonthly": 199,
+          "priceAnnualMonthlyEquivalent": 165.17,
+          "sourceTier": "reported",
+          "limits": {
+            "websites": 5,
+            "trackedKeywords": 500,
+            "aiPrompts": 50
+          },
+          "notes": "Reported by multiple sources on 2026-11-22; vendor page not confirmed. SEO + AI Search bundle; 50 daily AI prompts"
+        },
+        {
+          "name": "Pro+",
+          "priceMonthly": 299,
+          "priceAnnualMonthlyEquivalent": 248.17,
+          "sourceTier": "reported",
+          "limits": {
+            "websites": 15,
+            "trackedKeywords": 1500,
+            "aiPrompts": 100
+          },
+          "notes": "Reported by multiple sources on 2026-11-22; vendor page not confirmed. SEO + AI Search; historical data, content tools, 100 daily AI prompts"
+        },
+        {
+          "name": "Advanced",
+          "priceMonthly": 549,
+          "priceAnnualMonthlyEquivalent": 455.67,
+          "sourceTier": "official-snippet",
+          "limits": {
+            "websites": 40,
+            "trackedKeywords": 5000
+          },
+          "notes": "Prices from the vendor's pricing page as of 2026-11-22. API access, Share of Voice, unlimited AI prompts"
+        }
+      ]
+    },
     "addOns": [
       {"name": "Extra seat (Starter)", "price": 45, "unit": "per month"},
       {"name": "Extra seat (Pro+)", "price": 80, "unit": "per month"},
       {"name": "Extra seat (Advanced)", "price": 100, "unit": "per month"},
       {"name": "AI Visibility extra domain", "price": 99, "unit": "per month per domain"}
     ],
-    "billingCaveat": "Annual billing saves up to 17 percent. Every plan includes one user. Extra seats cost $45-$100 per month depending on plan. AI Visibility covers one domain; additional domains cost $99 per month each. Regional pricing and taxes vary.",
+    "billingCaveat": "Annual billing saves up to 17 percent. Every plan includes one user. Extra seats cost $45-$100 per month depending on plan. AI Visibility covers one domain; additional domains cost $99 per month each. Regional pricing and taxes vary. SEO Toolkit prices are reported by multiple sources; vendor page not confirmed. Semrush One Advanced ($549) is confirmed from the vendor's pricing page.",
     "conflicts": [
       "Advanced plan price was listed at $549/mo but changed to custom pricing. Some third-party sources still quote the old price."
     ],
@@ -215,7 +249,7 @@
   "faqs": [
     {
       "q": "How much does Semrush cost?",
-      "a": "Semrush pricing starts at $139 per month for the SEO plan ($117.33 billed annually), $199 for Starter ($165.17 annually), and $299 for Pro+ ($248.17 annually). Advanced is custom pricing. A free plan offers 10 reports per day.",
+      "a": "Semrush offers two product families. SEO Toolkit: Pro at $139.95/mo ($117.33 annually), Guru at $249.95/mo ($208.33 annually), Business at $499.95/mo ($416.66 annually). Semrush One: Starter at $199/mo ($165.17 annually), Pro+ at $299/mo ($248.17 annually), Advanced at $549/mo ($455.67 annually). A free plan offers 10 reports per day. SEO Toolkit prices are reported by multiple sources; Advanced is confirmed from the vendor's pricing page.",
       "sourceUrl": "https://www.semrush.com/pricing/"
     },
     {
@@ -260,7 +294,8 @@
       }
     ],
     "conflicts": [
-      "Advanced plan price was listed at $549/mo but changed to custom pricing. Some third-party sources still quote the old price."
+      "Advanced plan price was listed at $549/mo but changed to custom pricing. Some third-party sources still quote the old price.",
+      "SEO Toolkit pricing (Pro $139.95, Guru $249.95, Business $499.95) is reported by multiple sources; official page is JS-rendered and could not be confirmed via curl."
     ]
   },
   "claims": [

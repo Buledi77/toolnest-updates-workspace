@@ -1,0 +1,88 @@
+{
+  "slug": "semrush",
+  "compiledOn": "2026-11-22",
+  "status": "official-snippet-seen",
+  "officialUrls": [
+    "https://www.semrush.com/pricing/"
+  ],
+  "pricing": {
+    "currency": "USD",
+    "seoToolkit": {
+      "plans": [
+        {
+          "name": "Pro",
+          "priceMonthly": 139.95,
+          "priceAnnualMonthlyEquivalent": 117.33,
+          "source": "third-party",
+          "limits": {
+            "websites": 5,
+            "trackedKeywords": 500,
+            "users": 1,
+            "extraUserCost": 45
+          }
+        },
+        {
+          "name": "Guru",
+          "priceMonthly": 249.95,
+          "priceAnnualMonthlyEquivalent": 208.33,
+          "source": "third-party",
+          "limits": {
+            "websites": 15,
+            "trackedKeywords": 1500,
+            "users": 1,
+            "extraUserCost": 80
+          }
+        },
+        {
+          "name": "Business",
+          "priceMonthly": 499.95,
+          "priceAnnualMonthlyEquivalent": 416.66,
+          "source": "third-party",
+          "limits": {
+            "websites": 40,
+            "trackedKeywords": 5000,
+            "users": 1,
+            "extraUserCost": 100
+          }
+        }
+      ]
+    },
+    "semrushOne": {
+      "plans": [
+        {
+          "name": "Starter",
+          "priceMonthly": 199,
+          "priceAnnualMonthlyEquivalent": 165.17,
+          "source": "third-party",
+          "limits": {
+            "websites": 5,
+            "trackedKeywords": 500,
+            "aiPrompts": 50
+          }
+        },
+        {
+          "name": "Pro+",
+          "priceMonthly": 299,
+          "priceAnnualMonthlyEquivalent": 248.17,
+          "source": "third-party",
+          "limits": {
+            "websites": 15,
+            "trackedKeywords": 1500,
+            "aiPrompts": 100
+          }
+        },
+        {
+          "name": "Advanced",
+          "priceMonthly": 549,
+          "priceAnnualMonthlyEquivalent": 455.67,
+          "source": "official",
+          "limits": {
+            "websites": 40,
+            "trackedKeywords": 5000
+          },
+          "notes": "API access, Share of Voice, unlimited AI prompts"
+        }
+      ]
+    }
+  }
+}
