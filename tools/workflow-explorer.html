@@ -89,12 +89,12 @@
 .we-progress-dot.active{background:var(--brand)}
 .we-progress-dot.completed{background:#065F46}
 @media(max-width:640px){
-  .we-workflows{grid-template-columns:1fr}
-  .we-tool-grid{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))}
-  .we-actions{flex-direction:column}
-  .we-actions a{text-align:center}
-  .we-header{flex-direction:column;align-items:flex-start;gap:8px}
-  .we-reset{margin-left:0}
+ .we-workflows{grid-template-columns:1fr}
+ .we-tool-grid{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))}
+ .we-actions{flex-direction:column}
+ .we-actions a{text-align:center}
+ .we-header{flex-direction:column;align-items:flex-start;gap:8px}
+ .we-reset{margin-left:0}
 }
 </style>
 
@@ -229,796 +229,796 @@
 
 <script>
 (function(){
-  "use strict";
+ "use strict";
 
-  var WORKFLOWS = [
-          {
-            "goal_id": "write-better-english",
-            "goal_label": "Write better English",
-            "candidate_tools": [
-              "grammarly",
-              "quillbot",
-              "prowritingaid",
-              "hemingway",
-              "writesonic"
-            ],
-            "decision_questions": [
-              "Do you need grammar correction or full content generation?",
-              "Is this for professional or personal use?",
-              "Do you need a free option?"
-            ],
-            "stages": [
-              {
-                "step": 1,
-                "name": "Identify requirements",
-                "description": "Clarify your primary goal and constraints"
-              },
-              {
-                "step": 2,
-                "name": "Compare candidates",
-                "description": "Review 5 candidate tools"
-              },
-              {
-                "step": 3,
-                "name": "Check alternatives",
-                "description": "Explore 5 alternatives pages"
-              },
-              {
-                "step": 4,
-                "name": "Make decision",
-                "description": "Choose based on verified evidence"
-              }
-            ],
-            "evidence_confidence": "high",
-            "relevant_comparisons": [
-              "/compare/hemingway-vs-prowritingaid.html",
-              "/compare/prowritingaid-vs-writesonic.html",
-              "/compare/hemingway-vs-quillbot.html",
-              "/compare/grammarly-vs-hemingway.html",
-              "/compare/prowritingaid-vs-quillbot.html",
-              "/compare/quillbot-vs-writesonic.html",
-              "/compare/grammarly-vs-quillbot.html",
-              "/compare/grammarly-vs-prowritingaid.html",
-              "/compare/grammarly-vs-writesonic.html"
-            ],
-            "relevant_alternatives": [
-              "/alternatives/grammarly-alternatives.html",
-              "/alternatives/quillbot-alternatives.html",
-              "/alternatives/prowritingaid-alternatives.html",
-              "/alternatives/hemingway-alternatives.html",
-              "/alternatives/writesonic-alternatives.html"
-            ]
-          },
-          {
-            "goal_id": "organise-my-work",
-            "goal_label": "Organise my work",
-            "candidate_tools": [
-              "notion",
-              "otter",
-              "fireflies",
-              "clickup",
-              "asana",
-              "monday",
-              "todoist"
-            ],
-            "decision_questions": [
-              "Do you need team collaboration or solo use?",
-              "Do you prefer notes-first or tasks-first?",
-              "Do you need integrations with other tools?"
-            ],
-            "stages": [
-              {
-                "step": 1,
-                "name": "Identify requirements",
-                "description": "Clarify your primary goal and constraints"
-              },
-              {
-                "step": 2,
-                "name": "Compare candidates",
-                "description": "Review 7 candidate tools"
-              },
-              {
-                "step": 3,
-                "name": "Check alternatives",
-                "description": "Explore 7 alternatives pages"
-              },
-              {
-                "step": 4,
-                "name": "Make decision",
-                "description": "Choose based on verified evidence"
-              }
-            ],
-            "evidence_confidence": "high",
-            "relevant_comparisons": [
-              "/compare/asana-vs-notion.html",
-              "/compare/clickup-vs-notion.html",
-              "/compare/fireflies-vs-otter.html",
-              "/compare/notion-vs-todoist.html",
-              "/compare/monday-vs-notion.html"
-            ],
-            "relevant_alternatives": [
-              "/alternatives/notion-alternatives.html",
-              "/alternatives/otter-alternatives.html",
-              "/alternatives/fireflies-alternatives.html",
-              "/alternatives/clickup-alternatives.html",
-              "/alternatives/asana-alternatives.html",
-              "/alternatives/monday-alternatives.html",
-              "/alternatives/todoist-alternatives.html"
-            ]
-          },
-          {
-            "goal_id": "add-voice-to-videos",
-            "goal_label": "Add a voice to videos",
-            "candidate_tools": [
-              "jasper",
-              "copyai",
-              "elevenlabs",
-              "descript",
-              "runway",
-              "synthesia",
-              "invideo",
-              "kapwing"
-            ],
-            "decision_questions": [
-              "Do you need voice cloning or stock voices?",
-              "Is this for YouTube, podcasts, or other media?",
-              "Do you need editing capabilities?"
-            ],
-            "stages": [
-              {
-                "step": 1,
-                "name": "Identify requirements",
-                "description": "Clarify your primary goal and constraints"
-              },
-              {
-                "step": 2,
-                "name": "Compare candidates",
-                "description": "Review 8 candidate tools"
-              },
-              {
-                "step": 3,
-                "name": "Check alternatives",
-                "description": "Explore 8 alternatives pages"
-              },
-              {
-                "step": 4,
-                "name": "Make decision",
-                "description": "Choose based on verified evidence"
-              }
-            ],
-            "evidence_confidence": "high",
-            "relevant_comparisons": [
-              "/compare/descript-vs-invideo.html",
-              "/compare/descript-vs-synthesia.html",
-              "/compare/kapwing-vs-runway.html",
-              "/compare/elevenlabs-vs-descript.html",
-              "/compare/descript-vs-kapwing.html",
-              "/compare/descript-vs-runway.html",
-              "/compare/invideo-vs-runway.html",
-              "/compare/runway-vs-synthesia.html",
-              "/compare/elevenlabs-vs-synthesia.html",
-              "/compare/copyai-vs-jasper.html"
-            ],
-            "relevant_alternatives": [
-              "/alternatives/jasper-alternatives.html",
-              "/alternatives/copyai-alternatives.html",
-              "/alternatives/elevenlabs-alternatives.html",
-              "/alternatives/descript-alternatives.html",
-              "/alternatives/runway-alternatives.html",
-              "/alternatives/synthesia-alternatives.html",
-              "/alternatives/invideo-alternatives.html",
-              "/alternatives/kapwing-alternatives.html"
-            ]
-          },
-          {
-            "goal_id": "edit-video-podcasts",
-            "goal_label": "Edit video or podcasts",
-            "candidate_tools": [
-              "notion",
-              "otter",
-              "fireflies",
-              "clickup",
-              "asana",
-              "monday",
-              "todoist",
-              "elevenlabs",
-              "descript",
-              "runway",
-              "synthesia",
-              "invideo",
-              "kapwing"
-            ],
-            "decision_questions": [
-              "Do you need transcript-based editing or timeline editing?",
-              "Do you need to remove filler words automatically?",
-              "Do you need multi-track audio and video support?"
-            ],
-            "stages": [
-              {
-                "step": 1,
-                "name": "Identify requirements",
-                "description": "Clarify your primary goal and constraints"
-              },
-              {
-                "step": 2,
-                "name": "Compare candidates",
-                "description": "Review 13 candidate tools"
-              },
-              {
-                "step": 3,
-                "name": "Check alternatives",
-                "description": "Explore 13 alternatives pages"
-              },
-              {
-                "step": 4,
-                "name": "Make decision",
-                "description": "Choose based on verified evidence"
-              }
-            ],
-            "evidence_confidence": "high",
-            "relevant_comparisons": [
-              "/compare/descript-vs-invideo.html",
-              "/compare/descript-vs-synthesia.html",
-              "/compare/asana-vs-notion.html",
-              "/compare/kapwing-vs-runway.html",
-              "/compare/elevenlabs-vs-descript.html",
-              "/compare/descript-vs-kapwing.html",
-              "/compare/clickup-vs-notion.html",
-              "/compare/invideo-vs-runway.html",
-              "/compare/fireflies-vs-otter.html",
-              "/compare/runway-vs-synthesia.html",
-              "/compare/notion-vs-todoist.html",
-              "/compare/elevenlabs-vs-synthesia.html",
-              "/compare/descript-vs-runway.html",
-              "/compare/monday-vs-notion.html"
-            ],
-            "relevant_alternatives": [
-              "/alternatives/notion-alternatives.html",
-              "/alternatives/otter-alternatives.html",
-              "/alternatives/fireflies-alternatives.html",
-              "/alternatives/clickup-alternatives.html",
-              "/alternatives/asana-alternatives.html",
-              "/alternatives/monday-alternatives.html",
-              "/alternatives/todoist-alternatives.html",
-              "/alternatives/elevenlabs-alternatives.html",
-              "/alternatives/descript-alternatives.html",
-              "/alternatives/runway-alternatives.html",
-              "/alternatives/synthesia-alternatives.html",
-              "/alternatives/invideo-alternatives.html",
-              "/alternatives/kapwing-alternatives.html"
-            ]
-          },
-          {
-            "goal_id": "write-ad-copy",
-            "goal_label": "Write ad copy",
-            "candidate_tools": [
-              "jasper",
-              "copyai",
-              "grammarly",
-              "quillbot",
-              "prowritingaid",
-              "hemingway",
-              "writesonic"
-            ],
-            "decision_questions": [
-              "Do you need platform-specific ad formats?",
-              "Do you need A/B variant generation?",
-              "Is this for social media ads or search ads?"
-            ],
-            "stages": [
-              {
-                "step": 1,
-                "name": "Identify requirements",
-                "description": "Clarify your primary goal and constraints"
-              },
-              {
-                "step": 2,
-                "name": "Compare candidates",
-                "description": "Review 7 candidate tools"
-              },
-              {
-                "step": 3,
-                "name": "Check alternatives",
-                "description": "Explore 7 alternatives pages"
-              },
-              {
-                "step": 4,
-                "name": "Make decision",
-                "description": "Choose based on verified evidence"
-              }
-            ],
-            "evidence_confidence": "high",
-            "relevant_comparisons": [
-              "/compare/copyai-vs-jasper.html",
-              "/compare/hemingway-vs-prowritingaid.html",
-              "/compare/prowritingaid-vs-writesonic.html",
-              "/compare/copyai-vs-grammarly.html",
-              "/compare/hemingway-vs-quillbot.html",
-              "/compare/grammarly-vs-hemingway.html",
-              "/compare/prowritingaid-vs-quillbot.html",
-              "/compare/quillbot-vs-writesonic.html",
-              "/compare/grammarly-vs-jasper.html",
-              "/compare/grammarly-vs-quillbot.html",
-              "/compare/grammarly-vs-prowritingaid.html",
-              "/compare/grammarly-vs-writesonic.html"
-            ],
-            "relevant_alternatives": [
-              "/alternatives/jasper-alternatives.html",
-              "/alternatives/copyai-alternatives.html",
-              "/alternatives/grammarly-alternatives.html",
-              "/alternatives/quillbot-alternatives.html",
-              "/alternatives/prowritingaid-alternatives.html",
-              "/alternatives/hemingway-alternatives.html",
-              "/alternatives/writesonic-alternatives.html"
-            ]
-          },
-          {
-            "goal_id": "get-search-traffic",
-            "goal_label": "Get search traffic",
-            "candidate_tools": [
-              "semrush",
-              "ahrefs",
-              "mozpro",
-              "surferseo",
-              "screamingfrog"
-            ],
-            "decision_questions": [
-              "Do you need keyword research, rank tracking, or both?",
-              "Are you a beginner or experienced with SEO?",
-              "Do you need agency-level features?"
-            ],
-            "stages": [
-              {
-                "step": 1,
-                "name": "Identify requirements",
-                "description": "Clarify your primary goal and constraints"
-              },
-              {
-                "step": 2,
-                "name": "Compare candidates",
-                "description": "Review 5 candidate tools"
-              },
-              {
-                "step": 3,
-                "name": "Check alternatives",
-                "description": "Explore 5 alternatives pages"
-              },
-              {
-                "step": 4,
-                "name": "Make decision",
-                "description": "Choose based on verified evidence"
-              }
-            ],
-            "evidence_confidence": "high",
-            "relevant_comparisons": [
-              "/compare/ahrefs-vs-surferseo.html",
-              "/compare/ahrefs-vs-mozpro.html",
-              "/compare/mozpro-vs-surferseo.html",
-              "/compare/ahrefs-vs-semrush.html",
-              "/compare/mozpro-vs-screamingfrog.html",
-              "/compare/semrush-vs-surferseo.html",
-              "/compare/screamingfrog-vs-semrush.html",
-              "/compare/ahrefs-vs-screamingfrog.html",
-              "/compare/mozpro-vs-semrush.html"
-            ],
-            "relevant_alternatives": [
-              "/alternatives/semrush-alternatives.html",
-              "/alternatives/ahrefs-alternatives.html",
-              "/alternatives/mozpro-alternatives.html",
-              "/alternatives/surferseo-alternatives.html",
-              "/alternatives/screamingfrog-alternatives.html"
-            ]
-          },
-          {
-            "goal_id": "sell-online",
-            "goal_label": "Sell something online",
-            "candidate_tools": [
-              "jasper",
-              "copyai",
-              "systeme",
-              "hubspot"
-            ],
-            "decision_questions": [
-              "Do you need a website builder or e-commerce platform?",
-              "Do you need hosting included?",
-              "What is your expected traffic volume?"
-            ],
-            "stages": [
-              {
-                "step": 1,
-                "name": "Identify requirements",
-                "description": "Clarify your primary goal and constraints"
-              },
-              {
-                "step": 2,
-                "name": "Compare candidates",
-                "description": "Review 4 candidate tools"
-              },
-              {
-                "step": 3,
-                "name": "Check alternatives",
-                "description": "Explore 4 alternatives pages"
-              },
-              {
-                "step": 4,
-                "name": "Make decision",
-                "description": "Choose based on verified evidence"
-              }
-            ],
-            "evidence_confidence": "medium",
-            "relevant_comparisons": [
-              "/compare/hubspot-vs-systeme.html",
-              "/compare/copyai-vs-jasper.html"
-            ],
-            "relevant_alternatives": [
-              "/alternatives/jasper-alternatives.html",
-              "/alternatives/copyai-alternatives.html",
-              "/alternatives/systeme-alternatives.html",
-              "/alternatives/hubspot-alternatives.html"
-            ]
-          },
-          {
-            "goal_id": "launch-online-course",
-            "goal_label": "Launch an online course",
-            "candidate_tools": [
-              "beehiiv",
-              "kit",
-              "mailchimp",
-              "brevo",
-              "jasper",
-              "copyai",
-              "notion",
-              "otter",
-              "fireflies",
-              "clickup",
-              "asana",
-              "monday",
-              "todoist"
-            ],
-            "decision_questions": [
-              "Do you need course hosting or just content creation?",
-              "Do you need payment processing?",
-              "Do you need student management?"
-            ],
-            "stages": [
-              {
-                "step": 1,
-                "name": "Identify requirements",
-                "description": "Clarify your primary goal and constraints"
-              },
-              {
-                "step": 2,
-                "name": "Compare candidates",
-                "description": "Review 13 candidate tools"
-              },
-              {
-                "step": 3,
-                "name": "Check alternatives",
-                "description": "Explore 13 alternatives pages"
-              },
-              {
-                "step": 4,
-                "name": "Make decision",
-                "description": "Choose based on verified evidence"
-              }
-            ],
-            "evidence_confidence": "high",
-            "relevant_comparisons": [
-              "/compare/kit-vs-mailchimp.html",
-              "/compare/beehiiv-vs-brevo.html",
-              "/compare/asana-vs-notion.html",
-              "/compare/beehiiv-vs-kit.html",
-              "/compare/clickup-vs-notion.html",
-              "/compare/brevo-vs-mailchimp.html",
-              "/compare/brevo-vs-kit.html",
-              "/compare/fireflies-vs-otter.html",
-              "/compare/beehiiv-vs-mailchimp.html",
-              "/compare/notion-vs-todoist.html",
-              "/compare/copyai-vs-jasper.html",
-              "/compare/monday-vs-notion.html"
-            ],
-            "relevant_alternatives": [
-              "/alternatives/beehiiv-alternatives.html",
-              "/alternatives/kit-alternatives.html",
-              "/alternatives/mailchimp-alternatives.html",
-              "/alternatives/brevo-alternatives.html",
-              "/alternatives/jasper-alternatives.html",
-              "/alternatives/copyai-alternatives.html",
-              "/alternatives/notion-alternatives.html",
-              "/alternatives/otter-alternatives.html",
-              "/alternatives/fireflies-alternatives.html",
-              "/alternatives/clickup-alternatives.html",
-              "/alternatives/asana-alternatives.html",
-              "/alternatives/monday-alternatives.html",
-              "/alternatives/todoist-alternatives.html"
-            ]
-          },
-          {
-            "goal_id": "launch-a-website",
-            "goal_label": "Launch a website",
-            "candidate_tools": [
-              "hostinger",
-              "framer",
-              "webflow",
-              "squarespace"
-            ],
-            "decision_questions": [
-              "Do you need managed hosting or self-hosted?",
-              "Do you need a website builder or just a domain?",
-              "What is your expected monthly traffic?"
-            ],
-            "stages": [
-              {
-                "step": 1,
-                "name": "Identify requirements",
-                "description": "Clarify your primary goal and constraints"
-              },
-              {
-                "step": 2,
-                "name": "Compare candidates",
-                "description": "Review 4 candidate tools"
-              },
-              {
-                "step": 3,
-                "name": "Check alternatives",
-                "description": "Explore 4 alternatives pages"
-              },
-              {
-                "step": 4,
-                "name": "Make decision",
-                "description": "Choose based on verified evidence"
-              }
-            ],
-            "evidence_confidence": "medium",
-            "relevant_comparisons": [
-              "/compare/framer-vs-webflow.html",
-              "/compare/squarespace-vs-webflow.html",
-              "/compare/framer-vs-squarespace.html"
-            ],
-            "relevant_alternatives": [
-              "/alternatives/hostinger-alternatives.html",
-              "/alternatives/framer-alternatives.html",
-              "/alternatives/webflow-alternatives.html",
-              "/alternatives/squarespace-alternatives.html"
-            ]
-          }
-        ];
+ var WORKFLOWS = [
+ {
+ "goal_id": "write-better-english",
+ "goal_label": "Write better English",
+ "candidate_tools": [
+ "grammarly",
+ "quillbot",
+ "prowritingaid",
+ "hemingway",
+ "writesonic"
+ ],
+ "decision_questions": [
+ "Do you need grammar correction or full content generation?",
+ "Is this for professional or personal use?",
+ "Do you need a free option?"
+ ],
+ "stages": [
+ {
+ "step": 1,
+ "name": "Identify requirements",
+ "description": "Clarify your primary goal and constraints"
+ },
+ {
+ "step": 2,
+ "name": "Compare candidates",
+ "description": "Review 5 candidate tools"
+ },
+ {
+ "step": 3,
+ "name": "Check alternatives",
+ "description": "Explore 5 alternatives pages"
+ },
+ {
+ "step": 4,
+ "name": "Make decision",
+ "description": "Choose based on verified evidence"
+ }
+ ],
+ "evidence_confidence": "high",
+ "relevant_comparisons": [
+ "/compare/hemingway-vs-prowritingaid.html",
+ "/compare/prowritingaid-vs-writesonic.html",
+ "/compare/hemingway-vs-quillbot.html",
+ "/compare/grammarly-vs-hemingway.html",
+ "/compare/prowritingaid-vs-quillbot.html",
+ "/compare/quillbot-vs-writesonic.html",
+ "/compare/grammarly-vs-quillbot.html",
+ "/compare/grammarly-vs-prowritingaid.html",
+ "/compare/grammarly-vs-writesonic.html"
+ ],
+ "relevant_alternatives": [
+ "/alternatives/grammarly-alternatives.html",
+ "/alternatives/quillbot-alternatives.html",
+ "/alternatives/prowritingaid-alternatives.html",
+ "/alternatives/hemingway-alternatives.html",
+ "/alternatives/writesonic-alternatives.html"
+ ]
+ },
+ {
+ "goal_id": "organise-my-work",
+ "goal_label": "Organise my work",
+ "candidate_tools": [
+ "notion",
+ "otter",
+ "fireflies",
+ "clickup",
+ "asana",
+ "monday",
+ "todoist"
+ ],
+ "decision_questions": [
+ "Do you need team collaboration or solo use?",
+ "Do you prefer notes-first or tasks-first?",
+ "Do you need integrations with other tools?"
+ ],
+ "stages": [
+ {
+ "step": 1,
+ "name": "Identify requirements",
+ "description": "Clarify your primary goal and constraints"
+ },
+ {
+ "step": 2,
+ "name": "Compare candidates",
+ "description": "Review 7 candidate tools"
+ },
+ {
+ "step": 3,
+ "name": "Check alternatives",
+ "description": "Explore 7 alternatives pages"
+ },
+ {
+ "step": 4,
+ "name": "Make decision",
+ "description": "Choose based on verified evidence"
+ }
+ ],
+ "evidence_confidence": "high",
+ "relevant_comparisons": [
+ "/compare/asana-vs-notion.html",
+ "/compare/clickup-vs-notion.html",
+ "/compare/fireflies-vs-otter.html",
+ "/compare/notion-vs-todoist.html",
+ "/compare/monday-vs-notion.html"
+ ],
+ "relevant_alternatives": [
+ "/alternatives/notion-alternatives.html",
+ "/alternatives/otter-alternatives.html",
+ "/alternatives/fireflies-alternatives.html",
+ "/alternatives/clickup-alternatives.html",
+ "/alternatives/asana-alternatives.html",
+ "/alternatives/monday-alternatives.html",
+ "/alternatives/todoist-alternatives.html"
+ ]
+ },
+ {
+ "goal_id": "add-voice-to-videos",
+ "goal_label": "Add a voice to videos",
+ "candidate_tools": [
+ "jasper",
+ "copyai",
+ "elevenlabs",
+ "descript",
+ "runway",
+ "synthesia",
+ "invideo",
+ "kapwing"
+ ],
+ "decision_questions": [
+ "Do you need voice cloning or stock voices?",
+ "Is this for YouTube, podcasts, or other media?",
+ "Do you need editing capabilities?"
+ ],
+ "stages": [
+ {
+ "step": 1,
+ "name": "Identify requirements",
+ "description": "Clarify your primary goal and constraints"
+ },
+ {
+ "step": 2,
+ "name": "Compare candidates",
+ "description": "Review 8 candidate tools"
+ },
+ {
+ "step": 3,
+ "name": "Check alternatives",
+ "description": "Explore 8 alternatives pages"
+ },
+ {
+ "step": 4,
+ "name": "Make decision",
+ "description": "Choose based on verified evidence"
+ }
+ ],
+ "evidence_confidence": "high",
+ "relevant_comparisons": [
+ "/compare/descript-vs-invideo.html",
+ "/compare/descript-vs-synthesia.html",
+ "/compare/kapwing-vs-runway.html",
+ "/compare/elevenlabs-vs-descript.html",
+ "/compare/descript-vs-kapwing.html",
+ "/compare/descript-vs-runway.html",
+ "/compare/invideo-vs-runway.html",
+ "/compare/runway-vs-synthesia.html",
+ "/compare/elevenlabs-vs-synthesia.html",
+ "/compare/copyai-vs-jasper.html"
+ ],
+ "relevant_alternatives": [
+ "/alternatives/jasper-alternatives.html",
+ "/alternatives/copyai-alternatives.html",
+ "/alternatives/elevenlabs-alternatives.html",
+ "/alternatives/descript-alternatives.html",
+ "/alternatives/runway-alternatives.html",
+ "/alternatives/synthesia-alternatives.html",
+ "/alternatives/invideo-alternatives.html",
+ "/alternatives/kapwing-alternatives.html"
+ ]
+ },
+ {
+ "goal_id": "edit-video-podcasts",
+ "goal_label": "Edit video or podcasts",
+ "candidate_tools": [
+ "notion",
+ "otter",
+ "fireflies",
+ "clickup",
+ "asana",
+ "monday",
+ "todoist",
+ "elevenlabs",
+ "descript",
+ "runway",
+ "synthesia",
+ "invideo",
+ "kapwing"
+ ],
+ "decision_questions": [
+ "Do you need transcript-based editing or timeline editing?",
+ "Do you need to remove filler words automatically?",
+ "Do you need multi-track audio and video support?"
+ ],
+ "stages": [
+ {
+ "step": 1,
+ "name": "Identify requirements",
+ "description": "Clarify your primary goal and constraints"
+ },
+ {
+ "step": 2,
+ "name": "Compare candidates",
+ "description": "Review 13 candidate tools"
+ },
+ {
+ "step": 3,
+ "name": "Check alternatives",
+ "description": "Explore 13 alternatives pages"
+ },
+ {
+ "step": 4,
+ "name": "Make decision",
+ "description": "Choose based on verified evidence"
+ }
+ ],
+ "evidence_confidence": "high",
+ "relevant_comparisons": [
+ "/compare/descript-vs-invideo.html",
+ "/compare/descript-vs-synthesia.html",
+ "/compare/asana-vs-notion.html",
+ "/compare/kapwing-vs-runway.html",
+ "/compare/elevenlabs-vs-descript.html",
+ "/compare/descript-vs-kapwing.html",
+ "/compare/clickup-vs-notion.html",
+ "/compare/invideo-vs-runway.html",
+ "/compare/fireflies-vs-otter.html",
+ "/compare/runway-vs-synthesia.html",
+ "/compare/notion-vs-todoist.html",
+ "/compare/elevenlabs-vs-synthesia.html",
+ "/compare/descript-vs-runway.html",
+ "/compare/monday-vs-notion.html"
+ ],
+ "relevant_alternatives": [
+ "/alternatives/notion-alternatives.html",
+ "/alternatives/otter-alternatives.html",
+ "/alternatives/fireflies-alternatives.html",
+ "/alternatives/clickup-alternatives.html",
+ "/alternatives/asana-alternatives.html",
+ "/alternatives/monday-alternatives.html",
+ "/alternatives/todoist-alternatives.html",
+ "/alternatives/elevenlabs-alternatives.html",
+ "/alternatives/descript-alternatives.html",
+ "/alternatives/runway-alternatives.html",
+ "/alternatives/synthesia-alternatives.html",
+ "/alternatives/invideo-alternatives.html",
+ "/alternatives/kapwing-alternatives.html"
+ ]
+ },
+ {
+ "goal_id": "write-ad-copy",
+ "goal_label": "Write ad copy",
+ "candidate_tools": [
+ "jasper",
+ "copyai",
+ "grammarly",
+ "quillbot",
+ "prowritingaid",
+ "hemingway",
+ "writesonic"
+ ],
+ "decision_questions": [
+ "Do you need platform-specific ad formats?",
+ "Do you need A/B variant generation?",
+ "Is this for social media ads or search ads?"
+ ],
+ "stages": [
+ {
+ "step": 1,
+ "name": "Identify requirements",
+ "description": "Clarify your primary goal and constraints"
+ },
+ {
+ "step": 2,
+ "name": "Compare candidates",
+ "description": "Review 7 candidate tools"
+ },
+ {
+ "step": 3,
+ "name": "Check alternatives",
+ "description": "Explore 7 alternatives pages"
+ },
+ {
+ "step": 4,
+ "name": "Make decision",
+ "description": "Choose based on verified evidence"
+ }
+ ],
+ "evidence_confidence": "high",
+ "relevant_comparisons": [
+ "/compare/copyai-vs-jasper.html",
+ "/compare/hemingway-vs-prowritingaid.html",
+ "/compare/prowritingaid-vs-writesonic.html",
+ "/compare/copyai-vs-grammarly.html",
+ "/compare/hemingway-vs-quillbot.html",
+ "/compare/grammarly-vs-hemingway.html",
+ "/compare/prowritingaid-vs-quillbot.html",
+ "/compare/quillbot-vs-writesonic.html",
+ "/compare/grammarly-vs-jasper.html",
+ "/compare/grammarly-vs-quillbot.html",
+ "/compare/grammarly-vs-prowritingaid.html",
+ "/compare/grammarly-vs-writesonic.html"
+ ],
+ "relevant_alternatives": [
+ "/alternatives/jasper-alternatives.html",
+ "/alternatives/copyai-alternatives.html",
+ "/alternatives/grammarly-alternatives.html",
+ "/alternatives/quillbot-alternatives.html",
+ "/alternatives/prowritingaid-alternatives.html",
+ "/alternatives/hemingway-alternatives.html",
+ "/alternatives/writesonic-alternatives.html"
+ ]
+ },
+ {
+ "goal_id": "get-search-traffic",
+ "goal_label": "Get search traffic",
+ "candidate_tools": [
+ "semrush",
+ "ahrefs",
+ "mozpro",
+ "surferseo",
+ "screamingfrog"
+ ],
+ "decision_questions": [
+ "Do you need keyword research, rank tracking, or both?",
+ "Are you a beginner or experienced with SEO?",
+ "Do you need agency-level features?"
+ ],
+ "stages": [
+ {
+ "step": 1,
+ "name": "Identify requirements",
+ "description": "Clarify your primary goal and constraints"
+ },
+ {
+ "step": 2,
+ "name": "Compare candidates",
+ "description": "Review 5 candidate tools"
+ },
+ {
+ "step": 3,
+ "name": "Check alternatives",
+ "description": "Explore 5 alternatives pages"
+ },
+ {
+ "step": 4,
+ "name": "Make decision",
+ "description": "Choose based on verified evidence"
+ }
+ ],
+ "evidence_confidence": "high",
+ "relevant_comparisons": [
+ "/compare/ahrefs-vs-surferseo.html",
+ "/compare/ahrefs-vs-mozpro.html",
+ "/compare/mozpro-vs-surferseo.html",
+ "/compare/ahrefs-vs-semrush.html",
+ "/compare/mozpro-vs-screamingfrog.html",
+ "/compare/semrush-vs-surferseo.html",
+ "/compare/screamingfrog-vs-semrush.html",
+ "/compare/ahrefs-vs-screamingfrog.html",
+ "/compare/mozpro-vs-semrush.html"
+ ],
+ "relevant_alternatives": [
+ "/alternatives/semrush-alternatives.html",
+ "/alternatives/ahrefs-alternatives.html",
+ "/alternatives/mozpro-alternatives.html",
+ "/alternatives/surferseo-alternatives.html",
+ "/alternatives/screamingfrog-alternatives.html"
+ ]
+ },
+ {
+ "goal_id": "sell-online",
+ "goal_label": "Sell something online",
+ "candidate_tools": [
+ "jasper",
+ "copyai",
+ "systeme",
+ "hubspot"
+ ],
+ "decision_questions": [
+ "Do you need a website builder or e-commerce platform?",
+ "Do you need hosting included?",
+ "What is your expected traffic volume?"
+ ],
+ "stages": [
+ {
+ "step": 1,
+ "name": "Identify requirements",
+ "description": "Clarify your primary goal and constraints"
+ },
+ {
+ "step": 2,
+ "name": "Compare candidates",
+ "description": "Review 4 candidate tools"
+ },
+ {
+ "step": 3,
+ "name": "Check alternatives",
+ "description": "Explore 4 alternatives pages"
+ },
+ {
+ "step": 4,
+ "name": "Make decision",
+ "description": "Choose based on verified evidence"
+ }
+ ],
+ "evidence_confidence": "medium",
+ "relevant_comparisons": [
+ "/compare/hubspot-vs-systeme.html",
+ "/compare/copyai-vs-jasper.html"
+ ],
+ "relevant_alternatives": [
+ "/alternatives/jasper-alternatives.html",
+ "/alternatives/copyai-alternatives.html",
+ "/alternatives/systeme-alternatives.html",
+ "/alternatives/hubspot-alternatives.html"
+ ]
+ },
+ {
+ "goal_id": "launch-online-course",
+ "goal_label": "Launch an online course",
+ "candidate_tools": [
+ "beehiiv",
+ "kit",
+ "mailchimp",
+ "brevo",
+ "jasper",
+ "copyai",
+ "notion",
+ "otter",
+ "fireflies",
+ "clickup",
+ "asana",
+ "monday",
+ "todoist"
+ ],
+ "decision_questions": [
+ "Do you need course hosting or just content creation?",
+ "Do you need payment processing?",
+ "Do you need student management?"
+ ],
+ "stages": [
+ {
+ "step": 1,
+ "name": "Identify requirements",
+ "description": "Clarify your primary goal and constraints"
+ },
+ {
+ "step": 2,
+ "name": "Compare candidates",
+ "description": "Review 13 candidate tools"
+ },
+ {
+ "step": 3,
+ "name": "Check alternatives",
+ "description": "Explore 13 alternatives pages"
+ },
+ {
+ "step": 4,
+ "name": "Make decision",
+ "description": "Choose based on verified evidence"
+ }
+ ],
+ "evidence_confidence": "high",
+ "relevant_comparisons": [
+ "/compare/kit-vs-mailchimp.html",
+ "/compare/beehiiv-vs-brevo.html",
+ "/compare/asana-vs-notion.html",
+ "/compare/beehiiv-vs-kit.html",
+ "/compare/clickup-vs-notion.html",
+ "/compare/brevo-vs-mailchimp.html",
+ "/compare/brevo-vs-kit.html",
+ "/compare/fireflies-vs-otter.html",
+ "/compare/beehiiv-vs-mailchimp.html",
+ "/compare/notion-vs-todoist.html",
+ "/compare/copyai-vs-jasper.html",
+ "/compare/monday-vs-notion.html"
+ ],
+ "relevant_alternatives": [
+ "/alternatives/beehiiv-alternatives.html",
+ "/alternatives/kit-alternatives.html",
+ "/alternatives/mailchimp-alternatives.html",
+ "/alternatives/brevo-alternatives.html",
+ "/alternatives/jasper-alternatives.html",
+ "/alternatives/copyai-alternatives.html",
+ "/alternatives/notion-alternatives.html",
+ "/alternatives/otter-alternatives.html",
+ "/alternatives/fireflies-alternatives.html",
+ "/alternatives/clickup-alternatives.html",
+ "/alternatives/asana-alternatives.html",
+ "/alternatives/monday-alternatives.html",
+ "/alternatives/todoist-alternatives.html"
+ ]
+ },
+ {
+ "goal_id": "launch-a-website",
+ "goal_label": "Launch a website",
+ "candidate_tools": [
+ "hostinger",
+ "framer",
+ "webflow",
+ "squarespace"
+ ],
+ "decision_questions": [
+ "Do you need managed hosting or self-hosted?",
+ "Do you need a website builder or just a domain?",
+ "What is your expected monthly traffic?"
+ ],
+ "stages": [
+ {
+ "step": 1,
+ "name": "Identify requirements",
+ "description": "Clarify your primary goal and constraints"
+ },
+ {
+ "step": 2,
+ "name": "Compare candidates",
+ "description": "Review 4 candidate tools"
+ },
+ {
+ "step": 3,
+ "name": "Check alternatives",
+ "description": "Explore 4 alternatives pages"
+ },
+ {
+ "step": 4,
+ "name": "Make decision",
+ "description": "Choose based on verified evidence"
+ }
+ ],
+ "evidence_confidence": "medium",
+ "relevant_comparisons": [
+ "/compare/framer-vs-webflow.html",
+ "/compare/squarespace-vs-webflow.html",
+ "/compare/framer-vs-squarespace.html"
+ ],
+ "relevant_alternatives": [
+ "/alternatives/hostinger-alternatives.html",
+ "/alternatives/framer-alternatives.html",
+ "/alternatives/webflow-alternatives.html",
+ "/alternatives/squarespace-alternatives.html"
+ ]
+ }
+ ];
 
-  var VALID_IDS = {};
-  WORKFLOWS.forEach(function(w){ VALID_IDS[w.goal_id] = true; });
+ var VALID_IDS = {};
+ WORKFLOWS.forEach(function(w){ VALID_IDS[w.goal_id] = true; });
 
-  var ICON = '<svg class="we-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="8.5 12.5 11 15 16 9.5"/></svg>';
+ var ICON = '<svg class="we-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="8.5 12.5 11 15 16 9.5"/></svg>';
 
-  var workflowsEl = document.getElementById("weWorkflows");
-  var resultEl = document.getElementById("weResult");
-  var curWorkflow = -1;
-  var curStage = 0;
+ var workflowsEl = document.getElementById("weWorkflows");
+ var resultEl = document.getElementById("weResult");
+ var curWorkflow = -1;
+ var curStage = 0;
 
-  function esc(s) {
-    return String(s).replace(/[&<>"]/g, function(c) {
-      return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':'&quot;'}[c];
-    });
-  }
+ function esc(s) {
+ return String(s).replace(/[&<>"]/g, function(c) {
+ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':'&quot;'}[c];
+ });
+ }
 
-  function buildWorkflowButtons() {
-    workflowsEl.innerHTML = WORKFLOWS.map(function(w, i) {
-      return '<button class="we-workflow-btn" type="button" role="radio" aria-checked="false" tabindex="-1" data-i="' + i + '">' +
-        ICON +
-        '<div><div class="we-label">' + esc(w.goal_label) + '</div>' +
-        '<div class="we-count">' + w.candidate_tools.length + ' tools &middot; ' + w.evidence_confidence + ' confidence</div></div>' +
-        '</button>';
-    }).join("");
+ function buildWorkflowButtons() {
+ workflowsEl.innerHTML = WORKFLOWS.map(function(w, i) {
+ return '<button class="we-workflow-btn" type="button" role="radio" aria-checked="false" tabindex="-1" data-i="' + i + '">' +
+ ICON +
+ '<div><div class="we-label">' + esc(w.goal_label) + '</div>' +
+ '<div class="we-count">' + w.candidate_tools.length + ' tools &middot; ' + w.evidence_confidence + ' confidence</div></div>' +
+ '</button>';
+ }).join("");
 
-    var buttons = Array.prototype.slice.call(workflowsEl.querySelectorAll(".we-workflow-btn"));
-    workflowsEl.addEventListener("click", function(e) {
-      var b = e.target.closest(".we-workflow-btn");
-      if (b) selectWorkflow(Number(b.getAttribute("data-i")));
-    });
-    workflowsEl.addEventListener("keydown", function(e) {
-      var n = null;
-      if (e.key === "ArrowDown" || e.key === "ArrowRight") n = (curWorkflow + 1) % WORKFLOWS.length;
-      else if (e.key === "ArrowUp" || e.key === "ArrowLeft") n = (curWorkflow - 1 + WORKFLOWS.length) % WORKFLOWS.length;
-      else if (e.key === "Home") n = 0;
-      else if (e.key === "End") n = WORKFLOWS.length - 1;
-      if (n !== null) {
-        e.preventDefault();
-        selectWorkflow(n);
-        buttons[n].focus();
-      }
-    });
-  }
+ var buttons = Array.prototype.slice.call(workflowsEl.querySelectorAll(".we-workflow-btn"));
+ workflowsEl.addEventListener("click", function(e) {
+ var b = e.target.closest(".we-workflow-btn");
+ if (b) selectWorkflow(Number(b.getAttribute("data-i")));
+ });
+ workflowsEl.addEventListener("keydown", function(e) {
+ var n = null;
+ if (e.key === "ArrowDown" || e.key === "ArrowRight") n = (curWorkflow + 1) % WORKFLOWS.length;
+ else if (e.key === "ArrowUp" || e.key === "ArrowLeft") n = (curWorkflow - 1 + WORKFLOWS.length) % WORKFLOWS.length;
+ else if (e.key === "Home") n = 0;
+ else if (e.key === "End") n = WORKFLOWS.length - 1;
+ if (n !== null) {
+ e.preventDefault();
+ selectWorkflow(n);
+ buttons[n].focus();
+ }
+ });
+ }
 
-  function selectWorkflow(i) {
-    if (i < 0 || i >= WORKFLOWS.length) return;
-    curWorkflow = i;
-    curStage = 0;
-    var buttons = Array.prototype.slice.call(workflowsEl.querySelectorAll(".we-workflow-btn"));
-    buttons.forEach(function(b, n) {
-      var on = n === i;
-      b.setAttribute("aria-checked", on ? "true" : "false");
-      b.tabIndex = on ? 0 : -1;
-    });
-    renderWorkflow(WORKFLOWS[i], 0);
-    updateQueryString(WORKFLOWS[i].goal_id, 0);
-  }
+ function selectWorkflow(i) {
+ if (i < 0 || i >= WORKFLOWS.length) return;
+ curWorkflow = i;
+ curStage = 0;
+ var buttons = Array.prototype.slice.call(workflowsEl.querySelectorAll(".we-workflow-btn"));
+ buttons.forEach(function(b, n) {
+ var on = n === i;
+ b.setAttribute("aria-checked", on ? "true" : "false");
+ b.tabIndex = on ? 0 : -1;
+ });
+ renderWorkflow(WORKFLOWS[i], 0);
+ updateQueryString(WORKFLOWS[i].goal_id, 0);
+ }
 
-  function renderWorkflow(w, stage) {
-    curStage = stage;
-    var s = w.stages[stage];
-    if (!s) { resultEl.innerHTML = ''; resultEl.classList.remove('visible'); return; }
+ function renderWorkflow(w, stage) {
+ curStage = stage;
+ var s = w.stages[stage];
+ if (!s) { resultEl.innerHTML = ''; resultEl.classList.remove('visible'); return; }
 
-    var html = '';
+ var html = '';
 
-    // Header with reset
-    html += '<div class="we-header">';
-    html += '<div><h3>' + esc(w.goal_label) + '</h3>';
-    html += '<span class="we-confidence ' + esc(w.evidence_confidence) + '">Evidence: ' + esc(w.evidence_confidence) + '</span></div>';
-    html += '<button class="we-reset" type="button" id="weReset">Reset selection</button>';
-    html += '</div>';
+ // Header with reset
+ html += '<div class="we-header">';
+ html += '<div><h3>' + esc(w.goal_label) + '</h3>';
+ html += '<span class="we-confidence ' + esc(w.evidence_confidence) + '">Evidence: ' + esc(w.evidence_confidence) + '</span></div>';
+ html += '<button class="we-reset" type="button" id="weReset">Reset selection</button>';
+ html += '</div>';
 
-    // Progress dots
-    html += '<div class="we-progress" aria-label="Workflow progress">';
-    for (var p = 0; p < w.stages.length; p++) {
-      var cls = p < stage ? 'completed' : (p === stage ? 'active' : '');
-      html += '<div class="we-progress-dot ' + cls + '" title="' + esc(w.stages[p].name) + '"></div>';
-    }
-    html += '</div>';
+ // Progress dots
+ html += '<div class="we-progress" aria-label="Workflow progress">';
+ for (var p = 0; p < w.stages.length; p++) {
+ var cls = p < stage ? 'completed' : (p === stage ? 'active' : '');
+ html += '<div class="we-progress-dot ' + cls + '" title="' + esc(w.stages[p].name) + '"></div>';
+ }
+ html += '</div>';
 
-    // Stage navigation
-    html += '<div class="we-stage-nav" role="tablist" aria-label="Workflow stages">';
-    for (var t = 0; t < w.stages.length; t++) {
-      var active = t === stage ? 'active' : '';
-      html += '<button class="we-stage-btn ' + active + '" type="button" role="tab" aria-selected="' + (t === stage ? 'true' : 'false') + '" data-stage="' + t + '">' +
-        'Step ' + (t + 1) + ': ' + esc(w.stages[t].name) + '</button>';
-    }
-    html += '</div>';
+ // Stage navigation
+ html += '<div class="we-stage-nav" role="tablist" aria-label="Workflow stages">';
+ for (var t = 0; t < w.stages.length; t++) {
+ var active = t === stage ? 'active' : '';
+ html += '<button class="we-stage-btn ' + active + '" type="button" role="tab" aria-selected="' + (t === stage ? 'true' : 'false') + '" data-stage="' + t + '">' +
+ 'Step ' + (t + 1) + ': ' + esc(w.stages[t].name) + '</button>';
+ }
+ html += '</div>';
 
-    // Stage content
-    html += '<div class="we-card">';
-    html += '<h4>Step ' + s.step + ': ' + esc(s.name) + '</h4>';
-    html += '<p class="we-stage-desc">' + esc(s.description) + '</p>';
+ // Stage content
+ html += '<div class="we-card">';
+ html += '<h4>Step ' + s.step + ': ' + esc(s.name) + '</h4>';
+ html += '<p class="we-stage-desc">' + esc(s.description) + '</p>';
 
-    if (stage === 0) {
-      // Decision questions
-      html += '<h4>Decision questions</h4>';
-      html += '<ul class="we-questions">';
-      w.decision_questions.forEach(function(q) {
-        html += '<li>' + esc(q) + '</li>';
-      });
-      html += '</ul>';
-    } else if (stage === 1) {
-      // Candidate tools
-      html += '<h4>Candidate tools (' + w.candidate_tools.length + ')</h4>';
-      html += '<div class="we-tool-grid">';
-      w.candidate_tools.forEach(function(tool) {
-        html += '<div class="we-tool-item"><a href="/tools/' + esc(tool) + '.html">' + esc(tool) + '</a></div>';
-      });
-      html += '</div>';
-    } else if (stage === 2) {
-      // Alternatives
-      html += '<h4>Alternatives pages (' + w.relevant_alternatives.length + ')</h4>';
-      html += '<div class="we-alt-grid">';
-      w.relevant_alternatives.forEach(function(a) {
-        var label = a.replace('/alternatives/', '').replace('-alternatives.html', '');
-        html += '<div class="we-alt-item"><a href="' + esc(a) + '">' + esc(label) + ' alternatives</a></div>';
-      });
-      html += '</div>';
-    } else if (stage === 3) {
-      // Comparisons + decision
-      html += '<h4>Relevant comparisons (' + w.relevant_comparisons.length + ')</h4>';
-      html += '<div class="we-compare-grid">';
-      w.relevant_comparisons.forEach(function(c) {
-        var label = c.replace('/compare/', '').replace('.html', '').replace('-vs-', ' vs ');
-        html += '<div class="we-compare-item"><a href="' + esc(c) + '">' + esc(label) + '</a></div>';
-      });
-      html += '</div>';
-      html += '<h4>Decision summary</h4>';
-      html += '<p>This workflow has <strong>' + w.candidate_tools.length + ' candidate tools</strong>, <strong>' + w.relevant_comparisons.length + ' comparisons</strong>, and <strong>' + w.relevant_alternatives.length + ' alternatives pages</strong>. Evidence confidence is <strong>' + esc(w.evidence_confidence) + '</strong>.</p>';
-    }
+ if (stage === 0) {
+ // Decision questions
+ html += '<h4>Decision questions</h4>';
+ html += '<ul class="we-questions">';
+ w.decision_questions.forEach(function(q) {
+ html += '<li>' + esc(q) + '</li>';
+ });
+ html += '</ul>';
+ } else if (stage === 1) {
+ // Candidate tools
+ html += '<h4>Candidate tools (' + w.candidate_tools.length + ')</h4>';
+ html += '<div class="we-tool-grid">';
+ w.candidate_tools.forEach(function(tool) {
+ html += '<div class="we-tool-item"><a href="/tools/' + esc(tool) + '.html">' + esc(tool) + '</a></div>';
+ });
+ html += '</div>';
+ } else if (stage === 2) {
+ // Alternatives
+ html += '<h4>Alternatives pages (' + w.relevant_alternatives.length + ')</h4>';
+ html += '<div class="we-alt-grid">';
+ w.relevant_alternatives.forEach(function(a) {
+ var label = a.replace('/alternatives/', '').replace('-alternatives.html', '');
+ html += '<div class="we-alt-item"><a href="' + esc(a) + '">' + esc(label) + ' alternatives</a></div>';
+ });
+ html += '</div>';
+ } else if (stage === 3) {
+ // Comparisons + decision
+ html += '<h4>Relevant comparisons (' + w.relevant_comparisons.length + ')</h4>';
+ html += '<div class="we-compare-grid">';
+ w.relevant_comparisons.forEach(function(c) {
+ var label = c.replace('/compare/', '').replace('.html', '').replace('-vs-', ' vs ');
+ html += '<div class="we-compare-item"><a href="' + esc(c) + '">' + esc(label) + '</a></div>';
+ });
+ html += '</div>';
+ html += '<h4>Decision summary</h4>';
+ html += '<p>This workflow has <strong>' + w.candidate_tools.length + ' candidate tools</strong>, <strong>' + w.relevant_comparisons.length + ' comparisons</strong>, and <strong>' + w.relevant_alternatives.length + ' alternatives pages</strong>. Evidence confidence is <strong>' + esc(w.evidence_confidence) + '</strong>.</p>';
+ }
 
-    // Unresolved gaps
-    if (w.unresolved_gaps && w.unresolved_gaps.length > 0) {
-      html += '<div class="we-gaps"><p><strong>Unresolved gaps:</strong> ' + w.unresolved_gaps.map(function(g){return esc(g);}).join('; ') + '</p></div>';
-    }
+ // Unresolved gaps
+ if (w.unresolved_gaps && w.unresolved_gaps.length > 0) {
+ html += '<div class="we-gaps"><p><strong>Unresolved gaps:</strong> ' + w.unresolved_gaps.map(function(g){return esc(g);}).join('; ') + '</p></div>';
+ }
 
-    // Navigation actions
-    html += '<div class="we-actions">';
-    if (stage > 0) {
-      html += '<button class="we-secondary we-nav-btn" type="button" data-dir="prev">Previous step</button>';
-    }
-    if (stage < w.stages.length - 1) {
-      html += '<button class="we-primary we-nav-btn" type="button" data-dir="next">Next step</button>';
-    }
-    html += '<a class="we-secondary" href="/goals/' + esc(w.goal_id) + '.html">Open full goal guide</a>';
-    html += '</div>';
+ // Navigation actions
+ html += '<div class="we-actions">';
+ if (stage > 0) {
+ html += '<button class="we-secondary we-nav-btn" type="button" data-dir="prev">Previous step</button>';
+ }
+ if (stage < w.stages.length - 1) {
+ html += '<button class="we-primary we-nav-btn" type="button" data-dir="next">Next step</button>';
+ }
+ html += '<a class="we-secondary" href="/goals/' + esc(w.goal_id) + '.html">Open full goal guide</a>';
+ html += '</div>';
 
-    html += '<p class="we-note">Data sourced from ToolNest reviews, comparisons, and alternatives pages. <a href="/about.html">How we research</a>.</p>';
-    html += '</div>';
+ html += '<p class="we-note">Data sourced from ToolNest reviews, comparisons, and alternatives pages. <a href="/about.html">How we research</a>.</p>';
+ html += '</div>';
 
-    resultEl.innerHTML = html;
-    resultEl.classList.add('visible');
+ resultEl.innerHTML = html;
+ resultEl.classList.add('visible');
 
-    // Stage navigation
-    resultEl.querySelectorAll('.we-stage-btn').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        var s = Number(this.getAttribute('data-stage'));
-        renderWorkflow(w, s);
-        updateQueryString(w.goal_id, s);
-        if (window.innerWidth <= 640) resultEl.scrollIntoView({behavior:'smooth', block:'start'});
-      });
-    });
+ // Stage navigation
+ resultEl.querySelectorAll('.we-stage-btn').forEach(function(btn) {
+ btn.addEventListener('click', function() {
+ var s = Number(this.getAttribute('data-stage'));
+ renderWorkflow(w, s);
+ updateQueryString(w.goal_id, s);
+ if (window.innerWidth <= 640) resultEl.scrollIntoView({behavior:'smooth', block:'start'});
+ });
+ });
 
-    // Nav buttons
-    resultEl.querySelectorAll('.we-nav-btn').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        var dir = this.getAttribute('data-dir');
-        var ns = dir === 'next' ? stage + 1 : stage - 1;
-        renderWorkflow(w, ns);
-        updateQueryString(w.goal_id, ns);
-      });
-    });
+ // Nav buttons
+ resultEl.querySelectorAll('.we-nav-btn').forEach(function(btn) {
+ btn.addEventListener('click', function() {
+ var dir = this.getAttribute('data-dir');
+ var ns = dir === 'next' ? stage + 1 : stage - 1;
+ renderWorkflow(w, ns);
+ updateQueryString(w.goal_id, ns);
+ });
+ });
 
-    // Reset button
-    var resetBtn = document.getElementById('weReset');
-    if (resetBtn) {
-      resetBtn.addEventListener('click', function() {
-        curWorkflow = -1;
-        curStage = 0;
-        var buttons = Array.prototype.slice.call(workflowsEl.querySelectorAll(".we-workflow-btn"));
-        buttons.forEach(function(b) {
-          b.setAttribute("aria-checked", "false");
-          b.tabIndex = -1;
-        });
-        resultEl.innerHTML = '';
-        resultEl.classList.remove('visible');
-        clearQueryString();
-        workflowsEl.scrollIntoView({behavior:'smooth', block:'start'});
-      });
-    }
-  }
+ // Reset button
+ var resetBtn = document.getElementById('weReset');
+ if (resetBtn) {
+ resetBtn.addEventListener('click', function() {
+ curWorkflow = -1;
+ curStage = 0;
+ var buttons = Array.prototype.slice.call(workflowsEl.querySelectorAll(".we-workflow-btn"));
+ buttons.forEach(function(b) {
+ b.setAttribute("aria-checked", "false");
+ b.tabIndex = -1;
+ });
+ resultEl.innerHTML = '';
+ resultEl.classList.remove('visible');
+ clearQueryString();
+ workflowsEl.scrollIntoView({behavior:'smooth', block:'start'});
+ });
+ }
+ }
 
-  function updateQueryString(workflowId, stage) {
-    try {
-      var url = new URL(window.location.href);
-      url.searchParams.set('workflow', workflowId);
-      url.searchParams.set('stage', String(stage));
-      window.history.replaceState({}, '', url.toString());
-    } catch(e) {}
-  }
+ function updateQueryString(workflowId, stage) {
+ try {
+ var url = new URL(window.location.href);
+ url.searchParams.set('workflow', workflowId);
+ url.searchParams.set('stage', String(stage));
+ window.history.replaceState({}, '', url.toString());
+ } catch(e) {}
+ }
 
-  function clearQueryString() {
-    try {
-      var url = new URL(window.location.href);
-      url.searchParams.delete('workflow');
-      url.searchParams.delete('stage');
-      window.history.replaceState({}, '', url.toString());
-    } catch(e) {}
-  }
+ function clearQueryString() {
+ try {
+ var url = new URL(window.location.href);
+ url.searchParams.delete('workflow');
+ url.searchParams.delete('stage');
+ window.history.replaceState({}, '', url.toString());
+ } catch(e) {}
+ }
 
-  function restoreFromQuery() {
-    try {
-      var params = new URLSearchParams(window.location.search);
-      var wid = params.get('workflow');
-      var sid = params.get('stage');
-      if (wid && VALID_IDS[wid]) {
-        var idx = -1;
-        WORKFLOWS.forEach(function(w, i) { if (w.goal_id === wid) idx = i; });
-        if (idx >= 0) {
-          var stage = 0;
-          if (sid !== null) {
-            stage = parseInt(sid, 10);
-            if (isNaN(stage) || stage < 0 || stage >= WORKFLOWS[idx].stages.length) stage = 0;
-          }
-          selectWorkflow(idx);
-          renderWorkflow(WORKFLOWS[idx], stage);
-          return;
-        }
-      }
-    } catch(e) {}
-  }
+ function restoreFromQuery() {
+ try {
+ var params = new URLSearchParams(window.location.search);
+ var wid = params.get('workflow');
+ var sid = params.get('stage');
+ if (wid && VALID_IDS[wid]) {
+ var idx = -1;
+ WORKFLOWS.forEach(function(w, i) { if (w.goal_id === wid) idx = i; });
+ if (idx >= 0) {
+ var stage = 0;
+ if (sid !== null) {
+ stage = parseInt(sid, 10);
+ if (isNaN(stage) || stage < 0 || stage >= WORKFLOWS[idx].stages.length) stage = 0;
+ }
+ selectWorkflow(idx);
+ renderWorkflow(WORKFLOWS[idx], stage);
+ return;
+ }
+ }
+ } catch(e) {}
+ }
 
-  buildWorkflowButtons();
-  restoreFromQuery();
+ buildWorkflowButtons();
+ restoreFromQuery();
 })();
 </script>
 

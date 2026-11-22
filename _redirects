@@ -3,6 +3,10 @@
 https://toolnest-ai-hub.netlify.app/* https://www.toolnestai.tech/:splat 301!
 http://toolnest-ai-hub.netlify.app/* https://www.toolnestai.tech/:splat 301!
 
+# Author page removed: redirect to About page
+/authors/abdul-muswir.html /about.html 301!
+/authors/abdul-muswir /about.html 301!
+
 # ToolNest routing - canonical public format is the explicit .html URL.
 # Every duplicate route form (extensionless, directory slash, /index.html) 301s
 # directly to its canonical .html URL. No chains.
@@ -392,5 +396,15 @@ http://toolnest-ai-hub.netlify.app/* https://www.toolnestai.tech/:splat 301!
 # Homepage duplicate forms.
 /index.html / 301!
 /index / 301!
+
+# Generic catch-all: extensionless URLs -> .html (covers new pages not listed above).
+# Uses [^./]+ to avoid matching dotted paths like /tools/file.txt.
+# These must come AFTER the explicit redirects so they don't shadow them.
+/tools/:slug /tools/:slug.html 301!
+/compare/:slug /compare/:slug.html 301!
+/alternatives/:slug /alternatives/:slug.html 301!
+/best/:slug /best/:slug.html 301!
+/category/:slug /category/:slug.html 301!
+/goals/:slug /goals/:slug.html 301!
 
 # Existing homepage rewrite.

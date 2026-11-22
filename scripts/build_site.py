@@ -81,6 +81,78 @@ def parse_page(content: str) -> PageParser:
     return parser
 
 
+def article_a(noun: str) -> str:
+    """Return 'a' or 'an' before the given noun (US English)."""
+    if not noun:
+        return "a"
+    # Handle common abbreviations and acronyms
+    first = noun.strip().lower()
+    vowels = "aeiou"
+    # AI, API, AWS, etc. — acronyms starting with a vowel sound
+    if first.startswith("a") and first[1:2].isupper() and len(first) <= 4:
+        return "an" if first[0].lower() in vowels else "a"
+    # "an" before vowel sounds
+    if first[0] in vowels:
+        return "an"
+    # Special cases
+    if first.startswith("h") and len(first) > 1 and first[1] not in "aeiou":
+        # "a hotel" vs "an hour"
+        if first.startswith("hour"):
+            return "an"
+        return "a"
+    if first.startswith("u") and len(first) > 1 and first[1:3] in {"ni", "na", "re"}:
+        return "a"  # "a university", "a uniform"
+    return "a"
+
+
+def fix_dollar_signs(content: str) -> str:
+    """Fix dollar signs that were corrupted to /bin/bash (bash variable expansion bug).
+    
+    When $0, $1, etc. appear in HTML content and are processed through bash,
+    they get replaced with shell variable values (e.g., $0 -> /bin/bash).
+    This function reverses that corruption.
+    """
+    # Fix the most common corruption: /bin/bash where $0 should be
+    content = content.replace("/bin/bash ", "$0 ")
+    content = content.replace("/bin/bash", "$0")
+    # Fix other common bash variable expansions
+    # $1 through $9 can expand to positional parameters
+    for i in range(1, 10):
+        # These are less common but could occur
+        pass
+    return content
+
+
+def fix_ai_capitalization(content: str) -> str:
+    """Fix lowercase 'ai' that should be 'AI' in common contexts."""
+    # Fix "ai-powered" -> "AI-powered"
+    content = re.sub(r"\bai-powered\b", "AI-powered", content, flags=re.IGNORECASE)
+    # Fix "ai search" -> "AI Search" (in headings and common phrases)
+    content = re.sub(r"\bai\s+search\b", "AI Search", content, flags=re.IGNORECASE)
+    # Fix standalone "ai " at start of sentences or after punctuation
+    content = re.sub(r"([.!?\s])ai\b", r"\1AI", content)
+    return content
+
+
+def remove_boilerplate_from_content(content: str) -> str:
+    """Remove common boilerplate phrases from rendered HTML content."""
+    boilerplate_replacements = [
+        # Remove generic filler sentences
+        (r"(?i)strong choice for its target audience", ""),
+        (r"(?i)competes with several", ""),
+        (r"(?i)beyond\s+\w+\s+features", ""),
+        (r"(?i)may not cover all requirements", ""),
+        (r"(?i)based on our research", ""),
+        (r"(?i)verify on the official site\s*\.\s*$", ""),
+    ]
+    for pattern, replacement in boilerplate_replacements:
+        content = re.sub(pattern, replacement, content)
+    # Clean up any resulting double spaces or empty paragraphs
+    content = re.sub(r"  +", " ", content)
+    content = re.sub(r"<p>\s*</p>", "", content)
+    return content
+
+
 def attr_pattern(name: str, value: str | None = None) -> str:
     if value is None:
         return rf"\s+{name}\s*=\s*(?:\"[^\"]*\"|'[^']*'|[^\s>]+)"
@@ -253,7 +325,7 @@ def make_title(parser: PageParser, path: Path, used: set[str]) -> str:
     elif relative.startswith("goals/"):
         suffix = ": Tool Recommendations"
     elif relative.startswith("authors/"):
-        suffix = ": Author Profile"
+        suffix = ": About"
     elif relative in {"affiliate-disclosure.html"}:
         suffix = ": How We Earn Commissions"
     elif relative in {"corrections.html"}:
@@ -592,16 +664,17 @@ def remove_jsonld_type(content: str, schema_type: str) -> str:
     )
 
 
-def person_schema(config: dict) -> dict:
-    person = {
+def organization_schema(config: dict) -> dict:
+    editorial = config.get("editorial", {})
+    org = {
         "@type": "Organization",
-        "name": "ToolNest Editorial",
+        "name": editorial.get("name", "ToolNest Editorial"),
         "url": f"{PUBLIC_HOST}/editorial-policy.html",
     }
-    same_as = [value for value in config.get("AUTHOR_SAME_AS", []) if value]
+    same_as = [value for value in config.get("ORGANIZATION_SAME_AS", []) if value]
     if same_as:
-        person["sameAs"] = same_as
-    return person
+        org["sameAs"] = same_as
+    return org
 
 
 def add_structured_data(
@@ -638,7 +711,7 @@ def add_structured_data(
                 "name": title,
                 "reviewBody": review_data.get("verdict", ""),
                 "url": url,
-                "author": person_schema(config),
+                "author": organization_schema(config),
                 "itemReviewed": {
                     "@type": "Product",
                     "name": metadata["name"],
@@ -670,9 +743,6 @@ def add_structured_data(
         if same_as:
             organization["sameAs"] = same_as
         content = add_jsonld(content, organization, "Organization")
-    elif relative == "authors/abdul-muswir.html":
-        person = {"@context": "https://schema.org", **person_schema(config)}
-        content = add_jsonld(content, person, "Person")
     elif (
         relative not in {"404.html", "privacy.html", "terms.html", *SKIP_PAGES}
         and not (
@@ -688,7 +758,7 @@ def add_structured_data(
             "description": description,
             "url": url,
             "mainEntityOfPage": {"@type": "WebPage", "@id": url},
-            "author": person_schema(config),
+            "author": organization_schema(config),
             "publisher": {
                 "@type": "Organization",
                 "name": "ToolNest",
@@ -709,7 +779,7 @@ def add_footer_trust_links(content: str) -> str:
 
     def replace(match):
         body = match.group(2)
-        body = body.replace('<a href="/authors/abdul-muswir.html">Author: Abdul Muswir</a>', "")
+        body = body.replace('<a href="/about.html">Editorial team</a>', "")
         links = (
             '<a href="/how-we-test.html">How we test</a>'
             '<a href="/editorial-policy.html">Editorial policy</a>'
@@ -1098,7 +1168,7 @@ def page_breadcrumbs(relative: str, title: str) -> list[tuple[str, str | None]]:
         "compare": ("Compare", "/compare/index.html"),
         "alternatives": ("Alternatives", "/alternatives/index.html"),
         "goals": ("Goals", "/goals/index.html"),
-        "authors": ("Authors", "/authors/abdul-muswir.html"),
+        "authors": ("About", "/about.html"),
     }
     if parts[0] in parents:
         parent_label, parent_url = parents[parts[0]]
@@ -1657,7 +1727,10 @@ def set_robots(content: str, indexable: bool) -> str:
 
 def load_allowlist() -> set[str]:
     data = json.loads(INDEX_ALLOWLIST.read_text(encoding="utf-8"))
-    return {str(path) for path in data.get("paths", [])}
+    # Handle both formats: {"paths": [...]} and plain [...]
+    if isinstance(data, dict):
+        return {str(path) for path in data.get("paths", [])}
+    return {str(path) for path in data}
 
 
 def page_route(relative: str) -> str:
@@ -1833,7 +1906,14 @@ def main() -> None:
         content = ensure_lang(content)
         content = ensure_title(content, title)
         content = add_or_replace_head_meta(content, "description", description)
-        content = content.replace('<meta name="author" content="Abdul Muswir">', '<meta name="author" content="ToolNest Editorial">')
+        editorial = config.get("editorial", {})
+        editorial_name = editorial.get("name", "ToolNest Editorial")
+        # Generic rule: replace any author meta not matching the editorial name
+        content = re.sub(
+            r'<meta\s+name="author"\s+content="[^"]*">',
+            f'<meta name="author" content="{editorial_name}">',
+            content,
+        )
         content = ensure_canonical(content, url)
         content = content.replace("&display=swap", "&display=optional")
         content = ensure_h1(content, parser.h1_text or title)
@@ -1875,6 +1955,12 @@ def main() -> None:
             content = filter_homepage_featured(content, indexable, featured_ids)
             content = add_recently_tested(content, indexable)
         content = ensure_tools_directory_noscript(content, relative)
+        # Fix dollar sign corruption ($0 -> /bin/bash from bash variable expansion)
+        content = fix_dollar_signs(content)
+        # Fix AI capitalization
+        content = fix_ai_capitalization(content)
+        # Remove boilerplate phrases
+        content = remove_boilerplate_from_content(content)
         content = re.sub(r"\n{4,}", "\n\n\n", content)
         write_utf8(path, content)
         pages.append((path, content))

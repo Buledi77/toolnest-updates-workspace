@@ -152,275 +152,275 @@
 <footer><div class="wrap"><div class="f-grid five"><div class="f-brand"><a aria-label="ToolNest home" class="logo" href="/"><span>Tool<i>Nest</i></span></a><p>Hand-picked AI tools, explained in plain English.</p></div><nav aria-label="Guides" class="f-col"><h2>Guides</h2><a href="/tools/index.html">All tool reviews</a><a href="/goals/index.html">Pick by goal</a><a href="/compare/index.html">Comparisons</a><a href="/alternatives/index.html">Alternatives</a><a href="/best/index.html">Best tools lists</a><a class="btn" href="/#picker">Find my tool</a></nav><nav aria-label="Categories" class="f-col"><h2>Categories</h2><a href="/category/hosting.html">Hosting</a><a href="/category/marketing.html">Marketing</a><a href="/category/productivity.html">Productivity</a><a href="/category/seo.html">SEO</a></nav><nav aria-label="Tool reviews" class="f-col"><h2>Tool reviews</h2><a href="/tools/hostinger.html">Hostinger</a><a href="/tools/systeme.html">Systeme.io</a><a href="/tools/framer.html">Framer</a><a href="/tools/webflow.html">Webflow</a></nav><nav aria-label="About this site" class="f-col"><h2>About</h2><a href="/about.html">How we research and choose tools</a><a href="/affiliate-disclosure.html">Disclosure</a><a href="/privacy.html">Privacy policy</a><a href="/terms.html">Terms of use</a><a href="/contact.html">Contact</a><a href="/how-we-test.html">How we test</a><a href="/editorial-policy.html">Editorial policy</a></nav></div><div class="f-base"><p><strong>Disclosure.</strong> Some links on this site are affiliate links, so we may earn a commission if you buy through them, at no extra cost to you. Product names belong to their owners. Features and prices change, so verify on the official site.</p><div class="f-end"><p>© 2026 ToolNest</p><a class="totop" href="#top">Back to top</a></div></div></div></footer>
 <script>
 (function(){
-  // Tool metadata only — no embedded pricing data
-  // Users enter their own price and allowance assumptions
-  var TOOLS = {
-    zapier: {
-      name: "Zapier",
-      reviewUrl: "/tools/zapier.html",
-      officialUrl: "https://zapier.com",
-      billingModel: "tasks",
-      unitLabel: "tasks"
-    },
-    make: {
-      name: "Make",
-      reviewUrl: "/tools/make.html",
-      officialUrl: "https://www.make.com",
-      billingModel: "credits",
-      unitLabel: "credits"
-    },
-    n8n: {
-      name: "n8n",
-      reviewUrl: "/tools/n8n.html",
-      officialUrl: "https://n8n.io",
-      billingModel: "executions",
-      unitLabel: "executions"
-    },
-    ifttt: {
-      name: "IFTTT",
-      reviewUrl: "/tools/ifttt.html",
-      officialUrl: "https://ifttt.com",
-      billingModel: "credits",
-      unitLabel: "credits"
-    }
-  };
+ // Tool metadata only — no embedded pricing data
+ // Users enter their own price and allowance assumptions
+ var TOOLS = {
+ zapier: {
+ name: "Zapier",
+ reviewUrl: "/tools/zapier.html",
+ officialUrl: "https://zapier.com",
+ billingModel: "tasks",
+ unitLabel: "tasks"
+ },
+ make: {
+ name: "Make",
+ reviewUrl: "/tools/make.html",
+ officialUrl: "https://www.make.com",
+ billingModel: "credits",
+ unitLabel: "credits"
+ },
+ n8n: {
+ name: "n8n",
+ reviewUrl: "/tools/n8n.html",
+ officialUrl: "https://n8n.io",
+ billingModel: "executions",
+ unitLabel: "executions"
+ },
+ ifttt: {
+ name: "IFTTT",
+ reviewUrl: "/tools/ifttt.html",
+ officialUrl: "https://ifttt.com",
+ billingModel: "credits",
+ unitLabel: "credits"
+ }
+ };
 
-  function getSelectedTools() {
-    var selected = [];
-    document.querySelectorAll('.tool-checks input:checked').forEach(function(chk) {
-      selected.push(chk.value);
-    });
-    return selected;
-  }
+ function getSelectedTools() {
+ var selected = [];
+ document.querySelectorAll('.tool-checks input:checked').forEach(function(chk) {
+ selected.push(chk.value);
+ });
+ return selected;
+ }
 
-  function renderPricingInputs() {
-    var container = document.getElementById('pricing-inputs');
-    container.innerHTML = '';
+ function renderPricingInputs() {
+ var container = document.getElementById('pricing-inputs');
+ container.innerHTML = '';
 
-    var toolIds = ['zapier', 'make', 'n8n', 'ifttt'];
-    toolIds.forEach(function(toolId) {
-      var tool = TOOLS[toolId];
-      var chk = document.getElementById('chk-' + toolId);
-      var row = document.createElement('div');
-      row.className = 'pricing-row' + (chk && chk.checked ? '' : ' hidden');
-      row.id = 'pricing-' + toolId;
+ var toolIds = ['zapier', 'make', 'n8n', 'ifttt'];
+ toolIds.forEach(function(toolId) {
+ var tool = TOOLS[toolId];
+ var chk = document.getElementById('chk-' + toolId);
+ var row = document.createElement('div');
+ row.className = 'pricing-row' + (chk && chk.checked ? '' : ' hidden');
+ row.id = 'pricing-' + toolId;
 
-      var unitHint = tool.unitLabel + '/mo';
+ var unitHint = tool.unitLabel + '/mo';
 
-      row.innerHTML =
-        '<div class="tool-label">' + tool.name + '</div>' +
-        '<div><label for="price-' + toolId + '">Price ($/mo)</label>' +
-        '<input type="number" id="price-' + toolId + '" min="0" step="0.01" placeholder="e.g. 20"></div>' +
-        '<div><label for="allowance-' + toolId + '">Included allowance (' + unitHint + ')</label>' +
-        '<input type="number" id="allowance-' + toolId + '" min="0" step="1" placeholder="e.g. 2000"></div>' +
-        '<div><label for="overage-' + toolId + '">Overage rate ($ per ' + tool.unitLabel + ')</label>' +
-        '<input type="number" id="overage-' + toolId + '" min="0" step="0.001" placeholder="Optional"></div>';
+ row.innerHTML =
+ '<div class="tool-label">' + tool.name + '</div>' +
+ '<div><label for="price-' + toolId + '">Price ($/mo)</label>' +
+ '<input type="number" id="price-' + toolId + '" min="0" step="0.01" placeholder="e.g. 20"></div>' +
+ '<div><label for="allowance-' + toolId + '">Included allowance (' + unitHint + ')</label>' +
+ '<input type="number" id="allowance-' + toolId + '" min="0" step="1" placeholder="e.g. 2000"></div>' +
+ '<div><label for="overage-' + toolId + '">Overage rate ($ per ' + tool.unitLabel + ')</label>' +
+ '<input type="number" id="overage-' + toolId + '" min="0" step="0.001" placeholder="Optional"></div>';
 
-      container.appendChild(row);
-    });
-  }
+ container.appendChild(row);
+ });
+ }
 
-  function updatePricingInputs() {
-    var toolIds = ['zapier', 'make', 'n8n', 'ifttt'];
-    toolIds.forEach(function(toolId) {
-      var chk = document.getElementById('chk-' + toolId);
-      var row = document.getElementById('pricing-' + toolId);
-      if (row && chk) {
-        if (chk.checked) {
-          row.classList.remove('hidden');
-        } else {
-          row.classList.add('hidden');
-        }
-      }
-    });
-  }
+ function updatePricingInputs() {
+ var toolIds = ['zapier', 'make', 'n8n', 'ifttt'];
+ toolIds.forEach(function(toolId) {
+ var chk = document.getElementById('chk-' + toolId);
+ var row = document.getElementById('pricing-' + toolId);
+ if (row && chk) {
+ if (chk.checked) {
+ row.classList.remove('hidden');
+ } else {
+ row.classList.add('hidden');
+ }
+ }
+ });
+ }
 
-  // Render pricing inputs on load and watch checkbox changes
-  renderPricingInputs();
-  document.querySelectorAll('.tool-checks input').forEach(function(chk) {
-    chk.addEventListener('change', updatePricingInputs);
-  });
+ // Render pricing inputs on load and watch checkbox changes
+ renderPricingInputs();
+ document.querySelectorAll('.tool-checks input').forEach(function(chk) {
+ chk.addEventListener('change', updatePricingInputs);
+ });
 
-  function calculateUsage(runs, steps, complexity) {
-    // Different tools count usage differently
-    var usage = {};
+ function calculateUsage(runs, steps, complexity) {
+ // Different tools count usage differently
+ var usage = {};
 
-    // Zapier: each step in a Zap counts as 1 task
-    usage.zapier = runs * steps;
+ // Zapier: each step in a Zap counts as 1 task
+ usage.zapier = runs * steps;
 
-    // Make: each operation counts as 1 credit (similar to steps)
-    usage.make = runs * steps;
+ // Make: each operation counts as 1 credit (similar to steps)
+ usage.make = runs * steps;
 
-    // n8n: each workflow execution counts as 1 execution regardless of steps
-    usage.n8n = runs;
+ // n8n: each workflow execution counts as 1 execution regardless of steps
+ usage.n8n = runs;
 
-    // IFTTT: each trigger counts as 1 credit
-    usage.ifttt = runs;
+ // IFTTT: each trigger counts as 1 credit
+ usage.ifttt = runs;
 
-    // Complexity multiplier for Make (complex workflows use more credits)
-    if (complexity === 'complex') {
-      usage.make = Math.round(usage.make * 1.5);
-    } else if (complexity === 'medium') {
-      usage.make = Math.round(usage.make * 1.2);
-    }
+ // Complexity multiplier for Make (complex workflows use more credits)
+ if (complexity === 'complex') {
+ usage.make = Math.round(usage.make * 1.5);
+ } else if (complexity === 'medium') {
+ usage.make = Math.round(usage.make * 1.2);
+ }
 
-    return usage;
-  }
+ return usage;
+ }
 
-  function getUserInput(toolId) {
-    var priceEl = document.getElementById('price-' + toolId);
-    var allowanceEl = document.getElementById('allowance-' + toolId);
-    var overageEl = document.getElementById('overage-' + toolId);
+ function getUserInput(toolId) {
+ var priceEl = document.getElementById('price-' + toolId);
+ var allowanceEl = document.getElementById('allowance-' + toolId);
+ var overageEl = document.getElementById('overage-' + toolId);
 
-    var price = priceEl ? parseFloat(priceEl.value) : null;
-    var allowance = allowanceEl ? parseInt(allowanceEl.value, 10) : null;
-    var overageRate = overageEl ? parseFloat(overageEl.value) : null;
+ var price = priceEl ? parseFloat(priceEl.value) : null;
+ var allowance = allowanceEl ? parseInt(allowanceEl.value, 10) : null;
+ var overageRate = overageEl ? parseFloat(overageEl.value) : null;
 
-    return {
-      price: isNaN(price) || price < 0 ? null : price,
-      allowance: isNaN(allowance) || allowance < 0 ? null : allowance,
-      overageRate: isNaN(overageRate) || overageRate < 0 ? null : overageRate
-    };
-  }
+ return {
+ price: isNaN(price) || price < 0 ? null : price,
+ allowance: isNaN(allowance) || allowance < 0 ? null : allowance,
+ overageRate: isNaN(overageRate) || overageRate < 0 ? null : overageRate
+ };
+ }
 
-  function compareUsage(usageAmount, userInput) {
-    // Compare estimated usage against user-entered allowance
-    var fits = false;
-    var overageUnits = 0;
-    var overageCost = 0;
+ function compareUsage(usageAmount, userInput) {
+ // Compare estimated usage against user-entered allowance
+ var fits = false;
+ var overageUnits = 0;
+ var overageCost = 0;
 
-    if (userInput.allowance !== null && userInput.allowance > 0) {
-      if (usageAmount <= userInput.allowance) {
-        fits = true;
-      } else {
-        overageUnits = usageAmount - userInput.allowance;
-        if (userInput.overageRate !== null && userInput.overageRate > 0) {
-          overageCost = overageUnits * userInput.overageRate;
-        }
-      }
-    } else if (userInput.allowance === 0) {
-      // User entered 0 allowance — usage exceeds
-      overageUnits = usageAmount;
-      if (userInput.overageRate !== null && userInput.overageRate > 0) {
-        overageCost = overageUnits * userInput.overageRate;
-      }
-    }
+ if (userInput.allowance !== null && userInput.allowance > 0) {
+ if (usageAmount <= userInput.allowance) {
+ fits = true;
+ } else {
+ overageUnits = usageAmount - userInput.allowance;
+ if (userInput.overageRate !== null && userInput.overageRate > 0) {
+ overageCost = overageUnits * userInput.overageRate;
+ }
+ }
+ } else if (userInput.allowance === 0) {
+ // User entered 0 allowance — usage exceeds
+ overageUnits = usageAmount;
+ if (userInput.overageRate !== null && userInput.overageRate > 0) {
+ overageCost = overageUnits * userInput.overageRate;
+ }
+ }
 
-    return {
-      fits: fits,
-      overageUnits: overageUnits,
-      overageCost: overageCost,
-      allowanceEntered: userInput.allowance !== null
-    };
-  }
+ return {
+ fits: fits,
+ overageUnits: overageUnits,
+ overageCost: overageCost,
+ allowanceEntered: userInput.allowance !== null
+ };
+ }
 
-  function validateInputs() {
-    var valid = true;
-    var runs = document.getElementById('monthly-runs');
-    var steps = document.getElementById('steps-per-run');
-    var runsError = document.getElementById('runs-error');
-    var stepsError = document.getElementById('steps-error');
+ function validateInputs() {
+ var valid = true;
+ var runs = document.getElementById('monthly-runs');
+ var steps = document.getElementById('steps-per-run');
+ var runsError = document.getElementById('runs-error');
+ var stepsError = document.getElementById('steps-error');
 
-    runsError.classList.remove('visible');
-    stepsError.classList.remove('visible');
+ runsError.classList.remove('visible');
+ stepsError.classList.remove('visible');
 
-    var runsVal = parseInt(runs.value, 10);
-    if (isNaN(runsVal) || runsVal < 1 || runsVal > 100000) {
-      runsError.classList.add('visible');
-      valid = false;
-    }
+ var runsVal = parseInt(runs.value, 10);
+ if (isNaN(runsVal) || runsVal < 1 || runsVal > 100000) {
+ runsError.classList.add('visible');
+ valid = false;
+ }
 
-    var stepsVal = parseInt(steps.value, 10);
-    if (isNaN(stepsVal) || stepsVal < 1 || stepsVal > 50) {
-      stepsError.classList.add('visible');
-      valid = false;
-    }
+ var stepsVal = parseInt(steps.value, 10);
+ if (isNaN(stepsVal) || stepsVal < 1 || stepsVal > 50) {
+ stepsError.classList.add('visible');
+ valid = false;
+ }
 
-    return valid ? {runs: runsVal, steps: stepsVal} : null;
-  }
+ return valid ? {runs: runsVal, steps: stepsVal} : null;
+ }
 
-  function renderResults(selectedTools, usage, runs, steps) {
-    var container = document.getElementById('results-container');
-    var resultsSection = document.getElementById('results');
-    container.innerHTML = '';
+ function renderResults(selectedTools, usage, runs, steps) {
+ var container = document.getElementById('results-container');
+ var resultsSection = document.getElementById('results');
+ container.innerHTML = '';
 
-    if (selectedTools.length === 0) {
-      container.innerHTML = '<div class="empty-state"><p>Please select at least one tool to compare.</p></div>';
-      resultsSection.classList.add('visible');
-      return;
-    }
+ if (selectedTools.length === 0) {
+ container.innerHTML = '<div class="empty-state"><p>Please select at least one tool to compare.</p></div>';
+ resultsSection.classList.add('visible');
+ return;
+ }
 
-    selectedTools.forEach(function(toolId) {
-      var tool = TOOLS[toolId];
-      if (!tool) return;
+ selectedTools.forEach(function(toolId) {
+ var tool = TOOLS[toolId];
+ if (!tool) return;
 
-      var usageAmount = usage[toolId];
-      var userInput = getUserInput(toolId);
-      var comparison = compareUsage(usageAmount, userInput);
+ var usageAmount = usage[toolId];
+ var userInput = getUserInput(toolId);
+ var comparison = compareUsage(usageAmount, userInput);
 
-      var card = document.createElement('div');
-      card.className = 'result-card';
+ var card = document.createElement('div');
+ card.className = 'result-card';
 
-      var priceHtml = '';
-      if (userInput.price !== null) {
-        if (userInput.price === 0) {
-          priceHtml = '<span class="price">Free</span>';
-        } else {
-          priceHtml = '<span class="price">$' + userInput.price.toFixed(2) + '/mo</span>';
-        }
-      } else {
-        priceHtml = '<span class="price">Price not entered</span>';
-      }
+ var priceHtml = '';
+ if (userInput.price !== null) {
+ if (userInput.price === 0) {
+ priceHtml = '<span class="price">Free</span>';
+ } else {
+ priceHtml = '<span class="price">$' + userInput.price.toFixed(2) + '/mo</span>';
+ }
+ } else {
+ priceHtml = '<span class="price">Price not entered</span>';
+ }
 
-      var usageLabel = usageAmount.toLocaleString() + ' ' + tool.unitLabel + '/mo';
+ var usageLabel = usageAmount.toLocaleString() + ' ' + tool.unitLabel + '/mo';
 
-      var fitHtml = '';
-      if (comparison.allowanceEntered) {
-        if (comparison.fits) {
-          fitHtml = '<p class="note" style="color:#16a34a">✓ Your estimated usage fits within your entered allowance of ' + userInput.allowance.toLocaleString() + ' ' + tool.unitLabel + '/mo.</p>';
-        } else {
-          fitHtml = '<p class="note" style="color:#dc2626">✗ Your estimated usage exceeds your entered allowance by ' + comparison.overageUnits.toLocaleString() + ' ' + tool.unitLabel + '/mo.</p>';
-          if (comparison.overageCost > 0) {
-            fitHtml += '<p class="note">Estimated overage cost: $' + comparison.overageCost.toFixed(2) + '/mo</p>';
-          }
-        }
-      } else {
-        fitHtml = '<p class="note">Enter your allowance above to see if your usage fits.</p>';
-      }
+ var fitHtml = '';
+ if (comparison.allowanceEntered) {
+ if (comparison.fits) {
+ fitHtml = '<p class="note" style="color:#16a34a">✓ Your estimated usage fits within your entered allowance of ' + userInput.allowance.toLocaleString() + ' ' + tool.unitLabel + '/mo.</p>';
+ } else {
+ fitHtml = '<p class="note" style="color:#dc2626">✗ Your estimated usage exceeds your entered allowance by ' + comparison.overageUnits.toLocaleString() + ' ' + tool.unitLabel + '/mo.</p>';
+ if (comparison.overageCost > 0) {
+ fitHtml += '<p class="note">Estimated overage cost: $' + comparison.overageCost.toFixed(2) + '/mo</p>';
+ }
+ }
+ } else {
+ fitHtml = '<p class="note">Enter your allowance above to see if your usage fits.</p>';
+ }
 
-      card.innerHTML =
-        '<h3>' + tool.name + '</h3>' +
-        priceHtml +
-        '<p class="note">Estimated usage: ' + usageLabel + ' (based on ' + runs.toLocaleString() + ' runs × ' + steps + ' steps)</p>' +
-        fitHtml +
-        '<p style="margin-top:8px"><a class="rlink" href="' + tool.reviewUrl + '">Read the ' + tool.name + ' review &rarr;</a> · <a class="rlink" href="' + tool.officialUrl + '" target="_blank" rel="noopener">Visit ' + tool.name + ' &rarr;</a></p>';
+ card.innerHTML =
+ '<h3>' + tool.name + '</h3>' +
+ priceHtml +
+ '<p class="note">Estimated usage: ' + usageLabel + ' (based on ' + runs.toLocaleString() + ' runs × ' + steps + ' steps)</p>' +
+ fitHtml +
+ '<p style="margin-top:8px"><a class="rlink" href="' + tool.reviewUrl + '">Read the ' + tool.name + ' review &rarr;</a> · <a class="rlink" href="' + tool.officialUrl + '" target="_blank" rel="noopener">Visit ' + tool.name + ' &rarr;</a></p>';
 
-      container.appendChild(card);
-    });
+ container.appendChild(card);
+ });
 
-    resultsSection.classList.add('visible');
+ resultsSection.classList.add('visible');
 
-    // Fire completion event
-    if (typeof toolnestTrack === 'function') {
-      toolnestTrack('utility_completion', {utility: 'automation-budget-estimator'});
-    }
-  }
+ // Fire completion event
+ if (typeof toolnestTrack === 'function') {
+ toolnestTrack('utility_completion', {utility: 'automation-budget-estimator'});
+ }
+ }
 
-  document.getElementById('calc-btn').addEventListener('click', function() {
-    var inputs = validateInputs();
-    if (!inputs) return;
+ document.getElementById('calc-btn').addEventListener('click', function() {
+ var inputs = validateInputs();
+ if (!inputs) return;
 
-    var selectedTools = getSelectedTools();
-    var complexity = document.getElementById('complexity').value;
-    var usage = calculateUsage(inputs.runs, inputs.steps, complexity);
+ var selectedTools = getSelectedTools();
+ var complexity = document.getElementById('complexity').value;
+ var usage = calculateUsage(inputs.runs, inputs.steps, complexity);
 
-    renderResults(selectedTools, usage, inputs.runs, inputs.steps);
+ renderResults(selectedTools, usage, inputs.runs, inputs.steps);
 
-    // Fire start event
-    if (typeof toolnestTrack === 'function') {
-      toolnestTrack('utility_start', {utility: 'automation-budget-estimator'});
-    }
-  });
+ // Fire start event
+ if (typeof toolnestTrack === 'function') {
+ toolnestTrack('utility_start', {utility: 'automation-budget-estimator'});
+ }
+ });
 })();
 </script>
 </body>

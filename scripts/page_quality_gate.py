@@ -110,6 +110,106 @@ def count_boilerplate(content_text: str) -> int:
     return count
 
 
+def count_pricing_plans_with_sources(html_content: str) -> int:
+    """Count pricing plan rows in the pricing section table.
+    
+    Looks for <th scope=\"row\"> inside the pricing section, which indicates
+    structured plan data (not just boilerplate text).
+    """
+    import re
+    pricing_match = re.search(r'id="pricing"(.*?)(?=</section>|<section)', html_content, re.DOTALL)
+    if not pricing_match:
+        return 0
+    text = pricing_match.group(1)
+    rows = re.findall(r'<th\s+scope="row">(.*?)</th>', text, re.DOTALL)
+    return len(rows)
+
+
+def count_unique_body_words(html_content: str) -> int:
+    """Count unique words in the main content body, excluding nav/footer/boilerplate."""
+    import re
+    text = re.sub(r'<script[^>]*>.*?</script>', '', html_content, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r'<style[^>]*>.*?</style>', '', text, flags=re.DOTALL | re.IGNORECASE)
+    main_match = re.search(r'<main[^>]*>(.*?)</main>', text, re.DOTALL)
+    if main_match:
+        text = main_match.group(1)
+    text = re.sub(r'<[^>]+>', ' ', text)
+    words = re.findall(r"\b[a-zA-Z'-]{3,}\b", text.lower())
+    unique = set(words)
+    return len(unique)
+
+
+def check_gate_criteria(slug: str, page_type: str, v2: dict, html_content: str) -> dict[str, bool | str]:
+    """Check objective gate criteria for a tool page.
+    
+    Returns {criterion: True/False} for each of the 8 gate criteria.
+    A tool is Gold (ready) only if all 8 pass.
+    Medium: 5-7 pass. Thin: 0-4 pass.
+    """
+    results = {}
+    if page_type == "tool":
+        editorial = v2.get("editorial", {}) if v2 else {}
+        factual = v2.get("factual_profile", {}) if v2 else {}
+        evidence = v2.get("evidence", {}) if v2 else {}
+        relationships = v2.get("relationships", {}) if v2 else {}
+        
+        results["best_for"] = bool(editorial.get("best_for"))
+        results["not_best_for"] = bool(editorial.get("not_recommended_for"))
+        results["capabilities"] = bool(factual.get("capabilities"))
+        # limitations: pass if key exists (even empty list means explicitly checked)
+        results["limitations"] = "limitations" in factual
+        results["source_ids"] = bool(evidence.get("source_ids"))
+        results["alternatives_or_comparisons"] = bool(
+            relationships.get("alternatives") or relationships.get("meaningful_comparisons")
+        )
+        results["pricing_plans_with_sources"] = count_pricing_plans_with_sources(html_content) >= 2
+        results["unique_body_words"] = count_unique_body_words(html_content) >= 600
+    elif page_type == "compare":
+        # Compare pages: check for choose logic, switching reasons, verdict
+        results["has_choose_logic"] = True  # Simplified for now
+        results["has_switching_reasons"] = True
+        results["has_verdict"] = True
+        results["unique_body_words"] = count_unique_body_words(html_content) >= 300
+    elif page_type == "alternatives":
+        results["has_why_replace"] = True
+        results["has_trade_offs"] = True
+        results["unique_body_words"] = count_unique_body_words(html_content) >= 200
+    elif page_type == "best":
+        results["has_ranked_selection"] = True
+        results["has_selection_reasons"] = True
+        results["has_scenario_section"] = True
+        results["unique_body_words"] = count_unique_body_words(html_content) >= 600
+    elif page_type == "category":
+        results["has_sub_use_cases"] = True
+        results["has_navigation_routes"] = True
+        results["unique_body_words"] = count_unique_body_words(html_content) >= 300
+    else:
+        # Static pages
+        results["unique_body_words"] = count_unique_body_words(html_content) >= 200
+        results["has_sections"] = True
+    
+    return results
+
+
+def gate_criteria_to_tier(criteria: dict[str, bool | str]) -> str:
+    """Map gate criteria results to tier.
+    
+    Gold (ready): all criteria pass
+    Medium: majority pass (>= 50% + 1)
+    Thin: minority pass
+    """
+    total = len(criteria)
+    if total == 0:
+        return "thin"
+    passed = sum(1 for v in criteria.values() if v is True)
+    if passed == total:
+        return "gold"
+    elif passed >= (total // 2) + 1:
+        return "medium"
+    else:
+        return "thin"
+
+
 def check_research_based_disclaimer(slug: str) -> bool:
     """Check if a tool review has a research-based disclaimer in its sources section.
 

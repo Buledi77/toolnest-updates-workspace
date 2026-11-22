@@ -75,10 +75,10 @@
       "Teams that need broader marketing tools beyond SEO."
     ],
     "editorial_summary": "A strong candidate when backlink research and keyword data depth justify the cost; a poor value when the need is only occasional lookups or a single audit.",
-    "review_status": "published",
+    "review_status": "ready",
     "review_url": "https://www.toolnestai.tech/tools/ahrefs.html",
-    "review_owner": "Abdul Muswir",
-    "editorial_last_reviewed": "2026-11-14"
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-22"
   },
   "relationships": {
     "alternatives": [
@@ -101,8 +101,21 @@
     "replaced_by": []
   },
   "evidence": {
-    "claim_refs": [],
-    "source_ids": []
+    "handsOn": false,
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://ahrefs.com/pricing",
+        "type": "official",
+        "checkedOn": "2026-11-22"
+      },
+      {
+        "url": "https://ahrefs.com",
+        "type": "official",
+        "checkedOn": "2026-11-22"
+      }
+    ],
+    "conflicts": []
   },
   "monetization": {
     "affiliate_status": "not_applied",
@@ -116,20 +129,271 @@
   },
   "publishing": {
     "directory_visibility": "public",
-    "standalone_page_status": "published",
+    "standalone_page_status": "ready",
     "indexability": "index",
     "sitemap_eligible": true,
     "canonical_url": "https://www.toolnestai.tech/tools/ahrefs.html",
     "template_type": "review",
-    "content_quality_status": "assessed",
-    "prepublish_status": "published"
+    "content_quality_status": "ready",
+    "prepublish_status": "ready"
   },
   "freshness": {
     "created_at": "2026-11-14T20:59:43Z",
-    "updated_at": "2026-11-14T20:59:43Z",
-    "last_verified_at": "2026-11-14T20:59:43Z",
-    "next_review_at": "2026-12-14T20:59:43Z",
+    "updated_at": "2026-11-22T00:00:00Z",
+    "last_verified_at": "2026-11-22T00:00:00Z",
+    "next_review_at": "2026-12-22T00:00:00Z",
     "stale_fields": [],
     "change_history_reference": null
-  }
+  },
+  "pricing": {
+    "checkedOn": "2026-11-22",
+    "sourceUrls": [
+      "https://ahrefs.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 17,
+    "freePlan": true,
+    "freeLimits": "Site Explorer and Site Audit for your own sites only",
+    "trial": "No free trial; 7-day money-back guarantee on annual plans",
+    "plans": [
+      {
+        "name": "Starter",
+        "priceMonthly": 29,
+        "priceAnnualMonthlyEquivalent": null,
+        "limits": {
+          "credits": 200,
+          "users": 1
+        },
+        "notes": "Keyword research and competitor checks only; no extra users allowed"
+      },
+      {
+        "name": "Lite",
+        "priceMonthly": 129,
+        "priceAnnualMonthlyEquivalent": 108,
+        "limits": {
+          "credits": 1000,
+          "users": 1,
+          "extraUsers": 2,
+          "extraUserCost": 40,
+          "trackedKeywords": 750,
+          "reportRows": 2500
+        },
+        "notes": "6 months historical data; API and MCP access included"
+      },
+      {
+        "name": "Standard",
+        "priceMonthly": 249,
+        "priceAnnualMonthlyEquivalent": 208,
+        "limits": {
+          "credits": "unlimited",
+          "users": 1,
+          "extraUsers": 5,
+          "extraUserCost": 60,
+          "trackedKeywords": 2000,
+          "reportRows": 30000
+        },
+        "notes": "2 years historical data; most popular for consultants"
+      },
+      {
+        "name": "Advanced",
+        "priceMonthly": 449,
+        "priceAnnualMonthlyEquivalent": 374,
+        "limits": {
+          "credits": "unlimited",
+          "users": 1,
+          "extraUsers": 10,
+          "extraUserCost": 80,
+          "trackedKeywords": 5000,
+          "reportRows": 75000
+        },
+        "notes": "5 years historical data; Looker Studio integration"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": 1499,
+        "priceAnnualMonthlyEquivalent": null,
+        "limits": {
+          "users": 3,
+          "extraUserCost": 100,
+          "trackedKeywords": 10000
+        },
+        "notes": "Annual commitment required; custom limits"
+      }
+    ],
+    "addOns": [
+      {
+        "name": "Content Kit",
+        "price": 99,
+        "unit": "per month"
+      },
+      {
+        "name": "Report Builder",
+        "price": 99,
+        "unit": "per month"
+      },
+      {
+        "name": "Brand Radar AI",
+        "price": 199,
+        "unit": "per month"
+      }
+    ],
+    "billingCaveat": "Annual billing saves up to 17 percent. Ahrefs states it never runs discounts. Extra users and credit top-ups are charged automatically when you exceed limits. Regional pricing and taxes vary.",
+    "conflicts": [],
+    "changeLog": []
+  },
+  "overview": {
+    "tagline": "SEO research platform built around backlink data and keyword analysis",
+    "description": "Ahrefs is an SEO platform known for its comprehensive backlink index and keyword database. It offers Site Explorer for backlink research, Content Explorer for content analysis, Site Audit for technical SEO, and Rank Tracker for position monitoring.",
+    "founded": "2010",
+    "headquarters": "Singapore",
+    "parentCompany": "Ahrefs Pte. Ltd."
+  },
+  "decision": {
+    "pick": [
+      "SEO specialists who need backlink data as a primary workflow",
+      "Link builders who need comprehensive competitor backlink analysis",
+      "Content strategists using Content Explorer for topic research",
+      "Agencies managing multiple client sites with recurring SEO needs"
+    ],
+    "skip": [
+      "Buyers who need only occasional keyword ideas without backlink analysis",
+      "Small sites that will not use the full Site Explorer or audit features",
+      "Teams that need broader marketing tools beyond SEO",
+      "Budget-conscious buyers who can work with Moz Pro's lower price point"
+    ]
+  },
+  "features": [
+    {
+      "name": "Site Explorer",
+      "description": "Backlink analysis with the industry's freshest link index. Analyze any domain's backlink profile, find linking pages, and track new and lost links."
+    },
+    {
+      "name": "Keywords Explorer",
+      "description": "Keyword research with search volume, difficulty score, click metrics, and SERP overview. Generate keyword ideas and analyze competitor keywords."
+    },
+    {
+      "name": "Content Explorer",
+      "description": "Content research tool to find top-performing content, analyze what earns links and shares, and identify content gaps."
+    },
+    {
+      "name": "Site Audit",
+      "description": "Technical SEO crawler that identifies crawlability issues, broken links, duplicate content, and on-page SEO problems with prioritized fixes."
+    },
+    {
+      "name": "Rank Tracker",
+      "description": "Weekly keyword position tracking with ranking history, keyword grouping, and SERP feature tracking."
+    },
+    {
+      "name": "Alerts",
+      "description": "Monitor competitor backlinks, keyword rankings, and new content with customizable alerts."
+    },
+    {
+      "name": "API and MCP access",
+      "description": "Programmatic access to Ahrefs data starting from Lite plan. Minimum 50 units per API request."
+    }
+  ],
+  "bestFor": [
+    "SEO specialists who need backlink data as a primary workflow",
+    "Link builders who need comprehensive competitor backlink analysis",
+    "Content strategists using Content Explorer for topic research",
+    "Agencies managing multiple client sites with recurring SEO needs"
+  ],
+  "notBestFor": [
+    "Buyers who need only occasional keyword ideas without backlink analysis",
+    "Small sites that will not use the full Site Explorer or audit features",
+    "Teams that need broader marketing tools beyond SEO",
+    "Budget-conscious buyers who can work with Moz Pro's lower price point"
+  ],
+  "limitations": [
+    "Higher price point than Moz Pro; Lite starts at $129 per month versus Moz's $99 Standard",
+    "Focused on SEO; does not cover PPC, social media, or broader marketing workflows",
+    "Lite plan caps at 1,000 credits per user per month and 2,500 rows per report",
+    "Extra users are expensive: $40-$100 per month depending on plan",
+    "No free trial; only a 7-day money-back guarantee on annual plans",
+    "Rank tracking updates weekly, not daily"
+  ],
+  "freeAccess": "Ahrefs Free provides limited Site Explorer and Site Audit access for sites you own. Starter plan at $29 per month offers 200 credits for keyword research and competitor checks. No free trial on paid plans.",
+  "alternatives": [
+    {
+      "slug": "semrush",
+      "name": "Semrush",
+      "whyChoose": "Broader marketing platform with PPC, social media, and content tools. Better for teams needing more than SEO."
+    },
+    {
+      "slug": "mozpro",
+      "name": "Moz Pro",
+      "whyChoose": "Lower price point for core SEO. Better for budget-conscious teams focused on rank tracking and site audits."
+    },
+    {
+      "slug": "screamingfrog",
+      "name": "Screaming Frog",
+      "whyChoose": "Specialized technical crawler at a lower annual cost. Better for deep technical SEO audits."
+    }
+  ],
+  "comparePairs": [
+    "ahrefs-vs-semrush",
+    "ahrefs-vs-mozpro",
+    "ahrefs-vs-screamingfrog"
+  ],
+  "faqs": [
+    {
+      "q": "How much does Ahrefs cost?",
+      "a": "Ahrefs pricing starts at $29 per month for Starter, $129 for Lite ($108 billed annually), $249 for Standard ($208 annually), and $449 for Advanced ($374 annually). Enterprise starts at $1,499 per month with annual commitment.",
+      "sourceUrl": "https://ahrefs.com/pricing"
+    },
+    {
+      "q": "Does Ahrefs have a free plan?",
+      "a": "Ahrefs Free provides limited Site Explorer and Site Audit access for sites you own. The Starter plan at $29 per month offers 200 credits for keyword research.",
+      "sourceUrl": "https://ahrefs.com/pricing"
+    },
+    {
+      "q": "Does Ahrefs offer a free trial?",
+      "a": "No free trial. Ahrefs offers a 7-day money-back guarantee on annual plans. Monthly plans have no refund option.",
+      "sourceUrl": "https://ahrefs.com/pricing"
+    },
+    {
+      "q": "What is the difference between Ahrefs Lite and Standard?",
+      "a": "Lite costs $129 per month with 1,000 credits, 6 months of historical data, and 2,500 report rows. Standard costs $249 with unlimited credits, 2 years of history, and 30,000 report rows.",
+      "sourceUrl": "https://ahrefs.com/pricing"
+    },
+    {
+      "q": "How many users are included in Ahrefs?",
+      "a": "Every plan includes one user. Extra users cost $40 per month on Lite (up to 2), $60 on Standard (up to 5), $80 on Advanced (up to 10), and $100 on Enterprise.",
+      "sourceUrl": "https://ahrefs.com/pricing"
+    },
+    {
+      "q": "Is Ahrefs better than Semrush?",
+      "a": "Ahrefs excels at backlink analysis with a fresher index. Semrush offers broader marketing features including PPC and social media. Choose Ahrefs for link-building focus; choose Semrush for broader marketing needs.",
+      "sourceUrl": "https://ahrefs.com/pricing"
+    }
+  ],
+  "claims": [
+    {
+      "text": "Ahrefs Lite costs $129 per month or $108 per month billed annually",
+      "sourceUrl": "https://ahrefs.com/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Ahrefs Standard costs $249 per month or $208 per month billed annually",
+      "sourceUrl": "https://ahrefs.com/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Ahrefs Advanced costs $449 per month or $374 per month billed annually",
+      "sourceUrl": "https://ahrefs.com/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Every Ahrefs plan includes one user; extra users cost $40-$100 per month",
+      "sourceUrl": "https://ahrefs.com/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Ahrefs states it never runs discounts",
+      "sourceUrl": "https://ahrefs.com/pricing",
+      "checkedOn": "2026-11-22"
+    }
+  ],
+  "lastReviewed": "2026-11-22"
 }

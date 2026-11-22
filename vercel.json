@@ -12,6 +12,16 @@
       "permanent": true
     },
     {
+      "source": "/authors/abdul-muswir.html",
+      "destination": "https://www.toolnestai.tech/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/authors/abdul-muswir",
+      "destination": "https://www.toolnestai.tech/about.html",
+      "permanent": true
+    },
+    {
       "source": "/compare/semrush-vs-ahrefs.html",
       "destination": "https://www.toolnestai.tech/compare/ahrefs-vs-semrush.html",
       "permanent": true
@@ -1890,6 +1900,36 @@
       "source": "/index",
       "destination": "https://www.toolnestai.tech/",
       "permanent": true
+    },
+    {
+      "source": "/tools/:slug([^./]+)",
+      "destination": "https://www.toolnestai.tech/tools/:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/compare/:slug([^./]+)",
+      "destination": "https://www.toolnestai.tech/compare/:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/alternatives/:slug([^./]+)",
+      "destination": "https://www.toolnestai.tech/alternatives/:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/best/:slug([^./]+)",
+      "destination": "https://www.toolnestai.tech/best/:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/:slug([^./]+)",
+      "destination": "https://www.toolnestai.tech/category/:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/goals/:slug([^./]+)",
+      "destination": "https://www.toolnestai.tech/goals/:slug.html",
+      "permanent": true
     }
   ],
   "headers": [
@@ -1925,5 +1965,7 @@
     }
   ],
   "buildCommand": "true",
+  "cleanUrls": false,
+  "trailingSlash": false,
   "outputDirectory": "."
 }

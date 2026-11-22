@@ -54,4 +54,4 @@ Use the [comparison index](https://www.toolnestai.tech/compare/index.html), [alt
 
 ## Trust and freshness
 
-ToolNest is written and maintained by Abdul Muswir. The site does not claim hands-on testing unless a page explicitly says so. Pricing and product facts are dated snapshots, not guarantees; readers should verify current terms with the vendor.
+ToolNest is researched from official vendor sources by ToolNest Editorial using AI-assisted research. The site does not claim hands-on testing unless a page explicitly says so. Pricing and product facts are dated snapshots, not guarantees; readers should verify current terms with the vendor.

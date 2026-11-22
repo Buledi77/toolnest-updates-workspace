@@ -1,0 +1,60 @@
+name: Monthly Pricing Refresh
+
+on:
+  schedule:
+    # Run on the 1st of every month at 06:00 UTC
+    - cron: "0 6 1 * *"
+  workflow_dispatch:
+    # Allow manual trigger
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run pricing refresh
+        run: |
+          python3 scripts/refresh_pricing.py --all
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --quiet || echo "has_changes=true" >> $GITHUB_OUTPUT
+
+      - name: Create Pull Request
+        if: steps.git-check.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: chore/monthly-pricing-refresh
+          title: "chore: monthly pricing refresh"
+          body: |
+            Automated monthly pricing refresh.
+
+            This PR updates pricing evidence in data/tools-v2 JSON files
+            by fetching current pricing from official vendor pages.
+
+            **Review checklist:**
+            - [ ] Verify pricing claims match official sources
+            - [ ] Check no stale data was removed
+            - [ ] Merge to trigger site rebuild
+          commit-message: "chore: monthly pricing refresh"
+          committer: "ToolNest Bot <junie@jetbrains.com>"
+          author: "ToolNest Bot <junie@jetbrains.com>"
+          delete-branch: true
+          labels: |
+            automation
+            pricing

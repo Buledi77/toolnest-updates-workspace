@@ -1,0 +1,331 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "screamingfrog",
+    "name": "Screaming Frog SEO Spider",
+    "slug": "screamingfrog",
+    "official_url": "https://www.screamingfrog.co.uk/seo-spider/",
+    "status": "active",
+    "logo": "/assets/logos/screamingfrog.png",
+    "aliases": [
+      "Screaming Frog"
+    ]
+  },
+  "discovery": {
+    "categories": [
+      "SEO"
+    ],
+    "use_cases": [
+      "crawl a website",
+      "technical SEO audit",
+      "find broken links",
+      "analyze site structure"
+    ],
+    "audiences": [
+      "SEO specialists",
+      "web developers",
+      "technical SEO auditors"
+    ],
+    "platforms": [
+      "desktop"
+    ],
+    "integrations": [],
+    "tags": [
+      "seo",
+      "technical-seo",
+      "site-crawl",
+      "desktop"
+    ]
+  },
+  "pricing": {
+    "checkedOn": "2026-11-22",
+    "sourceUrls": [
+      "https://www.screamingfrog.co.uk/seo-spider/licence/"
+    ],
+    "currency": "USD",
+    "billingBasis": "annual",
+    "annualDiscount": 0,
+    "freePlan": true,
+    "freeLimits": "500 URLs per crawl; no JavaScript rendering, no saved crawls",
+    "trial": "14-day refund policy on paid license",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": 0,
+        "limits": {
+          "urlsPerCrawl": 500
+        },
+        "notes": "No JavaScript rendering, no saved crawls, no configuration changes"
+      },
+      {
+        "name": "SEO Spider (1-4 seats)",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "limits": {
+          "urlsPerCrawl": "unlimited"
+        },
+        "notes": "$279/year per license (\u00a3199/\u20ac245); annual subscription only"
+      },
+      {
+        "name": "SEO Spider (5-9 seats)",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "limits": {
+          "urlsPerCrawl": "unlimited"
+        },
+        "notes": "$265/year per license; bulk discount"
+      },
+      {
+        "name": "SEO Spider (10-19 seats)",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "limits": {
+          "urlsPerCrawl": "unlimited"
+        },
+        "notes": "$249/year per license; bulk discount"
+      },
+      {
+        "name": "SEO Spider (20+ seats)",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "limits": {
+          "urlsPerCrawl": "unlimited"
+        },
+        "notes": "$235/year per license; bulk discount"
+      }
+    ],
+    "addOns": [
+      {
+        "name": "Log File Analyser",
+        "price": 99,
+        "unit": "per year (\u00a399)"
+      }
+    ],
+    "billingCaveat": "Annual subscription only; no monthly billing. One license per person. When license expires, app falls back to free version. No discount codes; only bulk discounts for 5+ licenses. 14-day refund available.",
+    "conflicts": [],
+    "changeLog": []
+  },
+  "overview": {
+    "tagline": "Desktop-based technical SEO crawler for deep site audits",
+    "description": "Screaming Frog SEO Spider is a desktop-based website crawler that analyzes technical SEO issues. It crawls websites to identify broken links, redirects, duplicate content, configuration errors, and on-page SEO problems. It is the industry standard for technical SEO audits.",
+    "founded": "2010",
+    "headquarters": "London, United Kingdom",
+    "parentCompany": "Screaming Frog Ltd"
+  },
+  "decision": {
+    "pick": [
+      "SEO specialists who need deep technical site audits",
+      "Web developers checking site structure and configuration",
+      "Agencies performing regular technical SEO audits for clients",
+      "Users who prefer desktop software over cloud-based tools"
+    ],
+    "skip": [
+      "Teams that need keyword research or rank tracking",
+      "Buyers who need a broad SEO platform with multiple tools",
+      "Users who need cloud-based automated crawling",
+      "Teams that need JavaScript rendering on a budget (free version lacks it)"
+    ]
+  },
+  "features": [
+    {
+      "name": "Website crawling",
+      "description": "Deep website crawling with unlimited URL depth. Identifies broken links, redirects, duplicate content, and configuration issues."
+    },
+    {
+      "name": "JavaScript rendering",
+      "description": "Paid license includes JavaScript rendering to analyze modern single-page applications and dynamic content."
+    },
+    {
+      "name": "Custom extraction",
+      "description": "Extract custom data using XPath or CSS selectors for tailored analysis of page elements."
+    },
+    {
+      "name": "XML sitemap generation",
+      "description": "Generate XML sitemaps directly from crawl data for submission to search engines."
+    },
+    {
+      "name": "Google integration",
+      "description": "Connect to Google Analytics and Google Search Console for enriched crawl data and prioritization."
+    },
+    {
+      "name": "AI integrations",
+      "description": "Integrate with OpenAI, Gemini, Anthropic, and Ollama for AI-powered analysis of crawled content."
+    },
+    {
+      "name": "Export and reporting",
+      "description": "Export crawl data to CSV, Excel, or JSON. Generate custom reports for client delivery."
+    }
+  ],
+  "bestFor": [
+    "SEO specialists who need deep technical site audits",
+    "Web developers checking site structure and configuration",
+    "Agencies performing regular technical SEO audits for clients",
+    "Users who prefer desktop software over cloud-based tools"
+  ],
+  "notBestFor": [
+    "Teams that need keyword research or rank tracking",
+    "Buyers who need a broad SEO platform with multiple tools",
+    "Users who need cloud-based automated crawling",
+    "Teams that need JavaScript rendering on a budget"
+  ],
+  "limitations": [
+    "Desktop-only software; no cloud-based automated crawling",
+    "Free version limited to 500 URLs per crawl with no JavaScript rendering",
+    "No keyword research, rank tracking, or backlink analysis",
+    "Annual subscription only; no monthly billing option",
+    "Requires 16GB+ RAM for large site crawls",
+    "One license per person; no shared license model"
+  ],
+  "freeAccess": "Free version crawls up to 500 URLs per crawl. Finds broken links, redirects, title and meta issues, and generates XML sitemaps. Cannot render JavaScript, save crawls, or connect to Google Analytics.",
+  "alternatives": [
+    {
+      "slug": "semrush",
+      "name": "Semrush",
+      "whyChoose": "Cloud-based with Site Audit plus keyword research and rank tracking. Better for teams needing a full SEO platform."
+    },
+    {
+      "slug": "ahrefs",
+      "name": "Ahrefs",
+      "whyChoose": "Site Audit tool included with broader SEO features. Better for teams that also need backlink analysis."
+    },
+    {
+      "slug": "mozpro",
+      "name": "Moz Pro",
+      "whyChoose": "Site Crawl included with rank tracking and keyword research. Better for teams needing core SEO tools."
+    }
+  ],
+  "comparePairs": [
+    "screamingfrog-vs-semrush",
+    "ahrefs-vs-screamingfrog",
+    "mozpro-vs-screamingfrog"
+  ],
+  "faqs": [
+    {
+      "q": "How much does Screaming Frog cost?",
+      "a": "The SEO Spider license costs $279 per year per person (\u00a3199/\u20ac245). Bulk discounts: $265 for 5-9 seats, $249 for 10-19, $235 for 20+. A free version crawls up to 500 URLs.",
+      "sourceUrl": "https://www.screamingfrog.co.uk/seo-spider/licence/"
+    },
+    {
+      "q": "Is Screaming Frog free?",
+      "a": "Yes, the free version crawls up to 500 URLs per crawl. It finds broken links, redirects, and on-page issues but cannot render JavaScript or save crawls.",
+      "sourceUrl": "https://www.screamingfrog.co.uk/seo-spider/licence/"
+    },
+    {
+      "q": "Can Screaming Frog crawl JavaScript sites?",
+      "a": "Yes, the paid license includes JavaScript rendering. The free version does not support JavaScript rendering.",
+      "sourceUrl": "https://www.screamingfrog.co.uk/seo-spider/licence/"
+    },
+    {
+      "q": "Is Screaming Frog better than Semrush Site Audit?",
+      "a": "Screaming Frog is a deeper technical crawler with more configuration options. Semrush Site Audit is cloud-based and included with broader SEO features. Choose Screaming Frog for deep technical audits; choose Semrush for a full platform.",
+      "sourceUrl": "https://www.screamingfrog.co.uk/seo-spider/licence/"
+    },
+    {
+      "q": "Does Screaming Frog have a monthly plan?",
+      "a": "No, Screaming Frog is an annual subscription only. There is no monthly billing option.",
+      "sourceUrl": "https://www.screamingfrog.co.uk/seo-spider/licence/"
+    },
+    {
+      "q": "Can I use Screaming Frog on multiple devices?",
+      "a": "One license covers one person but can be installed on multiple devices owned by that person. Each team member needs their own license.",
+      "sourceUrl": "https://www.screamingfrog.co.uk/seo-spider/licence/"
+    }
+  ],
+  "evidence": {
+    "handsOn": false,
+    "confidence": "high",
+    "sources": [
+      {
+        "url": "https://www.screamingfrog.co.uk/seo-spider/licence/",
+        "type": "official",
+        "checkedOn": "2026-11-22"
+      },
+      {
+        "url": "https://www.screamingfrog.co.uk/seo-spider/faq",
+        "type": "official",
+        "checkedOn": "2026-11-22"
+      }
+    ],
+    "conflicts": []
+  },
+  "claims": [
+    {
+      "text": "Screaming Frog SEO Spider costs $279 per year per license (\u00a3199/\u20ac245)",
+      "sourceUrl": "https://www.screamingfrog.co.uk/seo-spider/licence/",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Free version crawls up to 500 URLs per crawl",
+      "sourceUrl": "https://www.screamingfrog.co.uk/seo-spider/licence/",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Annual subscription only; no monthly billing",
+      "sourceUrl": "https://www.screamingfrog.co.uk/seo-spider/licence/",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "14-day refund policy available",
+      "sourceUrl": "https://www.screamingfrog.co.uk/seo-spider/licence/",
+      "checkedOn": "2026-11-22"
+    }
+  ],
+  "relationships": {
+    "alternatives": [
+      "semrush",
+      "ahrefs",
+      "mozpro"
+    ],
+    "meaningful_comparisons": [
+      "screamingfrog-vs-semrush",
+      "ahrefs-vs-screamingfrog",
+      "mozpro-vs-screamingfrog"
+    ],
+    "related_tools": [
+      "semrush",
+      "ahrefs",
+      "mozpro"
+    ],
+    "compatible_tools": [],
+    "replaces": [],
+    "replaced_by": []
+  },
+  "editorial": {
+    "editorial_tier": "A",
+    "editorial_summary": "Screaming Frog is the industry standard for technical SEO crawling at an affordable annual price. It is a poor value for teams that need keyword research, rank tracking, or a broad SEO platform.",
+    "review_status": "ready",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-22"
+  },
+  "monetization": {
+    "affiliate_status": "not_applied",
+    "affiliate_network": null,
+    "affiliate_url": null,
+    "official_non_affiliate_url": "https://www.screamingfrog.co.uk/seo-spider/",
+    "approved_regions": [],
+    "restrictions": [],
+    "disclosure_required": true,
+    "last_link_check": "2026-11-22"
+  },
+  "publishing": {
+    "directory_visibility": "public",
+    "standalone_page_status": "ready",
+    "indexability": "index",
+    "sitemap_eligible": true,
+    "canonical_url": "https://www.toolnestai.tech/tools/screamingfrog.html",
+    "template_type": "premium-review",
+    "content_quality_status": "ready",
+    "prepublish_status": "ready"
+  },
+  "freshness": {
+    "created_at": "2026-11-22T00:00:00Z",
+    "updated_at": "2026-11-22T00:00:00Z",
+    "last_verified_at": "2026-11-22T00:00:00Z",
+    "next_review_at": "2026-12-22T00:00:00Z",
+    "stale_fields": [],
+    "change_history_reference": null
+  },
+  "lastReviewed": "2026-11-22"
+}

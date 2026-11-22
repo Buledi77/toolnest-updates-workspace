@@ -11,10 +11,7 @@
     "aliases": []
   },
   "discovery": {
-    "categories": [
-      "SEO",
-      "Marketing"
-    ],
+    "categories": ["SEO", "Marketing"],
     "use_cases": [
       "research keywords",
       "track rankings",
@@ -28,103 +25,290 @@
       "content teams",
       "in-house marketing teams"
     ],
-    "platforms": [
-      "web"
-    ],
+    "platforms": ["web"],
     "integrations": [],
-    "tags": [
-      "seo",
-      "keyword-research",
-      "competitor-research",
-      "rank-tracking",
-      "ai-search"
+    "tags": ["seo", "keyword-research", "competitor-research", "rank-tracking", "ai-search"]
+  },
+  "pricing": {
+    "checkedOn": "2026-11-22",
+    "sourceUrls": [
+      "https://www.semrush.com/pricing/"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 17,
+    "freePlan": true,
+    "freeLimits": "10 reports per day, 1 demo project",
+    "trial": "7-day free trial on paid plans",
+    "columns": ["plan", "priceMonthly", "priceAnnual", "websites", "keywords", "aiPrompts"],
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": 0,
+        "limits": {
+          "projects": 1,
+          "reportsPerDay": 10
+        },
+        "notes": "Evaluation access only, not a substitute for paid workflow"
+      },
+      {
+        "name": "SEO",
+        "priceMonthly": 139,
+        "priceAnnualMonthlyEquivalent": 117.33,
+        "limits": {
+          "websites": 5,
+          "trackedKeywords": 500,
+          "aiPrompts": 0
+        },
+        "notes": "SEO-only plan without AI Visibility features"
+      },
+      {
+        "name": "Starter",
+        "priceMonthly": 199,
+        "priceAnnualMonthlyEquivalent": 165.17,
+        "limits": {
+          "websites": 5,
+          "trackedKeywords": 500,
+          "aiPrompts": 50
+        },
+        "notes": "SEO + AI Search bundle; 50 daily AI prompts"
+      },
+      {
+        "name": "Pro+",
+        "priceMonthly": 299,
+        "priceAnnualMonthlyEquivalent": 248.17,
+        "limits": {
+          "websites": 15,
+          "trackedKeywords": 1500,
+          "aiPrompts": 100
+        },
+        "notes": "SEO + AI Search; historical data, content tools, 100 daily AI prompts"
+      },
+      {
+        "name": "Advanced",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "limits": {
+          "websites": 40,
+          "trackedKeywords": 5000
+        },
+        "notes": "Custom pricing; API access, Share of Voice, unlimited AI prompts"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "limits": {},
+        "notes": "Custom pricing for multiple brands, regions, and teams"
+      }
+    ],
+    "addOns": [
+      {"name": "Extra seat (Starter)", "price": 45, "unit": "per month"},
+      {"name": "Extra seat (Pro+)", "price": 80, "unit": "per month"},
+      {"name": "Extra seat (Advanced)", "price": 100, "unit": "per month"},
+      {"name": "AI Visibility extra domain", "price": 99, "unit": "per month per domain"}
+    ],
+    "billingCaveat": "Annual billing saves up to 17 percent. Every plan includes one user. Extra seats cost $45-$100 per month depending on plan. AI Visibility covers one domain; additional domains cost $99 per month each. Regional pricing and taxes vary.",
+    "conflicts": [
+      "Advanced plan price was listed at $549/mo but changed to custom pricing. Some third-party sources still quote the old price."
+    ],
+    "changeLog": []
+  },
+  "overview": {
+    "tagline": "Broad SEO and AI-search visibility platform with keyword, competitor, and audit tools",
+    "description": "Semrush is a comprehensive SEO and marketing platform offering keyword research, competitor analysis, Position Tracking, Site Audit, and AI visibility tracking. It serves SEO freelancers, agencies, content teams, and in-house marketers who need multiple research workflows in one platform.",
+    "founded": "2008",
+    "headquarters": "Boston, Massachusetts, USA",
+    "parentCompany": "Semrush Inc."
+  },
+  "decision": {
+    "pick": [
+      "SEO freelancers and agencies with recurring client research across multiple sites",
+      "Content teams that need competitor, keyword, and optimization workflows together",
+      "Organizations monitoring multiple websites, locations, or markets",
+      "Teams that can use AI-search visibility data and prompt tracking in a defined workflow"
+    ],
+    "skip": [
+      "Someone who only needs an occasional keyword idea",
+      "A small site that will not use more than a few reports or projects",
+      "A team that cannot justify the plan or add-on cost",
+      "A buyer who needs a single specialist crawler rather than a broad platform"
     ]
   },
-  "factual_profile": {
-    "concise_summary": "Semrush is an SEO and AI-search visibility platform with keyword, competitor, audit, rank-tracking and plan-specific AI workflows.",
-    "primary_purpose": "Recurring SEO, competitor and AI-search research.",
-    "capabilities": [
+  "features": [
+    {
+      "name": "Keyword research",
+      "description": "Comprehensive keyword research with search volume, difficulty, intent classification, and SERP analysis. Plan-specific daily keyword limits."
+    },
+    {
+      "name": "Competitor research",
+      "description": "Competitor insights and broader market visibility analysis. Compare domains, identify keyword gaps, and track competitor strategies."
+    },
+    {
+      "name": "Site auditing",
+      "description": "Site Audit tool crawls your website to identify technical SEO issues, on-page problems, and crawl errors with prioritized recommendations."
+    },
+    {
+      "name": "Rank tracking",
+      "description": "Position Tracking monitors keyword rankings over time with daily updates, local tracking, and competitor comparison."
+    },
+    {
+      "name": "AI visibility tracking",
+      "description": "Monitor brand mentions and performance in AI-generated answers from ChatGPT, Google AI Overviews, Gemini, and Perplexity. Available from Starter plan upward."
+    },
+    {
+      "name": "Content optimization",
+      "description": "Content Template and SEO writing assistant provide on-page optimization recommendations based on top-ranking pages."
+    },
+    {
+      "name": "Backlink analysis",
+      "description": "Backlink Audit and Domain Overview tools for monitoring link profiles, identifying toxic links, and analyzing competitor backlink strategies."
+    },
+    {
+      "name": "Reporting and API",
+      "description": "Custom reporting with branded templates. API access available on Advanced plan for data integration and automation."
+    }
+  ],
+  "bestFor": [
+    "SEO freelancers and agencies with recurring client research across multiple sites",
+    "Content teams that need competitor, keyword, and optimization workflows together",
+    "Organizations monitoring multiple websites, locations, or markets",
+    "Teams that can use AI-search visibility data and prompt tracking in a defined workflow"
+  ],
+  "notBestFor": [
+    "Someone who only needs an occasional keyword idea",
+    "A small site that will not use more than a few reports or projects",
+    "A team that cannot justify the plan or add-on cost",
+    "A buyer who needs a single specialist crawler rather than a broad platform"
+  ],
+  "limitations": [
+    "Website monitoring, daily tracked keywords, AI prompts, and reports are plan-specific with hard limits",
+    "API access is Advanced plan only, not available on lower tiers",
+    "AI Visibility covers one domain; additional domains cost $99 per month each",
+    "Extra seats are expensive: $45-$100 per month depending on plan",
+    "The platform's breadth creates a learning and governance burden for small teams",
+    "Search-volume, traffic, and visibility data are estimates; use them comparatively rather than as exact counts"
+  ],
+  "freeAccess": "Semrush offers a free plan with 10 reports per day and 1 demo project. Paid plans include a 7-day free trial. The free plan is evaluation access, not a substitute for paid workflow.",
+  "alternatives": [
+    {
+      "slug": "mozpro",
+      "name": "Moz Pro",
+      "whyChoose": "Focused SEO tool at a lower price point. Better for teams that need core SEO without the breadth of Semrush."
+    },
+    {
+      "slug": "ahrefs",
+      "name": "Ahrefs",
+      "whyChoose": "Superior backlink analysis and content research tools. Better for link-building focused workflows."
+    },
+    {
+      "slug": "screamingfrog",
+      "name": "Screaming Frog",
+      "whyChoose": "Specialized technical crawler with deeper site audit capabilities and one-time purchase option."
+    }
+  ],
+  "comparePairs": [
+    "mozpro-vs-semrush",
+    "ahrefs-vs-semrush"
+  ],
+  "faqs": [
+    {
+      "q": "How much does Semrush cost?",
+      "a": "Semrush pricing starts at $139 per month for the SEO plan ($117.33 billed annually), $199 for Starter ($165.17 annually), and $299 for Pro+ ($248.17 annually). Advanced is custom pricing. A free plan offers 10 reports per day.",
+      "sourceUrl": "https://www.semrush.com/pricing/"
+    },
+    {
+      "q": "Is AI visibility included in every Semrush plan?",
+      "a": "AI visibility features are included from Starter plan upward. The SEO plan at $139 does not include AI prompts. Starter includes 50 daily prompts, Pro+ includes 100.",
+      "sourceUrl": "https://www.semrush.com/pricing/"
+    },
+    {
+      "q": "Is Semrush worth it for one small website?",
+      "a": "It can be useful if recurring competitor, keyword, audit, or AI-search research justifies the cost. If you need only occasional ideas or a single crawl, a narrower tool may be better value.",
+      "sourceUrl": "https://www.semrush.com/pricing/"
+    },
+    {
+      "q": "What is the difference between Semrush SEO and Starter plans?",
+      "a": "Both plans cover 5 websites and 500 tracked keywords. The $60 difference between SEO ($139) and Starter ($199) buys AI Visibility features: 50 daily AI prompts and AI search tracking. SEO capacity is identical.",
+      "sourceUrl": "https://www.semrush.com/pricing/"
+    },
+    {
+      "q": "How many users are included in Semrush?",
+      "a": "Every plan includes one user. Extra seats cost $45 per month on Starter, $80 on Pro+, and $100 on Advanced.",
+      "sourceUrl": "https://www.semrush.com/pricing/"
+    },
+    {
+      "q": "Does Semrush have a free trial?",
+      "a": "Yes, Semrush offers a 7-day free trial on paid plans. A permanent free plan provides 10 reports per day with limited access.",
+      "sourceUrl": "https://www.semrush.com/pricing/"
+    }
+  ],
+  "evidence": {
+    "handsOn": false,
+    "confidence": "high",
+    "sources": [
       {
-        "claim_id": "semrush-workflow-coverage"
+        "url": "https://www.semrush.com/pricing/",
+        "type": "official",
+        "checkedOn": "2026-11-22"
       },
       {
-        "claim_id": "semrush-ai-visibility-addon"
+        "url": "https://www.semrush.com/",
+        "type": "official",
+        "checkedOn": "2026-11-22"
       }
     ],
-    "limitations": [],
-    "free_plan_status": [
-      {
-        "claim_id": "semrush-current-plan-structure"
-      }
-    ],
-    "trial_status": [],
-    "pricing_status": [
-      {
-        "claim_id": "semrush-current-plan-structure"
-      }
-    ],
-    "pricing_regions": [
-      {
-        "claim_id": "semrush-current-plan-structure"
-      },
-      {
-        "claim_id": "semrush-ai-visibility-addon"
-      }
-    ],
-    "availability_regions": []
+    "conflicts": [
+      "Advanced plan price was listed at $549/mo but changed to custom pricing. Some third-party sources still quote the old price."
+    ]
   },
-  "editorial": {
-    "editorial_tier": "A",
-    "best_for": [
-      "SEO freelancers and agencies with recurring client research.",
-      "Content teams that need competitor, keyword and optimization workflows.",
-      "Organizations monitoring multiple websites, locations or markets."
-    ],
-    "not_recommended_for": [
-      "People who need only occasional keyword ideas.",
-      "Small sites that will not use the wider modules or plan allowances."
-    ],
-    "editorial_summary": "A strong candidate when several SEO, competitor and AI-search workflows justify the plan and add-on cost; a poor value when the need is only an occasional lookup or single crawl.",
-    "review_status": "published",
-    "review_url": "https://www.toolnestai.tech/tools/semrush.html",
-    "review_owner": "Abdul Muswir",
-    "editorial_last_reviewed": "2026-11-14"
-  },
+  "claims": [
+    {
+      "text": "Semrush SEO plan costs $139 per month or $117.33 per month billed annually",
+      "sourceUrl": "https://www.semrush.com/pricing/",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Semrush Starter plan costs $199 per month or $165.17 per month billed annually",
+      "sourceUrl": "https://www.semrush.com/pricing/",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Semrush Pro+ plan costs $299 per month or $248.17 per month billed annually",
+      "sourceUrl": "https://www.semrush.com/pricing/",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Every Semrush plan includes one user; extra seats cost $45-$100 per month",
+      "sourceUrl": "https://www.semrush.com/pricing/",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "AI Visibility covers one domain; additional domains cost $99 per month each",
+      "sourceUrl": "https://www.semrush.com/pricing/",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Free plan offers 10 reports per day with 1 demo project",
+      "sourceUrl": "https://www.semrush.com/pricing/",
+      "checkedOn": "2026-11-22"
+    }
+  ],
   "relationships": {
-    "alternatives": [
-      "moz-pro",
-      "ahrefs",
-      "screamingfrog"
-    ],
-    "meaningful_comparisons": [
-      "mozpro-vs-semrush",
-      "ahrefs-vs-semrush"
-    ],
-    "related_tools": [
-      "moz-pro",
-      "ahrefs",
-      "screamingfrog"
-    ],
+    "alternatives": ["mozpro", "ahrefs", "screamingfrog"],
+    "meaningful_comparisons": ["mozpro-vs-semrush", "ahrefs-vs-semrush"],
+    "related_tools": ["mozpro", "ahrefs", "screamingfrog"],
     "compatible_tools": [],
     "replaces": [],
     "replaced_by": []
   },
-  "evidence": {
-    "claim_refs": [
-      {
-        "claim_id": "semrush-current-plan-structure"
-      },
-      {
-        "claim_id": "semrush-ai-visibility-addon"
-      },
-      {
-        "claim_id": "semrush-workflow-coverage"
-      }
-    ],
-    "source_ids": [
-      "semrush-pricing",
-      "semrush-ai-visibility-pricing"
-    ]
+  "editorial": {
+    "editorial_tier": "A",
+    "editorial_summary": "Semrush is a strong candidate for an SEO freelancer, agency, content team, or in-house marketer who will use several research workflows. It is a poor value for a site owner who needs only occasional keyword ideas or a single technical crawl.",
+    "review_status": "ready",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-22"
   },
   "monetization": {
     "affiliate_status": "not_applied",
@@ -134,24 +318,25 @@
     "approved_regions": [],
     "restrictions": [],
     "disclosure_required": true,
-    "last_link_check": "2026-11-14"
+    "last_link_check": "2026-11-22"
   },
   "publishing": {
     "directory_visibility": "public",
-    "standalone_page_status": "published",
+    "standalone_page_status": "ready",
     "indexability": "index",
     "sitemap_eligible": true,
     "canonical_url": "https://www.toolnestai.tech/tools/semrush.html",
     "template_type": "premium-review",
-    "content_quality_status": "approved",
-    "prepublish_status": "published"
+    "content_quality_status": "ready",
+    "prepublish_status": "ready"
   },
   "freshness": {
     "created_at": "2026-11-14T20:59:43Z",
-    "updated_at": "2026-11-14T20:59:43Z",
-    "last_verified_at": "2026-11-14T20:59:43Z",
-    "next_review_at": "2026-12-14T20:59:43Z",
+    "updated_at": "2026-11-22T00:00:00Z",
+    "last_verified_at": "2026-11-22T00:00:00Z",
+    "next_review_at": "2026-12-22T00:00:00Z",
     "stale_fields": [],
     "change_history_reference": null
-  }
+  },
+  "lastReviewed": "2026-11-22"
 }

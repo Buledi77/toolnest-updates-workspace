@@ -1,469 +1,23 @@
 {
-  "total_pages": 198,
+  "total_pages": 385,
   "grade_distribution": {
+    "tool_review:A": 118,
     "tool_review:B": 29,
-    "tool_review:A": 21,
     "compare:A": 63,
-    "alternatives:A": 50,
+    "alternatives:B": 38,
+    "alternatives:A": 100,
     "best:A": 21,
-    "category:A": 14
+    "category:B": 1,
+    "category:A": 15
   },
   "priority_distribution": {
-    "medium": 29,
-    "none": 155,
-    "low": 14
+    "none": 302,
+    "medium": 68,
+    "low": 15
   },
   "upgrade_queue": [
     {
       "path": "/tools/adobeexpress.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 592,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/asana.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 521,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "B",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/brevo.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 557,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/clickup.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 527,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "B",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/copyai.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 548,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "B",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/figma.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 531,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/fireflies.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 534,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "B",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/gemini.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 590,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/hemingway.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 595,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/hubspot.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 540,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/invideo.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 545,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/leonardo.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 546,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/mailchimp.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 564,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/make.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 551,
-      "sections": 10,
-      "unique_marked": 8,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/midjourney.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 534,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/monday.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 554,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "B",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/n8n.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 548,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/notebooklm.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 530,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "B",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/otter.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 534,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "B",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/perplexity.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 519,
-      "sections": 10,
-      "unique_marked": 8,
-      "editorial_tier": "B",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/prowritingaid.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 571,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/quillbot.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 564,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/removebg.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 548,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "B",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/runway.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 568,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/squarespace.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 532,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/synthesia.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 544,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/todoist.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 524,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "B",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/webflow.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 542,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/writesonic.html",
       "type": "tool_review",
       "grade": "B",
       "score": 12,
@@ -479,215 +33,11 @@
       "priority": "medium"
     },
     {
-      "path": "/category/image-generation.html",
-      "type": "category",
-      "grade": "A",
-      "score": 6,
-      "words": 579,
-      "sections": 12,
-      "unique_marked": 4,
-      "missing": [],
-      "priority": "low"
-    },
-    {
-      "path": "/category/marketing.html",
-      "type": "category",
-      "grade": "A",
-      "score": 6,
-      "words": 549,
-      "sections": 12,
-      "unique_marked": 4,
-      "missing": [],
-      "priority": "low"
-    },
-    {
-      "path": "/category/research.html",
-      "type": "category",
-      "grade": "A",
-      "score": 6,
-      "words": 544,
-      "sections": 12,
-      "unique_marked": 5,
-      "missing": [],
-      "priority": "low"
-    },
-    {
-      "path": "/category/sales.html",
-      "type": "category",
-      "grade": "A",
-      "score": 6,
-      "words": 608,
-      "sections": 12,
-      "unique_marked": 4,
-      "missing": [],
-      "priority": "low"
-    },
-    {
-      "path": "/category/writing.html",
-      "type": "category",
-      "grade": "A",
-      "score": 6,
-      "words": 663,
-      "sections": 11,
-      "unique_marked": 3,
-      "missing": [],
-      "priority": "low"
-    },
-    {
-      "path": "/category/hosting.html",
-      "type": "category",
-      "grade": "A",
-      "score": 5,
-      "words": 481,
-      "sections": 12,
-      "unique_marked": 4,
-      "missing": [],
-      "priority": "low"
-    },
-    {
-      "path": "/category/ai-assistants.html",
-      "type": "category",
-      "grade": "A",
-      "score": 4,
-      "words": 566,
-      "sections": 11,
-      "unique_marked": 3,
-      "missing": [
-        "no_sub_use_cases"
-      ],
-      "priority": "low"
-    },
-    {
-      "path": "/category/automation.html",
-      "type": "category",
-      "grade": "A",
-      "score": 4,
-      "words": 587,
-      "sections": 11,
-      "unique_marked": 3,
-      "missing": [
-        "no_sub_use_cases"
-      ],
-      "priority": "low"
-    },
-    {
-      "path": "/category/design.html",
-      "type": "category",
-      "grade": "A",
-      "score": 4,
-      "words": 597,
-      "sections": 11,
-      "unique_marked": 3,
-      "missing": [
-        "no_sub_use_cases"
-      ],
-      "priority": "low"
-    },
-    {
-      "path": "/category/email-marketing.html",
-      "type": "category",
-      "grade": "A",
-      "score": 4,
-      "words": 609,
-      "sections": 11,
-      "unique_marked": 3,
-      "missing": [
-        "no_sub_use_cases"
-      ],
-      "priority": "low"
-    },
-    {
-      "path": "/category/productivity.html",
-      "type": "category",
-      "grade": "A",
-      "score": 4,
-      "words": 789,
-      "sections": 11,
-      "unique_marked": 3,
-      "missing": [
-        "no_sub_use_cases"
-      ],
-      "priority": "low"
-    },
-    {
-      "path": "/category/seo.html",
-      "type": "category",
-      "grade": "A",
-      "score": 4,
-      "words": 670,
-      "sections": 11,
-      "unique_marked": 3,
-      "missing": [
-        "no_sub_use_cases"
-      ],
-      "priority": "low"
-    },
-    {
-      "path": "/category/voice-video.html",
-      "type": "category",
-      "grade": "A",
-      "score": 4,
-      "words": 738,
-      "sections": 11,
-      "unique_marked": 3,
-      "missing": [
-        "no_sub_use_cases"
-      ],
-      "priority": "low"
-    },
-    {
-      "path": "/category/website-builders.html",
-      "type": "category",
-      "grade": "A",
-      "score": 4,
-      "words": 545,
-      "sections": 11,
-      "unique_marked": 3,
-      "missing": [
-        "no_sub_use_cases"
-      ],
-      "priority": "low"
-    }
-  ],
-  "pages": [
-    {
-      "path": "/tools/adobeexpress.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 592,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/ahrefs.html",
-      "type": "tool_review",
-      "grade": "A",
-      "score": 14,
-      "words": 1203,
-      "sections": 11,
-      "unique_marked": 8,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "none"
-    },
-    {
       "path": "/tools/asana.html",
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 521,
+      "words": 510,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
@@ -699,26 +49,11 @@
       "priority": "medium"
     },
     {
-      "path": "/tools/beehiiv.html",
-      "type": "tool_review",
-      "grade": "A",
-      "score": 12,
-      "words": 627,
-      "sections": 10,
-      "unique_marked": 5,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources"
-      ],
-      "priority": "none"
-    },
-    {
       "path": "/tools/brevo.html",
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 557,
+      "words": 529,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -730,58 +65,11 @@
       "priority": "medium"
     },
     {
-      "path": "/tools/canva.html",
-      "type": "tool_review",
-      "grade": "A",
-      "score": 12,
-      "words": 683,
-      "sections": 10,
-      "unique_marked": 5,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources"
-      ],
-      "priority": "none"
-    },
-    {
-      "path": "/tools/chatgpt.html",
-      "type": "tool_review",
-      "grade": "A",
-      "score": 12,
-      "words": 812,
-      "sections": 12,
-      "unique_marked": 6,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_skip_if",
-        "no_evidence_sources"
-      ],
-      "priority": "none"
-    },
-    {
-      "path": "/tools/claude.html",
-      "type": "tool_review",
-      "grade": "A",
-      "score": 12,
-      "words": 897,
-      "sections": 12,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_skip_if",
-        "no_evidence_sources"
-      ],
-      "priority": "none"
-    },
-    {
       "path": "/tools/clickup.html",
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 527,
+      "words": 516,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
@@ -797,7 +85,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 548,
+      "words": 531,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
@@ -809,45 +97,11 @@
       "priority": "medium"
     },
     {
-      "path": "/tools/descript.html",
-      "type": "tool_review",
-      "grade": "A",
-      "score": 9,
-      "words": 604,
-      "sections": 10,
-      "unique_marked": 3,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_limitations",
-        "no_evidence_sources",
-        "no_verdict"
-      ],
-      "priority": "none"
-    },
-    {
-      "path": "/tools/elevenlabs.html",
-      "type": "tool_review",
-      "grade": "A",
-      "score": 12,
-      "words": 1171,
-      "sections": 11,
-      "unique_marked": 5,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_limitations",
-        "no_evidence_sources",
-        "no_verdict"
-      ],
-      "priority": "none"
-    },
-    {
       "path": "/tools/figma.html",
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 531,
+      "words": 514,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -863,7 +117,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 534,
+      "words": 523,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
@@ -875,26 +129,11 @@
       "priority": "medium"
     },
     {
-      "path": "/tools/framer.html",
-      "type": "tool_review",
-      "grade": "A",
-      "score": 12,
-      "words": 667,
-      "sections": 10,
-      "unique_marked": 5,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources"
-      ],
-      "priority": "none"
-    },
-    {
       "path": "/tools/gemini.html",
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 590,
+      "words": 585,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -906,11 +145,1899 @@
       "priority": "medium"
     },
     {
+      "path": "/tools/hemingway.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 572,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/hubspot.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 524,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/invideo.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 528,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/leonardo.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 530,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/mailchimp.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 542,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/make.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 546,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/midjourney.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 518,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/monday.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 549,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/n8n.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 543,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/notebooklm.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 514,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/otter.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 523,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/perplexity.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 503,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/prowritingaid.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 548,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/quillbot.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 541,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/removebg.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 531,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/runway.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 545,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/squarespace.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 510,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/synthesia.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 521,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/todoist.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 513,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/webflow.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 520,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/writesonic.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 546,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/activecampaign-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/beautifulai-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 86,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/brand24-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/browseai-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 125,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/callrail-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 117,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/campaignmonitor-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 113,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/capsule-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/castmagic-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 135,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/circle-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 117,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/close-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/connecteam-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/consensus-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/deel-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 117,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/dripify-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 133,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/freshdesk-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/gamma-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/getresponse-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/gorgias-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/instapage-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/keap-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 117,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/lemlist-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/lusha-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 133,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/manychat-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/meetgeek-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 135,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/moosend-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/murf-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 86,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/netlify-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/nutshell-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 121,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/omniseo-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 133,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/pipedrive-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/replyio-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 136,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/rgestudio-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 137,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/sproutsocial-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 134,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/streak-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/teikametrics-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 133,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/timedoctor-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 114,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/trainual-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 111,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/transpond-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/category/accounting.html",
+      "type": "category",
+      "grade": "B",
+      "score": 3,
+      "words": 331,
+      "sections": 7,
+      "unique_marked": 3,
+      "missing": [
+        "no_sub_use_cases"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/category/image-generation.html",
+      "type": "category",
+      "grade": "A",
+      "score": 6,
+      "words": 603,
+      "sections": 10,
+      "unique_marked": 5,
+      "missing": [],
+      "priority": "low"
+    },
+    {
+      "path": "/category/marketing.html",
+      "type": "category",
+      "grade": "A",
+      "score": 6,
+      "words": 1120,
+      "sections": 11,
+      "unique_marked": 5,
+      "missing": [],
+      "priority": "low"
+    },
+    {
+      "path": "/category/research.html",
+      "type": "category",
+      "grade": "A",
+      "score": 6,
+      "words": 573,
+      "sections": 10,
+      "unique_marked": 5,
+      "missing": [],
+      "priority": "low"
+    },
+    {
+      "path": "/category/sales.html",
+      "type": "category",
+      "grade": "A",
+      "score": 6,
+      "words": 1195,
+      "sections": 11,
+      "unique_marked": 5,
+      "missing": [],
+      "priority": "low"
+    },
+    {
+      "path": "/category/writing.html",
+      "type": "category",
+      "grade": "A",
+      "score": 6,
+      "words": 681,
+      "sections": 9,
+      "unique_marked": 4,
+      "missing": [],
+      "priority": "low"
+    },
+    {
+      "path": "/category/hosting.html",
+      "type": "category",
+      "grade": "A",
+      "score": 5,
+      "words": 471,
+      "sections": 11,
+      "unique_marked": 5,
+      "missing": [],
+      "priority": "low"
+    },
+    {
+      "path": "/category/ai-assistants.html",
+      "type": "category",
+      "grade": "A",
+      "score": 4,
+      "words": 577,
+      "sections": 10,
+      "unique_marked": 4,
+      "missing": [
+        "no_sub_use_cases"
+      ],
+      "priority": "low"
+    },
+    {
+      "path": "/category/automation.html",
+      "type": "category",
+      "grade": "A",
+      "score": 4,
+      "words": 641,
+      "sections": 11,
+      "unique_marked": 4,
+      "missing": [
+        "no_sub_use_cases"
+      ],
+      "priority": "low"
+    },
+    {
+      "path": "/category/customer-support.html",
+      "type": "category",
+      "grade": "A",
+      "score": 4,
+      "words": 885,
+      "sections": 10,
+      "unique_marked": 5,
+      "missing": [
+        "no_sub_use_cases"
+      ],
+      "priority": "low"
+    },
+    {
+      "path": "/category/design.html",
+      "type": "category",
+      "grade": "A",
+      "score": 4,
+      "words": 654,
+      "sections": 9,
+      "unique_marked": 4,
+      "missing": [
+        "no_sub_use_cases"
+      ],
+      "priority": "low"
+    },
+    {
+      "path": "/category/email-marketing.html",
+      "type": "category",
+      "grade": "A",
+      "score": 4,
+      "words": 770,
+      "sections": 11,
+      "unique_marked": 4,
+      "missing": [
+        "no_sub_use_cases"
+      ],
+      "priority": "low"
+    },
+    {
+      "path": "/category/productivity.html",
+      "type": "category",
+      "grade": "A",
+      "score": 4,
+      "words": 1158,
+      "sections": 10,
+      "unique_marked": 4,
+      "missing": [
+        "no_sub_use_cases"
+      ],
+      "priority": "low"
+    },
+    {
+      "path": "/category/seo.html",
+      "type": "category",
+      "grade": "A",
+      "score": 4,
+      "words": 694,
+      "sections": 11,
+      "unique_marked": 4,
+      "missing": [
+        "no_sub_use_cases"
+      ],
+      "priority": "low"
+    },
+    {
+      "path": "/category/voice-video.html",
+      "type": "category",
+      "grade": "A",
+      "score": 4,
+      "words": 782,
+      "sections": 11,
+      "unique_marked": 4,
+      "missing": [
+        "no_sub_use_cases"
+      ],
+      "priority": "low"
+    },
+    {
+      "path": "/category/website-builders.html",
+      "type": "category",
+      "grade": "A",
+      "score": 4,
+      "words": 613,
+      "sections": 9,
+      "unique_marked": 4,
+      "missing": [
+        "no_sub_use_cases"
+      ],
+      "priority": "low"
+    }
+  ],
+  "pages": [
+    {
+      "path": "/tools/activecampaign.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 518,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/adcreative.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 600,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/adobeexpress.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 569,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/adwisely.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 585,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/ahrefs.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 14,
+      "words": 1097,
+      "sections": 13,
+      "unique_marked": 11,
+      "editorial_tier": "A",
+      "pub_quality": "ready",
+      "missing": [
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/aircall.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 586,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/amplitude.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 589,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/apollo.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 527,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/asana.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 510,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/beautifulai.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 652,
+      "sections": 12,
+      "unique_marked": 9,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/beehiiv.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 12,
+      "words": 615,
+      "sections": 10,
+      "unique_marked": 5,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/bill.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 589,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/brand24.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 575,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/breadbutter.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 518,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/brevo.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 529,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/browseai.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 10,
+      "words": 681,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "?",
+      "pub_quality": "?",
+      "missing": [
+        "no_skip_if",
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/callrail.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 10,
+      "words": 680,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "?",
+      "pub_quality": "?",
+      "missing": [
+        "no_skip_if",
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/campaignmonitor.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 10,
+      "words": 639,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "?",
+      "pub_quality": "?",
+      "missing": [
+        "no_skip_if",
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/canva.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 12,
+      "words": 660,
+      "sections": 10,
+      "unique_marked": 5,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/capsule.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 492,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/castmagic.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 498,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/chatgpt.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 12,
+      "words": 807,
+      "sections": 12,
+      "unique_marked": 6,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_skip_if",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/circle.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 10,
+      "words": 638,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "C",
+      "pub_quality": "?",
+      "missing": [
+        "no_skip_if",
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/claude.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 12,
+      "words": 892,
+      "sections": 12,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_skip_if",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/clevertap.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 592,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/clickup.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 516,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/close.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 629,
+      "sections": 12,
+      "unique_marked": 9,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/closely.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 790,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/cloudtalk.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 507,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/confetti.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 532,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/connecteam.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 569,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/consensus.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 641,
+      "sections": 12,
+      "unique_marked": 9,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/copyai.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 531,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/deel.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 10,
+      "words": 683,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "C",
+      "pub_quality": "?",
+      "missing": [
+        "no_skip_if",
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/descript.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 9,
+      "words": 581,
+      "sections": 10,
+      "unique_marked": 3,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_limitations",
+        "no_evidence_sources",
+        "no_verdict"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/dext.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 589,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/dripify.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 492,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/elevenlabs.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 12,
+      "words": 1160,
+      "sections": 11,
+      "unique_marked": 5,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_limitations",
+        "no_evidence_sources",
+        "no_verdict"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/expertex.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 513,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/figma.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 514,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/fireflies.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 523,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/flexiquiz.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 566,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/flocksy.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 609,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/framer.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 12,
+      "words": 650,
+      "sections": 10,
+      "unique_marked": 5,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/freshbooks.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 500,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/freshdesk.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 675,
+      "sections": 12,
+      "unique_marked": 9,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/gamma.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 10,
+      "words": 706,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "C",
+      "pub_quality": "unassessed",
+      "missing": [
+        "no_skip_if",
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/gemini.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 585,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/getresponse.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 10,
+      "words": 751,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_skip_if",
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/glide.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 501,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/gorgias.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 10,
+      "words": 762,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_skip_if",
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
       "path": "/tools/grammarly.html",
       "type": "tool_review",
       "grade": "A",
       "score": 9,
-      "words": 613,
+      "words": 590,
       "sections": 10,
       "unique_marked": 4,
       "editorial_tier": "A",
@@ -923,11 +2050,27 @@
       "priority": "none"
     },
     {
+      "path": "/tools/helpscout.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 523,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
       "path": "/tools/hemingway.html",
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 595,
+      "words": 572,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -939,11 +2082,43 @@
       "priority": "medium"
     },
     {
+      "path": "/tools/hibob.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 525,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/hightouch.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 503,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
       "path": "/tools/hostinger.html",
       "type": "tool_review",
       "grade": "A",
       "score": 15,
-      "words": 1157,
+      "words": 1152,
       "sections": 12,
       "unique_marked": 9,
       "editorial_tier": "A",
@@ -956,7 +2131,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 540,
+      "words": 524,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -985,11 +2160,59 @@
       "priority": "none"
     },
     {
+      "path": "/tools/instantly.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 506,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/instapage.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 510,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/intercom.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 633,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
       "path": "/tools/invideo.html",
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 545,
+      "words": 528,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -1005,7 +2228,7 @@
       "type": "tool_review",
       "grade": "A",
       "score": 8,
-      "words": 605,
+      "words": 588,
       "sections": 10,
       "unique_marked": 2,
       "editorial_tier": "A",
@@ -1022,7 +2245,7 @@
       "type": "tool_review",
       "grade": "A",
       "score": 13,
-      "words": 1273,
+      "words": 1261,
       "sections": 12,
       "unique_marked": 8,
       "editorial_tier": "A",
@@ -1031,6 +2254,23 @@
         "no_limitations",
         "no_evidence_sources",
         "research_based"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/keap.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 10,
+      "words": 642,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "?",
+      "pub_quality": "?",
+      "missing": [
+        "no_skip_if",
+        "no_comparisons",
+        "no_evidence_sources"
       ],
       "priority": "none"
     },
@@ -1039,7 +2279,7 @@
       "type": "tool_review",
       "grade": "A",
       "score": 13,
-      "words": 1236,
+      "words": 1213,
       "sections": 11,
       "unique_marked": 8,
       "editorial_tier": "A",
@@ -1048,6 +2288,54 @@
         "no_limitations",
         "no_evidence_sources",
         "research_based"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/krispcall.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 591,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/learnworlds.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 496,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/lemlist.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 501,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
       ],
       "priority": "none"
     },
@@ -1056,352 +2344,51 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 546,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/mailchimp.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 564,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/make.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 551,
-      "sections": 10,
-      "unique_marked": 8,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/midjourney.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 534,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/monday.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 554,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "B",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/mozpro.html",
-      "type": "tool_review",
-      "grade": "A",
-      "score": 13,
-      "words": 1309,
-      "sections": 12,
-      "unique_marked": 9,
-      "editorial_tier": "?",
-      "pub_quality": "?",
-      "missing": [
-        "no_limitations",
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "none"
-    },
-    {
-      "path": "/tools/n8n.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 548,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/notebooklm.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
       "words": 530,
       "sections": 10,
       "unique_marked": 7,
-      "editorial_tier": "B",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/notion.html",
-      "type": "tool_review",
-      "grade": "A",
-      "score": 10,
-      "words": 604,
-      "sections": 8,
-      "unique_marked": 5,
       "editorial_tier": "A",
       "pub_quality": "assessed",
       "missing": [
-        "no_limitations",
-        "no_evidence_sources",
-        "no_verdict"
-      ],
-      "priority": "none"
-    },
-    {
-      "path": "/tools/otter.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 534,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "B",
-      "pub_quality": "assessed",
-      "missing": [
         "no_evidence_sources",
         "research_based"
       ],
       "priority": "medium"
     },
     {
-      "path": "/tools/perplexity.html",
+      "path": "/tools/logome.html",
       "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 519,
+      "grade": "A",
+      "score": 11,
+      "words": 524,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "assessed",
+      "pub_quality": "?",
       "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/prowritingaid.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 571,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/quillbot.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 564,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/removebg.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 548,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "B",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/runway.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 568,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/screamingfrog.html",
-      "type": "tool_review",
-      "grade": "A",
-      "score": 14,
-      "words": 1087,
-      "sections": 11,
-      "unique_marked": 5,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "none"
-    },
-    {
-      "path": "/tools/semrush.html",
-      "type": "tool_review",
-      "grade": "A",
-      "score": 15,
-      "words": 1346,
-      "sections": 15,
-      "unique_marked": 12,
-      "editorial_tier": "A",
-      "pub_quality": "approved",
-      "missing": [],
-      "priority": "none"
-    },
-    {
-      "path": "/tools/squarespace.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 532,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/surferseo.html",
-      "type": "tool_review",
-      "grade": "A",
-      "score": 14,
-      "words": 1013,
-      "sections": 12,
-      "unique_marked": 10,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
+        "no_comparisons",
         "no_evidence_sources"
       ],
       "priority": "none"
     },
     {
-      "path": "/tools/synthesia.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 544,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/systeme.html",
+      "path": "/tools/lusha.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 14,
-      "words": 1997,
-      "sections": 19,
-      "unique_marked": 11,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
+      "score": 11,
+      "words": 498,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
       "missing": [
+        "no_comparisons",
         "no_evidence_sources"
       ],
       "priority": "none"
     },
     {
-      "path": "/tools/todoist.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 524,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "B",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/webflow.html",
+      "path": "/tools/mailchimp.html",
       "type": "tool_review",
       "grade": "B",
       "score": 12,
@@ -1417,11 +2404,59 @@
       "priority": "medium"
     },
     {
-      "path": "/tools/writesonic.html",
+      "path": "/tools/make.html",
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 569,
+      "words": 546,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/manychat.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 656,
+      "sections": 12,
+      "unique_marked": 9,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/meetgeek.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 492,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/midjourney.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 518,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -1431,6 +2466,1079 @@
         "research_based"
       ],
       "priority": "medium"
+    },
+    {
+      "path": "/tools/mixpanel.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 571,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/monday.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 549,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/moosend.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 518,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/mozpro.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 14,
+      "words": 1875,
+      "sections": 14,
+      "unique_marked": 10,
+      "editorial_tier": "?",
+      "pub_quality": "?",
+      "missing": [
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/murf.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 10,
+      "words": 732,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_skip_if",
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/n8n.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 543,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/netlify.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 614,
+      "sections": 12,
+      "unique_marked": 9,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/notebooklm.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 514,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/notion.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 10,
+      "words": 587,
+      "sections": 8,
+      "unique_marked": 5,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_limitations",
+        "no_evidence_sources",
+        "no_verdict"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/nutshell.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 10,
+      "words": 610,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "C",
+      "pub_quality": "?",
+      "missing": [
+        "no_skip_if",
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/omnisend.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 502,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/omniseo.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 487,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/otter.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 523,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/pandadoc.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 494,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/perplexity.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 503,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/pipedrive.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 505,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/pixelunion.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 519,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/prowritingaid.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 548,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/quickbooks.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 611,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/quillbot.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 541,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/quo.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 10,
+      "words": 673,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "C",
+      "pub_quality": "?",
+      "missing": [
+        "no_skip_if",
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/removebg.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 531,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/replyio.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 590,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/rgestudio.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 546,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/runway.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 545,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/salesforce-smb.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 529,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/screamingfrog.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 14,
+      "words": 1049,
+      "sections": 13,
+      "unique_marked": 9,
+      "editorial_tier": "A",
+      "pub_quality": "ready",
+      "missing": [
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/semrush.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 14,
+      "words": 1340,
+      "sections": 15,
+      "unique_marked": 12,
+      "editorial_tier": "A",
+      "pub_quality": "ready",
+      "missing": [
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/shoeboxed.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 569,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/simpletexting.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 591,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/smartlead.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 500,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/smartli.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 510,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/softr.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 515,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/softsync.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 516,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/spiky.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 568,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/sproutsocial.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 515,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/squarespace.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 510,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/stamped.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 602,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/storydoc.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 605,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/storylane.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 570,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/streak.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 567,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/surferseo.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 13,
+      "words": 982,
+      "sections": 13,
+      "unique_marked": 9,
+      "editorial_tier": "A",
+      "pub_quality": "ready",
+      "missing": [
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/surveymonkey.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 494,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/survicate.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 10,
+      "words": 650,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "C",
+      "pub_quality": "?",
+      "missing": [
+        "no_skip_if",
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/synthesia.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 521,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/systeme.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 14,
+      "words": 1986,
+      "sections": 19,
+      "unique_marked": 11,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/teachable.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 580,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/teamwork.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 497,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/teikametrics.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 576,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/textline.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 536,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/thetop.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 515,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/tidio.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 10,
+      "words": 724,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "C",
+      "pub_quality": "?",
+      "missing": [
+        "no_skip_if",
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/timedoctor.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 511,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/todoist.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 513,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/trainual.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 495,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/transpond.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 489,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/ueni.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 505,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/unbounce.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 496,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/upfluence.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 560,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/upwork.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 496,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/webflow.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 520,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/windsorai.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 514,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/wingify.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 578,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/wrike.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 510,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/writesonic.html",
+      "type": "tool_review",
+      "grade": "B",
+      "score": 12,
+      "words": 546,
+      "sections": 10,
+      "unique_marked": 7,
+      "editorial_tier": "A",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources",
+        "research_based"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/tools/xero.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 594,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/xtiles.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 504,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
     },
     {
       "path": "/tools/zapier.html",
@@ -1446,6 +3554,22 @@
         "no_limitations",
         "no_evidence_sources",
         "research_based"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/zendesk.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 11,
+      "words": 498,
+      "sections": 10,
+      "unique_marked": 8,
+      "editorial_tier": "B",
+      "pub_quality": "?",
+      "missing": [
+        "no_comparisons",
+        "no_evidence_sources"
       ],
       "priority": "none"
     },
@@ -1787,7 +3911,7 @@
       "type": "compare",
       "grade": "A",
       "score": 6,
-      "words": 572,
+      "words": 570,
       "sections": 7,
       "unique_marked": 3,
       "missing": [
@@ -1954,7 +4078,7 @@
       "type": "compare",
       "grade": "A",
       "score": 7,
-      "words": 639,
+      "words": 637,
       "sections": 7,
       "unique_marked": 3,
       "missing": [
@@ -2032,7 +4156,7 @@
       "type": "compare",
       "grade": "A",
       "score": 6,
-      "words": 559,
+      "words": 557,
       "sections": 7,
       "unique_marked": 3,
       "missing": [
@@ -2296,6 +4420,34 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/activecampaign-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/adcreative-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 136,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
       "path": "/alternatives/adobeexpress-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2304,6 +4456,20 @@
       "sections": 5,
       "unique_marked": 1,
       "missing": [
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/adwisely-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
         "no_trade_offs"
       ],
       "priority": "none"
@@ -2320,6 +4486,48 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/aircall-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 91,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/amplitude-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 135,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/apollo-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 134,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
       "path": "/alternatives/asana-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2331,6 +4539,20 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/beautifulai-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 86,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
       "path": "/alternatives/beehiiv-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2339,6 +4561,48 @@
       "sections": 9,
       "unique_marked": 6,
       "missing": [],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/bill-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/brand24-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/breadbutter-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 134,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
       "priority": "none"
     },
     {
@@ -2355,6 +4619,48 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/browseai-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 125,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/callrail-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 117,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/campaignmonitor-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 113,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
       "path": "/alternatives/canva-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2366,6 +4672,34 @@
         "no_trade_offs"
       ],
       "priority": "none"
+    },
+    {
+      "path": "/alternatives/capsule-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/castmagic-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 135,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
     },
     {
       "path": "/alternatives/chatgpt-alternatives.html",
@@ -2381,6 +4715,20 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/circle-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 117,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
       "path": "/alternatives/claude-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2389,6 +4737,20 @@
       "sections": 5,
       "unique_marked": 1,
       "missing": [
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/clevertap-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
         "no_trade_offs"
       ],
       "priority": "none"
@@ -2405,6 +4767,90 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/close-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/closely-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 135,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/cloudtalk-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/confetti-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 111,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/connecteam-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/consensus-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
       "path": "/alternatives/copyai-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2416,6 +4862,20 @@
         "no_trade_offs"
       ],
       "priority": "none"
+    },
+    {
+      "path": "/alternatives/deel-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 117,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
     },
     {
       "path": "/alternatives/descript-alternatives.html",
@@ -2431,6 +4891,34 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/dext-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/dripify-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 133,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
       "path": "/alternatives/elevenlabs-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2439,6 +4927,20 @@
       "sections": 5,
       "unique_marked": 1,
       "missing": [
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/expertex-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 133,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
         "no_trade_offs"
       ],
       "priority": "none"
@@ -2470,6 +4972,34 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/flexiquiz-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 133,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/flocksy-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
       "path": "/alternatives/framer-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2481,6 +5011,48 @@
         "no_trade_offs"
       ],
       "priority": "none"
+    },
+    {
+      "path": "/alternatives/freshbooks-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 111,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/freshdesk-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/gamma-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
     },
     {
       "path": "/alternatives/gemini-alternatives.html",
@@ -2496,6 +5068,48 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/getresponse-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/glide-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/gorgias-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
       "path": "/alternatives/grammarly-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2509,6 +5123,20 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/helpscout-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 114,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
       "path": "/alternatives/hemingway-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2517,6 +5145,34 @@
       "sections": 5,
       "unique_marked": 1,
       "missing": [
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/hibob-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 111,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/hightouch-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
         "no_trade_offs"
       ],
       "priority": "none"
@@ -2557,6 +5213,48 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/instantly-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/instapage-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/intercom-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 133,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
       "path": "/alternatives/invideo-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2594,6 +5292,20 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/keap-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 117,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
       "path": "/alternatives/kit-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2607,6 +5319,34 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/learnworlds-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 111,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/lemlist-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
       "path": "/alternatives/leonardo-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2618,6 +5358,34 @@
         "no_trade_offs"
       ],
       "priority": "none"
+    },
+    {
+      "path": "/alternatives/logome-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 136,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/lusha-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 133,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
     },
     {
       "path": "/alternatives/mailchimp-alternatives.html",
@@ -2646,6 +5414,34 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/manychat-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/meetgeek-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 135,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
       "path": "/alternatives/midjourney-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2654,6 +5450,20 @@
       "sections": 5,
       "unique_marked": 1,
       "missing": [
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/mixpanel-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 135,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
         "no_trade_offs"
       ],
       "priority": "none"
@@ -2672,6 +5482,20 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/moosend-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
       "path": "/alternatives/mozpro-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2681,6 +5505,20 @@
       "unique_marked": 6,
       "missing": [],
       "priority": "none"
+    },
+    {
+      "path": "/alternatives/murf-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 86,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
     },
     {
       "path": "/alternatives/n8n-alternatives.html",
@@ -2694,6 +5532,20 @@
         "no_trade_offs"
       ],
       "priority": "none"
+    },
+    {
+      "path": "/alternatives/netlify-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
     },
     {
       "path": "/alternatives/notebooklm-alternatives.html",
@@ -2720,6 +5572,48 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/nutshell-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 121,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/omnisend-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/omniseo-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 133,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
       "path": "/alternatives/otter-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2728,6 +5622,20 @@
       "sections": 5,
       "unique_marked": 1,
       "missing": [
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/pandadoc-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 111,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
         "no_trade_offs"
       ],
       "priority": "none"
@@ -2746,6 +5654,34 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/pipedrive-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 83,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/pixelunion-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 138,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
       "path": "/alternatives/prowritingaid-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2754,6 +5690,20 @@
       "sections": 5,
       "unique_marked": 1,
       "missing": [
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/quickbooks-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
         "no_trade_offs"
       ],
       "priority": "none"
@@ -2785,6 +5735,34 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/replyio-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 136,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/rgestudio-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 137,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
       "path": "/alternatives/runway-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2793,6 +5771,20 @@
       "sections": 5,
       "unique_marked": 1,
       "missing": [
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/salesforce-smb-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 134,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
         "no_trade_offs"
       ],
       "priority": "none"
@@ -2822,6 +5814,90 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/simpletexting-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/smartlead-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/smartli-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 133,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/softr-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/softsync-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 134,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/sproutsocial-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 134,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
       "path": "/alternatives/squarespace-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2835,6 +5911,62 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/stamped-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 134,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/storydoc-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/storylane-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/streak-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
       "path": "/alternatives/surferseo-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2843,6 +5975,20 @@
       "sections": 5,
       "unique_marked": 1,
       "missing": [
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/surveymonkey-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 111,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
         "no_trade_offs"
       ],
       "priority": "none"
@@ -2874,6 +6020,62 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/teamwork-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/teikametrics-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 133,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/thetop-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/timedoctor-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 114,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
       "path": "/alternatives/todoist-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2885,6 +6087,90 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/trainual-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 111,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/transpond-alternatives.html",
+      "type": "alternatives",
+      "grade": "B",
+      "score": 3,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 1,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/alternatives/ueni-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 133,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/unbounce-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/upfluence-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 133,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/upwork-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 111,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
       "path": "/alternatives/webflow-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2893,6 +6179,34 @@
       "sections": 5,
       "unique_marked": 1,
       "missing": [
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/windsorai-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 134,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/wrike-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 133,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
         "no_trade_offs"
       ],
       "priority": "none"
@@ -2911,6 +6225,34 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/xero-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/alternatives/xtiles-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 131,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
       "path": "/alternatives/zapier-alternatives.html",
       "type": "alternatives",
       "grade": "A",
@@ -2922,11 +6264,25 @@
       "priority": "none"
     },
     {
+      "path": "/alternatives/zendesk-alternatives.html",
+      "type": "alternatives",
+      "grade": "A",
+      "score": 4,
+      "words": 133,
+      "sections": 3,
+      "unique_marked": 2,
+      "missing": [
+        "low_word_count",
+        "no_trade_offs"
+      ],
+      "priority": "none"
+    },
+    {
       "path": "/best/best-ai-assistants-tools.html",
       "type": "best",
       "grade": "A",
       "score": 14,
-      "words": 1716,
+      "words": 1737,
       "sections": 11,
       "unique_marked": 10,
       "missing": [],
@@ -2937,9 +6293,9 @@
       "type": "best",
       "grade": "A",
       "score": 12,
-      "words": 1101,
+      "words": 1099,
       "sections": 9,
-      "unique_marked": 2,
+      "unique_marked": 3,
       "missing": [],
       "priority": "none"
     },
@@ -2947,10 +6303,10 @@
       "path": "/best/best-ai-tools-for-students.html",
       "type": "best",
       "grade": "A",
-      "score": 12,
-      "words": 748,
+      "score": 13,
+      "words": 746,
       "sections": 9,
-      "unique_marked": 4,
+      "unique_marked": 5,
       "missing": [],
       "priority": "none"
     },
@@ -2959,7 +6315,7 @@
       "type": "best",
       "grade": "A",
       "score": 12,
-      "words": 847,
+      "words": 845,
       "sections": 9,
       "unique_marked": 3,
       "missing": [],
@@ -2970,9 +6326,9 @@
       "type": "best",
       "grade": "A",
       "score": 12,
-      "words": 820,
+      "words": 866,
       "sections": 10,
-      "unique_marked": 2,
+      "unique_marked": 3,
       "missing": [],
       "priority": "none"
     },
@@ -2981,9 +6337,9 @@
       "type": "best",
       "grade": "A",
       "score": 12,
-      "words": 779,
+      "words": 825,
       "sections": 10,
-      "unique_marked": 3,
+      "unique_marked": 4,
       "missing": [],
       "priority": "none"
     },
@@ -2992,9 +6348,9 @@
       "type": "best",
       "grade": "A",
       "score": 12,
-      "words": 874,
+      "words": 905,
       "sections": 10,
-      "unique_marked": 3,
+      "unique_marked": 4,
       "missing": [],
       "priority": "none"
     },
@@ -3003,7 +6359,7 @@
       "type": "best",
       "grade": "A",
       "score": 13,
-      "words": 1896,
+      "words": 1938,
       "sections": 11,
       "unique_marked": 10,
       "missing": [
@@ -3016,7 +6372,7 @@
       "type": "best",
       "grade": "A",
       "score": 11,
-      "words": 873,
+      "words": 931,
       "sections": 7,
       "unique_marked": 3,
       "missing": [],
@@ -3027,7 +6383,7 @@
       "type": "best",
       "grade": "A",
       "score": 11,
-      "words": 670,
+      "words": 801,
       "sections": 7,
       "unique_marked": 3,
       "missing": [],
@@ -3049,7 +6405,7 @@
       "type": "best",
       "grade": "A",
       "score": 10,
-      "words": 541,
+      "words": 564,
       "sections": 7,
       "unique_marked": 3,
       "missing": [],
@@ -3059,8 +6415,8 @@
       "path": "/best/best-marketing-tools.html",
       "type": "best",
       "grade": "A",
-      "score": 10,
-      "words": 528,
+      "score": 11,
+      "words": 864,
       "sections": 7,
       "unique_marked": 3,
       "missing": [],
@@ -3070,8 +6426,8 @@
       "path": "/best/best-productivity-tools.html",
       "type": "best",
       "grade": "A",
-      "score": 11,
-      "words": 1078,
+      "score": 12,
+      "words": 1375,
       "sections": 7,
       "unique_marked": 3,
       "missing": [],
@@ -3082,7 +6438,7 @@
       "type": "best",
       "grade": "A",
       "score": 11,
-      "words": 519,
+      "words": 545,
       "sections": 7,
       "unique_marked": 5,
       "missing": [],
@@ -3092,8 +6448,8 @@
       "path": "/best/best-sales-tools.html",
       "type": "best",
       "grade": "A",
-      "score": 10,
-      "words": 479,
+      "score": 11,
+      "words": 807,
       "sections": 7,
       "unique_marked": 4,
       "missing": [],
@@ -3104,7 +6460,7 @@
       "type": "best",
       "grade": "A",
       "score": 14,
-      "words": 2187,
+      "words": 2205,
       "sections": 11,
       "unique_marked": 10,
       "missing": [],
@@ -3115,7 +6471,7 @@
       "type": "best",
       "grade": "A",
       "score": 13,
-      "words": 2207,
+      "words": 2255,
       "sections": 11,
       "unique_marked": 9,
       "missing": [
@@ -3127,10 +6483,10 @@
       "path": "/best/best-website-and-hosting-tools.html",
       "type": "best",
       "grade": "A",
-      "score": 12,
-      "words": 776,
+      "score": 13,
+      "words": 774,
       "sections": 9,
-      "unique_marked": 4,
+      "unique_marked": 5,
       "missing": [],
       "priority": "none"
     },
@@ -3139,7 +6495,7 @@
       "type": "best",
       "grade": "A",
       "score": 11,
-      "words": 702,
+      "words": 773,
       "sections": 7,
       "unique_marked": 3,
       "missing": [],
@@ -3150,20 +6506,33 @@
       "type": "best",
       "grade": "A",
       "score": 11,
-      "words": 1033,
+      "words": 1066,
       "sections": 7,
       "unique_marked": 2,
       "missing": [],
       "priority": "none"
     },
     {
+      "path": "/category/accounting.html",
+      "type": "category",
+      "grade": "B",
+      "score": 3,
+      "words": 331,
+      "sections": 7,
+      "unique_marked": 3,
+      "missing": [
+        "no_sub_use_cases"
+      ],
+      "priority": "medium"
+    },
+    {
       "path": "/category/ai-assistants.html",
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 566,
-      "sections": 11,
-      "unique_marked": 3,
+      "words": 577,
+      "sections": 10,
+      "unique_marked": 4,
       "missing": [
         "no_sub_use_cases"
       ],
@@ -3174,9 +6543,22 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 587,
+      "words": 641,
       "sections": 11,
-      "unique_marked": 3,
+      "unique_marked": 4,
+      "missing": [
+        "no_sub_use_cases"
+      ],
+      "priority": "low"
+    },
+    {
+      "path": "/category/customer-support.html",
+      "type": "category",
+      "grade": "A",
+      "score": 4,
+      "words": 885,
+      "sections": 10,
+      "unique_marked": 5,
       "missing": [
         "no_sub_use_cases"
       ],
@@ -3187,9 +6569,9 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 597,
-      "sections": 11,
-      "unique_marked": 3,
+      "words": 654,
+      "sections": 9,
+      "unique_marked": 4,
       "missing": [
         "no_sub_use_cases"
       ],
@@ -3200,9 +6582,9 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 609,
+      "words": 770,
       "sections": 11,
-      "unique_marked": 3,
+      "unique_marked": 4,
       "missing": [
         "no_sub_use_cases"
       ],
@@ -3213,9 +6595,9 @@
       "type": "category",
       "grade": "A",
       "score": 5,
-      "words": 481,
-      "sections": 12,
-      "unique_marked": 4,
+      "words": 471,
+      "sections": 11,
+      "unique_marked": 5,
       "missing": [],
       "priority": "low"
     },
@@ -3224,9 +6606,9 @@
       "type": "category",
       "grade": "A",
       "score": 6,
-      "words": 579,
-      "sections": 12,
-      "unique_marked": 4,
+      "words": 603,
+      "sections": 10,
+      "unique_marked": 5,
       "missing": [],
       "priority": "low"
     },
@@ -3235,9 +6617,9 @@
       "type": "category",
       "grade": "A",
       "score": 6,
-      "words": 549,
-      "sections": 12,
-      "unique_marked": 4,
+      "words": 1120,
+      "sections": 11,
+      "unique_marked": 5,
       "missing": [],
       "priority": "low"
     },
@@ -3246,9 +6628,9 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 789,
-      "sections": 11,
-      "unique_marked": 3,
+      "words": 1158,
+      "sections": 10,
+      "unique_marked": 4,
       "missing": [
         "no_sub_use_cases"
       ],
@@ -3259,8 +6641,8 @@
       "type": "category",
       "grade": "A",
       "score": 6,
-      "words": 544,
-      "sections": 12,
+      "words": 573,
+      "sections": 10,
       "unique_marked": 5,
       "missing": [],
       "priority": "low"
@@ -3270,9 +6652,9 @@
       "type": "category",
       "grade": "A",
       "score": 6,
-      "words": 608,
-      "sections": 12,
-      "unique_marked": 4,
+      "words": 1195,
+      "sections": 11,
+      "unique_marked": 5,
       "missing": [],
       "priority": "low"
     },
@@ -3281,9 +6663,9 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 670,
+      "words": 694,
       "sections": 11,
-      "unique_marked": 3,
+      "unique_marked": 4,
       "missing": [
         "no_sub_use_cases"
       ],
@@ -3294,9 +6676,9 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 738,
+      "words": 782,
       "sections": 11,
-      "unique_marked": 3,
+      "unique_marked": 4,
       "missing": [
         "no_sub_use_cases"
       ],
@@ -3307,9 +6689,9 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 545,
-      "sections": 11,
-      "unique_marked": 3,
+      "words": 613,
+      "sections": 9,
+      "unique_marked": 4,
       "missing": [
         "no_sub_use_cases"
       ],
@@ -3320,9 +6702,9 @@
       "type": "category",
       "grade": "A",
       "score": 6,
-      "words": 663,
-      "sections": 11,
-      "unique_marked": 3,
+      "words": 681,
+      "sections": 9,
+      "unique_marked": 4,
       "missing": [],
       "priority": "low"
     }
