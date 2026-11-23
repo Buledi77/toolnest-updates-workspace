@@ -127,7 +127,9 @@
         "freeTrial": {
           "available": true,
           "duration_days": 7
-        }
+        },
+        "billingBasis": "annual and monthly billing",
+        "checkedOn": "2026-11-23"
       },
       "cons": [
         "Creative quality varies by prompt and niche",
@@ -246,7 +248,9 @@
         "freeTrial": {
           "available": true,
           "duration_days": 30
-        }
+        },
+        "billingBasis": "monthly",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -298,15 +302,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": false,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "7-day free trial available on both Self-Serve and Concierge plans."
       },
       "cons": [
         "Shopify-only, not for other platforms",
@@ -435,7 +437,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "monthly and annual billing",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -583,15 +587,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": true,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "No separate trial — free plan serves as the entry point with no time limit."
       },
       "cons": [
         "Pricing scales with event volume",
@@ -715,7 +717,10 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "annual billing",
+        "checkedOn": "2026-11-23",
+        "trial": "Free trial available giving access to most features before committing. Free plan also available."
       },
       "cons": [
         "Data accuracy outside US is lower",
@@ -892,7 +897,9 @@
         "freeTrial": {
           "available": true,
           "duration_days": 14
-        }
+        },
+        "billingBasis": "monthly",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -1363,7 +1370,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "monthly",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -1772,7 +1781,9 @@
         "freeTrial": {
           "available": true,
           "duration_days": 30
-        }
+        },
+        "billingBasis": "annual",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -2203,7 +2214,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "monthly billing",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -2261,15 +2274,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": true,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "30-day free trial available for apps with MAUs less than 100K."
       },
       "cons": [
         "Expensive for SMB",
@@ -2479,15 +2490,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": false,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "Free trial available ('Start free trial' on pricing page)."
       },
       "cons": [
         "Focused on outbound",
@@ -2708,7 +2717,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "as listed on official pricing page",
+        "checkedOn": "2026-11-23"
       },
       "cons": [
         "Primarily for culture/EX",
@@ -2832,7 +2843,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "annual billing",
+        "checkedOn": "2026-11-23"
       },
       "cons": [
         "Free plan limited to 10 users",
@@ -2995,7 +3008,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "monthly and annual billing",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -3132,7 +3147,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "annual billing",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -3293,15 +3310,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": false,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "7-day free trial available with no credit card required."
       },
       "cons": [
         "LinkedIn account risk with automation",
@@ -3435,7 +3450,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "monthly and annual billing",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -4101,15 +4118,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": true,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "14-day free trial available with full feature access and no credit card required."
       },
       "cons": [],
       "bestFor": [],
@@ -4302,7 +4317,9 @@
         "freeTrial": {
           "available": true,
           "duration_days": 30
-        }
+        },
+        "billingBasis": "monthly",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -4531,7 +4548,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "monthly",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -4583,15 +4602,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": true,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "Free trial available on paid plans ('Try for Free' on pricing page). Envoy AI agent has 3-month free trial."
       },
       "cons": [
         "AI Answers costs extra ($0.75/resolution)",
@@ -4753,7 +4770,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "as listed on official pricing page",
+        "checkedOn": "2026-11-23"
       },
       "cons": [
         "Custom pricing unclear for SMB",
@@ -5040,7 +5059,10 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "annual billing",
+        "checkedOn": "2026-11-23",
+        "trial": "14-day free trial available on paid plans with no credit card required."
       },
       "cons": [],
       "bestFor": [],
@@ -5311,15 +5333,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": false,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "14-day free trial available with no credit card required."
       },
       "cons": [
         "Expensive for small teams",
@@ -5493,7 +5513,9 @@
         "freeTrial": {
           "available": true,
           "duration_days": 5
-        }
+        },
+        "billingBasis": "monthly",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -5631,7 +5653,7 @@
         "High starting price at $299/mo",
         "Required $500 implementation fee",
         "Steep price increase for additional contacts",
-        "Trustpilot rating 1.1/5 \u2014 billing and cancellation complaints"
+        "Trustpilot rating 1.1/5 — billing and cancellation complaints"
       ],
       "platforms": [
         "web",
@@ -5741,7 +5763,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "monthly",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -5889,15 +5913,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": false,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "30-day free trial available on all plans."
       },
       "cons": [
         "Transaction fees on entry plan",
@@ -6203,15 +6225,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": true,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "No separate trial — free plan serves as entry point with 40 credits/month permanently."
       },
       "cons": [
         "Credit-based system limits usage",
@@ -6329,13 +6349,14 @@
             "period": "month"
           }
         ],
-        "freePlan": {
-          "available": true
-        },
+        "freePlan": true,
         "freeTrial": {
           "available": true,
           "duration_days": 14
-        }
+        },
+        "billingBasis": "monthly",
+        "checkedOn": "2026-11-23",
+        "trial": "14-day free trial available on paid plans with no credit card required."
       },
       "cons": [],
       "bestFor": [],
@@ -6533,7 +6554,9 @@
         "freeTrial": {
           "available": true,
           "duration_days": 14
-        }
+        },
+        "billingBasis": "annual and monthly billing",
+        "checkedOn": "2026-11-23"
       },
       "cons": [
         "Meeting limits on free tier",
@@ -6651,7 +6674,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "monthly",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -6703,15 +6728,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": true,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "No separate trial — free plan serves as entry point. Startup program offers up to $50,000 in credits for qualifying companies."
       },
       "cons": [
         "Pricing scales with event volume",
@@ -6834,7 +6857,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "annual billing, 3-seat minimum",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -7263,7 +7288,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "annual and monthly billing",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -7371,15 +7398,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": true,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "No separate trial — free plan serves as entry point. Paid plans available with monthly billing."
       },
       "cons": [
         "Primarily for eCommerce",
@@ -7667,7 +7692,9 @@
         "freeTrial": {
           "available": true,
           "duration_days": 14
-        }
+        },
+        "billingBasis": "annual and monthly billing",
+        "checkedOn": "2026-11-23"
       },
       "cons": [
         "Per-user pricing scales cost",
@@ -7841,13 +7868,13 @@
             "period": "month"
           }
         ],
-        "freePlan": {
-          "available": false
-        },
+        "freePlan": false,
         "freeTrial": {
           "available": true,
           "duration_days": 14
-        }
+        },
+        "billingBasis": "annual billing",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -8090,7 +8117,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "monthly billing",
+        "checkedOn": "2026-11-23"
       },
       "cons": [
         "Can be complex for simple needs",
@@ -8207,7 +8236,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "monthly",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -8478,15 +8509,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": false,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "14-day free trial available."
       },
       "cons": [
         "Per-user pricing scales cost",
@@ -8893,7 +8922,9 @@
         "freeTrial": {
           "available": true,
           "duration_days": 30
-        }
+        },
+        "billingBasis": "annual and monthly billing",
+        "checkedOn": "2026-11-23"
       },
       "cons": [
         "Advanced features require higher tiers",
@@ -8992,15 +9023,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": false,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "14-day free trial available."
       },
       "cons": [
         "SMS-only, no MMS on entry",
@@ -9095,15 +9124,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": false,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "Free trial available with 50% off first month on any plan."
       },
       "cons": [
         "Per-seat pricing scales cost",
@@ -9404,15 +9431,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": false,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "Trial status unclear from official sources. 'Get access' CTA on pricing page."
       },
       "cons": [
         "New product, limited track record",
@@ -9507,15 +9532,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": true,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "Trial equivalent to Premium plan excluding CRM functionality. Free plan also available."
       },
       "cons": [
         "Entry price at $49/mo is above market median",
@@ -9610,15 +9633,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": false,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "30-day free trial available on all plans, no credit card required."
       },
       "cons": [
         "Expensive for small teams",
@@ -10074,15 +10095,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": true,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "14-day free trial of Pro+ plan available, including integrations, automation, unlimited contacts and CRM records, and 1,000 AI credits."
       },
       "cons": [
         "Gmail-only, no Outlook support",
@@ -10237,15 +10256,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": true,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "No separate trial — free plan serves as entry point. Paid plans available with monthly billing."
       },
       "cons": [
         "Limited free plan",
@@ -10516,15 +10533,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": false,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "7-day free trial available on all plans with 30-day money-back guarantee."
       },
       "cons": [
         "Transaction fees on top of plan price",
@@ -10649,7 +10664,9 @@
         "freeTrial": {
           "available": true,
           "duration_days": 14
-        }
+        },
+        "billingBasis": "annual and monthly billing",
+        "checkedOn": "2026-11-23"
       },
       "cons": [
         "No free plan",
@@ -11138,7 +11155,9 @@
         "freeTrial": {
           "available": true,
           "duration_days": 14
-        }
+        },
+        "billingBasis": "annual and monthly billing",
+        "checkedOn": "2026-11-23"
       },
       "cons": [
         "Privacy concerns with activity monitoring",
@@ -11257,7 +11276,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "annual billing",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -11323,7 +11344,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "as listed on official pricing page",
+        "checkedOn": "2026-11-23"
       },
       "cons": [
         "Primarily for SMB",
@@ -11837,7 +11860,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "as listed on official pricing page",
+        "checkedOn": "2026-11-23"
       },
       "cons": [
         "Client service fee",
@@ -12232,7 +12257,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "annual billing",
+        "checkedOn": "2026-11-23"
       },
       "cons": [
         "Can feel complex for simple needs",
@@ -12356,7 +12383,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "monthly",
+        "checkedOn": "2026-11-23"
       },
       "cons": [],
       "bestFor": [],
@@ -12432,7 +12461,9 @@
         "freeTrial": {
           "available": true,
           "duration_days": 30
-        }
+        },
+        "billingBasis": "monthly billing",
+        "checkedOn": "2026-11-23"
       },
       "cons": [
         "Limited for complex accounting",
@@ -12694,15 +12725,13 @@
       "shortDescription": null,
       "pricing": {
         "model": null,
-        "currency": null,
+        "currency": "USD",
         "tiers": [],
-        "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
+        "freePlan": false,
         "lastChecked": null,
-        "sourceRefs": []
+        "sourceRefs": [],
+        "checkedOn": "2026-11-23",
+        "trial": "14-day free trial available on Suite Professional level features."
       },
       "cons": [
         "Expensive for small teams",
@@ -12839,7 +12868,9 @@
         ],
         "freePlan": {
           "available": true
-        }
+        },
+        "billingBasis": "monthly",
+        "checkedOn": "2026-11-23"
       },
       "alternatives": []
     },
@@ -12905,7 +12936,9 @@
         },
         "freeTrial": {
           "available": false
-        }
+        },
+        "billingBasis": "monthly",
+        "checkedOn": "2026-11-23"
       },
       "alternatives": []
     },
@@ -12921,6 +12954,30 @@
       "logo": "/assets/logos/lovable.png",
       "affiliateUrl": "",
       "alternatives": []
+    },
+    {
+      "id": "fixture-tool",
+      "name": "Fixture Tool",
+      "discovery": {
+        "platforms": [
+          "web"
+        ],
+        "categories": [
+          "Testing"
+        ]
+      },
+      "pricing": {
+        "checkedOn": "2026-01-01",
+        "currency": "USD",
+        "billingBasis": "monthly",
+        "freePlan": false,
+        "plans": [
+          {
+            "name": "Pro",
+            "priceMonthly": 50
+          }
+        ]
+      }
     }
   ]
 }

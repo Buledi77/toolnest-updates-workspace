@@ -39,10 +39,13 @@
       }
     ],
     "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
-    "pricing_status": [],
-    "pricing_regions": [],
+    "free_plan_status": "Free plan available with limited credits and watermark",
+    "trial_status": "No free trial; free plan serves as ongoing trial",
+    "pricing_status": "Freemium \u2014 free tier plus paid subscriptions from $10/month",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ],
     "availability_regions": []
   },
   "editorial": {
@@ -100,10 +103,57 @@
   },
   "freshness": {
     "created_at": "2026-11-20T15:27:01Z",
-    "updated_at": "2026-11-20T15:27:01Z",
-    "last_verified_at": null,
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z",
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://invideo.io/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 50,
+    "freePlan": true,
+    "freeLimits": "Limited credits, watermarked exports",
+    "trial": "No free trial; free plan serves as ongoing trial",
+    "plans": [
+      {
+        "name": "Starter",
+        "priceMonthly": 20,
+        "priceAnnualMonthlyEquivalent": 10,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "credits": 400
+        },
+        "notes": "Per seat. Seedance 2.0 Fast and Mini only."
+      },
+      {
+        "name": "Plus",
+        "priceMonthly": 60,
+        "priceAnnualMonthlyEquivalent": 30,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "credits": 2000
+        },
+        "notes": "Per seat. All frontier agents, Seedance 2.5 at 1080p."
+      },
+      {
+        "name": "Max",
+        "priceMonthly": 150,
+        "priceAnnualMonthlyEquivalent": 75,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "credits": "5000-15000"
+        },
+        "notes": "Per seat. All models and features."
+      }
+    ],
+    "billingCaveat": "Unused credits do not roll over. Video models billed per second, so long or 4K clips burn credits fast. Team plans also available from $65/seat/month.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

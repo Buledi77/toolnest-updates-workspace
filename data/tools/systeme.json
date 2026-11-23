@@ -39,9 +39,9 @@
       }
     ],
     "limitations": [],
-    "free_plan_status": [],
+    "free_plan_status": "Free plan available (details not verified)",
     "trial_status": [],
-    "pricing_status": [],
+    "pricing_status": "Freemium (details not verified)",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -100,10 +100,17 @@
   },
   "freshness": {
     "created_at": "2026-11-20T15:27:01Z",
-    "updated_at": "2026-11-20T15:27:01Z",
+    "updated_at": "2026-11-23T20:00:00Z",
     "last_verified_at": null,
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
+  },
+  "pricing": {
+    "checkedOn": null,
+    "pricing_status": "Freemium (details not verified)",
+    "freePlan": true,
+    "plans": [],
+    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
   }
 }

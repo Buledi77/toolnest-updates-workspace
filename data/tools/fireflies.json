@@ -39,10 +39,13 @@
       }
     ],
     "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
-    "pricing_status": [],
-    "pricing_regions": [],
+    "free_plan_status": "Free plan with unlimited transcription, 400 minutes storage per team",
+    "trial_status": "No free trial; free plan serves as ongoing trial",
+    "pricing_status": "Freemium \u2014 free tier plus paid subscriptions from $10/user/month",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ],
     "availability_regions": []
   },
   "editorial": {
@@ -99,10 +102,71 @@
   },
   "freshness": {
     "created_at": "2026-11-20T15:27:01Z",
-    "updated_at": "2026-11-20T15:27:01Z",
-    "last_verified_at": null,
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z",
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://fireflies.ai/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 44,
+    "freePlan": true,
+    "freeLimits": "Unlimited transcription, 400 minutes storage per team, 20 AI credits",
+    "trial": "No free trial; free plan serves as ongoing trial",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "storage": "400 min per team",
+          "aiCredits": 20
+        },
+        "notes": "Unlimited transcription. 2-hour max recording."
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 18,
+        "priceAnnualMonthlyEquivalent": 10,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "storage": "8000 min per seat",
+          "aiCredits": 20
+        },
+        "notes": "Per seat. Video recording, downloads."
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 29,
+        "priceAnnualMonthlyEquivalent": 19,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "storage": "unlimited",
+          "aiCredits": 30
+        },
+        "notes": "Per seat. Team analytics, conversation intelligence."
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": 39,
+        "priceAnnualMonthlyEquivalent": 39,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "storage": "unlimited",
+          "aiCredits": 50
+        },
+        "notes": "Per seat. Annual billing only. SSO, HIPAA, audit logs."
+      }
+    ],
+    "billingCaveat": "Annual billing saves 44% on Pro and Business. Enterprise is annual only. Extra AI credits available from $5/month for 50.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

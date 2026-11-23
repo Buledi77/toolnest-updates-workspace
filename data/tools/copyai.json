@@ -39,10 +39,13 @@
       }
     ],
     "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
-    "pricing_status": [],
-    "pricing_regions": [],
+    "free_plan_status": "No free plan (previously available, now sunset)",
+    "trial_status": "No free trial",
+    "pricing_status": "Paid — subscriptions from $24/month for 5 seats",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ],
     "availability_regions": []
   },
   "editorial": {
@@ -100,10 +103,69 @@
   },
   "freshness": {
     "created_at": "2026-11-20T15:27:01Z",
-    "updated_at": "2026-11-20T15:27:01Z",
-    "last_verified_at": null,
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z",
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://www.copy.ai/prices"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly and annual billing",
+    "annualDiscount": 17,
+    "freePlan": false,
+    "trial": "No free trial",
+    "plans": [
+      {
+        "name": "Chat",
+        "priceMonthly": 29,
+        "priceAnnualMonthlyEquivalent": 24,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "seats": 5
+        },
+        "notes": "Unlimited words in Chat. 5 seats included."
+      },
+      {
+        "name": "Growth",
+        "priceMonthly": 1000,
+        "priceAnnualMonthlyEquivalent": 1000,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "seats": 75,
+          "workflowCredits": 20000
+        },
+        "notes": "Annual billing only. Workflow automation."
+      },
+      {
+        "name": "Expansion",
+        "priceMonthly": 2000,
+        "priceAnnualMonthlyEquivalent": 2000,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "seats": 150,
+          "workflowCredits": 45000
+        },
+        "notes": "Annual billing only."
+      },
+      {
+        "name": "Scale",
+        "priceMonthly": 3000,
+        "priceAnnualMonthlyEquivalent": 3000,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "seats": 200,
+          "workflowCredits": 75000
+        },
+        "notes": "Annual billing only."
+      }
+    ],
+    "billingCaveat": "Chat plan covers 5 seats for $24/month annually. Growth and above are annual-only. Enterprise is custom.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

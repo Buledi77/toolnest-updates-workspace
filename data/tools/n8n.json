@@ -39,10 +39,13 @@
       }
     ],
     "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
-    "pricing_status": [],
-    "pricing_regions": [],
+    "free_plan_status": "Free Community Edition, self-hosted with unlimited executions",
+    "trial_status": "No free trial for cloud; Community Edition is free self-hosted",
+    "pricing_status": "Freemium \u2014 free self-hosted tier plus cloud subscriptions from $20/month",
+    "pricing_regions": [
+      "EU",
+      "Global"
+    ],
     "availability_regions": []
   },
   "editorial": {
@@ -102,10 +105,71 @@
   },
   "freshness": {
     "created_at": "2026-11-20T15:27:01Z",
-    "updated_at": "2026-11-20T15:27:01Z",
-    "last_verified_at": null,
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z",
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://n8n.io/pricing"
+    ],
+    "currency": "EUR",
+    "billingBasis": "monthly",
+    "annualDiscount": 17,
+    "freePlan": true,
+    "freeLimits": "Community Edition: self-hosted, unlimited executions, you pay for your own server",
+    "trial": "No free trial for cloud; Community Edition is free self-hosted",
+    "plans": [
+      {
+        "name": "Community Edition",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "executions": "unlimited",
+          "hosting": "self-hosted"
+        },
+        "notes": "Source-available. You run and maintain it."
+      },
+      {
+        "name": "Starter",
+        "priceMonthly": 24,
+        "priceAnnualMonthlyEquivalent": 20,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "executions": 2500,
+          "concurrency": 5
+        },
+        "notes": "n8n Cloud. 1 shared project."
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 60,
+        "priceAnnualMonthlyEquivalent": 50,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "executions": 10000,
+          "concurrency": 20
+        },
+        "notes": "n8n Cloud. 3 shared projects, admin roles."
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 800,
+        "priceAnnualMonthlyEquivalent": 667,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "executions": 40000,
+          "concurrency": 30
+        },
+        "notes": "Self-hosted. SSO, LDAP, environments."
+      }
+    ],
+    "billingCaveat": "Prices in EUR. One execution = one workflow run regardless of steps. Overage billed at API rates. Enterprise is custom.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

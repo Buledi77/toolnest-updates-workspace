@@ -130,12 +130,12 @@
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": "2026-11-22",
+    "checkedOn": "2026-11-23",
     "sourceUrls": [
       "https://www.canva.com/pricing/"
     ],
     "currency": "USD",
-    "billingBasis": "monthly",
+    "billingBasis": "annual",
     "annualDiscount": 17,
     "freePlan": true,
     "freeLimits": "250K+ templates, 5GB storage, basic tools, limited AI features, 1 Brand Kit with 3 colors",

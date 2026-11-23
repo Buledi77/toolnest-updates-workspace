@@ -136,12 +136,12 @@
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": "2026-11-22",
+    "checkedOn": "2026-11-23",
     "sourceUrls": [
       "https://www.notion.so/pricing"
     ],
     "currency": "USD",
-    "billingBasis": "monthly",
+    "billingBasis": "annual and monthly billing",
     "annualDiscount": 17,
     "freePlan": true,
     "freeLimits": "Unlimited blocks for solo use; 1,000 blocks for teams, 5 MB file uploads, 10 guests, 7-day page history",

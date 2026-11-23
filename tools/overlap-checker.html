@@ -27,10 +27,44 @@
 
 <style>
 .ov-wrap{max-width:880px;margin:0 auto}
-.ov-selectors{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
-.ov-selectors select{width:100%;padding:12px 16px;font:500 16px var(--font-body);border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%234F635E' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;cursor:pointer}
-.ov-selectors select:focus{outline:none;border-color:var(--ring);box-shadow:0 0 0 3px rgba(15,107,92,.15)}
+.ov-selectors{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;margin:24px 0;align-items:start}
+.ov-selector-panel{border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--surface)}
+.ov-selector-panel:first-child{border-left:3px solid #0F6B5C}
+.ov-selector-panel:last-child{border-left:3px solid #7C3AED}
+.ov-selectors select{width:100%;padding:12px 16px;font:500 16px var(--font-body);border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%234F635E' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;cursor:pointer}
+.ov-selectors select:focus{outline:none;border-color:var(--ring);box-shadow:0 0 0 3px rgba(124,58,237,.15)}
+/* Searchable combobox styles */
+.ov-combobox{position:relative;width:100%}
+.ov-combobox-input{width:100%;padding:12px 40px 12px 16px;font:500 16px var(--font-body);border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);box-sizing:border-box}
+.ov-combobox-input:focus{outline:none;border-color:var(--ring);box-shadow:0 0 0 3px rgba(124,58,237,.15)}
+.ov-combobox-input::placeholder{color:var(--muted);font-weight:400}
+.ov-combobox-clear{position:absolute;right:32px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--muted);cursor:pointer;padding:4px;font-size:16px;line-height:1}
+.ov-combobox-clear:hover{color:var(--ink)}
+.ov-combobox-toggle{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--muted);cursor:pointer;padding:4px}
+.ov-combobox-dropdown{position:absolute;top:100%;left:0;right:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.12);max-height:280px;overflow-y:auto;z-index:1000;display:none;margin-top:4px}
+.ov-combobox-dropdown.open{display:block}
+.ov-combobox-option{padding:10px 14px;cursor:pointer;font-size:14px;color:var(--ink);transition:background .15s ease}
+.ov-combobox-option:hover,.ov-combobox-option.highlighted{background:var(--soft)}
+.ov-combobox-option.selected{background:rgba(124,58,237,.08);font-weight:600}
+.ov-combobox-option .ov-option-cat{font-size:12px;color:var(--muted);margin-left:6px}
+.ov-combobox-no-results{padding:16px;text-align:center;color:var(--muted);font-size:14px}
+@media(max-width:640px){
+ .ov-combobox-dropdown{max-height:200px}
+ .ov-combobox-input{font-size:16px;padding:14px 40px 14px 16px}
+}
 .ov-label{font-weight:600;font-size:14px;color:var(--muted);margin-bottom:6px;display:block}
+.ov-tool-preview{display:flex;align-items:center;gap:8px;margin-top:10px;padding:8px 10px;background:var(--soft);border-radius:8px;font-size:13px;color:var(--muted)}
+.ov-tool-preview img{width:28px;height:28px;border-radius:6px;object-fit:contain;background:#fff}
+.ov-tool-preview .ov-preview-name{font-weight:600;color:var(--ink)}
+.ov-tool-preview .ov-preview-cat{font-size:12px;color:var(--muted)}
+.ov-swap-btn-wrap{display:flex;align-items:center;padding-top:20px}
+.ov-swap-btn{padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-size:13px;font-weight:600;cursor:pointer;transition:all .2s ease}
+.ov-swap-btn:hover{background:#7C3AED;color:#fff;border-color:#7C3AED}
+.ov-analyze-btn{padding:12px 24px;border-radius:12px;border:none;background:#7C3AED;color:#fff;font:600 15px var(--font-body);cursor:pointer;transition:background .2s ease,transform .2s ease;box-shadow:0 8px 20px -8px #7C3AED}
+.ov-analyze-btn:hover{background:#6B21D0;transform:translateY(-1px)}
+.ov-analyze-btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.ov-reset-btn{padding:8px 18px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-size:13px;font-weight:600;cursor:pointer;transition:all .2s ease}
+.ov-reset-btn:hover{background:var(--soft);color:#7C3AED}
 .ov-result{display:none;margin-top:24px}
 .ov-result.visible{display:block}
 .ov-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:16px;box-shadow:var(--shadow)}
@@ -62,12 +96,6 @@
 .ov-filter button:hover,.ov-filter button.active{background:var(--brand);color:#fff;border-color:var(--brand)}
 .ov-empty{text-align:center;padding:40px 20px;color:var(--muted)}
 .ov-empty p{font-size:16px;margin:0}
-.ov-swap-btn-wrap{display:flex;align-items:flex-end;justify-content:center;padding-bottom:18px}
-.ov-swap-btn{padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-size:13px;font-weight:600;cursor:pointer;transition:all .2s ease}
-.ov-swap-btn:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
-.ov-actions-bar{display:flex;justify-content:center;margin:12px 0}
-.ov-reset-btn{padding:8px 18px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-size:13px;font-weight:600;cursor:pointer;transition:all .2s ease}
-.ov-reset-btn:hover{background:var(--soft);color:var(--brand)}
 .ov-evidence-quality{font-size:13px;font-weight:600;color:var(--muted);margin:0 0 8px;text-transform:uppercase;letter-spacing:.05em}
 .ov-evidence{margin:16px 0;padding:16px;background:var(--soft);border-radius:12px}
 .ov-evidence h4{font-size:14px;font-weight:600;margin:0 0 10px;color:var(--ink)}
@@ -83,6 +111,19 @@
 .ov-tags-shared ul,.ov-tags-unique ul{margin:0;padding-left:16px}
 .ov-tags-shared li,.ov-tags-unique li{font-size:13px;line-height:1.5;color:var(--muted);margin-bottom:2px}
 .ov-data-warning{margin:16px 0;padding:12px 16px;background:rgba(180,83,9,.06);border:1px solid rgba(180,83,9,.2);border-radius:10px;font-size:13px;color:var(--muted);line-height:1.5}
+.ov-related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:16px}
+.ov-related-card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;padding:20px;background:var(--surface);transition:box-shadow .2s ease,border-color .2s ease;position:relative;overflow:hidden}
+.ov-related-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:#7C3AED;border-radius:14px 14px 0 0}
+.ov-related-card:hover{box-shadow:0 2px 8px rgba(11,34,32,.1),0 18px 40px -20px rgba(11,34,32,.32);border-color:#7C3AED}
+.ov-related-card-icon{width:40px;height:40px;border-radius:10px;background:rgba(124,58,237,.1);display:grid;place-items:center;color:#7C3AED;margin-bottom:14px;flex-shrink:0}
+.ov-related-card-icon svg{width:22px;height:22px}
+.ov-related-card-body{flex:1}
+.ov-related-card-title{font-size:16px;font-weight:700;color:var(--ink);margin:0 0 6px}
+.ov-related-card-desc{font-size:14px;color:var(--muted);margin:0 0 8px;line-height:1.5}
+.ov-related-card-outcome{font-size:13px;color:#7C3AED;margin:0 0 14px;line-height:1.5;font-weight:500}
+.ov-related-card-cta{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:10px;border:none;background:#7C3AED;color:#fff;font:600 14px var(--font-body);text-decoration:none;transition:background .2s ease,transform .2s ease;align-self:flex-start;margin-top:auto}
+.ov-related-card-cta:hover{background:#6B21D0;transform:translateY(-1px)}
+.ov-related-card-cta:focus-visible{outline:3px solid var(--ring);outline-offset:2px}
 @media(max-width:640px){
  .ov-selectors{grid-template-columns:1fr}
  .ov-tools{grid-template-columns:1fr}
@@ -172,23 +213,32 @@
 </div>
 
 <div class="ov-selectors">
-<div>
-<label class="ov-label" for="ovToolA">Tool A</label>
-<select id="ovToolA" aria-label="Select first tool">
-<option value="">Select a tool…</option>
-</select>
+<div class="ov-selector-panel">
+<label class="ov-label" for="ovToolAInput">Tool A</label>
+<div class="ov-combobox" id="ovToolACombobox" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-label="Select first tool">
+<input type="text" class="ov-combobox-input" id="ovToolAInput" autocomplete="off" aria-autocomplete="list" placeholder="Search tools…">
+<button type="button" class="ov-combobox-clear" id="ovToolAClear" aria-label="Clear selection" style="display:none">✕</button>
+<button type="button" class="ov-combobox-toggle" aria-label="Toggle dropdown">▾</button>
+<div class="ov-combobox-dropdown" id="ovToolADropdown" role="listbox"></div>
+</div>
+<div class="ov-tool-preview" id="ovToolAPreview"></div>
 </div>
 <div class="ov-swap-btn-wrap">
-<button class="ov-swap-btn" id="ovSwapBtn" type="button" aria-label="Swap tools" title="Swap tools" style="margin-top:28px">⇄ Swap</button>
+<button class="ov-swap-btn" id="ovSwapBtn" type="button" aria-label="Swap tools" title="Swap tools">⇄ Swap</button>
 </div>
-<div>
-<label class="ov-label" for="ovToolB">Tool B</label>
-<select id="ovToolB" aria-label="Select second tool">
-<option value="">Select a tool…</option>
-</select>
+<div class="ov-selector-panel">
+<label class="ov-label" for="ovToolBInput">Tool B</label>
+<div class="ov-combobox" id="ovToolBCombobox" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-label="Select second tool">
+<input type="text" class="ov-combobox-input" id="ovToolBInput" autocomplete="off" aria-autocomplete="list" placeholder="Search tools…">
+<button type="button" class="ov-combobox-clear" id="ovToolBClear" aria-label="Clear selection" style="display:none">✕</button>
+<button type="button" class="ov-combobox-toggle" aria-label="Toggle dropdown">▾</button>
+<div class="ov-combobox-dropdown" id="ovToolBDropdown" role="listbox"></div>
+</div>
+<div class="ov-tool-preview" id="ovToolBPreview"></div>
 </div>
 </div>
 <div class="ov-actions-bar">
+<button class="ov-analyze-btn" id="ovAnalyzeBtn" type="button">Analyze Overlap</button>
 <button class="ov-reset-btn" id="ovResetBtn" type="button">Reset</button>
 </div>
 
@@ -221,19 +271,29 @@
 
 <section class="p-sec">
 <h2>Related tools</h2>
-<div class="p-feats">
-<div class="p-feat">
-<b>Decision Engine</b>
-<p>Get scored tool recommendations based on your use cases and criteria.</p>
+<div class="ov-related-grid">
+<div class="ov-related-card">
+<div class="ov-related-card-icon">
+<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.4" y2="16.4"/></svg>
 </div>
-<div class="p-feat">
-<b>Stack Cost Analyzer</b>
-<p>Select multiple tools and see your combined monthly and annual cost estimates.</p>
+<div class="ov-related-card-body">
+<h3 class="ov-related-card-title">Decision Engine</h3>
+<p class="ov-related-card-desc">Get scored tool recommendations based on your use cases and criteria.</p>
+<p class="ov-related-card-outcome">Find the right tool with transparent, explainable matching against 153 reviewed tools.</p>
 </div>
+<a class="ov-related-card-cta" href="/tools/decision-engine.html">Find My Tool <span aria-hidden="true">→</span></a>
 </div>
-<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px">
-<a class="btn" href="/tools/decision-engine.html">Open Decision Engine</a>
-<a class="btn" href="/tools/stack-analyzer.html" style="background:var(--soft);color:var(--brand);border:1px solid var(--line)">Analyze Stack Costs</a>
+<div class="ov-related-card">
+<div class="ov-related-card-icon">
+<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+</div>
+<div class="ov-related-card-body">
+<h3 class="ov-related-card-title">Stack Cost Analyzer</h3>
+<p class="ov-related-card-desc">Select multiple tools and see your combined monthly and annual cost estimates.</p>
+<p class="ov-related-card-outcome">Know your total tool spend at a glance, with unknown pricing clearly separated.</p>
+</div>
+<a class="ov-related-card-cta" href="/tools/stack-analyzer.html">Analyze Costs <span aria-hidden="true">→</span></a>
+</div>
 </div>
 </section>
 
@@ -327,8 +387,6 @@
  }
 
  function startApp() {
- var selA = document.getElementById('ovToolA');
- var selB = document.getElementById('ovToolB');
  var result = document.getElementById('ovResult');
  var filterContainer = document.getElementById('ovCategoryFilter');
 
@@ -336,45 +394,234 @@
  return D.tools[a].name.localeCompare(D.tools[b].name);
  });
 
+ // Combobox state
+ var selectedA = '';
+ var selectedB = '';
+ var activeCat = 'all';
+ var filteredIds = toolIds.slice();
+
+ // Combobox elements
+ var inputA = document.getElementById('ovToolAInput');
+ var inputB = document.getElementById('ovToolBInput');
+ var dropdownA = document.getElementById('ovToolADropdown');
+ var dropdownB = document.getElementById('ovToolBDropdown');
+ var comboboxA = document.getElementById('ovToolACombobox');
+ var comboboxB = document.getElementById('ovToolBCombobox');
+ var clearA = document.getElementById('ovToolAClear');
+ var clearB = document.getElementById('ovToolBClear');
+ var previewA = document.getElementById('ovToolAPreview');
+ var previewB = document.getElementById('ovToolBPreview');
+
+ // Highlighted index for keyboard navigation
+ var highlightA = -1;
+ var highlightB = -1;
+
  var cats = Object.keys(D.categories).sort();
  cats.forEach(function(cat){
  var btn = document.createElement('button');
- btn.textContent = cat + ' (' + D.categories[cat].length + ')';
+ btn.textContent = cat;
  btn.setAttribute('data-cat', cat);
  btn.addEventListener('click', function(){
  filterContainer.querySelectorAll('button').forEach(function(b){ b.classList.remove('active'); });
  btn.classList.add('active');
- populateSelects(btn.getAttribute('data-cat'));
+ activeCat = btn.getAttribute('data-cat');
+ applyCategoryFilter();
  result.classList.remove('visible');
  result.innerHTML = '';
  });
  filterContainer.appendChild(btn);
  });
 
- function populateSelects(catFilter){
- var ids = catFilter === 'all' ? toolIds : (D.categories[catFilter] || []);
- var currentA = selA.value;
- var currentB = selB.value;
- selA.innerHTML = '<option value="">Select a tool\u2026</option>';
- selB.innerHTML = '<option value="">Select a tool\u2026</option>';
- ids.forEach(function(tid){
- var t = D.tools[tid];
- var optA = document.createElement('option');
- optA.value = tid;
- optA.textContent = t.name + ' (' + t.cat + ')';
- selA.appendChild(optA);
- var optB = document.createElement('option');
- optB.value = tid;
- optB.textContent = t.name + ' (' + t.cat + ')';
- selB.appendChild(optB);
- });
- if(ids.indexOf(currentA) !== -1) selA.value = currentA;
- if(ids.indexOf(currentB) !== -1) selB.value = currentB;
+ function applyCategoryFilter(){
+ filteredIds = activeCat === 'all' ? toolIds.slice() : (D.categories[activeCat] || []);
+ renderDropdown(dropdownA, inputA, selectedA, selectedB, 'A');
+ renderDropdown(dropdownB, inputB, selectedB, selectedA, 'B');
  }
 
+ function renderDropdown(dropdown, input, selectedVal, otherVal, suffix){
+ var query = input.value.trim().toLowerCase();
+ var options = filteredIds.filter(function(tid){
+ if(query){
+ var t = D.tools[tid];
+ var hay = (t.name + ' ' + t.cat).toLowerCase();
+ if(hay.indexOf(query) === -1) return false;
+ }
+ return true;
+ });
+
+ if(options.length === 0){
+ dropdown.innerHTML = '<div class="ov-combobox-no-results">No tools match your search</div>';
+ dropdown.classList.add('open');
+ return;
+ }
+
+ var html = '';
+ for(var i=0; i<options.length; i++){
+ var tid = options[i];
+ var t = D.tools[tid];
+ var cls = 'ov-combobox-option';
+ if(tid === selectedVal) cls += ' selected';
+ if(tid === otherVal) cls += ' disabled';
+ html += '<div class="' + cls + '" role="option" data-id="' + tid + '" aria-selected="' + (tid === selectedVal ? 'true' : 'false') + '">';
+ html += escapeHtml(t.name);
+ html += '<span class="ov-option-cat">' + escapeHtml(t.cat) + '</span>';
+ html += '</div>';
+ }
+ dropdown.innerHTML = html;
+ dropdown.classList.add('open');
+
+ // Bind option clicks
+ var opts = dropdown.querySelectorAll('.ov-combobox-option');
+ for(var i=0; i<opts.length; i++){
+ opts[i].addEventListener('click', (function(opt, id){
+ return function(){
+ if(opt.classList.contains('disabled')) return;
+ selectTool(id, suffix);
+ };
+ })(opts[i], opts[i].getAttribute('data-id')));
+ }
+ }
+
+ function selectTool(id, suffix){
+ if(suffix === 'A'){
+ selectedA = id;
+ inputA.value = D.tools[id].name;
+ clearA.style.display = 'block';
+ dropdownA.classList.remove('open');
+ comboboxA.setAttribute('aria-expanded', 'false');
+ updatePreview(inputA, previewA);
+ renderDropdown(dropdownB, inputB, selectedB, selectedA, 'B');
+ } else {
+ selectedB = id;
+ inputB.value = D.tools[id].name;
+ clearB.style.display = 'block';
+ dropdownB.classList.remove('open');
+ comboboxB.setAttribute('aria-expanded', 'false');
+ updatePreview(inputB, previewB);
+ renderDropdown(dropdownA, inputA, selectedA, selectedB, 'A');
+ }
+ }
+
+ function clearSelection(suffix){
+ if(suffix === 'A'){
+ selectedA = '';
+ inputA.value = '';
+ clearA.style.display = 'none';
+ previewA.innerHTML = '';
+ renderDropdown(dropdownB, inputB, selectedB, selectedA, 'B');
+ } else {
+ selectedB = '';
+ inputB.value = '';
+ clearB.style.display = 'none';
+ previewB.innerHTML = '';
+ renderDropdown(dropdownA, inputA, selectedA, selectedB, 'A');
+ }
+ }
+
+ function handleKeyboard(e, suffix){
+ var dropdown, input, selectedVal, otherVal, highlight;
+ if(suffix === 'A'){
+ dropdown = dropdownA; input = inputA; selectedVal = selectedA; otherVal = selectedB; highlight = highlightA;
+ } else {
+ dropdown = dropdownB; input = inputB; selectedVal = selectedB; otherVal = selectedA; highlight = highlightB;
+ }
+
+ if(e.key === 'ArrowDown'){
+ e.preventDefault();
+ var opts = dropdown.querySelectorAll('.ov-combobox-option:not(.disabled)');
+ if(opts.length === 0) return;
+ if(highlight < 0) highlight = 0;
+ else if(highlight < opts.length - 1) highlight++;
+ if(suffix === 'A') highlightA = highlight; else highlightB = highlight;
+ var allOpts = dropdown.querySelectorAll('.ov-combobox-option');
+ allOpts.forEach(function(o){ o.classList.remove('highlighted'); });
+ opts[highlight].classList.add('highlighted');
+ opts[highlight].scrollIntoView({block:'nearest'});
+ } else if(e.key === 'ArrowUp'){
+ e.preventDefault();
+ var opts2 = dropdown.querySelectorAll('.ov-combobox-option:not(.disabled)');
+ if(opts2.length === 0) return;
+ if(highlight < 0) highlight = opts2.length - 1;
+ else if(highlight > 0) highlight--;
+ if(suffix === 'A') highlightA = highlight; else highlightB = highlight;
+ var allOpts2 = dropdown.querySelectorAll('.ov-combobox-option');
+ allOpts2.forEach(function(o){ o.classList.remove('highlighted'); });
+ opts2[highlight].classList.add('highlighted');
+ opts2[highlight].scrollIntoView({block:'nearest'});
+ } else if(e.key === 'Enter'){
+ e.preventDefault();
+ var opts3 = dropdown.querySelectorAll('.ov-combobox-option:not(.disabled)');
+ if(highlight >= 0 && highlight < opts3.length){
+ selectTool(opts3[highlight].getAttribute('data-id'), suffix);
+ }
+ } else if(e.key === 'Escape'){
+ dropdown.classList.remove('open');
+ if(suffix === 'A') comboboxA.setAttribute('aria-expanded', 'false');
+ else comboboxB.setAttribute('aria-expanded', 'false');
+ }
+ }
+
+ // Input A events
+ inputA.addEventListener('input', function(){
+ highlightA = -1;
+ renderDropdown(dropdownA, inputA, selectedA, selectedB, 'A');
+ });
+ inputA.addEventListener('focus', function(){
+ comboboxA.setAttribute('aria-expanded', 'true');
+ renderDropdown(dropdownA, inputA, selectedA, selectedB, 'A');
+ });
+ inputA.addEventListener('keydown', function(e){ handleKeyboard(e, 'A'); });
+
+ // Input B events
+ inputB.addEventListener('input', function(){
+ highlightB = -1;
+ renderDropdown(dropdownB, inputB, selectedB, selectedA, 'B');
+ });
+ inputB.addEventListener('focus', function(){
+ comboboxB.setAttribute('aria-expanded', 'true');
+ renderDropdown(dropdownB, inputB, selectedB, selectedA, 'B');
+ });
+ inputB.addEventListener('keydown', function(e){ handleKeyboard(e, 'B'); });
+
+ // Clear buttons
+ clearA.addEventListener('click', function(){ clearSelection('A'); inputA.focus(); });
+ clearB.addEventListener('click', function(){ clearSelection('B'); inputB.focus(); });
+
+ // Toggle buttons
+ comboboxA.querySelector('.ov-combobox-toggle').addEventListener('click', function(){
+ if(dropdownA.classList.contains('open')){
+ dropdownA.classList.remove('open');
+ comboboxA.setAttribute('aria-expanded', 'false');
+ } else {
+ renderDropdown(dropdownA, inputA, selectedA, selectedB, 'A');
+ comboboxA.setAttribute('aria-expanded', 'true');
+ }
+ });
+ comboboxB.querySelector('.ov-combobox-toggle').addEventListener('click', function(){
+ if(dropdownB.classList.contains('open')){
+ dropdownB.classList.remove('open');
+ comboboxB.setAttribute('aria-expanded', 'false');
+ } else {
+ renderDropdown(dropdownB, inputB, selectedB, selectedA, 'B');
+ comboboxB.setAttribute('aria-expanded', 'true');
+ }
+ });
+
+ // Close dropdowns on outside click
+ document.addEventListener('click', function(e){
+ if(!comboboxA.contains(e.target)){
+ dropdownA.classList.remove('open');
+ comboboxA.setAttribute('aria-expanded', 'false');
+ }
+ if(!comboboxB.contains(e.target)){
+ dropdownB.classList.remove('open');
+ comboboxB.setAttribute('aria-expanded', 'false');
+ }
+ });
+
  function analyze(){
- var a = selA.value;
- var b = selB.value;
+ var a = selectedA;
+ var b = selectedB;
  if(!a || !b){
  result.classList.remove('visible');
  result.innerHTML = '';
@@ -382,7 +629,7 @@
  }
  if(a === b){
  result.classList.add('visible');
- result.innerHTML = '<div class="ov-card"><p class="ov-detail">Please select two different tools to check for overlap.</p></div>';
+ result.innerHTML = '<div class="ov-card"><div style="text-align:center;padding:20px 0"><div style="font-size:40px;margin-bottom:12px;opacity:.5">🔄</div><h3 style="margin:0 0 8px;color:var(--ink)">Same tool selected</h3><p class="ov-detail" style="margin:0">Please choose two <strong>different</strong> tools to compare. You currently have <strong>' + escapeHtml(D.tools[a].name) + '</strong> in both slots.</p></div></div>';
  return;
  }
  var toolA = D.tools[a];
@@ -542,17 +789,55 @@
  result.classList.add('visible');
  }
 
- selA.addEventListener('change', analyze);
- selB.addEventListener('change', analyze);
+ function escapeHtml(s){
+ if(!s) return "";
+ var div = document.createElement("div");
+ div.textContent = s;
+ return div.innerHTML;
+ }
+
+ function updatePreview(inputEl, previewEl){
+ var val = inputEl.value.trim();
+ // Find tool by name match
+ var toolId = null;
+ for(var i=0; i<toolIds.length; i++){
+ if(D.tools[toolIds[i]].name === val){
+ toolId = toolIds[i];
+ break;
+ }
+ }
+ if(!toolId || !D.tools[toolId]){
+ previewEl.innerHTML = '';
+ return;
+ }
+ var t = D.tools[toolId];
+ var html = '';
+ if(t.logo) html += '<img src="' + escapeHtml(t.logo) + '" alt="' + escapeHtml(t.name) + ' logo" width="28" height="28" decoding="async" fetchpriority="high">';
+ html += '<div><span class="ov-preview-name">' + escapeHtml(t.name) + '</span> <span class="ov-preview-cat">· ' + escapeHtml(t.cat) + '</span></div>';
+ previewEl.innerHTML = html;
+ }
+
+ // Analyze button (explicit, not auto)
+ var analyzeBtn = document.getElementById('ovAnalyzeBtn');
+ if(analyzeBtn){
+ analyzeBtn.addEventListener('click', analyze);
+ }
 
  // Swap button
  var swapBtn = document.getElementById('ovSwapBtn');
  if(swapBtn){
  swapBtn.addEventListener('click', function(){
- var temp = selA.value;
- selA.value = selB.value;
- selB.value = temp;
- analyze();
+ var tempId = selectedA;
+ var tempName = inputA.value;
+ selectedA = selectedB;
+ selectedB = tempId;
+ inputA.value = inputB.value;
+ inputB.value = tempName;
+ // Update clear button visibility
+ clearA.style.display = selectedA ? 'block' : 'none';
+ clearB.style.display = selectedB ? 'block' : 'none';
+ updatePreview(inputA, previewA);
+ updatePreview(inputB, previewB);
  });
  }
 
@@ -560,14 +845,14 @@
  var resetBtn = document.getElementById('ovResetBtn');
  if(resetBtn){
  resetBtn.addEventListener('click', function(){
- selA.value = '';
- selB.value = '';
+ clearSelection('A');
+ clearSelection('B');
  result.classList.remove('visible');
  result.innerHTML = '';
  });
  }
 
- populateSelects('all');
+ applyCategoryFilter();
  }
 
  init();

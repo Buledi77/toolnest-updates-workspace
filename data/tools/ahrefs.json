@@ -146,12 +146,12 @@
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": "2026-11-22",
+    "checkedOn": "2026-11-23",
     "sourceUrls": [
       "https://ahrefs.com/pricing"
     ],
     "currency": "USD",
-    "billingBasis": "monthly",
+    "billingBasis": "monthly and annual billing",
     "annualDiscount": 17,
     "freePlan": true,
     "freeLimits": "Site Explorer and Site Audit for your own sites only",
@@ -233,8 +233,16 @@
       {
         "name": "Brand Radar",
         "packages": [
-          {"tier": "Basic", "price": 99, "unit": "per month"},
-          {"tier": "Pro", "price": 199, "unit": "per month"}
+          {
+            "tier": "Basic",
+            "price": 99,
+            "unit": "per month"
+          },
+          {
+            "tier": "Pro",
+            "price": 199,
+            "unit": "per month"
+          }
         ]
       },
       {

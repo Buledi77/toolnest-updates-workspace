@@ -47,7 +47,11 @@
         "Adobe asset connections"
       ],
       "logo": "/assets/logos/adobeexpress.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $9.99/month"
     },
     {
       "id": "adwisely",
@@ -81,7 +85,10 @@
         "Competitive analysis"
       ],
       "logo": "/assets/logos/ahrefs.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "$29/mo",
+      "freePlan": true,
+      "checkedOn": "2026-11-22"
     },
     {
       "id": "aircall",
@@ -98,7 +105,10 @@
         "Call recording and transcription"
       ],
       "logo": "/assets/logos/aircall.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "$40/mo",
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Paid \u2014 subscriptions from $30/license/month"
     },
     {
       "id": "amplitude",
@@ -149,7 +159,10 @@
         "Team reporting"
       ],
       "logo": "/assets/logos/asana.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-22"
     },
     {
       "id": "beautifulai",
@@ -179,7 +192,11 @@
         "Built-in monetization options"
       ],
       "logo": "/assets/logos/beehiiv.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $49/month"
     },
     {
       "id": "bill",
@@ -247,7 +264,11 @@
         "Contact management"
       ],
       "logo": "/assets/logos/brevo.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $9/month"
     },
     {
       "id": "browseai",
@@ -315,7 +336,10 @@
         "Useful for teams and brand kits"
       ],
       "logo": "/assets/logos/canva.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-22"
     },
     {
       "id": "capsule",
@@ -349,7 +373,10 @@
         "Multi-format export"
       ],
       "logo": "/assets/logos/castmagic.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "$29/mo",
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Paid \u2014 subscriptions from $19/month"
     },
     {
       "id": "chatgpt",
@@ -366,7 +393,11 @@
         "Supports iterative conversations"
       ],
       "logo": "/assets/logos/chatgpt.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $8/month"
     },
     {
       "id": "circle",
@@ -396,7 +427,11 @@
         "Useful for writing and coding"
       ],
       "logo": "/assets/logos/claude.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $20/month"
     },
     {
       "id": "clevertap",
@@ -430,7 +465,10 @@
         "Team workflows"
       ],
       "logo": "/assets/logos/clickup.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-22"
     },
     {
       "id": "close",
@@ -477,7 +515,10 @@
         "CRM integrations"
       ],
       "logo": "/assets/logos/cloudtalk.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "$34/mo",
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Paid \u2014 subscriptions from $25/user/month"
     },
     {
       "id": "confetti",
@@ -541,7 +582,10 @@
         "Team-oriented content"
       ],
       "logo": "/assets/logos/copyai.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "$29/mo",
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Paid \u2014 subscriptions from $24/month for 5 seats"
     },
     {
       "id": "deel",
@@ -571,7 +615,11 @@
         "Removes filler words fast"
       ],
       "logo": "/assets/logos/descript.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $16/month"
     },
     {
       "id": "dext",
@@ -622,7 +670,11 @@
         "Narrate without recording"
       ],
       "logo": "/assets/logos/elevenlabs.png",
-      "affiliateUrl": "https://try.elevenlabs.io/4kkksh8cm36q"
+      "affiliateUrl": "https://try.elevenlabs.io/4kkksh8cm36q",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $6/month"
     },
     {
       "id": "expertex",
@@ -656,7 +708,11 @@
         "Reusable design systems"
       ],
       "logo": "/assets/logos/figma.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $16/month"
     },
     {
       "id": "fireflies",
@@ -673,7 +729,11 @@
         "CRM integrations"
       ],
       "logo": "/assets/logos/fireflies.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $10/user/month"
     },
     {
       "id": "flexiquiz",
@@ -724,7 +784,11 @@
         "Strong animation and interaction tools"
       ],
       "logo": "/assets/logos/framer.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $10/month"
     },
     {
       "id": "freshbooks",
@@ -814,7 +878,11 @@
         "Free plan available"
       ],
       "logo": "/assets/logos/glide.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $19/month"
     },
     {
       "id": "gorgias",
@@ -844,7 +912,10 @@
         "Helps with polite tone"
       ],
       "logo": "/assets/logos/grammarly.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-22"
     },
     {
       "id": "helpscout",
@@ -861,7 +932,11 @@
         "Knowledge base included"
       ],
       "logo": "/assets/logos/helpscout.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $25/user/month"
     },
     {
       "id": "hemingway",
@@ -878,7 +953,11 @@
         "Simple editing workflow"
       ],
       "logo": "/assets/logos/hemingway.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free web editor plus paid subscriptions from $8.33/month"
     },
     {
       "id": "hibob",
@@ -929,7 +1008,17 @@
         "Free SSL listed on its plans"
       ],
       "logo": "/assets/logos/hostinger.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "$3.99/mo",
+      "checkedOn": "2026-11-22",
+      "pricingStatus": [
+        {
+          "claim_id": "hostinger-billing-context"
+        },
+        {
+          "claim_id": "hostinger-plan-examples"
+        }
+      ]
     },
     {
       "id": "hubspot",
@@ -946,7 +1035,10 @@
         "Sales pipeline tools"
       ],
       "logo": "/assets/logos/hubspot.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-22"
     },
     {
       "id": "ifttt",
@@ -963,7 +1055,11 @@
         "Quick trigger-action setup"
       ],
       "logo": "/assets/logos/ifttt.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $2/month"
     },
     {
       "id": "instantly",
@@ -980,7 +1076,10 @@
         "AI-powered email writing"
       ],
       "logo": "/assets/logos/instantly.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "$47/mo",
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Paid \u2014 subscriptions from $47/month"
     },
     {
       "id": "instapage",
@@ -1010,7 +1109,10 @@
         "Strong for SaaS"
       ],
       "logo": "/assets/logos/intercom.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "$39/mo",
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Paid \u2014 subscriptions from $29/seat/month"
     },
     {
       "id": "invideo",
@@ -1027,7 +1129,11 @@
         "Stock media workflow"
       ],
       "logo": "/assets/logos/invideo.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "$20/mo",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $10/month"
     },
     {
       "id": "jasper",
@@ -1044,7 +1150,10 @@
         "Good for teams"
       ],
       "logo": "/assets/logos/jasper.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "$69/mo",
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Paid \u2014 subscriptions from $59/seat/month"
     },
     {
       "id": "kapwing",
@@ -1061,7 +1170,11 @@
         "Team collaboration"
       ],
       "logo": "/assets/logos/kapwing.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $16/month"
     },
     {
       "id": "keap",
@@ -1095,7 +1208,11 @@
         "Tag-based subscriber organization"
       ],
       "logo": "/assets/logos/kit.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $39/month"
     },
     {
       "id": "krispcall",
@@ -1112,7 +1229,10 @@
         "Call recording and transcription"
       ],
       "logo": "/assets/logos/krispcall.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "$15/mo",
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Paid \u2014 subscriptions from $12/user/month"
     },
     {
       "id": "learnworlds",
@@ -1210,7 +1330,10 @@
         "Marketing automations"
       ],
       "logo": "/assets/logos/mailchimp.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-22"
     },
     {
       "id": "make",
@@ -1227,7 +1350,11 @@
         "Large integration library"
       ],
       "logo": "/assets/logos/make.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $9/month"
     },
     {
       "id": "manychat",
@@ -1308,7 +1435,9 @@
         "Visual dashboards"
       ],
       "logo": "/assets/logos/monday.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "$9/mo",
+      "checkedOn": "2026-11-22"
     },
     {
       "id": "moosend",
@@ -1338,7 +1467,9 @@
         "Keyword research"
       ],
       "logo": "/assets/logos/mozpro.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "$49/mo",
+      "checkedOn": "2026-11-22"
     },
     {
       "id": "murf",
@@ -1368,7 +1499,11 @@
         "Developer-friendly integrations"
       ],
       "logo": "/assets/logos/n8n.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free self-hosted tier plus cloud subscriptions from $20/month"
     },
     {
       "id": "netlify",
@@ -1415,7 +1550,10 @@
         "Good for solo work"
       ],
       "logo": "/assets/logos/notion.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-22"
     },
     {
       "id": "nutshell",
@@ -1445,7 +1583,11 @@
         "Multi-channel (email, SMS, push)"
       ],
       "logo": "/assets/logos/omnisend.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $16/month"
     },
     {
       "id": "omniseo",
@@ -1709,7 +1851,10 @@
         "Metadata auditing"
       ],
       "logo": "/assets/logos/screamingfrog.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-22"
     },
     {
       "id": "semrush",
@@ -1726,7 +1871,10 @@
         "Many SEO tools in one"
       ],
       "logo": "/assets/logos/semrush.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-22"
     },
     {
       "id": "shoeboxed",
@@ -1964,7 +2112,9 @@
         "SERP-based suggestions"
       ],
       "logo": "/assets/logos/surferseo.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "$59/mo",
+      "checkedOn": "2026-11-22"
     },
     {
       "id": "surveymonkey",
@@ -1981,7 +2131,11 @@
         "Advanced analytics"
       ],
       "logo": "/assets/logos/surveymonkey.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-23",
+      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $25/month"
     },
     {
       "id": "survicate",
@@ -2279,7 +2433,10 @@
         "Managed hosting"
       ],
       "logo": "/assets/logos/webflow.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-22"
     },
     {
       "id": "windsorai",
@@ -2398,7 +2555,10 @@
         "Useful templates for common automations"
       ],
       "logo": "/assets/logos/zapier.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-22"
     },
     {
       "id": "zendesk",
@@ -2427,7 +2587,13 @@
       "featured": false,
       "best": "AI-native code editor with chat and agent modes",
       "logo": "/assets/logos/cursor.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-22",
+      "pricingStatus": [
+        "Pricing verified from official sources on 2026-11-22"
+      ]
     },
     {
       "id": "github-copilot",
@@ -2439,7 +2605,13 @@
       "featured": false,
       "best": "AI code completions and chat in VS Code, JetBrains, and other editors",
       "logo": "/assets/logos/github-copilot.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-22",
+      "pricingStatus": [
+        "Pricing verified from official sources on 2026-11-22"
+      ]
     },
     {
       "id": "lovable",
@@ -2451,7 +2623,13 @@
       "featured": false,
       "best": "AI-powered full-stack application builder",
       "logo": "/assets/logos/lovable.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-22",
+      "pricingStatus": [
+        "Pricing verified from official sources on 2026-11-22"
+      ]
     },
     {
       "id": "bolt",
@@ -2463,7 +2641,13 @@
       "featured": false,
       "best": "Browser-based full-stack application builder by StackBlitz",
       "logo": null,
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-22",
+      "pricingStatus": [
+        "Pricing verified from official sources on 2026-11-22"
+      ]
     },
     {
       "id": "heygen",
@@ -2475,7 +2659,13 @@
       "featured": false,
       "best": "AI-powered video generation with custom avatars",
       "logo": "/assets/logos/heygen.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-22",
+      "pricingStatus": [
+        "Pricing verified from official sources on 2026-11-22"
+      ]
     },
     {
       "id": "ideogram",
@@ -2487,7 +2677,13 @@
       "featured": false,
       "best": "AI image generation specialist in text rendering within images",
       "logo": "/assets/logos/ideogram.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Free",
+      "freePlan": true,
+      "checkedOn": "2026-11-22",
+      "pricingStatus": [
+        "Pricing verified from official sources on 2026-11-22"
+      ]
     }
   ]
 }

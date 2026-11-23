@@ -23,9 +23,20 @@
       "eCommerce brands",
       "online retailers",
       "DTC businesses"
+    ],
+    "platforms": [
+      "Web-based SaaS"
     ]
   },
-  "factual_profile": {},
+  "factual_profile": {
+    "free_plan_status": "Free plan with 250 contacts and 500 emails per month",
+    "trial_status": "No free trial; free plan serves as ongoing trial",
+    "pricing_status": "Freemium — free tier plus paid subscriptions from $16/month",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ]
+  },
   "editorial": {
     "editorial_tier": "B",
     "best_for": [
@@ -69,5 +80,57 @@
     "canonical_url": "https://www.toolnestai.tech/tools/omnisend.html",
     "sitemap_eligible": true
   },
-  "freshness": {}
+  "freshness": {
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z"
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://www.omnisend.com/pricing/"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "250 contacts, 500 emails per month, 500 web push messages",
+    "trial": "No separate trial — free plan serves as entry point. Paid plans available with monthly billing.",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "contacts": 250,
+          "emails": 500
+        },
+        "notes": "Omnisend branding on emails."
+      },
+      {
+        "name": "Standard",
+        "priceMonthly": 16,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "contacts": 500,
+          "emails": "12x contacts"
+        },
+        "notes": "Scales with contacts. $132 at 10,000 contacts."
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 59,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "contacts": 2500,
+          "emails": "unlimited"
+        },
+        "notes": "Scales with contacts. SMS credits sold separately."
+      }
+    ],
+    "billingCaveat": "Pricing scales with contact count. SMS credits from $0.007/SMS at volume. No annual billing option for Standard/Pro.",
+    "conflicts": [],
+    "changeLog": []
+  }
 }

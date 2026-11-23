@@ -39,10 +39,13 @@
       }
     ],
     "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
-    "pricing_status": [],
-    "pricing_regions": [],
+    "free_plan_status": "Free plan with Framer subdomain, 1 GB bandwidth",
+    "trial_status": "No free trial; free plan serves as ongoing trial",
+    "pricing_status": "Freemium \u2014 free tier plus paid subscriptions from $10/month",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ],
     "availability_regions": []
   },
   "editorial": {
@@ -100,10 +103,64 @@
   },
   "freshness": {
     "created_at": "2026-11-20T15:27:01Z",
-    "updated_at": "2026-11-20T15:27:01Z",
-    "last_verified_at": null,
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z",
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://www.framer.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 33,
+    "freePlan": true,
+    "freeLimits": "Framer subdomain, 1 GB bandwidth, 500 one-time AI credits",
+    "trial": "No free trial; free plan serves as ongoing trial",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "bandwidth": "1 GB",
+          "aiCredits": 500
+        },
+        "notes": "Non-commercial use. Framer subdomain only."
+      },
+      {
+        "name": "Basic",
+        "priceMonthly": 15,
+        "priceAnnualMonthlyEquivalent": 10,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "pages": 30,
+          "cmsCollections": 2,
+          "bandwidth": "50 GB",
+          "aiCredits": 1000
+        },
+        "notes": "Custom domain, first year free on yearly."
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 45,
+        "priceAnnualMonthlyEquivalent": 30,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "pages": 150,
+          "cmsCollections": 10,
+          "bandwidth": "100 GB",
+          "aiCredits": 3000
+        },
+        "notes": "Staging, redirects, branching. Per site."
+      }
+    ],
+    "billingCaveat": "Additional editors cost $20/month each. A/B testing (Convert) is a separate add-on. Enterprise is custom.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

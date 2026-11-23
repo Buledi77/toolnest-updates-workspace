@@ -23,9 +23,20 @@
       "SMB support teams",
       "SaaS companies",
       "email-first support"
+    ],
+    "platforms": [
+      "Web-based SaaS"
     ]
   },
-  "factual_profile": {},
+  "factual_profile": {
+    "free_plan_status": "Free plan for up to 5 users, 100 contacts per month",
+    "trial_status": "15-day free trial on paid plans, no credit card required",
+    "pricing_status": "Freemium — free tier plus paid subscriptions from $25/user/month",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ]
+  },
   "editorial": {
     "editorial_tier": "B",
     "best_for": [
@@ -69,5 +80,72 @@
     "canonical_url": "https://www.toolnestai.tech/tools/helpscout.html",
     "sitemap_eligible": true
   },
-  "freshness": {}
+  "freshness": {
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z"
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://www.helpscout.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 16,
+    "freePlan": true,
+    "freeLimits": "Up to 5 users, 1 inbox, 1 Docs site, 100 contacts per month",
+    "trial": "Free trial available on paid plans ('Try for Free' on pricing page). Envoy AI agent has 3-month free trial.",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "users": 5,
+          "contacts": 100
+        },
+        "notes": "1 inbox, 1 Docs site."
+      },
+      {
+        "name": "Standard",
+        "priceMonthly": 30,
+        "priceAnnualMonthlyEquivalent": 25,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "users": 25,
+          "contacts": "unlimited"
+        },
+        "notes": "Per user per month. 2 inboxes, 2 Docs sites."
+      },
+      {
+        "name": "Plus",
+        "priceMonthly": 54,
+        "priceAnnualMonthlyEquivalent": 45,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "users": 50,
+          "contacts": "unlimited",
+          "lightUsers": 5
+        },
+        "notes": "Per user per month. 5 inboxes, 3 Docs sites."
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 90,
+        "priceAnnualMonthlyEquivalent": 75,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "users": "unlimited",
+          "minUsers": 10,
+          "contacts": "unlimited",
+          "lightUsers": 15
+        },
+        "notes": "Per user per month. SSO, HIPAA, dedicated onboarding."
+      }
+    ],
+    "billingCaveat": "AI Answers (Envoy) costs $0.75 per resolution on every paid plan, billed separately. Nonprofit discount of 10% available.",
+    "conflicts": [],
+    "changeLog": []
+  }
 }

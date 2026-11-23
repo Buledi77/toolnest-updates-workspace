@@ -39,10 +39,13 @@
       }
     ],
     "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
-    "pricing_status": [],
-    "pricing_regions": [],
+    "free_plan_status": "Free web editor with core readability features",
+    "trial_status": "14-day free trial of Editor Plus, no credit card required",
+    "pricing_status": "Freemium \u2014 free web editor plus paid subscriptions from $8.33/month",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ],
     "availability_regions": []
   },
   "editorial": {
@@ -102,10 +105,73 @@
   },
   "freshness": {
     "created_at": "2026-11-20T15:27:01Z",
-    "updated_at": "2026-11-20T15:27:01Z",
-    "last_verified_at": null,
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z",
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://hemingwayapp.com/hemingway-editor-plus"
+    ],
+    "currency": "USD",
+    "billingBasis": "annual",
+    "freePlan": true,
+    "freeLimits": "Free web editor with readability analysis, color-coded highlights, grade level assessment",
+    "trial": "14-day free trial of Editor Plus, no credit card required",
+    "plans": [
+      {
+        "name": "Free Web",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {},
+        "notes": "Core editing features only. No AI."
+      },
+      {
+        "name": "Classic Desktop",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {},
+        "notes": "$19.99 one-time purchase. Mac and Windows. No AI features."
+      },
+      {
+        "name": "Individual 5K",
+        "priceMonthly": 100,
+        "priceAnnualMonthlyEquivalent": 100,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "aiSentences": 5000
+        },
+        "notes": "$100 billed annually. 5,000 AI sentences per month."
+      },
+      {
+        "name": "Individual 10K",
+        "priceMonthly": 150,
+        "priceAnnualMonthlyEquivalent": 150,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "aiSentences": 10000
+        },
+        "notes": "$150 billed annually. 10,000 AI sentences per month."
+      },
+      {
+        "name": "Team 10K",
+        "priceMonthly": 150,
+        "priceAnnualMonthlyEquivalent": 150,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "aiSentences": 10000,
+          "seats": 50
+        },
+        "notes": "$150 per seat billed annually. Up to 50 seats."
+      }
+    ],
+    "billingCaveat": "Editor Plus is annual billing only. Classic desktop is a one-time $19.99 purchase. Enterprise is custom.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

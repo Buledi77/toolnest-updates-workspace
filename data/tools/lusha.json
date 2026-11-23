@@ -23,9 +23,16 @@
       "sales teams",
       "recruiters",
       "BDRs"
+    ],
+    "platforms": [
+      "Web-based SaaS",
+      "Chrome browser extension",
+      "CRM integrations"
     ]
   },
-  "factual_profile": {},
+  "factual_profile": {
+    "pricing_status": "Pricing Not Publicly Listed"
+  },
   "editorial": {
     "editorial_tier": "B",
     "best_for": [
@@ -69,5 +76,16 @@
     "canonical_url": "https://www.toolnestai.tech/tools/lusha.html",
     "sitemap_eligible": true
   },
-  "freshness": {}
+  "freshness": {
+    "updated_at": "2026-11-23T20:00:00Z"
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "pricing_status": "Pricing Not Publicly Listed",
+    "freePlan": true,
+    "plans": [],
+    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
+    "currency": "USD",
+    "trial": "No separate trial — free plan serves as entry point with 40 credits/month permanently."
+  }
 }

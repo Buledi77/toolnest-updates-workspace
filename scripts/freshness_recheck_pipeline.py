@@ -326,23 +326,25 @@ def generate_recheck_tasks(stale_claims, sources):
 
 
 def update_ledger_for_recheck(ledger, claim_ids, as_of):
-    """Update the evidence ledger to reflect recheck status for given claims.
+    """Update the evidence ledger to mark claims as due for recheck.
 
-    Sets status to 'needs_review' and updates verified_at to current date.
+    IMPORTANT: This is a metadata-only operation. It must NOT advance
+    verified_at or last_verified_date — those dates only advance when
+    a source is actually fetched and parsed successfully by the
+    source_monitor pipeline. This function only marks claims as
+    DUE_FOR_RECHECK with proper urgency tracking.
+
+    Sets status to 'due_for_recheck' without touching verification dates.
     """
     updated = 0
-    today_str = as_of.isoformat()
 
     for claim in ledger.get("claims", []):
         if claim.get("claim_id") in claim_ids:
-            claim["status"] = "needs_review"
-            claim["verified_at"] = today_str
-            # Extend stale_after by the policy threshold
-            claim_type = claim.get("claim_type", "general")
-            policy = load_freshness_policy()
-            threshold = get_threshold_for_claim(claim_type, policy)
-            new_stale = as_of + timedelta(days=threshold)
-            claim["stale_after"] = new_stale.isoformat()
+            claim["status"] = "due_for_recheck"
+            # DO NOT update verified_at — that would create fake freshness
+            # DO NOT update last_verified_date — same reason
+            # DO NOT extend stale_after — the original stale_after is correct
+            # The claim is already past its stale_after, which is why it's here
             updated += 1
 
     return updated

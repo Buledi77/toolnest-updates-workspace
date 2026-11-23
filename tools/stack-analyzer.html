@@ -68,8 +68,18 @@
 .sa-overlap-hint{margin-top:12px;padding:12px 16px;background:rgba(124,58,237,.06);border:1px solid rgba(124,58,237,.2);border-radius:10px;font-size:13px;color:var(--muted)}
 .sa-overlap-hint a{color:#7C3AED;font-weight:600;text-decoration:underline;text-underline-offset:3px}
 .sa-pricing-label{font-size:11px;color:var(--muted);font-style:italic;display:block;margin-top:2px}
-.sa-empty{text-align:center;padding:32px 20px;color:var(--muted)}
-.sa-empty p{font-size:15px;margin:0}
+.sa-pricing-unit{font-size:10px;color:var(--muted);background:var(--soft);padding:1px 6px;border-radius:4px;margin-left:4px;vertical-align:middle;font-style:normal}
+.sa-tool-price.free-plan{color:#16A34A}
+.sa-tool-price.per-user{color:var(--brand)}
+.sa-tool-price.per-seat{color:#7C3AED}
+.sa-tool-price.per-workspace{color:#0891B2}
+.sa-tool-price.usage-based{color:#B45309}
+.sa-tool-price.custom-pricing-label{color:#7C3AED}
+.sa-empty{text-align:center;padding:40px 20px;color:var(--muted)}
+.sa-empty p{font-size:15px;margin:8px 0 0}
+.sa-empty-icon{width:48px;height:48px;margin:0 auto 12px;color:var(--muted);opacity:.5}
+.sa-empty-icon svg{width:48px;height:48px}
+.sa-empty-instruction{font-size:13px;color:var(--muted);margin-top:4px}
 .sa-note{font-size:13px;color:var(--muted);margin-top:16px;line-height:1.6;padding:12px 16px;background:var(--soft);border-radius:10px;border-left:3px solid var(--brand)}
 .sa-note a{color:var(--brand);text-decoration:underline;text-underline-offset:3px}
 .sa-cat-filter{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
@@ -78,13 +88,73 @@
 .sa-export-btn{display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--brand);font:600 14px var(--font-body);cursor:pointer;transition:background .2s ease;margin-top:12px}
 .sa-export-btn:hover{background:var(--soft)}
 .sa-actions-bar{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
+.sa-related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:16px}
+.sa-related-card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;padding:20px;background:var(--surface);transition:box-shadow .2s ease,border-color .2s ease;position:relative;overflow:hidden}
+.sa-related-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:#B45309;border-radius:14px 14px 0 0}
+.sa-related-card:hover{box-shadow:0 2px 8px rgba(11,34,32,.1),0 18px 40px -20px rgba(11,34,32,.32);border-color:#B45309}
+.sa-related-card-icon{width:40px;height:40px;border-radius:10px;background:rgba(180,83,9,.1);display:grid;place-items:center;color:#B45309;margin-bottom:14px;flex-shrink:0}
+.sa-related-card-icon svg{width:22px;height:22px}
+.sa-related-card-body{flex:1}
+.sa-related-card-title{font-size:16px;font-weight:700;color:var(--ink);margin:0 0 6px}
+.sa-related-card-desc{font-size:14px;color:var(--muted);margin:0 0 8px;line-height:1.5}
+.sa-related-card-outcome{font-size:13px;color:#B45309;margin:0 0 14px;line-height:1.5;font-weight:500}
+.sa-related-card-cta{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:10px;border:none;background:#B45309;color:#fff;font:600 14px var(--font-body);text-decoration:none;transition:background .2s ease,transform .2s ease;align-self:flex-start;margin-top:auto}
+.sa-related-card-cta:hover{background:#92400E;transform:translateY(-1px)}
+.sa-related-card-cta:focus-visible{outline:3px solid var(--ring);outline-offset:2px}
 @media(max-width:800px){
  .sa-layout{grid-template-columns:1fr}
 }
 @media(max-width:640px){
  .sa-totals{grid-template-columns:1fr}
  .sa-tool-item{flex-wrap:wrap}
+ .sa-stack{padding:16px}
+ .sa-panel-header{padding:10px 14px}
+ .sa-tool-item{padding:8px 10px}
+ .sa-related-grid{grid-template-columns:1fr}
 }
+@media(max-width:390px){
+ .sa-stack{padding:12px;margin:16px 0}
+ .sa-header h2{font-size:16px}
+ .sa-search{padding:10px 12px;font-size:14px}
+ .sa-tool-item{padding:8px}
+ .sa-tool-name{font-size:13px}
+ .sa-tool-price{font-size:12px}
+ .sa-total-num{font-size:22px}
+ .sa-cat-chip{padding:4px 10px;font-size:11px}
+ .sa-export-btn{padding:8px 14px;font-size:13px}
+ .sa-selected-item{padding:8px 10px}
+ .sa-remove{min-width:48px;min-height:48px}
+ .sa-tool-item input[type="checkbox"]{min-width:20px;min-height:20px}
+ .sa-cat-chip{min-height:48px;display:flex;align-items:center;justify-content:center}
+ .sa-related-card-cta{min-height:48px}
+}
+@media(max-width:320px){
+ .sa-stack{padding:10px;margin:12px 0}
+ .sa-header h2{font-size:15px}
+ .sa-search{padding:8px 10px;font-size:14px}
+ .sa-tool-item{gap:8px;padding:6px 8px}
+ .sa-tool-name{font-size:12px}
+ .sa-tool-cat{font-size:11px}
+ .sa-tool-price{font-size:11px}
+ .sa-total-num{font-size:20px}
+ .sa-total-item{padding:12px}
+ .sa-panel-header{font-size:13px;padding:8px 10px}
+ .sa-count-badge{font-size:10px;padding:1px 6px}
+ .sa-selected-item{flex-wrap:wrap;gap:4px 8px}
+ .sa-empty{padding:24px 12px}
+ .sa-empty-icon{width:36px;height:36px}
+ .sa-empty-icon svg{width:36px;height:36px}
+ .sa-empty p{font-size:14px}
+ .sa-empty-instruction{font-size:12px}
+ .sa-note{font-size:12px;padding:10px 12px}
+ .sa-actions-bar{gap:6px}
+ .sa-export-btn{padding:6px 12px;font-size:12px}
+}
+/* Accessibility: focus-visible styles */
+.sa-tool-item:focus-visible{outline:3px solid var(--ring);outline-offset:2px}
+.sa-cat-chip:focus-visible{outline:3px solid var(--ring);outline-offset:2px}
+.sa-remove:focus-visible{outline:3px solid var(--ring);outline-offset:2px}
+.sa-export-btn:focus-visible{outline:3px solid var(--ring);outline-offset:2px}
 </style>
 
 
@@ -179,7 +249,8 @@
 <h2 style="font-size:18px">Stack Cost Analyzer</h2>
 <div class="sa-actions-bar" id="saActionsBar" style="display:none;border:none;margin:0;padding:0">
 <button class="sa-export-btn" id="saExportBtn" type="button">Export Stack as JSON</button>
-<a class="sa-export-btn" id="saShareLink" href="#">Copy Share Link</a>
+<button class="sa-export-btn" id="saShareLink" type="button">Copy Share Link</button>
+<span class="sr-only" id="saShareConfirmation" aria-live="polite"></span>
 </div>
 </div>
 
@@ -202,10 +273,11 @@
 <div class="sa-selected" id="saSelected" role="region" aria-label="Selected tools" style="padding:16px">
 <div id="saSelectedList"></div>
 
-<div class="sa-totals" id="saTotals" style="display:none">
+<div class="sa-totals" id="saTotals" style="display:none" role="status" aria-live="polite">
 <div class="sa-total-item">
 <div class="sa-total-num" id="saMonthly">$0</div>
 <div class="sa-total-label">Known Monthly</div>
+<div class="sa-total-note" id="saMonthlyNote" style="font-size:11px;color:var(--muted);margin-top:2px"></div>
 </div>
 <div class="sa-total-item">
 <div class="sa-total-num" id="saAnnual">$0</div>
@@ -225,6 +297,34 @@
 </div>
 
 <p class="sa-note">⚠️ <strong>Data limitation:</strong> 54 of 153 tools currently have pricing data in our database. Tools without verified pricing will show "pricing unknown" and are not included in totals. Some tools use custom or usage-based pricing that cannot be summed. We are actively expanding this dataset. Always verify current pricing on the official site before subscribing. <a href="/how-we-test.html">Learn about our data standards</a>.</p>
+</section>
+
+<section class="p-sec">
+<h2>Related tools</h2>
+<div class="sa-related-grid">
+<div class="sa-related-card">
+<div class="sa-related-card-icon">
+<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.4" y2="16.4"/></svg>
+</div>
+<div class="sa-related-card-body">
+<h3 class="sa-related-card-title">Decision Engine</h3>
+<p class="sa-related-card-desc">Get scored tool recommendations based on your use cases and criteria.</p>
+<p class="sa-related-card-outcome">Find the right tool with transparent, explainable matching against 153 reviewed tools.</p>
+</div>
+<a class="sa-related-card-cta" href="/tools/decision-engine.html">Find My Tool <span aria-hidden="true">→</span></a>
+</div>
+<div class="sa-related-card">
+<div class="sa-related-card-icon">
+<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4" y1="12" x2="20" y2="12"/><path d="M12 4a7.98 7.98 0 0 1 0 16"/></svg>
+</div>
+<div class="sa-related-card-body">
+<h3 class="sa-related-card-title">Tool Overlap Checker</h3>
+<p class="sa-related-card-desc">Check whether two tools overlap in function and share the same jobs.</p>
+<p class="sa-related-card-outcome">Avoid paying for redundant tools by seeing shared and unique capabilities.</p>
+</div>
+<a class="sa-related-card-cta" href="/tools/overlap-checker.html">Check Overlap <span aria-hidden="true">→</span></a>
+</div>
+</div>
 </section>
 
 </div>
@@ -263,6 +363,7 @@
  var elAnnual = document.getElementById("saAnnual");
  var elUnknownBox = document.getElementById("saUnknownBox");
  var elUnknown = document.getElementById("saUnknown");
+ var elMonthlyNote = document.getElementById("saMonthlyNote");
  var elExportBtn = document.getElementById("saExportBtn");
  var elShareLink = document.getElementById("saShareLink");
  var elActionsBar = document.getElementById("saActionsBar");
@@ -350,26 +451,75 @@
  function getBillingLabel(t){
  var bt = getBillingType(t);
  var p = t.pricing;
- if(bt === "UNKNOWN_PRICING") return "pricing unknown";
- if(bt === "CUSTOM_PRICING") return "custom pricing";
+ if(bt === "UNKNOWN_PRICING") return {text:"pricing unknown", cls:"unknown", unit:null};
+ if(bt === "CUSTOM_PRICING") return {text:"custom pricing", cls:"custom-pricing-label", unit:null};
  if(bt === "KNOWN_NON_CALCULABLE_PRICING"){
- if(p.model === "event-based pricing") return "event-based";
- if(p.model === "per-seat pricing") return "per-seat";
- if(p.model === "marketplace fees") return "marketplace fees";
- if(p.model === "per-hub subscription") return "per-hub";
- return "non-standard";
+ if(p.model === "event-based pricing") return {text:"event-based", cls:"usage-based", unit:null};
+ if(p.model === "per-seat pricing") return {text:"per-seat pricing", cls:"per-seat", unit:"per seat"};
+ if(p.model === "marketplace fees") return {text:"marketplace fees", cls:"usage-based", unit:null};
+ if(p.model === "per-hub subscription") return {text:"per-hub", cls:"per-workspace", unit:"per hub"};
+ return {text:"non-standard", cls:"unknown", unit:null};
  }
  if(p.tiers && p.tiers.length > 0){
  for(var i=0;i<p.tiers.length;i++){
  if(p.tiers[i].price && p.tiers[i].price > 0){
- var label = "$" + p.tiers[i].price + "/mo";
- if(p.tiers[i].period === "per user per month") label += " /user";
- return label;
+ var price = p.tiers[i].price;
+ var period = p.tiers[i].period || "month";
+ var unit = null;
+ var cls = "";
+ if(period.indexOf("per user") !== -1 || p.model && p.model.indexOf("per user") !== -1){
+ unit = "per user";
+ cls = "per-user";
+ } else if(period.indexOf("per seat") !== -1 || p.model && p.model.indexOf("per seat") !== -1){
+ unit = "per seat";
+ cls = "per-seat";
+ } else if(period.indexOf("per editor") !== -1 || p.model && p.model.indexOf("per editor") !== -1){
+ unit = "per editor";
+ cls = "per-user";
+ } else if(period.indexOf("per workspace") !== -1){
+ unit = "per workspace";
+ cls = "per-workspace";
+ } else if(period.indexOf("per event") !== -1){
+ unit = "per event";
+ cls = "usage-based";
+ } else if(period.indexOf("per contact") !== -1 || p.model && p.model.indexOf("by contacts") !== -1){
+ unit = "per contact";
+ cls = "per-user";
+ } else if(period.indexOf("per subscriber") !== -1 || p.model && p.model.indexOf("by subscribers") !== -1){
+ unit = "per subscriber";
+ cls = "per-user";
+ } else if(period.indexOf("email volume") !== -1 || p.model && p.model.indexOf("email volume") !== -1){
+ unit = "by volume";
+ cls = "usage-based";
+ } else if(period.indexOf("tokens") !== -1 || p.model && p.model.indexOf("tokens") !== -1){
+ unit = "per token";
+ cls = "usage-based";
+ } else if(period.indexOf("clients") !== -1 || p.model && p.model.indexOf("by clients") !== -1){
+ unit = "per client";
+ cls = "per-user";
+ }
+ var label = "$" + price + "/mo";
+ return {text:label, cls:cls, unit:unit};
  }
  }
  }
- return "pricing unknown";
- }
+ return {text:"pricing unknown", cls:"unknown", unit:null};
+}
+
+function getBillingLabelText(t){
+ var result = getBillingLabel(t);
+ return result.text;
+}
+
+function getBillingLabelCls(t){
+ var result = getBillingLabel(t);
+ return result.cls;
+}
+
+function getBillingLabelUnit(t){
+ var result = getBillingLabel(t);
+ return result.unit;
+}
 
  function renderToolList(){
  var filtered = tools.filter(function(t){
@@ -392,8 +542,10 @@
  var t = filtered[i];
  var est = getMonthlyEstimate(t);
  var bt = getBillingType(t);
- var priceStr = getBillingLabel(t);
- var priceClass = (bt === "KNOWN_CALCULABLE_COST") ? "" : "unknown";
+ var priceStr = getBillingLabelText(t);
+ var priceCls = getBillingLabelCls(t);
+ var priceUnit = getBillingLabelUnit(t);
+ var priceClass = (bt === "KNOWN_CALCULABLE_COST") ? priceCls : "unknown";
  var checked = selected[t.id] ? 'checked' : '';
  var selClass = selected[t.id] ? 'selected' : '';
 
@@ -407,7 +559,9 @@
  html += '<div class="sa-tool-name">' + escapeHtml(t.name) + '</div>';
  html += '<div class="sa-tool-cat">' + escapeHtml(t.cat) + '</div>';
  html += '</div>';
- html += '<div class="sa-tool-price ' + priceClass + '">' + priceStr + '</div>';
+ html += '<div class="sa-tool-price ' + priceClass + '">' + priceStr;
+ if(priceUnit) html += ' <span class="sa-pricing-unit">' + escapeHtml(priceUnit) + '</span>';
+ html += '</div>';
  html += '</div>';
  }
  elToolList.innerHTML = html;
@@ -445,12 +599,31 @@
  elCount.textContent = ids.length;
 
  if(ids.length === 0){
- elSelectedList.innerHTML = '<div class="sa-empty"><p>Select tools from the list above to build your stack.</p></div>';
+ elSelectedList.innerHTML = '<div class="sa-empty">' +
+ '<div class="sa-empty-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>' +
+ '<p>No tools selected yet</p>' +
+ '<p class="sa-empty-instruction">Search and select tools from the list to see your estimated stack cost</p>' +
+ '<button class="sa-export-btn" id="saExampleStackBtn" type="button" style="margin-top:12px">Try an example stack</button>' +
+ '</div>';
+ // Bind example stack button
+ var exampleBtn = elSelectedList.querySelector("#saExampleStackBtn");
+ if(exampleBtn){
+ exampleBtn.addEventListener("click", function(){
+ // Load an illustrative example stack
+ var exampleIds = ["notion","canva","grammarly","semrush"];
+ for(var i=0;i<exampleIds.length;i++){
+ selected[exampleIds[i]] = true;
+ }
+ renderSelected();
+ renderToolList();
+ updateUrlState();
+ });
+ }
  elTotals.style.display = "none";
  elUnknownBox.style.display = "none";
  elActionsBar.style.display = "none";
  return;
- }
+}
 
  var html = "";
  var knownMonthly = 0;
@@ -476,8 +649,12 @@
  html += '<div><strong>' + escapeHtml(t.name) + '</strong> <span style="color:var(--muted);font-size:12px">' + escapeHtml(t.cat) + '</span></div>';
  html += '<div style="display:flex;align-items:center;gap:8px">';
  var bt2 = getBillingType(t);
- var priceLabel2 = getBillingLabel(t);
- html += '<span class="sa-tool-price ' + (bt2==="KNOWN_CALCULABLE_COST"?"":"unknown") + '">' + priceLabel2 + '</span>';
+ var priceLabel2 = getBillingLabelText(t);
+ var priceCls2 = getBillingLabelCls(t);
+ var priceUnit2 = getBillingLabelUnit(t);
+ html += '<span class="sa-tool-price ' + (bt2==="KNOWN_CALCULABLE_COST"?priceCls2:"unknown") + '">' + priceLabel2;
+ if(priceUnit2) html += ' <span class="sa-pricing-unit">' + escapeHtml(priceUnit2) + '</span>';
+ html += '</span>';
  if(bt2 === "CUSTOM_PRICING") html += '<span class="sa-pricing-label">custom quote</span>';
  else if(bt2 === "KNOWN_NON_CALCULABLE_PRICING") html += '<span class="sa-pricing-label">non-calculable</span>';
  html += '<a href="/tools/' + escapeHtml(t.id) + '.html" style="font-size:12px;color:var(--brand);text-decoration:underline">profile</a>';
@@ -523,6 +700,29 @@
  // Mixed or all known: show known costs
  elTotals.style.display = "grid";
  elMonthly.textContent = "$" + knownMonthly + "/mo";
+
+ // Check for unit pricing tools and show note if applicable
+ var hasUnitPricing = false;
+ var unitTypes = [];
+ for(var i=0;i<ids.length;i++){
+ var t2 = null;
+ for(var j=0;j<tools.length;j++){
+ if(tools[j].id === ids[i]){t2=tools[j];break;}
+ }
+ if(!t2) continue;
+ var u = getBillingLabelUnit(t2);
+ if(u){
+ hasUnitPricing = true;
+ if(unitTypes.indexOf(u) === -1) unitTypes.push(u);
+ }
+ }
+ if(elMonthlyNote){
+ if(hasUnitPricing){
+ elMonthlyNote.textContent = "Some prices are " + unitTypes.join(", ") + " — total depends on quantity";
+ } else {
+ elMonthlyNote.textContent = "";
+ }
+ }
 
  // Annual: check for verified annual discount data, otherwise estimate
  var annualDiscountFound = false;
@@ -666,8 +866,10 @@
  navigator.clipboard.writeText(url).then(function(){
  var orig = this.textContent;
  this.textContent = "Link copied!";
+ var confirmEl = document.getElementById("saShareConfirmation");
+ if(confirmEl) confirmEl.textContent = "Link copied";
  var self = this;
- setTimeout(function(){self.textContent=orig;}, 2000);
+ setTimeout(function(){self.textContent=orig; if(confirmEl) confirmEl.textContent="";}, 2000);
  }.bind(this));
  }
  });

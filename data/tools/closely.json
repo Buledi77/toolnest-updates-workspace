@@ -23,9 +23,14 @@
       "sales teams",
       "SDRs",
       "B2B companies"
+    ],
+    "platforms": [
+      "Web-based SaaS"
     ]
   },
-  "factual_profile": {},
+  "factual_profile": {
+    "pricing_status": "Pricing Not Publicly Listed"
+  },
   "editorial": {
     "editorial_tier": "B",
     "best_for": [
@@ -69,5 +74,16 @@
     "canonical_url": "https://www.toolnestai.tech/tools/closely.html",
     "sitemap_eligible": true
   },
-  "freshness": {}
+  "freshness": {
+    "updated_at": "2026-11-23T20:00:00Z"
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "pricing_status": "Pricing Not Publicly Listed",
+    "freePlan": false,
+    "plans": [],
+    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
+    "currency": "USD",
+    "trial": "Free trial available ('Start free trial' on pricing page)."
+  }
 }

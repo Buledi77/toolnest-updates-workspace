@@ -25,7 +25,15 @@
       "remote teams"
     ]
   },
-  "factual_profile": {},
+  "factual_profile": {
+    "free_plan_status": "No free plan; 7-day free trial available",
+    "trial_status": "7-day free trial",
+    "pricing_status": "Paid \u2014 subscriptions from $30/license/month",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ]
+  },
   "editorial": {
     "editorial_tier": "B",
     "best_for": [
@@ -69,5 +77,54 @@
     "canonical_url": "https://www.toolnestai.tech/tools/aircall.html",
     "sitemap_eligible": true
   },
-  "freshness": {}
+  "freshness": {
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z"
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://aircall.io/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 25,
+    "freePlan": false,
+    "trial": "7-day free trial",
+    "plans": [
+      {
+        "name": "Essentials",
+        "priceMonthly": 40,
+        "priceAnnualMonthlyEquivalent": 30,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "minLicenses": 3,
+          "features": [
+            "IVR",
+            "call recording",
+            "SMS"
+          ]
+        },
+        "notes": "Per license per month. 1 number included."
+      },
+      {
+        "name": "Professional",
+        "priceMonthly": 70,
+        "priceAnnualMonthlyEquivalent": 50,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "minLicenses": 3,
+          "features": [
+            "Power Dialer",
+            "voicemail drop",
+            "Salesforce"
+          ]
+        },
+        "notes": "Per license per month."
+      }
+    ],
+    "billingCaveat": "3-license minimum on both plans. Extra numbers $6/month each. AI Assist Pro $49/seat/month. AI Voice Agent $0.29/minute. Enterprise is custom, 25+ licenses.",
+    "conflicts": [],
+    "changeLog": []
+  }
 }

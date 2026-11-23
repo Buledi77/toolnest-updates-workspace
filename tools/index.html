@@ -107,7 +107,8 @@
  <div class="filters-row">
  <div class="filters" id="filters" role="group" aria-label="Filter tools by category"></div>
  <div class="dir-controls">
- <label class="dir-sort" for="sort"><span>Sort</span><select id="sort" aria-label="Sort tools"><option value="relevance">Best match</option><option value="az">A&ndash;Z</option><option value="za">Z&ndash;A</option><option value="cat">Category</option></select></label>
+ <label class="dir-sort" for="sort"><span>Sort</span><select id="sort" aria-label="Sort tools"><option value="relevance">Best match</option><option value="az">A&ndash;Z</option><option value="za">Z&ndash;A</option><option value="cat">Category</option><option value="price">Price: low to high</option><option value="verified">Recently verified</option></select></label>
+ <button class="chip filter-free" type="button" id="freeFilter" aria-pressed="false" aria-label="Show only tools with a free plan">Free available</button>
  <p class="count" id="count" aria-live="polite"></p>
  </div>
  </div>
@@ -317,7 +318,7 @@
 
  var TOOLS = [];
  var CATS = [];
- var state = { q: "", cat: "All", sort: "relevance", page: 1 };
+ var state = { q: "", cat: "All", sort: "relevance", page: 1, freeOnly: false };
  var TICK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>';
 
  function esc(s) {
@@ -353,15 +354,59 @@
  }
  function currentList() {
  var list = TOOLS.filter(function (t) { return state.cat === "All" || t.cat === state.cat; });
+ // Free plan filter
+ if (state.freeOnly) {
+ list = list.filter(function (t) {
+ var fp = t.pricing && t.pricing.freePlan;
+ return fp && fp.available === true;
+ });
+ }
  list = search(list, state.q);
  if (state.sort === "az") list = list.slice().sort(compareNames);
  else if (state.sort === "za") list = list.slice().sort(function (a, b) { return compareNames(b, a); });
  else if (state.sort === "cat") list = list.slice().sort(function (a, b) { return compareNames({ name: a.cat }, { name: b.cat }) || compareNames(a, b); });
+ else if (state.sort === "price") {
+ list = list.slice().sort(function (a, b) {
+ var pa = a.pricing && a.pricing.tiers ? Math.min.apply(null, a.pricing.tiers.map(function (x) { return x.price || 99999; })) : 99999;
+ var pb = b.pricing && b.pricing.tiers ? Math.min.apply(null, b.pricing.tiers.map(function (x) { return x.price || 99999; })) : 99999;
+ return pa - pb || compareNames(a, b);
+ });
+ }
+ else if (state.sort === "verified") {
+ list = list.slice().sort(function (a, b) {
+ var da = a.checkedOn || a.pricingCheckedOn || "";
+ var db = b.checkedOn || b.pricingCheckedOn || "";
+ return (db > da ? 1 : db < da ? -1 : 0) || compareNames(a, b);
+ });
+ }
  else if (!state.q) list = list.slice().sort(compareNames);
  return list;
- }
+}
 
- function cardHTML(t) {
+ function cardPricing(t) {
+ var p = t.pricing;
+ if (!p || !p.tiers || !p.tiers.length) {
+ // Check for pricing status from factual_profile
+ var ps = t.pricingStatus || (t.pricing && t.pricing.pricing_status);
+ if (ps) return '<span class="price-badge price-unknown" title="' + esc(ps) + '">Pricing not verified</span>';
+ return '';
+ }
+ var currency = p.currency || "USD";
+ var sym = currency === "USD" ? "$" : currency === "EUR" ? "€" : currency;
+ var free = p.freePlan && p.freePlan.available;
+ var tiers = p.tiers;
+ // Find lowest non-zero price
+ var lowest = null;
+ for (var i = 0; i < tiers.length; i++) {
+ if (tiers[i].price > 0) { lowest = tiers[i].price; break; }
+ }
+ if (free && lowest) return '<span class="price-badge price-free">Free</span> <span class="price-badge price-start">from ' + sym + lowest + '/mo</span>';
+ if (free) return '<span class="price-badge price-free">Free</span>';
+ if (lowest) return '<span class="price-badge price-start">from ' + sym + lowest + '/mo</span>';
+ return '';
+}
+
+function cardHTML(t) {
  var url = t.affiliateUrl || t.site;
  var rel = t.affiliateUrl ? "sponsored nofollow noopener" : "noopener";
  var logo = t.logo
@@ -371,16 +416,18 @@
  var pros = (t.pros || []).map(function (p) {
  return '<li>' + TICK + '<span>' + esc(p) + '</span></li>';
  }).join('');
+ var pricing = cardPricing(t);
  return '<article class="card" id="t-' + esc(t.id) + '">' +
  '<div class="c-top">' + logo + '<div><h3>' + esc(t.name) + '</h3><p class="cat">' + esc(t.cat) + '</p></div>' + badge + '</div>' +
  '<p class="best"><b>Best for</b> ' + esc(t.best) + '</p>' +
+ (pricing ? '<div class="c-price">' + pricing + '</div>' : '') +
  '<div class="c-side"><ul class="pros">' + pros + '</ul></div>' +
  '<div class="c-act">' +
  '<a class="btn" href="' + esc(url) + '" target="_blank" rel="' + rel + '" data-tool="' + esc(t.id) + '" data-pos="directory">Visit ' + esc(t.name) + '<span class="sr"> (opens the official site in a new tab)</span></a>' +
  '<a class="rlink card-link" href="/tools/' + esc(t.id) + '.html">Read the ' + esc(t.name) + ' review &rarr;</a>' +
  '</div>' +
  '</article>';
- }
+}
 
  function wireLogos() {
  var imgs = grid.querySelectorAll(".tile.has-logo img");
@@ -396,8 +443,13 @@
 
  function emptyHTML() {
  var title = state.q ? 'No tools match "' + esc(state.q) + '"' : "No tools in this category";
- return '<div class="empty"><b>' + title + '</b><p>Try a different word or category, or clear the filters to see every tool.</p><button class="lnk" type="button" data-clear>Clear search and filters</button></div>';
- }
+ var cats = CATS.slice(0, 6).map(function (c) {
+ return '<a class="chip-l" href="/tools/index.html?cat=' + encodeURIComponent(c) + '">' + esc(c) + '</a>';
+ }).join('');
+ return '<div class="empty"><b>' + title + '</b><p>Try a different word or category, or clear the filters to see every tool.</p>' +
+ (cats ? '<div class="chips-l" style="justify-content:center;margin-top:14px">' + cats + '</div>' : '') +
+ '<button class="lnk" type="button" data-clear>Clear search and filters</button></div>';
+}
 
  function updateCount(shown, total) {
  if (!total) { countEl.textContent = "No tools"; return; }
@@ -444,26 +496,34 @@
  if (state.q) p.set("q", state.q);
  if (state.cat !== "All") p.set("cat", state.cat);
  if (state.sort !== "relevance") p.set("sort", state.sort);
+ if (state.freeOnly) p.set("free", "1");
  if (state.page > 1) p.set("page", String(state.page));
  var s = p.toString();
  var url = location.pathname + (s ? "?" + s : "") + location.hash;
  history.replaceState(null, "", url);
- }
+}
 
- function readURL() {
+function readURL() {
  var p = new URLSearchParams(location.search);
  var q = p.get("q") || "";
  var cat = p.get("cat") || "All";
  var sort = p.get("sort") || "relevance";
  var page = parseInt(p.get("page") || "1", 10);
+ var free = p.get("free") === "1";
  state.q = q;
  state.cat = CATS.indexOf(cat) >= 0 ? cat : "All";
- state.sort = ["relevance", "az", "za", "cat"].indexOf(sort) >= 0 ? sort : "relevance";
+ state.sort = ["relevance", "az", "za", "cat", "price", "verified"].indexOf(sort) >= 0 ? sort : "relevance";
  state.page = page > 0 ? page : 1;
+ state.freeOnly = free;
  input.value = q;
  sbox.classList.toggle("has", !!q);
  sortEl.value = state.sort;
+ var freeBtn = document.getElementById("freeFilter");
+ if (freeBtn) {
+ freeBtn.setAttribute("aria-pressed", state.freeOnly ? "true" : "false");
+ freeBtn.classList.toggle("on", state.freeOnly);
  }
+}
 
  function render(scroll) {
  var full = currentList();
@@ -500,12 +560,18 @@
  state.cat = "All";
  state.sort = "relevance";
  state.page = 1;
+ state.freeOnly = false;
  input.value = "";
  sortEl.value = "relevance";
  sbox.classList.remove("has");
+ var freeBtn = document.getElementById("freeFilter");
+ if (freeBtn) {
+ freeBtn.setAttribute("aria-pressed", "false");
+ freeBtn.classList.remove("on");
+ }
  render(true);
  input.focus();
- }
+}
 
  filtersEl.addEventListener("click", function (e) {
  var b = e.target.closest(".chip");
@@ -547,6 +613,18 @@
  state.page = 1;
  render(true);
  });
+
+ var freeBtn = document.getElementById("freeFilter");
+ if (freeBtn) {
+ freeBtn.addEventListener("click", function () {
+ state.freeOnly = !state.freeOnly;
+ state.page = 1;
+ freeBtn.setAttribute("aria-pressed", state.freeOnly ? "true" : "false");
+ freeBtn.classList.toggle("on", state.freeOnly);
+ render(true);
+ });
+ }
+
  document.addEventListener("keydown", function (e) {
  if (e.key !== "/" || e.ctrlKey || e.metaKey || e.altKey) return;
  var tag = (document.activeElement && document.activeElement.tagName) || "";

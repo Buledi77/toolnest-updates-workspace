@@ -39,10 +39,13 @@
       }
     ],
     "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
-    "pricing_status": [],
-    "pricing_regions": [],
+    "free_plan_status": "Free plan with 10,000 credits (about 10 minutes of speech)",
+    "trial_status": "No free trial; free plan serves as ongoing trial",
+    "pricing_status": "Freemium — free tier plus paid subscriptions from $6/month",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ],
     "availability_regions": []
   },
   "editorial": {
@@ -100,10 +103,89 @@
   },
   "freshness": {
     "created_at": "2026-11-20T15:27:01Z",
-    "updated_at": "2026-11-20T15:27:01Z",
-    "last_verified_at": null,
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z",
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://elevenlabs.io/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly and annual billing",
+    "annualDiscount": 17,
+    "freePlan": true,
+    "freeLimits": "10,000 credits per month, no commercial use, 3 Studio projects",
+    "trial": "No free trial; free plan serves as ongoing trial",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "credits": 10000
+        },
+        "notes": "No commercial use."
+      },
+      {
+        "name": "Starter",
+        "priceMonthly": 6,
+        "priceAnnualMonthlyEquivalent": 5,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "credits": 30000
+        },
+        "notes": "Commercial license, Instant Voice Cloning."
+      },
+      {
+        "name": "Creator",
+        "priceMonthly": 22,
+        "priceAnnualMonthlyEquivalent": 18,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "credits": 121000
+        },
+        "notes": "Professional Voice Cloning. $11 first month offer may apply."
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 99,
+        "priceAnnualMonthlyEquivalent": 82,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "credits": 600000
+        },
+        "notes": "44.1kHz PCM output via API."
+      },
+      {
+        "name": "Scale",
+        "priceMonthly": 299,
+        "priceAnnualMonthlyEquivalent": 249,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "credits": 1800000,
+          "seats": 3
+        },
+        "notes": "Team collaboration."
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 990,
+        "priceAnnualMonthlyEquivalent": 825,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "credits": 6000000,
+          "seats": 10
+        },
+        "notes": "Low-latency TTS from 5c/minute."
+      }
+    ],
+    "billingCaveat": "Annual billing is 10 months, not 12 (effectively 2 months free). Credits shared across products. Voice agents billed separately in call minutes.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

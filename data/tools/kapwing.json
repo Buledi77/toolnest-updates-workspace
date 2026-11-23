@@ -39,10 +39,13 @@
       }
     ],
     "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
-    "pricing_status": [],
-    "pricing_regions": [],
+    "free_plan_status": "Free plan with watermark, 720p export, 10 AI credits",
+    "trial_status": "No free trial; free plan serves as ongoing trial",
+    "pricing_status": "Freemium \u2014 free tier plus paid subscriptions from $16/month",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ],
     "availability_regions": []
   },
   "editorial": {
@@ -100,10 +103,67 @@
   },
   "freshness": {
     "created_at": "2026-11-20T15:27:01Z",
-    "updated_at": "2026-11-20T15:27:01Z",
-    "last_verified_at": null,
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z",
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://www.kapwing.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 33,
+    "freePlan": true,
+    "freeLimits": "10 AI credits, 720p export with watermark, videos up to 4 minutes, 5 GB storage",
+    "trial": "No free trial; free plan serves as ongoing trial",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "credits": 10,
+          "resolution": "720p",
+          "watermark": true
+        },
+        "notes": "Watermark on every export."
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 24,
+        "priceAnnualMonthlyEquivalent": 16,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "credits": 1000,
+          "resolution": "4K",
+          "storage": "200 GB"
+        },
+        "notes": "Per member. No watermark."
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 64,
+        "priceAnnualMonthlyEquivalent": 50,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "credits": 4000,
+          "resolution": "4K",
+          "storage": "800 GB",
+          "features": [
+            "voice clones",
+            "lip sync"
+          ]
+        },
+        "notes": "Per member."
+      }
+    ],
+    "billingCaveat": "Monthly credits reset on the first of the month without rolling over. Enterprise is custom priced.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

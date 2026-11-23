@@ -1750,9 +1750,19 @@
       "accessed_at": "2026-11-14",
       "verified_at": "2026-11-14",
       "stale_after": "2026-12-14",
-      "status": "verified",
+      "status": "needs_review",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "critical_anomaly_preserved",
+      "anomalies_detected": [
+        {
+          "type": "feature_wipe",
+          "description": "All 7 capabilities disappeared",
+          "severity": "critical",
+          "action": "preserve_last_verified"
+        }
+      ],
+      "last_change_type": "feature_change"
     },
     {
       "claim_id": "hostinger-billing-context",
@@ -1771,9 +1781,11 @@
       "accessed_at": "2026-11-14",
       "verified_at": "2026-11-14",
       "stale_after": "2026-12-14",
-      "status": "verified",
+      "status": "needs_review",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "tier_2_approval_required",
+      "last_change_type": "trial_change"
     },
     {
       "claim_id": "hostinger-plan-examples",
@@ -1832,9 +1844,19 @@
       "accessed_at": "2026-11-14",
       "verified_at": "2026-11-14",
       "stale_after": "2026-12-14",
-      "status": "verified",
+      "status": "needs_review",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "critical_anomaly_preserved",
+      "anomalies_detected": [
+        {
+          "type": "pricing_blank",
+          "description": "All 3 pricing tiers disappeared",
+          "severity": "critical",
+          "action": "preserve_last_verified"
+        }
+      ],
+      "last_change_type": "plan_change"
     },
     {
       "claim_id": "hostinger-builder-features",
@@ -1861,9 +1883,19 @@
       "accessed_at": "2026-11-14",
       "verified_at": "2026-11-14",
       "stale_after": "2026-12-14",
-      "status": "verified",
+      "status": "needs_review",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "critical_anomaly_preserved",
+      "anomalies_detected": [
+        {
+          "type": "feature_wipe",
+          "description": "All 7 capabilities disappeared",
+          "severity": "critical",
+          "action": "preserve_last_verified"
+        }
+      ],
+      "last_change_type": "integration_change"
     },
     {
       "claim_id": "hostinger-ecommerce-caveat",
@@ -1881,11 +1913,13 @@
       "supporting_excerpt": "The official comparison presents plan-specific ecommerce differences.",
       "evidence_note": "The record intentionally preserves the caveat instead of inferring feature parity.",
       "accessed_at": "2026-11-14",
-      "verified_at": "2026-11-14",
-      "stale_after": "2026-12-14",
+      "verified_at": "2026-11-23",
+      "stale_after": "2027-11-23",
       "status": "verified",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_verified_date": "2026-11-23",
+      "last_check_result": "recheck_passed_no_change"
     },
     {
       "claim_id": "hostinger-fair-use",
@@ -1902,11 +1936,13 @@
       "supporting_excerpt": "Hosting agreement and Fair Usage Policy govern plan use.",
       "evidence_note": null,
       "accessed_at": "2026-11-14",
-      "verified_at": "2026-11-14",
-      "stale_after": "2027-02-14",
+      "verified_at": "2026-11-23",
+      "stale_after": "2027-11-23",
       "status": "verified",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_verified_date": "2026-11-23",
+      "last_check_result": "recheck_passed_no_change"
     },
     {
       "claim_id": "semrush-current-plan-structure",
@@ -1964,9 +2000,19 @@
       "accessed_at": "2026-11-18",
       "verified_at": "2026-11-18",
       "stale_after": "2026-12-18",
-      "status": "disputed",
+      "status": "needs_review",
       "disputed_by": "semrush-official-source-conflict",
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "critical_anomaly_preserved",
+      "anomalies_detected": [
+        {
+          "type": "pricing_blank",
+          "description": "All 5 pricing tiers disappeared",
+          "severity": "critical",
+          "action": "preserve_last_verified"
+        }
+      ],
+      "last_change_type": "plan_change"
     },
     {
       "claim_id": "semrush-ai-visibility-addon",
@@ -1998,11 +2044,13 @@
       "supporting_excerpt": "Semrush AI Visibility pricing page lists the Base plan, prompts, domain and surfaces.",
       "evidence_note": "This is separate from all core SEO-plan allowances.",
       "accessed_at": "2026-11-14",
-      "verified_at": "2026-11-14",
-      "stale_after": "2026-12-14",
+      "verified_at": "2026-11-23",
+      "stale_after": "2027-11-23",
       "status": "verified",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_verified_date": "2026-11-23",
+      "last_check_result": "recheck_passed_no_change"
     },
     {
       "claim_id": "semrush-workflow-coverage",
@@ -2030,9 +2078,19 @@
       "accessed_at": "2026-11-14",
       "verified_at": "2026-11-14",
       "stale_after": "2026-12-14",
-      "status": "verified",
+      "status": "needs_review",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "critical_anomaly_preserved",
+      "anomalies_detected": [
+        {
+          "type": "feature_wipe",
+          "description": "All 8 capabilities disappeared",
+          "severity": "critical",
+          "action": "preserve_last_verified"
+        }
+      ],
+      "last_change_type": "integration_change"
     },
     {
       "claim_id": "moz-pro-plan-structure",
@@ -2132,7 +2190,9 @@
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-21",
       "status": "needs_review",
-      "evidence_note": "Plan renamed from Lite to Starter; price changed from $29 to $19/mo monthly or $15/mo annual for 1,000 contacts. No free plan; 14-day trial only."
+      "evidence_note": "Plan renamed from Lite to Starter; price changed from $29 to $19/mo monthly or $15/mo annual for 1,000 contacts. No free plan; 14-day trial only.",
+      "last_check_result": "tier_2_approval_required",
+      "last_change_type": "trial_change"
     },
     {
       "claim_id": "asana-pricing-verified",
@@ -2155,8 +2215,43 @@
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-21",
-      "status": "verified_official",
-      "evidence_note": "Price $10.99/user/mo annual confirmed. Plan renamed from Premium to Starter. Free plan available."
+      "status": "needs_review",
+      "evidence_note": "Price $10.99/user/mo annual confirmed. Plan renamed from Premium to Starter. Free plan available.",
+      "last_check_result": "tier_2_approval_required",
+      "pending_new_value": {
+        "currency": "USD",
+        "plans": [
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 0.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 10.99
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 24.99
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 13.49
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 30.49
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 0.5
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 0.6
+          }
+        ]
+      },
+      "last_change_type": "trial_change"
     },
     {
       "claim_id": "beehiiv-pricing-verified",
@@ -2180,7 +2275,50 @@
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-21",
       "status": "needs_review",
-      "evidence_note": "Plan renamed from Standard to Lite; price increased from $39 to $49/mo monthly or $43/mo annual. Free plan up to 2,500 subscribers."
+      "evidence_note": "Plan renamed from Standard to Lite; price increased from $39 to $49/mo monthly or $43/mo annual. Free plan up to 2,500 subscribers.",
+      "last_check_result": "tier_2_approval_required",
+      "pending_new_value": {
+        "currency": "USD",
+        "plans": [
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 49.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 39.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 95.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 39.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 0.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 49.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 39.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 95.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 0.3
+          }
+        ]
+      },
+      "last_change_type": "trial_change"
     },
     {
       "claim_id": "bill-pricing-verified",
@@ -2204,7 +2342,94 @@
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-21",
       "status": "needs_review",
-      "evidence_note": "Plan renamed from Standard to Essentials; price increased from $39 to $49/user/mo. No free plan."
+      "evidence_note": "Plan renamed from Standard to Essentials; price increased from $39 to $49/user/mo. No free plan.",
+      "last_check_result": "tier_2_approval_required",
+      "pending_new_value": {
+        "currency": "USD",
+        "plans": [
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 49.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 49.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 1000.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 5.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 0.59
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 1.99
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 19.99
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 9.99
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 100.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 11.99
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 24.99
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 14.99
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 25.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 3.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 50.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 2.99
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 1.49
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 1.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 0.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 1000.0
+          }
+        ]
+      },
+      "last_change_type": "trial_change"
     },
     {
       "claim_id": "canva-pricing-verified",
@@ -2228,7 +2453,8 @@
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-21",
       "status": "verified_official",
-      "evidence_note": "Price $12/mo annual confirmed (was $12.99, now $12). Free plan available. 30-day trial."
+      "evidence_note": "Price $12/mo annual confirmed (was $12.99, now $12). Free plan available. 30-day trial.",
+      "last_check_result": "source_unavailable"
     },
     {
       "claim_id": "capsule-pricing-verified",
@@ -2252,7 +2478,46 @@
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-21",
       "status": "needs_review",
-      "evidence_note": "Plan renamed from Pro to Starter; price increased from $12 to $18/user/mo annual or $22/mo monthly. Free plan for up to 2 users."
+      "evidence_note": "Plan renamed from Pro to Starter; price increased from $12 to $18/user/mo annual or $22/mo monthly. Free plan for up to 2 users.",
+      "last_check_result": "tier_2_approval_required",
+      "pending_new_value": {
+        "currency": "USD",
+        "plans": [
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 18.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 36.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 54.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 72.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 22.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 40.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 60.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 75.0
+          }
+        ]
+      },
+      "last_change_type": "trial_change"
     },
     {
       "claim_id": "chatgpt-pricing-verified",
@@ -2275,8 +2540,10 @@
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-21",
-      "status": "verified_official",
-      "evidence_note": "Price $20/mo confirmed. Monthly billing only, no annual option. Free plan available."
+      "status": "needs_review",
+      "evidence_note": "Price $20/mo confirmed. Monthly billing only, no annual option. Free plan available.",
+      "last_check_result": "tier_2_approval_required",
+      "last_change_type": "trial_change"
     },
     {
       "claim_id": "clickup-pricing-verified",
@@ -2299,8 +2566,43 @@
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-21",
-      "status": "verified_official",
-      "evidence_note": "Price $7/user/mo annual confirmed. Free Forever plan available."
+      "status": "needs_review",
+      "evidence_note": "Price $7/user/mo annual confirmed. Free Forever plan available.",
+      "last_check_result": "tier_2_approval_required",
+      "pending_new_value": {
+        "currency": "USD",
+        "plans": [
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 20.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 100.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 1000.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 0.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 9.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 17.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 10.0
+          }
+        ]
+      },
+      "last_change_type": "trial_change"
     },
     {
       "claim_id": "dext-pricing-verified",
@@ -3603,303 +3905,6 @@
       "value": "Private images require Plus plan or higher",
       "source_ids": [
         "ideogram-pricing"
-      ],
-      "accessed_at": "2026-11-23",
-      "verified_at": "2026-11-23",
-      "stale_after": "2027-02-21",
-      "status": "editorial_assessment",
-      "evidence_note": "Derived from official product page and pricing page feature lists"
-    },
-    {
-      "claim_id": "replit-pricing-verified",
-      "tool_id": "replit",
-      "field_path": "pricing.tiers",
-      "claim_type": "pricing",
-      "value": {
-        "model": "tiered subscription with usage credits",
-        "starting_plan": "Core",
-        "starting_price": 25,
-        "currency": "USD",
-        "free_plan": true,
-        "free_trial": false
-      },
-      "source_ids": [
-        "replit-pricing"
-      ],
-      "currency": "USD",
-      "billing_term": "monthly",
-      "accessed_at": "2026-11-23",
-      "verified_at": "2026-11-23",
-      "stale_after": "2027-02-21",
-      "status": "verified_official",
-      "evidence_note": "Starter free, Core $25/mo ($20/mo annual), Pro $100/mo ($95/mo annual). Credits shared across Agent, hosting, databases."
-    },
-    {
-      "claim_id": "replit-capability-0",
-      "tool_id": "replit",
-      "field_path": "factual_profile.capabilities",
-      "claim_type": "capability",
-      "value": "Full cloud IDE with support for 50+ programming languages",
-      "source_ids": [
-        "replit-pricing"
-      ],
-      "accessed_at": "2026-11-23",
-      "verified_at": "2026-11-23",
-      "stale_after": "2027-02-21",
-      "status": "editorial_assessment",
-      "evidence_note": "Derived from official product page and pricing page feature lists"
-    },
-    {
-      "claim_id": "replit-capability-1",
-      "tool_id": "replit",
-      "field_path": "factual_profile.capabilities",
-      "claim_type": "capability",
-      "value": "AI Ghostwriter for code completion and generation",
-      "source_ids": [
-        "replit-pricing"
-      ],
-      "accessed_at": "2026-11-23",
-      "verified_at": "2026-11-23",
-      "stale_after": "2027-02-21",
-      "status": "editorial_assessment",
-      "evidence_note": "Derived from official product page and pricing page feature lists"
-    },
-    {
-      "claim_id": "replit-capability-2",
-      "tool_id": "replit",
-      "field_path": "factual_profile.capabilities",
-      "claim_type": "capability",
-      "value": "One-click deployment and hosting of web apps",
-      "source_ids": [
-        "replit-pricing"
-      ],
-      "accessed_at": "2026-11-23",
-      "verified_at": "2026-11-23",
-      "stale_after": "2027-02-21",
-      "status": "editorial_assessment",
-      "evidence_note": "Derived from official product page and pricing page feature lists"
-    },
-    {
-      "claim_id": "replit-limitation-0",
-      "tool_id": "replit",
-      "field_path": "factual_profile.limitations",
-      "claim_type": "limitation",
-      "value": "Free plan limited to public projects and slower compute",
-      "source_ids": [
-        "replit-pricing"
-      ],
-      "accessed_at": "2026-11-23",
-      "verified_at": "2026-11-23",
-      "stale_after": "2027-02-21",
-      "status": "editorial_assessment",
-      "evidence_note": "Derived from official product page and pricing page feature lists"
-    },
-    {
-      "claim_id": "replit-limitation-1",
-      "tool_id": "replit",
-      "field_path": "factual_profile.limitations",
-      "claim_type": "limitation",
-      "value": "Usage credits shared across Agent, hosting, and databases",
-      "source_ids": [
-        "replit-pricing"
-      ],
-      "accessed_at": "2026-11-23",
-      "verified_at": "2026-11-23",
-      "stale_after": "2027-02-21",
-      "status": "editorial_assessment",
-      "evidence_note": "Derived from official product page and pricing page feature lists"
-    },
-    {
-      "claim_id": "v0-pricing-verified",
-      "tool_id": "v0",
-      "field_path": "pricing.tiers",
-      "claim_type": "pricing",
-      "value": {
-        "model": "tiered subscription with token-based credits",
-        "starting_plan": "Plus",
-        "starting_price": 30,
-        "currency": "USD",
-        "free_plan": true,
-        "free_trial": false
-      },
-      "source_ids": [
-        "v0-pricing"
-      ],
-      "currency": "USD",
-      "billing_term": "monthly",
-      "accessed_at": "2026-11-23",
-      "verified_at": "2026-11-23",
-      "stale_after": "2027-02-21",
-      "status": "verified_official",
-      "evidence_note": "Free with $5 credits, Plus $30/user/mo, Business $100/user/mo. Token-based credit system. Rebranded from v0.dev to v0.app."
-    },
-    {
-      "claim_id": "v0-capability-0",
-      "tool_id": "v0",
-      "field_path": "factual_profile.capabilities",
-      "claim_type": "capability",
-      "value": "Generates React and Next.js code with Tailwind and shadcn/ui",
-      "source_ids": [
-        "v0-pricing"
-      ],
-      "accessed_at": "2026-11-23",
-      "verified_at": "2026-11-23",
-      "stale_after": "2027-02-21",
-      "status": "editorial_assessment",
-      "evidence_note": "Derived from official product page and pricing page feature lists"
-    },
-    {
-      "claim_id": "v0-capability-1",
-      "tool_id": "v0",
-      "field_path": "factual_profile.capabilities",
-      "claim_type": "capability",
-      "value": "Deploy generated apps directly to Vercel",
-      "source_ids": [
-        "v0-pricing"
-      ],
-      "accessed_at": "2026-11-23",
-      "verified_at": "2026-11-23",
-      "stale_after": "2027-02-21",
-      "status": "editorial_assessment",
-      "evidence_note": "Derived from official product page and pricing page feature lists"
-    },
-    {
-      "claim_id": "v0-capability-2",
-      "tool_id": "v0",
-      "field_path": "factual_profile.capabilities",
-      "claim_type": "capability",
-      "value": "Design Mode for visual editing of generated components",
-      "source_ids": [
-        "v0-pricing"
-      ],
-      "accessed_at": "2026-11-23",
-      "verified_at": "2026-11-23",
-      "stale_after": "2027-02-21",
-      "status": "editorial_assessment",
-      "evidence_note": "Derived from official product page and pricing page feature lists"
-    },
-    {
-      "claim_id": "v0-limitation-0",
-      "tool_id": "v0",
-      "field_path": "factual_profile.limitations",
-      "claim_type": "limitation",
-      "value": "Generates only React/Next.js code; no Svelte or Vue support",
-      "source_ids": [
-        "v0-pricing"
-      ],
-      "accessed_at": "2026-11-23",
-      "verified_at": "2026-11-23",
-      "stale_after": "2027-02-21",
-      "status": "editorial_assessment",
-      "evidence_note": "Derived from official product page and pricing page feature lists"
-    },
-    {
-      "claim_id": "v0-limitation-1",
-      "tool_id": "v0",
-      "field_path": "factual_profile.limitations",
-      "claim_type": "limitation",
-      "value": "Free plan limited to 7 messages/day and $5 one-time credits",
-      "source_ids": [
-        "v0-pricing"
-      ],
-      "accessed_at": "2026-11-23",
-      "verified_at": "2026-11-23",
-      "stale_after": "2027-02-21",
-      "status": "editorial_assessment",
-      "evidence_note": "Derived from official product page and pricing page feature lists"
-    },
-    {
-      "claim_id": "windsurf-pricing-verified",
-      "tool_id": "windsurf",
-      "field_path": "pricing.tiers",
-      "claim_type": "pricing",
-      "value": {
-        "model": "tiered subscription with usage quota",
-        "starting_plan": "Pro",
-        "starting_price": 20,
-        "currency": "USD",
-        "free_plan": true,
-        "free_trial": true
-      },
-      "source_ids": [
-        "windsurf-pricing"
-      ],
-      "currency": "USD",
-      "billing_term": "monthly",
-      "accessed_at": "2026-11-23",
-      "verified_at": "2026-11-23",
-      "stale_after": "2027-02-21",
-      "status": "verified_official",
-      "evidence_note": "Free with 25 credits, Pro $20/mo, Max $200/mo, Teams $80/mo + $40/seat. 14-day trial. Rebranded to Devin Desktop."
-    },
-    {
-      "claim_id": "windsurf-capability-0",
-      "tool_id": "windsurf",
-      "field_path": "factual_profile.capabilities",
-      "claim_type": "capability",
-      "value": "Agentic coding with autonomous code generation and editing",
-      "source_ids": [
-        "windsurf-pricing"
-      ],
-      "accessed_at": "2026-11-23",
-      "verified_at": "2026-11-23",
-      "stale_after": "2027-02-21",
-      "status": "editorial_assessment",
-      "evidence_note": "Derived from official product page and pricing page feature lists"
-    },
-    {
-      "claim_id": "windsurf-capability-1",
-      "tool_id": "windsurf",
-      "field_path": "factual_profile.capabilities",
-      "claim_type": "capability",
-      "value": "Support for multiple AI models (Claude, GPT, Gemini, xAI)",
-      "source_ids": [
-        "windsurf-pricing"
-      ],
-      "accessed_at": "2026-11-23",
-      "verified_at": "2026-11-23",
-      "stale_after": "2027-02-21",
-      "status": "editorial_assessment",
-      "evidence_note": "Derived from official product page and pricing page feature lists"
-    },
-    {
-      "claim_id": "windsurf-capability-2",
-      "tool_id": "windsurf",
-      "field_path": "factual_profile.capabilities",
-      "claim_type": "capability",
-      "value": "Inline code completions and multi-line suggestions",
-      "source_ids": [
-        "windsurf-pricing"
-      ],
-      "accessed_at": "2026-11-23",
-      "verified_at": "2026-11-23",
-      "stale_after": "2027-02-21",
-      "status": "editorial_assessment",
-      "evidence_note": "Derived from official product page and pricing page feature lists"
-    },
-    {
-      "claim_id": "windsurf-limitation-0",
-      "tool_id": "windsurf",
-      "field_path": "factual_profile.limitations",
-      "claim_type": "limitation",
-      "value": "Free plan limited to 25 prompt credits/month",
-      "source_ids": [
-        "windsurf-pricing"
-      ],
-      "accessed_at": "2026-11-23",
-      "verified_at": "2026-11-23",
-      "stale_after": "2027-02-21",
-      "status": "editorial_assessment",
-      "evidence_note": "Derived from official product page and pricing page feature lists"
-    },
-    {
-      "claim_id": "windsurf-limitation-1",
-      "tool_id": "windsurf",
-      "field_path": "factual_profile.limitations",
-      "claim_type": "limitation",
-      "value": "Usage quota refreshes daily and weekly; heavy days may hit limits",
-      "source_ids": [
-        "windsurf-pricing"
       ],
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
@@ -11411,9 +11416,11 @@
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-23",
-      "status": "verified",
+      "status": "needs_review",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "tier_2_approval_required",
+      "last_change_type": "trial_change"
     },
     {
       "claim_id": "activecampaign-free-plan",
@@ -11433,9 +11440,11 @@
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-23",
-      "status": "verified",
+      "status": "needs_review",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "tier_2_approval_required",
+      "last_change_type": "trial_change"
     },
     {
       "claim_id": "activecampaign-trial",
@@ -11454,9 +11463,16 @@
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-23",
-      "status": "verified",
+      "status": "needs_review",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "tier_2_approval_required",
+      "pending_new_value": {
+        "available": true,
+        "duration_days": null,
+        "type": "trial"
+      },
+      "last_change_type": "trial_change"
     },
     {
       "claim_id": "activecampaign-capabilities",
@@ -11497,9 +11513,19 @@
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-23",
-      "status": "verified",
+      "status": "needs_review",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "critical_anomaly_preserved",
+      "anomalies_detected": [
+        {
+          "type": "feature_wipe",
+          "description": "All 19 capabilities disappeared",
+          "severity": "critical",
+          "action": "preserve_last_verified"
+        }
+      ],
+      "last_change_type": "integration_change"
     },
     {
       "claim_id": "activecampaign-platforms",
@@ -11520,9 +11546,11 @@
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-23",
-      "status": "verified",
+      "status": "needs_review",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "tier_2_approval_required",
+      "last_change_type": "platform_change"
     },
     {
       "claim_id": "activecampaign-core-use-case",
@@ -11542,9 +11570,10 @@
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-23",
-      "status": "verified",
+      "status": "needs_review",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "no_source_role"
     },
     {
       "claim_id": "activecampaign-target-user",
@@ -11564,9 +11593,10 @@
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-23",
-      "status": "verified",
+      "status": "needs_review",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "no_source_role"
     },
     {
       "claim_id": "activecampaign-limitations",
@@ -11595,10 +11625,12 @@
       "evidence_note": "Feature gating across tiers is significant; Starter is quite limited.",
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
-      "stale_after": "2027-02-23",
+      "stale_after": "2027-11-23",
       "status": "verified",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_verified_date": "2026-11-23",
+      "last_check_result": "recheck_passed_no_change"
     },
     {
       "claim_id": "convertkit-pricing-model",
@@ -13134,9 +13166,28 @@
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-23",
-      "status": "verified",
+      "status": "needs_review",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "tier_2_approval_required",
+      "pending_new_value": {
+        "currency": "USD",
+        "plans": [
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 0.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 0.0
+          },
+          {
+            "name": "Unknown",
+            "displayed_monthly_usd": 3.5
+          }
+        ]
+      },
+      "last_change_type": "trial_change"
     },
     {
       "claim_id": "semrush-free-plan",
@@ -13155,9 +13206,11 @@
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-23",
-      "status": "verified",
+      "status": "needs_review",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "tier_2_approval_required",
+      "last_change_type": "trial_change"
     },
     {
       "claim_id": "semrush-trial",
@@ -13176,9 +13229,16 @@
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-23",
-      "status": "verified",
+      "status": "needs_review",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "tier_2_approval_required",
+      "pending_new_value": {
+        "available": true,
+        "duration_days": null,
+        "type": "trial"
+      },
+      "last_change_type": "trial_change"
     },
     {
       "claim_id": "semrush-capabilities",
@@ -13218,9 +13278,19 @@
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-23",
-      "status": "verified",
+      "status": "needs_review",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "critical_anomaly_preserved",
+      "anomalies_detected": [
+        {
+          "type": "feature_wipe",
+          "description": "All 18 capabilities disappeared",
+          "severity": "critical",
+          "action": "preserve_last_verified"
+        }
+      ],
+      "last_change_type": "integration_change"
     },
     {
       "claim_id": "semrush-platforms",
@@ -13243,9 +13313,11 @@
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-23",
-      "status": "verified",
+      "status": "needs_review",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "tier_2_approval_required",
+      "last_change_type": "platform_change"
     },
     {
       "claim_id": "semrush-core-use-case",
@@ -13265,9 +13337,10 @@
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-23",
-      "status": "verified",
+      "status": "needs_review",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "no_source_role"
     },
     {
       "claim_id": "semrush-target-user",
@@ -13286,9 +13359,10 @@
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
       "stale_after": "2027-02-23",
-      "status": "verified",
+      "status": "needs_review",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_check_result": "no_source_role"
     },
     {
       "claim_id": "semrush-limitations",
@@ -13314,10 +13388,12 @@
       "evidence_note": "Modular pricing can become expensive with multiple toolkits.",
       "accessed_at": "2026-11-23",
       "verified_at": "2026-11-23",
-      "stale_after": "2027-02-23",
+      "stale_after": "2027-11-23",
       "status": "verified",
       "disputed_by": null,
-      "replacement_claim_id": null
+      "replacement_claim_id": null,
+      "last_verified_date": "2026-11-23",
+      "last_check_result": "recheck_passed_no_change"
     }
   ],
   "disputes": [],

@@ -39,11 +39,115 @@
       }
     ],
     "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
-    "pricing_status": [],
-    "pricing_regions": [],
+    "free_plan_status": "Free plan available with unlimited text chats on GPT-5.6 Luna; other features are limited",
+    "trial_status": "No free trial; free plan serves as ongoing trial",
+    "pricing_status": "Freemium — free tier plus paid subscriptions from $8/month",
+    "pricing_regions": ["US", "Global"],
     "availability_regions": []
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://chatgpt.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "Unlimited text chats on GPT-5.6 Luna; uploads, image creation, deep research and Codex are limited",
+    "trial": "No free trial; free plan serves as ongoing trial",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "model": "GPT-5.6 Luna",
+          "usage": "Limited"
+        },
+        "notes": "Unlimited text chats; uploads, image creation, deep research and Codex are limited"
+      },
+      {
+        "name": "Go",
+        "priceMonthly": 8,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "usage": "More messages, uploads and images"
+        },
+        "notes": "This plan may include ads. No annual billing option."
+      },
+      {
+        "name": "Plus",
+        "priceMonthly": 20,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "model": "GPT-6 reasoning models",
+          "features": ["projects", "scheduled tasks", "custom GPTs"]
+        },
+        "notes": "Most popular for individual use. No annual billing option."
+      },
+      {
+        "name": "Pro 100",
+        "priceMonthly": 100,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "model": "GPT-6 Astra Pro reasoning",
+          "features": ["dot agent", "longer Codex sessions"]
+        },
+        "notes": "Includes a dot, OpenAI's always-on agent."
+      },
+      {
+        "name": "Pro 200",
+        "priceMonthly": 200,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "model": "GPT-6 Astra Pro reasoning",
+          "usage": "Larger allowance than Pro 100"
+        },
+        "notes": "Heavy daily users."
+      },
+      {
+        "name": "Pro 500",
+        "priceMonthly": 500,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "model": "GPT-6 Astra Pro reasoning",
+          "speed": "Ultrafast tier",
+          "usage": "Highest allowance"
+        },
+        "notes": "Developers and researchers. Only Pro tier with Ultrafast."
+      },
+      {
+        "name": "Business Standard",
+        "priceMonthly": 25,
+        "priceAnnualMonthlyEquivalent": 20,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "minSeats": 2,
+          "features": ["shared workspaces", "SAML SSO", "SOC 2 Type 2"]
+        },
+        "notes": "Per user per month. OpenAI guarantees it will not train on your data."
+      },
+      {
+        "name": "Business Premium",
+        "priceMonthly": 125,
+        "priceAnnualMonthlyEquivalent": 100,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "minSeats": 2,
+          "usage": "5x Standard usage"
+        },
+        "notes": "Higher-volume team members."
+      }
+    ],
+    "billingCaveat": "No annual billing for Plus or Pro tiers. Business plans require a two-seat minimum. Prices exclusive of tax. Regional pricing and taxes vary. API usage is billed separately.",
+    "conflicts": [],
+    "changeLog": []
   },
   "editorial": {
     "editorial_tier": "A",

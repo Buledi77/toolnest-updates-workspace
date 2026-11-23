@@ -194,10 +194,13 @@ class TestLedgerUpdate(unittest.TestCase):
         as_of = date(2026, 11, 23)
         updated = update_ledger_for_recheck(ledger, claim_ids, as_of)
         self.assertEqual(updated, 1)
-        # test-1 should be updated
+        # test-1 should be marked due_for_recheck without fake date refresh
         claim1 = next(c for c in ledger["claims"] if c["claim_id"] == "test-1")
-        self.assertEqual(claim1["status"], "needs_review")
-        self.assertEqual(claim1["verified_at"], "2026-11-23")
+        self.assertEqual(claim1["status"], "due_for_recheck")
+        # Date safety: verified_at must NOT be changed by metadata-only recheck
+        self.assertEqual(claim1["verified_at"], "2025-01-01")
+        # stale_after must NOT be extended without actual verification
+        self.assertEqual(claim1["stale_after"], "2025-04-01")
         # test-2 should be unchanged
         claim2 = next(c for c in ledger["claims"] if c["claim_id"] == "test-2")
         self.assertEqual(claim2["status"], "verified")

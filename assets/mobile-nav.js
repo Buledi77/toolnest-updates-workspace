@@ -18,6 +18,17 @@
       tile.classList.add('logo-failed');
       return;
     }
+    if(img.classList.contains('de-card-logo')){
+      var parent=img.parentNode;
+      var existing=parent.querySelector('.de-card-logo-fallback');
+      if(!existing){
+        var mono=document.createElement('span');
+        mono.className='de-card-logo-fallback';
+        mono.textContent=(label(img).charAt(0)||'?').toUpperCase();
+        parent.insertBefore(mono,img);
+      }
+      return;
+    }
     if(img.classList.contains('wm')){
       var next=img.nextElementSibling;
       if(!next||!next.classList||!next.classList.contains('wm-fallback')){
@@ -29,13 +40,13 @@
     }
   }
   function isLogo(img){
-    return !!img&&img.tagName==='IMG'&&(img.hasAttribute('data-logo')||img.classList.contains('wm')||!!(img.closest&&img.closest('.tile.has-logo')));
+    return !!img&&img.tagName==='IMG'&&(img.hasAttribute('data-logo')||img.classList.contains('wm')||!!(img.closest&&img.closest('.tile.has-logo'))||img.classList.contains('de-card-logo'));
   }
   document.addEventListener('error',function(e){
     if(isLogo(e.target))fail(e.target);
   },true);
   function sweep(){
-    var imgs=document.querySelectorAll('img[data-logo],img.wm,.tile.has-logo img');
+    var imgs=document.querySelectorAll('img[data-logo],img.wm,.tile.has-logo img,img.de-card-logo');
     for(var i=0;i<imgs.length;i++){
       if(imgs[i].complete&&imgs[i].naturalWidth===0)fail(imgs[i]);
     }

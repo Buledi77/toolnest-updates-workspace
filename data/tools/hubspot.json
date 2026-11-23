@@ -19,7 +19,9 @@
     ],
     "audiences": [],
     "platforms": [
-      "web"
+      "Web-based SaaS",
+      "iOS app",
+      "Android app"
     ],
     "integrations": [],
     "tags": [
@@ -124,16 +126,16 @@
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": "2026-11-22",
+    "checkedOn": "2026-11-23",
     "sourceUrls": [
       "https://www.hubspot.com/pricing"
     ],
     "currency": "USD",
-    "billingBasis": "monthly",
+    "billingBasis": "annual billing",
     "annualDiscount": 0,
     "freePlan": true,
     "freeLimits": "Free CRM with contacts, deals, email marketing (up to 2,000 emails/month), forms, live chat",
-    "trial": "14-day free trial on paid plans",
+    "trial": "14-day free trial available on paid plans with no credit card required.",
     "plans": [
       {
         "name": "Free",

@@ -32,10 +32,19 @@
 .de-filter-group:last-child{margin-bottom:0}
 .de-filter-label{font-weight:600;font-size:14px;color:var(--muted);margin-bottom:8px;display:block;text-transform:uppercase;letter-spacing:.03em}
 .de-chips{display:flex;flex-wrap:wrap;gap:8px}
-.de-chip{padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-size:13px;font-weight:500;cursor:pointer;transition:all .2s ease;user-select:none}
+.de-chip{padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-size:13px;font-weight:500;cursor:pointer;transition:all .2s ease;user-select:none;min-height:36px;display:inline-flex;align-items:center}
 .de-chip:hover{border-color:var(--accent-decision);color:var(--accent-decision)}
 .de-chip.active{background:var(--accent-decision);color:#fff;border-color:var(--accent-decision)}
 .de-chip:focus-visible{outline:3px solid var(--ring);outline-offset:2px}
+.de-chip.hidden-chip{display:none}
+.de-chip-group{position:relative}
+.de-chip-show-more{padding:7px 14px;border-radius:999px;border:1px dashed var(--line);background:transparent;color:var(--muted);font-size:13px;font-weight:500;cursor:pointer;transition:all .2s ease;font-family:var(--font-body);min-height:36px;display:inline-flex;align-items:center}
+.de-chip-show-more:hover{border-color:var(--accent-decision);color:var(--accent-decision)}
+.de-selection-summary{display:flex;flex-wrap:wrap;gap:6px;padding:12px 16px;background:var(--soft);border-radius:10px;margin-top:12px;font-size:13px;color:var(--muted)}
+.de-selection-summary .de-sel-tag{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;background:var(--accent-decision);color:#fff;border-radius:999px;font-size:12px;font-weight:600}
+.de-selection-summary .de-sel-remove{cursor:pointer;opacity:.7;font-size:14px;margin-left:2px}
+.de-selection-summary .de-sel-remove:hover{opacity:1}
+.de-selection-summary .de-sel-label{margin-right:4px;font-weight:500}
 .de-toggle-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
 .de-toggle{position:relative;width:44px;height:24px;border-radius:12px;background:var(--line);cursor:pointer;transition:background .2s ease;flex-shrink:0}
 .de-toggle.on{background:var(--brand)}
@@ -115,6 +124,19 @@
 .de-card-actions .de-action-profile:hover{background:#d5ebe6}
 .de-card-actions .de-action-alts{background:var(--soft);color:var(--muted);border:1px solid var(--line)}
 .de-card-actions .de-action-alts:hover{background:#d5ebe6}
+.de-related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:16px}
+.de-related-card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;padding:20px;background:var(--surface);transition:box-shadow .2s ease,border-color .2s ease;position:relative;overflow:hidden}
+.de-related-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent-decision);border-radius:14px 14px 0 0}
+.de-related-card:hover{box-shadow:0 2px 8px rgba(11,34,32,.1),0 18px 40px -20px rgba(11,34,32,.32);border-color:var(--accent-decision)}
+.de-related-card-icon{width:40px;height:40px;border-radius:10px;background:rgba(15,107,92,.1);display:grid;place-items:center;color:var(--accent-decision);margin-bottom:14px;flex-shrink:0}
+.de-related-card-icon svg{width:22px;height:22px}
+.de-related-card-body{flex:1}
+.de-related-card-title{font-size:16px;font-weight:700;color:var(--ink);margin:0 0 6px}
+.de-related-card-desc{font-size:14px;color:var(--muted);margin:0 0 8px;line-height:1.5}
+.de-related-card-outcome{font-size:13px;color:var(--accent-decision);margin:0 0 14px;line-height:1.5;font-weight:500}
+.de-related-card-cta{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:10px;border:none;background:var(--accent-decision);color:#fff;font:600 14px var(--font-body);text-decoration:none;transition:background .2s ease,transform .2s ease;align-self:flex-start;margin-top:auto}
+.de-related-card-cta:hover{background:#047857;transform:translateY(-1px)}
+.de-related-card-cta:focus-visible{outline:3px solid var(--ring);outline-offset:2px}
 .de-empty{text-align:center;padding:48px 20px;color:var(--muted)}
 .de-empty h3{font-size:18px;color:var(--ink);margin:0 0 8px}
 .de-empty p{font-size:15px;line-height:1.6;margin:0}
@@ -182,7 +204,7 @@
 <a href="/category/index.html">Categories</a>
 <a href="/compare/index.html">Compare</a>
 <a href="/best/index.html">Best of</a>
-<a class="btn" href="/tools/decision-engine.html">Find my tool</a>
+<a class="btn" href="/#picker">Find my tool</a>
 </nav>
 <button class="mnav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav">
 <span class="mnav-ico" aria-hidden="true">
@@ -196,7 +218,7 @@
 <a href="/compare/index.html">Compare</a>
 <a href="/alternatives/index.html">Alternatives</a>
 <a href="/best/index.html">Best of</a>
-<a class="btn" href="/tools/decision-engine.html">Find my tool</a>
+<a class="btn" href="/#picker">Find my tool</a>
 </nav>
 </header>
 
@@ -315,9 +337,11 @@
 </div>
 </div>
 
+<div id="deSelectionSummary" class="de-selection-summary" style="display:none" aria-live="polite"></div>
+
 <div class="de-controls-bar">
 <button class="de-show-more-btn" id="deShowMoreBtn" type="button">Show more filters</button>
-<button class="de-clear-btn" id="deClearBtn" type="button" style="display:none">Clear selections</button>
+<button class="de-clear-btn" id="deClearBtn" type="button" style="display:none">Clear all</button>
 <span class="de-selected-count" id="deSelectedCount" style="display:none"></span>
 </div>
 
@@ -377,19 +401,29 @@
 
 <section class="p-sec">
 <h2>Related tools</h2>
-<div class="p-feats">
-<div class="p-feat">
-<b>Stack Cost Analyzer</b>
-<p>Select multiple tools and see your combined monthly and annual cost estimates.</p>
+<div class="de-related-grid">
+<div class="de-related-card">
+<div class="de-related-card-icon">
+<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
 </div>
-<div class="p-feat">
-<b>Tool Overlap Checker</b>
-<p>Check whether two tools overlap in function and share the same jobs.</p>
+<div class="de-related-card-body">
+<h3 class="de-related-card-title">Stack Cost Analyzer</h3>
+<p class="de-related-card-desc">Select multiple tools and see your combined monthly and annual cost estimates.</p>
+<p class="de-related-card-outcome">Know your total tool spend at a glance, with unknown pricing clearly separated.</p>
 </div>
+<a class="de-related-card-cta" href="/tools/stack-analyzer.html">Open Analyzer <span aria-hidden="true">→</span></a>
 </div>
-<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px">
-<a class="btn" href="/tools/stack-analyzer.html">Open Stack Cost Analyzer</a>
-<a class="btn" href="/tools/overlap-checker.html" style="background:var(--soft);color:var(--brand);border:1px solid var(--line)">Check Tool Overlap</a>
+<div class="de-related-card">
+<div class="de-related-card-icon">
+<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4" y1="12" x2="20" y2="12"/><path d="M12 4a7.98 7.98 0 0 1 0 16"/></svg>
+</div>
+<div class="de-related-card-body">
+<h3 class="de-related-card-title">Tool Overlap Checker</h3>
+<p class="de-related-card-desc">Check whether two tools overlap in function and share the same jobs.</p>
+<p class="de-related-card-outcome">Avoid paying for redundant tools by seeing shared and unique capabilities.</p>
+</div>
+<a class="de-related-card-cta" href="/tools/overlap-checker.html">Check Overlap <span aria-hidden="true">→</span></a>
+</div>
 </div>
 </section>
 
@@ -515,15 +549,20 @@
  allUseCases.sort(function(a,b){return b.count - a.count;});
  }
 
- function renderFilters(){
- // Use cases - show top 40 most common
+ var useCaseExpanded = false;
+var categoryExpanded = false;
+var CHIP_INITIAL_COUNT = 6;
+
+function renderFilters(){
+ // Use cases - show top 40 most common, without counts
  elUseCases.innerHTML = "";
  var limit = Math.min(allUseCases.length, 40);
  for(var i=0;i<limit;i++){
- (function(uc){
+ (function(uc, idx){
  var chip = document.createElement("span");
  chip.className = "de-chip";
- chip.textContent = uc.label + " (" + uc.count + ")";
+ if(idx >= CHIP_INITIAL_COUNT) chip.classList.add("hidden-chip");
+ chip.textContent = uc.label;
  chip.setAttribute("data-value", uc.label);
  chip.setAttribute("role", "checkbox");
  chip.setAttribute("aria-checked", "false");
@@ -531,10 +570,25 @@
  chip.addEventListener("click", function(){ toggleChip(this, "useCase"); });
  chip.addEventListener("keydown", function(e){ if(e.key===" "||e.key==="Enter"){e.preventDefault();toggleChip(this,"useCase");}});
  elUseCases.appendChild(chip);
- })(allUseCases[i]);
+ })(allUseCases[i], i);
+ }
+ // Show more button for use cases
+ if(limit > CHIP_INITIAL_COUNT){
+ var showMoreUC = document.createElement("button");
+ showMoreUC.className = "de-chip-show-more";
+ showMoreUC.id = "deShowMoreUseCases";
+ showMoreUC.type = "button";
+ showMoreUC.textContent = "+ " + (limit - CHIP_INITIAL_COUNT) + " more";
+ showMoreUC.addEventListener("click", function(){
+ useCaseExpanded = true;
+ var chips = elUseCases.querySelectorAll(".de-chip.hidden-chip");
+ for(var i=0;i<chips.length;i++) chips[i].classList.remove("hidden-chip");
+ showMoreUC.style.display = "none";
+ });
+ elUseCases.appendChild(showMoreUC);
  }
 
- // Categories
+ // Categories - without counts
  elCategories.innerHTML = "";
  var cats = [];
  var catMap = {};
@@ -548,10 +602,11 @@
  }
  cats.sort();
  for(var i=0;i<cats.length;i++){
- (function(cat){
+ (function(cat, idx){
  var chip = document.createElement("span");
  chip.className = "de-chip";
- chip.textContent = cat + " (" + catMap[cat] + ")";
+ if(idx >= CHIP_INITIAL_COUNT) chip.classList.add("hidden-chip");
+ chip.textContent = cat;
  chip.setAttribute("data-value", cat);
  chip.setAttribute("role", "checkbox");
  chip.setAttribute("aria-checked", "false");
@@ -559,7 +614,22 @@
  chip.addEventListener("click", function(){ toggleChip(this, "category"); });
  chip.addEventListener("keydown", function(e){ if(e.key===" "||e.key==="Enter"){e.preventDefault();toggleChip(this,"category");}});
  elCategories.appendChild(chip);
- })(cats[i]);
+ })(cats[i], i);
+ }
+ // Show more button for categories
+ if(cats.length > CHIP_INITIAL_COUNT){
+ var showMoreCat = document.createElement("button");
+ showMoreCat.className = "de-chip-show-more";
+ showMoreCat.id = "deShowMoreCategories";
+ showMoreCat.type = "button";
+ showMoreCat.textContent = "+ " + (cats.length - CHIP_INITIAL_COUNT) + " more";
+ showMoreCat.addEventListener("click", function(){
+ categoryExpanded = true;
+ var chips = elCategories.querySelectorAll(".de-chip.hidden-chip");
+ for(var i=0;i<chips.length;i++) chips[i].classList.remove("hidden-chip");
+ showMoreCat.style.display = "none";
+ });
+ elCategories.appendChild(showMoreCat);
  }
 
  // Platforms
@@ -623,6 +693,7 @@
  var elShowMoreBtn = document.getElementById("deShowMoreBtn");
  var elClearBtn = document.getElementById("deClearBtn");
  var elSelectedCount = document.getElementById("deSelectedCount");
+ var elSelectionSummary = document.getElementById("deSelectionSummary");
  var elAdvanced = document.getElementById("deAdvanced");
  var advancedOpen = false;
 
@@ -635,6 +706,56 @@
  } else {
  elClearBtn.style.display = "none";
  elSelectedCount.style.display = "none";
+ }
+ // Render selection summary
+ renderSelectionSummary();
+ }
+
+ function renderSelectionSummary(){
+ if(!elSelectionSummary) return;
+ var count = selectedUseCases.length + selectedCategories.length;
+ if(count === 0){
+ elSelectionSummary.style.display = "none";
+ return;
+ }
+ elSelectionSummary.style.display = "flex";
+ var html = '<span class="de-sel-label">Selected:</span>';
+ for(var i=0;i<selectedUseCases.length;i++){
+ html += '<span class="de-sel-tag">' + escapeHtml(selectedUseCases[i]) + '<span class="de-sel-remove" data-type="useCase" data-value="' + escapeHtml(selectedUseCases[i]) + '" title="Remove">×</span></span>';
+ }
+ for(var i=0;i<selectedCategories.length;i++){
+ html += '<span class="de-sel-tag">' + escapeHtml(selectedCategories[i]) + '<span class="de-sel-remove" data-type="category" data-value="' + escapeHtml(selectedCategories[i]) + '" title="Remove">×</span></span>';
+ }
+ elSelectionSummary.innerHTML = html;
+ // Bind remove handlers
+ var removes = elSelectionSummary.querySelectorAll(".de-sel-remove");
+ for(var i=0;i<removes.length;i++){
+ removes[i].addEventListener("click", function(e){
+ e.stopPropagation();
+ var type = this.getAttribute("data-type");
+ var value = this.getAttribute("data-value");
+ if(type === "useCase"){
+ selectedUseCases = selectedUseCases.filter(function(v){return v!==value;});
+ var chips = elUseCases.querySelectorAll(".de-chip");
+ for(var j=0;j<chips.length;j++){
+ if(chips[j].getAttribute("data-value") === value){
+ chips[j].classList.remove("active");
+ chips[j].setAttribute("aria-checked", "false");
+ }
+ }
+ } else if(type === "category"){
+ selectedCategories = selectedCategories.filter(function(v){return v!==value;});
+ var chips2 = elCategories.querySelectorAll(".de-chip");
+ for(var j=0;j<chips2.length;j++){
+ if(chips2[j].getAttribute("data-value") === value){
+ chips2[j].classList.remove("active");
+ chips2[j].setAttribute("aria-checked", "false");
+ }
+ }
+ }
+ updateUrlState();
+ updateSelectedCount();
+ });
  }
  }
 
@@ -660,13 +781,19 @@
  elClearBtn.addEventListener("click", function(){
  selectedUseCases = [];
  selectedCategories = [];
- renderUseCaseChips();
- renderCategoryChips();
+ selectedPlatforms = [];
+ // Reset all chips
+ var allChips = document.querySelectorAll(".de-chip");
+ for(var i=0;i<allChips.length;i++){
+ allChips[i].classList.remove("active");
+ allChips[i].setAttribute("aria-checked", "false");
+ }
  updateSelectedCount();
+ updateUrlState();
  });
  }
 
- // Quick-start goal buttons
+ // Quick-start goal buttons — progressive disclosure: auto-select and run
  var goalBtns = document.querySelectorAll('.de-goal-btn');
  goalBtns.forEach(function(btn){
  btn.addEventListener('click', function(){
@@ -675,19 +802,35 @@
  // Clear current selections
  selectedUseCases = [];
  selectedCategories = [];
- // Set new selections
- useCases.forEach(function(uc){
- if(useCaseSet.has(uc)) selectedUseCases.push(uc);
- });
- categories.forEach(function(cat){
- if(categorySet.has(cat)) selectedCategories.push(cat);
- });
- // Update UI
- renderUseCaseChips();
- renderCategoryChips();
+ // Set new selections from available chips
+ var allChips = elUseCases.querySelectorAll(".de-chip");
+ for(var i=0;i<allChips.length;i++){
+ var val = allChips[i].getAttribute("data-value");
+ if(useCases.indexOf(val) > -1){
+ allChips[i].classList.add("active");
+ allChips[i].setAttribute("aria-checked", "true");
+ selectedUseCases.push(val);
+ } else {
+ allChips[i].classList.remove("active");
+ allChips[i].setAttribute("aria-checked", "false");
+ }
+ }
+ var allCatChips = elCategories.querySelectorAll(".de-chip");
+ for(var i=0;i<allCatChips.length;i++){
+ var val2 = allCatChips[i].getAttribute("data-value");
+ if(categories.indexOf(val2) > -1){
+ allCatChips[i].classList.add("active");
+ allCatChips[i].setAttribute("aria-checked", "true");
+ selectedCategories.push(val2);
+ } else {
+ allCatChips[i].classList.remove("active");
+ allCatChips[i].setAttribute("aria-checked", "false");
+ }
+ }
  updateSelectedCount();
- // Scroll to results and run
- document.getElementById('deFilters').scrollIntoView({behavior:'smooth', block:'start'});
+ updateUrlState();
+ // Auto-run the engine
+ runEngine();
  });
  });
  elSearch.addEventListener("input", function(){
@@ -703,12 +846,17 @@
  var val = chips[i].getAttribute("data-value").toLowerCase();
  chips[i].style.display = val.indexOf(searchQuery) > -1 ? "" : "none";
  }
+ // Hide show-more button when searching
+ var showMoreUC = document.getElementById("deShowMoreUseCases");
+ if(showMoreUC) showMoreUC.style.display = searchQuery ? "none" : "";
  var chips2 = elCategories.querySelectorAll(".de-chip");
  for(var i=0;i<chips2.length;i++){
  var val2 = chips2[i].getAttribute("data-value").toLowerCase();
  chips2[i].style.display = val2.indexOf(searchQuery) > -1 ? "" : "none";
  }
- }
+ var showMoreCat = document.getElementById("deShowMoreCategories");
+ if(showMoreCat) showMoreCat.style.display = searchQuery ? "none" : "";
+}
 
  // Core scoring engine
  function runEngine(){
@@ -1020,7 +1168,7 @@
  if(reqParts.length > 0){
  html += '<div class="de-req-summary">Criteria: ' + reqParts.join(' · ') + '</div>';
  }
- html += '<a href="#deFilters" class="de-refine-link">← Refine your criteria</a>';
+ html += '<a href="#deFilters" class="de-refine-link">← Change answers</a>';
  html += '<div class="de-result-count">' + results.length + ' tool' + (results.length>1?'s':'') + ' found, scored and ranked</div>';
 
  // Summary stats
@@ -1048,6 +1196,8 @@
  html += '<div class="de-card-header">';
  if(t.logo){
  html += '<img class="de-card-logo" src="' + escapeHtml(t.logo) + '" alt="' + escapeHtml(t.name) + ' logo" width="128" height="128" decoding="async" fetchpriority="high">';
+ } else {
+ html += '<span class="de-card-logo-fallback" aria-hidden="true">' + escapeHtml(t.name.charAt(0).toUpperCase()) + '</span>';
  }
  html += '<div class="de-card-info">';
  html += '<h3 class="de-card-name"><a href="/tools/' + escapeHtml(t.id) + '.html">' + escapeHtml(t.name) + '</a></h3>';

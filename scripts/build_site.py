@@ -2015,6 +2015,13 @@ def build_ads(config: dict) -> None:
 
 
 def main() -> None:
+    # Derive canonical facts from evidence ledger before any other build step
+    # This ensures all downstream consumers read from canonical data
+    try:
+        from derive_canonical_facts import main as derive_main
+        derive_main()
+    except Exception as e:
+        print(f"  Warning: canonical facts derivation failed: {e}")
     strip_boms()
     build_minified_assets()
     config = json.loads(SITE_CONFIG.read_text(encoding="utf-8"))

@@ -25,7 +25,15 @@
       "sales teams"
     ]
   },
-  "factual_profile": {},
+  "factual_profile": {
+    "free_plan_status": "No free plan; 14-day free trial available",
+    "trial_status": "14-day free trial",
+    "pricing_status": "Paid \u2014 subscriptions from $47/month",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ]
+  },
   "editorial": {
     "editorial_tier": "B",
     "best_for": [
@@ -69,5 +77,60 @@
     "canonical_url": "https://www.toolnestai.tech/tools/instantly.html",
     "sitemap_eligible": true
   },
-  "freshness": {}
+  "freshness": {
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z"
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://instantly.ai/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 20,
+    "freePlan": false,
+    "trial": "14-day free trial",
+    "plans": [
+      {
+        "name": "Growth",
+        "priceMonthly": 47,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "contacts": 1000,
+          "emails": 5000,
+          "mailboxes": "unlimited"
+        },
+        "notes": "Warm-up included."
+      },
+      {
+        "name": "Hypergrowth",
+        "priceMonthly": 97,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "contacts": 25000,
+          "emails": 100000,
+          "mailboxes": "unlimited"
+        },
+        "notes": "AI Unibox, advanced analytics."
+      },
+      {
+        "name": "Light Speed",
+        "priceMonthly": 358,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "contacts": 100000,
+          "emails": 500000,
+          "mailboxes": "unlimited"
+        },
+        "notes": "SISR, dedicated success manager, API access."
+      }
+    ],
+    "billingCaveat": "Unlimited mailboxes on every tier. Lead database credits cost extra. Yearly billing saves 20%. Contact cap does not reset monthly.",
+    "conflicts": [],
+    "changeLog": []
+  }
 }

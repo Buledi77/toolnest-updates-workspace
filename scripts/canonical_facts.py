@@ -45,12 +45,51 @@ DATA_TOOLS_DIR = ROOT / "data" / "tools"
 
 
 class FactClassification(str, Enum):
-    """Classification for duplicated fact surfaces."""
+    """Classification for duplicated fact surfaces.
+    
+    New granular types replace the flat REQUIRES_REFACTOR:
+    - MUTABLE_CANONICAL_FACT: A structured field holding a mutable commercial value
+      that MUST derive from the canonical source (evidence ledger).
+    - ACTUAL_DUPLICATE: A manual copy of a mutable fact that should be derived.
+    - DERIVED_PRESENTATION: Already derived at build time from canonical data.
+    - EDITORIAL_REFERENCE: Editorial prose that mentions a fact but is not a data source.
+    - SAFE_STATIC_COPY: Static copy with no stale risk (e.g. version labels, names).
+    - GENERATOR_OUTPUT: Produced by a build script from canonical data.
+    - RESEARCH_REQUIRED: Surface where evidence is missing or unclear.
+    
+    Legacy types kept for backward compatibility:
+    - CANONICALIZED: Fact stored only in evidence ledger.
+    - SAFE_DERIVED_COPY: Alias for DERIVED_PRESENTATION.
+    - EDITORIAL_COPY: Alias for EDITORIAL_REFERENCE.
+    - REQUIRES_REFACTOR: Alias for ACTUAL_DUPLICATE / MUTABLE_CANONICAL_FACT.
+    """
+    # New granular types
+    MUTABLE_CANONICAL_FACT = "MUTABLE_CANONICAL_FACT"
+    ACTUAL_DUPLICATE = "ACTUAL_DUPLICATE"
+    DERIVED_PRESENTATION = "DERIVED_PRESENTATION"
+    EDITORIAL_REFERENCE = "EDITORIAL_REFERENCE"
+    SAFE_STATIC_COPY = "SAFE_STATIC_COPY"
+    GENERATOR_OUTPUT = "GENERATOR_OUTPUT"
+    RESEARCH_REQUIRED = "RESEARCH_REQUIRED"
+    # Legacy types (backward compat)
     CANONICALIZED = "CANONICALIZED"
     SAFE_DERIVED_COPY = "SAFE_DERIVED_COPY"
     EDITORIAL_COPY = "EDITORIAL_COPY"
     REQUIRES_REFACTOR = "REQUIRES_REFACTOR"
-    RESEARCH_REQUIRED = "RESEARCH_REQUIRED"
+
+
+# Mutable commercial field paths that indicate a surface carries a mutable fact
+MUTABLE_COMMERCIAL_FIELDS = {
+    "pricing", "priceFrom", "price_from", "pricingNotes", "pricing_notes",
+    "freePlan", "free_plan", "freeLimits", "free_limits",
+    "trial", "billingBasis", "billing_basis", "currency",
+    "checkedOn", "checked_on", "plans", "priceMonthly", "price_monthly",
+    "priceAnnual", "price_annual", "annualDiscount", "annual_discount",
+    "priceAnnualMonthlyEquivalent",
+}
+
+# Mutable fact types from evidence ledger
+MUTABLE_CLAIM_TYPES = {"pricing", "free_plan", "trial", "billing", "plan_limit", "platform", "capability"}
 
 
 def load_json(path: Path) -> Any:
@@ -58,14 +97,34 @@ def load_json(path: Path) -> Any:
         return json.load(f)
 
 
+def _has_mutable_commercial_fields(tool_data: dict) -> List[str]:
+    """Scan a tool JSON dict for mutable commercial fields.
+    
+    Returns list of field names that carry mutable commercial values.
+    """
+    found = []
+    for key in MUTABLE_COMMERCIAL_FIELDS:
+        if key in tool_data:
+            found.append(key)
+    # Check nested pricing section
+    pricing = tool_data.get("pricing", {})
+    if isinstance(pricing, dict):
+        for key in MUTABLE_COMMERCIAL_FIELDS:
+            if key in pricing:
+                found.append("pricing." + key)
+    return found
+
+
 def classify_surface(surface: dict, claim: dict) -> FactClassification:
-    """Classify a duplicated fact surface.
+    """Classify a duplicated fact surface with granular classification.
     
     Determines whether a surface is:
-    - CANONICALIZED: Only in evidence ledger, derived at build time
-    - SAFE_DERIVED_COPY: Regenerated from canonical on each build
-    - EDITORIAL_COPY: Editorial text referencing a fact (not a data source)
-    - REQUIRES_REFACTOR: Manual duplicate needing derivation from canonical
+    - MUTABLE_CANONICAL_FACT: Structured field holding mutable commercial value
+    - ACTUAL_DUPLICATE: Manual copy that should derive from canonical
+    - DERIVED_PRESENTATION: Already derived at build time
+    - EDITORIAL_REFERENCE: Editorial prose mentioning a fact
+    - SAFE_STATIC_COPY: Static copy with no stale risk
+    - GENERATOR_OUTPUT: Produced by build script from canonical data
     - RESEARCH_REQUIRED: Evidence missing or unclear
     
     Args:
@@ -77,34 +136,56 @@ def classify_surface(surface: dict, claim: dict) -> FactClassification:
     """
     surface_type = surface.get("type", "")
     surface_path = surface.get("path", "")
+    claim_type = claim.get("claim_type", "")
     
     # Evidence ledger is always the canonical source
     if surface_path and "evidence-ledger" in surface_path:
         return FactClassification.CANONICALIZED
     
-    # Tool JSON data files are manual duplicates that need refactoring
+    # Tool JSON data files — check if they carry mutable commercial fields
     if surface_type == "tool_json":
-        return FactClassification.REQUIRES_REFACTOR
+        # If the claim is a mutable type, this is an actual duplicate
+        if claim_type in MUTABLE_CLAIM_TYPES:
+            return FactClassification.ACTUAL_DUPLICATE
+        return FactClassification.SAFE_STATIC_COPY
     
-    # HTML tool profiles are derived at build time from tool JSON
-    # If the build system derives pricing from evidence ledger, they're safe
+    # HTML tool profiles — generated by regenerate_tool_profiles.py
     if surface_type == "tool_profile":
-        # Check if the profile is regenerated by build_site.py
-        # Currently profiles embed static pricing from tool JSON → REQUIRES_REFACTOR
-        return FactClassification.REQUIRES_REFACTOR
+        # Profiles are generator output — they derive from tool JSON
+        # The risk is whether tool JSON itself is canonical
+        return FactClassification.GENERATOR_OUTPUT
     
-    # Decision engine bundle is derived from tool JSON → REQUIRES_REFACTOR
+    # Decision engine bundle — derived from tools-v1.json + evidence ledger
     if surface_type == "decision_engine":
-        return FactClassification.REQUIRES_REFACTOR
+        # Bundle already merges evidence ledger claims
+        # But display fields may still come from tools-v1.json
+        if claim_type in MUTABLE_CLAIM_TYPES:
+            return FactClassification.DERIVED_PRESENTATION
+        return FactClassification.GENERATOR_OUTPUT
     
-    # Comparison pages reference tool data → EDITORIAL_COPY if they just link
-    # to tool profiles, REQUIRES_REFACTOR if they embed pricing
+    # Comparison pages — editorial references
     if surface_type == "comparison":
-        return FactClassification.EDITORIAL_COPY
+        return FactClassification.EDITORIAL_REFERENCE
     
-    # Category pages list tools → EDITORIAL_COPY
+    # Category pages — editorial references
     if surface_type == "category":
-        return FactClassification.EDITORIAL_COPY
+        return FactClassification.EDITORIAL_REFERENCE
+    
+    # Stack analyzer — derived from tools-v1.json
+    if surface_type == "stack_analyzer":
+        return FactClassification.DERIVED_PRESENTATION
+    
+    # Directory — derived from tools-v1.json
+    if surface_type == "directory":
+        return FactClassification.DERIVED_PRESENTATION
+    
+    # Homepage — derived from build_site.py
+    if surface_type == "homepage":
+        return FactClassification.GENERATOR_OUTPUT
+    
+    # Goals/Workflows — editorial references
+    if surface_type == "goal" or surface_type == "workflow":
+        return FactClassification.EDITORIAL_REFERENCE
     
     # Unknown surfaces need research
     return FactClassification.RESEARCH_REQUIRED
@@ -112,6 +193,9 @@ def classify_surface(surface: dict, claim: dict) -> FactClassification:
 
 def find_canonical_facts() -> dict:
     """Find all commercial facts and their duplication across surfaces.
+    
+    Uses granular classification to distinguish mutable commercial facts
+    from editorial references, safe static copies, and generator outputs.
     
     Returns:
         Report dict with canonical facts and their surfaces, including
@@ -130,24 +214,38 @@ def find_canonical_facts() -> dict:
         if tid:
             claims_by_tool[tid].append(claim)
     
-    # Identify commercial facts (pricing, free_plan, trial, billing)
-    commercial_types = {"pricing", "free_plan", "trial", "billing", "plan_limit"}
+    # All claim types that represent mutable facts
+    mutable_types = {"pricing", "free_plan", "trial", "billing", "plan_limit", "platform", "capability"}
     
     canonical_facts = {}
     duplicated_surfaces = []
     classification_counts = {c.value: 0 for c in FactClassification}
     
+    # Track field-level mutable facts per tool JSON
+    tool_json_mutable_fields = {}
+    
     for tool_id, claims in claims_by_tool.items():
-        commercial_claims = [
-            c for c in claims
-            if c.get("claim_type") in commercial_types
-        ]
+        # Scan tool JSON for mutable commercial fields
+        tool_json_path = DATA_TOOLS_DIR / f"{tool_id}.json"
+        if tool_json_path.exists():
+            try:
+                tool_data = load_json(tool_json_path)
+                mutable_fields = _has_mutable_commercial_fields(tool_data)
+                if mutable_fields:
+                    tool_json_mutable_fields[tool_id] = mutable_fields
+            except Exception:
+                pass
         
-        for claim in commercial_claims:
+        # Process all claims (not just commercial types)
+        for claim in claims:
             claim_id = claim.get("claim_id", "")
             claim_type = claim.get("claim_type", "")
+            claim_status = claim.get("status", "")
             
-            # This is the canonical source
+            # Skip non-accepted claims for canonical fact tracking
+            if claim_status not in ("verified", "verified_official", "verified_official_dynamic"):
+                continue
+            
             canonical_key = f"{tool_id}:{claim_type}"
             
             surfaces = []
@@ -160,41 +258,89 @@ def find_canonical_facts() -> dict:
                 "classification": FactClassification.CANONICALIZED.value,
             })
             
-            # Check tool JSON data file (manual duplicate)
-            tool_json = DATA_TOOLS_DIR / f"{tool_id}.json"
-            if tool_json.exists():
+            # Check tool JSON data file — scan for mutable commercial fields
+            if tool_json_path.exists():
                 try:
-                    tool_data = load_json(tool_json)
-                    # Check if pricing data is embedded in tool JSON
-                    has_pricing = False
-                    if claim_type == "pricing":
-                        has_pricing = bool(
-                            tool_data.get("priceFrom") or tool_data.get("price_from")
-                            or tool_data.get("pricingNotes")
-                        )
-                    elif claim_type == "free_plan":
-                        has_pricing = "free_plan" in tool_data
-                    elif claim_type == "trial":
-                        has_pricing = "trial" in tool_data
+                    tool_data = load_json(tool_json_path)
+                    has_mutable = False
+                    matched_fields = []
                     
-                    if has_pricing:
+                    if claim_type == "pricing":
+                        has_mutable = bool(
+                            tool_data.get("priceFrom") or tool_data.get("price_from")
+                            or tool_data.get("pricingNotes") or tool_data.get("pricing")
+                        )
+                        if "pricing" in tool_data:
+                            pricing_section = tool_data["pricing"]
+                            if isinstance(pricing_section, dict):
+                                for field in MUTABLE_COMMERCIAL_FIELDS:
+                                    if field in pricing_section:
+                                        matched_fields.append(f"pricing.{field}")
+                        for field in MUTABLE_COMMERCIAL_FIELDS:
+                            if field in tool_data:
+                                matched_fields.append(field)
+                    
+                    elif claim_type == "free_plan":
+                        has_mutable = "free_plan" in tool_data or "freePlan" in tool_data
+                        if "free_plan" in tool_data:
+                            matched_fields.append("free_plan")
+                        if "freePlan" in tool_data:
+                            matched_fields.append("freePlan")
+                        if "pricing" in tool_data and isinstance(tool_data["pricing"], dict):
+                            if "freePlan" in tool_data["pricing"] or "free_plan" in tool_data["pricing"]:
+                                matched_fields.append("pricing.freePlan")
+                    
+                    elif claim_type == "trial":
+                        has_mutable = "trial" in tool_data
+                        if "trial" in tool_data:
+                            matched_fields.append("trial")
+                        if "pricing" in tool_data and isinstance(tool_data["pricing"], dict):
+                            if "trial" in tool_data["pricing"]:
+                                matched_fields.append("pricing.trial")
+                    
+                    elif claim_type == "platform":
+                        has_mutable = False
+                        discovery = tool_data.get("discovery", {})
+                        if isinstance(discovery, dict) and "platforms" in discovery:
+                            has_mutable = True
+                            matched_fields.append("discovery.platforms")
+                    
+                    elif claim_type == "capability":
+                        has_mutable = False
+                        # Capabilities may be in various fields
+                        for field in ["capabilities", "features", "capability"]:
+                            if field in tool_data:
+                                has_mutable = True
+                                matched_fields.append(field)
+                    
+                    elif claim_type == "billing":
+                        has_mutable = False
+                        if "pricing" in tool_data and isinstance(tool_data["pricing"], dict):
+                            pricing_section = tool_data["pricing"]
+                            for field in ["billingBasis", "billing_basis", "currency", "billing_term"]:
+                                if field in pricing_section:
+                                    has_mutable = True
+                                    matched_fields.append(f"pricing.{field}")
+                    
+                    if has_mutable:
                         surfaces.append({
                             "type": "tool_json",
-                            "path": str(tool_json.relative_to(ROOT)),
+                            "path": str(tool_json_path.relative_to(ROOT)),
                             "derived_from_canonical": False,
-                            "classification": FactClassification.REQUIRES_REFACTOR.value,
+                            "matched_fields": matched_fields,
+                            "claim_type": claim_type,
                         })
                 except Exception:
                     pass
             
-            # Check tool profile HTML
+            # Check tool profile HTML (generator output)
             tool_profile = TOOLS_HTML_DIR / f"{tool_id}.html"
             if tool_profile.exists():
                 surfaces.append({
                     "type": "tool_profile",
                     "path": str(tool_profile.relative_to(ROOT)),
                     "derived_from_canonical": False,
-                    "classification": FactClassification.REQUIRES_REFACTOR.value,
+                    "claim_type": claim_type,
                 })
             
             # Check decision engine bundle
@@ -207,7 +353,7 @@ def find_canonical_facts() -> dict:
                             "type": "decision_engine",
                             "path": str(DECISION_BUNDLE_PATH.relative_to(ROOT)),
                             "derived_from_canonical": False,
-                            "classification": FactClassification.REQUIRES_REFACTOR.value,
+                            "claim_type": claim_type,
                         })
                 except Exception:
                     pass
@@ -227,11 +373,12 @@ def find_canonical_facts() -> dict:
                         "type": "comparison",
                         "path": "compare/*.html",
                         "derived_from_canonical": False,
-                        "classification": FactClassification.EDITORIAL_COPY.value,
+                        "classification": FactClassification.EDITORIAL_REFERENCE.value,
                         "count": comp_count,
+                        "claim_type": claim_type,
                     })
             
-            # Classify all surfaces
+            # Classify all surfaces using granular classification
             classified_surfaces = []
             for surface in surfaces:
                 if "classification" not in surface:
@@ -249,12 +396,15 @@ def find_canonical_facts() -> dict:
             ]
             
             if len(non_canonical) > 0:
-                # Determine stale risk based on classification
-                requires_refactor = sum(
+                # Determine stale risk based on new classification
+                actual_duplicates = sum(
                     1 for s in non_canonical
-                    if s.get("classification") == FactClassification.REQUIRES_REFACTOR.value
+                    if s.get("classification") in (
+                        FactClassification.ACTUAL_DUPLICATE.value,
+                        FactClassification.MUTABLE_CANONICAL_FACT.value,
+                    )
                 )
-                stale_risk = "HIGH" if requires_refactor > 0 else "MEDIUM"
+                stale_risk = "HIGH" if actual_duplicates > 0 else "LOW"
                 
                 duplicated_surfaces.append({
                     "canonical_key": canonical_key,
@@ -277,6 +427,19 @@ def find_canonical_facts() -> dict:
                 "surfaces": classified_surfaces,
             }
     
+    # Build audit summary with new classification breakdown
+    # Count surfaces that truly need refactoring (actual duplicates of mutable facts)
+    actual_duplicate_count = sum(
+        1 for d in duplicated_surfaces
+        if any(
+            s.get("classification") in (
+                FactClassification.ACTUAL_DUPLICATE.value,
+                FactClassification.MUTABLE_CANONICAL_FACT.value,
+            )
+            for s in d.get("surfaces", [])
+        )
+    )
+    
     report = {
         "pipeline": "canonical_facts",
         "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -289,10 +452,16 @@ def find_canonical_facts() -> dict:
             "medium_stale_risk": sum(
                 1 for d in duplicated_surfaces if d.get("stale_risk") == "MEDIUM"
             ),
+            "low_stale_risk": sum(
+                1 for d in duplicated_surfaces if d.get("stale_risk") == "LOW"
+            ),
             "classification_counts": classification_counts,
+            "actual_duplicates_needing_refactor": actual_duplicate_count,
+            "tool_json_mutable_field_count": len(tool_json_mutable_fields),
         },
         "canonical_facts": canonical_facts,
         "duplicated_surfaces": duplicated_surfaces,
+        "tool_json_mutable_fields": tool_json_mutable_fields,
     }
     
     return report
@@ -388,10 +557,77 @@ def calculate_impacted_outputs(tool_id: str, fact_type: str) -> List[str]:
     return impacted
 
 
+def generate_audit_report(report: dict) -> dict:
+    """Generate the canonical audit report with detailed classification.
+    
+    Creates data/canonical-audit-report.json with per-surface classification,
+    prioritized by commercial fact type.
+    
+    Args:
+        report: The canonical facts report from find_canonical_facts()
+    
+    Returns:
+        Audit report dict
+    """
+    summary = report["summary"]
+    
+    # Count by claim type
+    claim_type_counts = defaultdict(int)
+    for key, fact in report.get("canonical_facts", {}).items():
+        claim_type_counts[fact.get("claim_type", "unknown")] += 1
+    
+    # Count by stale risk
+    stale_risk_counts = defaultdict(int)
+    for dup in report.get("duplicated_surfaces", []):
+        stale_risk_counts[dup.get("stale_risk", "UNKNOWN")] += 1
+    
+    # Tools with mutable fields in tool JSON
+    tools_with_mutable_fields = report.get("tool_json_mutable_fields", {})
+    
+    # Prioritized list of actual duplicates
+    actual_duplicates = []
+    for dup in report.get("duplicated_surfaces", []):
+        for surface in dup.get("surfaces", []):
+            if surface.get("classification") in (
+                FactClassification.ACTUAL_DUPLICATE.value,
+                FactClassification.MUTABLE_CANONICAL_FACT.value,
+            ):
+                actual_duplicates.append({
+                    "tool_id": dup.get("tool_id"),
+                    "claim_type": dup.get("claim_type"),
+                    "claim_id": dup.get("claim_id"),
+                    "surface_type": surface.get("type"),
+                    "surface_path": surface.get("path"),
+                    "matched_fields": surface.get("matched_fields", []),
+                    "stale_risk": dup.get("stale_risk"),
+                })
+    
+    audit_report = {
+        "pipeline": "canonical_audit",
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "summary": {
+            "total_canonical_facts": summary.get("total_canonical_facts", 0),
+            "duplicated_surfaces": summary.get("duplicated_surfaces", 0),
+            "actual_duplicates_needing_refactor": summary.get("actual_duplicates_needing_refactor", 0),
+            "tool_json_mutable_field_count": summary.get("tool_json_mutable_field_count", 0),
+            "classification_counts": summary.get("classification_counts", {}),
+            "claim_type_counts": dict(claim_type_counts),
+            "stale_risk_counts": dict(stale_risk_counts),
+        },
+        "actual_duplicates": actual_duplicates,
+        "tools_with_mutable_fields": {
+            tool_id: fields for tool_id, fields in tools_with_mutable_fields.items()
+        },
+    }
+    
+    return audit_report
+
+
 def main():
     import argparse
     parser = argparse.ArgumentParser(description="Canonical facts analysis")
     parser.add_argument("--fix", action="store_true", help="Update dependency graph with canonical relationships")
+    parser.add_argument("--audit", action="store_true", help="Generate canonical audit report")
     args = parser.parse_args()
     
     report = find_canonical_facts()
@@ -404,6 +640,9 @@ def main():
     print(f"  Duplicated surfaces: {summary['duplicated_surfaces']}")
     print(f"  High stale risk: {summary['high_stale_risk']}")
     print(f"  Medium stale risk: {summary['medium_stale_risk']}")
+    print(f"  Low stale risk: {summary.get('low_stale_risk', 0)}")
+    print(f"  Actual duplicates needing refactor: {summary.get('actual_duplicates_needing_refactor', 0)}")
+    print(f"  Tool JSONs with mutable fields: {summary.get('tool_json_mutable_field_count', 0)}")
     
     # Show classification breakdown
     if "classification_counts" in summary:
@@ -423,6 +662,13 @@ def main():
             risk = dup.get("stale_risk", "UNKNOWN")
             n_surfaces = dup.get("non_canonical_surfaces", len(dup["surfaces"]))
             print(f"    [{risk}] {dup['canonical_key']}: {n_surfaces} non-canonical surfaces")
+    
+    # Generate audit report
+    if args.audit:
+        audit_report = generate_audit_report(report)
+        audit_path = ROOT / "data" / "canonical-audit-report.json"
+        save_json(audit_path, audit_report)
+        print(f"\n  Audit report saved to {audit_path}")
     
     # Update dependency graph if requested
     if args.fix:

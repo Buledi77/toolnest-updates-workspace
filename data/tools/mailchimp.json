@@ -19,7 +19,7 @@
     ],
     "audiences": [],
     "platforms": [
-      "web"
+      "Web-based SaaS"
     ],
     "integrations": [],
     "tags": [
@@ -128,7 +128,7 @@
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": "2026-11-22",
+    "checkedOn": "2026-11-23",
     "sourceUrls": [
       "https://mailchimp.com/pricing/"
     ],
@@ -137,7 +137,7 @@
     "annualDiscount": 0,
     "freePlan": true,
     "freeLimits": "Up to 500 contacts, 1,000 sends/month, basic email builder",
-    "trial": "No free trial; free plan available indefinitely",
+    "trial": "14-day free trial available on paid plans with no credit card required.",
     "plans": [
       {
         "name": "Free",

@@ -126,12 +126,12 @@
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": "2026-11-22",
+    "checkedOn": "2026-11-23",
     "sourceUrls": [
       "https://monday.com/pricing/"
     ],
     "currency": "USD",
-    "billingBasis": "monthly",
+    "billingBasis": "annual billing, 3-seat minimum",
     "annualDiscount": 17,
     "freePlan": false,
     "freeLimits": "No free plan; 20-day free trial available",

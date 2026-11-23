@@ -25,7 +25,15 @@
       "agencies"
     ]
   },
-  "factual_profile": {},
+  "factual_profile": {
+    "free_plan_status": "Free plan with unlimited drafts, 2 team members",
+    "trial_status": "No free trial; free plan serves as ongoing trial",
+    "pricing_status": "Freemium \u2014 free tier plus paid subscriptions from $19/month",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ]
+  },
   "editorial": {
     "editorial_tier": "B",
     "best_for": [
@@ -69,5 +77,68 @@
     "canonical_url": "https://www.toolnestai.tech/tools/glide.html",
     "sitemap_eligible": true
   },
-  "freshness": {}
+  "freshness": {
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z"
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://www.glideapps.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 24,
+    "freePlan": true,
+    "freeLimits": "Unlimited drafts, 2 team members, cannot publish",
+    "trial": "No free trial; free plan serves as ongoing trial",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "members": 2
+        },
+        "notes": "Unlimited drafts. Cannot publish."
+      },
+      {
+        "name": "Explorer",
+        "priceMonthly": 25,
+        "priceAnnualMonthlyEquivalent": 19,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "apps": 1,
+          "users": 100
+        },
+        "notes": "1 published app. 100 personal users."
+      },
+      {
+        "name": "Maker",
+        "priceMonthly": 60,
+        "priceAnnualMonthlyEquivalent": 49,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "apps": 3,
+          "users": "unlimited"
+        },
+        "notes": "Custom domains, Google Sheets. Personal users only."
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 249,
+        "priceAnnualMonthlyEquivalent": 199,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "apps": "unlimited",
+          "users": 30
+        },
+        "notes": "Unlimited apps. Work email sign-ins."
+      }
+    ],
+    "billingCaveat": "Update overages cost $0.02 each. Enterprise is custom. Maker is personal-email users only; Business needed for work emails.",
+    "conflicts": [],
+    "changeLog": []
+  }
 }

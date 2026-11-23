@@ -31,7 +31,7 @@
     "limitations": [],
     "free_plan_status": [],
     "trial_status": [],
-    "pricing_status": [],
+    "pricing_status": "Pricing Not Publicly Listed",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -78,7 +78,7 @@
   },
   "freshness": {
     "created_at": "2026-11-14T22:03:16Z",
-    "updated_at": "2026-11-14T22:03:16Z",
+    "updated_at": "2026-11-23T20:00:00Z",
     "last_verified_at": "2026-11-14T22:03:16Z",
     "next_review_at": null,
     "stale_fields": [
@@ -88,5 +88,12 @@
       "monetization"
     ],
     "change_history_reference": null
+  },
+  "pricing": {
+    "checkedOn": null,
+    "pricing_status": "Pricing Not Publicly Listed",
+    "freePlan": null,
+    "plans": [],
+    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
   }
 }

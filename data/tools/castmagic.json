@@ -25,7 +25,15 @@
       "marketers"
     ]
   },
-  "factual_profile": {},
+  "factual_profile": {
+    "free_plan_status": "No free plan; free trial available",
+    "trial_status": "Free trial available",
+    "pricing_status": "Paid \u2014 subscriptions from $19/month",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ]
+  },
   "editorial": {
     "editorial_tier": "B",
     "best_for": [
@@ -69,5 +77,61 @@
     "canonical_url": "https://www.toolnestai.tech/tools/castmagic.html",
     "sitemap_eligible": true
   },
-  "freshness": {}
+  "freshness": {
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z"
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://castmagic.io/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 33,
+    "freePlan": false,
+    "trial": "Free trial available",
+    "plans": [
+      {
+        "name": "Hobby",
+        "priceMonthly": 29,
+        "priceAnnualMonthlyEquivalent": 19,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "transcribedHours": 30,
+          "spaces": 3,
+          "storage": "50 GB"
+        },
+        "notes": "Solo creators. Library total."
+      },
+      {
+        "name": "Starter",
+        "priceMonthly": 69,
+        "priceAnnualMonthlyEquivalent": 48,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "transcribedHours": 100,
+          "spaces": 10,
+          "storage": "250 GB"
+        },
+        "notes": "API access included. Onboarding call."
+      },
+      {
+        "name": "Team",
+        "priceMonthly": 199,
+        "priceAnnualMonthlyEquivalent": 139,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "transcribedHours": 400,
+          "spaces": 25,
+          "storage": "1 TB",
+          "seats": 5
+        },
+        "notes": "Priority support. Unlimited team size."
+      }
+    ],
+    "billingCaveat": "Annual billing saves 33%. Business and Scale plans start from $699/month. Additional seats $159/year each on Team.",
+    "conflicts": [],
+    "changeLog": []
+  }
 }

@@ -45,12 +45,6 @@
 .hsearch:focus-within{border-color:#5FE3CB;box-shadow:0 0 0 3px rgba(95,227,195,.22)}
 @media(max-width:560px){.hsearch{flex-wrap:wrap;border-radius:24px;padding:10px}.hsearch input{flex:1 1 60%;order:2}.hsearch>svg{order:1}.hsearch .btn{order:3;width:100%;margin-top:2px}}
 #featured .card:has(.card-link){cursor:pointer}
-#featured .card .card-link::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit}
-#featured .card .c-act .btn{position:relative;z-index:3}
-#featured .card .c-act .btn{background:#087a6a!important;color:#fff!important;border:1px solid #087a6a;box-shadow:0 8px 20px rgba(8,122,106,.18);border-radius:12px;font-weight:700;min-height:44px;transition:background .2s ease,border-color .2s ease,box-shadow .2s ease,transform .2s ease}
-#featured .card .c-act .btn:hover{background:#06685b!important;border-color:#06685b;box-shadow:0 10px 24px rgba(8,122,106,.24);transform:translateY(-1px)}
-#featured .card .c-act .btn:focus-visible{outline:3px solid rgba(8,122,106,.28);outline-offset:3px}
-#featured .card .c-act .btn:active{transform:translateY(0);box-shadow:0 5px 14px rgba(8,122,106,.18)}
 #featured .card .card-link:focus-visible{outline:none}
 #featured .card:has(.card-link:focus-visible){outline:2px solid var(--ring);outline-offset:3px}
 #featured .card.all-card{justify-content:center;align-items:flex-start;gap:14px;background:linear-gradient(160deg,var(--soft),var(--surface));border-style:dashed}
@@ -63,49 +57,6 @@
 #trust .proof{border-top:1px solid var(--line);border-bottom:0}
 @media(max-width:900px){#trust .proof{grid-template-columns:1fr 1fr}#trust .proof li:nth-child(3){padding-left:0;border-left:0}}
 @media(max-width:560px){#trust .proof{grid-template-columns:1fr}#trust .proof li+li{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
-</style>
-
-
-<style id="tn-card-polish">
-#tools .card .tile.has-logo{
- padding:6px!important;
- overflow:hidden!important;
-}
-#tools .card .tile.has-logo img{
- position:static!important;
- width:100%!important;
- height:100%!important;
- object-fit:contain!important;
- object-position:center!important;
- padding:0!important;
- border-radius:5px!important;
-}
-#tools .card .c-top{
- grid-template-columns:38px minmax(0,1fr) auto!important;
- align-items:center!important;
-}
-#tools .card .c-top h3{
- overflow-wrap:normal!important;
- word-break:normal!important;
- hyphens:none!important;
- text-wrap:pretty!important;
-}
-@media (min-width:761px){
- #tools .card .c-top h3{
- font-size:14px!important;
- line-height:1.12!important;
- }
-}
-@media (max-width:760px){
- #tools .card .c-top{
- grid-template-columns:31px minmax(0,1fr)!important;
- }
- #tools .card .c-top h3{
- font-size:12.2px!important;
- overflow-wrap:normal!important;
- word-break:normal!important;
- }
-}
 </style>
 
 
@@ -322,7 +273,7 @@
  { id: "launch-a-website", label: "Launch a website", tool: "hostinger", guide: "/goals/launch-a-website.html", also_consider: ["webflow", "squarespace"], use_case_tags: ["website building", "web hosting", "landing page"] }
  ];
 
- var FEATURED = ["systeme", "mozpro", "semrush", "ahrefs", "kapwing", "kit", "elevenlabs", "hostinger"];
+ var FEATURED = ["cursor", "github-copilot", "ahrefs", "notion", "heygen", "ideogram", "bolt", "lovable"];
 
  var ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="8.5 12.5 11 15 16 9.5"/></svg>';
  var TICK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>';

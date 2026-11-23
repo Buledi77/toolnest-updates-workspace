@@ -23,9 +23,15 @@
       "sales teams",
       "sales managers",
       "B2B companies"
+    ],
+    "platforms": [
+      "Web-based SaaS",
+      "Desktop audio capture"
     ]
   },
-  "factual_profile": {},
+  "factual_profile": {
+    "pricing_status": "Pricing Not Publicly Listed"
+  },
   "editorial": {
     "editorial_tier": "B",
     "best_for": [
@@ -69,5 +75,16 @@
     "canonical_url": "https://www.toolnestai.tech/tools/spiky.html",
     "sitemap_eligible": true
   },
-  "freshness": {}
+  "freshness": {
+    "updated_at": "2026-11-23T20:00:00Z"
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "pricing_status": "Pricing Not Publicly Listed",
+    "freePlan": true,
+    "plans": [],
+    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
+    "currency": "USD",
+    "trial": "Trial equivalent to Premium plan excluding CRM functionality. Free plan also available."
+  }
 }

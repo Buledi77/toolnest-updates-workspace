@@ -25,7 +25,15 @@
       "support teams"
     ]
   },
-  "factual_profile": {},
+  "factual_profile": {
+    "free_plan_status": "No free plan; 14-day free trial available",
+    "trial_status": "14-day free trial on Expert features",
+    "pricing_status": "Paid \u2014 subscriptions from $25/user/month",
+    "pricing_regions": [
+      "EU",
+      "Global"
+    ]
+  },
   "editorial": {
     "editorial_tier": "B",
     "best_for": [
@@ -69,5 +77,67 @@
     "canonical_url": "https://www.toolnestai.tech/tools/cloudtalk.html",
     "sitemap_eligible": true
   },
-  "freshness": {}
+  "freshness": {
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z"
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://www.cloudtalk.io/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 30,
+    "freePlan": false,
+    "trial": "14-day free trial on Expert features",
+    "plans": [
+      {
+        "name": "Starter",
+        "priceMonthly": 34,
+        "priceAnnualMonthlyEquivalent": 25,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "features": [
+            "click to call",
+            "call flow builder",
+            "queues"
+          ]
+        },
+        "notes": "Per user per month. 1 free number."
+      },
+      {
+        "name": "Essential",
+        "priceMonthly": 39,
+        "priceAnnualMonthlyEquivalent": 29,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "features": [
+            "IVR",
+            "skills-based routing",
+            "CRM integrations"
+          ]
+        },
+        "notes": "Per user per month."
+      },
+      {
+        "name": "Expert",
+        "priceMonthly": 69,
+        "priceAnnualMonthlyEquivalent": 49,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "minLicenses": 3,
+          "features": [
+            "AI Sales Dialer",
+            "live monitoring",
+            "Salesforce"
+          ]
+        },
+        "notes": "Per user per month. Power mode included."
+      }
+    ],
+    "billingCaveat": "AI Sales Dialer Power mode is $15/user add-on on Starter/Essential. Parallel dialer $39/user. AI conversation intelligence $9/user. Prices shown in EUR on vendor page.",
+    "conflicts": [],
+    "changeLog": []
+  }
 }

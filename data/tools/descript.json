@@ -39,10 +39,13 @@
       }
     ],
     "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
-    "pricing_status": [],
-    "pricing_regions": [],
+    "free_plan_status": "Free plan with 60 media minutes per month, watermarked exports",
+    "trial_status": "No free trial; free plan serves as ongoing trial",
+    "pricing_status": "Freemium — free tier plus paid subscriptions from $16/month",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ],
     "availability_regions": []
   },
   "editorial": {
@@ -107,10 +110,77 @@
   },
   "freshness": {
     "created_at": "2026-11-20T15:27:01Z",
-    "updated_at": "2026-11-20T15:27:01Z",
-    "last_verified_at": null,
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z",
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://www.descript.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "annual billing",
+    "annualDiscount": 33,
+    "freePlan": true,
+    "freeLimits": "60 media minutes per month, 100 one-time AI credits, 720p watermarked export, 5 GB storage",
+    "trial": "No free trial; free plan serves as ongoing trial",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "mediaMinutes": 60,
+          "aiCredits": 100,
+          "storage": "5 GB"
+        },
+        "notes": "Watermarked 720p export."
+      },
+      {
+        "name": "Hobbyist",
+        "priceMonthly": 24,
+        "priceAnnualMonthlyEquivalent": 16,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "mediaHours": 10,
+          "aiCredits": 400,
+          "storage": "100 GB"
+        },
+        "notes": "Per editor. 1080p no watermark."
+      },
+      {
+        "name": "Creator",
+        "priceMonthly": 35,
+        "priceAnnualMonthlyEquivalent": 24,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "mediaHours": 30,
+          "aiCredits": 800,
+          "storage": "1 TB",
+          "seats": 3
+        },
+        "notes": "Per editor. 4K export."
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 65,
+        "priceAnnualMonthlyEquivalent": 50,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "mediaHours": 40,
+          "aiCredits": 1500,
+          "storage": "2 TB",
+          "seats": 5
+        },
+        "notes": "Per editor. Brand Studio, translation proofreading."
+      }
+    ],
+    "billingCaveat": "Media minutes and AI credits reset monthly without rolling over. Enterprise is custom priced.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

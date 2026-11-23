@@ -22,32 +22,47 @@
 <style>
 .estimator{max-width:800px;margin:0 auto;padding:24px 0}
 .estimator .form-group{margin-bottom:20px}
-.estimator label{display:block;font-weight:600;margin-bottom:6px;font-size:14px}
-.estimator input[type="number"],.estimator select{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:6px;font-size:16px;font-family:inherit;box-sizing:border-box}
-.estimator input[type="number"]:focus,.estimator select:focus{outline:none;border-color:#12A68E;box-shadow:0 0 0 3px rgba(18,166,142,0.15)}
+.estimator label{display:block;font-weight:600;margin-bottom:6px;font-size:14px;color:var(--ink)}
+.estimator input[type="number"],.estimator select{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font-size:16px;font-family:var(--font-body);box-sizing:border-box;background:var(--bg);color:var(--ink)}
+.estimator input[type="number"]:focus,.estimator select:focus{outline:none;border-color:var(--ring);box-shadow:0 0 0 3px rgba(15,107,92,.15)}
 .estimator .tool-checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:20px}
-.estimator .tool-check{display:flex;align-items:center;gap:8px;padding:12px;border:1px solid #e5e7eb;border-radius:8px;cursor:pointer}
-.estimator .tool-check input{width:auto;cursor:pointer}
-.estimator .tool-check label{margin:0;cursor:pointer;font-weight:500}
+.estimator .tool-check{display:flex;align-items:center;gap:8px;padding:12px;border:1px solid var(--line);border-radius:10px;cursor:pointer;background:var(--surface);transition:all .2s ease}
+.estimator .tool-check:hover{border-color:var(--brand);background:var(--soft)}
+.estimator .tool-check input{width:auto;cursor:pointer;accent-color:var(--brand)}
+.estimator .tool-check label{margin:0;cursor:pointer;font-weight:500;color:var(--ink)}
 .estimator .results{display:none;margin-top:24px}
 .estimator .results.visible{display:block}
-.estimator .result-card{padding:16px;border:1px solid #e5e7eb;border-radius:8px;margin-bottom:12px}
-.estimator .result-card h3{margin:0 0 8px;font-size:18px}
-.estimator .result-card .price{font-size:24px;font-weight:700;color:#12A68E}
-.estimator .result-card .note{font-size:13px;color:#6b7280;margin-top:4px}
-.estimator .disclaimer{background:#fef3c7;border:1px solid #f59e0b;border-radius:8px;padding:16px;margin-top:20px;font-size:14px}
+.estimator .result-card{padding:16px;border:1px solid var(--line);border-radius:12px;margin-bottom:12px;background:var(--surface)}
+.estimator .result-card h3{margin:0 0 8px;font-size:18px;color:var(--ink)}
+.estimator .result-card .price{font-size:24px;font-weight:700;color:var(--brand)}
+.estimator .result-card .note{font-size:13px;color:var(--muted);margin-top:4px}
+.estimator .disclaimer{background:rgba(180,83,9,.06);border:1px solid rgba(180,83,9,.2);border-radius:10px;padding:16px;margin-top:20px;font-size:14px;color:var(--muted)}
 .estimator .disclaimer strong{color:#92400e}
-.estimator .btn-calc{background:#12A68E;color:#fff;border:none;padding:12px 24px;border-radius:6px;font-size:16px;font-weight:600;cursor:pointer;width:100%;margin-top:8px}
-.estimator .btn-calc:hover{background:#0e8a73}
-.estimator .btn-calc:focus{outline:2px solid #12A68E;outline-offset:2px}
-.estimator .empty-state{text-align:center;padding:40px 20px;color:#6b7280}
+.estimator .btn-calc{background:var(--brand);color:#fff;border:none;padding:12px 24px;border-radius:10px;font-size:16px;font-weight:600;cursor:pointer;width:100%;margin-top:8px;transition:background .2s ease,transform .2s ease;font-family:var(--font-body);box-shadow:0 8px 20px -8px var(--brand)}
+.estimator .btn-calc:hover{background:#0a5c50;transform:translateY(-1px)}
+.estimator .btn-calc:focus{outline:3px solid var(--ring);outline-offset:2px}
+.estimator .empty-state{text-align:center;padding:40px 20px;color:var(--muted)}
 .estimator .error-msg{color:#dc2626;font-size:13px;margin-top:4px;display:none}
 .estimator .error-msg.visible{display:block}
-.estimator .pricing-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;padding:12px;border:1px solid #e5e7eb;border-radius:8px;margin-bottom:12px}
-.estimator .pricing-row label{font-size:13px;font-weight:500}
-.estimator .pricing-row input{padding:8px;border:1px solid #d1d5db;border-radius:4px;font-size:14px;font-family:inherit;box-sizing:border-box;width:100%}
-.estimator .pricing-row .tool-label{grid-column:1/-1;font-weight:600;font-size:15px;margin-bottom:4px;padding-bottom:4px;border-bottom:1px solid #e5e7eb}
+.estimator .pricing-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;padding:12px;border:1px solid var(--line);border-radius:10px;margin-bottom:12px;background:var(--surface)}
+.estimator .pricing-row label{font-size:13px;font-weight:500;color:var(--muted)}
+.estimator .pricing-row input{padding:8px;border:1px solid var(--line);border-radius:6px;font-size:14px;font-family:var(--font-body);box-sizing:border-box;width:100%;background:var(--bg);color:var(--ink)}
+.estimator .pricing-row .tool-label{grid-column:1/-1;font-weight:600;font-size:15px;margin-bottom:4px;padding-bottom:4px;border-bottom:1px solid var(--line);color:var(--ink)}
 .estimator .pricing-row.hidden{display:none}
+.estimator small{color:var(--muted)}
+.est-related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:16px}
+.est-related-card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;padding:20px;background:var(--surface);transition:box-shadow .2s ease,border-color .2s ease;position:relative;overflow:hidden}
+.est-related-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--brand);border-radius:14px 14px 0 0}
+.est-related-card:hover{box-shadow:0 2px 8px rgba(11,34,32,.1),0 18px 40px -20px rgba(11,34,32,.32);border-color:var(--brand)}
+.est-related-card-icon{width:40px;height:40px;border-radius:10px;background:rgba(15,107,92,.1);display:grid;place-items:center;color:var(--brand);margin-bottom:14px;flex-shrink:0}
+.est-related-card-icon svg{width:22px;height:22px}
+.est-related-card-body{flex:1}
+.est-related-card-title{font-size:16px;font-weight:700;color:var(--ink);margin:0 0 6px}
+.est-related-card-desc{font-size:14px;color:var(--muted);margin:0 0 8px;line-height:1.5}
+.est-related-card-outcome{font-size:13px;color:var(--brand);margin:0 0 14px;line-height:1.5;font-weight:500}
+.est-related-card-cta{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:10px;border:none;background:var(--brand);color:#fff;font:600 14px var(--font-body);text-decoration:none;transition:background .2s ease,transform .2s ease;align-self:flex-start;margin-top:auto}
+.est-related-card-cta:hover{background:#0a5c50;transform:translateY(-1px)}
+.est-related-card-cta:focus-visible{outline:3px solid var(--ring);outline-offset:2px}
 @media(max-width:640px){
 .estimator{padding:16px 0}
 .estimator .tool-checks{grid-template-columns:1fr}
@@ -88,14 +103,9 @@
 <span>Last updated November 2026</span>
 <a href="/about.html">How ToolNest reviews tools</a>
 </div>
-</div></section><div class="wrap tn-trust-strip"><p class="tn-research-line">ToolNest Research &middot; Editorial review 2026-11-23 &middot; <a href="/how-we-test.html">Research-based profile</a></p><p class="tn-trust-links"><a href="/how-we-test.html">Methodology</a><a href="/editorial-policy.html">Editorial policy</a><a href="/contact.html">Corrections</a><a href="/affiliate-disclosure.html">Affiliate disclosure</a></p></div>
+</div></section>
 
 <div class="wrap estimator">
-<section class="p-sec" id="how-it-works">
-<h2>How it works</h2>
-<p>Select the tools you want to compare, enter your expected monthly usage, then provide your own pricing assumptions for each tool. The estimator calculates your estimated usage per tool and shows whether it fits within your entered allowance.</p>
-<p><strong>How it works:</strong> You supply the price, included allowance, and optional overage rate for each tool. The calculator estimates your usage based on runs, steps, and complexity — then compares that usage against your entered allowance. Results are rough estimates based on your input, not verified vendor pricing.</p>
-</section>
 <section class="p-sec" id="estimator-form">
 <h2>Enter your usage</h2>
 <div class="form-group">
@@ -135,6 +145,12 @@
 </div>
 <button class="btn-calc" type="button" id="calc-btn" data-event-name="utility_start">Estimate my costs</button>
 </section>
+<section class="p-sec" id="how-it-works">
+<h2>How it works</h2>
+<p>Select the tools you want to compare, enter your expected monthly usage, then provide your own pricing assumptions for each tool. The estimator calculates your estimated usage per tool and shows whether it fits within your entered allowance.</p>
+<p><strong>How it works:</strong> You supply the price, included allowance, and optional overage rate for each tool. The calculator estimates your usage based on runs, steps, and complexity — then compares that usage against your entered allowance. Results are rough estimates based on your input, not verified vendor pricing.</p>
+</section>
+<div class="wrap tn-trust-strip"><p class="tn-research-line">ToolNest Research &middot; Editorial review 2026-11-23 &middot; <a href="/how-we-test.html">Research-based profile</a></p><p class="tn-trust-links"><a href="/how-we-test.html">Methodology</a><a href="/editorial-policy.html">Editorial policy</a><a href="/contact.html">Corrections</a><a href="/affiliate-disclosure.html">Affiliate disclosure</a></p></div>
 <section class="results" id="results" aria-live="polite">
 <h2>Your estimated costs</h2>
 <div id="results-container"></div>
@@ -143,14 +159,30 @@
 </div>
 </section>
 <section class="p-sec" id="related">
-<h2>Related resources</h2>
-<div class="linkgrid">
-<a class="lk" href="/category/automation.html"><span class="lk-tx"><b>Automation category</b><small>Browse all automation tools</small></span></a>
-<a class="lk" href="/best/best-automation-tools.html"><span class="lk-tx"><b>Best automation tools</b><small>Our hand-picked list</small></span></a>
-<a class="lk" href="/tools/zapier.html"><span class="lk-tx"><b>Zapier review</b><small>Full profile and pricing</small></span></a>
-<a class="lk" href="/tools/make.html"><span class="lk-tx"><b>Make review</b><small>Full profile and pricing</small></span></a>
-<a class="lk" href="/tools/n8n.html"><span class="lk-tx"><b>n8n review</b><small>Full profile and pricing</small></span></a>
-<a class="lk" href="/tools/ifttt.html"><span class="lk-tx"><b>IFTTT review</b><small>Full profile and pricing</small></span></a>
+<h2>Related tools</h2>
+<div class="est-related-grid">
+<div class="est-related-card">
+<div class="est-related-card-icon">
+<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.4" y2="16.4"/></svg>
+</div>
+<div class="est-related-card-body">
+<h3 class="est-related-card-title">Decision Engine</h3>
+<p class="est-related-card-desc">Get scored tool recommendations based on your use cases and criteria.</p>
+<p class="est-related-card-outcome">Find the right automation tool with transparent, explainable matching.</p>
+</div>
+<a class="est-related-card-cta" href="/tools/decision-engine.html">Find My Tool <span aria-hidden="true">→</span></a>
+</div>
+<div class="est-related-card">
+<div class="est-related-card-icon">
+<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+</div>
+<div class="est-related-card-body">
+<h3 class="est-related-card-title">Stack Cost Analyzer</h3>
+<p class="est-related-card-desc">Select multiple tools and see your combined monthly and annual cost estimates.</p>
+<p class="est-related-card-outcome">Know your total tool spend at a glance, with unknown pricing clearly separated.</p>
+</div>
+<a class="est-related-card-cta" href="/tools/stack-analyzer.html">Analyze Costs <span aria-hidden="true">→</span></a>
+</div>
 </div>
 </section>
 </div>

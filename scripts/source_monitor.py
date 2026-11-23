@@ -39,6 +39,22 @@ TOOLS_V1_PATH = ROOT / "data" / "tools-v1.json"
 CATALOG_RECON_PATH = ROOT / "data" / "catalog-reconciliation.json"
 REPORTS_DIR = ROOT / "reports" / "phase6"
 
+# Pipeline component imports (lazy-loaded to avoid circular deps)
+def _import_pipeline_components():
+    """Lazy-import pipeline components used in the fetch→extract→update chain."""
+    from extractors import get_extractor, PricingExtractor, FeatureExtractor
+    from change_detector import classify_change, is_material_change, ChangeType
+    from anomaly_detector import detect_anomalies, has_critical_anomaly
+    from change_confidence import classify_change_risk, RiskLevel
+    from update_policy import classify_update, UpdateTier, create_update_request
+    return (
+        get_extractor, PricingExtractor, FeatureExtractor,
+        classify_change, is_material_change, ChangeType,
+        detect_anomalies, has_critical_anomaly,
+        classify_change_risk, RiskLevel,
+        classify_update, UpdateTier, create_update_request,
+    )
+
 
 class VerificationStatus(str, Enum):
     """Distinct verification statuses that separate actual verification from date-window checks."""
@@ -205,6 +221,475 @@ def classify_claim_with_semantics(
     return VerificationStatus.DUE_FOR_RECHECK, 0
 
 
+def _claim_to_old_fields(claim: dict) -> dict:
+    """Convert a ledger claim's value into the field format expected by change_detector.
+    
+    Maps the claim's structured value back to the extractor output format so that
+    change_detector can compare old vs new fields.
+    """
+    claim_type = claim.get("claim_type", "")
+    value = claim.get("value")
+    
+    if claim_type == "pricing":
+        # Convert pricing claim value to extractor format
+        fields = {"pricing": {}}
+        if isinstance(value, dict):
+            plans = value.get("plans", [])
+            tiers = []
+            for plan in plans:
+                tier = {
+                    "plan": plan.get("name", ""),
+                    "price": plan.get("displayed_monthly_usd", plan.get("amount")),
+                    "currency": value.get("currency", "USD"),
+                    "billing_interval": "monthly",
+                }
+                if plan.get("renewal_monthly_usd") is not None:
+                    tier["renewal_price"] = plan["renewal_monthly_usd"]
+                tiers.append(tier)
+            fields["pricing"]["tiers"] = tiers
+            fields["pricing"]["currency"] = value.get("currency")
+        return fields
+    elif claim_type == "free_plan":
+        fields = {"pricing": {}}
+        if isinstance(value, str):
+            fields["pricing"]["free_plan"] = "free plan" in value.lower() and "no free plan" not in value.lower()
+        elif isinstance(value, bool):
+            fields["pricing"]["free_plan"] = value
+        return fields
+    elif claim_type == "trial":
+        fields = {}
+        if isinstance(value, dict):
+            fields["trial"] = value
+        elif isinstance(value, str):
+            fields["trial"] = {"available": "trial" in value.lower(), "duration_days": None}
+        return fields
+    elif claim_type in ("capability", "feature"):
+        fields = {}
+        if isinstance(value, list):
+            fields["capabilities"] = value
+        return fields
+    elif claim_type == "platform":
+        fields = {}
+        if isinstance(value, list):
+            fields["platforms"] = value
+        elif isinstance(value, str):
+            fields["platforms"] = [value]
+        return fields
+    elif claim_type == "limitation":
+        fields = {}
+        if isinstance(value, list):
+            fields["limitations"] = value
+        return fields
+    elif claim_type == "billing":
+        fields = {"pricing": {}}
+        if isinstance(value, dict):
+            fields["pricing"]["billing_info"] = value
+        return fields
+    
+    return {}
+
+
+def _run_pipeline_for_claim(
+    claim: dict,
+    fetch_result: dict,
+    source_registry: dict,
+    as_of: date,
+) -> dict:
+    """Run the full pipeline for a single claim: extract → detect → anomaly → confidence → policy.
+    
+    Args:
+        claim: The evidence claim from the ledger
+        fetch_result: The fetch result dict from source_fetcher (per-source results)
+        source_registry: The source registry for this tool
+        as_of: Current date
+    
+    Returns:
+        Pipeline result dict with status, tier, new_value, anomalies, etc.
+    """
+    tool_id = claim.get("tool_id", "")
+    claim_type = claim.get("claim_type", "")
+    claim_id = claim.get("claim_id", "")
+    
+    result = {
+        "claim_id": claim_id,
+        "tool_id": tool_id,
+        "claim_type": claim_type,
+        "status": VerificationStatus.REVIEW_REQUIRED.value,
+        "tier": None,
+        "new_value": None,
+        "anomalies": [],
+        "change_type": None,
+        "risk_level": None,
+        "action_taken": "none",
+        "last_verified_preserved": True,
+    }
+    
+    # Import all pipeline components once
+    try:
+        (
+            get_extractor, PricingExtractor, FeatureExtractor,
+            classify_change, is_material_change, ChangeType,
+            detect_anomalies, has_critical_anomaly,
+            classify_change_risk, RiskLevel,
+            classify_update, UpdateTier, create_update_request,
+        ) = _import_pipeline_components()
+    except Exception:
+        result["status"] = VerificationStatus.PARSER_FAILURE.value
+        result["action_taken"] = "pipeline_import_failed"
+        return result
+    
+    # Find the source role for this claim type
+    source_role = _claim_type_to_source_role(claim_type)
+    if not source_role:
+        result["status"] = VerificationStatus.REVIEW_REQUIRED.value
+        result["action_taken"] = "no_source_role"
+        return result
+    
+    # Get the appropriate extractor
+    try:
+        extractor = get_extractor(tool_id, source_role)
+    except Exception:
+        result["status"] = VerificationStatus.PARSER_FAILURE.value
+        result["action_taken"] = "extractor_import_failed"
+        return result
+    
+    if not extractor:
+        result["status"] = VerificationStatus.REVIEW_REQUIRED.value
+        result["action_taken"] = "no_extractor_for_role"
+        return result
+    
+    # Find the matching source in fetch results
+    claim_source_ids = claim.get("source_ids", [])
+    matched_source_result = None
+    matched_source_url = None
+    
+    for sid in claim_source_ids:
+        if sid in fetch_result.get("sources", {}):
+            src_result = fetch_result["sources"][sid]
+            if src_result.get("status") == "success" and src_result.get("text_content"):
+                matched_source_result = src_result
+                matched_source_url = src_result.get("url", "")
+                break
+    
+    if not matched_source_result:
+        # Check overall fetch status
+        overall_status = fetch_result.get("status", "unavailable")
+        if overall_status in ("unavailable",):
+            result["status"] = VerificationStatus.SOURCE_UNAVAILABLE.value
+            result["action_taken"] = "source_unavailable"
+        else:
+            result["status"] = VerificationStatus.REVIEW_REQUIRED.value
+            result["action_taken"] = "no_matching_source"
+        return result
+    
+    # Step 1: Extract new fields from fetched content
+    try:
+        text_content = matched_source_result.get("text_content", "")
+        new_fields = extractor.extract(text_content, matched_source_url or "")
+    except Exception as e:
+        result["status"] = VerificationStatus.PARSER_FAILURE.value
+        result["action_taken"] = f"extraction_failed: {str(e)[:100]}"
+        return result
+    
+    # Step 2: Compare old vs new fields via change_detector
+    old_fields = _claim_to_old_fields(claim)
+    old_fingerprint = claim.get("content_fingerprint")
+    new_fingerprint = matched_source_result.get("fingerprint")
+    
+    try:
+        change_type, specific_changes = classify_change(
+            old_fingerprint=old_fingerprint,
+            new_fingerprint=new_fingerprint,
+            old_fields=old_fields,
+            new_fields=new_fields,
+        )
+    except Exception as e:
+        result["status"] = VerificationStatus.PARSER_FAILURE.value
+        result["action_taken"] = f"change_detection_failed: {str(e)[:100]}"
+        return result
+    
+    result["change_type"] = change_type.value
+    
+    # Step 3: Anomaly detection
+    try:
+        anomalies = detect_anomalies(
+            old_fields=old_fields,
+            new_fields=new_fields,
+            old_fingerprint=old_fingerprint,
+            new_fingerprint=new_fingerprint,
+        )
+    except Exception:
+        anomalies = []
+    
+    result["anomalies"] = anomalies
+    
+    if has_critical_anomaly(anomalies):
+        result["status"] = VerificationStatus.REVIEW_REQUIRED.value
+        result["action_taken"] = "critical_anomaly_preserved"
+        result["last_verified_preserved"] = True
+        return result
+    
+    # Step 4: Risk classification
+    try:
+        risk_level, risk_explanation = classify_change_risk(
+            change_type=change_type.value,
+            specific_changes=specific_changes,
+            old_value=old_fields,
+            new_value=new_fields,
+        )
+    except Exception:
+        risk_level = RiskLevel.MEDIUM_RISK
+        risk_explanation = "risk_classification_failed"
+    
+    result["risk_level"] = risk_level.value
+    
+    # Step 5: Policy tier classification
+    try:
+        source_official = False
+        for sid in claim_source_ids:
+            src = _get_source_from_ledger(sid)
+            if src and src.get("official"):
+                source_official = True
+                break
+        
+        tier, tier_explanation = classify_update(
+            change_type=change_type.value,
+            risk_level=risk_level.value,
+            anomaly_detected=bool(anomalies),
+            source_official=source_official,
+            claim_type=claim_type,
+        )
+    except Exception:
+        tier = UpdateTier.TIER_2
+        tier_explanation = "policy_classification_failed"
+    
+    result["tier"] = tier.value
+    
+    # Step 6: Apply tier-based action
+    if change_type == ChangeType.NO_CHANGE:
+        # No change detected — recheck passed
+        result["status"] = VerificationStatus.RECHECK_PASSED.value
+        result["action_taken"] = "recheck_passed_no_change"
+        result["last_verified_preserved"] = False  # Will advance date
+        result["new_value"] = claim.get("value")  # Keep existing value
+        return result
+    
+    # Check if non-material change (cosmetic/layout)
+    if change_type in (ChangeType.COSMETIC_CHANGE, ChangeType.LAYOUT_CHANGE):
+        result["status"] = VerificationStatus.RECHECK_PASSED.value
+        result["action_taken"] = "cosmetic_change_ignored"
+        result["last_verified_preserved"] = False
+        result["new_value"] = claim.get("value")
+        return result
+    
+    # Material change — apply tier logic
+    if tier == UpdateTier.TIER_1:
+        # Auto-update: update claim value and advance dates
+        result["status"] = VerificationStatus.VERIFIED_CURRENT.value
+        result["action_taken"] = "tier_1_auto_update"
+        result["last_verified_preserved"] = False
+        result["new_value"] = _extract_new_claim_value(claim, new_fields)
+    elif tier == UpdateTier.TIER_2:
+        # Approval required: mark for review, preserve last verified
+        result["status"] = VerificationStatus.REVIEW_REQUIRED.value
+        result["action_taken"] = "tier_2_approval_required"
+        result["last_verified_preserved"] = True
+        result["new_value"] = _extract_new_claim_value(claim, new_fields)
+    else:
+        # TIER_3: manual review, preserve everything
+        result["status"] = VerificationStatus.REVIEW_REQUIRED.value
+        result["action_taken"] = "tier_3_manual_review"
+        result["last_verified_preserved"] = True
+        result["new_value"] = _extract_new_claim_value(claim, new_fields)
+    
+    return result
+
+
+def _claim_type_to_source_role(claim_type: str) -> Optional[str]:
+    """Map claim type to source role for extractor selection."""
+    mapping = {
+        "pricing": "PRICING",
+        "free_plan": "PRICING",
+        "trial": "PRICING",
+        "billing": "PRICING",
+        "capability": "PRODUCT_FEATURES",
+        "feature": "PRODUCT_FEATURES",
+        "limitation": "PRODUCT_FEATURES",
+        "platform": "PRODUCT_FEATURES",
+        "integration": "PRODUCT_FEATURES",
+    }
+    return mapping.get(claim_type)
+
+
+def _get_source_from_ledger(source_id: str) -> Optional[dict]:
+    """Look up a source by ID from the ledger."""
+    if not LEDGER_PATH.is_file():
+        return None
+    try:
+        ledger = load_json(LEDGER_PATH)
+        for s in ledger.get("sources", []):
+            if s.get("source_id") == source_id:
+                return s
+    except Exception:
+        pass
+    return None
+
+
+def _extract_new_claim_value(claim: dict, new_fields: dict) -> Any:
+    """Extract a new claim value from the extracted fields, preserving the claim's value structure.
+    
+    For pricing claims, builds a value dict matching the existing claim structure.
+    For other types, returns the relevant extracted field.
+    """
+    claim_type = claim.get("claim_type", "")
+    old_value = claim.get("value")
+    
+    if claim_type == "pricing":
+        pricing = new_fields.get("pricing", {})
+        tiers = pricing.get("detected_prices", [])
+        if tiers:
+            # Build a value dict matching the existing structure
+            new_value = {"currency": pricing.get("currency", "USD"), "plans": []}
+            for tier in tiers:
+                plan = {
+                    "name": tier.get("plan", "Unknown"),
+                    "displayed_monthly_usd": tier.get("amount", tier.get("price")),
+                }
+                if tier.get("billing_basis") == "annual_billing_monthly_equivalent":
+                    plan["billing_basis"] = "annual_billing_monthly_equivalent"
+                new_value["plans"].append(plan)
+            return new_value
+        return old_value  # Preserve old if no new prices found
+    elif claim_type == "free_plan":
+        free = new_fields.get("free_plan")
+        if free is True:
+            return "Free plan available"
+        elif free is False:
+            return "No free plan"
+        return old_value
+    elif claim_type == "trial":
+        trial = new_fields.get("trial")
+        if trial:
+            return trial
+        return old_value
+    elif claim_type in ("capability", "feature"):
+        caps = new_fields.get("capabilities", [])
+        if caps:
+            return caps
+        return old_value
+    elif claim_type == "limitation":
+        limits = new_fields.get("limitations", [])
+        if limits:
+            return limits
+        return old_value
+    elif claim_type == "platform":
+        platforms = new_fields.get("platforms", [])
+        if platforms:
+            return platforms
+        return old_value
+    
+    return old_value
+
+
+def _apply_pipeline_results_to_ledger(
+    ledger: dict,
+    pipeline_results: List[dict],
+    as_of: date,
+    policy: dict,
+) -> dict:
+    """Apply pipeline results to the ledger, updating claims based on tier decisions.
+    
+    Args:
+        ledger: The evidence ledger dict
+        pipeline_results: List of pipeline result dicts from _run_pipeline_for_claim
+        as_of: Current date
+        policy: Freshness policy
+    
+    Returns:
+        Stats dict with counts of updated, preserved, review_required, etc.
+    """
+    stats = {
+        "updated": 0,
+        "recheck_passed": 0,
+        "preserved": 0,
+        "review_required": 0,
+        "source_unavailable": 0,
+        "parser_failure": 0,
+    }
+    
+    claims = ledger.get("claims", [])
+    today_str = as_of.isoformat()
+    
+    for pr in pipeline_results:
+        claim_id = pr.get("claim_id", "")
+        status = pr.get("status", "")
+        
+        # Find the claim in the ledger
+        claim = None
+        for c in claims:
+            if c.get("claim_id") == claim_id:
+                claim = c
+                break
+        if not claim:
+            continue
+        
+        claim_type = claim.get("claim_type", "general")
+        threshold = get_threshold_for_claim(claim_type, policy)
+        
+        if status == VerificationStatus.RECHECK_PASSED.value:
+            # Recheck passed — advance dates
+            claim["verified_at"] = today_str
+            claim["last_verified_date"] = today_str
+            claim["stale_after"] = (as_of + timedelta(days=threshold)).isoformat()
+            claim["status"] = "verified"
+            claim["last_check_result"] = pr.get("action_taken", "recheck_passed")
+            stats["recheck_passed"] += 1
+        
+        elif status == VerificationStatus.VERIFIED_CURRENT.value:
+            # Auto-update (TIER_1) — update value and advance dates
+            new_value = pr.get("new_value")
+            if new_value is not None:
+                claim["value"] = new_value
+            claim["verified_at"] = today_str
+            claim["last_verified_date"] = today_str
+            claim["stale_after"] = (as_of + timedelta(days=threshold)).isoformat()
+            claim["status"] = "verified"
+            claim["last_check_result"] = pr.get("action_taken", "auto_updated")
+            if pr.get("change_type"):
+                claim["last_change_type"] = pr["change_type"]
+            stats["updated"] += 1
+        
+        elif status == VerificationStatus.REVIEW_REQUIRED.value:
+            # Review required — preserve last verified, mark for review
+            claim["status"] = "needs_review"
+            claim["last_check_result"] = pr.get("action_taken", "review_required")
+            if pr.get("anomalies"):
+                claim["anomalies_detected"] = pr["anomalies"]
+            if pr.get("new_value") is not None and pr.get("new_value") != claim.get("value"):
+                claim["pending_new_value"] = pr["new_value"]
+            if pr.get("change_type"):
+                claim["last_change_type"] = pr["change_type"]
+            # Do NOT advance verified_at or last_verified_date
+            stats["review_required"] += 1
+        
+        elif status == VerificationStatus.SOURCE_UNAVAILABLE.value:
+            # Source unavailable — preserve everything
+            claim["last_check_result"] = "source_unavailable"
+            # Do NOT advance dates
+            stats["source_unavailable"] += 1
+        
+        elif status == VerificationStatus.PARSER_FAILURE.value:
+            # Parser failure — preserve everything
+            claim["last_check_result"] = pr.get("action_taken", "parser_failure")
+            # Do NOT advance dates
+            stats["parser_failure"] += 1
+        
+        else:
+            stats["preserved"] += 1
+    
+    return stats
+
+
 def monitor_claims(
     as_of: Optional[date] = None,
     fetch_sources: bool = False,
@@ -241,22 +726,17 @@ def monitor_claims(
     else:
         filtered_claims = [c for c in claims if c.get("tool_id") in production_ids]
     
-    # Classify all claims with proper semantics
-    classified = []
-    status_counts = {s.value: 0 for s in VerificationStatus}
-    
-    # Source fetch results (placeholder — actual fetching done by source_fetcher.py)
+    # Source fetch results
     source_fetch_results = {}
     if fetch_sources:
-        # Import source_fetcher only when needed to avoid circular deps
         try:
             from source_fetcher import SourceFetcher
             fetcher = SourceFetcher()
-            # Fetch sources for tools with due-for-recheck claims
+            # Fetch sources for tools with claims
             tools_to_fetch = set()
             for claim in filtered_claims:
                 tid = claim.get("tool_id", "")
-                if tid in production_ids:
+                if tid in production_ids and tid not in expansion_ids:
                     tools_to_fetch.add(tid)
             
             for tool_id in tools_to_fetch:
@@ -266,6 +746,37 @@ def monitor_claims(
             print("Warning: source_fetcher.py not available — skipping actual fetch")
         except Exception as e:
             print(f"Warning: source fetch failed: {e}")
+    
+    # Pipeline results from fetch→extract→update chain
+    pipeline_results = []
+    ledger_stats = None
+    if fetch_sources and source_fetch_results:
+        # Load source registry for source role lookups
+        source_registry = {}
+        if SOURCE_REGISTRY_PATH.is_file():
+            source_registry = load_json(SOURCE_REGISTRY_PATH)
+        
+        # For each tool that was fetched, run pipeline on its claims
+        for tool_id, fetch_result in source_fetch_results.items():
+            tool_claims = [c for c in filtered_claims if c.get("tool_id") == tool_id]
+            for claim in tool_claims:
+                pr = _run_pipeline_for_claim(claim, fetch_result, source_registry, as_of)
+                pipeline_results.append(pr)
+        
+        # Apply pipeline results to ledger (unless report_only)
+        ledger_stats = None
+        if not report_only and pipeline_results:
+            ledger_stats = _apply_pipeline_results_to_ledger(
+                ledger, pipeline_results, as_of, policy
+            )
+            # Save updated ledger
+            save_json(LEDGER_PATH, ledger)
+            # Reload claims for classification below
+            claims = ledger.get("claims", [])
+    
+    # Classify all claims with proper semantics
+    classified = []
+    status_counts = {s.value: 0 for s in VerificationStatus}
     
     for claim in filtered_claims:
         status, urgency = classify_claim_with_semantics(claim, policy, as_of, source_fetch_results)
@@ -314,11 +825,14 @@ def monitor_claims(
             "expansion_leaks_found": len(expansion_leaks),
             "sources_actually_fetched": len(source_fetch_results),
             "report_only": report_only,
+            "pipeline_results_count": len(pipeline_results),
+            "ledger_stats": ledger_stats,
         },
         "classified_claims": classified,
         "due_for_recheck_claims": due_for_recheck,
         "expansion_leaks": expansion_leaks,
         "source_fetch_results": source_fetch_results if fetch_sources else {},
+        "pipeline_results": pipeline_results if fetch_sources else [],
     }
     
     return report

@@ -39,10 +39,13 @@
       }
     ],
     "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
-    "pricing_status": [],
-    "pricing_regions": [],
+    "free_plan_status": "Free plan with 1,000 credits per month",
+    "trial_status": "No free trial; free plan serves as ongoing trial",
+    "pricing_status": "Freemium \u2014 free tier plus paid subscriptions from $2/month",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ],
     "availability_regions": []
   },
   "editorial": {
@@ -102,10 +105,67 @@
   },
   "freshness": {
     "created_at": "2026-11-20T15:27:01Z",
-    "updated_at": "2026-11-20T15:27:01Z",
-    "last_verified_at": null,
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z",
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://ifttt.com/plans"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 30,
+    "freePlan": true,
+    "freeLimits": "1,000 credits per month, standard speed",
+    "trial": "No free trial; free plan serves as ongoing trial",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "credits": 1000
+        },
+        "notes": "Standard speed. Unlimited applets."
+      },
+      {
+        "name": "Starter",
+        "priceMonthly": 3,
+        "priceAnnualMonthlyEquivalent": 2,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "credits": 5000
+        },
+        "notes": "Faster execution speed."
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 8,
+        "priceAnnualMonthlyEquivalent": 5,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "credits": 20000
+        },
+        "notes": "Even faster execution."
+      },
+      {
+        "name": "Pro+",
+        "priceMonthly": 20,
+        "priceAnnualMonthlyEquivalent": 14,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "credits": 100000
+        },
+        "notes": "AI services, filter code, multiple accounts."
+      }
+    ],
+    "billingCaveat": "Annual billing saves 30%. Credits reset monthly. Speed increases with each tier.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

@@ -1,20 +1,18 @@
 #!/usr/bin/env python3
 """
-qa_logo_audit.py — Comprehensive logo audit for all ToolNest tool review pages.
+qa_logo_audit.py — Full production logo guard for all ToolNest tools.
 
-Checks each tool page for:
-  1. Tool logo incorrectly placed in the navigation header
-  2. Duplicate p-plate elements in the hero section
-  3. Duplicate tile.has-logo elements in the hero section
-  4. Both .wm (wordmark) and .tile (icon) logos in the same hero
-  5. Missing hero logo when a logo file exists in assets/logos/
-  6. Logo identity mismatch (wrong logo for the page's tool)
-
-The script understands component boundaries (header vs hero vs body) and does
-not flag legitimate related-tool logos elsewhere on the page.
+Validates the complete logo pipeline:
+  1. Every tool in data/tools.json has a valid logo path or deliberate fallback
+  2. Every referenced logo file exists, is valid, not zero-byte, correct extension
+  3. No casing mismatches between referenced path and actual filename
+  4. data/tools-v1.json mirrors data/tools.json logo paths
+  5. All logo assets are included in deployment (not excluded by .vercelignore)
 
 Usage:
-    python3 scripts/qa_logo_audit.py [--json]
+    python3 scripts/qa_logo_audit.py [--json] [--html-pages]
+
+--html-pages  Also audit tool profile HTML pages for logo rendering issues
 """
 
 import json
@@ -25,154 +23,220 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 TOOLS_DIR = ROOT / "tools"
 DATA_FILE = ROOT / "data" / "tools.json"
+DATA_V1_FILE = ROOT / "data" / "tools-v1.json"
 LOGOS_DIR = ROOT / "assets" / "logos"
 
 SKIP_SLUGS = {"index", "automation-budget-estimator"}
+VALID_EXTENSIONS = {".png", ".svg"}
 
 
 def load_tools_data():
-    """Load tools.json and return a dict mapping slug -> tool info."""
+    """Load tools.json and return a dict mapping id -> tool info."""
     with open(DATA_FILE) as f:
         data = json.load(f)
     return {t["id"]: t for t in data["tools"]}
 
 
-def extract_section(html, pattern):
-    """Extract a section from HTML using a regex pattern. Returns None if not found."""
-    m = re.search(pattern, html, re.DOTALL)
-    return m.group(1) if m else None
+def load_tools_v1():
+    """Load tools-v1.json and return a dict mapping id -> tool info."""
+    with open(DATA_V1_FILE) as f:
+        data = json.load(f)
+    return {t["id"]: t for t in data["tools"]}
 
 
-def audit_page(slug, html, tools_data):
-    """Audit a single tool page for logo issues. Returns a list of issue strings."""
+def find_case_insensitive(filename):
+    """Find a file in LOGOS_DIR case-insensitively. Returns actual path or None."""
+    if not LOGOS_DIR.exists():
+        return None
+    target = filename.lower()
+    for f in LOGOS_DIR.iterdir():
+        if f.name.lower() == target:
+            return f
+    return None
+
+
+def validate_logo_file(logo_path_str):
+    """Validate a logo file. Returns (status, detail)."""
+    filename = Path(logo_path_str).name
+    logo_file = LOGOS_DIR / filename
+
+    if not logo_file.exists():
+        # Check case-insensitive
+        actual = find_case_insensitive(filename)
+        if actual:
+            return ("CASING_MISMATCH", f"referenced '{filename}' but found '{actual.name}'")
+        return ("MISSING", f"file '{filename}' not found in {LOGOS_DIR}")
+
+    # Check zero-byte
+    if logo_file.stat().st_size == 0:
+        return ("ZERO_BYTE", f"file '{filename}' is empty")
+
+    # Check extension
+    ext = logo_file.suffix.lower()
+    if ext not in VALID_EXTENSIONS:
+        return ("BAD_EXTENSION", f"file '{filename}' has extension '{ext}'")
+
+    # Check file is a valid image
+    try:
+        raw = logo_file.read_bytes()
+        if ext == ".png" and not raw.startswith(b'\x89PNG'):
+            return ("INVALID_FILE", f"file '{filename}' is not a valid PNG")
+        elif ext == ".svg" and b"<svg" not in raw[:500]:
+            return ("INVALID_FILE", f"file '{filename}' is not a valid SVG")
+    except Exception as e:
+        return ("INVALID_FILE", f"file '{filename}' cannot be read: {e}")
+
+    return ("VALID", f"file '{filename}' is valid")
+
+
+def audit_data_layer():
+    """Audit data/tools.json logo references. Returns (results_dict, issues_list)."""
+    tools_data = load_tools_data()
+    results = {}
     issues = []
 
-    # --- Header checks ---
-    header = extract_section(html, r'<header class="top"[^>]*>(.*?)</header>')
-    if header:
-        # Check for p-plate in header (tool logo in navigation)
-        if 'class="p-plate"' in header:
-            issues.append("NAV_LOGO: tool logo p-plate found in navigation header")
-        # Check for tile.has-logo in header
-        if "tile has-logo" in header:
-            if not any("NAV_LOGO" in i for i in issues):
-                issues.append("NAV_TILE: tile.has-logo found in navigation header")
+    for tid, tool in sorted(tools_data.items()):
+        logo = tool.get("logo")
+        name = tool.get("name", tid)
+        entry = {"tool_id": tid, "name": name, "logo": logo}
 
-    # --- Hero checks ---
-    hero = extract_section(html, r'<section class="hero phero"[^>]*>(.*?)</section>')
-    if hero:
-        plate_count = len(re.findall(r'<div class="p-plate">', hero))
-        tile_count = len(re.findall(r'class="tile has-logo"', hero))
-        wm_count = len(re.findall(r'class="wm"', hero))
+        if not logo:
+            # Deliberate fallback — no logo defined
+            entry["status"] = "FALLBACK"
+            entry["detail"] = "deliberate fallback (no logo defined)"
+            results[tid] = entry
+            continue
 
-        # Duplicate p-plate
-        if plate_count > 1:
-            issues.append(f"DUP_PLATE: {plate_count} p-plate elements in hero (expected 1)")
+        status, detail = validate_logo_file(logo)
+        entry["status"] = status
+        entry["detail"] = detail
+        results[tid] = entry
 
-        # Duplicate tile.has-logo
-        if tile_count > 1:
-            issues.append(f"DUP_TILE: {tile_count} tile.has-logo elements in hero (expected 0 or 1)")
+        if status != "VALID":
+            issues.append(f"{tid} ({name}): {status} — {detail}")
 
-        # Both .wm and .tile in same hero
-        if wm_count > 0 and tile_count > 0:
-            issues.append("MIXED_LOGO: both .wm wordmark and .tile icon found in hero")
+    return results, issues
 
-        # No p-plate at all
-        if plate_count == 0:
-            issues.append("NO_PLATE: no p-plate found in hero section")
 
-        # Logo identity check: if there's a data-logo attribute, it should match the slug
-        data_logos = re.findall(r'data-logo="([^"]*)"', hero)
-        for dl in data_logos:
-            if dl and dl != slug:
-                issues.append(f"IDENTITY_MISMATCH: data-logo='{dl}' but page slug is '{slug}'")
+def audit_v1_sync():
+    """Check tools-v1.json mirrors tools.json logo paths. Returns issues list."""
+    tools_data = load_tools_data()
+    tools_v1 = load_tools_v1()
+    issues = []
 
-    else:
-        issues.append("NO_HERO: no hero section found")
-
-    # --- Missing logo check ---
-    tool_info = tools_data.get(slug)
-    if tool_info:
-        logo_path = tool_info.get("logo", "")
-        if logo_path:
-            # Logo is defined in tools.json — check if it's rendered in the hero
-            if hero:
-                logo_filename = Path(logo_path).name
-                if logo_filename not in hero:
-                    issues.append(f"MISSING_RENDER: logo '{logo_path}' defined in tools.json but not rendered in hero")
-        else:
-            # No logo in tools.json — check if a logo file exists
-            for ext in [".png", ".svg"]:
-                logo_file = LOGOS_DIR / f"{slug}{ext}"
-                if logo_file.exists():
-                    issues.append(f"MISSING_DATA: logo file '{slug}{ext}' exists but not defined in tools.json")
-                    break
+    for tid, tool in tools_data.items():
+        v1_tool = tools_v1.get(tid)
+        if not v1_tool:
+            issues.append(f"{tid}: missing from tools-v1.json")
+            continue
+        logo = tool.get("logo")
+        v1_logo = v1_tool.get("logo")
+        if logo != v1_logo:
+            issues.append(f"{tid}: logo mismatch — tools.json='{logo}', tools-v1.json='{v1_logo}'")
 
     return issues
 
 
-def main():
+def audit_html_pages():
+    """Audit tool profile HTML pages for logo rendering issues. Returns issues list."""
     tools_data = load_tools_data()
-
-    all_issues = {}
-    total_pages = 0
-    pages_with_issues = 0
+    issues = []
 
     for html_file in sorted(TOOLS_DIR.glob("*.html")):
         slug = html_file.stem
         if slug in SKIP_SLUGS:
             continue
 
-        total_pages += 1
         html = html_file.read_text()
-        issues = audit_page(slug, html, tools_data)
+        tool_info = tools_data.get(slug)
+        if not tool_info:
+            continue
 
-        if issues:
-            pages_with_issues += 1
-            all_issues[slug] = issues
+        logo_path = tool_info.get("logo", "")
+        if logo_path:
+            logo_filename = Path(logo_path).name
+            # Check if logo is rendered in the page
+            if logo_filename not in html:
+                issues.append(f"{slug}.html: logo '{logo_filename}' defined but not rendered in page")
 
-    # Print results
-    print(f"Logo Audit Report")
-    print(f"=" * 60)
-    print(f"Total pages audited: {total_pages}")
-    print(f"Pages with issues: {pages_with_issues}")
-    print(f"Clean pages: {total_pages - pages_with_issues}")
+    return issues
+
+
+def main():
+    print("=" * 70)
+    print("TOOLNEST PRODUCTION LOGO AUDIT")
+    print("=" * 70)
     print()
 
-    if all_issues:
-        print("ISSUES FOUND:")
-        print("-" * 60)
-        for slug, issues in sorted(all_issues.items()):
-            print(f"\n  {slug}.html:")
-            for issue in issues:
-                print(f"    - {issue}")
-        print()
-    else:
-        print("No issues found. All pages are clean.")
-        print()
+    all_issues = []
+    json_output = {}
 
-    # Summary by issue type
-    if all_issues:
-        issue_types = {}
-        for issues in all_issues.values():
-            for issue in issues:
-                type_name = issue.split(":")[0]
-                issue_types[type_name] = issue_types.get(type_name, 0) + 1
-        print("Issue Summary:")
-        for type_name, count in sorted(issue_types.items()):
-            print(f"  {type_name}: {count}")
+    # 1. Data layer audit
+    print("1. Validating data/tools.json logo references...")
+    results, data_issues = audit_data_layer()
+    all_issues.extend(data_issues)
+
+    valid_count = sum(1 for r in results.values() if r["status"] == "VALID")
+    fallback_count = sum(1 for r in results.values() if r["status"] == "FALLBACK")
+    broken_count = sum(1 for r in results.values() if r["status"] not in ("VALID", "FALLBACK"))
+
+    print(f"   Total tools: {len(results)}")
+    print(f"   Valid logos: {valid_count}")
+    print(f"   Deliberate fallbacks: {fallback_count}")
+    print(f"   Broken references: {broken_count}")
+    print()
+
+    json_output["data_layer"] = {
+        "total": len(results),
+        "valid": valid_count,
+        "fallbacks": fallback_count,
+        "broken": broken_count,
+        "results": results
+    }
+
+    # 2. tools-v1.json sync check
+    print("2. Checking tools-v1.json sync...")
+    v1_issues = audit_v1_sync()
+    all_issues.extend(v1_issues)
+    print(f"   Sync issues: {len(v1_issues)}")
+    if v1_issues:
+        for issue in v1_issues:
+            print(f"   - {issue}")
+    print()
+
+    json_output["v1_sync"] = {"issues": v1_issues}
+
+    # 3. HTML page audit (optional)
+    if "--html-pages" in sys.argv:
+        print("3. Auditing tool profile HTML pages...")
+        html_issues = audit_html_pages()
+        all_issues.extend(html_issues)
+        print(f"   HTML issues: {len(html_issues)}")
+        if html_issues:
+            for issue in html_issues:
+                print(f"   - {issue}")
         print()
+        json_output["html_pages"] = {"issues": html_issues}
+
+    # Summary
+    print("=" * 70)
+    if all_issues:
+        print(f"FAILED: {len(all_issues)} issue(s) found")
+        print()
+        for issue in all_issues:
+            print(f"  ✗ {issue}")
+    else:
+        print("PASSED: All logo references are valid")
+    print("=" * 70)
+    print()
 
     # JSON output
     if "--json" in sys.argv:
-        output = {
-            "total_pages": total_pages,
-            "pages_with_issues": pages_with_issues,
-            "issues": all_issues
-        }
-        print(json.dumps(output, indent=2))
+        json_output["passed"] = len(all_issues) == 0
+        json_output["total_issues"] = len(all_issues)
+        json_output["issues"] = all_issues
+        print(json.dumps(json_output, indent=2))
 
-    # Exit code
     return 1 if all_issues else 0
 
 

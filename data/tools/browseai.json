@@ -35,9 +35,9 @@
       }
     ],
     "limitations": [],
-    "free_plan_status": [],
+    "free_plan_status": "Free plan available (details not verified)",
     "trial_status": [],
-    "pricing_status": [],
+    "pricing_status": "Freemium (details not verified)",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -78,5 +78,14 @@
     "canonical_url": "https://www.toolnestai.tech/tools/browseai.html",
     "sitemap_eligible": true
   },
-  "freshness": {}
+  "freshness": {
+    "updated_at": "2026-11-23T20:00:00Z"
+  },
+  "pricing": {
+    "checkedOn": null,
+    "pricing_status": "Freemium (details not verified)",
+    "freePlan": true,
+    "plans": [],
+    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+  }
 }

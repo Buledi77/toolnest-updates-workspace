@@ -39,10 +39,13 @@
       }
     ],
     "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
-    "pricing_status": [],
-    "pricing_regions": [],
+    "free_plan_status": "Free plan for up to 10,000 contacts with unlimited emails",
+    "trial_status": "No free trial; free plan serves as ongoing trial",
+    "pricing_status": "Freemium \u2014 free tier plus paid subscriptions from $39/month",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ],
     "availability_regions": []
   },
   "editorial": {
@@ -102,10 +105,61 @@
   },
   "freshness": {
     "created_at": "2026-11-20T15:27:01Z",
-    "updated_at": "2026-11-20T15:27:01Z",
-    "last_verified_at": null,
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z",
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://kit.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 17,
+    "freePlan": true,
+    "freeLimits": "Up to 10,000 contacts, unlimited broadcasts, landing pages",
+    "trial": "No free trial; free plan serves as ongoing trial",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "contacts": 10000
+        },
+        "notes": "Unlimited broadcasts. No automations or integrations."
+      },
+      {
+        "name": "Creator",
+        "priceMonthly": 39,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "contacts": 1000
+        },
+        "notes": "Scales with contacts. $89 at 5,000 contacts. $139 at 10,000 contacts."
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 79,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "contacts": 1000,
+          "features": [
+            "Subscriber Signals",
+            "engagement scoring"
+          ]
+        },
+        "notes": "Scales with contacts. $189 at 10,000 contacts."
+      }
+    ],
+    "billingCaveat": "Pricing scales with subscriber count. Annual billing saves 17%. 0% take rate on paid subscriptions; only Stripe processing fees apply.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

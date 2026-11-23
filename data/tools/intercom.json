@@ -23,9 +23,20 @@
       "SaaS companies",
       "eCommerce brands",
       "customer support teams"
+    ],
+    "platforms": [
+      "Web-based SaaS"
     ]
   },
-  "factual_profile": {},
+  "factual_profile": {
+    "free_plan_status": "No free plan; 14-day free trial available",
+    "trial_status": "14-day free trial, no credit card required",
+    "pricing_status": "Paid — subscriptions from $29/seat/month",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ]
+  },
   "editorial": {
     "editorial_tier": "B",
     "best_for": [
@@ -69,5 +80,68 @@
     "canonical_url": "https://www.toolnestai.tech/tools/intercom.html",
     "sitemap_eligible": true
   },
-  "freshness": {}
+  "freshness": {
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z"
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://www.intercom.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 25,
+    "freePlan": false,
+    "trial": "14-day free trial available with no credit card required.",
+    "plans": [
+      {
+        "name": "Essential",
+        "priceMonthly": 39,
+        "priceAnnualMonthlyEquivalent": 29,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "features": [
+            "Fin AI Agent",
+            "messenger",
+            "shared inbox"
+          ]
+        },
+        "notes": "Per seat per month. No Lite seats included."
+      },
+      {
+        "name": "Advanced",
+        "priceMonthly": 99,
+        "priceAnnualMonthlyEquivalent": 85,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "features": [
+            "workflows",
+            "round-robin",
+            "private help center"
+          ],
+          "liteSeats": 20
+        },
+        "notes": "Per seat per month. 20 free Lite seats."
+      },
+      {
+        "name": "Expert",
+        "priceMonthly": 139,
+        "priceAnnualMonthlyEquivalent": 132,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "features": [
+            "SSO",
+            "HIPAA",
+            "SLAs"
+          ],
+          "liteSeats": 50
+        },
+        "notes": "Per seat per month. 50 free Lite seats."
+      }
+    ],
+    "billingCaveat": "Fin AI Agent costs $0.99 per outcome on every plan, billed separately. Early Stage startup program available at $33/month for Advanced with 2 seats.",
+    "conflicts": [],
+    "changeLog": []
+  }
 }

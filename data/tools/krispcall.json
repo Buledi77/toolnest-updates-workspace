@@ -25,7 +25,15 @@
       "SMBs"
     ]
   },
-  "factual_profile": {},
+  "factual_profile": {
+    "free_plan_status": "No free plan",
+    "trial_status": "No free trial",
+    "pricing_status": "Paid \u2014 subscriptions from $12/user/month",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ]
+  },
   "editorial": {
     "editorial_tier": "B",
     "best_for": [
@@ -69,5 +77,64 @@
     "canonical_url": "https://www.toolnestai.tech/tools/krispcall.html",
     "sitemap_eligible": true
   },
-  "freshness": {}
+  "freshness": {
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z"
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://www.krispcall.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": 20,
+    "freePlan": false,
+    "trial": "No free trial",
+    "plans": [
+      {
+        "name": "Starter",
+        "priceMonthly": 15,
+        "priceAnnualMonthlyEquivalent": 12,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "users": 5,
+          "numbers": 1
+        },
+        "notes": "Per user per month. 1 free number. Unlimited calling to 100+ countries."
+      },
+      {
+        "name": "Advance",
+        "priceMonthly": 40,
+        "priceAnnualMonthlyEquivalent": 32,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "users": "unlimited",
+          "features": [
+            "Power Dialer",
+            "bulk SMS",
+            "call recording"
+          ]
+        },
+        "notes": "Per user per month."
+      },
+      {
+        "name": "Max",
+        "priceMonthly": 60,
+        "priceAnnualMonthlyEquivalent": 48,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "users": "unlimited",
+          "features": [
+            "unlimited calling",
+            "1000 SMS segments"
+          ]
+        },
+        "notes": "Per user per month. Shared usage pools."
+      }
+    ],
+    "billingCaveat": "Prices cover platform and one number. Call minutes and SMS billed separately by the minute. Enterprise is custom.",
+    "conflicts": [],
+    "changeLog": []
+  }
 }

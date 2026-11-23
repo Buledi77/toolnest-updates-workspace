@@ -26,6 +26,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 TOOLS_PATH = ROOT / "data" / "tools-v1.json"
 LEDGER_PATH = ROOT / "data" / "evidence" / "evidence-ledger.json"
+CANONICAL_FACTS_PATH = ROOT / "data" / "canonical-facts.json"
 OUTPUT_PATH = ROOT / "data" / "decision-engine-bundle.json"
 
 
@@ -188,6 +189,14 @@ def build_bundle():
     tools_data = load_json(TOOLS_PATH)
     ledger = load_json(LEDGER_PATH)
 
+    # Load canonical facts for additional metadata
+    canonical_facts = {}
+    if CANONICAL_FACTS_PATH.exists():
+        try:
+            canonical_facts = load_json(CANONICAL_FACTS_PATH)
+        except Exception:
+            pass
+
     tools = tools_data.get("tools", [])
     evidence_map = build_evidence_map(ledger)
 
@@ -201,6 +210,15 @@ def build_bundle():
         merged = dict(tool)
         merged["evidence_claims"] = evidence_list
         merged["evidence_confidence"] = evidence_confidence
+
+        # Add canonical facts metadata if available
+        if tool_id in canonical_facts:
+            cf = canonical_facts[tool_id]
+            merged["canonical_facts"] = {
+                "facts_checked": cf.get("facts_checked"),
+                "confidence": cf.get("confidence"),
+                "source_claim_ids": cf.get("source_claim_ids", []),
+            }
 
         bundle_tools.append(merged)
 

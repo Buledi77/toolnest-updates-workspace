@@ -39,10 +39,13 @@
       }
     ],
     "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
-    "pricing_status": [],
-    "pricing_regions": [],
+    "free_plan_status": "Free plan with basic design features and templates",
+    "trial_status": "7-day free trial of Premium",
+    "pricing_status": "Freemium \u2014 free tier plus paid subscriptions from $9.99/month",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ],
     "availability_regions": []
   },
   "editorial": {
@@ -102,10 +105,52 @@
   },
   "freshness": {
     "created_at": "2026-11-20T15:27:01Z",
-    "updated_at": "2026-11-20T15:27:01Z",
-    "last_verified_at": null,
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z",
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://www.adobe.com/express/pricing.html"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "Basic templates, limited premium features, Adobe branding",
+    "trial": "7-day free trial of Premium",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {},
+        "notes": "Basic templates and features."
+      },
+      {
+        "name": "Premium",
+        "priceMonthly": 9.99,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {},
+        "notes": "Premium templates, brand kit, background removal, bulk resize."
+      },
+      {
+        "name": "Teams",
+        "priceMonthly": 7.99,
+        "priceAnnualMonthlyEquivalent": 4.99,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "minLicenses": 2
+        },
+        "notes": "Per license per month. $4.99 first year, then $7.99. Admin console."
+      }
+    ],
+    "billingCaveat": "Teams requires annual commitment with 2-license minimum. First-year discount of $4.99/license, then $7.99. Enterprise is custom.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

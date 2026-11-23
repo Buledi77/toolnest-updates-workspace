@@ -23,9 +23,20 @@
       "businesses",
       "marketers",
       "researchers"
+    ],
+    "platforms": [
+      "Web-based SaaS"
     ]
   },
-  "factual_profile": {},
+  "factual_profile": {
+    "free_plan_status": "Free Basic plan with 10 questions per survey, limited responses",
+    "trial_status": "No free trial; free plan serves as ongoing trial",
+    "pricing_status": "Freemium — free tier plus paid subscriptions from $25/month",
+    "pricing_regions": [
+      "US",
+      "Global"
+    ]
+  },
   "editorial": {
     "editorial_tier": "B",
     "best_for": [
@@ -69,5 +80,75 @@
     "canonical_url": "https://www.toolnestai.tech/tools/surveymonkey.html",
     "sitemap_eligible": true
   },
-  "freshness": {}
+  "freshness": {
+    "updated_at": "2026-11-23T20:00:00Z",
+    "last_verified_at": "2026-11-23T20:00:00Z"
+  },
+  "pricing": {
+    "checkedOn": "2026-11-23",
+    "sourceUrls": [
+      "https://www.surveymonkey.com/pricing/"
+    ],
+    "currency": "USD",
+    "billingBasis": "annual",
+    "freePlan": true,
+    "freeLimits": "10 questions per survey, limited viewable responses, no data export",
+    "trial": "No separate trial — free plan serves as entry point. Paid plans available with monthly billing.",
+    "plans": [
+      {
+        "name": "Basic",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "questions": 10
+        },
+        "notes": "Limited responses per survey. No data export."
+      },
+      {
+        "name": "Standard Monthly",
+        "priceMonthly": 149,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "responses": 1000
+        },
+        "notes": "Monthly billing only. 1,000 responses/month."
+      },
+      {
+        "name": "Advantage Annual",
+        "priceMonthly": 39,
+        "priceAnnualMonthlyEquivalent": 39,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "responses": 15000
+        },
+        "notes": "Annual billing only. $468/year. 15,000 responses/year."
+      },
+      {
+        "name": "Premier Annual",
+        "priceMonthly": 139,
+        "priceAnnualMonthlyEquivalent": 139,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "responses": 40000
+        },
+        "notes": "Annual billing only. $1,668/year. Crosstabs, advanced logic."
+      },
+      {
+        "name": "Team Advantage",
+        "priceMonthly": 30,
+        "priceAnnualMonthlyEquivalent": 30,
+        "sourceTier": "official-snippet",
+        "limits": {
+          "responses": 50000,
+          "minUsers": 3
+        },
+        "notes": "Per user per month, annual billing. 50,000 responses/year."
+      }
+    ],
+    "billingCaveat": "Overage is $0.15 per extra response. Audience panel responses cost extra. Team plans require 3+ users. Most individual plans are annual only.",
+    "conflicts": [],
+    "changeLog": []
+  }
 }

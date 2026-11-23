@@ -88,6 +88,19 @@
 .we-progress-dot{width:10px;height:10px;border-radius:50%;background:var(--line);transition:background .2s ease}
 .we-progress-dot.active{background:var(--brand)}
 .we-progress-dot.completed{background:#065F46}
+.we-related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:16px}
+.we-related-card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;padding:20px;background:var(--surface);transition:box-shadow .2s ease,border-color .2s ease;position:relative;overflow:hidden}
+.we-related-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--brand);border-radius:14px 14px 0 0}
+.we-related-card:hover{box-shadow:0 2px 8px rgba(11,34,32,.1),0 18px 40px -20px rgba(11,34,32,.32);border-color:var(--brand)}
+.we-related-card-icon{width:40px;height:40px;border-radius:10px;background:rgba(15,107,92,.1);display:grid;place-items:center;color:var(--brand);margin-bottom:14px;flex-shrink:0}
+.we-related-card-icon svg{width:22px;height:22px}
+.we-related-card-body{flex:1}
+.we-related-card-title{font-size:16px;font-weight:700;color:var(--ink);margin:0 0 6px}
+.we-related-card-desc{font-size:14px;color:var(--muted);margin:0 0 8px;line-height:1.5}
+.we-related-card-outcome{font-size:13px;color:var(--brand);margin:0 0 14px;line-height:1.5;font-weight:500}
+.we-related-card-cta{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:10px;border:none;background:var(--brand);color:#fff;font:600 14px var(--font-body);text-decoration:none;transition:background .2s ease,transform .2s ease;align-self:flex-start;margin-top:auto}
+.we-related-card-cta:hover{background:#0a5c50;transform:translateY(-1px)}
+.we-related-card-cta:focus-visible{outline:3px solid var(--ring);outline-offset:2px}
 @media(max-width:640px){
  .we-workflows{grid-template-columns:1fr}
  .we-tool-grid{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))}
@@ -205,9 +218,31 @@
 </section>
 
 <section class="p-sec">
-<h2>Workflow data summary</h2>
-<p>ToolNest currently tracks 9 workflows covering 53 candidate tool references, 64 comparison pages, and 53 alternatives pages. The confidence distribution is 7 high-confidence workflows and 2 medium-confidence workflows. All workflows are derived from existing review data, comparison pages, and alternatives pages.</p>
-<p class="we-note">This tool is read-only and does not store your selections. To explore a specific workflow in depth, open the relevant goal guide from the <a href="/goals/index.html">goals index</a>.</p>
+<h2>Related tools</h2>
+<div class="we-related-grid">
+<div class="we-related-card">
+<div class="we-related-card-icon">
+<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.4" y2="16.4"/></svg>
+</div>
+<div class="we-related-card-body">
+<h3 class="we-related-card-title">Decision Engine</h3>
+<p class="we-related-card-desc">Get scored tool recommendations based on your use cases and criteria.</p>
+<p class="we-related-card-outcome">Find the right tool with transparent, explainable matching against 153 reviewed tools.</p>
+</div>
+<a class="we-related-card-cta" href="/tools/decision-engine.html">Find My Tool <span aria-hidden="true">→</span></a>
+</div>
+<div class="we-related-card">
+<div class="we-related-card-icon">
+<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+</div>
+<div class="we-related-card-body">
+<h3 class="we-related-card-title">Stack Cost Analyzer</h3>
+<p class="we-related-card-desc">Select multiple tools and see your combined monthly and annual cost estimates.</p>
+<p class="we-related-card-outcome">Know your total tool spend at a glance, with unknown pricing clearly separated.</p>
+</div>
+<a class="we-related-card-cta" href="/tools/stack-analyzer.html">Analyze Costs <span aria-hidden="true">→</span></a>
+</div>
+</div>
 </section>
 
 </div>
@@ -804,8 +839,7 @@
  workflowsEl.innerHTML = WORKFLOWS.map(function(w, i) {
  return '<button class="we-workflow-btn" type="button" role="radio" aria-checked="false" tabindex="-1" data-i="' + i + '">' +
  ICON +
- '<div><div class="we-label">' + esc(w.goal_label) + '</div>' +
- '<div class="we-count">' + w.candidate_tools.length + ' tools &middot; ' + w.evidence_confidence + ' confidence</div></div>' +
+ '<div><div class="we-label">' + esc(w.goal_label) + '</div></div>' +
  '</button>';
  }).join("");
 
