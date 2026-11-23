@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1",
   "source": "Migrated from data/tools.json (legacy 50-record extract). The 11 legacy fields are preserved verbatim; new fields are empty pending verification.",
-  "count": 147,
+  "count": 153,
   "tools": [
     {
       "id": "activecampaign",
@@ -4586,7 +4586,7 @@
         "High starting price at $299/mo",
         "Required $500 implementation fee",
         "Steep price increase for additional contacts",
-        "Trustpilot rating 1.1/5 — billing and cancellation complaints"
+        "Trustpilot rating 1.1/5 \u2014 billing and cancellation complaints"
       ],
       "platforms": [
         "web",
@@ -10438,6 +10438,78 @@
         "wordCount": null,
         "notes": "Recovered from expansion record"
       }
+    },
+    {
+      "id": "bolt",
+      "name": "Bolt.new",
+      "cat": "Developer Tools",
+      "h": 120,
+      "site": "https://bolt.new",
+      "badge": "",
+      "featured": false,
+      "best": "Browser-based full-stack application builder by StackBlitz",
+      "logo": "/assets/logos/bolt.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "cat": "Developer Tools",
+      "h": 120,
+      "site": "https://www.cursor.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-native code editor with chat and agent modes",
+      "logo": "/assets/logos/cursor.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "cat": "Developer Tools",
+      "h": 120,
+      "site": "https://github.com/features/copilot",
+      "badge": "",
+      "featured": false,
+      "best": "AI code completions and chat in VS Code, JetBrains, and other editors",
+      "logo": "/assets/logos/github-copilot.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "heygen",
+      "name": "HeyGen",
+      "cat": "Voice & Video",
+      "h": 120,
+      "site": "https://www.heygen.com",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered video generation with custom avatars",
+      "logo": "/assets/logos/heygen.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "ideogram",
+      "name": "Ideogram",
+      "cat": "Image Generation",
+      "h": 120,
+      "site": "https://ideogram.ai",
+      "badge": "",
+      "featured": false,
+      "best": "AI image generation specialist in text rendering within images",
+      "logo": "/assets/logos/ideogram.png",
+      "affiliateUrl": ""
+    },
+    {
+      "id": "lovable",
+      "name": "Lovable",
+      "cat": "Website Builder",
+      "h": 120,
+      "site": "https://lovable.dev",
+      "badge": "",
+      "featured": false,
+      "best": "AI-powered full-stack application builder",
+      "logo": "/assets/logos/lovable.png",
+      "affiliateUrl": ""
     }
   ]
 }

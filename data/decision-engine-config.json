@@ -38,7 +38,7 @@
       "type": "multi-select",
       "description": "Filter by platform availability",
       "enabled": false,
-      "disabledReason": "Only 4 of 147 tools have platform data. Filter disabled until coverage improves.",
+      "disabledReason": "Only 4 of 153 tools have platform data. Filter disabled until coverage improves.",
       "options": [
         {"value": "web", "label": "Web"},
         {"value": "iOS", "label": "iOS"},
@@ -50,7 +50,7 @@
       "type": "toggle",
       "description": "Only show tools with a free plan or free trial",
       "enabled": false,
-      "disabledReason": "Only 1 of 147 tools has freePlan.available=true. Filter disabled until coverage improves."
+      "disabledReason": "Only 1 of 153 tools has freePlan.available=true. Filter disabled until coverage improves."
     },
     "hasCons": {
       "label": "Show Known Drawbacks",
