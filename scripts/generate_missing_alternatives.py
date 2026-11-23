@@ -77,7 +77,7 @@ def generate_alternatives_page(slug, tool_data, catalog):
 
         action_links = f"{compare_link} {review_link}".strip()
 
-        card = f'''<article class="p-rank"><div class="rk-n">{i}</div><div><div class="p-plate"><div class="tile has-logo"><span class="logo-fallback" aria-hidden="true">{alt_initial}</span><img width="128" height="128" alt="{alt_name} logo" data-logo="{alt_slug}" src="/assets/logos/{alt_slug}.png"/ decoding="async" fetchpriority="high"></div><div><h2><a href="/tools/{alt_slug}.html">{alt_name}</a></h2><p>{alt_category}</p></div></div><p class="rk-why">Alternative for similar use cases</p><ul class="tl yes"><li>Different pricing structure</li><li>Different feature focus</li><li>Different workflow fit</li></ul><div class="rk-act">{action_links}</div></div></article>'''
+        card = f'''<article class="p-rank"><div class="rk-n">{i}</div><div><div class="p-plate"><div class="tile has-logo"><img width="128" height="128" alt="{alt_name} logo" data-logo="{alt_slug}" src="/assets/logos/{alt_slug}.png"/ decoding="async" fetchpriority="high"></div><div><h2><a href="/tools/{alt_slug}.html">{alt_name}</a></h2><p>{alt_category}</p></div></div><p class="rk-why">Alternative for similar use cases</p><ul class="tl yes"><li>Different pricing structure</li><li>Different feature focus</li><li>Different workflow fit</li></ul><div class="rk-act">{action_links}</div></div></article>'''
         alt_cards.append(card)
 
     if not alt_cards:

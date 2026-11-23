@@ -299,7 +299,7 @@
  function tile(t) {
  var letter = esc(t.name.charAt(0));
  if (t.logo) {
- return '<div class="tile has-logo"><span class="logo-fallback" aria-hidden="true">' + letter + '</span><img src="' + esc(t.logo) + '" width="128" height="128" decoding="async" alt="' + esc(t.name) + ' logo" fetchpriority="high"></div>';
+ return '<div class="tile has-logo"><img src="' + esc(t.logo) + '" width="128" height="128" decoding="async" alt="' + esc(t.name) + ' logo" fetchpriority="high"></div>';
  }
  return '<div class="tile" aria-hidden="true">' + letter + '</div>';
  }

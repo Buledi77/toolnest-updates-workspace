@@ -410,7 +410,7 @@ function cardHTML(t) {
  var url = t.affiliateUrl || t.site;
  var rel = t.affiliateUrl ? "sponsored nofollow noopener" : "noopener";
  var logo = t.logo
- ? '<div class="tile has-logo"><span class="logo-fallback" aria-hidden="true">' + esc(t.name.charAt(0)) + '</span><img src="' + esc(t.logo) + '" width="128" height="128" decoding="async" alt="' + esc(t.name) + ' logo" fetchpriority="high"></div>'
+ ? '<div class="tile has-logo"><img src="' + esc(t.logo) + '" width="128" height="128" decoding="async" alt="' + esc(t.name) + ' logo" fetchpriority="high"></div>'
  : '<div class="tile" aria-hidden="true">' + esc(t.name.charAt(0)) + '</div>';
  var badge = t.badge ? '<span class="badge">' + esc(t.badge) + '</span>' : '';
  var pros = (t.pros || []).map(function (p) {
