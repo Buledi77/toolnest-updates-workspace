@@ -60,7 +60,8 @@
     "alternatives": [
       "notion",
       "otter",
-      "clickup"
+      "clickup",
+      "meetgeek"
     ],
     "meaningful_comparisons": [
       "fireflies-vs-otter"

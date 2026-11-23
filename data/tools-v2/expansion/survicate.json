@@ -42,7 +42,8 @@
   "publishing": {
     "indexability": "noindex",
     "canonical_url": "https://www.toolnestai.tech/tools/survicate.html",
-    "sitemap_eligible": false
+    "sitemap_eligible": false,
+    "content_quality_status": "unassessed"
   },
   "freshness": {}
 }

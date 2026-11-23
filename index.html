@@ -176,12 +176,15 @@
 <div class="wrap">
 <p class="kicker">Start with the decision</p>
 <h2 class="h2" id="pathsTitle">Start with the decision you need to make</h2>
-<p class="sub">ToolNest is organised around four buyer decisions. Pick the one you are facing; each route ends in a shortlist with trade-offs, not a wall of logos.</p>
+<p class="sub">ToolNest is organised around buyer decisions. Pick the one you are facing; each route ends in a shortlist with trade-offs, not a wall of logos.</p>
 <div class="linkgrid">
-<a href="/compare/index.html"><b>Compare tools</b><small>See pricing, limits, trade-offs and a direct verdict side by side</small></a>
 <a class="decision-primary" href="/goals/index.html"><b>Get a recommendation</b><small>Start from your goal, then follow the tools and decisions that fit the workflow</small></a>
+<a href="/compare/index.html"><b>Compare tools</b><small>See pricing, limits, trade-offs and a direct verdict side by side</small></a>
 <a href="/tools/index.html"><b>Browse researched profiles</b><small>Source-verified reviews, labelled honestly</small></a>
 <a href="/alternatives/index.html"><b>Find an alternative</b><small>What to try when a tool does not fit</small></a>
+<a href="/tools/stack-analyzer.html"><b>Analyze my stack</b><small>Estimate costs and find overlap in your current software stack <span class="beta-tag">Beta</span></small></a>
+<a href="/tools/overlap-checker.html"><b>Check tool overlap</b><small>See if two tools share functionality before you buy both</small></a>
+<a href="/tools/decision-engine.html"><b>Decision Engine</b><small>Score-based recommendations from your requirements <span class="beta-tag">Beta</span></small></a>
 </div>
 <p style="margin-top:22px"><a class="rlink" href="/about.html">How we research and label evidence &rarr;</a></p>
 </div>
@@ -193,7 +196,7 @@
  <p class="sub">We keep the list short on purpose. A short list you can trust is more useful than a long list you have to sort through yourself.</p>
  <ul class="proof" aria-label="ToolNest editorial standards">
  <li><span class="pi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></span><div><b>Editorially independent</b><span class="t">Nobody can pay to be listed, ranked higher or reviewed more kindly.</span></div></li>
- <li><span class="pi"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></span><div><b>Researched by ToolNest Editorial</b><span class="t">AI-assisted research from official vendor sources, not hands-on testing.</span></div></li>
+ <li><span class="pi"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></span><div><b>Researched by ToolNest Editorial</b><span class="t">Independent research from official vendor sources. We do not claim hands-on testing unless a page says so.</span></div></li>
  <li><span class="pi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><polyline points="14 3 14 8 19 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg></span><div><b>Built from official sources</b><span class="t">Product sites, docs and pricing pages. No made-up test claims.</span></div></li>
  <li><span class="pi"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg></span><div><b>Commercial facts checked</b><span class="t">Pages that quote prices show the date they were checked. Always confirm on the official site.</span></div></li>
  </ul>
@@ -277,7 +280,7 @@
  <div class="final" id="final">
  <div class="f-glow" id="glow" aria-hidden="true"></div>
  <div class="f-copy"><h2>Ready to find your tool?</h2><p>Start with a goal, or search the full catalog.</p><p class="f-micro">Free to use. No sign-up. Independent picks.</p></div>
- <div class="f-acts"><a class="btn big mag" href="/tools/index.html">Browse all tools<span class="arr" aria-hidden="true">&rarr;</span></a><a class="btn big ghost" href="/#picker">Find my tool</a></div>
+ <div class="f-acts"><a class="btn big mag" href="/#picker">Find my tool</a><a class="btn big ghost" href="/tools/index.html">Browse all tools</a></div>
  </div>
  </div>
 </main>
@@ -306,15 +309,15 @@
  "use strict";
 
  var GOALS = [
- { id: "write-better-english", label: "Write better English", tool: "grammarly", guide: "/goals/write-better-english.html" },
- { id: "organise-my-work", label: "Organise my work", tool: "notion", guide: "/goals/organise-my-work.html" },
- { id: "add-voice-to-videos", label: "Add a voice to videos", tool: "elevenlabs", guide: "/goals/add-voice-to-videos.html" },
- { id: "edit-video-podcasts", label: "Edit video or podcasts", tool: "descript", guide: "/goals/edit-video-podcasts.html" },
- { id: "write-ad-copy", label: "Write ad copy", tool: "jasper", guide: "/goals/write-ad-copy.html" },
- { id: "get-search-traffic", label: "Get search traffic", tool: "semrush", guide: "/goals/get-search-traffic.html" },
- { id: "sell-online", label: "Sell something online", tool: "systeme", guide: "/goals/sell-online.html" },
- { id: "launch-online-course", label: "Launch an online course", tool: "systeme", guide: "/goals/launch-online-course.html" },
- { id: "launch-a-website", label: "Launch a website", tool: "hostinger", guide: "/goals/launch-a-website.html" }
+ { id: "write-better-english", label: "Write better English", tool: "grammarly", guide: "/goals/write-better-english.html", also_consider: ["prowritingaid"], use_case_tags: ["writing", "grammar-checking", "proofreading"] },
+ { id: "organise-my-work", label: "Organise my work", tool: "notion", guide: "/goals/organise-my-work.html", also_consider: ["todoist", "clickup", "asana"], use_case_tags: ["work management", "project management", "note-taking"] },
+ { id: "add-voice-to-videos", label: "Add a voice to videos", tool: "elevenlabs", guide: "/goals/add-voice-to-videos.html", also_consider: [], use_case_tags: ["voice generation", "text-to-speech", "video voiceover"] },
+ { id: "edit-video-podcasts", label: "Edit video or podcasts", tool: "descript", guide: "/goals/edit-video-podcasts.html", also_consider: ["kapwing"], use_case_tags: ["video editing", "podcast editing", "audio editing"] },
+ { id: "write-ad-copy", label: "Write ad copy", tool: "jasper", guide: "/goals/write-ad-copy.html", also_consider: ["writesonic"], use_case_tags: ["copywriting", "ad copy", "marketing content"] },
+ { id: "get-search-traffic", label: "Get search traffic", tool: "semrush", guide: "/goals/get-search-traffic.html", also_consider: ["ahrefs", "mozpro"], use_case_tags: ["SEO", "keyword research", "search optimization"] },
+ { id: "sell-online", label: "Sell something online", tool: "systeme", guide: "/goals/sell-online.html", also_consider: [], use_case_tags: ["eCommerce", "sales funnel", "online selling"] },
+ { id: "launch-online-course", label: "Launch an online course", tool: "systeme", guide: "/goals/launch-online-course.html", also_consider: ["teachable"], use_case_tags: ["online course", "course creation", "digital products"] },
+ { id: "launch-a-website", label: "Launch a website", tool: "hostinger", guide: "/goals/launch-a-website.html", also_consider: ["webflow", "squarespace"], use_case_tags: ["website building", "web hosting", "landing page"] }
  ];
 
  var FEATURED = ["systeme", "mozpro", "semrush", "ahrefs", "kapwing", "kit", "elevenlabs", "hostinger"];
@@ -384,13 +387,27 @@
  var pros = (t.pros || []).slice(0, 3).map(function (p) {
  return '<li>' + TICK + '<span>' + esc(p) + '</span></li>';
  }).join("");
+ var alsoHTML = "";
+ if (g.also_consider && g.also_consider.length > 0) {
+ var alsoLinks = g.also_consider.map(function (aid) {
+ var at = TOOLS[aid];
+ return at ? '<a href="/tools/' + esc(at.id) + '.html">' + esc(at.name) + '</a>' : '';
+ }).filter(Boolean).join(", ");
+ alsoHTML = '<div class="s-cols"><div><h4>Why it fits</h4><ul class="pros">' + pros + '</ul></div><div><h4>Also consider</h4><p>' + alsoLinks + '</p></div></div>';
+ } else {
+ alsoHTML = '<div class="s-cols"><div><h4>Why it fits</h4><ul class="pros">' + pros + '</ul></div></div>';
+ }
+ var ucParams = "";
+ if (g.use_case_tags && g.use_case_tags.length > 0) {
+ ucParams = "?uc=" + encodeURIComponent(g.use_case_tags.join(","));
+ }
  return '<div class="stage-in">' +
  '<div class="s-top"><div class="plate">' + tile(t) + '</div>' +
  '<div class="s-id"><h3>' + esc(t.name) + '</h3><p>' + esc(t.cat) + '</p></div></div>' +
  '<p class="s-why">' + esc(whyText(t)) + '</p>' +
- '<div class="s-cols"><div><h4>Why it fits</h4><ul class="pros">' + pros + '</ul></div></div>' +
+ alsoHTML +
  '<div class="s-cta"><a class="btn big" href="' + esc(url) + '" target="_blank" rel="' + rel + '" data-tool="' + esc(t.id) + '" data-pos="home-picker">Visit ' + esc(t.name) + '<span class="sr"> (opens the official site in a new tab)</span></a><a class="lnk" href="/tools/' + esc(t.id) + '.html" style="color:#CFE6E1">Read the review</a></div>' +
- '<p class="s-note">' + (t.affiliateUrl ? "Affiliate link: we may earn a commission at no extra cost to you." : "Opens the official site.") + ' <a href="' + esc(g.guide) + '">Full guide for this goal</a></p>' +
+ '<p class="s-note">' + (t.affiliateUrl ? "Affiliate link: we may earn a commission at no extra cost to you." : "Opens the official site.") + ' <a href="' + esc(g.guide) + '">Full guide for this goal</a> &middot; <a href="/tools/decision-engine.html' + ucParams + '">Refine with Decision Engine &rarr;</a></p>' +
  '</div>';
  }
 

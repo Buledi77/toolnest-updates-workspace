@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+<head><title>Stack Cost Analyzer Review: Features &amp; Pricing | ToolNest</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="ToolNest Editorial"><link rel="author" href="/about.html">
+<link rel="stylesheet" href="/assets/site.min.css">
+<link rel="stylesheet" href="/assets/mobile-nav.min.css">
+<script src="/assets/mobile-nav.min.js" defer></script>
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Instrument+Sans:wght@400;500;600;700&display=optional" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Instrument+Sans:wght@400;500;600;700&display=optional"></noscript>
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToolNest">
+<meta property="og:locale" content="en_US">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Stack Cost Analyzer","url":"https://www.toolnestai.tech/tools/stack-analyzer.html","description":"Select multiple tools and see your estimated monthly and annual stack cost. Based on verified pricing data where available, with clear labels for unknown pricing.","isPartOf":{"@type":"WebSite","name":"ToolNest","url":"https://www.toolnestai.tech/"}}</script>
+
+<style>
+.sa-wrap{max-width:960px;margin:0 auto}
+.sa-stack{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;margin:24px 0;box-shadow:var(--shadow)}
+.sa-search{width:100%;padding:12px 16px;font:500 16px var(--font-body);border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);margin-bottom:16px}
+.sa-search:focus{outline:none;border-color:var(--ring);box-shadow:0 0 0 3px rgba(15,107,92,.15)}
+.sa-search::placeholder{color:var(--muted);font-weight:400}
+.sa-tool-list{max-height:400px;overflow-y:auto;border:1px solid var(--line);border-radius:12px}
+.sa-tool-item{display:flex;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line);cursor:pointer;transition:background .15s ease}
+.sa-tool-item:last-child{border-bottom:none}
+.sa-tool-item:hover{background:var(--soft)}
+.sa-tool-item.selected{background:var(--soft);border-left:3px solid var(--brand)}
+.sa-tool-item input[type="checkbox"]{width:18px;height:18px;accent-color:var(--brand);flex-shrink:0}
+.sa-tool-info{flex:1;min-width:0}
+.sa-tool-name{font-size:14px;font-weight:600;color:var(--ink)}
+.sa-tool-cat{font-size:12px;color:var(--muted)}
+.sa-tool-price{font-size:13px;font-weight:600;color:var(--brand);white-space:nowrap}
+.sa-tool-price.unknown{color:var(--muted);font-weight:400;font-style:italic}
+.sa-selected{margin-top:20px}
+.sa-selected-item{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;background:var(--soft);border-radius:10px;margin-bottom:8px}
+.sa-selected-item .sa-remove{background:none;border:none;color:#B45309;cursor:pointer;font-size:18px;padding:4px 8px;border-radius:6px;transition:background .15s ease}
+.sa-selected-item .sa-remove:hover{background:rgba(180,83,9,.1)}
+.sa-totals{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:20px 0}
+.sa-total-item{text-align:center;padding:16px;background:var(--soft);border-radius:12px}
+.sa-total-num{font-size:28px;font-weight:800;color:var(--brand)}
+.sa-total-label{font-size:12px;color:var(--muted);margin-top:4px}
+.sa-total-item.warning .sa-total-num{color:#B45309}
+.sa-unknown-section{margin-top:16px;padding:14px 16px;background:rgba(180,83,9,.06);border:1px solid rgba(180,83,9,.2);border-radius:12px}
+.sa-unknown-section h4{font-size:14px;font-weight:600;color:#B45309;margin:0 0 6px}
+.sa-unknown-section p{font-size:13px;color:var(--muted);margin:0}
+.sa-unknown-list{margin-top:8px;font-size:13px;color:var(--muted)}
+.sa-unknown-list span{display:inline-block;padding:2px 8px;background:rgba(180,83,9,.08);border-radius:6px;margin:2px 4px 2px 0}
+.sa-overlap-hint{margin-top:12px;padding:12px 16px;background:rgba(124,58,237,.06);border:1px solid rgba(124,58,237,.2);border-radius:10px;font-size:13px;color:var(--muted)}
+.sa-overlap-hint a{color:#7C3AED;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.sa-pricing-label{font-size:11px;color:var(--muted);font-style:italic;display:block;margin-top:2px}
+.sa-empty{text-align:center;padding:32px 20px;color:var(--muted)}
+.sa-empty p{font-size:15px;margin:0}
+.sa-note{font-size:13px;color:var(--muted);margin-top:16px;line-height:1.6;padding:12px 16px;background:var(--soft);border-radius:10px;border-left:3px solid var(--brand)}
+.sa-note a{color:var(--brand);text-decoration:underline;text-underline-offset:3px}
+.sa-cat-filter{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.sa-cat-chip{padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-size:12px;font-weight:500;cursor:pointer;transition:all .2s ease}
+.sa-cat-chip:hover,.sa-cat-chip.active{background:var(--brand);color:#fff;border-color:var(--brand)}
+.sa-export-btn{display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--brand);font:600 14px var(--font-body);cursor:pointer;transition:background .2s ease;margin-top:12px}
+.sa-export-btn:hover{background:var(--soft)}
+@media(max-width:640px){
+ .sa-totals{grid-template-columns:1fr}
+ .sa-tool-item{flex-wrap:wrap}
+}
+</style>
+
+
+<meta name="description" content="Stack Cost Analyzer: editorial review covering strengths, trade-offs, pricing, and who should choose or skip this tool for your workflow. Check official">
+<link rel="canonical" href="https://www.toolnestai.tech/tools/stack-analyzer.html">
+<meta property="og:title" content="Stack Cost Analyzer Review: Features &amp; Pricing | ToolNest">
+<meta property="og:description" content="Stack Cost Analyzer: editorial review covering strengths, trade-offs, pricing, and who should choose or skip this tool for your workflow. Check official">
+<meta property="og:url" content="https://www.toolnestai.tech/tools/stack-analyzer.html">
+<meta property="og:image" content="https://www.toolnestai.tech/assets/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Stack Cost Analyzer Review: Features &amp; Pricing | ToolNest">
+<meta name="twitter:description" content="Stack Cost Analyzer: editorial review covering strengths, trade-offs, pricing, and who should choose or skip this tool for your workflow. Check official">
+<meta name="twitter:image" content="https://www.toolnestai.tech/assets/og-default.png">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VS0TB85N2G"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-VS0TB85N2G");</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.toolnestai.tech/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://www.toolnestai.tech/tools/index.html"},{"@type":"ListItem","position":3,"name":"Stack Cost Analyzer","item":"https://www.toolnestai.tech/tools/stack-analyzer.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Stack Cost Analyzer Review: Features & Pricing | ToolNest","description":"Stack Cost Analyzer: editorial review covering strengths, trade-offs, pricing, and who should choose or skip this tool for your workflow. Check official","url":"https://www.toolnestai.tech/tools/stack-analyzer.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.toolnestai.tech/tools/stack-analyzer.html"},"author":{"@type":"Organization","name":"ToolNest Editorial","url":"https://www.toolnestai.tech/editorial-policy.html"},"publisher":{"@type":"Organization","name":"ToolNest","url":"https://www.toolnestai.tech/","logo":{"@type":"ImageObject","url":"https://www.toolnestai.tech/assets/og-default.png"}},"image":"https://www.toolnestai.tech/assets/og-default.png"}</script>
+<meta name="robots" content="noindex, follow">
+</head>
+<body>
+
+<a class="skip" href="#top">Skip to content</a>
+<header class="top">
+<div class="bar">
+<a aria-label="ToolNest home" class="logo" href="/">
+<span>Tool<i>Nest</i>
+</span>
+</a>
+<nav aria-label="Main">
+<a href="/tools/index.html">Tools</a>
+<a href="/category/index.html">Categories</a>
+<a href="/compare/index.html">Compare</a>
+<a href="/best/index.html">Best of</a>
+<a class="btn" href="/tools/decision-engine.html">Decision Engine</a>
+</nav>
+<button class="mnav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav">
+<span class="mnav-ico" aria-hidden="true">
+</span>
+</button>
+</div>
+<nav class="mnav" id="mnav" aria-label="Mobile" hidden>
+<a href="/">Home</a>
+<a href="/tools/index.html">Tools</a>
+<a href="/category/index.html">Categories</a>
+<a href="/compare/index.html">Compare</a>
+<a href="/alternatives/index.html">Alternatives</a>
+<a href="/best/index.html">Best of</a>
+<a class="btn" href="/tools/decision-engine.html">Decision Engine</a>
+</nav>
+</header>
+
+<main id="top">
+<section class="hero phero">
+<div class="wrap"><nav aria-label="Breadcrumb" class="crumbs"><ol><li><a href="/">Home</a></li><li><a href="/tools/index.html">Tools</a></li><li aria-current="page">Stack Cost Analyzer</li></ol></nav>
+
+<p class="eyebrow">Interactive tool</p>
+<h1>Stack Cost Analyzer</h1>
+<p class="lede">Select the tools in your stack and see your estimated monthly and annual cost — based on verified pricing data where available.</p>
+</div>
+</section><div class="wrap tn-trust-strip"><p class="tn-research-line">ToolNest Research &middot; Editorial review 2026-11-23 &middot; <a href="/how-we-test.html">Research-based profile</a></p><p class="tn-trust-links"><a href="/how-we-test.html">Methodology</a><a href="/editorial-policy.html">Editorial policy</a><a href="/contact.html">Corrections</a><a href="/affiliate-disclosure.html">Affiliate disclosure</a></p></div>
+
+<div class="wrap p-flow">
+<div class="sa-wrap">
+
+<section class="p-sec">
+<h2>How it works</h2>
+<p>Select tools from the list below. The analyzer shows estimated costs based on verified pricing data. When pricing data is unavailable, it clearly labels the cost as unknown.</p>
+<div class="p-feats">
+<div class="p-feat">
+<b>Select your tools</b>
+<p>Search and check the tools you're considering or already using.</p>
+</div>
+<div class="p-feat">
+<b>See monthly &amp; annual costs</b>
+<p>Get a breakdown of known costs, unknown costs, and total estimates.</p>
+</div>
+<div class="p-feat">
+<b>Transparent data</b>
+<p>Every cost figure is sourced from verified pricing pages. Unknown pricing is clearly labeled.</p>
+</div>
+<div class="p-feat">
+<b>Export your stack</b>
+<p>Save your stack configuration as a shareable link or JSON file.</p>
+</div>
+</div>
+</section>
+
+<section class="p-sec">
+<h2>Build your stack</h2>
+
+<div class="sa-stack">
+<div class="sa-filter-group">
+<label class="de-filter-label" for="saSearch">Search tools</label>
+<input type="text" class="sa-search" id="saSearch" placeholder="Type to find tools…" autocomplete="off">
+</div>
+
+<div class="sa-cat-filter" id="saCatFilter" role="group" aria-label="Filter by category">
+<button class="sa-cat-chip active" data-cat="all">All</button>
+</div>
+
+<div class="sa-tool-list" id="saToolList" role="listbox" aria-label="Available tools"></div>
+
+<div class="sa-selected" id="saSelected" role="region" aria-label="Selected tools">
+<h3 style="font-size:16px;margin:20px 0 12px">Your stack (<span id="saCount">0</span> tools)</h3>
+<div id="saSelectedList"></div>
+
+<div class="sa-totals" id="saTotals" style="display:none">
+<div class="sa-total-item">
+<div class="sa-total-num" id="saMonthly">$0</div>
+<div class="sa-total-label">Known Monthly Costs</div>
+</div>
+<div class="sa-total-item">
+<div class="sa-total-num" id="saAnnual">$0</div>
+<div class="sa-total-label">Known Annual Estimate</div>
+</div>
+</div>
+<div class="sa-unknown-section" id="saUnknownBox" style="display:none">
+<h4>Tools with unknown pricing</h4>
+<p>These tools do not have verified pricing data yet. Their costs are <strong>not included</strong> in the totals above.</p>
+<div class="sa-unknown-list" id="saUnknownList"></div>
+</div>
+
+<button class="sa-export-btn" id="saExportBtn" type="button" style="display:none">Export Stack as JSON</button>
+<a class="sa-export-btn" id="saShareLink" href="#" style="display:none;margin-left:8px">Copy Share Link</a>
+</div>
+<div id="saOverlapHints"></div>
+</div>
+</div>
+
+<p class="sa-note">⚠️ <strong>Data limitation:</strong> Only 4 of 147 tools currently have detailed pricing data in our database. Most tools will show "pricing unknown." We are actively expanding this dataset. Always verify current pricing on the official site before subscribing. <a href="/how-we-test.html">Learn about our data standards</a>.</p>
+</section>
+
+</div>
+</div>
+</main>
+
+<footer class="site-footer">
+<div class="wrap">
+<p>© 2026 ToolNest. All rights reserved.</p>
+<nav>
+<a href="/about.html">About</a>
+<a href="/editorial-policy.html">Editorial policy</a>
+<a href="/privacy.html">Privacy</a>
+<a href="/terms.html">Terms</a>
+<a href="/contact.html">Contact</a>
+</nav>
+</div>
+</footer>
+
+<script>
+(function(){
+ "use strict";
+
+ var TOOLS_URL = "/data/tools-v1.json";
+ var tools = [];
+ var selected = {};
+ var activeCat = "all";
+ var searchQuery = "";
+
+ var elSearch = document.getElementById("saSearch");
+ var elToolList = document.getElementById("saToolList");
+ var elSelectedList = document.getElementById("saSelectedList");
+ var elCount = document.getElementById("saCount");
+ var elTotals = document.getElementById("saTotals");
+ var elMonthly = document.getElementById("saMonthly");
+ var elAnnual = document.getElementById("saAnnual");
+ var elUnknownBox = document.getElementById("saUnknownBox");
+ var elUnknown = document.getElementById("saUnknown");
+ var elExportBtn = document.getElementById("saExportBtn");
+ var elShareLink = document.getElementById("saShareLink");
+ var elCatFilter = document.getElementById("saCatFilter");
+
+ function init(){
+ loadTools();
+ bindEvents();
+ }
+
+ function loadTools(){
+ return fetch(TOOLS_URL).then(function(r){return r.json();}).then(function(d){
+ tools = d.tools || [];
+ tools.sort(function(a,b){return a.name.localeCompare(b.name);});
+ buildCatFilter();
+ renderToolList();
+ restoreUrlState();
+ }).catch(function(e){
+ elToolList.innerHTML = '<div class="sa-empty"><p>Error loading tool data.</p></div>';
+ console.error("Failed to load tools:", e);
+ });
+ }
+
+ function buildCatFilter(){
+ var cats = {};
+ for(var i=0;i<tools.length;i++){
+ var c = tools[i].cat;
+ if(c) cats[c] = (cats[c]||0) + 1;
+ }
+ var catNames = Object.keys(cats).sort();
+ var html = '<button class="sa-cat-chip active" data-cat="all">All (' + tools.length + ')</button>';
+ for(var i=0;i<catNames.length;i++){
+ html += '<button class="sa-cat-chip" data-cat="' + escapeHtml(catNames[i]) + '">' + escapeHtml(catNames[i]) + ' (' + cats[catNames[i]] + ')</button>';
+ }
+ elCatFilter.innerHTML = html;
+
+ var chips = elCatFilter.querySelectorAll(".sa-cat-chip");
+ for(var i=0;i<chips.length;i++){
+ chips[i].addEventListener("click", function(){
+ chips.forEach(function(c){c.classList.remove("active");});
+ this.classList.add("active");
+ activeCat = this.getAttribute("data-cat");
+ renderToolList();
+ });
+ }
+ }
+
+ function getMonthlyEstimate(t){
+ var p = t.pricing;
+ if(!p || !p.model) return null;
+ // Try to extract a monthly price from tiers
+ if(p.tiers && p.tiers.length > 0){
+ var tier = p.tiers[0];
+ if(tier.price && tier.price > 0){
+ return {amount:tier.price, currency:p.currency||"USD", source:"tier data"};
+ }
+ }
+ // If we have a model but no specific price, return unknown
+ return null;
+ }
+
+ function renderToolList(){
+ var filtered = tools.filter(function(t){
+ if(activeCat !== "all" && t.cat !== activeCat) return false;
+ if(searchQuery){
+ var q = searchQuery.toLowerCase();
+ var hay = (t.name + " " + t.cat + " " + (t.best||"")).toLowerCase();
+ if(hay.indexOf(q) === -1) return false;
+ }
+ return true;
+ });
+
+ if(filtered.length === 0){
+ elToolList.innerHTML = '<div class="sa-empty"><p>No tools match your search.</p></div>';
+ return;
+ }
+
+ var html = "";
+ for(var i=0;i<filtered.length;i++){
+ var t = filtered[i];
+ var est = getMonthlyEstimate(t);
+ var priceStr = est ? "$" + est.amount + "/mo" : "pricing unknown";
+ var priceClass = est ? "" : "unknown";
+ var checked = selected[t.id] ? 'checked' : '';
+ var selClass = selected[t.id] ? 'selected' : '';
+
+ html += '<div class="sa-tool-item ' + selClass + '" data-id="' + escapeHtml(t.id) + '" role="option" aria-selected="' + (selected[t.id]?"true":"false") + '">';
+ html += '<input type="checkbox" ' + checked + ' aria-label="Select ' + escapeHtml(t.name) + '">';
+ html += '<div class="sa-tool-info">';
+ html += '<div class="sa-tool-name">' + escapeHtml(t.name) + '</div>';
+ html += '<div class="sa-tool-cat">' + escapeHtml(t.cat) + '</div>';
+ html += '</div>';
+ html += '<div class="sa-tool-price ' + priceClass + '">' + priceStr + '</div>';
+ html += '</div>';
+ }
+ elToolList.innerHTML = html;
+
+ // Bind events
+ var items = elToolList.querySelectorAll(".sa-tool-item");
+ for(var i=0;i<items.length;i++){
+ items[i].addEventListener("click", function(e){
+ if(e.target.tagName === "INPUT") return;
+ var cb = this.querySelector('input[type="checkbox"]');
+ cb.checked = !cb.checked;
+ toggleTool(this.getAttribute("data-id"), cb.checked);
+ });
+ var cb = items[i].querySelector('input[type="checkbox"]');
+ cb.addEventListener("change", function(){
+ var item = this.closest(".sa-tool-item");
+ toggleTool(item.getAttribute("data-id"), this.checked);
+ });
+ }
+ }
+
+ function toggleTool(id, checked){
+ if(checked){
+ selected[id] = true;
+ } else {
+ delete selected[id];
+ }
+ renderSelected();
+ renderToolList();
+ updateUrlState();
+ }
+
+ function renderSelected(){
+ var ids = Object.keys(selected);
+ elCount.textContent = ids.length;
+
+ if(ids.length === 0){
+ elSelectedList.innerHTML = '<div class="sa-empty"><p>Select tools from the list above to build your stack.</p></div>';
+ elTotals.style.display = "none";
+ elExportBtn.style.display = "none";
+ elShareLink.style.display = "none";
+ return;
+ }
+
+ var html = "";
+ var knownMonthly = 0;
+ var unknownCount = 0;
+ var currency = "USD";
+
+ for(var i=0;i<ids.length;i++){
+ var t = null;
+ for(var j=0;j<tools.length;j++){
+ if(tools[j].id === ids[i]){t=tools[j];break;}
+ }
+ if(!t) continue;
+
+ var est = getMonthlyEstimate(t);
+ if(est){
+ knownMonthly += est.amount;
+ if(est.currency) currency = est.currency;
+ } else {
+ unknownCount++;
+ }
+
+ html += '<div class="sa-selected-item">';
+ html += '<div><strong>' + escapeHtml(t.name) + '</strong> <span style="color:var(--muted);font-size:12px">' + escapeHtml(t.cat) + '</span></div>';
+ html += '<div style="display:flex;align-items:center;gap:8px">';
+ html += '<span class="sa-tool-price ' + (est?"":"unknown") + '">' + (est ? "$" + est.amount + "/mo" : "unknown") + '</span>';
+ html += '<a href="/tools/' + escapeHtml(t.id) + '.html" style="font-size:12px;color:var(--brand);text-decoration:underline">profile</a>';
+ html += '<button class="sa-remove" data-id="' + escapeHtml(t.id) + '" aria-label="Remove ' + escapeHtml(t.name) + '" title="Remove">&times;</button>';
+ html += '</div></div>';
+ }
+ elSelectedList.innerHTML = html;
+
+ // Bind remove buttons
+ var removes = elSelectedList.querySelectorAll(".sa-remove");
+ for(var i=0;i<removes.length;i++){
+ removes[i].addEventListener("click", function(){
+ var rid = this.getAttribute("data-id");
+ delete selected[rid];
+ renderSelected();
+ renderToolList();
+ updateUrlState();
+ });
+ }
+
+ // Totals — only show known costs, never mix with unknown
+ elTotals.style.display = "grid";
+ elMonthly.textContent = "$" + knownMonthly + "/mo";
+
+ // Annual: check for verified annual discount data, otherwise estimate
+ var annualDiscountFound = false;
+ var annualTotal = knownMonthly * 12;
+ var ids2 = Object.keys(selected);
+ for(var i=0;i<ids2.length;i++){
+ var t2 = null;
+ for(var j=0;j<tools.length;j++){
+ if(tools[j].id === ids2[i]){t2=tools[j];break;}
+ }
+ if(!t2) continue;
+ var est2 = getMonthlyEstimate(t2);
+ if(est2 && t2.pricing && t2.pricing.tiers){
+ for(var k=0;k<t2.pricing.tiers.length;k++){
+ var tier = t2.pricing.tiers[k];
+ if(tier.annualDiscount && tier.annualDiscount > 0 && tier.price === est2.amount){
+ annualTotal -= tier.annualDiscount;
+ annualDiscountFound = true;
+ break;
+ }
+ }
+ }
+ }
+ var annualLabel = annualDiscountFound ? "$" + Math.round(annualTotal) + "/yr" : "$" + Math.round(annualTotal) + "/yr (estimate)";
+ elAnnual.textContent = annualLabel;
+
+ // Unknown pricing section — separate from totals
+ if(unknownCount > 0){
+ elUnknownBox.style.display = "block";
+ var unknownNames = [];
+ for(var i=0;i<ids.length;i++){
+ var t = null;
+ for(var j=0;j<tools.length;j++){
+ if(tools[j].id === ids[i]){t=tools[j];break;}
+ }
+ if(!t) continue;
+ var est = getMonthlyEstimate(t);
+ if(!est) unknownNames.push(escapeHtml(t.name));
+ }
+ elUnknownList.innerHTML = unknownNames.map(function(n){return '<span>' + n + '</span>';}).join('');
+ } else {
+ elUnknownBox.style.display = "none";
+ }
+
+ // Overlap hints — check for shared use case tags among selected tools
+ var overlapHtml = '';
+ var selectedTools = [];
+ for(var i=0;i<ids.length;i++){
+ for(var j=0;j<tools.length;j++){
+ if(tools[j].id === ids[i]){selectedTools.push(tools[j]);break;}
+ }
+ }
+ if(selectedTools.length >= 2){
+ var overlapPairs = [];
+ for(var i=0;i<selectedTools.length;i++){
+ for(var k=i+1;k<selectedTools.length;k++){
+ var tagsA = selectedTools[i].useCaseTags || [];
+ var tagsB = selectedTools[k].useCaseTags || [];
+ var shared = [];
+ for(var a=0;a<tagsA.length;a++){
+ for(var b=0;b<tagsB.length;b++){
+ if(tagsA[a].toLowerCase() === tagsB[b].toLowerCase()) shared.push(tagsA[a]);
+ }
+ }
+ if(shared.length > 0){
+ overlapPairs.push({a:selectedTools[i],b:selectedTools[k],shared:shared});
+ }
+ }
+ }
+ if(overlapPairs.length > 0){
+ overlapHtml = '<div class="sa-overlap-hint"><strong>⚠️ Possible overlap detected:</strong> ';
+ for(var i=0;i<overlapPairs.length;i++){
+ var p = overlapPairs[i];
+ overlapHtml += escapeHtml(p.a.name) + ' and ' + escapeHtml(p.b.name) + ' share functionality (' + escapeHtml(p.shared.join(', ')) + ') — ';
+ var slugA = p.a.id;
+ var slugB = p.b.id;
+ overlapHtml += '<a href="/tools/overlap-checker.html?a=' + encodeURIComponent(slugA) + '&b=' + encodeURIComponent(slugB) + '">check overlap</a> · ';
+ }
+ overlapHtml += '</div>';
+ }
+ }
+ 
+ // Insert overlap hints after unknown section
+ var overlapEl = document.getElementById('saOverlapHints');
+ if(overlapEl) overlapEl.innerHTML = overlapHtml;
+
+ elExportBtn.style.display = "inline-block";
+ elShareLink.style.display = "inline-block";
+ }
+
+ function bindEvents(){
+ elSearch.addEventListener("input", function(){
+ searchQuery = elSearch.value.trim();
+ renderToolList();
+ });
+
+ elExportBtn.addEventListener("click", function(){
+ var ids = Object.keys(selected);
+ var stack = {
+ schema: "toolnest-stack-v1",
+ generated_at: new Date().toISOString(),
+ tools: []
+ };
+ for(var i=0;i<ids.length;i++){
+ for(var j=0;j<tools.length;j++){
+ if(tools[j].id === ids[i]){
+ var est = getMonthlyEstimate(tools[j]);
+ stack.tools.push({
+ id: tools[j].id,
+ name: tools[j].name,
+ category: tools[j].cat,
+ estimated_monthly: est ? est.amount : null,
+ currency: est ? (est.currency||"USD") : null
+ });
+ break;
+ }
+ }
+ }
+ var blob = new Blob([JSON.stringify(stack, null, 2)], {type:"application/json"});
+ var url = URL.createObjectURL(blob);
+ var a = document.createElement("a");
+ a.href = url;
+ a.download = "toolnest-stack.json";
+ a.click();
+ URL.revokeObjectURL(url);
+ });
+
+ elShareLink.addEventListener("click", function(e){
+ e.preventDefault();
+ var params = new URLSearchParams();
+ var ids = Object.keys(selected);
+ if(ids.length > 0) params.set("tools", ids.join(","));
+ var url = window.location.origin + window.location.pathname;
+ if(params.toString()) url += "?" + params.toString();
+ if(navigator.clipboard){
+ navigator.clipboard.writeText(url).then(function(){
+ var orig = this.textContent;
+ this.textContent = "Link copied!";
+ var self = this;
+ setTimeout(function(){self.textContent=orig;}, 2000);
+ }.bind(this));
+ }
+ });
+ }
+
+ function escapeHtml(s){
+ if(!s) return "";
+ var div = document.createElement("div");
+ div.textContent = s;
+ return div.innerHTML;
+ }
+
+ function updateUrlState(){
+ var params = new URLSearchParams();
+ var ids = Object.keys(selected);
+ if(ids.length > 0) params.set("tools", ids.join(","));
+ var qs = params.toString();
+ var url = window.location.pathname;
+ if(qs) url += "?" + qs;
+ history.replaceState(null, "", url);
+ }
+
+ function restoreUrlState(){
+ var params = new URLSearchParams(window.location.search);
+ if(params.has("tools")){
+ var ids = params.get("tools").split(",").map(function(s){return s.trim();}).filter(Boolean);
+ for(var i=0;i<ids.length;i++){
+ selected[ids[i]] = true;
+ }
+ renderSelected();
+ renderToolList();
+ }
+ }
+
+ if(document.readyState === "loading"){
+ document.addEventListener("DOMContentLoaded", init);
+ } else {
+ init();
+ }
+
+})();
+</script>
+
+</body>
+</html>

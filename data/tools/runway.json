@@ -58,6 +58,7 @@
   },
   "relationships": {
     "alternatives": [
+      "ueni",
       "elevenlabs",
       "descript",
       "synthesia"

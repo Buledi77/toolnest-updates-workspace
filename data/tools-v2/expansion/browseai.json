@@ -1,0 +1,49 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "browseai",
+    "name": "Browse AI",
+    "slug": "browseai",
+    "official_url": "https://www.browse.ai",
+    "status": "active",
+    "logo": "",
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Automation"
+    ],
+    "use_cases": [
+      "web scraping",
+      "data monitoring",
+      "no-code data extraction"
+    ],
+    "audiences": []
+  },
+  "factual_profile": {},
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [],
+    "not_recommended_for": [],
+    "editorial_summary": "",
+    "review_status": "draft"
+  },
+  "relationships": {},
+  "evidence": {
+    "claim_refs": [],
+    "source_ids": []
+  },
+  "monetization": {
+    "official_non_affiliate_url": "https://www.browse.ai"
+  },
+  "publishing": {
+    "directory_visibility": "public",
+    "standalone_page_status": "published",
+    "indexability": "index",
+    "sitemap_eligible": true,
+    "content_quality_status": "adequate",
+    "canonical_url": "https://www.toolnestai.tech/tools/browseai.html"
+  },
+  "freshness": {}
+}

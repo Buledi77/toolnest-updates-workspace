@@ -25,8 +25,12 @@ class DirectoryAdapterTests(unittest.TestCase):
 
     def test_public_candidates_exclude_tier_c_expansion(self):
         ids = {record["identity"]["id"] for record in public_page_candidates(self.records)}
-        self.assertNotIn("cursor", ids)
+        # cursor is Tier B with full publishing, not Tier C
+        self.assertIn("cursor", ids)
         self.assertIn("hostinger", ids)
+        # Batch A Tier C tools should be excluded
+        self.assertNotIn("circle", ids)
+        self.assertNotIn("deel", ids)
 
     def test_query_rejects_invalid_paging(self):
         with self.assertRaises(ValueError):

@@ -60,7 +60,9 @@
     "alternatives": [
       "notion",
       "otter",
-      "fireflies"
+      "fireflies",
+      "wrike",
+      "teamwork"
     ],
     "meaningful_comparisons": [
       "asana-vs-notion"

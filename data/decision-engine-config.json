@@ -1,0 +1,126 @@
+{
+  "schema_version": "decision-engine-v1",
+  "description": "Scoring rules and filter definitions for the ToolNest Decision Engine",
+  "generated_at": "2026-11-22",
+
+  "filters": {
+    "categories": {
+      "label": "Category",
+      "type": "multi-select",
+      "description": "Filter tools by one or more categories",
+      "options": [
+        {"value": "AI Assistants", "label": "AI Assistants"},
+        {"value": "Automation", "label": "Automation"},
+        {"value": "Customer Support", "label": "Customer Support"},
+        {"value": "Design", "label": "Design"},
+        {"value": "Email Marketing", "label": "Email Marketing"},
+        {"value": "Hosting", "label": "Hosting"},
+        {"value": "Image Generation", "label": "Image Generation"},
+        {"value": "Marketing", "label": "Marketing"},
+        {"value": "Productivity", "label": "Productivity"},
+        {"value": "Research", "label": "Research"},
+        {"value": "SEO", "label": "SEO"},
+        {"value": "Sales", "label": "Sales"},
+        {"value": "Voice & Video", "label": "Voice & Video"},
+        {"value": "Website Builder", "label": "Website Builder"},
+        {"value": "Writing", "label": "Writing"}
+      ]
+    },
+    "useCases": {
+      "label": "Use Cases",
+      "type": "multi-select",
+      "description": "Select what you want to accomplish",
+      "dynamic": true,
+      "source": "useCaseTags"
+    },
+    "platforms": {
+      "label": "Platform",
+      "type": "multi-select",
+      "description": "Filter by platform availability",
+      "enabled": false,
+      "disabledReason": "Only 4 of 147 tools have platform data. Filter disabled until coverage improves.",
+      "options": [
+        {"value": "web", "label": "Web"},
+        {"value": "iOS", "label": "iOS"},
+        {"value": "Android", "label": "Android"}
+      ]
+    },
+    "hasFreePlan": {
+      "label": "Free Plan Available",
+      "type": "toggle",
+      "description": "Only show tools with a free plan or free trial",
+      "enabled": false,
+      "disabledReason": "Only 1 of 147 tools has freePlan.available=true. Filter disabled until coverage improves."
+    },
+    "hasCons": {
+      "label": "Show Known Drawbacks",
+      "type": "toggle",
+      "description": "Display cons and skipIf warnings in results",
+      "default": true
+    }
+  },
+
+  "scoring": {
+    "description": "Explainable scoring rules. Each rule contributes points and a human-readable reason.",
+    "rules": [
+      {
+        "id": "use_case_match",
+        "label": "Use Case Match",
+        "weight": 40,
+        "description": "Tool's useCaseTags match your selected use cases",
+        "calculation": "percentage_of_selected_use_cases_matched * weight",
+        "max_points": 40
+      },
+      {
+        "id": "category_match",
+        "label": "Category Match",
+        "weight": 20,
+        "description": "Tool is in one of your selected categories",
+        "calculation": "binary_match * weight",
+        "max_points": 20
+      },
+      {
+        "id": "best_for_match",
+        "label": "Best For Match",
+        "weight": 20,
+        "description": "Tool's bestFor tags match your selected use cases",
+        "calculation": "percentage_of_selected_use_cases_matched * weight",
+        "max_points": 20
+      },
+      {
+        "id": "platform_match",
+        "label": "Platform Match",
+        "weight": 10,
+        "description": "Tool is available on your selected platforms",
+        "calculation": "percentage_of_selected_platforms_matched * weight",
+        "max_points": 10
+      }
+    ],
+    "total_max_score": 90,
+    "minimum_score_to_show": 10,
+    "sort_by": "total_score_desc"
+  },
+
+  "result_display": {
+    "max_results": 20,
+    "show_score_breakdown": true,
+    "show_cons": true,
+    "show_alternatives_link": true,
+    "show_comparison_link": true,
+    "confidence_levels": {
+      "high": {"min_score": 63, "label": "Strong Match", "color": "#0F6B5C"},
+      "medium": {"min_score": 36, "label": "Good Match", "color": "#7C3AED"},
+      "low": {"min_score": 5, "label": "Possible Match", "color": "#B45309"}
+    }
+  },
+
+  "url_state": {
+    "enabled": true,
+    "params": {
+      "categories": "cat",
+      "useCases": "uc",
+      "platforms": "plat",
+      "hasFreePlan": "free"
+    }
+  }
+}

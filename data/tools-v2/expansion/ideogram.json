@@ -14,30 +14,76 @@
     "categories": [
       "Image Generation"
     ],
-    "use_cases": [],
-    "audiences": [],
+    "use_cases": [
+      "AI image generation with text rendering",
+      "logo and poster design",
+      "ad creative with legible text",
+      "character consistency workflows"
+    ],
+    "audiences": [
+      "designers",
+      "marketers",
+      "content creators",
+      "small design teams"
+    ],
     "platforms": [
       "web"
     ],
     "integrations": [],
     "tags": [
-      "image generation",
-      "design",
-      "creative"
+      "ai-image",
+      "text-in-images",
+      "image-generation",
+      "logo-design",
+      "creative-tools"
     ]
   },
   "factual_profile": {
-    "capabilities": [],
-    "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
-    "pricing_status": [],
+    "capabilities": [
+      {
+        "description": "AI image generation specialist in text rendering within images"
+      },
+      {
+        "description": "Industry-leading text accuracy (90-95%)"
+      },
+      {
+        "description": "Credit-based system with priority and slow credits"
+      },
+      {
+        "description": "Character consistency feature"
+      },
+      {
+        "description": "Batch generation on Pro and Team plans"
+      },
+      {
+        "description": "API available, draws on same credits as app"
+      }
+    ],
+    "limitations": [
+      "Free plan limited to 30 credits per week, public generations only",
+      "Old Basic plan ($8/mo) retired for new subscribers",
+      "Team credits are per-user, not pooled",
+      "Enterprise pricing not published"
+    ],
+    "free_plan_status": [
+      "Free plan available with 30 credits per week, public generations only"
+    ],
+    "trial_status": [
+      "No separate trial — Free plan serves as entry point"
+    ],
+    "pricing_status": [
+      "Pricing verified from official sources on 2026-11-22"
+    ],
     "pricing_regions": [],
     "availability_regions": []
   },
   "editorial": {
-    "editorial_tier": "C",
-    "best_for": [],
+    "editorial_tier": "B",
+    "best_for": [
+      "Designers needing legible text in AI-generated images",
+      "Marketers creating posters and ad creatives",
+      "Teams needing character consistency"
+    ],
     "not_recommended_for": [],
     "review_status": "draft",
     "review_url": null,
@@ -45,7 +91,9 @@
     "editorial_last_reviewed": null
   },
   "relationships": {
-    "alternatives": [],
+    "alternatives": [
+      "midjourney"
+    ],
     "meaningful_comparisons": [],
     "related_tools": [],
     "compatible_tools": [],
@@ -54,7 +102,9 @@
   },
   "evidence": {
     "claim_refs": [],
-    "source_ids": []
+    "source_ids": [],
+    "handsOn": false,
+    "evidenceStatus": "Research-based, not a ToolNest hands-on test"
   },
   "monetization": {
     "affiliate_status": "unknown",
@@ -64,29 +114,137 @@
     "approved_regions": [],
     "restrictions": [],
     "disclosure_required": null,
-    "last_link_check": "2026-11-14"
+    "last_link_check": "2026-11-22"
   },
   "publishing": {
-    "directory_visibility": "private",
-    "standalone_page_status": "none",
-    "indexability": "noindex",
-    "sitemap_eligible": false,
-    "canonical_url": null,
-    "template_type": "directory-only",
-    "content_quality_status": "unassessed",
-    "prepublish_status": "not_ready"
+    "directory_visibility": "public",
+    "standalone_page_status": "ready",
+    "indexability": "index",
+    "sitemap_eligible": true,
+    "canonical_url": "https://www.toolnestai.tech/tools/ideogram.html",
+    "template_type": "review",
+    "content_quality_status": "assessed",
+    "prepublish_status": "ready"
   },
   "freshness": {
     "created_at": "2026-11-14T22:03:16Z",
-    "updated_at": "2026-11-14T22:03:16Z",
-    "last_verified_at": "2026-11-14T22:03:16Z",
+    "updated_at": "2026-11-23T00:00:00Z",
+    "last_verified_at": "2026-11-22T23:52:00Z",
     "next_review_at": null,
-    "stale_fields": [
-      "factual_profile",
-      "editorial",
-      "relationships",
-      "monetization"
-    ],
+    "stale_fields": [],
     "change_history_reference": null
-  }
+  },
+  "pricing": {
+    "checkedOn": "2026-11-22",
+    "sourceUrls": [
+      "https://ideogram.ai/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": null,
+    "freePlan": true,
+    "freeLimits": "30 credits per week, public generations only",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "credits": "30 per week",
+          "generations": "Public only"
+        },
+        "notes": "Entry-level access for trying Ideogram"
+      },
+      {
+        "name": "Plus",
+        "priceMonthly": 20,
+        "priceAnnualMonthlyEquivalent": 15,
+        "sourceTier": "official",
+        "limits": {
+          "credits": 2400,
+          "annualPrice": 180,
+          "features": "Private generation, unlimited slow credits, character consistency"
+        },
+        "notes": "Freelancers and regular personal use"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 60,
+        "priceAnnualMonthlyEquivalent": 42,
+        "sourceTier": "official",
+        "limits": {
+          "credits": 7500,
+          "annualPrice": 504,
+          "features": "Batch generation, unlimited slow credits, best cost per credit"
+        },
+        "notes": "Heavy users and batch work"
+      },
+      {
+        "name": "Team",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "perUser": "$30 per user per month",
+          "perUserAnnual": "$20 per user per month",
+          "credits": "3,600 per user per month",
+          "minUsers": 2
+        },
+        "notes": "Teams of 2+ — credits per user, not pooled"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "pricing": "Custom",
+          "features": "Custom models, API volume discounts"
+        },
+        "notes": "Large organizations with custom requirements"
+      },
+      {
+        "name": "Pay-as-you-go",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "perCredit": "$0.01 per credit"
+        },
+        "notes": "No subscription — credits on demand"
+      }
+    ],
+    "billingCaveats": [
+      "Credits increased in October 2026 — older sources may show lower numbers",
+      "Old Basic plan ($8/mo) retired for new subscribers",
+      "Team credits belong to individual users, not pooled",
+      "API draws on same credits as the app",
+      "Pay-as-you-go available at $0.01 per credit"
+    ]
+  },
+  "claims": [
+    {
+      "text": "Ideogram Plus costs $20/month or $15/month billed yearly with 2,400 credits",
+      "sourceUrl": "https://ideogram.ai/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Ideogram Pro costs $60/month or $42/month billed yearly with 7,500 credits",
+      "sourceUrl": "https://ideogram.ai/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Ideogram Team costs $30 per user per month with 3,600 credits per user",
+      "sourceUrl": "https://ideogram.ai/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Ideogram Free offers 30 credits per week",
+      "sourceUrl": "https://ideogram.ai/pricing",
+      "checkedOn": "2026-11-22"
+    }
+  ],
+  "lastReviewed": "2026-11-22"
 }

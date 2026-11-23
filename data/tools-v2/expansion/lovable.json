@@ -14,30 +14,77 @@
     "categories": [
       "Website Builder"
     ],
-    "use_cases": [],
-    "audiences": [],
+    "use_cases": [
+      "AI-powered full-stack app building",
+      "rapid prototyping",
+      "no-code application development",
+      "cloud-hosted web apps"
+    ],
+    "audiences": [
+      "solo developers",
+      "startups",
+      "non-technical founders",
+      "students"
+    ],
     "platforms": [
       "web"
     ],
     "integrations": [],
     "tags": [
-      "app building",
-      "website",
+      "ai-builder",
+      "no-code",
+      "website-builder",
+      "full-stack",
       "prototyping"
     ]
   },
   "factual_profile": {
-    "capabilities": [],
-    "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
-    "pricing_status": [],
+    "capabilities": [
+      {
+        "description": "AI-powered full-stack application builder"
+      },
+      {
+        "description": "Credit-based system for building, hosting, and AI features"
+      },
+      {
+        "description": "Cloud hosting included with credits"
+      },
+      {
+        "description": "Custom domain support on paid plans"
+      },
+      {
+        "description": "Student 50% discount available"
+      },
+      {
+        "description": "Shared workspace credits"
+      }
+    ],
+    "limitations": [
+      "Credits consumed by AI building and deployed app runtime",
+      "Free plan limited to 5 daily credits (30/month max)",
+      "Free plan projects are public",
+      "Custom domains require Pro plan or higher",
+      "No per-seat billing — workspace-based credit system"
+    ],
+    "free_plan_status": [
+      "Free plan available with 5 daily credits (up to 30 per month), public projects"
+    ],
+    "trial_status": [
+      "No separate trial — Free plan serves as entry point"
+    ],
+    "pricing_status": [
+      "Pricing verified from official sources on 2026-11-22"
+    ],
     "pricing_regions": [],
     "availability_regions": []
   },
   "editorial": {
-    "editorial_tier": "C",
-    "best_for": [],
+    "editorial_tier": "B",
+    "best_for": [
+      "Solo developers building prototypes quickly",
+      "Non-technical founders validating ideas",
+      "Students learning full-stack development"
+    ],
     "not_recommended_for": [],
     "review_status": "draft",
     "review_url": null,
@@ -45,16 +92,24 @@
     "editorial_last_reviewed": null
   },
   "relationships": {
-    "alternatives": [],
+    "alternatives": [
+      "bolt",
+      "replit",
+      "v0"
+    ],
     "meaningful_comparisons": [],
-    "related_tools": [],
+    "related_tools": [
+      "bolt"
+    ],
     "compatible_tools": [],
     "replaces": [],
     "replaced_by": []
   },
   "evidence": {
     "claim_refs": [],
-    "source_ids": []
+    "source_ids": [],
+    "handsOn": false,
+    "evidenceStatus": "Research-based, not a ToolNest hands-on test"
   },
   "monetization": {
     "affiliate_status": "unknown",
@@ -64,29 +119,116 @@
     "approved_regions": [],
     "restrictions": [],
     "disclosure_required": null,
-    "last_link_check": "2026-11-14"
+    "last_link_check": "2026-11-22"
   },
   "publishing": {
-    "directory_visibility": "private",
-    "standalone_page_status": "none",
-    "indexability": "noindex",
-    "sitemap_eligible": false,
-    "canonical_url": null,
-    "template_type": "directory-only",
-    "content_quality_status": "unassessed",
-    "prepublish_status": "not_ready"
+    "directory_visibility": "public",
+    "standalone_page_status": "ready",
+    "indexability": "index",
+    "sitemap_eligible": true,
+    "canonical_url": "https://www.toolnestai.tech/tools/lovable.html",
+    "template_type": "review",
+    "content_quality_status": "assessed",
+    "prepublish_status": "ready"
   },
   "freshness": {
     "created_at": "2026-11-14T22:03:16Z",
-    "updated_at": "2026-11-14T22:03:16Z",
-    "last_verified_at": "2026-11-14T22:03:16Z",
+    "updated_at": "2026-11-23T00:00:00Z",
+    "last_verified_at": "2026-11-22T23:52:00Z",
     "next_review_at": null,
-    "stale_fields": [
-      "factual_profile",
-      "editorial",
-      "relationships",
-      "monetization"
-    ],
+    "stale_fields": [],
     "change_history_reference": null
-  }
+  },
+  "pricing": {
+    "checkedOn": "2026-11-22",
+    "sourceUrls": [
+      "https://docs.lovable.dev/introduction/subscription-plans",
+      "https://lovable.dev/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": null,
+    "freePlan": true,
+    "freeLimits": "5 daily credits (up to 30 per month), public projects only",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "dailyCredits": 5,
+          "monthlyMaxCredits": 30,
+          "projects": "Public only"
+        },
+        "notes": "Entry-level access for testing the platform"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 25,
+        "priceAnnualMonthlyEquivalent": 20.83,
+        "sourceTier": "official",
+        "limits": {
+          "monthlyCredits": 100,
+          "annualPrice": 250,
+          "features": "Private projects, custom domains, badge removal"
+        },
+        "notes": "Solo developers — student 50% discount available"
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 50,
+        "priceAnnualMonthlyEquivalent": 41.67,
+        "sourceTier": "official",
+        "limits": {
+          "monthlyCredits": 100,
+          "annualPrice": 500,
+          "features": "SSO, data opt-out, team features"
+        },
+        "notes": "Teams needing security and compliance features"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "pricing": "Custom",
+          "features": "Dedicated support, custom connections"
+        },
+        "notes": "Large organizations with custom requirements"
+      }
+    ],
+    "billingCaveats": [
+      "Credit-based system — credits spent on building, hosting, and AI features",
+      "One credit balance covers all workspace activities",
+      "Annual billing offers discounted rates",
+      "Student 50% discount on Pro plan",
+      "No per-seat billing — workspace-based credits"
+    ]
+  },
+  "claims": [
+    {
+      "text": "Lovable Pro costs $25/month for 100 credits",
+      "sourceUrl": "https://lovable.dev/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Lovable Business costs $50/month with SSO and data opt-out",
+      "sourceUrl": "https://lovable.dev/pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Lovable Free offers 5 daily credits up to 30 per month",
+      "sourceUrl": "https://docs.lovable.dev/introduction/subscription-plans",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Lovable Pro annual billing is $250/year",
+      "sourceUrl": "https://lovable.dev/pricing",
+      "checkedOn": "2026-11-22"
+    }
+  ],
+  "lastReviewed": "2026-11-22"
 }

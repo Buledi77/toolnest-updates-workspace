@@ -46,7 +46,8 @@
   },
   "relationships": {
     "alternatives": [
-      "deel"
+      "deel",
+      "trainual"
     ],
     "comparisons": [
       "deel"

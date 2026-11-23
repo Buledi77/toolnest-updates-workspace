@@ -28,7 +28,11 @@
     "review_owner": "",
     "editorial_last_reviewed": ""
   },
-  "relationships": {},
+  "relationships": {
+    "alternatives": [
+      "trainual"
+    ]
+  },
   "evidence": {
     "claim_refs": [],
     "source_ids": [],
@@ -41,7 +45,8 @@
   "publishing": {
     "indexability": "noindex",
     "canonical_url": "https://www.toolnestai.tech/tools/deel.html",
-    "sitemap_eligible": false
+    "sitemap_eligible": false,
+    "content_quality_status": "unassessed"
   },
   "freshness": {}
 }

@@ -28,7 +28,11 @@
     "review_owner": "ToolNest Editorial",
     "editorial_last_reviewed": "2026-11-20"
   },
-  "relationships": {},
+  "relationships": {
+    "alternatives": [
+      "ueni"
+    ]
+  },
   "evidence": {
     "claim_refs": [],
     "source_ids": [],

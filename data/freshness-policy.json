@@ -1,0 +1,19 @@
+{
+  "schema_version": "freshness-policy-v1",
+  "description": "Configurable staleness thresholds for evidence freshness checks. Values are in days.",
+  "thresholds": {
+    "pricing": 90,
+    "plan_limit": 90,
+    "billing": 90,
+    "capabilities": 180,
+    "free_trial": 90,
+    "general": 365
+  },
+  "default_threshold": 365,
+  "stale_statuses": ["stale", "needs_review", "disputed"],
+  "notes": [
+    "Pricing facts change frequently and should be rechecked every 90 days.",
+    "Capability facts are more stable and can be checked every 180 days.",
+    "General facts (company info, URLs) are checked annually."
+  ]
+}

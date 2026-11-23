@@ -1,0 +1,280 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "github-copilot",
+    "name": "GitHub Copilot",
+    "slug": "github-copilot",
+    "official_url": "https://github.com/features/copilot",
+    "status": "active",
+    "logo": null,
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Developer Tools"
+    ],
+    "use_cases": [
+      "AI code completion",
+      "chat-based coding assistance",
+      "agent-based development workflows",
+      "code review automation"
+    ],
+    "audiences": [
+      "individual developers",
+      "development teams",
+      "enterprise organizations"
+    ],
+    "platforms": [
+      "desktop",
+      "web"
+    ],
+    "integrations": [],
+    "tags": [
+      "ai-coding",
+      "code-completion",
+      "developer-tools",
+      "github",
+      "code-editor"
+    ]
+  },
+  "factual_profile": {
+    "capabilities": [
+      {
+        "description": "AI code completions and chat in VS Code, JetBrains, and other editors"
+      },
+      {
+        "description": "Multi-model support (Claude, GPT, Gemini, Grok)"
+      },
+      {
+        "description": "GitHub AI Credits billing system since June 2026"
+      },
+      {
+        "description": "Unlimited code completions on paid plans"
+      },
+      {
+        "description": "Cloud agent and code review features"
+      },
+      {
+        "description": "Third-party agent support (Claude Code, OpenAI Codex)"
+      }
+    ],
+    "limitations": [
+      "Free plan has limited allowance (2,000 completions/month)",
+      "AI Credits consumed by token usage — heavy agent use can exhaust credits",
+      "Overage charged at $0.01 per credit past the pool",
+      "Enterprise requires GitHub Enterprise Cloud organization"
+    ],
+    "free_plan_status": [
+      "Free plan available with small allowance, approximately 2,000 completions per month"
+    ],
+    "trial_status": [
+      "No separate trial — Free plan serves as entry point"
+    ],
+    "pricing_status": [
+      "Pricing verified from official sources on 2026-11-22"
+    ],
+    "pricing_regions": [],
+    "availability_regions": []
+  },
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Developers using VS Code or JetBrains editors",
+      "Teams already on GitHub",
+      "Organizations needing centralized admin controls"
+    ],
+    "not_recommended_for": [],
+    "review_status": "draft",
+    "review_url": null,
+    "review_owner": null,
+    "editorial_last_reviewed": null
+  },
+  "relationships": {
+    "alternatives": [
+      "cursor",
+      "windsurf",
+      "replit"
+    ],
+    "meaningful_comparisons": [],
+    "related_tools": [
+      "cursor"
+    ],
+    "compatible_tools": [],
+    "replaces": [],
+    "replaced_by": []
+  },
+  "evidence": {
+    "claim_refs": [
+      {
+        "claim": "GitHub Copilot pricing plans and features",
+        "sourceUrl": "https://docs.github.com/en/copilot/get-started/plans",
+        "sourceType": "official_documentation",
+        "checkedOn": "2026-11-22"
+      },
+      {
+        "claim": "GitHub Copilot public pricing page",
+        "sourceUrl": "https://github.com/features/copilot/plans",
+        "sourceType": "official_pricing_page",
+        "checkedOn": "2026-11-22"
+      }
+    ],
+    "source_ids": [],
+    "handsOn": false,
+    "evidenceStatus": "Research-based, not a ToolNest hands-on test"
+  },
+  "monetization": {
+    "affiliate_status": "unknown",
+    "affiliate_network": null,
+    "affiliate_url": null,
+    "official_non_affiliate_url": "https://github.com/features/copilot",
+    "approved_regions": [],
+    "restrictions": [],
+    "disclosure_required": null,
+    "last_link_check": "2026-11-22"
+  },
+  "publishing": {
+    "directory_visibility": "public",
+    "standalone_page_status": "ready",
+    "indexability": "index",
+    "sitemap_eligible": true,
+    "canonical_url": "https://www.toolnestai.tech/tools/github-copilot.html",
+    "template_type": "review",
+    "content_quality_status": "assessed",
+    "prepublish_status": "ready"
+  },
+  "freshness": {
+    "created_at": "2026-11-22T23:52:00Z",
+    "updated_at": "2026-11-22T23:52:00Z",
+    "last_verified_at": "2026-11-22T23:52:00Z",
+    "next_review_at": null,
+    "stale_fields": [],
+    "change_history_reference": null
+  },
+  "pricing": {
+    "checkedOn": "2026-11-22",
+    "sourceUrls": [
+      "https://docs.github.com/en/copilot/get-started/plans",
+      "https://github.com/features/copilot/plans"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": null,
+    "freePlan": true,
+    "freeLimits": "Small allowance, approximately 2,000 completions per month",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "completions": "2,000 per month",
+          "aiCredits": "Small allowance"
+        },
+        "notes": "Entry-level access for trying Copilot"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 10,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "aiCredits": 1500,
+          "codeCompletions": "Unlimited",
+          "usage": "About $15 of usage"
+        },
+        "notes": "Most individual developers — includes cloud agent and code review"
+      },
+      {
+        "name": "Pro+",
+        "priceMonthly": 39,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "aiCredits": 7000,
+          "codeCompletions": "Unlimited",
+          "usage": "About $70 of usage"
+        },
+        "notes": "Heavy chat and agent users — includes premium models like Claude Opus"
+      },
+      {
+        "name": "Max",
+        "priceMonthly": 100,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "aiCredits": 20000,
+          "codeCompletions": "Unlimited",
+          "usage": "About $200 of usage"
+        },
+        "notes": "All-day agentic work — priority access to new models"
+      },
+      {
+        "name": "Business",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "perSeat": "$19 per user per month",
+          "aiCredits": "1,900 per user, pooled",
+          "codeCompletions": "Unlimited"
+        },
+        "notes": "Teams in a GitHub organization — admin controls and IP indemnity"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "perSeat": "$39 per user per month",
+          "aiCredits": "3,900 per user, pooled",
+          "codeCompletions": "Unlimited"
+        },
+        "notes": "GitHub Enterprise Cloud — codebase-aware chat and full feature set"
+      }
+    ],
+    "billingCaveats": [
+      "GitHub AI Credits billing since June 2026 — one credit equals one cent",
+      "Code completions unlimited on all paid plans",
+      "Overage charged at $0.01 per credit past the pool",
+      "Multi-model support: Anthropic Claude, OpenAI GPT, Google Gemini, xAI Grok",
+      "Premium requests retired in June 2026"
+    ]
+  },
+  "claims": [
+    {
+      "text": "GitHub Copilot Pro costs $10/month with 1,500 AI credits",
+      "sourceUrl": "https://docs.github.com/en/copilot/get-started/plans",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "GitHub Copilot Pro+ costs $39/month with 7,000 AI credits",
+      "sourceUrl": "https://docs.github.com/en/copilot/get-started/plans",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "GitHub Copilot Max costs $100/month with 20,000 AI credits",
+      "sourceUrl": "https://docs.github.com/en/copilot/get-started/plans",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "GitHub Copilot Business costs $19 per user per month",
+      "sourceUrl": "https://docs.github.com/en/copilot/get-started/plans",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "GitHub Copilot Enterprise costs $39 per user per month",
+      "sourceUrl": "https://docs.github.com/en/copilot/get-started/plans",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "GitHub Copilot Free offers approximately 2,000 completions per month",
+      "sourceUrl": "https://github.com/features/copilot/plans",
+      "checkedOn": "2026-11-22"
+    }
+  ],
+  "lastReviewed": "2026-11-22"
+}

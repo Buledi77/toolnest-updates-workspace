@@ -5,64 +5,82 @@
       "id": "write-better-english",
       "label": "Write better English",
       "tool_ids": ["grammarly"],
+      "also_consider": ["prowritingaid"],
       "guide": "/goals/write-better-english.html",
-      "required_signals": ["writing", "grammar"]
+      "required_signals": ["writing", "grammar"],
+      "use_case_tags": ["writing", "grammar-checking", "proofreading"]
     },
     {
       "id": "organise-my-work",
       "label": "Organise my work",
       "tool_ids": ["notion"],
+      "also_consider": ["todoist", "clickup", "asana"],
       "guide": "/goals/organise-my-work.html",
-      "required_signals": ["productivity", "notes", "tasks"]
+      "required_signals": ["productivity", "notes", "tasks"],
+      "use_case_tags": ["work management", "project management", "note-taking"]
     },
     {
       "id": "add-voice-to-videos",
       "label": "Add a voice to videos",
       "tool_ids": ["elevenlabs"],
+      "also_consider": [],
       "guide": "/goals/add-voice-to-videos.html",
-      "required_signals": ["voice", "video"]
+      "required_signals": ["voice", "video"],
+      "use_case_tags": ["voice generation", "text-to-speech", "video voiceover"]
     },
     {
       "id": "edit-video-podcasts",
       "label": "Edit video or podcasts",
       "tool_ids": ["descript"],
+      "also_consider": ["kapwing"],
       "guide": "/goals/edit-video-podcasts.html",
-      "required_signals": ["video", "podcast", "editing"]
+      "required_signals": ["video", "podcast", "editing"],
+      "use_case_tags": ["video editing", "podcast editing", "audio editing"]
     },
     {
       "id": "write-ad-copy",
       "label": "Write ad copy",
       "tool_ids": ["jasper"],
+      "also_consider": ["writesonic"],
       "guide": "/goals/write-ad-copy.html",
-      "required_signals": ["marketing", "copy"]
+      "required_signals": ["marketing", "copy"],
+      "use_case_tags": ["copywriting", "ad copy", "marketing content"]
     },
     {
       "id": "get-search-traffic",
       "label": "Get search traffic",
       "tool_ids": ["semrush"],
+      "also_consider": ["ahrefs", "mozpro"],
       "guide": "/goals/get-search-traffic.html",
-      "required_signals": ["seo", "keywords", "search"]
+      "required_signals": ["seo", "keywords", "search"],
+      "use_case_tags": ["SEO", "keyword research", "search optimization"]
     },
     {
       "id": "sell-online",
       "label": "Sell something online",
       "tool_ids": ["systeme"],
+      "also_consider": [],
       "guide": "/goals/sell-online.html",
-      "required_signals": ["sales", "funnel", "commerce"]
+      "required_signals": ["sales", "funnel", "commerce"],
+      "use_case_tags": ["eCommerce", "sales funnel", "online selling"]
     },
     {
       "id": "launch-online-course",
       "label": "Launch an online course",
       "tool_ids": ["systeme"],
+      "also_consider": ["teachable"],
       "guide": "/goals/launch-online-course.html",
-      "required_signals": ["course", "sales", "email"]
+      "required_signals": ["course", "sales", "email"],
+      "use_case_tags": ["online course", "course creation", "digital products"]
     },
     {
       "id": "launch-a-website",
       "label": "Launch a website",
       "tool_ids": ["hostinger"],
+      "also_consider": ["webflow", "squarespace"],
       "guide": "/goals/launch-a-website.html",
-      "required_signals": ["hosting", "website"]
+      "required_signals": ["hosting", "website"],
+      "use_case_tags": ["website building", "web hosting", "landing page"]
     }
   ]
 }

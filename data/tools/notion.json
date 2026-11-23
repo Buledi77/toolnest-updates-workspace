@@ -41,7 +41,7 @@
     "limitations": [
       "5 MB file upload limit on Free plan restricts media-heavy workflows",
       "7-day page history on Free plan means accidental deletions older than a week cannot be recovered",
-      "Notion AI features require Business plan ($20/user/month) \u2014 not available on Plus",
+      "Notion AI features require Business plan ($20/user/month) — not available on Plus",
       "No native email or calendar integration; relies on third-party connections",
       "Offline access is limited; requires internet connection for full functionality"
     ],
@@ -84,7 +84,8 @@
     "alternatives": [
       "otter",
       "fireflies",
-      "clickup"
+      "clickup",
+      "trainual"
     ],
     "meaningful_comparisons": [
       "asana-vs-notion",

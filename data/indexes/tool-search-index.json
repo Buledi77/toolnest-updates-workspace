@@ -3,6 +3,63 @@
   "source": "data/tools-v2",
   "documents": [
     {
+      "id": "activecampaign",
+      "name": "ActiveCampaign",
+      "slug": "activecampaign",
+      "tokens": [
+        "activecampaign",
+        "email",
+        "marketing"
+      ],
+      "categories": [
+        "Email Marketing"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.activecampaign.com"
+    },
+    {
+      "id": "adcreative",
+      "name": "AdCreative.ai",
+      "slug": "adcreative",
+      "tokens": [
+        "ad",
+        "adcreative",
+        "advertisers",
+        "ai",
+        "banner",
+        "brands",
+        "commerce",
+        "copywriting",
+        "creative",
+        "design",
+        "e",
+        "generation",
+        "marketers",
+        "marketing"
+      ],
+      "categories": [
+        "Marketing"
+      ],
+      "use_cases": [
+        "ad creative generation",
+        "banner ad design",
+        "copywriting"
+      ],
+      "audiences": [
+        "marketers",
+        "advertisers",
+        "e-commerce brands"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.adcreative.ai"
+    },
+    {
       "id": "adobeexpress",
       "name": "Adobe Express",
       "slug": "adobeexpress",
@@ -30,6 +87,45 @@
       "indexability": "index",
       "evidence_age": null,
       "official_url": "https://www.adobe.com/express/"
+    },
+    {
+      "id": "adwisely",
+      "name": "Adwisely",
+      "slug": "adwisely",
+      "tokens": [
+        "ads",
+        "advertising",
+        "adwisely",
+        "ai",
+        "and",
+        "brands",
+        "ecommerce",
+        "google",
+        "marketing",
+        "merchants",
+        "meta",
+        "online",
+        "powered",
+        "retailers",
+        "shopify"
+      ],
+      "categories": [
+        "Marketing"
+      ],
+      "use_cases": [
+        "AI-powered ads",
+        "Shopify advertising",
+        "Meta and Google ads"
+      ],
+      "audiences": [
+        "Shopify merchants",
+        "eCommerce brands",
+        "online retailers"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.adwisely.com"
     },
     {
       "id": "ahrefs",
@@ -107,8 +203,113 @@
       ],
       "editorial_tier": "A",
       "indexability": "index",
-      "evidence_age": "2026-11-14T20:59:43Z",
+      "evidence_age": "2026-11-22T00:00:00Z",
       "official_url": "https://ahrefs.com"
+    },
+    {
+      "id": "aircall",
+      "name": "Aircall",
+      "slug": "aircall",
+      "tokens": [
+        "aircall",
+        "calling",
+        "cloud",
+        "communication",
+        "customer",
+        "phone",
+        "remote",
+        "sales",
+        "support",
+        "system",
+        "team",
+        "teams"
+      ],
+      "categories": [
+        "Customer Support"
+      ],
+      "use_cases": [
+        "cloud phone system",
+        "sales calling",
+        "team communication"
+      ],
+      "audiences": [
+        "sales teams",
+        "customer support teams",
+        "remote teams"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.aircall.io"
+    },
+    {
+      "id": "amplitude",
+      "name": "Amplitude",
+      "slug": "amplitude",
+      "tokens": [
+        "amplitude",
+        "analytics",
+        "behavior",
+        "data",
+        "experimentation",
+        "growth",
+        "insights",
+        "marketing",
+        "product",
+        "teams",
+        "user"
+      ],
+      "categories": [
+        "Marketing"
+      ],
+      "use_cases": [
+        "product analytics",
+        "user behavior insights",
+        "experimentation"
+      ],
+      "audiences": [
+        "product teams",
+        "data teams",
+        "growth teams"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://amplitude.com"
+    },
+    {
+      "id": "apollo",
+      "name": "Apollo.io",
+      "slug": "apollo",
+      "tokens": [
+        "apollo",
+        "email",
+        "founders",
+        "intelligence",
+        "io",
+        "prospecting",
+        "sales",
+        "sdrs",
+        "sequences",
+        "teams"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [
+        "sales intelligence",
+        "prospecting",
+        "email sequences"
+      ],
+      "audiences": [
+        "sales teams",
+        "SDRs",
+        "founders"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.apollo.io"
     },
     {
       "id": "asana",
@@ -138,27 +339,23 @@
       "official_url": "https://asana.com"
     },
     {
-      "id": "assemblyai",
-      "name": "AssemblyAI",
-      "slug": "assemblyai",
+      "id": "beautifulai",
+      "name": "Beautiful.ai",
+      "slug": "beautifulai",
       "tokens": [
-        "api",
-        "assemblyai",
-        "speech",
-        "transcription",
-        "video",
-        "voice",
-        "web"
+        "ai",
+        "beautiful",
+        "productivity"
       ],
       "categories": [
-        "Voice & Video"
+        "Productivity"
       ],
       "use_cases": [],
       "audiences": [],
-      "editorial_tier": "C",
-      "indexability": "noindex",
-      "evidence_age": "2026-11-14T22:03:16Z",
-      "official_url": "https://www.assemblyai.com"
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.beautiful.ai"
     },
     {
       "id": "beehiiv",
@@ -189,28 +386,166 @@
       "official_url": "https://www.beehiiv.com"
     },
     {
+      "id": "bill",
+      "name": "BILL",
+      "slug": "bill",
+      "tokens": [
+        "accountants",
+        "ap",
+        "automation",
+        "bill",
+        "business",
+        "businesses",
+        "cpas",
+        "financial",
+        "management",
+        "payments",
+        "productivity",
+        "small"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [
+        "business financial management",
+        "AP/automation",
+        "payments"
+      ],
+      "audiences": [
+        "small businesses",
+        "accountants",
+        "CPAs"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.bill.com"
+    },
+    {
       "id": "bolt",
-      "name": "Bolt",
+      "name": "Bolt.new",
       "slug": "bolt",
       "tokens": [
+        "ai",
         "app",
+        "application",
+        "based",
         "bolt",
+        "browser",
+        "builder",
         "building",
-        "coding",
+        "cloud",
         "developer",
+        "developers",
+        "development",
+        "founders",
+        "full",
+        "hosted",
+        "new",
+        "non",
+        "powered",
         "prototyping",
+        "rapid",
+        "solo",
+        "stack",
+        "startups",
+        "teams",
+        "technical",
         "tools",
         "web"
       ],
       "categories": [
         "Developer Tools"
       ],
-      "use_cases": [],
-      "audiences": [],
-      "editorial_tier": "C",
-      "indexability": "noindex",
-      "evidence_age": "2026-11-14T22:03:16Z",
+      "use_cases": [
+        "browser-based full-stack app building",
+        "AI-powered prototyping",
+        "rapid web application development",
+        "cloud-hosted development"
+      ],
+      "audiences": [
+        "solo developers",
+        "startups",
+        "development teams",
+        "non-technical founders"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": "2026-11-22T23:52:00Z",
       "official_url": "https://bolt.new"
+    },
+    {
+      "id": "brand24",
+      "name": "Brand24",
+      "slug": "brand24",
+      "tokens": [
+        "brand",
+        "brand24",
+        "customer",
+        "listening",
+        "management",
+        "marketing",
+        "monitoring",
+        "pr",
+        "reputation",
+        "social",
+        "support",
+        "teams"
+      ],
+      "categories": [
+        "Marketing"
+      ],
+      "use_cases": [
+        "brand monitoring",
+        "reputation management",
+        "social listening"
+      ],
+      "audiences": [
+        "marketing teams",
+        "PR teams",
+        "customer support teams"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://brand24.com"
+    },
+    {
+      "id": "breadbutter",
+      "name": "Bread & Butter",
+      "slug": "breadbutter",
+      "tokens": [
+        "analytics",
+        "bread",
+        "butter",
+        "demand",
+        "gen",
+        "intelligence",
+        "lead",
+        "marketing",
+        "ops",
+        "research",
+        "revenue",
+        "teams",
+        "tracking"
+      ],
+      "categories": [
+        "Research"
+      ],
+      "use_cases": [
+        "lead intelligence",
+        "revenue tracking",
+        "demand gen analytics"
+      ],
+      "audiences": [
+        "marketing teams",
+        "revenue ops",
+        "demand gen teams"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.breadandbutter.io"
     },
     {
       "id": "brevo",
@@ -240,27 +575,93 @@
       "official_url": "https://www.brevo.com"
     },
     {
-      "id": "browserbase",
-      "name": "Browserbase",
-      "slug": "browserbase",
+      "id": "browseai",
+      "name": "Browse AI",
+      "slug": "browseai",
       "tokens": [
-        "api",
+        "ai",
         "automation",
-        "browser",
-        "browserbase",
-        "developer",
-        "tools",
+        "browse",
+        "code",
+        "data",
+        "extraction",
+        "monitoring",
+        "no",
+        "scraping",
         "web"
       ],
       "categories": [
-        "Developer Tools"
+        "Automation"
       ],
-      "use_cases": [],
+      "use_cases": [
+        "web scraping",
+        "data monitoring",
+        "no-code data extraction"
+      ],
       "audiences": [],
-      "editorial_tier": "C",
-      "indexability": "noindex",
-      "evidence_age": "2026-11-14T22:03:16Z",
-      "official_url": "https://www.browserbase.com"
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.browse.ai"
+    },
+    {
+      "id": "callrail",
+      "name": "CallRail",
+      "slug": "callrail",
+      "tokens": [
+        "attribution",
+        "call",
+        "callrail",
+        "conversation",
+        "intelligence",
+        "lead",
+        "sales",
+        "tracking"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [
+        "call tracking",
+        "lead attribution",
+        "conversation intelligence"
+      ],
+      "audiences": [],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.callrail.com"
+    },
+    {
+      "id": "campaignmonitor",
+      "name": "Campaign Monitor by Marigold",
+      "slug": "campaignmonitor",
+      "tokens": [
+        "agency",
+        "by",
+        "campaign",
+        "campaigns",
+        "design",
+        "email",
+        "focused",
+        "management",
+        "marigold",
+        "marketing",
+        "monitor"
+      ],
+      "categories": [
+        "Email Marketing"
+      ],
+      "use_cases": [
+        "email marketing",
+        "design-focused campaigns",
+        "agency email management"
+      ],
+      "audiences": [],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.campaignmonitor.com"
     },
     {
       "id": "canva",
@@ -289,6 +690,77 @@
       "indexability": "index",
       "evidence_age": null,
       "official_url": "https://www.canva.com"
+    },
+    {
+      "id": "capsule",
+      "name": "Capsule",
+      "slug": "capsule",
+      "tokens": [
+        "agencies",
+        "businesses",
+        "capsule",
+        "contact",
+        "crm",
+        "freelancers",
+        "management",
+        "pipeline",
+        "sales",
+        "simple",
+        "small"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [
+        "simple CRM",
+        "pipeline management",
+        "contact management"
+      ],
+      "audiences": [
+        "small businesses",
+        "freelancers",
+        "agencies"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.capsulecrm.com"
+    },
+    {
+      "id": "castmagic",
+      "name": "Castmagic",
+      "slug": "castmagic",
+      "tokens": [
+        "castmagic",
+        "content",
+        "creators",
+        "marketers",
+        "media",
+        "podcast",
+        "podcasters",
+        "repurposing",
+        "transcription",
+        "video",
+        "voice",
+        "workflow"
+      ],
+      "categories": [
+        "Voice & Video"
+      ],
+      "use_cases": [
+        "media content workflow",
+        "podcast repurposing",
+        "video transcription"
+      ],
+      "audiences": [
+        "podcasters",
+        "content creators",
+        "marketers"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://castmagic.ai"
     },
     {
       "id": "chatgpt",
@@ -320,6 +792,24 @@
       "official_url": "https://chatgpt.com"
     },
     {
+      "id": "circle",
+      "name": "Circle",
+      "slug": "circle",
+      "tokens": [
+        "circle",
+        "marketing"
+      ],
+      "categories": [
+        "Marketing"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.circle.so"
+    },
+    {
       "id": "claude",
       "name": "Claude",
       "slug": "claude",
@@ -349,6 +839,43 @@
       "official_url": "https://claude.ai"
     },
     {
+      "id": "clevertap",
+      "name": "CleverTap",
+      "slug": "clevertap",
+      "tokens": [
+        "ai",
+        "brands",
+        "clevertap",
+        "companies",
+        "customer",
+        "digital",
+        "ecommerce",
+        "engagement",
+        "marketing",
+        "powered",
+        "retention",
+        "saas",
+        "sales"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [
+        "customer engagement",
+        "retention",
+        "AI-powered marketing"
+      ],
+      "audiences": [
+        "digital brands",
+        "eCommerce",
+        "SaaS companies"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.clevertap.com"
+    },
+    {
       "id": "clickup",
       "name": "ClickUp",
       "slug": "clickup",
@@ -374,6 +901,187 @@
       "indexability": "index",
       "evidence_age": null,
       "official_url": "https://clickup.com"
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "slug": "close",
+      "tokens": [
+        "close",
+        "sales"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.closerm.com"
+    },
+    {
+      "id": "closely",
+      "name": "Closely",
+      "slug": "closely",
+      "tokens": [
+        "automation",
+        "b2b",
+        "closely",
+        "companies",
+        "email",
+        "engagement",
+        "outbound",
+        "sales",
+        "sdrs",
+        "sequencing",
+        "teams"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [
+        "sales engagement",
+        "outbound automation",
+        "email sequencing"
+      ],
+      "audiences": [
+        "sales teams",
+        "SDRs",
+        "B2B companies"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.closely.com"
+    },
+    {
+      "id": "cloudtalk",
+      "name": "CloudTalk",
+      "slug": "cloudtalk",
+      "tokens": [
+        "call",
+        "center",
+        "centers",
+        "cloud",
+        "cloudtalk",
+        "communication",
+        "contact",
+        "customer",
+        "management",
+        "sales",
+        "support",
+        "team",
+        "teams"
+      ],
+      "categories": [
+        "Customer Support"
+      ],
+      "use_cases": [
+        "cloud contact center",
+        "call management",
+        "team communication"
+      ],
+      "audiences": [
+        "contact centers",
+        "sales teams",
+        "support teams"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.cloudtalk.io"
+    },
+    {
+      "id": "confetti",
+      "name": "Confetti",
+      "slug": "confetti",
+      "tokens": [
+        "communications",
+        "companies",
+        "company",
+        "confetti",
+        "culture",
+        "employee",
+        "experience",
+        "growing",
+        "hr",
+        "internal",
+        "productivity",
+        "remote",
+        "teams"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [
+        "employee experience",
+        "company culture",
+        "internal communications"
+      ],
+      "audiences": [
+        "growing companies",
+        "remote teams",
+        "HR teams"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.confetti.life"
+    },
+    {
+      "id": "connecteam",
+      "name": "Connecteam",
+      "slug": "connecteam",
+      "tokens": [
+        "businesses",
+        "communication",
+        "connecteam",
+        "employee",
+        "field",
+        "management",
+        "productivity",
+        "retail",
+        "scheduling",
+        "small",
+        "teams",
+        "workforce"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [
+        "workforce management",
+        "employee communication",
+        "scheduling"
+      ],
+      "audiences": [
+        "small businesses",
+        "field teams",
+        "retail teams"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.connecteam.com"
+    },
+    {
+      "id": "consensus",
+      "name": "Consensus",
+      "slug": "consensus",
+      "tokens": [
+        "consensus",
+        "research"
+      ],
+      "categories": [
+        "Research"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://consensus.app"
     },
     {
       "id": "copyai",
@@ -406,22 +1114,69 @@
       "name": "Cursor",
       "slug": "cursor",
       "tokens": [
+        "agent",
+        "ai",
+        "and",
+        "assisted",
+        "based",
+        "chat",
+        "code",
         "coding",
+        "completion",
         "cursor",
+        "desktop",
         "developer",
+        "developers",
+        "development",
+        "editing",
         "editor",
+        "first",
+        "generation",
+        "individual",
+        "llm",
+        "refactoring",
+        "software",
+        "tasks",
+        "teams",
         "tools",
-        "web"
+        "workflows"
       ],
       "categories": [
         "Developer Tools"
+      ],
+      "use_cases": [
+        "AI-assisted code editing",
+        "code generation and refactoring",
+        "chat-based development workflows",
+        "agent-based coding tasks"
+      ],
+      "audiences": [
+        "individual developers",
+        "software teams",
+        "AI-first developers"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": "2026-11-22T23:52:00Z",
+      "official_url": "https://www.cursor.com"
+    },
+    {
+      "id": "deel",
+      "name": "Deel",
+      "slug": "deel",
+      "tokens": [
+        "deel",
+        "productivity"
+      ],
+      "categories": [
+        "Productivity"
       ],
       "use_cases": [],
       "audiences": [],
       "editorial_tier": "C",
       "indexability": "noindex",
-      "evidence_age": "2026-11-14T22:03:16Z",
-      "official_url": "https://www.cursor.com"
+      "evidence_age": null,
+      "official_url": "https://www.deel.com"
     },
     {
       "id": "descript",
@@ -452,6 +1207,77 @@
       "official_url": "https://www.descript.com"
     },
     {
+      "id": "dext",
+      "name": "Dext",
+      "slug": "dext",
+      "tokens": [
+        "accountants",
+        "businesses",
+        "deduction",
+        "dext",
+        "expense",
+        "freelancers",
+        "management",
+        "productivity",
+        "receipt",
+        "scanning",
+        "small",
+        "tax",
+        "tracking"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [
+        "expense management",
+        "receipt scanning",
+        "tax deduction tracking"
+      ],
+      "audiences": [
+        "accountants",
+        "small businesses",
+        "freelancers"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.go-dext.com"
+    },
+    {
+      "id": "dripify",
+      "name": "Dripify",
+      "slug": "dripify",
+      "tokens": [
+        "automation",
+        "dripify",
+        "generation",
+        "generators",
+        "lead",
+        "linkedin",
+        "outreach",
+        "recruiters",
+        "sales",
+        "teams"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [
+        "LinkedIn automation",
+        "outreach",
+        "lead generation"
+      ],
+      "audiences": [
+        "sales teams",
+        "recruiters",
+        "lead generators"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://dripify.org"
+    },
+    {
       "id": "elevenlabs",
       "name": "ElevenLabs",
       "slug": "elevenlabs",
@@ -475,6 +1301,45 @@
       "indexability": "index",
       "evidence_age": null,
       "official_url": "https://elevenlabs.io"
+    },
+    {
+      "id": "expertex",
+      "name": "ExpertEx",
+      "slug": "expertex",
+      "tokens": [
+        "ads",
+        "ai",
+        "amazon",
+        "content",
+        "ecommerce",
+        "expertex",
+        "generation",
+        "image",
+        "merchants",
+        "photography",
+        "product",
+        "sellers",
+        "shopify",
+        "ugc",
+        "video"
+      ],
+      "categories": [
+        "Image Generation"
+      ],
+      "use_cases": [
+        "AI product photography",
+        "video ads",
+        "UGC content"
+      ],
+      "audiences": [
+        "eCommerce sellers",
+        "Shopify merchants",
+        "Amazon sellers"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.expertex.ai"
     },
     {
       "id": "figma",
@@ -502,29 +1367,6 @@
       "official_url": "https://www.figma.com"
     },
     {
-      "id": "firecrawl",
-      "name": "Firecrawl",
-      "slug": "firecrawl",
-      "tokens": [
-        "api",
-        "developer",
-        "firecrawl",
-        "research",
-        "scraping",
-        "tools",
-        "web"
-      ],
-      "categories": [
-        "Developer Tools"
-      ],
-      "use_cases": [],
-      "audiences": [],
-      "editorial_tier": "C",
-      "indexability": "noindex",
-      "evidence_age": "2026-11-14T22:03:16Z",
-      "official_url": "https://firecrawl.dev"
-    },
-    {
       "id": "fireflies",
       "name": "Fireflies.ai",
       "slug": "fireflies",
@@ -550,6 +1392,79 @@
       "indexability": "index",
       "evidence_age": null,
       "official_url": "https://fireflies.ai"
+    },
+    {
+      "id": "flexiquiz",
+      "name": "FlexiQuiz",
+      "slug": "flexiquiz",
+      "tokens": [
+        "content",
+        "creation",
+        "creators",
+        "educators",
+        "engagement",
+        "flexiquiz",
+        "generation",
+        "interactive",
+        "lead",
+        "marketers",
+        "marketing",
+        "quiz",
+        "user"
+      ],
+      "categories": [
+        "Marketing"
+      ],
+      "use_cases": [
+        "interactive quiz creation",
+        "lead generation",
+        "user engagement"
+      ],
+      "audiences": [
+        "marketers",
+        "content creators",
+        "educators"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.flexiquiz.com"
+    },
+    {
+      "id": "flocksy",
+      "name": "Flocksy",
+      "slug": "flocksy",
+      "tokens": [
+        "agencies",
+        "automation",
+        "cold",
+        "email",
+        "flocksy",
+        "generation",
+        "lead",
+        "marketing",
+        "outreach",
+        "sales",
+        "smbs",
+        "teams"
+      ],
+      "categories": [
+        "Email Marketing"
+      ],
+      "use_cases": [
+        "cold email outreach",
+        "lead generation",
+        "email automation"
+      ],
+      "audiences": [
+        "sales teams",
+        "agencies",
+        "SMBs"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.flocksy.com"
     },
     {
       "id": "framer",
@@ -580,6 +1495,58 @@
       "indexability": "index",
       "evidence_age": null,
       "official_url": "https://www.framer.com"
+    },
+    {
+      "id": "freshbooks",
+      "name": "FreshBooks",
+      "slug": "freshbooks",
+      "tokens": [
+        "accounting",
+        "agencies",
+        "businesses",
+        "expense",
+        "freelancers",
+        "freshbooks",
+        "invoicing",
+        "productivity",
+        "small",
+        "tracking"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [
+        "accounting",
+        "invoicing",
+        "expense tracking"
+      ],
+      "audiences": [
+        "freelancers",
+        "small businesses",
+        "agencies"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.freshbooks.com"
+    },
+    {
+      "id": "freshdesk",
+      "name": "Freshdesk",
+      "slug": "freshdesk",
+      "tokens": [
+        "freshdesk",
+        "sales"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.freshworks.com/freshdesk"
     },
     {
       "id": "gamma",
@@ -633,27 +1600,129 @@
       "official_url": "https://gemini.google.com"
     },
     {
-      "id": "glean",
-      "name": "Glean",
-      "slug": "glean",
+      "id": "getresponse",
+      "name": "GetResponse",
+      "slug": "getresponse",
       "tokens": [
-        "enterprise",
-        "glean",
-        "knowledge",
-        "productivity",
-        "research",
-        "search",
-        "web"
+        "email",
+        "getresponse",
+        "marketing"
       ],
       "categories": [
-        "Research"
+        "Email Marketing"
       ],
       "use_cases": [],
       "audiences": [],
-      "editorial_tier": "C",
-      "indexability": "noindex",
-      "evidence_age": "2026-11-14T22:03:16Z",
-      "official_url": "https://www.glean.com"
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.getresponse.com"
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "slug": "github-copilot",
+      "tokens": [
+        "agent",
+        "ai",
+        "assistance",
+        "automation",
+        "based",
+        "chat",
+        "code",
+        "coding",
+        "completion",
+        "copilot",
+        "desktop",
+        "developer",
+        "developers",
+        "development",
+        "editor",
+        "enterprise",
+        "github",
+        "individual",
+        "organizations",
+        "review",
+        "teams",
+        "tools",
+        "web",
+        "workflows"
+      ],
+      "categories": [
+        "Developer Tools"
+      ],
+      "use_cases": [
+        "AI code completion",
+        "chat-based coding assistance",
+        "agent-based development workflows",
+        "code review automation"
+      ],
+      "audiences": [
+        "individual developers",
+        "development teams",
+        "enterprise organizations"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": "2026-11-22T23:52:00Z",
+      "official_url": "https://github.com/features/copilot"
+    },
+    {
+      "id": "glide",
+      "name": "Glide",
+      "slug": "glide",
+      "tokens": [
+        "agencies",
+        "app",
+        "builder",
+        "builders",
+        "building",
+        "business",
+        "code",
+        "customer",
+        "glide",
+        "internal",
+        "no",
+        "portals",
+        "teams",
+        "tools",
+        "website"
+      ],
+      "categories": [
+        "Website Builder"
+      ],
+      "use_cases": [
+        "no-code app building",
+        "internal tools",
+        "customer portals"
+      ],
+      "audiences": [
+        "business teams",
+        "no-code builders",
+        "agencies"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.glideapps.com"
+    },
+    {
+      "id": "gorgias",
+      "name": "Gorgias",
+      "slug": "gorgias",
+      "tokens": [
+        "gorgias",
+        "sales"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.gorgias.com"
     },
     {
       "id": "grammarly",
@@ -683,25 +1752,43 @@
       "official_url": "https://www.grammarly.com"
     },
     {
-      "id": "granola",
-      "name": "Granola",
-      "slug": "granola",
+      "id": "helpscout",
+      "name": "Help Scout",
+      "slug": "helpscout",
       "tokens": [
-        "granola",
-        "meetings",
-        "notes",
-        "productivity",
-        "web"
+        "base",
+        "companies",
+        "customer",
+        "desk",
+        "email",
+        "first",
+        "help",
+        "inbox",
+        "knowledge",
+        "saas",
+        "scout",
+        "shared",
+        "smb",
+        "support",
+        "teams"
       ],
       "categories": [
-        "Productivity"
+        "Customer Support"
       ],
-      "use_cases": [],
-      "audiences": [],
-      "editorial_tier": "C",
-      "indexability": "noindex",
-      "evidence_age": "2026-11-14T22:03:16Z",
-      "official_url": "https://www.granola.ai"
+      "use_cases": [
+        "shared inbox",
+        "help desk",
+        "knowledge base"
+      ],
+      "audiences": [
+        "SMB support teams",
+        "SaaS companies",
+        "email-first support"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.helpscout.com"
     },
     {
       "id": "hemingway",
@@ -737,8 +1824,24 @@
       "name": "HeyGen",
       "slug": "heygen",
       "tokens": [
-        "avatars",
+        "ai",
+        "and",
+        "avatar",
+        "based",
+        "businesses",
+        "cloning",
+        "content",
+        "creation",
+        "creators",
+        "dubbing",
+        "e",
+        "generation",
         "heygen",
+        "learning",
+        "marketing",
+        "professionals",
+        "teams",
+        "translation",
         "video",
         "voice",
         "web"
@@ -746,12 +1849,96 @@
       "categories": [
         "Voice & Video"
       ],
-      "use_cases": [],
-      "audiences": [],
-      "editorial_tier": "C",
-      "indexability": "noindex",
-      "evidence_age": "2026-11-14T22:03:16Z",
+      "use_cases": [
+        "AI video generation",
+        "avatar-based video creation",
+        "video translation and dubbing",
+        "e-learning content creation"
+      ],
+      "audiences": [
+        "content creators",
+        "marketing teams",
+        "e-learning professionals",
+        "businesses"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": "2026-11-22T23:52:00Z",
       "official_url": "https://www.heygen.com"
+    },
+    {
+      "id": "hibob",
+      "name": "HiBob",
+      "slug": "hibob",
+      "tokens": [
+        "businesses",
+        "companies",
+        "fast",
+        "growing",
+        "hibob",
+        "hr",
+        "hris",
+        "management",
+        "market",
+        "mid",
+        "people",
+        "performance",
+        "productivity",
+        "teams"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [
+        "HRIS",
+        "people management",
+        "performance management"
+      ],
+      "audiences": [
+        "fast-growing companies",
+        "HR teams",
+        "mid-market businesses"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.hibob.com"
+    },
+    {
+      "id": "hightouch",
+      "name": "Hightouch",
+      "slug": "hightouch",
+      "tokens": [
+        "automation",
+        "customer",
+        "data",
+        "etl",
+        "hightouch",
+        "integration",
+        "marketing",
+        "ops",
+        "revenue",
+        "reverse",
+        "sync",
+        "teams"
+      ],
+      "categories": [
+        "Automation"
+      ],
+      "use_cases": [
+        "data integration",
+        "reverse ETL",
+        "customer data sync"
+      ],
+      "audiences": [
+        "data teams",
+        "marketing ops",
+        "revenue ops"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.hightouch.com"
     },
     {
       "id": "hostinger",
@@ -864,21 +2051,52 @@
       "name": "Ideogram",
       "slug": "ideogram",
       "tokens": [
+        "ad",
+        "ai",
+        "and",
+        "character",
+        "consistency",
+        "content",
         "creative",
+        "creators",
         "design",
+        "designers",
         "generation",
         "ideogram",
         "image",
-        "web"
+        "images",
+        "in",
+        "legible",
+        "logo",
+        "marketers",
+        "poster",
+        "rendering",
+        "small",
+        "teams",
+        "text",
+        "tools",
+        "web",
+        "with",
+        "workflows"
       ],
       "categories": [
         "Image Generation"
       ],
-      "use_cases": [],
-      "audiences": [],
-      "editorial_tier": "C",
-      "indexability": "noindex",
-      "evidence_age": "2026-11-14T22:03:16Z",
+      "use_cases": [
+        "AI image generation with text rendering",
+        "logo and poster design",
+        "ad creative with legible text",
+        "character consistency workflows"
+      ],
+      "audiences": [
+        "designers",
+        "marketers",
+        "content creators",
+        "small design teams"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": "2026-11-22T23:52:00Z",
       "official_url": "https://ideogram.ai"
     },
     {
@@ -907,6 +2125,97 @@
       "indexability": "index",
       "evidence_age": null,
       "official_url": "https://ifttt.com"
+    },
+    {
+      "id": "instantly",
+      "name": "Instantly",
+      "slug": "instantly",
+      "tokens": [
+        "agencies",
+        "cold",
+        "companies",
+        "email",
+        "generation",
+        "instantly",
+        "lead",
+        "marketing",
+        "outreach",
+        "saas",
+        "sales",
+        "teams",
+        "warmup"
+      ],
+      "categories": [
+        "Email Marketing"
+      ],
+      "use_cases": [
+        "cold email outreach",
+        "email warmup",
+        "lead generation"
+      ],
+      "audiences": [
+        "agencies",
+        "SaaS companies",
+        "sales teams"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://instantly.ai"
+    },
+    {
+      "id": "instapage",
+      "name": "Instapage",
+      "slug": "instapage",
+      "tokens": [
+        "instapage",
+        "marketing"
+      ],
+      "categories": [
+        "Marketing"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.instapage.com"
+    },
+    {
+      "id": "intercom",
+      "name": "Intercom",
+      "slug": "intercom",
+      "tokens": [
+        "ai",
+        "brands",
+        "chat",
+        "companies",
+        "customer",
+        "ecommerce",
+        "intercom",
+        "live",
+        "messaging",
+        "saas",
+        "support",
+        "teams"
+      ],
+      "categories": [
+        "Customer Support"
+      ],
+      "use_cases": [
+        "customer messaging",
+        "live chat",
+        "AI support"
+      ],
+      "audiences": [
+        "SaaS companies",
+        "eCommerce brands",
+        "customer support teams"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.intercom.com"
     },
     {
       "id": "invideo",
@@ -989,6 +2298,34 @@
       "official_url": "https://www.kapwing.com"
     },
     {
+      "id": "keap",
+      "name": "Keap",
+      "slug": "keap",
+      "tokens": [
+        "automation",
+        "business",
+        "crm",
+        "infusionsoft",
+        "keap",
+        "marketing",
+        "sales",
+        "small"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [
+        "CRM",
+        "marketing automation",
+        "small business automation"
+      ],
+      "audiences": [],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.keap.com"
+    },
+    {
       "id": "kit",
       "name": "Kit",
       "slug": "kit",
@@ -1016,6 +2353,95 @@
       "indexability": "index",
       "evidence_age": null,
       "official_url": "https://kit.com"
+    },
+    {
+      "id": "krispcall",
+      "name": "KrispCall",
+      "slug": "krispcall",
+      "tokens": [
+        "ai",
+        "calling",
+        "center",
+        "cloud",
+        "contact",
+        "customer",
+        "krispcall",
+        "powered",
+        "sales",
+        "smbs",
+        "support",
+        "teams"
+      ],
+      "categories": [
+        "Customer Support"
+      ],
+      "use_cases": [
+        "cloud contact center",
+        "AI-powered calling",
+        "customer support"
+      ],
+      "audiences": [
+        "customer support teams",
+        "sales teams",
+        "SMBs"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.krispcall.com"
+    },
+    {
+      "id": "learnworlds",
+      "name": "LearnWorlds",
+      "slug": "learnworlds",
+      "tokens": [
+        "coaches",
+        "course",
+        "creation",
+        "creators",
+        "digital",
+        "education",
+        "educators",
+        "learnworlds",
+        "lms",
+        "online",
+        "sales"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [
+        "online course creation",
+        "LMS",
+        "digital education"
+      ],
+      "audiences": [
+        "course creators",
+        "educators",
+        "coaches"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.learnworlds.com"
+    },
+    {
+      "id": "lemlist",
+      "name": "lemlist",
+      "slug": "lemlist",
+      "tokens": [
+        "lemlist",
+        "marketing"
+      ],
+      "categories": [
+        "Marketing"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.lemlist.com"
     },
     {
       "id": "leonardo",
@@ -1046,27 +2472,127 @@
       "official_url": "https://leonardo.ai"
     },
     {
+      "id": "logome",
+      "name": "Logome.ai",
+      "slug": "logome",
+      "tokens": [
+        "ai",
+        "brand",
+        "branding",
+        "businesses",
+        "design",
+        "entrepreneurs",
+        "generation",
+        "kit",
+        "logo",
+        "logome",
+        "small",
+        "startups"
+      ],
+      "categories": [
+        "Design"
+      ],
+      "use_cases": [
+        "AI logo design",
+        "brand kit generation",
+        "branding"
+      ],
+      "audiences": [
+        "startups",
+        "small businesses",
+        "entrepreneurs"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.logome.ai"
+    },
+    {
       "id": "lovable",
       "name": "Lovable",
       "slug": "lovable",
       "tokens": [
+        "ai",
         "app",
+        "application",
+        "apps",
         "builder",
         "building",
+        "cloud",
+        "code",
+        "developers",
+        "development",
+        "founders",
+        "full",
+        "hosted",
         "lovable",
+        "no",
+        "non",
+        "powered",
         "prototyping",
+        "rapid",
+        "solo",
+        "stack",
+        "startups",
+        "students",
+        "technical",
         "web",
         "website"
       ],
       "categories": [
         "Website Builder"
       ],
-      "use_cases": [],
-      "audiences": [],
-      "editorial_tier": "C",
-      "indexability": "noindex",
-      "evidence_age": "2026-11-14T22:03:16Z",
+      "use_cases": [
+        "AI-powered full-stack app building",
+        "rapid prototyping",
+        "no-code application development",
+        "cloud-hosted web apps"
+      ],
+      "audiences": [
+        "solo developers",
+        "startups",
+        "non-technical founders",
+        "students"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": "2026-11-22T23:52:00Z",
       "official_url": "https://lovable.dev"
+    },
+    {
+      "id": "lusha",
+      "name": "Lusha",
+      "slug": "lusha",
+      "tokens": [
+        "b2b",
+        "bdrs",
+        "contact",
+        "data",
+        "database",
+        "enrichment",
+        "lead",
+        "lusha",
+        "recruiters",
+        "sales",
+        "teams"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [
+        "contact data",
+        "lead enrichment",
+        "B2B database"
+      ],
+      "audiences": [
+        "sales teams",
+        "recruiters",
+        "BDRs"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.lusha.com"
     },
     {
       "id": "mailchimp",
@@ -1124,6 +2650,58 @@
       "official_url": "https://www.make.com"
     },
     {
+      "id": "manychat",
+      "name": "Manychat",
+      "slug": "manychat",
+      "tokens": [
+        "manychat",
+        "marketing"
+      ],
+      "categories": [
+        "Marketing"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://manychat.com"
+    },
+    {
+      "id": "meetgeek",
+      "name": "MeetGeek",
+      "slug": "meetgeek",
+      "tokens": [
+        "automation",
+        "meetgeek",
+        "meeting",
+        "notes",
+        "productivity",
+        "remote",
+        "sales",
+        "teams",
+        "transcription",
+        "workers"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [
+        "meeting automation",
+        "transcription",
+        "meeting notes"
+      ],
+      "audiences": [
+        "teams",
+        "sales teams",
+        "remote workers"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.meetgeek.ai"
+    },
+    {
       "id": "midjourney",
       "name": "Midjourney",
       "slug": "midjourney",
@@ -1153,27 +2731,39 @@
       "official_url": "https://www.midjourney.com"
     },
     {
-      "id": "mistral-le-chat",
-      "name": "Le Chat",
-      "slug": "mistral-le-chat",
+      "id": "mixpanel",
+      "name": "Mixpanel",
+      "slug": "mixpanel",
       "tokens": [
-        "ai",
-        "assistants",
-        "chat",
-        "le",
-        "research",
-        "web",
-        "writing"
+        "analysis",
+        "analytics",
+        "behavior",
+        "funnel",
+        "growth",
+        "marketing",
+        "mixpanel",
+        "product",
+        "teams",
+        "tracking",
+        "user"
       ],
       "categories": [
-        "AI Assistants"
+        "Marketing"
       ],
-      "use_cases": [],
-      "audiences": [],
-      "editorial_tier": "C",
-      "indexability": "noindex",
-      "evidence_age": "2026-11-14T22:03:16Z",
-      "official_url": "https://chat.mistral.ai"
+      "use_cases": [
+        "product analytics",
+        "user behavior tracking",
+        "funnel analysis"
+      ],
+      "audiences": [
+        "product teams",
+        "marketing teams",
+        "growth teams"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://mixpanel.com"
     },
     {
       "id": "monday",
@@ -1201,68 +2791,122 @@
       "official_url": "https://monday.com"
     },
     {
-      "id": "moz-pro",
+      "id": "moosend",
+      "name": "Moosend",
+      "slug": "moosend",
+      "tokens": [
+        "email",
+        "marketing",
+        "moosend"
+      ],
+      "categories": [
+        "Email Marketing"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.moosend.com"
+    },
+    {
+      "id": "mozpro",
       "name": "Moz Pro",
-      "slug": "moz-pro",
+      "slug": "mozpro",
       "tokens": [
         "a",
-        "against",
         "agencies",
+        "ahrefs",
         "ai",
+        "allowances",
+        "an",
+        "analysis",
         "and",
-        "before",
-        "boundaries",
-        "broader",
+        "appear",
+        "are",
+        "authority",
+        "backlink",
+        "below",
+        "breadth",
         "choice",
-        "compare",
+        "clean",
+        "content",
+        "core",
         "crawl",
         "crawling",
-        "deciding",
-        "feature",
-        "features",
+        "depth",
+        "domain",
+        "entry",
+        "explorer",
+        "familiar",
         "focused",
+        "for",
         "freelancers",
+        "full",
         "house",
-        "improvement",
-        "improving",
         "in",
+        "interface",
         "is",
-        "its",
-        "job",
+        "it",
         "keyword",
         "keywords",
+        "known",
+        "larger",
+        "like",
+        "limitations",
         "link",
         "links",
-        "main",
+        "lower",
         "marketers",
+        "metrics",
+        "module",
         "monitor",
-        "monitoring",
+        "most",
         "moz",
+        "need",
+        "no",
+        "of",
+        "offering",
+        "on",
+        "or",
         "owners",
+        "page",
+        "plans",
         "platform",
         "platforms",
+        "ppc",
+        "pragmatic",
+        "price",
         "pro",
-        "quotas",
+        "query",
         "rank",
         "rankings",
-        "recurring",
         "research",
         "search",
+        "semrush",
         "seo",
+        "serves",
         "site",
         "small",
-        "specific",
+        "sufficient",
+        "suite",
+        "suites",
+        "teams",
         "the",
-        "tier",
+        "there",
+        "tight",
+        "tools",
         "track",
+        "tracker",
         "tracking",
+        "trails",
         "visibility",
         "web",
         "website",
-        "websites",
-        "when",
+        "who",
         "with",
-        "workflow"
+        "without",
+        "work"
       ],
       "categories": [
         "SEO"
@@ -1281,9 +2925,29 @@
         "website owners"
       ],
       "editorial_tier": "A",
-      "indexability": "pending",
-      "evidence_age": "2026-11-14T20:59:43Z",
+      "indexability": "index",
+      "evidence_age": "2026-11-22T00:00:00Z",
       "official_url": "https://moz.com/products/pro"
+    },
+    {
+      "id": "murf",
+      "name": "Murf AI",
+      "slug": "murf",
+      "tokens": [
+        "ai",
+        "murf",
+        "video",
+        "voice"
+      ],
+      "categories": [
+        "Voice & Video"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://murf.ai"
     },
     {
       "id": "n8n",
@@ -1310,6 +2974,25 @@
       "indexability": "index",
       "evidence_age": null,
       "official_url": "https://n8n.io"
+    },
+    {
+      "id": "netlify",
+      "name": "Netlify",
+      "slug": "netlify",
+      "tokens": [
+        "builder",
+        "netlify",
+        "website"
+      ],
+      "categories": [
+        "Website Builder"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.netlify.com"
     },
     {
       "id": "notebooklm",
@@ -1370,6 +3053,95 @@
       "official_url": "https://www.notion.com"
     },
     {
+      "id": "nutshell",
+      "name": "Nutshell",
+      "slug": "nutshell",
+      "tokens": [
+        "nutshell",
+        "sales"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.nutshell.com"
+    },
+    {
+      "id": "omnisend",
+      "name": "Omnisend",
+      "slug": "omnisend",
+      "tokens": [
+        "brands",
+        "businesses",
+        "dtc",
+        "ecommerce",
+        "email",
+        "marketing",
+        "omnichannel",
+        "omnisend",
+        "online",
+        "retailers",
+        "sms"
+      ],
+      "categories": [
+        "Email Marketing"
+      ],
+      "use_cases": [
+        "omnichannel marketing",
+        "eCommerce email",
+        "SMS marketing"
+      ],
+      "audiences": [
+        "eCommerce brands",
+        "online retailers",
+        "DTC businesses"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.omnisend.com"
+    },
+    {
+      "id": "omniseo",
+      "name": "OmniSEO",
+      "slug": "omniseo",
+      "tokens": [
+        "ai",
+        "brand",
+        "managers",
+        "marketing",
+        "monitoring",
+        "omniseo",
+        "optimization",
+        "professionals",
+        "search",
+        "seo",
+        "teams",
+        "visibility"
+      ],
+      "categories": [
+        "Marketing"
+      ],
+      "use_cases": [
+        "AI visibility",
+        "AI search optimization",
+        "brand monitoring"
+      ],
+      "audiences": [
+        "marketing teams",
+        "SEO professionals",
+        "brand managers"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.omniseo.com"
+    },
+    {
       "id": "otter",
       "name": "Otter.ai",
       "slug": "otter",
@@ -1397,6 +3169,41 @@
       "official_url": "https://otter.ai"
     },
     {
+      "id": "pandadoc",
+      "name": "PandaDoc",
+      "slug": "pandadoc",
+      "tokens": [
+        "agencies",
+        "automation",
+        "document",
+        "e",
+        "pandadoc",
+        "productivity",
+        "proposals",
+        "sales",
+        "signatures",
+        "smb",
+        "teams"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [
+        "document automation",
+        "e-signatures",
+        "proposals"
+      ],
+      "audiences": [
+        "sales teams",
+        "agencies",
+        "SMB"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.pandadoc.com"
+    },
+    {
       "id": "perplexity",
       "name": "Perplexity",
       "slug": "perplexity",
@@ -1422,6 +3229,63 @@
       "official_url": "https://www.perplexity.ai"
     },
     {
+      "id": "pipedrive",
+      "name": "Pipedrive",
+      "slug": "pipedrive",
+      "tokens": [
+        "pipedrive",
+        "sales"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.pipedrive.com"
+    },
+    {
+      "id": "pixelunion",
+      "name": "Pixel Union",
+      "slug": "pixelunion",
+      "tokens": [
+        "ai",
+        "background",
+        "brands",
+        "design",
+        "ecommerce",
+        "editing",
+        "image",
+        "online",
+        "photographers",
+        "photography",
+        "pixel",
+        "product",
+        "removal",
+        "retailers",
+        "union"
+      ],
+      "categories": [
+        "Design"
+      ],
+      "use_cases": [
+        "AI product photography",
+        "background removal",
+        "product image editing"
+      ],
+      "audiences": [
+        "eCommerce brands",
+        "online retailers",
+        "product photographers"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.pixelunion.ai"
+    },
+    {
       "id": "prowritingaid",
       "name": "ProWritingAid",
       "slug": "prowritingaid",
@@ -1444,6 +3308,40 @@
       "indexability": "index",
       "evidence_age": null,
       "official_url": "https://prowritingaid.com"
+    },
+    {
+      "id": "quickbooks",
+      "name": "QuickBooks",
+      "slug": "quickbooks",
+      "tokens": [
+        "accountants",
+        "accounting",
+        "bookkeeping",
+        "businesses",
+        "freelancers",
+        "invoicing",
+        "productivity",
+        "quickbooks",
+        "small",
+        "software"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [
+        "accounting software",
+        "invoicing",
+        "bookkeeping"
+      ],
+      "audiences": [
+        "small businesses",
+        "accountants",
+        "freelancers"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://quickbooks.intuit.com"
     },
     {
       "id": "quillbot",
@@ -1472,6 +3370,27 @@
       "official_url": "https://quillbot.com"
     },
     {
+      "id": "quo",
+      "name": "Quo",
+      "slug": "quo",
+      "tokens": [
+        "customer",
+        "quo",
+        "sales",
+        "support"
+      ],
+      "categories": [
+        "Customer Support",
+        "Sales"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.quo.com"
+    },
+    {
       "id": "removebg",
       "name": "remove.bg",
       "slug": "removebg",
@@ -1498,28 +3417,76 @@
       "official_url": "https://www.remove.bg"
     },
     {
-      "id": "replit",
-      "name": "Replit",
-      "slug": "replit",
+      "id": "replyio",
+      "name": "Reply.io",
+      "slug": "replyio",
       "tokens": [
-        "app",
-        "building",
-        "coding",
-        "developer",
-        "hosting",
-        "replit",
-        "tools",
-        "web"
+        "aes",
+        "channel",
+        "engagement",
+        "io",
+        "market",
+        "mid",
+        "multi",
+        "outreach",
+        "reply",
+        "sales",
+        "sdrs",
+        "sequencing",
+        "teams"
       ],
       "categories": [
-        "Developer Tools"
+        "Sales"
       ],
-      "use_cases": [],
-      "audiences": [],
-      "editorial_tier": "C",
-      "indexability": "noindex",
-      "evidence_age": "2026-11-14T22:03:16Z",
-      "official_url": "https://replit.com"
+      "use_cases": [
+        "sales engagement",
+        "multi-channel outreach",
+        "sequencing"
+      ],
+      "audiences": [
+        "mid-market sales teams",
+        "SDRs",
+        "AEs"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.reply.io"
+    },
+    {
+      "id": "rgestudio",
+      "name": "Really Good Emails",
+      "slug": "rgestudio",
+      "tokens": [
+        "design",
+        "designers",
+        "email",
+        "emails",
+        "good",
+        "inspiration",
+        "marketers",
+        "marketing",
+        "really",
+        "teams",
+        "templates"
+      ],
+      "categories": [
+        "Email Marketing"
+      ],
+      "use_cases": [
+        "email design",
+        "email templates",
+        "email inspiration"
+      ],
+      "audiences": [
+        "email marketers",
+        "designers",
+        "marketing teams"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.reallygoodemails.com"
     },
     {
       "id": "runway",
@@ -1550,85 +3517,132 @@
       "official_url": "https://runwayml.com"
     },
     {
+      "id": "salesforce-smb",
+      "name": "Salesforce Essentials",
+      "slug": "salesforce-smb",
+      "tokens": [
+        "business",
+        "businesses",
+        "crm",
+        "customer",
+        "essentials",
+        "for",
+        "growing",
+        "management",
+        "pipeline",
+        "sales",
+        "salesforce",
+        "small",
+        "startups",
+        "teams"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [
+        "CRM for small business",
+        "sales pipeline",
+        "customer management"
+      ],
+      "audiences": [
+        "small businesses",
+        "startups",
+        "growing teams"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.salesforce.com/products/crm/essentials/"
+    },
+    {
       "id": "screamingfrog",
-      "name": "Screaming Frog",
+      "name": "Screaming Frog SEO Spider",
       "slug": "screamingfrog",
       "tokens": [
         "a",
-        "analysis",
+        "affordable",
+        "an",
         "analyze",
+        "analyzes",
         "and",
+        "annual",
+        "at",
         "audit",
         "auditors",
         "audits",
         "based",
-        "broader",
+        "broad",
         "broken",
-        "candidate",
-        "capabilities",
-        "check",
-        "competitor",
+        "configuration",
+        "content",
         "crawl",
+        "crawler",
         "crawling",
+        "crawls",
+        "deep",
         "desktop",
-        "detection",
         "developers",
+        "duplicate",
         "errors",
         "find",
         "for",
         "frog",
-        "including",
+        "identify",
+        "industry",
         "is",
-        "issue",
         "issues",
+        "it",
         "keyword",
-        "like",
         "links",
-        "metadata",
+        "linux",
+        "macos",
         "need",
+        "on",
         "or",
+        "page",
+        "platform",
         "poor",
-        "primary",
+        "price",
         "problems",
+        "rank",
         "redirects",
-        "requires",
         "research",
         "screaming",
         "seo",
         "site",
         "specialists",
         "spider",
-        "strong",
-        "structural",
+        "standard",
+        "structure",
+        "teams",
         "technical",
         "that",
         "the",
-        "tool",
+        "to",
+        "tracking",
         "value",
         "web",
         "website",
         "websites",
-        "when",
-        "workflow"
+        "windows"
       ],
       "categories": [
         "SEO"
       ],
       "use_cases": [
-        "technical site audit",
-        "find crawl errors",
-        "analyze redirects",
-        "check metadata",
-        "technical SEO issues"
+        "crawl a website",
+        "technical SEO audit",
+        "find broken links",
+        "analyze site structure"
       ],
       "audiences": [
-        "technical SEO specialists",
+        "SEO specialists",
         "web developers",
-        "site auditors"
+        "technical SEO auditors"
       ],
       "editorial_tier": "A",
       "indexability": "index",
-      "evidence_age": "2026-11-14T20:59:43Z",
+      "evidence_age": "2026-11-22T00:00:00Z",
       "official_url": "https://www.screamingfrog.co.uk/seo-spider/"
     },
     {
@@ -1637,56 +3651,70 @@
       "slug": "semrush",
       "tokens": [
         "a",
-        "add",
         "agencies",
+        "agency",
         "ai",
         "an",
+        "analysis",
         "and",
         "audit",
+        "broad",
         "candidate",
         "competitor",
         "competitors",
+        "comprehensive",
         "content",
-        "cost",
         "crawl",
+        "for",
+        "freelancer",
         "freelancers",
         "house",
+        "ideas",
         "in",
         "is",
-        "justify",
+        "it",
         "keyword",
         "keywords",
-        "lookup",
+        "marketer",
+        "marketers",
         "marketing",
         "monitor",
+        "multiple",
         "need",
+        "needs",
         "occasional",
-        "on",
+        "offering",
+        "one",
         "only",
         "or",
-        "plan",
+        "owner",
         "platform",
         "poor",
+        "position",
         "rank",
         "rankings",
-        "recurring",
         "research",
         "search",
         "semrush",
         "seo",
+        "serves",
         "several",
         "single",
-        "specific",
+        "site",
         "strong",
+        "team",
         "teams",
-        "the",
+        "technical",
+        "tools",
         "track",
         "tracking",
+        "use",
         "value",
         "visibility",
         "web",
         "website",
-        "when",
+        "who",
+        "will",
         "with",
         "workflows"
       ],
@@ -1709,8 +3737,303 @@
       ],
       "editorial_tier": "A",
       "indexability": "index",
-      "evidence_age": "2026-11-14T20:59:43Z",
+      "evidence_age": "2026-11-22T00:00:00Z",
       "official_url": "https://www.semrush.com"
+    },
+    {
+      "id": "shoeboxed",
+      "name": "Shoeboxed",
+      "slug": "shoeboxed",
+      "tokens": [
+        "accountants",
+        "businesses",
+        "expense",
+        "freelancers",
+        "management",
+        "preparation",
+        "productivity",
+        "receipt",
+        "scanning",
+        "shoeboxed",
+        "small",
+        "tax"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [
+        "receipt scanning",
+        "expense management",
+        "tax preparation"
+      ],
+      "audiences": [
+        "small businesses",
+        "freelancers",
+        "accountants"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.shoeboxed.com"
+    },
+    {
+      "id": "simpletexting",
+      "name": "SimpleTexting",
+      "slug": "simpletexting",
+      "tokens": [
+        "businesses",
+        "campaigns",
+        "local",
+        "marketing",
+        "messaging",
+        "retailers",
+        "simpletexting",
+        "small",
+        "sms",
+        "text",
+        "texting",
+        "two",
+        "way"
+      ],
+      "categories": [
+        "Marketing"
+      ],
+      "use_cases": [
+        "SMS marketing",
+        "two-way texting",
+        "text messaging campaigns"
+      ],
+      "audiences": [
+        "small businesses",
+        "retailers",
+        "local businesses"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.simpletexting.com"
+    },
+    {
+      "id": "smartlead",
+      "name": "Smartlead",
+      "slug": "smartlead",
+      "tokens": [
+        "agencies",
+        "automation",
+        "cold",
+        "companies",
+        "email",
+        "generation",
+        "lead",
+        "marketing",
+        "outreach",
+        "saas",
+        "sales",
+        "smartlead",
+        "teams"
+      ],
+      "categories": [
+        "Email Marketing"
+      ],
+      "use_cases": [
+        "cold email automation",
+        "outreach",
+        "lead generation"
+      ],
+      "audiences": [
+        "agencies",
+        "SaaS companies",
+        "sales teams"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.smartlead.ai"
+    },
+    {
+      "id": "smartli",
+      "name": "Smartli",
+      "slug": "smartli",
+      "tokens": [
+        "ai",
+        "businesses",
+        "content",
+        "copywriting",
+        "descriptions",
+        "ecommerce",
+        "marketers",
+        "online",
+        "product",
+        "retailers",
+        "seo",
+        "smartli",
+        "writing"
+      ],
+      "categories": [
+        "Writing"
+      ],
+      "use_cases": [
+        "AI eCommerce copywriting",
+        "product descriptions",
+        "SEO content"
+      ],
+      "audiences": [
+        "eCommerce businesses",
+        "online retailers",
+        "content marketers"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.smartli.io"
+    },
+    {
+      "id": "softr",
+      "name": "Softr",
+      "slug": "softr",
+      "tokens": [
+        "agencies",
+        "app",
+        "builder",
+        "builders",
+        "building",
+        "business",
+        "code",
+        "creation",
+        "internal",
+        "no",
+        "portal",
+        "softr",
+        "teams",
+        "tools",
+        "website"
+      ],
+      "categories": [
+        "Website Builder"
+      ],
+      "use_cases": [
+        "no-code app building",
+        "portal creation",
+        "internal tools"
+      ],
+      "audiences": [
+        "business teams",
+        "no-code builders",
+        "agencies"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.softr.io"
+    },
+    {
+      "id": "softsync",
+      "name": "SoftSync AI",
+      "slug": "softsync",
+      "tokens": [
+        "ai",
+        "automation",
+        "chatgpt",
+        "claude",
+        "crm",
+        "data",
+        "entry",
+        "follow",
+        "power",
+        "sales",
+        "softsync",
+        "teams",
+        "ups",
+        "users"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [
+        "CRM automation",
+        "AI follow-ups",
+        "data entry automation"
+      ],
+      "audiences": [
+        "sales teams",
+        "AI power users",
+        "Claude/ChatGPT users"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.softsync.ai"
+    },
+    {
+      "id": "spiky",
+      "name": "Spiky",
+      "slug": "spiky",
+      "tokens": [
+        "b2b",
+        "call",
+        "coaching",
+        "companies",
+        "conversation",
+        "engagement",
+        "intelligence",
+        "managers",
+        "sales",
+        "spiky",
+        "teams"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [
+        "sales engagement",
+        "conversation intelligence",
+        "call coaching"
+      ],
+      "audiences": [
+        "sales teams",
+        "sales managers",
+        "B2B companies"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.spiky.ai"
+    },
+    {
+      "id": "sproutsocial",
+      "name": "Sprout Social",
+      "slug": "sproutsocial",
+      "tokens": [
+        "agencies",
+        "analytics",
+        "businesses",
+        "management",
+        "market",
+        "marketing",
+        "media",
+        "mid",
+        "publishing",
+        "social",
+        "sprout",
+        "teams"
+      ],
+      "categories": [
+        "Marketing"
+      ],
+      "use_cases": [
+        "social media management",
+        "publishing",
+        "analytics"
+      ],
+      "audiences": [
+        "marketing teams",
+        "agencies",
+        "mid-market businesses"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://sproutsocial.com"
     },
     {
       "id": "squarespace",
@@ -1741,88 +4064,278 @@
       "official_url": "https://www.squarespace.com"
     },
     {
+      "id": "stamped",
+      "name": "Stamped.io",
+      "slug": "stamped",
+      "tokens": [
+        "brands",
+        "ecommerce",
+        "io",
+        "loyalty",
+        "marketing",
+        "merchants",
+        "online",
+        "product",
+        "programs",
+        "retailers",
+        "reviews",
+        "shopify",
+        "stamped",
+        "ugc"
+      ],
+      "categories": [
+        "Marketing"
+      ],
+      "use_cases": [
+        "product reviews",
+        "loyalty programs",
+        "UGC marketing"
+      ],
+      "audiences": [
+        "eCommerce brands",
+        "Shopify merchants",
+        "online retailers"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.stamped.io"
+    },
+    {
+      "id": "storydoc",
+      "name": "Storydoc",
+      "slug": "storydoc",
+      "tokens": [
+        "agencies",
+        "b2b",
+        "companies",
+        "content",
+        "enablement",
+        "interactive",
+        "proposals",
+        "sales",
+        "storydoc",
+        "teams",
+        "writing"
+      ],
+      "categories": [
+        "Writing"
+      ],
+      "use_cases": [
+        "interactive content",
+        "proposals",
+        "sales enablement"
+      ],
+      "audiences": [
+        "sales teams",
+        "agencies",
+        "B2B companies"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.storydoc.com"
+    },
+    {
+      "id": "storylane",
+      "name": "Storylane",
+      "slug": "storylane",
+      "tokens": [
+        "content",
+        "enablement",
+        "management",
+        "marketing",
+        "operations",
+        "sales",
+        "storylane",
+        "teams",
+        "training"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [
+        "sales enablement",
+        "content management",
+        "sales training"
+      ],
+      "audiences": [
+        "sales teams",
+        "sales operations",
+        "marketing teams"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.storylane.com"
+    },
+    {
+      "id": "streak",
+      "name": "Streak",
+      "slug": "streak",
+      "tokens": [
+        "based",
+        "businesses",
+        "crm",
+        "email",
+        "freelancers",
+        "gmail",
+        "management",
+        "pipeline",
+        "sales",
+        "small",
+        "streak",
+        "teams",
+        "tracking"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [
+        "Gmail-based CRM",
+        "pipeline management",
+        "email tracking"
+      ],
+      "audiences": [
+        "small businesses",
+        "sales teams",
+        "freelancers"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.streak.com"
+    },
+    {
       "id": "surferseo",
       "name": "Surfer SEO",
       "slug": "surferseo",
       "tokens": [
         "a",
-        "agencies",
+        "ai",
         "analysis",
         "analyzes",
         "and",
-        "based",
-        "broader",
-        "by",
+        "articles",
+        "auditing",
+        "briefs",
+        "broad",
+        "buyers",
         "candidate",
-        "capabilities",
-        "collaboration",
         "content",
-        "count",
+        "creating",
         "data",
-        "editor",
-        "edits",
-        "factors",
+        "docs",
+        "driven",
+        "editing",
         "for",
-        "guidance",
-        "guided",
-        "headings",
+        "google",
         "is",
+        "it",
         "keyword",
-        "live",
+        "marketers",
         "need",
-        "occasional",
-        "on",
+        "offers",
         "optimization",
         "or",
-        "other",
-        "page",
+        "pages",
         "platform",
         "poor",
-        "practitioners",
+        "producing",
         "provides",
+        "rank",
         "ranking",
-        "real",
-        "recurring",
-        "results",
+        "ranks",
+        "recommendations",
+        "regular",
+        "research",
         "seo",
         "serp",
         "strong",
-        "suggestions",
         "surfer",
-        "team",
         "teams",
         "that",
-        "the",
-        "time",
         "top",
-        "usage",
+        "tracking",
         "value",
         "web",
-        "when",
+        "who",
         "with",
-        "word",
-        "workflow",
+        "wordpress",
         "writers"
       ],
       "categories": [
         "SEO"
       ],
       "use_cases": [
-        "on-page content optimization",
-        "SERP-based content guidance",
-        "content editor with real-time suggestions",
-        "content team collaboration"
+        "content optimization",
+        "SERP analysis",
+        "content auditing",
+        "AI content briefs"
       ],
       "audiences": [
-        "content writers",
-        "content teams",
-        "SEO practitioners",
-        "agencies"
+        "content marketers",
+        "SEO writers",
+        "content teams"
       ],
       "editorial_tier": "A",
       "indexability": "index",
-      "evidence_age": "2026-11-14T20:59:43Z",
+      "evidence_age": "2026-11-22T00:00:00Z",
       "official_url": "https://surferseo.com"
+    },
+    {
+      "id": "surveymonkey",
+      "name": "SurveyMonkey",
+      "slug": "surveymonkey",
+      "tokens": [
+        "businesses",
+        "customer",
+        "feedback",
+        "forms",
+        "marketers",
+        "marketing",
+        "researchers",
+        "surveymonkey",
+        "surveys"
+      ],
+      "categories": [
+        "Marketing"
+      ],
+      "use_cases": [
+        "surveys",
+        "forms",
+        "customer feedback"
+      ],
+      "audiences": [
+        "businesses",
+        "marketers",
+        "researchers"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.surveymonkey.com"
+    },
+    {
+      "id": "survicate",
+      "name": "Survicate",
+      "slug": "survicate",
+      "tokens": [
+        "customer",
+        "sales",
+        "support",
+        "survicate"
+      ],
+      "categories": [
+        "Customer Support",
+        "Sales"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.survicate.com"
     },
     {
       "id": "synthesia",
@@ -1881,6 +4394,244 @@
       "official_url": "https://systeme.io"
     },
     {
+      "id": "teachable",
+      "name": "Teachable",
+      "slug": "teachable",
+      "tokens": [
+        "coaches",
+        "consultants",
+        "course",
+        "creation",
+        "creators",
+        "digital",
+        "educators",
+        "hosting",
+        "online",
+        "product",
+        "sales",
+        "teachable"
+      ],
+      "categories": [
+        "Sales"
+      ],
+      "use_cases": [
+        "online course creation",
+        "course hosting",
+        "digital product sales"
+      ],
+      "audiences": [
+        "creators",
+        "coaches",
+        "educators",
+        "consultants"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.teachable.com"
+    },
+    {
+      "id": "teamwork",
+      "name": "Teamwork",
+      "slug": "teamwork",
+      "tokens": [
+        "agencies",
+        "based",
+        "client",
+        "collaboration",
+        "management",
+        "productivity",
+        "project",
+        "smb",
+        "team",
+        "teams",
+        "teamwork",
+        "work"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [
+        "project management",
+        "team collaboration",
+        "client work"
+      ],
+      "audiences": [
+        "agencies",
+        "project-based teams",
+        "SMB"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.teamwork.com"
+    },
+    {
+      "id": "teikametrics",
+      "name": "Teikametrics",
+      "slug": "teikametrics",
+      "tokens": [
+        "ads",
+        "amazon",
+        "brands",
+        "ecommerce",
+        "marketplace",
+        "optimization",
+        "sellers",
+        "seo",
+        "teikametrics"
+      ],
+      "categories": [
+        "SEO"
+      ],
+      "use_cases": [
+        "marketplace optimization",
+        "Amazon ads",
+        "eCommerce SEO"
+      ],
+      "audiences": [
+        "Amazon sellers",
+        "eCommerce brands",
+        "marketplace sellers"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.teikametrics.com"
+    },
+    {
+      "id": "textline",
+      "name": "Textline",
+      "slug": "textline",
+      "tokens": [
+        "appointment",
+        "businesses",
+        "communication",
+        "customer",
+        "healthcare",
+        "local",
+        "providers",
+        "reminders",
+        "service",
+        "sms",
+        "support",
+        "textline",
+        "two",
+        "way"
+      ],
+      "categories": [
+        "Customer Support"
+      ],
+      "use_cases": [
+        "two-way SMS",
+        "customer communication",
+        "appointment reminders"
+      ],
+      "audiences": [
+        "local businesses",
+        "healthcare providers",
+        "service businesses"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.textline.com"
+    },
+    {
+      "id": "thetop",
+      "name": "TheTop",
+      "slug": "thetop",
+      "tokens": [
+        "ai",
+        "assistants",
+        "briefing",
+        "busy",
+        "chief",
+        "daily",
+        "executives",
+        "founders",
+        "of",
+        "prioritization",
+        "professionals",
+        "staff",
+        "task",
+        "thetop"
+      ],
+      "categories": [
+        "AI Assistants"
+      ],
+      "use_cases": [
+        "AI Chief of Staff",
+        "daily briefing",
+        "task prioritization"
+      ],
+      "audiences": [
+        "executives",
+        "founders",
+        "busy professionals"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.thetop.ai"
+    },
+    {
+      "id": "tidio",
+      "name": "Tidio",
+      "slug": "tidio",
+      "tokens": [
+        "customer",
+        "sales",
+        "support",
+        "tidio"
+      ],
+      "categories": [
+        "Customer Support",
+        "Sales"
+      ],
+      "use_cases": [],
+      "audiences": [],
+      "editorial_tier": "C",
+      "indexability": "noindex",
+      "evidence_age": null,
+      "official_url": "https://www.tidio.com"
+    },
+    {
+      "id": "timedoctor",
+      "name": "Time Doctor",
+      "slug": "timedoctor",
+      "tokens": [
+        "agencies",
+        "bpos",
+        "doctor",
+        "management",
+        "monitoring",
+        "productivity",
+        "remote",
+        "team",
+        "teams",
+        "time",
+        "tracking"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [
+        "time tracking",
+        "productivity monitoring",
+        "remote team management"
+      ],
+      "audiences": [
+        "agencies",
+        "remote teams",
+        "BPOs"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.timedoctor.com"
+    },
+    {
       "id": "todoist",
       "name": "Todoist",
       "slug": "todoist",
@@ -1908,51 +4659,214 @@
       "official_url": "https://todoist.com"
     },
     {
-      "id": "together-ai",
-      "name": "Together AI",
-      "slug": "together-ai",
+      "id": "trainual",
+      "name": "Trainual",
+      "slug": "trainual",
       "tokens": [
-        "ai",
-        "api",
-        "developer",
-        "models",
-        "together",
-        "tools",
-        "web"
+        "agencies",
+        "businesses",
+        "documentation",
+        "growing",
+        "onboarding",
+        "operations",
+        "productivity",
+        "sop",
+        "teams",
+        "training",
+        "trainual"
       ],
       "categories": [
-        "Developer Tools"
+        "Productivity"
       ],
-      "use_cases": [],
-      "audiences": [],
-      "editorial_tier": "C",
-      "indexability": "noindex",
-      "evidence_age": "2026-11-14T22:03:16Z",
-      "official_url": "https://www.together.ai"
+      "use_cases": [
+        "SOP documentation",
+        "onboarding",
+        "training"
+      ],
+      "audiences": [
+        "growing businesses",
+        "agencies",
+        "operations teams"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.trainual.com"
     },
     {
-      "id": "v0",
-      "name": "v0",
-      "slug": "v0",
+      "id": "transpond",
+      "name": "Transpond",
+      "slug": "transpond",
       "tokens": [
-        "app",
-        "building",
-        "coding",
-        "developer",
-        "prototyping",
-        "tools",
-        "v0",
-        "web"
+        "agencies",
+        "business",
+        "businesses",
+        "crm",
+        "email",
+        "integration",
+        "marketing",
+        "small",
+        "transpond",
+        "users"
       ],
       "categories": [
-        "Developer Tools"
+        "Marketing"
       ],
-      "use_cases": [],
-      "audiences": [],
-      "editorial_tier": "C",
-      "indexability": "noindex",
-      "evidence_age": "2026-11-14T22:03:16Z",
-      "official_url": "https://v0.dev"
+      "use_cases": [
+        "email marketing",
+        "CRM integration",
+        "small business marketing"
+      ],
+      "audiences": [
+        "small businesses",
+        "agencies",
+        "CRM users"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.transpond.com"
+    },
+    {
+      "id": "ueni",
+      "name": "UENI",
+      "slug": "ueni",
+      "tokens": [
+        "ai",
+        "content",
+        "creation",
+        "creators",
+        "editing",
+        "educators",
+        "generation",
+        "marketers",
+        "ueni",
+        "video",
+        "voice"
+      ],
+      "categories": [
+        "Voice & Video"
+      ],
+      "use_cases": [
+        "AI video creation",
+        "voice generation",
+        "video editing"
+      ],
+      "audiences": [
+        "content creators",
+        "marketers",
+        "educators"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://ueni.com"
+    },
+    {
+      "id": "unbounce",
+      "name": "Unbounce",
+      "slug": "unbounce",
+      "tokens": [
+        "advertisers",
+        "builder",
+        "businesses",
+        "conversion",
+        "creation",
+        "generation",
+        "landing",
+        "lead",
+        "marketers",
+        "optimization",
+        "page",
+        "small",
+        "unbounce",
+        "website"
+      ],
+      "categories": [
+        "Website Builder"
+      ],
+      "use_cases": [
+        "landing page creation",
+        "conversion optimization",
+        "lead generation"
+      ],
+      "audiences": [
+        "marketers",
+        "advertisers",
+        "small businesses"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://unbounce.com"
+    },
+    {
+      "id": "upfluence",
+      "name": "Upfluence",
+      "slug": "upfluence",
+      "tokens": [
+        "agencies",
+        "brands",
+        "campaign",
+        "discovery",
+        "influencer",
+        "management",
+        "marketing",
+        "teams",
+        "upfluence"
+      ],
+      "categories": [
+        "Marketing"
+      ],
+      "use_cases": [
+        "influencer marketing",
+        "influencer discovery",
+        "campaign management"
+      ],
+      "audiences": [
+        "brands",
+        "agencies",
+        "marketing teams"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.upfluence.com"
+    },
+    {
+      "id": "upwork",
+      "name": "Upwork",
+      "slug": "upwork",
+      "tokens": [
+        "businesses",
+        "enterprises",
+        "freelance",
+        "marketplace",
+        "outsourcing",
+        "productivity",
+        "sourcing",
+        "startups",
+        "talent",
+        "upwork",
+        "work"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [
+        "freelance marketplace",
+        "talent sourcing",
+        "work outsourcing"
+      ],
+      "audiences": [
+        "businesses",
+        "startups",
+        "enterprises"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.upwork.com"
     },
     {
       "id": "webflow",
@@ -1984,26 +4898,116 @@
       "official_url": "https://webflow.com"
     },
     {
-      "id": "windsurf",
-      "name": "Windsurf",
-      "slug": "windsurf",
+      "id": "windsorai",
+      "name": "Windsor.ai",
+      "slug": "windsorai",
       "tokens": [
-        "coding",
-        "developer",
-        "editor",
-        "tools",
-        "web",
-        "windsurf"
+        "ai",
+        "brands",
+        "businesses",
+        "dtc",
+        "ecommerce",
+        "generation",
+        "management",
+        "marketing",
+        "online",
+        "proof",
+        "retailers",
+        "review",
+        "social",
+        "ugc",
+        "windsor"
       ],
       "categories": [
-        "Developer Tools"
+        "Marketing"
       ],
-      "use_cases": [],
-      "audiences": [],
-      "editorial_tier": "C",
-      "indexability": "noindex",
-      "evidence_age": "2026-11-14T22:03:16Z",
-      "official_url": "https://windsurf.com"
+      "use_cases": [
+        "UGC management",
+        "review generation",
+        "social proof"
+      ],
+      "audiences": [
+        "eCommerce brands",
+        "DTC businesses",
+        "online retailers"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.windsor.ai"
+    },
+    {
+      "id": "wingify",
+      "name": "Wingify (now VWO)",
+      "slug": "wingify",
+      "tokens": [
+        "a",
+        "b",
+        "conversion",
+        "developers",
+        "marketers",
+        "marketing",
+        "now",
+        "optimization",
+        "product",
+        "teams",
+        "testing",
+        "user",
+        "vwo",
+        "web",
+        "wingify"
+      ],
+      "categories": [
+        "Marketing"
+      ],
+      "use_cases": [
+        "A/B testing",
+        "conversion optimization",
+        "user testing"
+      ],
+      "audiences": [
+        "marketers",
+        "product teams",
+        "web developers"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://vwo.com"
+    },
+    {
+      "id": "wrike",
+      "name": "Wrike",
+      "slug": "wrike",
+      "tokens": [
+        "agencies",
+        "collaboration",
+        "management",
+        "managers",
+        "productivity",
+        "project",
+        "team",
+        "teams",
+        "work",
+        "wrike"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [
+        "work management",
+        "project collaboration",
+        "team productivity"
+      ],
+      "audiences": [
+        "teams",
+        "agencies",
+        "project managers"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.wrike.com"
     },
     {
       "id": "writesonic",
@@ -2034,6 +5038,77 @@
       "official_url": "https://writesonic.com"
     },
     {
+      "id": "xero",
+      "name": "Xero",
+      "slug": "xero",
+      "tokens": [
+        "accountants",
+        "accounting",
+        "bookkeeping",
+        "businesses",
+        "cloud",
+        "freelancers",
+        "invoicing",
+        "productivity",
+        "small",
+        "xero"
+      ],
+      "categories": [
+        "Productivity"
+      ],
+      "use_cases": [
+        "cloud accounting",
+        "invoicing",
+        "bookkeeping"
+      ],
+      "audiences": [
+        "small businesses",
+        "accountants",
+        "freelancers"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.xero.com"
+    },
+    {
+      "id": "xtiles",
+      "name": "xTiles",
+      "slug": "xtiles",
+      "tokens": [
+        "and",
+        "creative",
+        "design",
+        "managers",
+        "notes",
+        "organization",
+        "productivity",
+        "project",
+        "tasks",
+        "teams",
+        "thinkers",
+        "visual",
+        "xtiles"
+      ],
+      "categories": [
+        "Design"
+      ],
+      "use_cases": [
+        "visual productivity",
+        "notes and tasks",
+        "project organization"
+      ],
+      "audiences": [
+        "visual thinkers",
+        "project managers",
+        "creative teams"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.xtiles.com"
+    },
+    {
       "id": "zapier",
       "name": "Zapier",
       "slug": "zapier",
@@ -2059,6 +5134,43 @@
       "indexability": "index",
       "evidence_age": null,
       "official_url": "https://zapier.com"
+    },
+    {
+      "id": "zendesk",
+      "name": "Zendesk",
+      "slug": "zendesk",
+      "tokens": [
+        "businesses",
+        "customer",
+        "desk",
+        "enterprise",
+        "help",
+        "market",
+        "mid",
+        "omnichannel",
+        "platform",
+        "scaling",
+        "service",
+        "support",
+        "zendesk"
+      ],
+      "categories": [
+        "Customer Support"
+      ],
+      "use_cases": [
+        "omnichannel support",
+        "help desk",
+        "customer service platform"
+      ],
+      "audiences": [
+        "mid-market",
+        "enterprise",
+        "scaling businesses"
+      ],
+      "editorial_tier": "B",
+      "indexability": "index",
+      "evidence_age": null,
+      "official_url": "https://www.zendesk.com"
     }
   ]
 }

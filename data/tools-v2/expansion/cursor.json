@@ -14,30 +14,71 @@
     "categories": [
       "Developer Tools"
     ],
-    "use_cases": [],
-    "audiences": [],
+    "use_cases": [
+      "AI-assisted code editing",
+      "code generation and refactoring",
+      "chat-based development workflows",
+      "agent-based coding tasks"
+    ],
+    "audiences": [
+      "individual developers",
+      "software teams",
+      "AI-first developers"
+    ],
     "platforms": [
-      "web"
+      "desktop"
     ],
     "integrations": [],
     "tags": [
-      "coding",
-      "developer",
-      "editor"
+      "ai-coding",
+      "code-editor",
+      "developer-tools",
+      "llm",
+      "code-completion"
     ]
   },
   "factual_profile": {
-    "capabilities": [],
-    "limitations": [],
-    "free_plan_status": [],
-    "trial_status": [],
-    "pricing_status": [],
+    "capabilities": [
+      {
+        "description": "AI-powered code editor with chat and agent modes"
+      },
+      {
+        "description": "Supports Cursor models and third-party models (Claude, GPT, Gemini, Grok)"
+      },
+      {
+        "description": "Part of The X Subscription (shared with Grok and X)"
+      },
+      {
+        "description": "Usage-based billing with AI credits"
+      },
+      {
+        "description": "Legacy plans still active for existing customers"
+      }
+    ],
+    "limitations": [
+      "Third-party models billed separately at API list price on new plans",
+      "Usage limits vary by plan tier — heavy agent use can exhaust credits quickly",
+      "Legacy plans not available to new customers",
+      "No offline mode"
+    ],
+    "free_plan_status": [
+      "Free plan available with limited AI usage"
+    ],
+    "trial_status": [
+      "No trial — Free plan serves as entry point"
+    ],
+    "pricing_status": [
+      "Pricing verified from official sources on 2026-11-22"
+    ],
     "pricing_regions": [],
     "availability_regions": []
   },
   "editorial": {
-    "editorial_tier": "C",
-    "best_for": [],
+    "editorial_tier": "B",
+    "best_for": [
+      "Developers wanting an AI-native code editor",
+      "Teams using The X Subscription ecosystem"
+    ],
     "not_recommended_for": [],
     "review_status": "draft",
     "review_url": null,
@@ -45,16 +86,24 @@
     "editorial_last_reviewed": null
   },
   "relationships": {
-    "alternatives": [],
+    "alternatives": [
+      "github-copilot",
+      "windsurf",
+      "replit"
+    ],
     "meaningful_comparisons": [],
-    "related_tools": [],
+    "related_tools": [
+      "github-copilot"
+    ],
     "compatible_tools": [],
     "replaces": [],
     "replaced_by": []
   },
   "evidence": {
     "claim_refs": [],
-    "source_ids": []
+    "source_ids": [],
+    "handsOn": false,
+    "evidenceStatus": "Research-based, not a ToolNest hands-on test"
   },
   "monetization": {
     "affiliate_status": "unknown",
@@ -64,29 +113,162 @@
     "approved_regions": [],
     "restrictions": [],
     "disclosure_required": null,
-    "last_link_check": "2026-11-14"
+    "last_link_check": "2026-11-22"
   },
   "publishing": {
-    "directory_visibility": "private",
-    "standalone_page_status": "none",
-    "indexability": "noindex",
-    "sitemap_eligible": false,
-    "canonical_url": null,
-    "template_type": "directory-only",
-    "content_quality_status": "unassessed",
-    "prepublish_status": "not_ready"
+    "directory_visibility": "public",
+    "standalone_page_status": "ready",
+    "indexability": "index",
+    "sitemap_eligible": true,
+    "canonical_url": "https://www.toolnestai.tech/tools/cursor.html",
+    "template_type": "review",
+    "content_quality_status": "assessed",
+    "prepublish_status": "ready"
   },
   "freshness": {
     "created_at": "2026-11-14T22:03:16Z",
-    "updated_at": "2026-11-14T22:03:16Z",
-    "last_verified_at": "2026-11-14T22:03:16Z",
+    "updated_at": "2026-11-23T00:00:00Z",
+    "last_verified_at": "2026-11-22T23:52:00Z",
     "next_review_at": null,
-    "stale_fields": [
-      "factual_profile",
-      "editorial",
-      "relationships",
-      "monetization"
-    ],
+    "stale_fields": [],
     "change_history_reference": null
-  }
+  },
+  "pricing": {
+    "checkedOn": "2026-11-22",
+    "sourceUrls": [
+      "https://cursor.com/docs/models-and-pricing",
+      "https://cursor.com/help/account-and-billing/pricing",
+      "https://cursor.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": null,
+    "freePlan": true,
+    "freeLimits": "Limited AI usage, no third-party models",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "aiUsage": "Limited",
+          "thirdPartyModels": "Not available"
+        },
+        "notes": "Entry-level access with limited AI requests"
+      },
+      {
+        "name": "Plus",
+        "priceMonthly": 8,
+        "priceAnnualMonthlyEquivalent": 6.67,
+        "sourceTier": "official",
+        "limits": {
+          "aiUsage": "Base",
+          "thirdPartyModels": "Not available",
+          "annualPrice": 80
+        },
+        "notes": "Introductory plan — only Grok models available"
+      },
+      {
+        "name": "Premium",
+        "priceMonthly": 30,
+        "priceAnnualMonthlyEquivalent": 25,
+        "sourceTier": "official",
+        "limits": {
+          "aiUsage": "4x Plus",
+          "thirdPartyModels": "API list price, from prepaid credit",
+          "annualPrice": 300
+        },
+        "notes": "Most popular tier — includes third-party model access"
+      },
+      {
+        "name": "Super",
+        "priceMonthly": 100,
+        "priceAnnualMonthlyEquivalent": 83.33,
+        "sourceTier": "official",
+        "limits": {
+          "aiUsage": "15x Plus",
+          "thirdPartyModels": "API list price, from prepaid credit",
+          "annualPrice": 1000
+        },
+        "notes": "Priority model access at peak times"
+      },
+      {
+        "name": "Ultra",
+        "priceMonthly": 200,
+        "priceAnnualMonthlyEquivalent": 166.67,
+        "sourceTier": "official",
+        "limits": {
+          "aiUsage": "50x Plus",
+          "thirdPartyModels": "API list price, from prepaid credit",
+          "annualPrice": 2000
+        },
+        "notes": "Earliest access to all products and models"
+      },
+      {
+        "name": "Teams",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "perSeat": "$30, $100, or $200 per seat/mo",
+          "aiUsage": "Matches the seat's tier",
+          "thirdPartyModels": "API list price plus Cursor Token Rate on eligible models"
+        },
+        "notes": "Three seat tiers matching Premium, Super, and Ultra levels"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "aiUsage": "Pooled",
+          "thirdPartyModels": "API list price plus Cursor Token Rate on eligible models"
+        },
+        "notes": "Custom pricing with pooled usage"
+      }
+    ],
+    "billingCaveats": [
+      "Part of The X Subscription — shared with Grok and X",
+      "Usage-based billing with AI credits at underlying model rates",
+      "Legacy Cursor plans (Hobby, Pro, Pro+, etc.) still active for existing customers",
+      "Third-party models billed separately on new plans",
+      "Prices exclude tax"
+    ]
+  },
+  "claims": [
+    {
+      "text": "Cursor Plus costs $8/month or $80/year",
+      "sourceUrl": "https://cursor.com/docs/models-and-pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Cursor Premium costs $30/month or $300/year with 4x Plus usage",
+      "sourceUrl": "https://cursor.com/docs/models-and-pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Cursor Super costs $100/month or $1,000/year with 15x Plus usage",
+      "sourceUrl": "https://cursor.com/docs/models-and-pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Cursor Ultra costs $200/month or $2,000/year with 50x Plus usage",
+      "sourceUrl": "https://cursor.com/docs/models-and-pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Cursor Teams starts at $30 per seat per month",
+      "sourceUrl": "https://cursor.com/docs/models-and-pricing",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Cursor Free plan offers limited AI usage",
+      "sourceUrl": "https://cursor.com/pricing",
+      "checkedOn": "2026-11-22"
+    }
+  ],
+  "lastReviewed": "2026-11-22"
 }

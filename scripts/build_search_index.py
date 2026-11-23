@@ -20,10 +20,15 @@ def tokens(value):
 
 def build(records):
     documents = []
+    tools_html_dir = ROOT / "tools"
     for record in records:
         identity = record["identity"]
+        slug = identity.get("slug", identity["id"])
+        # Exclude records whose HTML page does not exist — prevents dead search results
+        if not (tools_html_dir / f"{slug}.html").is_file():
+            continue
         discovery = record["discovery"]
-        factual = record["factual_profile"]
+        factual = record.get("factual_profile") or record.get("overview", {})
         editorial = record["editorial"]
         fields = [
             identity["name"],
@@ -34,8 +39,8 @@ def build(records):
             *discovery.get("platforms", []),
             *discovery.get("integrations", []),
             *discovery.get("tags", []),
-            factual.get("concise_summary", ""),
-            factual.get("primary_purpose", ""),
+            factual.get("concise_summary", factual.get("tagline", "")),
+            factual.get("primary_purpose", factual.get("description", "")),
             editorial.get("editorial_summary", ""),
         ]
         documents.append(

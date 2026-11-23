@@ -257,11 +257,21 @@ def normalize_links(content: str) -> str:
     return pattern.sub(replace, content)
 
 
+WEAK_STOP_WORDS = {"and", "or", "for", "to", "the", "with", "your", "a", "an", "of", "in", "is", "on", "at", "by"}
+
+def strip_weak_ending(text: str) -> str:
+    """Remove trailing weak stop words and dangling separators from truncated text."""
+    text = text.rstrip(" |:-,")
+    words = text.split()
+    while words and words[-1].lower().rstrip(".,;:") in WEAK_STOP_WORDS:
+        words.pop()
+    return " ".join(words).rstrip(" |:-,")
+
 def make_title(parser: PageParser, path: Path, used: set[str]) -> str:
     relative = path.relative_to(ROOT).as_posix()
     overrides = {
         "index.html": "Choose the Right Software for Your Workflow | ToolNest",
-        "tools/index.html": "Software Tools Directory: {count} Reviewed Tools | ToolNest".format(count=len(load_catalog())),
+        "tools/index.html": "Software Tools Directory: {count} Researched Tools | ToolNest".format(count=len(load_catalog())),
         "compare/index.html": "Compare Software Tools: 63 Head-to-Head Guides | ToolNest",
         "contact.html": "Contact ToolNest: Corrections, Suggestions & Questions",
         "best/index.html": "Best Software Tools by Category: 14 Guides | ToolNest",
@@ -270,6 +280,24 @@ def make_title(parser: PageParser, path: Path, used: set[str]) -> str:
         "terms.html": "Terms of Use | ToolNest",
         "privacy.html": "Privacy Policy | ToolNest",
         "corrections.html": "Corrections Log | ToolNest",
+        # Phase 3G: fix broken titles caused by make_title() stripping "Review" from H1
+        # and leaving awkward fragments ("current SEO", "who it", "Call", "Pricing")
+        "tools/semrush.html": "Semrush Review: SEO & AI Search Features | ToolNest",
+        "tools/mozpro.html": "Moz Pro Review: SEO Features & Pricing | ToolNest",
+        "tools/ahrefs.html": "Ahrefs Review: SEO Features & Pricing | ToolNest",
+        "tools/systeme.html": "Systeme.io Review: Sales Funnel Platform | ToolNest",
+        "tools/callrail.html": "CallRail Review: Call Tracking & Analytics | ToolNest",
+        # Additional "who it Review" fixes — H1 "X review: who it is for and who should skip it"
+        # produces "X: who it Review" after stripping "Review" and truncating
+        "tools/beehiiv.html": "beehiiv Review: Email Newsletter Platform | ToolNest",
+        "tools/canva.html": "Canva Review: Design & Graphics Platform | ToolNest",
+        "tools/descript.html": "Descript Review: Audio & Video Editing | ToolNest",
+        "tools/elevenlabs.html": "ElevenLabs Review: AI Voice Synthesis | ToolNest",
+        "tools/framer.html": "Framer Review: Website Builder & Design | ToolNest",
+        "tools/grammarly.html": "Grammarly Review: Writing Assistant | ToolNest",
+        "tools/jasper.html": "Jasper Review: AI Content Writing | ToolNest",
+        "tools/notion.html": "Notion Review: Workspace & Documentation | ToolNest",
+        "tools/surferseo.html": "Surfer SEO Review: Content Optimization | ToolNest",
     }
     if relative in overrides:
         return overrides[relative]
@@ -339,17 +367,43 @@ def make_title(parser: PageParser, path: Path, used: set[str]) -> str:
     else:
         suffix = ""
 
+    # Build the full title with suffix
+    full = f"{base}{suffix} | ToolNest"
+    
+    # If too long, truncate base adaptively — never cut mid-word or leave weak endings
     limit = 60 - len(" | ToolNest")
-    if len(base) > limit:
-        base = base[:limit].rsplit(" ", 1)[0].rstrip(" |:-")
-
-    title = f"{base} | ToolNest"
+    if len(full) > 60:
+        available = limit - len(suffix)
+        if available < 10:
+            # Suffix is too long for this base; shorten suffix
+            suffix = " Review"
+            available = limit - len(suffix)
+        if available > 10:
+            base = base[:available].rsplit(" ", 1)[0]
+            base = strip_weak_ending(base)
+        else:
+            # Base is too long and suffix won't fit; drop suffix
+            suffix = ""
+            base = base[:limit].rsplit(" ", 1)[0]
+            base = strip_weak_ending(base)
+    
+    title = f"{base}{suffix} | ToolNest"
 
     if title in used:
         number = str(len(used) + 1)
-        limit = 60 - len(number) - len(" | ToolNest") - 1
-        base = base[:limit].rsplit(" ", 1)[0].rstrip(" |:-")
-        title = f"{base} {number} | ToolNest"
+        numbered = f"{base}{suffix} {number} | ToolNest"
+        if len(numbered) > 60:
+            available = 60 - len(f" {number} | ToolNest") - len(suffix)
+            if available > 10:
+                short_base = base[:available].rsplit(" ", 1)[0]
+                short_base = strip_weak_ending(short_base)
+            else:
+                short_base = base[:available].rsplit(" ", 1)[0]
+                short_base = strip_weak_ending(short_base)
+                suffix = ""
+            title = f"{short_base}{suffix} {number} | ToolNest"
+        else:
+            title = numbered
 
     return title
 
@@ -359,9 +413,15 @@ def make_description(parser: PageParser, path: Path, used: set[str]) -> str:
     generic_template = "compare fit, trade-offs, alternatives, and current"
     if generic_template in existing:
         existing = ""
-    # Only accept existing descriptions that are in the 140-160 range
+    # Only accept existing descriptions that are in the 140-160 range and don't end on weak stop words
     if existing and 140 <= len(existing) <= 160 and existing not in used:
-        return existing
+        # Check for weak stop-word endings
+        clean = existing.rstrip(" |:-,")
+        words = clean.split()
+        if words and words[-1].lower().rstrip(".,;:") not in WEAK_STOP_WORDS:
+            return existing
+        # Has weak ending — regenerate instead of keeping
+        existing = ""
 
     relative = path.relative_to(ROOT).as_posix()
     subject = " ".join((parser.h1_text or parser.title or path.stem).split())
@@ -409,6 +469,11 @@ def make_description(parser: PageParser, path: Path, used: set[str]) -> str:
             "workflow goal, with verified features and pricing details. "
             "See which tool fits your situation best."
         )
+    elif relative == "404.html":
+        description = (
+            "The page you are looking for does not exist or has moved. "
+            "Use the search bar or browse our tools directory to find what you need."
+        )
     else:
         description = (
             f"{subject}: editorial analysis with features, pricing, and decision "
@@ -416,9 +481,10 @@ def make_description(parser: PageParser, path: Path, used: set[str]) -> str:
             "Verified details, trade-offs, and recommendations."
         )
 
-    # Trim to 160 chars without breaking words
+    # Trim to 160 chars without breaking words or leaving weak endings
     if len(description) > 160:
-        description = description[:160].rsplit(" ", 1)[0].rstrip(" ,;:-")
+        description = description[:160].rsplit(" ", 1)[0]
+        description = strip_weak_ending(description).rstrip(" ,;:-")
 
     # Pad to 140 chars if too short
     if len(description) < 140:
@@ -433,7 +499,8 @@ def make_description(parser: PageParser, path: Path, used: set[str]) -> str:
         stem = path.stem.replace("-", " ").title()
         description = f"{description} ({stem} guide)."
     if len(description) > 160:
-        description = description[:160].rstrip(" ,;:-")
+        description = description[:160].rsplit(" ", 1)[0]
+        description = strip_weak_ending(description).rstrip(" ,;:-")
     if len(description) < 140:
         description = (description + " " * (140 - len(description)))[:140]
 
@@ -1263,11 +1330,11 @@ def ensure_tools_directory_noscript(content: str, relative: str) -> str:
 
     # Build the noscript list
     lines = ['  <div class="empty">']
-    lines.append('    <b>JavaScript is off, so here is the full list of tool reviews</b>')
-    lines.append('    <p>Search and filtering need JavaScript. Every review is still available below, and you can also <a href="/sitemap.xml">browse the sitemap</a>.</p>')
+    lines.append('    <b>JavaScript is off, so here is the full list of tool profiles</b>')
+    lines.append('    <p>Search and filtering need JavaScript. Every profile is still available below, and you can also <a href="/sitemap.xml">browse the sitemap</a>.</p>')
     lines.append('  </div>')
-    lines.append('  <nav class="catlinks" aria-label="All tool reviews">')
-    lines.append(f'    <h2>All {count} tool reviews</h2>')
+    lines.append('  <nav class="catlinks" aria-label="All tool profiles">')
+    lines.append(f'    <h2>All {count} tool profiles</h2>')
     lines.append('    <ul>')
     for t in tools:
         name = html.escape(t["name"])
@@ -1314,7 +1381,7 @@ def ensure_tools_directory_noscript(content: str, relative: str) -> str:
     )
     # Update OG/Twitter title count
     content = re.sub(
-        r'(Software Tools Directory: )\d+( Reviewed Tools)',
+        r'(Software Tools Directory: )\d+( Researched Tools)',
         rf'\g<1>{count}\g<2>',
         content
     )
@@ -1674,6 +1741,11 @@ def tool_internal_links(content: str, relative: str, indexable: dict[str, bool])
     routes.extend(comparisons)
     alternative_route = f"/alternatives/{slug}-alternatives.html"
     routes.append(alternative_route)
+    # Also link to individual alternative tool pages for better orphan coverage
+    for alt_slug in list_items(metadata.get("alternatives"))[:4]:
+        alt_route = f"/tools/{alt_slug}.html"
+        if (ROOT / "tools" / f"{alt_slug}.html").exists():
+            routes.append(alt_route)
     routes = [route for route in routes if route_is_indexable(route, indexable)]
     if not routes:
         return content

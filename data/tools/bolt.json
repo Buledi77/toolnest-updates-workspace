@@ -1,0 +1,250 @@
+{
+  "$schema": "https://www.toolnestai.tech/schemas/toolnest-tool-v1.json",
+  "schema_version": "toolnest-tool-v1",
+  "identity": {
+    "id": "bolt",
+    "name": "Bolt.new",
+    "slug": "bolt",
+    "official_url": "https://bolt.new",
+    "status": "active",
+    "logo": null,
+    "aliases": []
+  },
+  "discovery": {
+    "categories": [
+      "Developer Tools"
+    ],
+    "use_cases": [
+      "browser-based full-stack app building",
+      "AI-powered prototyping",
+      "rapid web application development",
+      "cloud-hosted development"
+    ],
+    "audiences": [
+      "solo developers",
+      "startups",
+      "development teams",
+      "non-technical founders"
+    ],
+    "platforms": [
+      "web"
+    ],
+    "integrations": [],
+    "tags": [
+      "ai-builder",
+      "full-stack",
+      "developer-tools",
+      "prototyping",
+      "browser-based"
+    ]
+  },
+  "factual_profile": {
+    "capabilities": [
+      {
+        "description": "Browser-based full-stack application builder by StackBlitz"
+      },
+      {
+        "description": "Token-based billing system"
+      },
+      {
+        "description": "SOC 2 Type II compliance"
+      },
+      {
+        "description": "Built-in hosting on bolt.host addresses"
+      },
+      {
+        "description": "Custom domain support on Pro and above"
+      },
+      {
+        "description": "Token rollover for up to two months on paid plans"
+      }
+    ],
+    "limitations": [
+      "Free plan limited to 1M tokens/month with 300K daily cap",
+      "Free plan includes Bolt branding on sites",
+      "Token usage increases as project size grows",
+      "Free tokens do not roll over",
+      "Custom domains require Pro plan or higher"
+    ],
+    "free_plan_status": [
+      "Free plan available with 1M tokens per month, 300K daily cap"
+    ],
+    "trial_status": [
+      "No separate trial — Free plan serves as entry point"
+    ],
+    "pricing_status": [
+      "Pricing verified from official sources on 2026-11-22"
+    ],
+    "pricing_regions": [],
+    "availability_regions": []
+  },
+  "editorial": {
+    "editorial_tier": "B",
+    "best_for": [
+      "Developers wanting browser-based full-stack development",
+      "Teams needing rapid prototyping",
+      "Startups building MVPs quickly"
+    ],
+    "not_recommended_for": [],
+    "review_status": "draft",
+    "review_url": null,
+    "review_owner": null,
+    "editorial_last_reviewed": null
+  },
+  "relationships": {
+    "alternatives": [
+      "lovable",
+      "replit",
+      "cursor"
+    ],
+    "meaningful_comparisons": [],
+    "related_tools": [
+      "lovable"
+    ],
+    "compatible_tools": [],
+    "replaces": [],
+    "replaced_by": []
+  },
+  "evidence": {
+    "claim_refs": [
+      {
+        "claim": "Bolt.new pricing plans and features",
+        "sourceUrl": "https://bolt.new",
+        "sourceType": "official_pricing_page",
+        "checkedOn": "2026-11-22"
+      },
+      {
+        "claim": "Bolt.new help center and documentation",
+        "sourceUrl": "https://support.bolt.new",
+        "sourceType": "official_help_center",
+        "checkedOn": "2026-11-22"
+      }
+    ],
+    "source_ids": [],
+    "handsOn": false,
+    "evidenceStatus": "Research-based, not a ToolNest hands-on test"
+  },
+  "monetization": {
+    "affiliate_status": "unknown",
+    "affiliate_network": null,
+    "affiliate_url": null,
+    "official_non_affiliate_url": "https://bolt.new",
+    "approved_regions": [],
+    "restrictions": [],
+    "disclosure_required": null,
+    "last_link_check": "2026-11-22"
+  },
+  "publishing": {
+    "directory_visibility": "public",
+    "standalone_page_status": "ready",
+    "indexability": "index",
+    "sitemap_eligible": true,
+    "canonical_url": "https://www.toolnestai.tech/tools/bolt.html",
+    "template_type": "review",
+    "content_quality_status": "assessed",
+    "prepublish_status": "ready"
+  },
+  "freshness": {
+    "created_at": "2026-11-22T23:52:00Z",
+    "updated_at": "2026-11-22T23:52:00Z",
+    "last_verified_at": "2026-11-22T23:52:00Z",
+    "next_review_at": null,
+    "stale_fields": [],
+    "change_history_reference": null
+  },
+  "pricing": {
+    "checkedOn": "2026-11-22",
+    "sourceUrls": [
+      "https://bolt.new",
+      "https://support.bolt.new"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "annualDiscount": null,
+    "freePlan": true,
+    "freeLimits": "1M tokens per month, 300K daily cap, no rollover",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "tokens": "1M per month",
+          "dailyCap": "300K",
+          "rollover": "No",
+          "hosting": "333K web requests/month"
+        },
+        "notes": "Entry-level access — Bolt branding on sites"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 25,
+        "priceAnnualMonthlyEquivalent": 18,
+        "sourceTier": "official",
+        "limits": {
+          "tokens": "From 10M per month",
+          "dailyCap": "None",
+          "rollover": "Up to 2 months",
+          "hosting": "1M web requests/month"
+        },
+        "notes": "Custom domains, no Bolt branding, SEO tools, AI image editing"
+      },
+      {
+        "name": "Teams",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "perMember": "$30 per member per month",
+          "tokens": "Per member, not shared",
+          "features": "Central billing, admin controls, private NPM registry"
+        },
+        "notes": "Team collaboration with centralized management"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "official",
+        "limits": {
+          "pricing": "Custom",
+          "features": "SSO, audit logs, compliance support, dedicated account manager"
+        },
+        "notes": "Large organizations with custom requirements"
+      }
+    ],
+    "billingCaveats": [
+      "Token-based billing — tokens consumed by reading project files and writing code",
+      "Token usage increases as project size grows",
+      "Free tokens expire at month end, no rollover",
+      "Paid tokens roll over for up to two months",
+      "Yearly billing saves up to 28%",
+      "By StackBlitz — SOC 2 Type II compliant"
+    ]
+  },
+  "claims": [
+    {
+      "text": "Bolt.new Pro starts at $25/month for 10M tokens",
+      "sourceUrl": "https://bolt.new",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Bolt.new Teams costs $30 per member per month",
+      "sourceUrl": "https://bolt.new",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Bolt.new Free offers 1M tokens per month with 300K daily cap",
+      "sourceUrl": "https://support.bolt.new",
+      "checkedOn": "2026-11-22"
+    },
+    {
+      "text": "Bolt.new Pro annual billing starts at $18/month",
+      "sourceUrl": "https://bolt.new",
+      "checkedOn": "2026-11-22"
+    }
+  ],
+  "lastReviewed": "2026-11-22"
+}

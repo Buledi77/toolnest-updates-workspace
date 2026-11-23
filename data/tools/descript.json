@@ -60,7 +60,8 @@
     "alternatives": [
       "elevenlabs",
       "runway",
-      "synthesia"
+      "synthesia",
+      "meetgeek"
     ],
     "meaningful_comparisons": [
       "descript-vs-invideo",

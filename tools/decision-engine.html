@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="en">
+<head><title>Software Decision Review: Features &amp; Pricing | ToolNest</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="ToolNest Editorial"><link rel="author" href="/about.html">
+<link rel="stylesheet" href="/assets/site.min.css">
+<link rel="stylesheet" href="/assets/mobile-nav.min.css">
+<script src="/assets/mobile-nav.min.js" defer></script>
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Instrument+Sans:wght@400;500;600;700&display=optional" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Instrument+Sans:wght@400;500;600;700&display=optional"></noscript>
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToolNest">
+<meta property="og:locale" content="en_US">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Software Decision Engine","url":"https://www.toolnestai.tech/tools/decision-engine.html","description":"Tell us what you need — use cases, categories, platforms — and get explainable tool recommendations scored against structured data from 147 reviewed tools.","isPartOf":{"@type":"WebSite","name":"ToolNest","url":"https://www.toolnestai.tech/"}}</script>
+
+<style>
+.de-wrap{max-width:960px;margin:0 auto}
+.de-filters{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;margin:24px 0;box-shadow:var(--shadow)}
+.de-filter-group{margin-bottom:20px}
+.de-filter-group:last-child{margin-bottom:0}
+.de-filter-label{font-weight:600;font-size:14px;color:var(--muted);margin-bottom:8px;display:block;text-transform:uppercase;letter-spacing:.03em}
+.de-chips{display:flex;flex-wrap:wrap;gap:8px}
+.de-chip{padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-size:13px;font-weight:500;cursor:pointer;transition:all .2s ease;user-select:none}
+.de-chip:hover{border-color:var(--brand);color:var(--brand)}
+.de-chip.active{background:var(--brand);color:#fff;border-color:var(--brand)}
+.de-toggle-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.de-toggle{position:relative;width:44px;height:24px;border-radius:12px;background:var(--line);cursor:pointer;transition:background .2s ease;flex-shrink:0}
+.de-toggle.on{background:var(--brand)}
+.de-toggle::after{content:'';position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:#fff;transition:transform .2s ease;box-shadow:0 1px 3px rgba(0,0,0,.15)}
+.de-toggle.on::after{transform:translateX(20px)}
+.de-toggle-label{font-size:14px;color:var(--ink);cursor:pointer}
+.de-search{width:100%;padding:12px 16px;font:500 16px var(--font-body);border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);margin-bottom:16px}
+.de-search:focus{outline:none;border-color:var(--ring);box-shadow:0 0 0 3px rgba(15,107,92,.15)}
+.de-search::placeholder{color:var(--muted);font-weight:400}
+.de-run-btn{display:block;width:100%;padding:14px 24px;border-radius:12px;border:none;background:var(--brand);color:#fff;font:600 16px var(--font-body);cursor:pointer;transition:background .2s ease,transform .2s ease;margin-top:16px}
+.de-run-btn:hover{background:#0a5c50;transform:translateY(-1px)}
+.de-run-btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.de-results{margin-top:24px}
+.de-result-count{font-size:15px;color:var(--muted);margin-bottom:16px;font-weight:500}
+.de-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:16px;box-shadow:var(--shadow);transition:box-shadow .2s ease}
+.de-card:hover{box-shadow:0 2px 8px rgba(11,34,32,.1),0 18px 40px -20px rgba(11,34,32,.32)}
+.de-card-header{display:flex;align-items:flex-start;gap:16px;margin-bottom:12px}
+.de-card-logo{width:48px;height:48px;border-radius:10px;object-fit:contain;background:var(--soft);flex-shrink:0}
+.de-card-info{flex:1;min-width:0}
+.de-card-name{font-size:18px;font-weight:700;color:var(--ink);margin:0 0 2px}
+.de-card-name a{color:inherit;text-decoration:none}
+.de-card-name a:hover{text-decoration:underline}
+.de-card-cat{font-size:13px;color:var(--muted);margin:0 0 4px}
+.de-card-best{font-size:14px;color:var(--ink);margin:0;line-height:1.5}
+.de-card-score{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+.de-score-bar{flex:1;height:8px;border-radius:4px;background:var(--line);overflow:hidden}
+.de-score-fill{height:100%;border-radius:4px;transition:width .4s ease}
+.de-score-fill.high{background:#0F6B5C}
+.de-score-fill.medium{background:#7C3AED}
+.de-score-fill.low{background:#B45309}
+.de-score-num{font-size:12px;font-weight:600;min-width:32px;text-align:right;opacity:.7}
+.de-score-num.high{color:#0F6B5C}
+.de-score-num.medium{color:#7C3AED}
+.de-score-num.low{color:#B45309}
+.de-confidence{font-size:14px;font-weight:700;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.de-confidence.high{background:rgba(15,107,92,.15);color:#0F6B5C}
+.de-confidence.medium{background:rgba(124,58,237,.15);color:#7C3AED}
+.de-confidence.low{background:rgba(180,83,9,.15);color:#B45309}
+.de-req-summary{display:flex;align-items:center;gap:8px;padding:10px 16px;background:var(--soft);border-radius:10px;margin-bottom:16px;font-size:14px;color:var(--muted);flex-wrap:wrap}
+.de-req-summary strong{color:var(--ink)}
+.de-req-tag{display:inline-block;padding:2px 8px;background:var(--brand);color:#fff;border-radius:999px;font-size:11px;font-weight:600}
+.de-refine-link{display:inline-block;margin-bottom:16px;font-size:14px;font-weight:600;color:var(--brand);text-decoration:none}
+.de-refine-link:hover{text-decoration:underline}
+.de-insufficient{font-size:13px;color:var(--muted);font-style:italic;margin-top:4px}
+.de-card-actions .de-action-compare{background:var(--soft);color:var(--muted);border:1px solid var(--line)}
+.de-card-actions .de-action-compare:hover{background:#d5ebe6}
+.de-reasons{margin:12px 0}
+.de-reasons h4{font-size:13px;font-weight:600;color:var(--muted);margin:0 0 6px;text-transform:uppercase;letter-spacing:.03em}
+.de-reason{display:flex;align-items:flex-start;gap:8px;font-size:14px;line-height:1.5;color:var(--ink);margin-bottom:4px}
+.de-reason-icon{color:var(--brand);flex-shrink:0;margin-top:2px}
+.de-cons{margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
+.de-cons h4{font-size:13px;font-weight:600;color:#B45309;margin:0 0 6px}
+.de-cons li{font-size:13px;line-height:1.5;color:var(--muted);margin-bottom:3px}
+.de-card-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.de-card-actions a{display:inline-block;padding:6px 12px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;transition:background .2s ease}
+.de-card-actions .de-action-profile{background:var(--soft);color:var(--brand)}
+.de-card-actions .de-action-profile:hover{background:#d5ebe6}
+.de-card-actions .de-action-alts{background:var(--soft);color:var(--muted);border:1px solid var(--line)}
+.de-card-actions .de-action-alts:hover{background:#d5ebe6}
+.de-empty{text-align:center;padding:48px 20px;color:var(--muted)}
+.de-empty h3{font-size:18px;color:var(--ink);margin:0 0 8px}
+.de-empty p{font-size:15px;line-height:1.6;margin:0}
+.de-empty .de-empty-icon{font-size:48px;margin-bottom:16px;opacity:.5}
+.de-note{font-size:13px;color:var(--muted);margin-top:16px;line-height:1.6;padding:12px 16px;background:var(--soft);border-radius:10px;border-left:3px solid var(--brand)}
+.de-note a{color:var(--brand);text-decoration:underline;text-underline-offset:3px}
+.de-loading{text-align:center;padding:40px;color:var(--muted)}
+.de-loading .spinner{display:inline-block;width:32px;height:32px;border:3px solid var(--line);border-top-color:var(--brand);border-radius:50%;animation:de-spin .8s linear infinite}
+@keyframes de-spin{to{transform:rotate(360deg)}}
+.de-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.de-summary-item{text-align:center;padding:12px;background:var(--soft);border-radius:10px}
+.de-summary-num{font-size:24px;font-weight:800;color:var(--brand)}
+.de-summary-label{font-size:12px;color:var(--muted);margin-top:2px}
+@media(max-width:640px){
+ .de-card-header{flex-direction:column;gap:10px}
+ .de-summary{grid-template-columns:1fr}
+ .de-card-actions{flex-direction:column}
+ .de-card-actions a{text-align:center}
+}
+</style>
+
+
+<meta name="description" content="Software Decision Engine: editorial review covering strengths, trade-offs, pricing, and who should choose or skip this tool for your workflow. Check official">
+<link rel="canonical" href="https://www.toolnestai.tech/tools/decision-engine.html">
+<meta property="og:title" content="Software Decision Review: Features &amp; Pricing | ToolNest">
+<meta property="og:description" content="Software Decision Engine: editorial review covering strengths, trade-offs, pricing, and who should choose or skip this tool for your workflow. Check official">
+<meta property="og:url" content="https://www.toolnestai.tech/tools/decision-engine.html">
+<meta property="og:image" content="https://www.toolnestai.tech/assets/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Software Decision Review: Features &amp; Pricing | ToolNest">
+<meta name="twitter:description" content="Software Decision Engine: editorial review covering strengths, trade-offs, pricing, and who should choose or skip this tool for your workflow. Check official">
+<meta name="twitter:image" content="https://www.toolnestai.tech/assets/og-default.png">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VS0TB85N2G"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-VS0TB85N2G");</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.toolnestai.tech/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://www.toolnestai.tech/tools/index.html"},{"@type":"ListItem","position":3,"name":"Software Decision Engine","item":"https://www.toolnestai.tech/tools/decision-engine.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Software Decision Review: Features & Pricing | ToolNest","description":"Software Decision Engine: editorial review covering strengths, trade-offs, pricing, and who should choose or skip this tool for your workflow. Check official","url":"https://www.toolnestai.tech/tools/decision-engine.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.toolnestai.tech/tools/decision-engine.html"},"author":{"@type":"Organization","name":"ToolNest Editorial","url":"https://www.toolnestai.tech/editorial-policy.html"},"publisher":{"@type":"Organization","name":"ToolNest","url":"https://www.toolnestai.tech/","logo":{"@type":"ImageObject","url":"https://www.toolnestai.tech/assets/og-default.png"}},"image":"https://www.toolnestai.tech/assets/og-default.png"}</script>
+<meta name="robots" content="noindex, follow">
+</head>
+<body>
+
+<a class="skip" href="#top">Skip to content</a>
+<header class="top">
+<div class="bar">
+<a aria-label="ToolNest home" class="logo" href="/">
+<span>Tool<i>Nest</i>
+</span>
+</a>
+<nav aria-label="Main">
+<a href="/tools/index.html">Tools</a>
+<a href="/category/index.html">Categories</a>
+<a href="/compare/index.html">Compare</a>
+<a href="/best/index.html">Best of</a>
+<a class="btn" href="/tools/decision-engine.html">Decision Engine</a>
+</nav>
+<button class="mnav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav">
+<span class="mnav-ico" aria-hidden="true">
+</span>
+</button>
+</div>
+<nav class="mnav" id="mnav" aria-label="Mobile" hidden>
+<a href="/">Home</a>
+<a href="/tools/index.html">Tools</a>
+<a href="/category/index.html">Categories</a>
+<a href="/compare/index.html">Compare</a>
+<a href="/alternatives/index.html">Alternatives</a>
+<a href="/best/index.html">Best of</a>
+<a class="btn" href="/tools/decision-engine.html">Decision Engine</a>
+</nav>
+</header>
+
+<main id="top">
+<section class="hero phero">
+<div class="wrap"><nav aria-label="Breadcrumb" class="crumbs"><ol><li><a href="/">Home</a></li><li><a href="/tools/index.html">Tools</a></li><li aria-current="page">Software Decision Engine</li></ol></nav>
+
+<p class="eyebrow">Interactive tool</p>
+<h1>Software Decision Engine</h1>
+<p class="lede">Tell us what you need to accomplish, and get transparent, explainable tool recommendations scored against structured data from 147 reviewed tools.</p>
+</div>
+</section><div class="wrap tn-trust-strip"><p class="tn-research-line">ToolNest Research &middot; Editorial review 2026-11-23 &middot; <a href="/how-we-test.html">Research-based profile</a></p><p class="tn-trust-links"><a href="/how-we-test.html">Methodology</a><a href="/editorial-policy.html">Editorial policy</a><a href="/contact.html">Corrections</a><a href="/affiliate-disclosure.html">Affiliate disclosure</a></p></div>
+
+<div class="wrap p-flow">
+<div class="de-wrap">
+
+<section class="p-sec">
+<h2>How it works</h2>
+<p>The Decision Engine scores every tool against your criteria using transparent rules you can inspect. No black-box AI — just structured data and explainable matching.</p>
+<div class="p-feats">
+<div class="p-feat">
+<b>Select your use cases</b>
+<p>Choose what you want to accomplish. The engine matches tools by their verified use case tags.</p>
+</div>
+<div class="p-feat">
+<b>Filter by category &amp; platform</b>
+<p>Narrow results to specific tool categories and platform availability.</p>
+</div>
+<div class="p-feat">
+<b>See the scoring breakdown</b>
+<p>Every recommendation shows exactly why it scored high — use case matches, category fit, and data quality.</p>
+</div>
+<div class="p-feat">
+<b>No fabricated data</b>
+<p>Scoring uses only verified structured data. When data is missing, the engine shows "unknown" instead of guessing.</p>
+</div>
+</div>
+</section>
+
+<section class="p-sec">
+<h2>Configure your search</h2>
+
+<div class="de-filters" id="deFilters">
+<div class="de-filter-group">
+<label class="de-filter-label" for="deSearch">Search tools</label>
+<input type="text" class="de-search" id="deSearch" placeholder="Type to filter tools by name…" autocomplete="off">
+</div>
+
+<div class="de-filter-group">
+<span class="de-filter-label">Use Cases — what do you want to do?</span>
+<div class="de-chips" id="deUseCases" role="group" aria-label="Select use cases"></div>
+</div>
+
+<div class="de-filter-group">
+<span class="de-filter-label">Categories</span>
+<div class="de-chips" id="deCategories" role="group" aria-label="Select categories"></div>
+</div>
+
+<div class="de-filter-group" style="display:none">
+<span class="de-filter-label">Platforms</span>
+<div class="de-chips" id="dePlatforms" role="group" aria-label="Select platforms"></div>
+</div>
+
+<div class="de-filter-group">
+<div class="de-toggle-row" style="display:none">
+<div class="de-toggle" id="deFreePlanToggle" role="switch" aria-checked="false" tabindex="0"></div>
+<span class="de-toggle-label" for="deFreePlanToggle">Only show tools with a free plan</span>
+</div>
+<div class="de-toggle-row">
+<div class="de-toggle on" id="deShowConsToggle" role="switch" aria-checked="true" tabindex="0"></div>
+<span class="de-toggle-label" for="deShowConsToggle">Show known drawbacks in results</span>
+</div>
+</div>
+
+<div class="de-note" style="margin-top:12px">
+<strong>ℹ️ Note:</strong> Some filters (Free Plan, Platform) are currently disabled because verified data coverage is insufficient. We are actively expanding our dataset. <a href="/how-we-test.html">Learn about our data standards</a>.
+</div>
+
+<button class="de-run-btn" id="deRunBtn" type="button">Find My Tools</button>
+</div>
+
+<div class="de-results" id="deResults" role="region" aria-live="polite" aria-label="Decision engine results">
+<div class="de-empty">
+<div class="de-empty-icon">🔍</div>
+<h3>Find the right tool for your needs</h3>
+<p>Select use cases or categories above, then click <strong>"Find My Tools"</strong> to get scored recommendations. Each result shows why it matched, any known drawbacks, and links to the full review.</p>
+</div>
+</div>
+
+</section>
+
+<section class="p-sec">
+<h2>Scoring methodology</h2>
+<p>Each tool is scored out of 90 points using these transparent rules:</p>
+<div class="p-feats">
+<div class="p-feat">
+<b>Use Case Match (40 points)</b>
+<p>How many of your selected use cases match the tool's verified use case tags.</p>
+</div>
+<div class="p-feat">
+<b>Category Match (20 points)</b>
+<p>Whether the tool belongs to one of your selected categories.</p>
+</div>
+<div class="p-feat">
+<b>Best For Match (20 points)</b>
+<p>How many of your selected use cases match the tool's "best for" descriptions.</p>
+</div>
+<div class="p-feat">
+<b>Platform Match (10 points)</b>
+<p>Whether the tool is available on your selected platforms.</p>
+</div>
+</div>
+<p class="de-note">⚠️ <strong>Data limitation:</strong> Only 4 of 147 tools currently have detailed pricing data. Budget-based filtering is not yet available. We are actively expanding this dataset. <a href="/how-we-test.html">Learn about our data standards</a>.</p>
+</section>
+
+<section class="p-sec">
+<h2>Related tools</h2>
+<div class="p-feats">
+<div class="p-feat">
+<b>Stack Cost Analyzer</b>
+<p>Select multiple tools and see your combined monthly and annual cost estimates.</p>
+</div>
+<div class="p-feat">
+<b>Tool Overlap Checker</b>
+<p>Check whether two tools overlap in function and share the same jobs.</p>
+</div>
+</div>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px">
+<a class="btn" href="/tools/stack-analyzer.html">Open Stack Cost Analyzer</a>
+<a class="btn" href="/tools/overlap-checker.html" style="background:var(--soft);color:var(--brand);border:1px solid var(--line)">Check Tool Overlap</a>
+</div>
+</section>
+
+</div>
+</div>
+</main>
+
+<footer class="site-footer">
+<div class="wrap">
+<p>© 2026 ToolNest. All rights reserved.</p>
+<nav>
+<a href="/about.html">About</a>
+<a href="/editorial-policy.html">Editorial policy</a>
+<a href="/privacy.html">Privacy</a>
+<a href="/terms.html">Terms</a>
+<a href="/contact.html">Contact</a>
+</nav>
+</div>
+</footer>
+
+<script>
+(function(){
+ "use strict";
+
+ var TOOLS_URL = "/data/tools-v1.json";
+ var CONFIG_URL = "/data/decision-engine-config.json";
+
+ var tools = [];
+ var config = null;
+ var allUseCases = [];
+ var selectedUseCases = [];
+ var selectedCategories = [];
+ var selectedPlatforms = [];
+ var freePlanOnly = false;
+ var showCons = true;
+ var searchQuery = "";
+
+ // DOM refs
+ var elUseCases = document.getElementById("deUseCases");
+ var elCategories = document.getElementById("deCategories");
+ var elPlatforms = document.getElementById("dePlatforms");
+ var elResults = document.getElementById("deResults");
+ var elRunBtn = document.getElementById("deRunBtn");
+ var elSearch = document.getElementById("deSearch");
+ var elFreeToggle = document.getElementById("deFreePlanToggle");
+ var elConsToggle = document.getElementById("deShowConsToggle");
+
+ // Initialize
+ function init(){
+ loadConfig();
+ loadTools();
+ bindEvents();
+ restoreUrlState();
+ }
+
+ function loadConfig(){
+ fetch(CONFIG_URL).then(function(r){return r.json();}).then(function(c){
+ config = c;
+ }).catch(function(){
+ // Use defaults if config fails
+ });
+ }
+
+ function loadTools(){
+ fetch(TOOLS_URL).then(function(r){return r.json();}).then(function(d){
+ tools = d.tools || [];
+ buildUseCaseList();
+ renderFilters();
+ }).catch(function(e){
+ elResults.innerHTML = '<div class="de-empty"><h3>Error loading data</h3><p>Could not load tool data. Please try refreshing the page.</p></div>';
+ console.error("Failed to load tools:", e);
+ });
+ }
+
+ function buildUseCaseList(){
+ var tagMap = {};
+ for(var i=0;i<tools.length;i++){
+ var t = tools[i];
+ var tags = t.useCaseTags || [];
+ for(var j=0;j<tags.length;j++){
+ tagMap[tags[j]] = (tagMap[tags[j]]||0) + 1;
+ }
+ }
+ allUseCases = [];
+ for(var tag in tagMap){
+ if(tagMap.hasOwnProperty(tag)){
+ allUseCases.push({label:tag, count:tagMap[tag]});
+ }
+ }
+ allUseCases.sort(function(a,b){return b.count - a.count;});
+ }
+
+ function renderFilters(){
+ // Use cases - show top 40 most common
+ elUseCases.innerHTML = "";
+ var limit = Math.min(allUseCases.length, 40);
+ for(var i=0;i<limit;i++){
+ (function(uc){
+ var chip = document.createElement("span");
+ chip.className = "de-chip";
+ chip.textContent = uc.label + " (" + uc.count + ")";
+ chip.setAttribute("data-value", uc.label);
+ chip.setAttribute("role", "checkbox");
+ chip.setAttribute("aria-checked", "false");
+ chip.setAttribute("tabindex", "0");
+ chip.addEventListener("click", function(){ toggleChip(this, "useCase"); });
+ chip.addEventListener("keydown", function(e){ if(e.key===" "||e.key==="Enter"){e.preventDefault();toggleChip(this,"useCase");}});
+ elUseCases.appendChild(chip);
+ })(allUseCases[i]);
+ }
+
+ // Categories
+ elCategories.innerHTML = "";
+ var cats = [];
+ var catMap = {};
+ for(var i=0;i<tools.length;i++){
+ var c = tools[i].cat;
+ if(c && !catMap[c]){
+ catMap[c] = 0;
+ cats.push(c);
+ }
+ if(c) catMap[c]++;
+ }
+ cats.sort();
+ for(var i=0;i<cats.length;i++){
+ (function(cat){
+ var chip = document.createElement("span");
+ chip.className = "de-chip";
+ chip.textContent = cat + " (" + catMap[cat] + ")";
+ chip.setAttribute("data-value", cat);
+ chip.setAttribute("role", "checkbox");
+ chip.setAttribute("aria-checked", "false");
+ chip.setAttribute("tabindex", "0");
+ chip.addEventListener("click", function(){ toggleChip(this, "category"); });
+ chip.addEventListener("keydown", function(e){ if(e.key===" "||e.key==="Enter"){e.preventDefault();toggleChip(this,"category");}});
+ elCategories.appendChild(chip);
+ })(cats[i]);
+ }
+
+ // Platforms
+ elPlatforms.innerHTML = "";
+ var plats = ["web","iOS","Android"];
+ for(var i=0;i<plats.length;i++){
+ (function(plat){
+ var chip = document.createElement("span");
+ chip.className = "de-chip";
+ chip.textContent = plat;
+ chip.setAttribute("data-value", plat);
+ chip.setAttribute("role", "checkbox");
+ chip.setAttribute("aria-checked", "false");
+ chip.setAttribute("tabindex", "0");
+ chip.addEventListener("click", function(){ toggleChip(this, "platform"); });
+ chip.addEventListener("keydown", function(e){ if(e.key===" "||e.key==="Enter"){e.preventDefault();toggleChip(this,"platform");}});
+ elPlatforms.appendChild(chip);
+ })(plats[i]);
+ }
+ }
+
+ function toggleChip(el, type){
+ var val = el.getAttribute("data-value");
+ var isActive = el.classList.toggle("active");
+ el.setAttribute("aria-checked", isActive ? "true" : "false");
+
+ if(type === "useCase"){
+ if(isActive) selectedUseCases.push(val);
+ else selectedUseCases = selectedUseCases.filter(function(v){return v!==val;});
+ } else if(type === "category"){
+ if(isActive) selectedCategories.push(val);
+ else selectedCategories = selectedCategories.filter(function(v){return v!==val;});
+ } else if(type === "platform"){
+ if(isActive) selectedPlatforms.push(val);
+ else selectedPlatforms = selectedPlatforms.filter(function(v){return v!==val;});
+ }
+ updateUrlState();
+ }
+
+ // Toggle switches
+ function bindToggle(el, callback){
+ el.addEventListener("click", function(){
+ var isOn = el.classList.toggle("on");
+ el.setAttribute("aria-checked", isOn ? "true" : "false");
+ callback(isOn);
+ });
+ el.addEventListener("keydown", function(e){
+ if(e.key===" "||e.key==="Enter"){
+ e.preventDefault();
+ var isOn = el.classList.toggle("on");
+ el.setAttribute("aria-checked", isOn ? "true" : "false");
+ callback(isOn);
+ }
+ });
+ }
+
+ bindToggle(elFreeToggle, function(v){ freePlanOnly = v; });
+ bindToggle(elConsToggle, function(v){ showCons = v; });
+
+ function bindEvents(){
+ elRunBtn.addEventListener("click", runEngine);
+ elSearch.addEventListener("input", function(){
+ searchQuery = elSearch.value.trim().toLowerCase();
+ filterToolList();
+ });
+ }
+
+ function filterToolList(){
+ // Filter visible chips based on search
+ var chips = elUseCases.querySelectorAll(".de-chip");
+ for(var i=0;i<chips.length;i++){
+ var val = chips[i].getAttribute("data-value").toLowerCase();
+ chips[i].style.display = val.indexOf(searchQuery) > -1 ? "" : "none";
+ }
+ var chips2 = elCategories.querySelectorAll(".de-chip");
+ for(var i=0;i<chips2.length;i++){
+ var val2 = chips2[i].getAttribute("data-value").toLowerCase();
+ chips2[i].style.display = val2.indexOf(searchQuery) > -1 ? "" : "none";
+ }
+ }
+
+ // Core scoring engine
+ function runEngine(){
+ elResults.innerHTML = '<div class="de-loading"><div class="spinner"></div><p>Scoring tools…</p></div>';
+ elRunBtn.disabled = true;
+
+ // Use setTimeout to allow UI to update
+ setTimeout(function(){
+ var scored = scoreAllTools();
+ renderResults(scored);
+ elRunBtn.disabled = false;
+ updateUrlState();
+ }, 50);
+ }
+
+ function scoreAllTools(){
+ var results = [];
+
+ for(var i=0;i<tools.length;i++){
+ var t = tools[i];
+
+ // Free plan filter
+ if(freePlanOnly){
+ var fp = (t.pricing && t.pricing.freePlan) || {};
+ if(!fp.available) continue;
+ }
+
+ var score = 0;
+ var reasons = [];
+
+ // 1. Use Case Match (40 points)
+ if(selectedUseCases.length > 0){
+ var ucTags = t.useCaseTags || [];
+ var ucMatches = 0;
+ for(var j=0;j<selectedUseCases.length;j++){
+ for(var k=0;k<ucTags.length;k++){
+ if(normalize(ucTags[k]) === normalize(selectedUseCases[j])){
+ ucMatches++;
+ break;
+ }
+ }
+ }
+ var ucScore = Math.round((ucMatches / selectedUseCases.length) * 40);
+ score += ucScore;
+ if(ucMatches > 0){
+ reasons.push({rule:"Use Case Match",points:ucScore,max:40,detail:ucMatches + " of " + selectedUseCases.length + " use cases matched"});
+ }
+ }
+
+ // 2. Category Match (20 points)
+ if(selectedCategories.length > 0){
+ var catMatch = false;
+ for(var j=0;j<selectedCategories.length;j++){
+ if(t.cat === selectedCategories[j]){
+ catMatch = true;
+ break;
+ }
+ }
+ if(catMatch){
+ score += 20;
+ reasons.push({rule:"Category Match",points:20,max:20,detail:"Tool is in the \"" + t.cat + "\" category"});
+ }
+ }
+
+ // 3. Best For Match (20 points)
+ if(selectedUseCases.length > 0){
+ var bfTags = t.bestFor || [];
+ var bfMatches = 0;
+ for(var j=0;j<selectedUseCases.length;j++){
+ for(var k=0;k<bfTags.length;k++){
+ if(normalize(bfTags[k]) === normalize(selectedUseCases[j])){
+ bfMatches++;
+ break;
+ }
+ }
+ }
+ var bfScore = Math.round((bfMatches / selectedUseCases.length) * 20);
+ score += bfScore;
+ if(bfMatches > 0){
+ reasons.push({rule:"Best For Match",points:bfScore,max:20,detail:bfMatches + " of " + selectedUseCases.length + " use cases in bestFor"});
+ }
+ }
+
+ // 4. Platform Match (10 points)
+ if(selectedPlatforms.length > 0){
+ var tPlats = t.platforms || [];
+ var platMatches = 0;
+ for(var j=0;j<selectedPlatforms.length;j++){
+ for(var k=0;k<tPlats.length;k++){
+ if(tPlats[k] === selectedPlatforms[j]){
+ platMatches++;
+ break;
+ }
+ }
+ }
+ var platScore = Math.round((platMatches / selectedPlatforms.length) * 10);
+ score += platScore;
+ if(platMatches > 0){
+ reasons.push({rule:"Platform Match",points:platScore,max:10,detail:"Available on " + platMatches + " of " + selectedPlatforms.length + " selected platforms"});
+ }
+ }
+
+
+ // Only include tools with score >= 5
+ if(score >= 5){
+ results.push({
+ tool: t,
+ score: score,
+ reasons: reasons
+ });
+ }
+ }
+
+ // Sort by score descending
+ results.sort(function(a,b){return b.score - a.score;});
+
+ // Limit to top 20
+ return results.slice(0, 20);
+ }
+
+ function normalize(s){
+ return s.toLowerCase().replace(/[^a-z0-9]/g, "");
+ }
+
+ function getConfidence(score){
+ if(score >= 63) return {level:"high",label:"Strong Match"};
+ if(score >= 36) return {level:"medium",label:"Good Match"};
+ return {level:"low",label:"Possible Match"};
+ }
+
+ function renderResults(results){
+ if(results.length === 0){
+ var hasCriteria = selectedUseCases.length > 0 || selectedCategories.length > 0;
+ if(!hasCriteria){
+ elResults.innerHTML = '<div class="de-empty"><div class="de-empty-icon">🔍</div><h3>Find the right tool for your needs</h3><p>Select use cases or categories above, then click <strong>"Find My Tools"</strong> to get scored recommendations. Each result shows why it matched, any known drawbacks, and links to the full review.</p></div>';
+ } else {
+ elResults.innerHTML = '<div class="de-empty"><div class="de-empty-icon">📭</div><h3>No matching tools found</h3><p>Try broadening your criteria by selecting more use cases or categories, or <a href="#deFilters" class="de-refine-link">refine your selection</a>.</p></div>';
+ }
+ return;
+ }
+
+ var html = '';
+ 
+ // Requirements summary
+ var reqParts = [];
+ if(selectedUseCases.length > 0) reqParts.push('<strong>' + selectedUseCases.length + '</strong> use case' + (selectedUseCases.length>1?'s':'') + ' selected');
+ if(selectedCategories.length > 0) reqParts.push('<strong>' + selectedCategories.length + '</strong> category' + (selectedCategories.length>1?'s':'') + ' selected');
+ if(selectedPlatforms.length > 0) reqParts.push('<strong>' + selectedPlatforms.length + '</strong> platform' + (selectedPlatforms.length>1?'s':'') + ' selected');
+ if(reqParts.length > 0){
+ html += '<div class="de-req-summary">Criteria: ' + reqParts.join(' · ') + '</div>';
+ }
+ html += '<a href="#deFilters" class="de-refine-link">← Refine your criteria</a>';
+ html += '<div class="de-result-count">' + results.length + ' tool' + (results.length>1?'s':'') + ' found, scored and ranked</div>';
+
+ // Summary stats
+ var highCount = 0, medCount = 0, lowCount = 0;
+ for(var i=0;i<results.length;i++){
+ var c = getConfidence(results[i].score);
+ if(c.level==="high") highCount++;
+ else if(c.level==="medium") medCount++;
+ else lowCount++;
+ }
+ html += '<div class="de-summary">';
+ html += '<div class="de-summary-item"><div class="de-summary-num">' + highCount + '</div><div class="de-summary-label">Strong Matches</div></div>';
+ html += '<div class="de-summary-item"><div class="de-summary-num">' + medCount + '</div><div class="de-summary-label">Good Matches</div></div>';
+ html += '<div class="de-summary-item"><div class="de-summary-num">' + lowCount + '</div><div class="de-summary-label">Possible Matches</div></div>';
+ html += '</div>';
+
+ for(var i=0;i<results.length;i++){
+ var r = results[i];
+ var t = r.tool;
+ var conf = getConfidence(r.score);
+
+ html += '<div class="de-card">';
+ html += '<div class="de-card-header">';
+ if(t.logo){
+ html += '<img class="de-card-logo" src="' + escapeHtml(t.logo) + '" alt="' + escapeHtml(t.name) + ' logo" width="128" height="128" decoding="async" fetchpriority="high">';
+ }
+ html += '<div class="de-card-info">';
+ html += '<h3 class="de-card-name"><a href="/tools/' + escapeHtml(t.id) + '.html">' + escapeHtml(t.name) + '</a></h3>';
+ html += '<p class="de-card-cat">' + escapeHtml(t.cat) + '</p>';
+ if(t.best){
+ html += '<p class="de-card-best">Best for: ' + escapeHtml(t.best) + '</p>';
+ }
+ html += '</div></div>';
+
+ // Score bar
+ html += '<div class="de-card-score">';
+ html += '<div class="de-score-bar"><div class="de-score-fill ' + conf.level + '" style="width:' + r.score + '%"></div></div>';
+ html += '<span class="de-score-num ' + conf.level + '">' + r.score + '</span>';
+ html += '<span class="de-confidence ' + conf.level + '">' + conf.label + '</span>';
+ html += '</div>';
+
+ // Reasons
+ html += '<div class="de-reasons"><h4>Why this scored ' + r.score + '/90</h4>';
+ if(r.reasons.length === 0){
+ html += '<p class="de-insufficient">Insufficient structured evidence — this tool scored based on partial data. View the full profile for more detail.</p>';
+ } else {
+ for(var j=0;j<r.reasons.length;j++){
+ var reason = r.reasons[j];
+ html += '<div class="de-reason"><span class="de-reason-icon">✓</span><span><strong>' + escapeHtml(reason.rule) + '</strong> (' + reason.points + '/' + reason.max + '): ' + escapeHtml(reason.detail) + '</span></div>';
+ }
+ }
+ html += '</div>';
+
+ // Cons
+ if(showCons && t.cons && t.cons.length > 0){
+ html += '<div class="de-cons"><h4>Known drawbacks</h4><ul>';
+ for(var j=0;j<t.cons.length;j++){
+ html += '<li>' + escapeHtml(t.cons[j]) + '</li>';
+ }
+ html += '</ul></div>';
+ }
+
+ // Actions
+ html += '<div class="de-card-actions">';
+ html += '<a class="de-action-profile" href="/tools/' + escapeHtml(t.id) + '.html">View full profile</a>';
+ html += '<a class="de-action-compare" href="/compare/index.html">Compare</a>';
+ if(t.alternatives && t.alternatives.length > 0){
+ html += '<a class="de-action-alts" href="/alternatives/' + escapeHtml(t.id) + '.html">See alternatives</a>';
+ }
+ html += '</div>';
+
+ html += '</div>';
+ }
+
+ html += '<p class="de-note">⚠️ <strong>Transparency note:</strong> Scores are based on structured data from ' + tools.length + ' reviewed tools. When use case tags or best-for data is missing, the engine marks the match as "insufficient structured evidence" rather than penalizing the tool. <a href="/how-we-test.html">Learn about our data standards</a>.</p>';
+
+ elResults.innerHTML = html;
+ }
+
+ function escapeHtml(s){
+ if(!s) return "";
+ var div = document.createElement("div");
+ div.textContent = s;
+ return div.innerHTML;
+ }
+
+ // URL state management
+ function updateUrlState(){
+ var params = new URLSearchParams();
+ if(selectedUseCases.length > 0) params.set("uc", selectedUseCases.join(","));
+ if(selectedCategories.length > 0) params.set("cat", selectedCategories.join(","));
+ if(selectedPlatforms.length > 0) params.set("plat", selectedPlatforms.join(","));
+ if(freePlanOnly) params.set("free", "1");
+
+ var qs = params.toString();
+ var url = window.location.pathname;
+ if(qs) url += "?" + qs;
+ history.replaceState(null, "", url);
+ }
+
+ function restoreUrlState(){
+ var params = new URLSearchParams(window.location.search);
+
+ if(params.has("uc")){
+ selectedUseCases = params.get("uc").split(",").map(function(s){return s.trim();}).filter(Boolean);
+ var chips = elUseCases.querySelectorAll(".de-chip");
+ for(var i=0;i<chips.length;i++){
+ if(selectedUseCases.indexOf(chips[i].getAttribute("data-value")) > -1){
+ chips[i].classList.add("active");
+ chips[i].setAttribute("aria-checked", "true");
+ }
+ }
+ }
+
+ if(params.has("cat")){
+ selectedCategories = params.get("cat").split(",").map(function(s){return s.trim();}).filter(Boolean);
+ var chips2 = elCategories.querySelectorAll(".de-chip");
+ for(var i=0;i<chips2.length;i++){
+ if(selectedCategories.indexOf(chips2[i].getAttribute("data-value")) > -1){
+ chips2[i].classList.add("active");
+ chips2[i].setAttribute("aria-checked", "true");
+ }
+ }
+ }
+
+ if(params.has("plat")){
+ selectedPlatforms = params.get("plat").split(",").map(function(s){return s.trim();}).filter(Boolean);
+ var chips3 = elPlatforms.querySelectorAll(".de-chip");
+ for(var i=0;i<chips3.length;i++){
+ if(selectedPlatforms.indexOf(chips3[i].getAttribute("data-value")) > -1){
+ chips3[i].classList.add("active");
+ chips3[i].setAttribute("aria-checked", "true");
+ }
+ }
+ }
+
+ if(params.has("free") && params.get("free")==="1"){
+ freePlanOnly = true;
+ elFreeToggle.classList.add("on");
+ elFreeToggle.setAttribute("aria-checked", "true");
+ }
+ }
+
+ // Start
+ if(document.readyState === "loading"){
+ document.addEventListener("DOMContentLoaded", init);
+ } else {
+ init();
+ }
+
+})();
+</script>
+
+</body>
+</html>

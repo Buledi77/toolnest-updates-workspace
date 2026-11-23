@@ -21,6 +21,10 @@ CRITICAL_PATTERNS = [
     (r"/bin/bash", "Dollar sign corruption: /bin/bash found (should be $0)"),
     (r"\bTODO\b", "Unresolved TODO found"),
     (r"\{\{[^}]+\}\}", "Unprocessed template variable found"),
+    # Shell variable leakage — positional parameters $1-$9 in prose (not in code blocks)
+    (r"(?<!\w)\$[1-9](?!\d)", "Shell variable leakage: positional parameter found in prose"),
+    # Incomplete shell expressions
+    (r"\$\{[^}]*$", "Incomplete shell expression: unclosed ${...}"),
 ]
 
 # Patterns to check only in specific contexts (data attributes, JSON-LD, etc.)
@@ -46,6 +50,14 @@ BOILERPLATE_PATTERNS = [
 ]
 
 
+def strip_code_blocks(html_content: str) -> str:
+    """Remove <code>, <pre>, <script>, <style> blocks to avoid false positives in code examples."""
+    text = re.sub(r"<script[^>]*>.*?</script>", "", html_content, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r"<style[^>]*>.*?</style>", "", text, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r"<pre[^>]*>.*?</pre>", "", text, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r"<code[^>]*>.*?</code>", "", text, flags=re.DOTALL | re.IGNORECASE)
+    return text
+
 def lint_file(path: Path) -> list[dict]:
     """Lint a single HTML file and return list of issues."""
     issues = []
@@ -56,10 +68,18 @@ def lint_file(path: Path) -> list[dict]:
     text_content = re.sub(r"<script[^>]*>.*?</script>", "", content, flags=re.DOTALL | re.IGNORECASE)
     text_content = re.sub(r"<style[^>]*>.*?</style>", "", text_content, flags=re.DOTALL | re.IGNORECASE)
 
+    # For shell leakage patterns, also strip code blocks to avoid false positives
+    prose_content = strip_code_blocks(content)
+
     # Critical patterns (check full HTML, not just text)
     for pattern, message in CRITICAL_PATTERNS:
-        for match in re.finditer(pattern, content):
-            line_num = content[:match.start()].count("\n") + 1
+        # Shell leakage patterns check prose only (no code blocks)
+        if "Shell variable" in message or "Incomplete shell" in message:
+            check_content = prose_content
+        else:
+            check_content = content
+        for match in re.finditer(pattern, check_content):
+            line_num = check_content[:match.start()].count("\n") + 1
             issues.append({
                 "file": rel,
                 "line": line_num,

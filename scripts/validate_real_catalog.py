@@ -50,9 +50,15 @@ def check_evidence_consistency():
         evidence = record.get("evidence", {})
         confidence = evidence.get("confidence", "")
         if confidence in ("moderate", "high"):
-            has_sources = bool(evidence.get("source_ids"))
-            has_claims = bool(evidence.get("claim_refs"))
-            if not has_sources or not has_claims:
+            # Accept either the new ledger-based format (source_ids + claim_refs)
+            # or the older inline sources array as valid backing evidence
+            has_ledger_sources = bool(evidence.get("source_ids"))
+            has_ledger_claims = bool(evidence.get("claim_refs"))
+            has_inline_sources = bool(
+                isinstance(evidence.get("sources"), list)
+                and len(evidence["sources"]) > 0
+            )
+            if not (has_ledger_sources and has_ledger_claims) and not has_inline_sources:
                 errors.append(
                     f"{rid} claims {confidence} confidence but has no backing evidence"
                 )
@@ -98,7 +104,7 @@ def check_preserved_evidence():
     records = load_records()
     record_map = {r["identity"]["id"]: r for r in records}
 
-    preserved = {"hostinger", "semrush", "moz-pro"}
+    preserved = {"hostinger", "semrush", "mozpro"}
     errors = []
 
     for tid in sorted(preserved):
