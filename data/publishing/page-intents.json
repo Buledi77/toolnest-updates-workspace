@@ -19,7 +19,7 @@
     },
     {
       "intent_id": "comparison-mozpro-vs-semrush",
-      "tool_id": "moz-pro",
+      "tool_id": "mozpro",
       "path": "/compare/mozpro-vs-semrush.html",
       "canonical_url": "https://www.toolnestai.tech/compare/mozpro-vs-semrush.html",
       "template_type": "comparison",

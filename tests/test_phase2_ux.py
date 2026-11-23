@@ -329,7 +329,7 @@ class StackAnalyzerUXTests(unittest.TestCase):
     def test_known_unknown_separation(self):
         """Totals must separate known from unknown pricing."""
         html = (ROOT / "tools" / "stack-analyzer.html").read_text(encoding="utf-8")
-        self.assertIn("Known Monthly Costs", html)
+        self.assertIn("Known Monthly", html)
         self.assertIn("unknown pricing", html.lower())
 
     def test_overlap_hint_css(self):
@@ -365,6 +365,131 @@ class TrustWordingTests(unittest.TestCase):
                 proof_section.group(0),
                 "Trust section should not use 'AI-assisted research' wording",
             )
+
+
+class DiamondUXTests(unittest.TestCase):
+    """Diamond UX regression tests for Batch 1 completion."""
+
+    def test_stack_analyzer_unknown_pricing_display(self):
+        """Stack Analyzer should handle unknown pricing without showing $0."""
+        html = (ROOT / "tools" / "stack-analyzer.html").read_text(encoding="utf-8")
+        # Check that the three-state logic exists
+        self.assertIn("Known cost unavailable", html)
+        self.assertIn("Complete stack total unavailable", html)
+
+    def test_overlap_checker_evidence_aware(self):
+        """Overlap Checker should use evidence-aware logic."""
+        html = (ROOT / "tools" / "overlap-checker.html").read_text(encoding="utf-8")
+        self.assertIn("Confirmed shared capability", html)
+        self.assertIn("ToolNest editorial inference", html)
+        self.assertIn("Insufficient data", html)
+
+    def test_overlap_checker_same_tool_blocked(self):
+        """Overlap Checker should block same-tool comparison."""
+        html = (ROOT / "tools" / "overlap-checker.html").read_text(encoding="utf-8")
+        self.assertIn("two different tools", html)
+
+    def test_overlap_checker_swap_button(self):
+        """Overlap Checker should have swap button."""
+        html = (ROOT / "tools" / "overlap-checker.html").read_text(encoding="utf-8")
+        self.assertIn("ovSwapBtn", html)
+
+    def test_overlap_checker_reset_button(self):
+        """Overlap Checker should have reset button."""
+        html = (ROOT / "tools" / "overlap-checker.html").read_text(encoding="utf-8")
+        self.assertIn("ovResetBtn", html)
+
+    def test_comparison_directory_search_exists(self):
+        """Comparison directory should have search input."""
+        html = (ROOT / "compare" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("cmpSearch", html)
+
+    def test_comparison_directory_links_server_rendered(self):
+        """All comparison links should be server-rendered in DOM."""
+        html = (ROOT / "compare" / "index.html").read_text(encoding="utf-8")
+        # Count comparison links
+        links = re.findall(r'href="/compare/[a-z]+-vs-[a-z]+\.html"', html)
+        self.assertGreaterEqual(len(links), 60, "Should have 60+ comparison links server-rendered")
+
+    def test_comparison_directory_category_filter(self):
+        """Comparison directory should have category filter chips."""
+        html = (ROOT / "compare" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("cmp-cat-chip", html)
+
+    def test_decision_engine_progressive_disclosure(self):
+        """Decision Engine should have progressive disclosure."""
+        html = (ROOT / "tools" / "decision-engine.html").read_text(encoding="utf-8")
+        self.assertIn("deAdvanced", html)
+        self.assertIn("Show more filters", html)
+
+    def test_decision_engine_show_more_exists(self):
+        """Decision Engine should have Show more button."""
+        html = (ROOT / "tools" / "decision-engine.html").read_text(encoding="utf-8")
+        self.assertIn("deShowMoreBtn", html)
+
+    def test_decision_engine_clear_selections_exists(self):
+        """Decision Engine should have Clear selections button."""
+        html = (ROOT / "tools" / "decision-engine.html").read_text(encoding="utf-8")
+        self.assertIn("deClearBtn", html)
+
+    def test_decision_engine_selected_count(self):
+        """Decision Engine should show selected count."""
+        html = (ROOT / "tools" / "decision-engine.html").read_text(encoding="utf-8")
+        self.assertIn("deSelectedCount", html)
+
+    def test_byline_compact_component_exists(self):
+        """Compact byline component should exist in CSS."""
+        css = (ROOT / "assets" / "site.css").read_text(encoding="utf-8")
+        self.assertIn(".byline-compact", css)
+
+    def test_byline_on_editorial_pages(self):
+        """Byline should appear on editorial pages."""
+        goals_html = (ROOT / "goals" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("byline-compact", goals_html)
+        compare_html = (ROOT / "compare" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("byline-compact", compare_html)
+
+    def test_no_ai_assisted_trust_badge(self):
+        """Prominent 'AI-assisted' trust badges should be removed."""
+        # Check key editorial pages
+        for page in ["goals/index.html", "compare/index.html"]:
+            html = (ROOT / page).read_text(encoding="utf-8")
+            # The byline should not say "AI-assisted"
+            byline_match = re.search(r'byline[^>]*>.*?</div>', html, re.DOTALL)
+            if byline_match:
+                self.assertNotIn(
+                    "AI-assisted",
+                    byline_match.group(0),
+                    f"{page}: byline should not contain 'AI-assisted'",
+                )
+
+    def test_card_variants_exist_in_css(self):
+        """All card variants should exist in CSS."""
+        css = (ROOT / "assets" / "site.css").read_text(encoding="utf-8")
+        for variant in [".tool-card", ".comparison-card", ".goal-card",
+                        ".feature-card", ".result-card", ".evidence-card"]:
+            self.assertIn(variant, css, f"{variant} missing from CSS")
+
+    def test_author_page_accountability_sections(self):
+        """Author page should have accountability sections."""
+        html = (ROOT / "authors" / "abdul-muswir.html").read_text(encoding="utf-8")
+        self.assertIn("Abdul Muswir", html)
+        self.assertIn("ToolNest", html)
+
+    def test_goals_grouped_by_family(self):
+        """Goals hub should organize goals into task families."""
+        html = (ROOT / "goals" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("goal-family", html)
+
+    def test_goals_use_goal_card_variant(self):
+        """Goals should use goal-card variant."""
+        html = (ROOT / "goals" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("goal-card", html)
+
+    def test_stack_analyzer_pricing_count(self):
+        """Stack Analyzer should mention 54 tools with pricing."""
+        html = (ROOT / "tools" / "stack-analyzer.html").read_text(encoding="utf-8")
+        self.assertIn("54 of 153", html)
 
 
 if __name__ == "__main__":

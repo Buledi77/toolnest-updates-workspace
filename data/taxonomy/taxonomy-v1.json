@@ -39,7 +39,8 @@
     {"id": "launch-a-website", "label": "Launch a website"}
   ],
   "controlled_values": {
-    "platforms": ["web", "ios", "android", "windows", "macos", "linux", "api", "desktop"],
+    "platforms": ["web", "ios", "android", "windows", "macos", "linux", "api", "desktop", "mobile", "browser extension"],
+    "integrations": ["discord", "slack", "zapier", "notion", "google-workspace", "microsoft-365"],
     "audiences": ["beginners", "freelancers", "small businesses", "agencies", "teams", "developers", "students"],
     "evidence_tiers": ["A", "B", "C"]
   }

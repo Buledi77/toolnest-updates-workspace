@@ -2462,7 +2462,7 @@
       "badge": "",
       "featured": false,
       "best": "Browser-based full-stack application builder by StackBlitz",
-      "logo": "/assets/logos/bolt.png",
+      "logo": null,
       "affiliateUrl": ""
     },
     {

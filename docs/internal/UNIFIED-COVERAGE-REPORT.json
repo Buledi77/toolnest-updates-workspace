@@ -2,8 +2,8 @@
   "schema_version": "unified-coverage-report-v1",
   "generated_at": "2026-11-20",
   "description": "Unified coverage report combining all data foundations. All totals reconcile with source records.",
-  "total_tools_in_catalog": 50,
-  "total_pages_evaluated": 198,
+  "total_tools_in_catalog": 153,
+  "total_pages_evaluated": 396,
   "assertions": [
     {
       "check": "no_duplicate_evidence_gap_ids",
@@ -13,12 +13,12 @@
     {
       "check": "no_duplicate_freshness_ids",
       "pass": true,
-      "detail": "198 pages, 198 unique"
+      "detail": "396 pages, 396 unique"
     },
     {
       "check": "commercial_data_matches_catalog",
-      "pass": true,
-      "detail": "50 tools vs 50 in catalog"
+      "pass": false,
+      "detail": "50 tools vs 153 in catalog"
     },
     {
       "check": "no_duplicate_commercial_ids",
@@ -27,28 +27,33 @@
     },
     {
       "check": "free_trial_matches_catalog",
-      "pass": true,
-      "detail": "50 tools vs 50 in catalog"
+      "pass": false,
+      "detail": "50 tools vs 153 in catalog"
     },
     {
       "check": "decision_engine_matches_catalog",
-      "pass": true,
-      "detail": "50 tools vs 50 in catalog"
+      "pass": false,
+      "detail": "50 tools vs 153 in catalog"
     },
     {
       "check": "stack_overlap_matches_catalog",
-      "pass": true,
-      "detail": "50 tools vs 50 in catalog"
-    },
-    {
-      "check": "grade_sum_tool_review",
-      "pass": true,
-      "detail": "tool_review: 50 pages, grade sum = 50"
+      "pass": false,
+      "detail": "50 tools vs 153 in catalog"
     },
     {
       "check": "grade_sum_compare",
       "pass": true,
-      "detail": "compare: 63 pages, grade sum = 63"
+      "detail": "compare: 67 pages, grade sum = 67"
+    },
+    {
+      "check": "grade_sum_category",
+      "pass": true,
+      "detail": "category: 17 pages, grade sum = 17"
+    },
+    {
+      "check": "grade_sum_alternatives",
+      "pass": true,
+      "detail": "alternatives: 138 pages, grade sum = 138"
     },
     {
       "check": "grade_sum_best",
@@ -56,18 +61,13 @@
       "detail": "best: 21 pages, grade sum = 21"
     },
     {
-      "check": "grade_sum_category",
+      "check": "grade_sum_tool_review",
       "pass": true,
-      "detail": "category: 14 pages, grade sum = 14"
-    },
-    {
-      "check": "grade_sum_alternatives",
-      "pass": true,
-      "detail": "alternatives: 50 pages, grade sum = 50"
+      "detail": "tool_review: 153 pages, grade sum = 153"
     }
   ],
-  "assertions_passed": 12,
-  "assertions_failed": 0,
+  "assertions_passed": 8,
+  "assertions_failed": 4,
   "coverage": {
     "evidence_gaps": {
       "tools_analyzed": 50,
@@ -95,35 +95,35 @@
       }
     },
     "freshness": {
-      "pages_analyzed": 198,
+      "pages_analyzed": 396,
       "summary": {
-        "total_pages": 198,
+        "total_pages": 396,
         "by_type": {
-          "tool_review": 50,
-          "compare": 63,
-          "alternatives": 50,
+          "tool_review": 153,
+          "compare": 67,
+          "alternatives": 138,
           "best": 21,
-          "category": 14
+          "category": 17
         },
         "editorial_review_distribution": {
-          "current": 163,
-          "missing_evidence": 35
+          "current": 358,
+          "missing_evidence": 38
         },
         "commercial_facts_distribution": {
-          "missing_evidence": 196,
-          "current": 2
+          "current": 77,
+          "missing_evidence": 319
         },
         "hands_on_tested_distribution": {
-          "not_applicable": 198
+          "not_applicable": 396
         },
         "overall_freshness_distribution": {
-          "missing_evidence": 196,
-          "current": 2
+          "current": 77,
+          "missing_evidence": 319
         },
-        "pages_with_tools_v2": 2,
-        "pages_with_evidence_ledger": 2,
+        "pages_with_tools_v2": 5,
+        "pages_with_evidence_ledger": 74,
         "pages_with_review_data": 0,
-        "pages_with_html_date": 163
+        "pages_with_html_date": 358
       }
     },
     "commercial": {
@@ -255,24 +255,27 @@
           "medium": 2
         },
         "gap_distribution": {},
-        "total_candidate_tools": 53,
-        "total_comparisons": 64,
-        "total_alternatives": 53
+        "total_candidate_tools": 66,
+        "total_comparisons": 76,
+        "total_alternatives": 66
       }
     },
     "category": {
-      "total_categories": 14,
-      "grade_a": 14,
-      "grade_b": 0,
-      "grade_c": 0
+      "total_categories": 17,
+      "grade_a": 15,
+      "grade_b": 1,
+      "grade_c": 1
     }
   },
   "quality_distribution": {
-    "tool_review:B": 29,
-    "tool_review:A": 21,
-    "compare:A": 63,
-    "alternatives:A": 50,
+    "tool_review:A": 137,
+    "tool_review:B": 16,
+    "compare:A": 67,
+    "alternatives:B": 38,
+    "alternatives:A": 100,
     "best:A": 21,
-    "category:A": 14
+    "category:C": 1,
+    "category:A": 15,
+    "category:B": 1
   }
 }

@@ -14,8 +14,18 @@
     "categories": [
       "Developer Tools"
     ],
-    "use_cases": [],
-    "audiences": [],
+    "use_cases": [
+      "prototyping",
+      "learning to code",
+      "collaborative development",
+      "quick deployment"
+    ],
+    "audiences": [
+      "students",
+      "solo developers",
+      "educators",
+      "small teams"
+    ],
     "platforms": [
       "web"
     ],
@@ -33,7 +43,9 @@
     "trial_status": [],
     "pricing_status": [],
     "pricing_regions": [],
-    "availability_regions": []
+    "availability_regions": [],
+    "concise_summary": "Cloud-based IDE and code collaboration platform with AI coding assistant (Ghostwriter), supporting multiple languages and one-click deployment.",
+    "primary_purpose": "Cloud development environment and AI-assisted coding"
   },
   "editorial": {
     "editorial_tier": "C",
@@ -53,8 +65,29 @@
     "replaced_by": []
   },
   "evidence": {
-    "claim_refs": [],
-    "source_ids": []
+    "claim_refs": [
+      {
+        "claim_id": "replit-pricing-verified"
+      },
+      {
+        "claim_id": "replit-capability-0"
+      },
+      {
+        "claim_id": "replit-capability-1"
+      },
+      {
+        "claim_id": "replit-capability-2"
+      },
+      {
+        "claim_id": "replit-limitation-0"
+      },
+      {
+        "claim_id": "replit-limitation-1"
+      }
+    ],
+    "source_ids": [
+      "replit-pricing"
+    ]
   },
   "monetization": {
     "affiliate_status": "unknown",

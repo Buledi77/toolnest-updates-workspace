@@ -135,7 +135,7 @@ task-first recommendation adapter, not by the static alternatives pages.
 
 ## g) Tests and CI
 
-The repository has seven Python test modules under `tests/`:
+The repository has 22 Python test modules under `tests/`:
 
 - `test_catalog_intake.py`
 - `test_catalog_integrity.py`
@@ -144,6 +144,9 @@ The repository has seven Python test modules under `tests/`:
 - `test_search_and_publishability.py`
 - `test_site_quality.py`
 - `test_stack_builder.py`
+- `test_freshness_pipeline.py` — Freshness recheck pipeline tests
+- `test_browser_qa.py` — Browser QA automation tests
+- (plus 14 other test modules)
 
 There is one workflow, `.github/workflows/decision-graph-validation.yml`. It
 runs on pull requests changing the Decision Graph, scripts, tests, or related
@@ -162,7 +165,30 @@ Run the static SEO checker with:
 scripts/qa-check
 ```
 
-To mirror the workflow's validation sequence, run:
+### h) Freshness and Browser QA pipelines (added 2026-11-23)
+
+**Freshness recheck pipeline** — automated detection and rechecking of stale facts:
+
+```bash
+python3 scripts/freshness_recheck_pipeline.py              # Dry run, generate report
+python3 scripts/freshness_recheck_pipeline.py --apply      # Apply updates to ledger and v2 records
+python3 scripts/freshness_recheck_pipeline.py --as-of 2026-11-23  # Use specific date
+```
+
+Outputs: `reports/phase6/freshness-recheck-report.json`
+
+**Browser QA automation** — Playwright-based cross-viewport testing of all HTML pages:
+
+```bash
+python3 scripts/browser_qa.py                              # Test all pages
+python3 scripts/browser_qa.py --sample 50                  # Test 50 pages
+```
+
+Outputs: `reports/phase6/browser-qa-report.json`
+
+### i) Validation pipeline (complete)
+
+All 16 validation gates pass. To mirror the full validation sequence, run:
 
 ```bash
 python3 scripts/validate_decision_graph.py
@@ -180,5 +206,6 @@ python3 scripts/check_legacy_parity.py
 python3 scripts/check_publishability.py
 python3 scripts/build_search_index.py
 python3 scripts/check_site_quality.py
+python3 scripts/validate_real_catalog.py
 python3 -m unittest discover -s tests -p 'test_*.py'
 ```

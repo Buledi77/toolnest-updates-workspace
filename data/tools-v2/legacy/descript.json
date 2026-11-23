@@ -81,8 +81,20 @@
     "replaced_by": []
   },
   "evidence": {
-    "claim_refs": [],
-    "source_ids": []
+    "claim_refs": [
+      {
+        "claim_id": "descript-pricing-verified"
+      },
+      {
+        "claim_id": "descript-free-plan"
+      },
+      {
+        "claim_id": "descript-capabilities"
+      }
+    ],
+    "source_ids": [
+      "descript-pricing"
+    ]
   },
   "monetization": {
     "affiliate_status": "unknown",
@@ -111,5 +123,84 @@
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
+  },
+  "decision_readiness": {
+    "state": "PARTIALLY_VERIFIED",
+    "verified_fields": 4,
+    "total_fields": 11,
+    "verification_percentage": 36,
+    "total_evidence_claims": 3,
+    "strong_verified_count": 4,
+    "editorial_count": 0,
+    "data_present_count": 6,
+    "field_details": {
+      "core_use_case": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "0 v1 tags, 1 v2 tags"
+      },
+      "meaningful_capabilities": {
+        "verified": true,
+        "evidence_status": "VERIFIED_OFFICIAL",
+        "has_data": true,
+        "detail": "3 v1 pros, 3 v2 caps"
+      },
+      "important_limitations": {
+        "verified": false,
+        "evidence_status": "UNKNOWN",
+        "has_data": false,
+        "detail": "0 v1 cons, 0 skipIf, 0 v2 lims"
+      },
+      "platform": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "0 v1 platforms, 1 v2 platforms"
+      },
+      "pricing_model": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "model=tiered subscription"
+      },
+      "pricing_state": {
+        "verified": true,
+        "evidence_status": "VERIFIED_OFFICIAL",
+        "has_data": true,
+        "detail": "4 tiers"
+      },
+      "free_plan_status": {
+        "verified": true,
+        "evidence_status": "VERIFIED_OFFICIAL",
+        "has_data": true,
+        "detail": "available=True"
+      },
+      "trial_status": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "available=False"
+      },
+      "target_user": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "0 v1 bestFor, 1 v2 best_for"
+      },
+      "meaningful_alternatives": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "0 v1 alts, 3 v2 alts, 0 verified"
+      },
+      "evidence_freshness": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "3 total claims, 3 recent"
+      }
+    },
+    "evaluated_at": "2026-11-23T05:26:50.823545"
   }
 }

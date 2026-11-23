@@ -24,14 +24,18 @@
 
 <style>
 .de-wrap{max-width:960px;margin:0 auto}
-.de-filters{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;margin:24px 0;box-shadow:var(--shadow)}
+.de-filters{background:var(--surface);border:2px solid color-mix(in srgb,var(--accent-decision) 30%,var(--line));border-radius:16px;padding:24px;margin:24px 0;box-shadow:var(--shadow)}
+.de-filters-header{display:flex;align-items:center;gap:12px;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.de-filters-header h3{font-size:18px;font-weight:700;margin:0;color:var(--accent-decision)}
+.de-filters-header svg{width:24px;height:24px;flex-shrink:0;color:var(--accent-decision);fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .de-filter-group{margin-bottom:20px}
 .de-filter-group:last-child{margin-bottom:0}
 .de-filter-label{font-weight:600;font-size:14px;color:var(--muted);margin-bottom:8px;display:block;text-transform:uppercase;letter-spacing:.03em}
 .de-chips{display:flex;flex-wrap:wrap;gap:8px}
 .de-chip{padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-size:13px;font-weight:500;cursor:pointer;transition:all .2s ease;user-select:none}
-.de-chip:hover{border-color:var(--brand);color:var(--brand)}
-.de-chip.active{background:var(--brand);color:#fff;border-color:var(--brand)}
+.de-chip:hover{border-color:var(--accent-decision);color:var(--accent-decision)}
+.de-chip.active{background:var(--accent-decision);color:#fff;border-color:var(--accent-decision)}
+.de-chip:focus-visible{outline:3px solid var(--ring);outline-offset:2px}
 .de-toggle-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
 .de-toggle{position:relative;width:44px;height:24px;border-radius:12px;background:var(--line);cursor:pointer;transition:background .2s ease;flex-shrink:0}
 .de-toggle.on{background:var(--brand)}
@@ -41,9 +45,28 @@
 .de-search{width:100%;padding:12px 16px;font:500 16px var(--font-body);border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);margin-bottom:16px}
 .de-search:focus{outline:none;border-color:var(--ring);box-shadow:0 0 0 3px rgba(15,107,92,.15)}
 .de-search::placeholder{color:var(--muted);font-weight:400}
-.de-run-btn{display:block;width:100%;padding:14px 24px;border-radius:12px;border:none;background:var(--brand);color:#fff;font:600 16px var(--font-body);cursor:pointer;transition:background .2s ease,transform .2s ease;margin-top:16px}
-.de-run-btn:hover{background:#0a5c50;transform:translateY(-1px)}
+.de-run-btn{display:block;width:100%;padding:14px 24px;border-radius:12px;border:none;background:var(--accent-decision);color:#fff;font:600 16px var(--font-body);cursor:pointer;transition:background .2s ease,transform .2s ease;margin-top:16px;box-shadow:0 8px 20px -8px var(--accent-decision)}
+.de-run-btn:hover{background:#047857;transform:translateY(-1px)}
 .de-run-btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+
+/* Step progress indicator */
+.de-steps{display:flex;align-items:center;gap:0;margin:24px 0 0;padding:20px 24px;background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
+.de-step{flex:1;text-align:center;position:relative}
+.de-step-inner{display:flex;flex-direction:column;align-items:center;gap:6px}
+.de-step-num{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-size:14px;font-weight:700;border:2px solid var(--line);color:var(--muted);background:var(--bg);transition:all .3s ease}
+.de-step.active .de-step-num{border-color:var(--accent-decision);background:var(--accent-decision);color:#fff}
+.de-step.done .de-step-num{border-color:var(--accent-decision);color:var(--accent-decision)}
+.de-step-label{font-size:12px;font-weight:600;color:var(--muted);transition:color .3s ease}
+.de-step.active .de-step-label{color:var(--accent-decision)}
+.de-step.done .de-step-label{color:var(--ink)}
+.de-step-connector{flex:1;height:2px;background:var(--line);align-self:center;margin:0 8px;margin-top:-16px}
+.de-step-connector.done{background:var(--accent-decision)}
+@media(max-width:640px){
+ .de-steps{flex-direction:column;gap:12px;padding:16px}
+ .de-step-connector{display:none}
+ .de-step-inner{flex-direction:row;gap:12px;width:100%}
+ .de-step-label{text-align:left}
+}
 .de-results{margin-top:24px}
 .de-result-count{font-size:15px;color:var(--muted);margin-bottom:16px;font-weight:500}
 .de-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:16px;box-shadow:var(--shadow);transition:box-shadow .2s ease}
@@ -66,7 +89,8 @@
 .de-score-num.high{color:#0F6B5C}
 .de-score-num.medium{color:#7C3AED}
 .de-score-num.low{color:#B45309}
-.de-confidence{font-size:14px;font-weight:700;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.de-confidence{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;padding:5px 12px;border-radius:999px;white-space:nowrap}
+.de-confidence svg{width:14px;height:14px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
 .de-confidence.high{background:rgba(15,107,92,.15);color:#0F6B5C}
 .de-confidence.medium{background:rgba(124,58,237,.15);color:#7C3AED}
 .de-confidence.low{background:rgba(180,83,9,.15);color:#B45309}
@@ -97,6 +121,22 @@
 .de-empty .de-empty-icon{font-size:48px;margin-bottom:16px;opacity:.5}
 .de-note{font-size:13px;color:var(--muted);margin-top:16px;line-height:1.6;padding:12px 16px;background:var(--soft);border-radius:10px;border-left:3px solid var(--brand)}
 .de-note a{color:var(--brand);text-decoration:underline;text-underline-offset:3px}
+.de-details{margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
+.de-details-summary{font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;padding:4px 0;list-style:none}
+.de-details-summary::-webkit-details-marker{display:none}
+.de-details-summary::before{content:"▸ ";color:var(--brand)}
+.de-details[open] .de-details-summary::before{content:"▾ ";color:var(--brand)}
+.de-details-content{padding:8px 0 0;font-size:13px;color:var(--muted);line-height:1.6}
+.de-controls-bar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:16px 0}
+.de-show-more-btn{padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-size:13px;font-weight:600;cursor:pointer;transition:all .2s ease}
+.de-show-more-btn:hover{background:var(--soft);color:var(--brand)}
+.de-clear-btn{padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:#B45309;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s ease}
+.de-clear-btn:hover{background:rgba(180,83,9,.08)}
+.de-selected-count{font-size:13px;color:var(--muted);font-weight:500}
+.de-goals-quick{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+.de-goal-btn{padding:10px 18px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:14px;font-weight:500;cursor:pointer;transition:all .2s ease;font-family:var(--font-body)}
+.de-goal-btn:hover{border-color:var(--brand);background:var(--soft);transform:translateY(-1px)}
+.de-goal-btn:active{transform:translateY(0)}
 .de-loading{text-align:center;padding:40px;color:var(--muted)}
 .de-loading .spinner{display:inline-block;width:32px;height:32px;border:3px solid var(--line);border-top-color:var(--brand);border-radius:50%;animation:de-spin .8s linear infinite}
 @keyframes de-spin{to{transform:rotate(360deg)}}
@@ -138,11 +178,11 @@
 </span>
 </a>
 <nav aria-label="Main">
-<a href="/tools/index.html">Tools</a>
+<a href="/tools/index.html" aria-current="page">Tools</a>
 <a href="/category/index.html">Categories</a>
 <a href="/compare/index.html">Compare</a>
 <a href="/best/index.html">Best of</a>
-<a class="btn" href="/tools/decision-engine.html">Decision Engine</a>
+<a class="btn" href="/tools/decision-engine.html">Find my tool</a>
 </nav>
 <button class="mnav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav">
 <span class="mnav-ico" aria-hidden="true">
@@ -156,7 +196,7 @@
 <a href="/compare/index.html">Compare</a>
 <a href="/alternatives/index.html">Alternatives</a>
 <a href="/best/index.html">Best of</a>
-<a class="btn" href="/tools/decision-engine.html">Decision Engine</a>
+<a class="btn" href="/tools/decision-engine.html">Find my tool</a>
 </nav>
 </header>
 
@@ -197,9 +237,47 @@
 </section>
 
 <section class="p-sec">
-<h2>Configure your search</h2>
+<h2>Quick start — pick a goal</h2>
+<div class="de-goals-quick" id="deGoalsQuick" role="group" aria-label="Quick start goals">
+<button class="de-goal-btn" data-use-cases="project management,task tracking" data-categories="Project Management">📋 Manage projects</button>
+<button class="de-goal-btn" data-use-cases="writing,editing" data-categories="Writing">✍️ Write and edit</button>
+<button class="de-goal-btn" data-use-cases="design,prototyping" data-categories="Design">🎨 Design</button>
+<button class="de-goal-btn" data-use-cases="email marketing,newsletter" data-categories="Email Marketing">📧 Email marketing</button>
+<button class="de-goal-btn" data-use-cases="accounting,invoicing" data-categories="Productivity">💰 Accounting</button>
+<button class="de-goal-btn" data-use-cases="code generation,ai coding" data-categories="Developer Tools">💻 Code with AI</button>
+<button class="de-goal-btn" data-use-cases="video editing,content creation" data-categories="Media">🎬 Create content</button>
+<button class="de-goal-btn" data-use-cases="crm,sales" data-categories="Sales">📊 Sales & CRM</button>
+</div>
+<p class="de-note" style="margin-top:8px">Click a goal to auto-fill criteria, or configure manually below.</p>
+
+<div class="de-steps" id="deSteps" aria-label="Progress">
+<div class="de-step active" data-step="1">
+<div class="de-step-inner">
+<span class="de-step-num">1</span>
+<span class="de-step-label">Choose filters</span>
+</div>
+</div>
+<div class="de-step-connector" data-conn="1"></div>
+<div class="de-step" data-step="2">
+<div class="de-step-inner">
+<span class="de-step-num">2</span>
+<span class="de-step-label">Run search</span>
+</div>
+</div>
+<div class="de-step-connector" data-conn="2"></div>
+<div class="de-step" data-step="3">
+<div class="de-step-inner">
+<span class="de-step-num">3</span>
+<span class="de-step-label">Review results</span>
+</div>
+</div>
+</div>
 
 <div class="de-filters" id="deFilters">
+<div class="de-filters-header">
+<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><line x1="21" y1="21" x2="16.4" y2="16.4"/></svg>
+<h3>What are you looking for?</h3>
+</div>
 <div class="de-filter-group">
 <label class="de-filter-label" for="deSearch">Search tools</label>
 <input type="text" class="de-search" id="deSearch" placeholder="Type to filter tools by name…" autocomplete="off">
@@ -215,6 +293,7 @@
 <div class="de-chips" id="deCategories" role="group" aria-label="Select categories"></div>
 </div>
 
+<div class="de-advanced" id="deAdvanced" style="display:none">
 <div class="de-filter-group" style="display:none">
 <span class="de-filter-label">Platforms</span>
 <div class="de-chips" id="dePlatforms" role="group" aria-label="Select platforms"></div>
@@ -234,6 +313,13 @@
 <div class="de-note" style="margin-top:12px">
 <strong>ℹ️ Note:</strong> Some filters (Free Plan, Platform) are currently disabled because verified data coverage is insufficient. We are actively expanding our dataset. <a href="/how-we-test.html">Learn about our data standards</a>.
 </div>
+</div>
+
+<div class="de-controls-bar">
+<button class="de-show-more-btn" id="deShowMoreBtn" type="button">Show more filters</button>
+<button class="de-clear-btn" id="deClearBtn" type="button" style="display:none">Clear selections</button>
+<span class="de-selected-count" id="deSelectedCount" style="display:none"></span>
+</div>
 
 <button class="de-run-btn" id="deRunBtn" type="button">Find My Tools</button>
 </div>
@@ -250,11 +336,12 @@
 
 <section class="p-sec">
 <h2>Scoring methodology</h2>
-<p>Each tool is scored out of 90 points using these transparent rules:</p>
+<p>Each tool receives two separate metrics: a <strong>Fit Score</strong> (how well it matches your criteria) and <strong>Evidence Confidence</strong> (how much verified data supports the recommendation).</p>
+<h3>Fit Score (out of 90)</h3>
 <div class="p-feats">
 <div class="p-feat">
 <b>Use Case Match (40 points)</b>
-<p>How many of your selected use cases match the tool's verified use case tags.</p>
+<p>How many of your selected use cases match the tool's verified use case tags. If no use case data exists, this dimension is skipped rather than penalized.</p>
 </div>
 <div class="p-feat">
 <b>Category Match (20 points)</b>
@@ -262,14 +349,30 @@
 </div>
 <div class="p-feat">
 <b>Best For Match (20 points)</b>
-<p>How many of your selected use cases match the tool's "best for" descriptions.</p>
+<p>How many of your selected use cases match the tool's "best for" descriptions. If no best-for data exists, this dimension is skipped.</p>
 </div>
 <div class="p-feat">
 <b>Platform Match (10 points)</b>
-<p>Whether the tool is available on your selected platforms.</p>
+<p>Whether the tool is available on your selected platforms. If no platform data exists, this dimension is skipped.</p>
 </div>
 </div>
-<p class="de-note">⚠️ <strong>Data limitation:</strong> Only 4 of 153 tools currently have detailed pricing data. Budget-based filtering is not yet available. We are actively expanding this dataset. <a href="/how-we-test.html">Learn about our data standards</a>.</p>
+<h3>Evidence Confidence</h3>
+<p>Shows how much verified data supports each recommendation:</p>
+<div class="p-feats">
+<div class="p-feat">
+<b>Strong evidence</b>
+<p>3+ verified data fields (use cases, category, best-for, platform, pricing). Recommendation is well-supported.</p>
+</div>
+<div class="p-feat">
+<b>Moderate evidence</b>
+<p>1-2 verified data fields. Some gaps remain — check the full profile for details.</p>
+</div>
+<div class="p-feat">
+<b>Limited evidence</b>
+<p>Few or no verified data fields. Recommendation may be based on category match alone.</p>
+</div>
+</div>
+<p class="de-note">⚠️ <strong>Three-state reasoning:</strong> When data is missing (UNKNOWN), the engine does not count it as a match or mismatch — it simply skips that dimension and reports the gap. This prevents tools with incomplete data from being unfairly ranked. <a href="/how-we-test.html">Learn about our data standards</a>.</p>
 </section>
 
 <section class="p-sec">
@@ -313,9 +416,12 @@
 
  var TOOLS_URL = "/data/tools-v1.json";
  var CONFIG_URL = "/data/decision-engine-config.json";
+ var BUNDLE_URL = "/data/decision-engine-bundle.json";
 
  var tools = [];
  var config = null;
+ var bundleTools = []; // Tools merged with evidence data from ledger
+ var bundleLoaded = false;
  var allUseCases = [];
  var selectedUseCases = [];
  var selectedCategories = [];
@@ -333,6 +439,25 @@
  var elSearch = document.getElementById("deSearch");
  var elFreeToggle = document.getElementById("deFreePlanToggle");
  var elConsToggle = document.getElementById("deShowConsToggle");
+ var elSteps = document.getElementById("deSteps");
+
+ // Step progress management
+ function setStep(currentStep){
+ if(!elSteps) return;
+ var steps = elSteps.querySelectorAll(".de-step");
+ var conns = elSteps.querySelectorAll(".de-step-connector");
+ for(var i=0;i<steps.length;i++){
+ var stepNum = parseInt(steps[i].getAttribute("data-step"));
+ steps[i].className = "de-step";
+ if(stepNum < currentStep) steps[i].classList.add("done");
+ if(stepNum === currentStep) steps[i].classList.add("active");
+ }
+ for(var i=0;i<conns.length;i++){
+ var connNum = parseInt(conns[i].getAttribute("data-conn"));
+ conns[i].className = "de-step-connector";
+ if(connNum < currentStep) conns[i].classList.add("done");
+ }
+ }
 
  // Initialize
  function init(){
@@ -351,10 +476,21 @@
  }
 
  function loadTools(){
+ // Load base tools for filter UI, then load evidence bundle for scoring
  fetch(TOOLS_URL).then(function(r){return r.json();}).then(function(d){
  tools = d.tools || [];
  buildUseCaseList();
  renderFilters();
+ // Load evidence bundle for scoring
+ return fetch(BUNDLE_URL).then(function(r){return r.json();});
+ }).then(function(bundle){
+ bundleTools = bundle.tools || [];
+ bundleLoaded = true;
+ }).catch(function(e){
+ // Fallback: use base tools if bundle fails
+ console.warn("Evidence bundle not available, using base tools:", e);
+ bundleTools = tools;
+ bundleLoaded = false;
  }).catch(function(e){
  elResults.innerHTML = '<div class="de-empty"><h3>Error loading data</h3><p>Could not load tool data. Please try refreshing the page.</p></div>';
  console.error("Failed to load tools:", e);
@@ -461,6 +597,7 @@
  else selectedPlatforms = selectedPlatforms.filter(function(v){return v!==val;});
  }
  updateUrlState();
+ updateSelectedCount();
  }
 
  // Toggle switches
@@ -483,8 +620,76 @@
  bindToggle(elFreeToggle, function(v){ freePlanOnly = v; });
  bindToggle(elConsToggle, function(v){ showCons = v; });
 
+ var elShowMoreBtn = document.getElementById("deShowMoreBtn");
+ var elClearBtn = document.getElementById("deClearBtn");
+ var elSelectedCount = document.getElementById("deSelectedCount");
+ var elAdvanced = document.getElementById("deAdvanced");
+ var advancedOpen = false;
+
+ function updateSelectedCount(){
+ var count = selectedUseCases.length + selectedCategories.length;
+ if(count > 0){
+ elClearBtn.style.display = "";
+ elSelectedCount.style.display = "";
+ elSelectedCount.textContent = count + " filter" + (count>1?"s":"") + " active";
+ } else {
+ elClearBtn.style.display = "none";
+ elSelectedCount.style.display = "none";
+ }
+ }
+
  function bindEvents(){
  elRunBtn.addEventListener("click", runEngine);
+
+ // Show more/less
+ if(elShowMoreBtn){
+ elShowMoreBtn.addEventListener("click", function(){
+ advancedOpen = !advancedOpen;
+ if(advancedOpen){
+ elAdvanced.style.display = "block";
+ elShowMoreBtn.textContent = "Show less";
+ } else {
+ elAdvanced.style.display = "none";
+ elShowMoreBtn.textContent = "Show more filters";
+ }
+ });
+ }
+
+ // Clear selections
+ if(elClearBtn){
+ elClearBtn.addEventListener("click", function(){
+ selectedUseCases = [];
+ selectedCategories = [];
+ renderUseCaseChips();
+ renderCategoryChips();
+ updateSelectedCount();
+ });
+ }
+
+ // Quick-start goal buttons
+ var goalBtns = document.querySelectorAll('.de-goal-btn');
+ goalBtns.forEach(function(btn){
+ btn.addEventListener('click', function(){
+ var useCases = btn.getAttribute('data-use-cases').split(',').map(function(s){return s.trim();});
+ var categories = btn.getAttribute('data-categories').split(',').map(function(s){return s.trim();});
+ // Clear current selections
+ selectedUseCases = [];
+ selectedCategories = [];
+ // Set new selections
+ useCases.forEach(function(uc){
+ if(useCaseSet.has(uc)) selectedUseCases.push(uc);
+ });
+ categories.forEach(function(cat){
+ if(categorySet.has(cat)) selectedCategories.push(cat);
+ });
+ // Update UI
+ renderUseCaseChips();
+ renderCategoryChips();
+ updateSelectedCount();
+ // Scroll to results and run
+ document.getElementById('deFilters').scrollIntoView({behavior:'smooth', block:'start'});
+ });
+ });
  elSearch.addEventListener("input", function(){
  searchQuery = elSearch.value.trim().toLowerCase();
  filterToolList();
@@ -507,6 +712,7 @@
 
  // Core scoring engine
  function runEngine(){
+ setStep(2);
  elResults.innerHTML = '<div class="de-loading"><div class="spinner"></div><p>Scoring tools…</p></div>';
  elRunBtn.disabled = true;
 
@@ -514,6 +720,7 @@
  setTimeout(function(){
  var scored = scoreAllTools();
  renderResults(scored);
+ setStep(3);
  elRunBtn.disabled = false;
  updateUrlState();
  }, 50);
@@ -521,21 +728,51 @@
 
  function scoreAllTools(){
  var results = [];
+ // Use bundle tools (with evidence) if available, otherwise fall back to base tools
+ var scoringTools = bundleLoaded ? bundleTools : tools;
 
- for(var i=0;i<tools.length;i++){
- var t = tools[i];
+ for(var i=0;i<scoringTools.length;i++){
+ var t = scoringTools[i];
 
- // Free plan filter
+ // Free plan filter — only when verified unavailable
  if(freePlanOnly){
  var fp = (t.pricing && t.pricing.freePlan) || {};
- if(!fp.available) continue;
+ if(fp.available === false) continue;
+ // If unknown (null/undefined), do NOT filter — just lower confidence
  }
 
  var score = 0;
  var reasons = [];
+ var tradeoffs = [];
+ var evidenceNotes = [];
+ var recommendationTrace = []; // Step 3: machine-readable trace
 
- // 1. Use Case Match (40 points)
+ // Track which scoring dimensions have data
+ var hasUseCaseData = !!(t.useCaseTags && t.useCaseTags.length > 0);
+ var hasBestForData = !!(t.bestFor && t.bestFor.length > 0);
+ var hasPlatformData = !!(t.platforms && t.platforms.length > 0);
+ var hasPricingData = !!(t.pricing && t.pricing.tiers && t.pricing.tiers.length > 0);
+ var hasConsData = !!(t.cons && t.cons.length > 0);
+
+ // Evidence confidence from bundle (Step 2: evidence-to-scoring integration)
+ var evidenceConfidence = t.evidence_confidence || null;
+ var evidenceLevel, verifiedFields, hasConflict;
+ if(evidenceConfidence){
+ // Use evidence-based confidence from the ledger
+ evidenceLevel = evidenceConfidence.level;
+ verifiedFields = evidenceConfidence.verified_count + evidenceConfidence.editorial_count;
+ hasConflict = evidenceConfidence.has_conflict || false;
+ } else {
+ // Fallback: bundle unavailable — never show strong confidence without evidence
+ evidenceLevel = "limited";
+ verifiedFields = 0;
+ hasConflict = false;
+ }
+
+ // 1. Use Case Match (40 points) — THREE-STATE
  if(selectedUseCases.length > 0){
+ if(hasUseCaseData){
+ // VERIFIED MATCH — tool has use case data
  var ucTags = t.useCaseTags || [];
  var ucMatches = 0;
  for(var j=0;j<selectedUseCases.length;j++){
@@ -549,11 +786,46 @@
  var ucScore = Math.round((ucMatches / selectedUseCases.length) * 40);
  score += ucScore;
  if(ucMatches > 0){
- reasons.push({rule:"Use Case Match",points:ucScore,max:40,detail:ucMatches + " of " + selectedUseCases.length + " use cases matched"});
+ reasons.push({rule:"Use Case Match",points:ucScore,max:40,detail:ucMatches + " of " + selectedUseCases.length + " use cases matched",state:"VERIFIED_MATCH"});
+ // Trace entry
+ recommendationTrace.push({
+ requirement:"use_case_match",
+ field:"useCaseTags",
+ rule:"Use Case Match",
+ points:ucScore,
+ max:40,
+ state:"VERIFIED_MATCH",
+ unknown_effect:"none"
+ });
+ } else {
+ // VERIFIED MISMATCH — has data but doesn't match
+ tradeoffs.push("Use case tags do not match your selected criteria");
+ recommendationTrace.push({
+ requirement:"use_case_match",
+ field:"useCaseTags",
+ rule:"Use Case Match",
+ points:0,
+ max:40,
+ state:"VERIFIED_MISMATCH",
+ unknown_effect:"none"
+ });
+ }
+ } else {
+ // UNKNOWN — no use case data, do NOT score positively
+ evidenceNotes.push("Use case data unavailable");
+ recommendationTrace.push({
+ requirement:"use_case_match",
+ field:"useCaseTags",
+ rule:"Use Case Match",
+ points:0,
+ max:40,
+ state:"UNKNOWN",
+ unknown_effect:"dimension_skipped"
+ });
  }
  }
 
- // 2. Category Match (20 points)
+ // 2. Category Match (20 points) — VERIFIED
  if(selectedCategories.length > 0){
  var catMatch = false;
  for(var j=0;j<selectedCategories.length;j++){
@@ -564,12 +836,35 @@
  }
  if(catMatch){
  score += 20;
- reasons.push({rule:"Category Match",points:20,max:20,detail:"Tool is in the \"" + t.cat + "\" category"});
+ reasons.push({rule:"Category Match",points:20,max:20,detail:"Tool is in the \"" + t.cat + "\" category",state:"VERIFIED_MATCH"});
+ recommendationTrace.push({
+ requirement:"category_match",
+ field:"cat",
+ rule:"Category Match",
+ points:20,
+ max:20,
+ state:"VERIFIED_MATCH",
+ unknown_effect:"none"
+ });
+ } else if(t.cat){
+ // VERIFIED MISMATCH — category known but doesn't match
+ tradeoffs.push("Category \"" + t.cat + "\" does not match your selected categories");
+ recommendationTrace.push({
+ requirement:"category_match",
+ field:"cat",
+ rule:"Category Match",
+ points:0,
+ max:20,
+ state:"VERIFIED_MISMATCH",
+ unknown_effect:"none"
+ });
  }
  }
 
- // 3. Best For Match (20 points)
+ // 3. Best For Match (20 points) — THREE-STATE
  if(selectedUseCases.length > 0){
+ if(hasBestForData){
+ // VERIFIED MATCH — tool has bestFor data
  var bfTags = t.bestFor || [];
  var bfMatches = 0;
  for(var j=0;j<selectedUseCases.length;j++){
@@ -583,12 +878,36 @@
  var bfScore = Math.round((bfMatches / selectedUseCases.length) * 20);
  score += bfScore;
  if(bfMatches > 0){
- reasons.push({rule:"Best For Match",points:bfScore,max:20,detail:bfMatches + " of " + selectedUseCases.length + " use cases in bestFor"});
+ reasons.push({rule:"Best For Match",points:bfScore,max:20,detail:bfMatches + " of " + selectedUseCases.length + " use cases in bestFor",state:"VERIFIED_MATCH"});
+ recommendationTrace.push({
+ requirement:"best_for_match",
+ field:"bestFor",
+ rule:"Best For Match",
+ points:bfScore,
+ max:20,
+ state:"VERIFIED_MATCH",
+ unknown_effect:"none"
+ });
+ }
+ } else {
+ // UNKNOWN — no bestFor data, do NOT score positively
+ evidenceNotes.push("Best-for data unavailable");
+ recommendationTrace.push({
+ requirement:"best_for_match",
+ field:"bestFor",
+ rule:"Best For Match",
+ points:0,
+ max:20,
+ state:"UNKNOWN",
+ unknown_effect:"dimension_skipped"
+ });
  }
  }
 
- // 4. Platform Match (10 points)
+ // 4. Platform Match (10 points) — THREE-STATE
  if(selectedPlatforms.length > 0){
+ if(hasPlatformData){
+ // VERIFIED — tool has platform data
  var tPlats = t.platforms || [];
  var platMatches = 0;
  for(var j=0;j<selectedPlatforms.length;j++){
@@ -602,17 +921,63 @@
  var platScore = Math.round((platMatches / selectedPlatforms.length) * 10);
  score += platScore;
  if(platMatches > 0){
- reasons.push({rule:"Platform Match",points:platScore,max:10,detail:"Available on " + platMatches + " of " + selectedPlatforms.length + " selected platforms"});
+ reasons.push({rule:"Platform Match",points:platScore,max:10,detail:"Available on " + platMatches + " of " + selectedPlatforms.length + " selected platforms",state:"VERIFIED_MATCH"});
+ recommendationTrace.push({
+ requirement:"platform_match",
+ field:"platforms",
+ rule:"Platform Match",
+ points:platScore,
+ max:10,
+ state:"VERIFIED_MATCH",
+ unknown_effect:"none"
+ });
+ } else {
+ // VERIFIED MISMATCH — platform data exists but no match
+ tradeoffs.push("Platform availability does not match your requirements");
+ recommendationTrace.push({
+ requirement:"platform_match",
+ field:"platforms",
+ rule:"Platform Match",
+ points:0,
+ max:10,
+ state:"VERIFIED_MISMATCH",
+ unknown_effect:"none"
+ });
+ }
+ } else {
+ // UNKNOWN — no platform data
+ evidenceNotes.push("Platform data unavailable");
+ recommendationTrace.push({
+ requirement:"platform_match",
+ field:"platforms",
+ rule:"Platform Match",
+ points:0,
+ max:10,
+ state:"UNKNOWN",
+ unknown_effect:"dimension_skipped"
+ });
  }
  }
 
+ // Check for category-only generic match (low confidence signal)
+ var isCategoryOnly = (score > 0 && !hasUseCaseData && !hasBestForData);
+ if(isCategoryOnly){
+ tradeoffs.push("Recommendation based primarily on category match — limited detailed data available");
+ }
 
  // Only include tools with score >= 5
  if(score >= 5){
  results.push({
  tool: t,
  score: score,
- reasons: reasons
+ reasons: reasons,
+ tradeoffs: tradeoffs,
+ evidenceLevel: evidenceLevel,
+ verifiedFields: verifiedFields,
+ evidenceNotes: evidenceNotes,
+ isCategoryOnly: isCategoryOnly,
+ hasConflict: hasConflict,
+ recommendationTrace: recommendationTrace
  });
  }
  }
@@ -629,9 +994,9 @@
  }
 
  function getConfidence(score){
- if(score >= 63) return {level:"high",label:"Strong Match"};
- if(score >= 36) return {level:"medium",label:"Good Match"};
- return {level:"low",label:"Possible Match"};
+ if(score >= 63) return {level:"high",label:"Strong match"};
+ if(score >= 36) return {level:"medium",label:"Good match"};
+ return {level:"low",label:"Possible match"};
  }
 
  function renderResults(results){
@@ -676,6 +1041,8 @@
  var r = results[i];
  var t = r.tool;
  var conf = getConfidence(r.score);
+ var evLabel = r.evidenceLevel === "strong" ? "Strong evidence" : r.evidenceLevel === "moderate" ? "Moderate evidence" : "Limited evidence";
+ var evClass = r.evidenceLevel === "strong" ? "high" : r.evidenceLevel === "moderate" ? "medium" : "low";
 
  html += '<div class="de-card">';
  html += '<div class="de-card-header">';
@@ -690,32 +1057,61 @@
  }
  html += '</div></div>';
 
- // Score bar
+ // Score bar with evidence confidence
  html += '<div class="de-card-score">';
  html += '<div class="de-score-bar"><div class="de-score-fill ' + conf.level + '" style="width:' + r.score + '%"></div></div>';
  html += '<span class="de-score-num ' + conf.level + '">' + r.score + '</span>';
- html += '<span class="de-confidence ' + conf.level + '">' + conf.label + '</span>';
+ var confIcon = conf.level === "high" ? '<svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>' : conf.level === "medium" ? '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>' : '<svg viewBox="0 0 24 24"><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>';
+ html += '<span class="de-confidence ' + conf.level + '">' + confIcon + conf.label + '</span>';
  html += '</div>';
 
- // Reasons
- html += '<div class="de-reasons"><h4>Why this scored ' + r.score + '/90</h4>';
- if(r.reasons.length === 0){
- html += '<p class="de-insufficient">Insufficient structured evidence — this tool scored based on partial data. View the full profile for more detail.</p>';
- } else {
+ // Evidence confidence badge
+ var evDetail = r.verifiedFields + ' verified field' + (r.verifiedFields !== 1 ? 's' : '');
+ if(r.hasConflict){
+ evDetail += ' · ⚠️ Conflicting sources detected';
+ }
+ html += '<div style="margin-bottom:12px"><span class="de-confidence ' + evClass + '" style="font-size:12px">' + evLabel + ' (' + evDetail + ')</span></div>';
+ // Conflict badge
+ if(r.hasConflict){
+ html += '<div style="margin-bottom:8px"><span class="de-confidence low" style="font-size:11px">⚠️ Official information currently conflicts — confidence reduced</span></div>';
+ }
+
+ // Why It Matched section
+ if(r.reasons.length > 0){
+ html += '<div class="de-reasons"><h4>Why it matched</h4>';
  for(var j=0;j<r.reasons.length;j++){
  var reason = r.reasons[j];
  html += '<div class="de-reason"><span class="de-reason-icon">✓</span><span><strong>' + escapeHtml(reason.rule) + '</strong> (' + reason.points + '/' + reason.max + '): ' + escapeHtml(reason.detail) + '</span></div>';
  }
- }
  html += '</div>';
+ }
 
- // Cons
+ // Trade-offs section
+ if(r.tradeoffs && r.tradeoffs.length > 0){
+ html += '<div class="de-cons"><h4>Trade-offs &amp; limitations</h4><ul>';
+ for(var j=0;j<r.tradeoffs.length;j++){
+ html += '<li>' + escapeHtml(r.tradeoffs[j]) + '</li>';
+ }
+ html += '</ul></div>';
+ }
+
+ // Cons (known drawbacks)
  if(showCons && t.cons && t.cons.length > 0){
  html += '<div class="de-cons"><h4>Known drawbacks</h4><ul>';
  for(var j=0;j<t.cons.length;j++){
  html += '<li>' + escapeHtml(t.cons[j]) + '</li>';
  }
  html += '</ul></div>';
+ }
+
+ // Expandable "Why this recommendation?"
+ if(r.evidenceNotes && r.evidenceNotes.length > 0){
+ html += '<details class="de-details"><summary class="de-details-summary">Why this recommendation?</summary><div class="de-details-content">';
+ html += '<p class="de-insufficient">Insufficient structured evidence — Data gaps: ';
+ for(var j=0;j<r.evidenceNotes.length;j++){
+ html += (j > 0 ? ', ' : '') + escapeHtml(r.evidenceNotes[j]);
+ }
+ html += '</p></div></details>';
  }
 
  // Actions
@@ -730,7 +1126,13 @@
  html += '</div>';
  }
 
- html += '<p class="de-note">⚠️ <strong>Transparency note:</strong> Scores are based on structured data from ' + tools.length + ' reviewed tools. When use case tags or best-for data is missing, the engine marks the match as "insufficient structured evidence" rather than penalizing the tool. <a href="/how-we-test.html">Learn about our data standards</a>.</p>';
+ // Add limited-data notice when evidence bundle is unavailable
+ if(!bundleLoaded){
+ html = '<div class="de-limited-notice" role="alert"><strong>⚠️ Limited data available.</strong> The evidence verification bundle could not be loaded, so all recommendations show reduced confidence. Scores are based on basic field presence only and do not reflect verified evidence. <a href="/how-we-test.html">Learn about our data standards</a>.</div>' + html;
+ console.warn("Decision Engine: evidence bundle unavailable — showing limited-data notice");
+ }
+
+ html += '<p class="de-note">⚠️ <strong>Transparency note:</strong> Scores are based on structured data from ' + tools.length + ' reviewed tools. Each result shows a separate <strong>Fit Score</strong> (how well the tool matches your criteria) and <strong>Evidence Confidence</strong> (how much verified data supports this tool). When data is missing, the engine shows gaps rather than guessing. <a href="/how-we-test.html">Learn about our data standards</a>.</p>';
 
  elResults.innerHTML = html;
  }

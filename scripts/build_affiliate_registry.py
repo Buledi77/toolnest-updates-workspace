@@ -20,8 +20,8 @@ def build(records):
         entries.append(
             {
                 "tool_id": identity["id"],
-                "official_non_affiliate_url": monetization["official_non_affiliate_url"],
-                "affiliate_status": monetization["affiliate_status"],
+                "official_non_affiliate_url": monetization.get("official_non_affiliate_url"),
+                "affiliate_status": monetization.get("affiliate_status", "unknown"),
                 "affiliate_network": monetization.get("affiliate_network"),
                 "affiliate_url": monetization.get("affiliate_url"),
                 "approved_regions": monetization.get("approved_regions", []),

@@ -13,6 +13,7 @@
         {"value": "Automation", "label": "Automation"},
         {"value": "Customer Support", "label": "Customer Support"},
         {"value": "Design", "label": "Design"},
+        {"value": "Developer Tools", "label": "Developer Tools"},
         {"value": "Email Marketing", "label": "Email Marketing"},
         {"value": "Hosting", "label": "Hosting"},
         {"value": "Image Generation", "label": "Image Generation"},
@@ -69,7 +70,8 @@
         "weight": 40,
         "description": "Tool's useCaseTags match your selected use cases",
         "calculation": "percentage_of_selected_use_cases_matched * weight",
-        "max_points": 40
+        "max_points": 40,
+        "evidence_state": "VERIFIED_MATCH when tags exist and match, UNKNOWN when tags missing"
       },
       {
         "id": "category_match",
@@ -77,7 +79,8 @@
         "weight": 20,
         "description": "Tool is in one of your selected categories",
         "calculation": "binary_match * weight",
-        "max_points": 20
+        "max_points": 20,
+        "evidence_state": "VERIFIED_MATCH when category matches, VERIFIED_MISMATCH when it doesn't"
       },
       {
         "id": "best_for_match",
@@ -85,7 +88,8 @@
         "weight": 20,
         "description": "Tool's bestFor tags match your selected use cases",
         "calculation": "percentage_of_selected_use_cases_matched * weight",
-        "max_points": 20
+        "max_points": 20,
+        "evidence_state": "VERIFIED_MATCH when bestFor exists and matches, UNKNOWN when missing"
       },
       {
         "id": "platform_match",
@@ -93,11 +97,55 @@
         "weight": 10,
         "description": "Tool is available on your selected platforms",
         "calculation": "percentage_of_selected_platforms_matched * weight",
-        "max_points": 10
+        "max_points": 10,
+        "evidence_state": "VERIFIED_MATCH when platforms match, UNKNOWN when platform data missing"
       }
     ],
+    "evidence_confidence": {
+      "description": "Separate from fit score. Measures how much verified data supports this tool's profile.",
+      "levels": {
+        "strong": {
+          "min_verified_fields": 3,
+          "label": "Strong evidence",
+          "description": "Multiple verified data points support this recommendation"
+        },
+        "moderate": {
+          "min_verified_fields": 1,
+          "label": "Moderate evidence",
+          "description": "Some verified data points, but gaps remain"
+        },
+        "limited": {
+          "min_verified_fields": 0,
+          "label": "Limited evidence",
+          "description": "Few or no verified data points — recommendation based on category match only"
+        }
+      }
+    },
+    "disqualifiers": {
+      "description": "High-impact filters that reduce eligibility when evidence supports them. UNKNOWN data lowers confidence but does not disqualify.",
+      "rules": [
+        {
+          "id": "platform_unavailable",
+          "condition": "User requires platform X, tool explicitly does not support it",
+          "action": "Reduce score by 20 points",
+          "evidence_required": true
+        },
+        {
+          "id": "free_plan_unavailable",
+          "condition": "User requires free plan, tool verified as paid-only",
+          "action": "Reduce score by 15 points",
+          "evidence_required": true
+        },
+        {
+          "id": "pricing_incompatible",
+          "condition": "User has budget constraint, tool pricing exceeds it",
+          "action": "Reduce score by 10 points",
+          "evidence_required": true
+        }
+      ]
+    },
     "total_max_score": 90,
-    "minimum_score_to_show": 10,
+    "minimum_score_to_show": 5,
     "sort_by": "total_score_desc"
   },
 
@@ -108,9 +156,9 @@
     "show_alternatives_link": true,
     "show_comparison_link": true,
     "confidence_levels": {
-      "high": {"min_score": 63, "label": "Strong Match", "color": "#0F6B5C"},
-      "medium": {"min_score": 36, "label": "Good Match", "color": "#7C3AED"},
-      "low": {"min_score": 5, "label": "Possible Match", "color": "#B45309"}
+      "high": {"min_score": 63, "label": "Strong match", "color": "#0F6B5C"},
+      "medium": {"min_score": 36, "label": "Good match", "color": "#7C3AED"},
+      "low": {"min_score": 5, "label": "Possible match", "color": "#B45309"}
     }
   },
 

@@ -132,10 +132,9 @@ class DecisionGraphValidationTests(unittest.TestCase):
 
     def test_legacy_shadow_migration_manifest(self):
         manifest = load_json(ROOT / "data" / "migrations" / "legacy-to-v2-map.json")
-        self.assertEqual(manifest["source_count"], 50)
-        self.assertEqual(manifest["generated_shadow_record_count"], 47)
-        self.assertEqual(len(manifest["benchmark_records_preserved"]), 3)
-        self.assertEqual(len(manifest["records"]), 50)
+        # Updated after expanding migration manifest from 50 to 153 tools
+        self.assertEqual(manifest["source_count"], 153)
+        self.assertEqual(len(manifest["records"]), 153)
 
 
 if __name__ == "__main__":

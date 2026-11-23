@@ -14,8 +14,18 @@
     "categories": [
       "Developer Tools"
     ],
-    "use_cases": [],
-    "audiences": [],
+    "use_cases": [
+      "UI component generation",
+      "rapid prototyping",
+      "React app scaffolding",
+      "design-to-code"
+    ],
+    "audiences": [
+      "React developers",
+      "frontend designers",
+      "Vercel users",
+      "startups"
+    ],
     "platforms": [
       "web"
     ],
@@ -33,7 +43,9 @@
     "trial_status": [],
     "pricing_status": [],
     "pricing_regions": [],
-    "availability_regions": []
+    "availability_regions": [],
+    "concise_summary": "AI-powered full-stack app builder by Vercel that generates React and Next.js code from natural language prompts with deploy-to-Vercel integration.",
+    "primary_purpose": "AI-generated React/Next.js app building"
   },
   "editorial": {
     "editorial_tier": "C",
@@ -53,8 +65,29 @@
     "replaced_by": []
   },
   "evidence": {
-    "claim_refs": [],
-    "source_ids": []
+    "claim_refs": [
+      {
+        "claim_id": "v0-pricing-verified"
+      },
+      {
+        "claim_id": "v0-capability-0"
+      },
+      {
+        "claim_id": "v0-capability-1"
+      },
+      {
+        "claim_id": "v0-capability-2"
+      },
+      {
+        "claim_id": "v0-limitation-0"
+      },
+      {
+        "claim_id": "v0-limitation-1"
+      }
+    ],
+    "source_ids": [
+      "v0-pricing"
+    ]
   },
   "monetization": {
     "affiliate_status": "unknown",

@@ -106,8 +106,14 @@
     "replaced_by": []
   },
   "evidence": {
-    "claim_refs": [],
-    "source_ids": [],
+    "claim_refs": [
+      {
+        "claim_id": "bolt-pricing-verified"
+      }
+    ],
+    "source_ids": [
+      "bolt-pricing"
+    ],
     "handsOn": false,
     "evidenceStatus": "Research-based, not a ToolNest hands-on test"
   },
@@ -233,5 +239,84 @@
       "checkedOn": "2026-11-22"
     }
   ],
-  "lastReviewed": "2026-11-22"
+  "lastReviewed": "2026-11-22",
+  "decision_readiness": {
+    "state": "PARTIALLY_VERIFIED",
+    "verified_fields": 1,
+    "total_fields": 11,
+    "verification_percentage": 9,
+    "total_evidence_claims": 1,
+    "strong_verified_count": 1,
+    "editorial_count": 1,
+    "data_present_count": 8,
+    "field_details": {
+      "core_use_case": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "0 v1 tags, 4 v2 tags"
+      },
+      "meaningful_capabilities": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "0 v1 pros, 6 v2 caps"
+      },
+      "important_limitations": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "0 v1 cons, 0 skipIf, 5 v2 lims"
+      },
+      "platform": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "0 v1 platforms, 1 v2 platforms"
+      },
+      "pricing_model": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "model=tiered subscription by tokens"
+      },
+      "pricing_state": {
+        "verified": false,
+        "evidence_status": "EDITORIAL",
+        "has_data": true,
+        "detail": "3 tiers"
+      },
+      "free_plan_status": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "available=True"
+      },
+      "trial_status": {
+        "verified": false,
+        "evidence_status": "UNKNOWN",
+        "has_data": false,
+        "detail": "available=None"
+      },
+      "target_user": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "0 v1 bestFor, 3 v2 best_for"
+      },
+      "meaningful_alternatives": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "0 v1 alts, 3 v2 alts, 0 verified"
+      },
+      "evidence_freshness": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "1 total claims, 1 recent"
+      }
+    },
+    "evaluated_at": "2026-11-23T05:26:50.813063"
+  }
 }

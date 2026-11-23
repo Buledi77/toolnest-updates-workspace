@@ -62,6 +62,27 @@
 .ov-filter button:hover,.ov-filter button.active{background:var(--brand);color:#fff;border-color:var(--brand)}
 .ov-empty{text-align:center;padding:40px 20px;color:var(--muted)}
 .ov-empty p{font-size:16px;margin:0}
+.ov-swap-btn-wrap{display:flex;align-items:flex-end;justify-content:center;padding-bottom:18px}
+.ov-swap-btn{padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-size:13px;font-weight:600;cursor:pointer;transition:all .2s ease}
+.ov-swap-btn:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
+.ov-actions-bar{display:flex;justify-content:center;margin:12px 0}
+.ov-reset-btn{padding:8px 18px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-size:13px;font-weight:600;cursor:pointer;transition:all .2s ease}
+.ov-reset-btn:hover{background:var(--soft);color:var(--brand)}
+.ov-evidence-quality{font-size:13px;font-weight:600;color:var(--muted);margin:0 0 8px;text-transform:uppercase;letter-spacing:.05em}
+.ov-evidence{margin:16px 0;padding:16px;background:var(--soft);border-radius:12px}
+.ov-evidence h4{font-size:14px;font-weight:600;margin:0 0 10px;color:var(--ink)}
+.ov-evidence-item{padding:8px 12px;margin-bottom:6px;border-radius:8px;font-size:13px;line-height:1.5}
+.ov-evidence-item:last-child{margin-bottom:0}
+.ov-evidence-confirmed{background:rgba(15,107,92,.08);border-left:3px solid var(--brand);color:var(--ink)}
+.ov-evidence-editorial{background:rgba(124,58,237,.06);border-left:3px solid #7C3AED;color:var(--ink)}
+.ov-evidence-page{background:rgba(59,130,246,.06);border-left:3px solid #3B82F6;color:var(--ink)}
+.ov-evidence-weak{background:rgba(180,83,9,.06);border-left:3px solid #B45309;color:var(--muted)}
+.ov-tags-section{margin:16px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.ov-tags-shared,.ov-tags-unique{padding:12px;background:var(--soft);border-radius:10px}
+.ov-tags-shared h4,.ov-tags-unique h4{font-size:13px;font-weight:600;margin:0 0 6px;color:var(--ink)}
+.ov-tags-shared ul,.ov-tags-unique ul{margin:0;padding-left:16px}
+.ov-tags-shared li,.ov-tags-unique li{font-size:13px;line-height:1.5;color:var(--muted);margin-bottom:2px}
+.ov-data-warning{margin:16px 0;padding:12px 16px;background:rgba(180,83,9,.06);border:1px solid rgba(180,83,9,.2);border-radius:10px;font-size:13px;color:var(--muted);line-height:1.5}
 @media(max-width:640px){
  .ov-selectors{grid-template-columns:1fr}
  .ov-tools{grid-template-columns:1fr}
@@ -96,7 +117,7 @@
 </span>
 </a>
 <nav aria-label="Main">
-<a href="/tools/index.html">Tools</a>
+<a href="/tools/index.html" aria-current="page">Tools</a>
 <a href="/category/index.html">Categories</a>
 <a href="/compare/index.html">Compare</a>
 <a href="/best/index.html">Best of</a>
@@ -140,7 +161,7 @@
 <li>Whether a side-by-side comparison exists</li>
 <li>Links to relevant alternatives pages</li>
 </ul>
-<p class="ov-note">This tool uses structured data from 50 reviewed tools and 63 comparison pages. It does not estimate pricing or infer overlap from category alone.</p>
+<p class="ov-note">This tool uses structured data from all 153 reviewed tools across ToolNest. Overlap is detected via shared categories, alternative relationships, and use-case tags.</p>
 </section>
 
 <section class="p-sec">
@@ -152,17 +173,23 @@
 
 <div class="ov-selectors">
 <div>
-<label class="ov-label" for="ovToolA">First tool</label>
+<label class="ov-label" for="ovToolA">Tool A</label>
 <select id="ovToolA" aria-label="Select first tool">
 <option value="">Select a tool…</option>
 </select>
 </div>
+<div class="ov-swap-btn-wrap">
+<button class="ov-swap-btn" id="ovSwapBtn" type="button" aria-label="Swap tools" title="Swap tools" style="margin-top:28px">⇄ Swap</button>
+</div>
 <div>
-<label class="ov-label" for="ovToolB">Second tool</label>
+<label class="ov-label" for="ovToolB">Tool B</label>
 <select id="ovToolB" aria-label="Select second tool">
 <option value="">Select a tool…</option>
 </select>
 </div>
+</div>
+<div class="ov-actions-bar">
+<button class="ov-reset-btn" id="ovResetBtn" type="button">Reset</button>
 </div>
 
 <div class="ov-result" id="ovResult" role="region" aria-live="polite" aria-label="Overlap analysis result">
@@ -229,8 +256,77 @@
 
 <script>
 (function(){
- var D = {"tools":{"notion":{"name":"Notion","cat":"Productivity","best":"Notes, tasks and client work in one place","pros":["One home for notes and to-dos","Templates to start fast","Good for solo work"],"logo":"/assets/logos/notion.png","site":"https://www.notion.com"},"grammarly":{"name":"Grammarly","cat":"Writing","best":"Clear English in emails and proposals","pros":["Fixes mistakes as you type","Works in many apps","Helps with polite tone"],"logo":"/assets/logos/grammarly.png","site":"https://www.grammarly.com"},"elevenlabs":{"name":"ElevenLabs","cat":"Voice & Video","best":"Voiceovers for videos and courses","pros":["Very natural voices","Many languages","Narrate without recording"],"logo":"/assets/logos/elevenlabs.png","site":"https://elevenlabs.io"},"descript":{"name":"Descript","cat":"Voice & Video","best":"Editing video and podcasts like a document","pros":["Edit by editing the text","Automatic transcripts","Removes filler words fast"],"logo":"/assets/logos/descript.png","site":"https://www.descript.com"},"jasper":{"name":"Jasper","cat":"Marketing","best":"Ad copy and product page writing","pros":["Templates made for marketing","Keeps your brand voice","Good for teams"],"logo":"/assets/logos/jasper.png","site":"https://www.jasper.AI"},"semrush":{"name":"Semrush","cat":"SEO","best":"Finding keywords and checking competitors","pros":["Deep keyword research","Shows what rivals rank for","Many SEO tools in one"],"logo":"/assets/logos/semrush.png","site":"https://www.semrush.com"},"systeme":{"name":"Systeme.io","cat":"Sales","best":"Sales pages, email lists and online courses","pros":["Pages, email and checkout together","Easy to start with","Can replace several separate subscriptions"],"logo":"/assets/logos/systeme.png","site":"https://systeme.io"},"hostinger":{"name":"Hostinger","cat":"Hosting","best":"Hosting and building a website or online store","pros":["Hosting, domain and site builder in one account","Beginner-friendly plans","Free SSL listed on its plans"],"logo":"/assets/logos/hostinger.png","site":"https://www.hostinger.com"},"canva":{"name":"Canva","cat":"Design","best":"Social graphics, presentations and simple brand designs","pros":["Large template library","Easy drag-and-drop editor","Useful for teams and brand kits"],"logo":"/assets/logos/canva.png","site":"https://www.canva.com"},"framer":{"name":"Framer","cat":"Website Builder","best":"Modern landing pages and design-led marketing websites","pros":["Visual responsive design","Fast publishing and hosting","Strong animation and interaction tools"],"logo":"/assets/logos/framer.png","site":"https://www.framer.com"},"beehiiv":{"name":"beehiiv","cat":"Email Marketing","best":"Publishing and growing a monetized newsletter","pros":["Newsletter publishing tools","Audience growth features","Built-in monetization options"],"logo":"/assets/logos/beehiiv.png","site":"https://www.beehiiv.com"},"kit":{"name":"Kit","cat":"Email Marketing","best":"Creator email lists, automations and digital product funnels","pros":["Creator-focused automations","Landing pages and forms","Tag-based subscriber organization"],"logo":"/assets/logos/kit.png","site":"https://kit.com"},"zapier":{"name":"Zapier","cat":"Automation","best":"Connecting apps and automating repetitive workflows","pros":["Large app integration ecosystem","No-code workflow builder","Useful templates for common automations"],"logo":"/assets/logos/zapier.png","site":"https://zapier.com"},"chatgpt":{"name":"ChatGPT","cat":"AI Assistants","best":"General writing, brainstorming, analysis and everyday AI help","pros":["Flexible general assistant","Works across many task types","Supports iterative conversations"],"logo":"/assets/logos/chatgpt.png","site":"https://chatgpt.com"},"claude":{"name":"Claude","cat":"AI Assistants","best":"Long-form analysis, writing and structured reasoning","pros":["Handles long documents","Clear structured responses","Useful for writing and coding"],"logo":"/assets/logos/claude.png","site":"https://claude.AI"},"gemini":{"name":"Gemini","cat":"AI Assistants","best":"AI help connected with Google products and multimodal work","pros":["Google ecosystem fit","Multimodal prompts","General research and drafting"],"logo":"/assets/logos/gemini.png","site":"https://gemini.google.com"},"perplexity":{"name":"Perplexity","cat":"Research","best":"Web research with visible source links","pros":["Source-led answers","Fast topic summaries","Useful follow-up questions"],"logo":"/assets/logos/perplexity.png","site":"https://www.perplexity.AI"},"notebooklm":{"name":"NotebookLM","cat":"Research","best":"Studying and asking questions across your own sources","pros":["Source-grounded notebooks","Document summaries","Research organization"],"logo":"/assets/logos/notebooklm.png","site":"https://notebooklm.google.com"},"quillbot":{"name":"QuillBot","cat":"Writing","best":"Paraphrasing, rewriting and summarizing text","pros":["Multiple rewrite modes","Summarizer included","Browser-based workflow"],"logo":"/assets/logos/quillbot.png","site":"https://quillbot.com"},"prowritingaid":{"name":"ProWritingAid","cat":"Writing","best":"Detailed writing reports for long-form authors","pros":["Style reports","Grammar checking","Long-form writing focus"],"logo":"/assets/logos/prowritingaid.png","site":"https://prowritingaid.com"},"hemingway":{"name":"Hemingway Editor","cat":"Writing","best":"Making sentences clearer and easier to read","pros":["Readability guidance","Highlights complex sentences","Simple editing workflow"],"logo":"/assets/logos/hemingway.png","site":"https://hemingwayapp.com"},"copyai":{"name":"Copy.AI","cat":"Marketing","best":"Sales and marketing content workflows","pros":["Marketing templates","Workflow automation","Team-oriented content"],"logo":"/assets/logos/copyai.png","site":"https://www.copy.AI"},"writesonic":{"name":"Writesonic","cat":"Writing","best":"Marketing articles, landing pages and campaign drafts","pros":["Content drafting","Marketing use cases","Built-in editing tools"],"logo":"/assets/logos/writesonic.png","site":"https://writesonic.com"},"ahrefs":{"name":"Ahrefs","cat":"SEO","best":"Backlink research, keywords and competitor SEO analysis","pros":["Backlink data","Keyword research","Competitive analysis"],"logo":"/assets/logos/ahrefs.png","site":"https://ahrefs.com"},"mozpro":{"name":"Moz Pro","cat":"SEO","best":"Keyword tracking and site SEO campaigns","pros":["Rank tracking","Site crawling","Keyword research"],"logo":"/assets/logos/mozpro.png","site":"https://moz.com/products/pro"},"surferseo":{"name":"Surfer SEO","cat":"SEO","best":"Optimizing articles around search intent and on-page signals","pros":["Content editor","On-page guidance","SERP-based suggestions"],"logo":"/assets/logos/surferseo.png","site":"https://surferseo.com"},"screamingfrog":{"name":"Screaming Frog","cat":"SEO","best":"Technical crawling and finding website SEO issues","pros":["Deep site crawl","Redirect checks","Metadata auditing"],"logo":"/assets/logos/screamingfrog.png","site":"https://www.screamingfrog.co.uk/seo-spider/"},"make":{"name":"Make","cat":"Automation","best":"Visual multi-step workflow automation across apps","pros":["Visual scenario builder","Advanced branching","Large integration library"],"logo":"/assets/logos/make.png","site":"https://www.make.com"},"n8n":{"name":"n8n","cat":"Automation","best":"Flexible workflow automation with technical control","pros":["Self-hosting option","Custom workflow logic","Developer-friendly integrations"],"logo":"/assets/logos/n8n.png","site":"https://n8n.io"},"ifttt":{"name":"IFTTT","cat":"Automation","best":"Simple personal and smart-device automations","pros":["Easy applets","Consumer app support","Quick trigger-action setup"],"logo":"/assets/logos/ifttt.png","site":"https://ifttt.com"},"figma":{"name":"Figma","cat":"Design","best":"Collaborative interface design and prototyping","pros":["Real-time collaboration","Interactive prototypes","Reusable design systems"],"logo":"/assets/logos/figma.png","site":"https://www.figma.com"},"adobeexpress":{"name":"Adobe Express","cat":"Design","best":"Quick social graphics, videos and brand content","pros":["Ready-made templates","Simple editing tools","Adobe asset connections"],"logo":"/assets/logos/adobeexpress.png","site":"https://www.adobe.com/express/"},"midjourney":{"name":"Midjourney","cat":"Image Generation","best":"Stylized AI images and creative visual concepts","pros":["Strong artistic output","Style exploration","Rapid visual ideation"],"logo":"/assets/logos/midjourney.png","site":"https://www.midjourney.com"},"leonardo":{"name":"Leonardo AI","cat":"Image Generation","best":"AI images, assets and creative production","pros":["Multiple image models","Asset generation","Creative controls"],"logo":"/assets/logos/leonardo.png","site":"https://leonardo.AI"},"removebg":{"name":"remove.bg","cat":"Design","best":"Removing image backgrounds quickly","pros":["Automatic cutouts","Fast web workflow","API available"],"logo":"/assets/logos/removebg.png","site":"https://www.remove.bg"},"runway":{"name":"Runway","cat":"Voice & Video","best":"AI-assisted video generation and creative editing","pros":["Generative video tools","Browser-based editing","Visual effects workflows"],"logo":"/assets/logos/runway.png","site":"https://runwayml.com"},"synthesia":{"name":"Synthesia","cat":"Voice & Video","best":"Presenter-style videos using AI avatars","pros":["Avatar presentations","Multiple languages","Business video templates"],"logo":"/assets/logos/synthesia.png","site":"https://www.synthesia.io"},"invideo":{"name":"InVideo","cat":"Voice & Video","best":"Creating marketing and social videos from prompts","pros":["Template library","Prompt-based creation","Stock media workflow"],"logo":"/assets/logos/invideo.png","site":"https://invideo.io"},"kapwing":{"name":"Kapwing","cat":"Voice & Video","best":"Collaborative online video editing for social content","pros":["Browser-based editor","Captions and resizing","Team collaboration"],"logo":"/assets/logos/kapwing.png","site":"https://www.kapwing.com"},"otter":{"name":"Otter.AI","cat":"Productivity","best":"Meeting transcription and searchable notes","pros":["Live transcription","Speaker notes","Meeting summaries"],"logo":"/assets/logos/otter.png","site":"https://otter.AI"},"fireflies":{"name":"Fireflies.AI","cat":"Productivity","best":"Recording, transcribing and reviewing meetings","pros":["Meeting transcripts","Searchable conversations","CRM integrations"],"logo":"/assets/logos/fireflies.png","site":"https://fireflies.AI"},"clickup":{"name":"ClickUp","cat":"Productivity","best":"Tasks, documents and team project management","pros":["Flexible task views","Docs and goals","Team workflows"],"logo":"/assets/logos/clickup.png","site":"https://clickup.com"},"asana":{"name":"Asana","cat":"Productivity","best":"Planning projects and coordinating team work","pros":["Project timelines","Task dependencies","Team reporting"],"logo":"/assets/logos/asana.png","site":"https://asana.com"},"monday":{"name":"monday.com","cat":"Productivity","best":"Custom work boards for projects and operations","pros":["Customizable boards","Automation recipes","Visual dashboards"],"logo":"/assets/logos/monday.png","site":"https://monday.com"},"todoist":{"name":"Todoist","cat":"Productivity","best":"Personal tasks and lightweight team planning","pros":["Quick task capture","Recurring tasks","Cross-device apps"],"logo":"/assets/logos/todoist.png","site":"https://todoist.com"},"webflow":{"name":"Webflow","cat":"Website Builder","best":"Visual websites with CMS and design control","pros":["Visual web design","Built-in CMS","Managed hosting"],"logo":"/assets/logos/webflow.png","site":"https://webflow.com"},"squarespace":{"name":"Squarespace","cat":"Website Builder","best":"Polished websites and portfolios with templates","pros":["Professional templates","Built-in commerce","Managed hosting"],"logo":"/assets/logos/squarespace.png","site":"https://www.squarespace.com"},"mailchimp":{"name":"Mailchimp","cat":"Email Marketing","best":"Email campaigns, basic automation and audience management","pros":["Campaign builder","Audience segmentation","Marketing automations"],"logo":"/assets/logos/mailchimp.png","site":"https://mailchimp.com"},"brevo":{"name":"Brevo","cat":"Email Marketing","best":"Email, SMS and customer communication campaigns","pros":["Email automation","SMS options","Contact management"],"logo":"/assets/logos/brevo.png","site":"https://www.brevo.com"},"hubspot":{"name":"HubSpot","cat":"Sales","best":"CRM, marketing and sales workflows in one platform","pros":["Free CRM entry point","Marketing automation","Sales pipeline tools"],"logo":"/assets/logos/hubspot.png","site":"https://www.hubspot.com"}},"categories":{"AI Assistants":["chatgpt","claude","gemini"],"Automation":["ifttt","make","n8n","zapier"],"Design":["adobeexpress","canva","figma","removebg"],"Email Marketing":["beehiiv","brevo","kit","mailchimp"],"Hosting":["hostinger"],"Image Generation":["leonardo","midjourney"],"Marketing":["copyai","jasper"],"Productivity":["asana","clickup","fireflies","monday","notion","otter","todoist"],"Research":["notebooklm","perplexity"],"SEO":["ahrefs","mozpro","screamingfrog","semrush","surferseo"],"Sales":["hubspot","systeme"],"Voice & Video":["descript","elevenlabs","invideo","kapwing","runway","synthesia"],"Website Builder":["framer","squarespace","webflow"],"Writing":["grammarly","hemingway","prowritingaid","quillbot","writesonic"]},"alternatives":{"adobeexpress":["canva","removebg","figma","descript","kit"],"ahrefs":["screamingfrog","semrush","mozpro","descript","surferseo","make"],"asana":["notion","descript","otter","fireflies"],"beehiiv":["descript","kit","mailchimp","brevo"],"brevo":["beehiiv","descript","kit","mailchimp"],"canva":["descript","figma","adobeexpress","removebg","kapwing","ifttt","zapier"],"chatgpt":["notion","descript","claude","gemini"],"claude":["chatgpt","gemini","notion","descript"],"clickup":["fireflies","notion","descript","otter"],"copyai":["jasper","notion","grammarly","descript"],"descript":["chatgpt","asana","canva","fireflies","todoist","leonardo","removebg","hostinger","monday","screamingfrog","jasper","elevenlabs","runway","synthesia","gemini","framer","systeme","notebooklm","prowritingaid","claude","beehiiv","semrush","kapwing","clickup","hubspot","invideo","writesonic","copyai","notion","ifttt","midjourney","hemingway","quillbot","brevo","mailchimp","webflow","squarespace","perplexity","make","mozpro","n8n","otter","ahrefs","surferseo","figma","grammarly","adobeexpress","zapier","kit"],"elevenlabs":["hostinger","descript","invideo","synthesia","runway"],"figma":["canva","removebg","kapwing","descript","kit","adobeexpress"],"fireflies":["asana","notion","descript","otter","clickup","todoist","monday"],"framer":["notion","descript","webflow","squarespace"],"gemini":["chatgpt","notion","descript","claude"],"grammarly":["leonardo","hostinger","jasper","systeme","notebooklm","prowritingaid","hubspot","writesonic","copyai","midjourney","hemingway","quillbot","perplexity","descript"],"hemingway":["prowritingaid","grammarly","descript","quillbot"],"hostinger":["notion","grammarly","elevenlabs","descript"],"hubspot":["systeme","notion","grammarly","descript"],"ifttt":["descript","canva","zapier","make","n8n"],"invideo":["elevenlabs","descript","runway"],"jasper":["notion","grammarly","descript","copyai"],"kapwing":["descript","canva","kit","figma","runway"],"kit":["removebg","beehiiv","kapwing","brevo","mailchimp","figma","adobeexpress","descript"],"leonardo":["notion","grammarly","descript","midjourney"],"mailchimp":["beehiiv","brevo","descript","kit"],"make":["ifttt","descript","zapier","n8n","mozpro","ahrefs"],"midjourney":["leonardo","notion","grammarly","descript"],"monday":["notion","descript","otter","fireflies"],"mozpro":["screamingfrog","semrush","descript","ahrefs","surferseo","make"],"n8n":["ifttt","make","descript","zapier"],"notebooklm":["notion","grammarly","descript","perplexity"],"notion":["chatgpt","asana","fireflies","todoist","leonardo","hostinger","monday","jasper","gemini","framer","systeme","notebooklm","claude","clickup","hubspot","copyai","descript","otter","midjourney","webflow","squarespace","perplexity"],"otter":["asana","fireflies","todoist","monday","clickup","notion","descript"],"perplexity":["notebooklm","notion","grammarly","descript"],"prowritingaid":["grammarly","descript","quillbot","hemingway","writesonic"],"quillbot":["prowritingaid","writesonic","hemingway","grammarly","descript"],"removebg":["canva","descript","kit","figma","adobeexpress"],"runway":["descript","kapwing","invideo","synthesia","elevenlabs"],"screamingfrog":["descript","semrush","ahrefs","mozpro"],"semrush":["screamingfrog","descript","ahrefs","mozpro","surferseo"],"squarespace":["framer","webflow","notion","descript"],"surferseo":["semrush","mozpro","ahrefs","descript"],"synthesia":["descript","elevenlabs","runway"],"systeme":["notion","grammarly","descript","hubspot"],"todoist":["notion","descript","otter","fireflies"],"webflow":["framer","notion","descript","squarespace"],"writesonic":["grammarly","descript","quillbot","prowritingaid"],"zapier":["ifttt","make","n8n","descript","canva"]},"shared_jobs":{"adobeexpress":["canva","figma","removebg"],"ahrefs":["semrush","mozpro","surferseo","screamingfrog"],"asana":["notion","otter","fireflies","clickup","monday","todoist"],"beehiiv":["kit","mailchimp","brevo"],"brevo":["beehiiv","kit","mailchimp"],"canva":["figma","adobeexpress","removebg"],"chatgpt":["claude","gemini"],"claude":["chatgpt","gemini"],"clickup":["notion","otter","fireflies","asana","monday","todoist"],"copyai":["jasper"],"descript":["elevenlabs","runway","synthesia","invideo","kapwing"],"elevenlabs":["descript","runway","synthesia","invideo","kapwing"],"figma":["canva","adobeexpress","removebg"],"fireflies":["notion","otter","clickup","asana","monday","todoist"],"framer":["webflow","squarespace"],"gemini":["chatgpt","claude"],"grammarly":["quillbot","prowritingaid","hemingway","writesonic"],"hemingway":["grammarly","quillbot","prowritingaid","writesonic"],"hostinger":[],"hubspot":["systeme"],"ifttt":["zapier","make","n8n"],"invideo":["elevenlabs","descript","runway","synthesia","kapwing"],"jasper":["copyai"],"kapwing":["elevenlabs","descript","runway","synthesia","invideo"],"kit":["beehiiv","mailchimp","brevo"],"leonardo":["midjourney"],"mailchimp":["beehiiv","kit","brevo"],"make":["zapier","n8n","ifttt"],"midjourney":["leonardo"],"monday":["notion","otter","fireflies","clickup","asana","todoist"],"mozpro":["semrush","ahrefs","surferseo","screamingfrog"],"n8n":["zapier","make","ifttt"],"notebooklm":["perplexity"],"notion":["otter","fireflies","clickup","asana","monday","todoist"],"otter":["notion","fireflies","clickup","asana","monday","todoist"],"perplexity":["notebooklm"],"prowritingaid":["grammarly","quillbot","hemingway","writesonic"],"quillbot":["grammarly","prowritingaid","hemingway","writesonic"],"removebg":["canva","figma","adobeexpress"],"runway":["elevenlabs","descript","synthesia","invideo","kapwing"],"screamingfrog":["semrush","ahrefs","mozpro","surferseo"],"semrush":["ahrefs","mozpro","surferseo","screamingfrog"],"squarespace":["framer","webflow"],"surferseo":["semrush","ahrefs","mozpro","screamingfrog"],"synthesia":["elevenlabs","descript","runway","invideo","kapwing"],"systeme":["hubspot"],"todoist":["notion","otter","fireflies","clickup","asana","monday"],"webflow":["framer","squarespace"],"writesonic":["grammarly","quillbot","prowritingaid","hemingway"],"zapier":["make","n8n","ifttt"]},"comparisons":{"make|n8n":"/compare/make-vs-n8n.html","n8n|make":"/compare/make-vs-n8n.html","framer|webflow":"/compare/framer-vs-webflow.html","webflow|framer":"/compare/framer-vs-webflow.html","monday|notion":"/compare/monday-vs-notion.html","notion|monday":"/compare/monday-vs-notion.html","adobeexpress|removebg":"/compare/adobeexpress-vs-removebg.html","removebg|adobeexpress":"/compare/adobeexpress-vs-removebg.html","grammarly|jasper":"/compare/grammarly-vs-jasper.html","jasper|grammarly":"/compare/grammarly-vs-jasper.html","chatgpt|claude":"/compare/chatgpt-vs-claude.html","claude|chatgpt":"/compare/chatgpt-vs-claude.html","kit|mailchimp":"/compare/kit-vs-mailchimp.html","mailchimp|kit":"/compare/kit-vs-mailchimp.html","semrush|surferseo":"/compare/semrush-vs-surferseo.html","surferseo|semrush":"/compare/semrush-vs-surferseo.html","fireflies|otter":"/compare/fireflies-vs-otter.html","otter|fireflies":"/compare/fireflies-vs-otter.html","hemingway|quillbot":"/compare/hemingway-vs-quillbot.html","quillbot|hemingway":"/compare/hemingway-vs-quillbot.html","hostinger|systeme":"/compare/hostinger-vs-systeme.html","systeme|hostinger":"/compare/hostinger-vs-systeme.html","adobeexpress|canva":"/compare/adobeexpress-vs-canva.html","canva|adobeexpress":"/compare/adobeexpress-vs-canva.html","elevenlabs|synthesia":"/compare/elevenlabs-vs-synthesia.html","synthesia|elevenlabs":"/compare/elevenlabs-vs-synthesia.html","grammarly|quillbot":"/compare/grammarly-vs-quillbot.html","quillbot|grammarly":"/compare/grammarly-vs-quillbot.html","descript|kapwing":"/compare/descript-vs-kapwing.html","kapwing|descript":"/compare/descript-vs-kapwing.html","quillbot|writesonic":"/compare/quillbot-vs-writesonic.html","writesonic|quillbot":"/compare/quillbot-vs-writesonic.html","clickup|notion":"/compare/clickup-vs-notion.html","notion|clickup":"/compare/clickup-vs-notion.html","notebooklm|perplexity":"/compare/notebooklm-vs-perplexity.html","perplexity|notebooklm":"/compare/notebooklm-vs-perplexity.html","framer|squarespace":"/compare/framer-vs-squarespace.html","squarespace|framer":"/compare/framer-vs-squarespace.html","beehiiv|kit":"/compare/beehiiv-vs-kit.html","kit|beehiiv":"/compare/beehiiv-vs-kit.html","elevenlabs|descript":"/compare/elevenlabs-vs-descript.html","descript|elevenlabs":"/compare/elevenlabs-vs-descript.html","mozpro|screamingfrog":"/compare/mozpro-vs-screamingfrog.html","screamingfrog|mozpro":"/compare/mozpro-vs-screamingfrog.html","leonardo|midjourney":"/compare/leonardo-vs-midjourney.html","midjourney|leonardo":"/compare/leonardo-vs-midjourney.html","jasper|semrush":"/compare/jasper-vs-semrush.html","semrush|jasper":"/compare/jasper-vs-semrush.html","ifttt|make":"/compare/ifttt-vs-make.html","make|ifttt":"/compare/ifttt-vs-make.html","grammarly|writesonic":"/compare/grammarly-vs-writesonic.html","writesonic|grammarly":"/compare/grammarly-vs-writesonic.html","copyai|jasper":"/compare/copyai-vs-jasper.html","jasper|copyai":"/compare/copyai-vs-jasper.html","chatgpt|gemini":"/compare/chatgpt-vs-gemini.html","gemini|chatgpt":"/compare/chatgpt-vs-gemini.html","mozpro|surferseo":"/compare/mozpro-vs-surferseo.html","surferseo|mozpro":"/compare/mozpro-vs-surferseo.html","ahrefs|mozpro":"/compare/ahrefs-vs-mozpro.html","mozpro|ahrefs":"/compare/ahrefs-vs-mozpro.html","invideo|runway":"/compare/invideo-vs-runway.html","runway|invideo":"/compare/invideo-vs-runway.html","hemingway|prowritingaid":"/compare/hemingway-vs-prowritingaid.html","prowritingaid|hemingway":"/compare/hemingway-vs-prowritingaid.html","prowritingaid|writesonic":"/compare/prowritingaid-vs-writesonic.html","writesonic|prowritingaid":"/compare/prowritingaid-vs-writesonic.html","make|zapier":"/compare/make-vs-zapier.html","zapier|make":"/compare/make-vs-zapier.html","hubspot|systeme":"/compare/hubspot-vs-systeme.html","systeme|hubspot":"/compare/hubspot-vs-systeme.html","adobeexpress|figma":"/compare/adobeexpress-vs-figma.html","figma|adobeexpress":"/compare/adobeexpress-vs-figma.html","notion|todoist":"/compare/notion-vs-todoist.html","todoist|notion":"/compare/notion-vs-todoist.html","mozpro|semrush":"/compare/mozpro-vs-semrush.html","semrush|mozpro":"/compare/mozpro-vs-semrush.html","ifttt|n8n":"/compare/ifttt-vs-n8n.html","n8n|ifttt":"/compare/ifttt-vs-n8n.html","grammarly|hemingway":"/compare/grammarly-vs-hemingway.html","hemingway|grammarly":"/compare/grammarly-vs-hemingway.html","kapwing|runway":"/compare/kapwing-vs-runway.html","runway|kapwing":"/compare/kapwing-vs-runway.html","ahrefs|semrush":"/compare/ahrefs-vs-semrush.html","semrush|ahrefs":"/compare/ahrefs-vs-semrush.html","ifttt|zapier":"/compare/ifttt-vs-zapier.html","zapier|ifttt":"/compare/ifttt-vs-zapier.html","n8n|zapier":"/compare/n8n-vs-zapier.html","zapier|n8n":"/compare/n8n-vs-zapier.html","canva|removebg":"/compare/canva-vs-removebg.html","removebg|canva":"/compare/canva-vs-removebg.html","canva|figma":"/compare/canva-vs-figma.html","figma|canva":"/compare/canva-vs-figma.html","runway|synthesia":"/compare/runway-vs-synthesia.html","synthesia|runway":"/compare/runway-vs-synthesia.html","brevo|mailchimp":"/compare/brevo-vs-mailchimp.html","mailchimp|brevo":"/compare/brevo-vs-mailchimp.html","claude|gemini":"/compare/claude-vs-gemini.html","gemini|claude":"/compare/claude-vs-gemini.html","screamingfrog|semrush":"/compare/screamingfrog-vs-semrush.html","semrush|screamingfrog":"/compare/screamingfrog-vs-semrush.html","grammarly|prowritingaid":"/compare/grammarly-vs-prowritingaid.html","prowritingaid|grammarly":"/compare/grammarly-vs-prowritingaid.html","prowritingaid|quillbot":"/compare/prowritingaid-vs-quillbot.html","quillbot|prowritingaid":"/compare/prowritingaid-vs-quillbot.html","descript|synthesia":"/compare/descript-vs-synthesia.html","synthesia|descript":"/compare/descript-vs-synthesia.html","asana|notion":"/compare/asana-vs-notion.html","notion|asana":"/compare/asana-vs-notion.html","brevo|kit":"/compare/brevo-vs-kit.html","kit|brevo":"/compare/brevo-vs-kit.html","ahrefs|surferseo":"/compare/ahrefs-vs-surferseo.html","surferseo|ahrefs":"/compare/ahrefs-vs-surferseo.html","beehiiv|mailchimp":"/compare/beehiiv-vs-mailchimp.html","mailchimp|beehiiv":"/compare/beehiiv-vs-mailchimp.html","descript|runway":"/compare/descript-vs-runway.html","runway|descript":"/compare/descript-vs-runway.html","copyai|grammarly":"/compare/copyai-vs-grammarly.html","grammarly|copyai":"/compare/copyai-vs-grammarly.html","squarespace|webflow":"/compare/squarespace-vs-webflow.html","webflow|squarespace":"/compare/squarespace-vs-webflow.html","descript|invideo":"/compare/descript-vs-invideo.html","invideo|descript":"/compare/descript-vs-invideo.html","ahrefs|screamingfrog":"/compare/ahrefs-vs-screamingfrog.html","screamingfrog|ahrefs":"/compare/ahrefs-vs-screamingfrog.html","beehiiv|brevo":"/compare/beehiiv-vs-brevo.html","brevo|beehiiv":"/compare/beehiiv-vs-brevo.html"}};
+ // Fetch all 153 tools from tools-v1.json dynamically
+ var TOOLS_URL = '/data/tools-v1.json';
+ var D = { tools: {}, categories: {}, alternatives: {}, shared_jobs: {}, comparisons: {} };
 
+ function buildDataFromV1(toolsArray) {
+ toolsArray.forEach(function(t) {
+ var id = t.slug || t.id;
+ if (!id) return;
+ D.tools[id] = {
+ name: t.name,
+ cat: t.cat || (t.category && t.category.label) || 'Uncategorized',
+ best: t.best || t.bestFor || '',
+ logo: t.logo || '',
+ site: t.site || ''
+ };
+ var cat = D.tools[id].cat;
+ if (!D.categories[cat]) D.categories[cat] = [];
+ if (D.categories[cat].indexOf(id) === -1) D.categories[cat].push(id);
+ if (t.alternatives && t.alternatives.length) {
+ t.alternatives.forEach(function(alt) {
+ if (!D.alternatives[id]) D.alternatives[id] = [];
+ D.alternatives[id].push(alt);
+ if (!D.alternatives[alt]) D.alternatives[alt] = [];
+ D.alternatives[alt].push(id);
+ });
+ }
+ if (t.comparisons && t.comparisons.length) {
+ t.comparisons.forEach(function(comp) {
+ var key1 = id + '|' + comp;
+ var key2 = comp + '|' + id;
+ if (!D.comparisons[key1] && !D.comparisons[key2]) {
+ D.comparisons[key1] = '/compare/' + id + '-vs-' + comp + '.html';
+ }
+ });
+ }
+ if (t.useCaseTags && t.useCaseTags.length) {
+ D.tools[id].tags = t.useCaseTags;
+ }
+ });
+ var ids = Object.keys(D.tools);
+ for (var i = 0; i < ids.length; i++) {
+ for (var j = i + 1; j < ids.length; j++) {
+ var a = ids[i], b = ids[j];
+ var tagsA = D.tools[a].tags || [];
+ var tagsB = D.tools[b].tags || [];
+ var overlap = tagsA.filter(function(t) { return tagsB.indexOf(t) !== -1; });
+ if (overlap.length > 0) {
+ if (!D.shared_jobs[a]) D.shared_jobs[a] = [];
+ if (!D.shared_jobs[b]) D.shared_jobs[b] = [];
+ if (D.shared_jobs[a].indexOf(b) === -1) D.shared_jobs[a].push(b);
+ if (D.shared_jobs[b].indexOf(a) === -1) D.shared_jobs[b].push(a);
+ }
+ }
+ }
+ }
+
+ function init() {
+ fetch(TOOLS_URL)
+ .then(function(r) { return r.json(); })
+ .then(function(data) {
+ var toolsArray = data.tools || data;
+ buildDataFromV1(toolsArray);
+ startApp();
+ })
+ .catch(function(err) {
+ console.error('Failed to load tools data:', err);
+ document.getElementById('ovResult').innerHTML = '<div class="ov-card"><p class="ov-detail">Failed to load tool data. Please refresh the page.</p></div>';
+ });
+ }
+
+ function startApp() {
  var selA = document.getElementById('ovToolA');
  var selB = document.getElementById('ovToolB');
  var result = document.getElementById('ovResult');
@@ -259,23 +355,19 @@
  var ids = catFilter === 'all' ? toolIds : (D.categories[catFilter] || []);
  var currentA = selA.value;
  var currentB = selB.value;
-
  selA.innerHTML = '<option value="">Select a tool\u2026</option>';
  selB.innerHTML = '<option value="">Select a tool\u2026</option>';
-
  ids.forEach(function(tid){
  var t = D.tools[tid];
  var optA = document.createElement('option');
  optA.value = tid;
  optA.textContent = t.name + ' (' + t.cat + ')';
  selA.appendChild(optA);
-
  var optB = document.createElement('option');
  optB.value = tid;
  optB.textContent = t.name + ' (' + t.cat + ')';
  selB.appendChild(optB);
  });
-
  if(ids.indexOf(currentA) !== -1) selA.value = currentA;
  if(ids.indexOf(currentB) !== -1) selB.value = currentB;
  }
@@ -283,22 +375,25 @@
  function analyze(){
  var a = selA.value;
  var b = selB.value;
-
  if(!a || !b){
  result.classList.remove('visible');
  result.innerHTML = '';
  return;
  }
-
  if(a === b){
  result.classList.add('visible');
  result.innerHTML = '<div class="ov-card"><p class="ov-detail">Please select two different tools to check for overlap.</p></div>';
  return;
  }
-
  var toolA = D.tools[a];
  var toolB = D.tools[b];
-
+ if(!toolA || !toolB){
+ result.classList.add('visible');
+ result.innerHTML = '<div class="ov-card"><p class="ov-detail">One or both tools not found in the database.</p></div>';
+ return;
+ }
+ // Multi-signal evidence-aware overlap detection
+ // Signal strength: shared useCaseTags (confirmed) > alternatives (editorial) > comparison page (evidence) > same category (weakest)
  var sameCategory = toolA.cat === toolB.cat;
  var aInBAlts = (D.alternatives[b] || []).indexOf(a) !== -1;
  var bInAAlts = (D.alternatives[a] || []).indexOf(b) !== -1;
@@ -309,41 +404,74 @@
  var compKey = a + '|' + b;
  var comparisonUrl = D.comparisons[compKey] || '';
 
- var verdict, verdictClass, detail;
+ // Find actual shared tags for evidence display
+ var tagsA = D.tools[a].tags || [];
+ var tagsB = D.tools[b].tags || [];
+ var sharedTags = tagsA.filter(function(t) { return tagsB.indexOf(t) !== -1; });
 
- if(sameCategory && isAlternative){
+ // Find unique tags
+ var uniqueATags = tagsA.filter(function(t) { return tagsB.indexOf(t) === -1; });
+ var uniqueBTags = tagsB.filter(function(t) { return tagsA.indexOf(t) === -1; });
+
+ // Evidence quality tracking
+ var evidenceSignals = [];
+ if(sharedTags.length > 0) evidenceSignals.push({type:'confirmed',label:'Confirmed shared capability',desc:sharedTags.length + ' shared use-case tag' + (sharedTags.length>1?'s':'') + ': ' + sharedTags.join(', ')});
+ if(isAlternative) evidenceSignals.push({type:'editorial',label:'ToolNest editorial inference',desc:'Listed as alternatives to each other in ToolNest editorial data'});
+ if(comparisonUrl) evidenceSignals.push({type:'evidence',label:'Comparison page exists',desc:'ToolNest has published a side-by-side comparison of these tools'});
+ if(sameCategory) evidenceSignals.push({type:'weakest',label:'Same category only',desc:'Both tools are classified as ' + toolA.cat + ' — this is the weakest overlap signal'});
+
+ var verdict, verdictClass, detail, evidenceQuality;
+
+ if(sharedTags.length > 0 && isAlternative && sameCategory){
  verdict = 'Strong overlap';
  verdictClass = 'overlap';
- detail = toolA.name + ' and ' + toolB.name + ' are in the same category (' + toolA.cat + ') and are listed as alternatives to each other. They serve the same core job, so you would typically choose one rather than both.';
- } else if(sameCategory){
- verdict = 'Category overlap';
+ evidenceQuality = 'Multiple confirmed signals';
+ detail = toolA.name + ' and ' + toolB.name + ' share ' + sharedTags.length + ' use-case tag' + (sharedTags.length>1?'s':'') + ' (' + sharedTags.join(', ') + '), are listed as alternatives, and belong to the same category (' + toolA.cat + '). They serve the same core job — you would typically choose one rather than both.';
+ } else if(sharedTags.length > 0 && (isAlternative || sameCategory)){
+ verdict = 'Strong overlap';
  verdictClass = 'overlap';
- detail = toolA.name + ' and ' + toolB.name + ' are both in the ' + toolA.cat + ' category. They may serve similar jobs, though the specific fit could differ.';
- } else if(isAlternative && sharedJob){
- verdict = 'Cross-category overlap';
+ evidenceQuality = 'Confirmed shared capability';
+ detail = toolA.name + ' and ' + toolB.name + ' share ' + sharedTags.length + ' use-case tag' + (sharedTags.length>1?'s':'') + ' (' + sharedTags.join(', ') + ')';
+ if(isAlternative) detail += ' and are listed as alternatives';
+ if(sameCategory) detail += ' in the ' + toolA.cat + ' category';
+ detail += '. They likely compete for the same workflow.';
+ } else if(sharedTags.length > 0){
+ verdict = 'Partial overlap';
  verdictClass = 'partial';
- detail = toolA.name + ' (' + toolA.cat + ') and ' + toolB.name + ' (' + toolB.cat + ') are in different categories but are listed as alternatives to each other and share job functions. They may compete for the same workflow despite different primary categories.';
+ evidenceQuality = 'Confirmed shared capability';
+ detail = toolA.name + ' and ' + toolB.name + ' share ' + sharedTags.length + ' use-case tag' + (sharedTags.length>1?'s':'') + ' (' + sharedTags.join(', ') + '). They may overlap in specific tasks, though their primary focus differs.';
+ } else if(isAlternative && sameCategory){
+ verdict = 'Partial overlap';
+ verdictClass = 'partial';
+ evidenceQuality = 'ToolNest editorial inference';
+ detail = toolA.name + ' and ' + toolB.name + ' are in the same category (' + toolA.cat + ') and are listed as alternatives to each other. ToolNest editorial data suggests users sometimes choose between them, though specific shared capabilities are not yet tagged.';
  } else if(isAlternative){
- verdict = 'Alternative relationship';
+ verdict = 'Possible overlap';
  verdictClass = 'partial';
+ evidenceQuality = 'ToolNest editorial inference';
  detail = toolA.name + ' (' + toolA.cat + ') and ' + toolB.name + ' (' + toolB.cat + ') are listed as alternatives to each other. Users sometimes choose between them, though they may emphasize different aspects of the job.';
- } else if(sharedJob){
- verdict = 'Shared job function';
+ } else if(comparisonUrl){
+ verdict = 'Possible overlap';
  verdictClass = 'partial';
- detail = toolA.name + ' and ' + toolB.name + ' share job functions according to ToolNest review data, though they are in different categories. There may be partial overlap depending on your specific use case.';
+ evidenceQuality = 'Comparison evidence exists';
+ detail = toolA.name + ' (' + toolA.cat + ') and ' + toolB.name + ' (' + toolB.cat + ') have a published comparison on ToolNest, suggesting some users consider them for similar needs.';
+ } else if(sameCategory){
+ verdict = 'No detected overlap';
+ verdictClass = 'none';
+ evidenceQuality = 'Insufficient data — same category only';
+ detail = toolA.name + ' and ' + toolB.name + ' are both in the ' + toolA.cat + ' category, but share no tagged use-case functions and are not listed as alternatives. They may serve different niches within the same broad category. Category alone is the weakest overlap signal.';
  } else {
  verdict = 'No detected overlap';
  verdictClass = 'none';
- detail = toolA.name + ' (' + toolA.cat + ') and ' + toolB.name + ' (' + toolB.cat + ') serve different jobs according to ToolNest data. They are not listed as alternatives and do not share the same category. They are likely complementary rather than overlapping.';
+ evidenceQuality = 'No overlap signals detected';
+ detail = toolA.name + ' (' + toolA.cat + ') and ' + toolB.name + ' (' + toolB.cat + ') serve different jobs according to ToolNest data. They are not listed as alternatives, do not share use-case tags, and belong to different categories. They are likely complementary rather than overlapping.';
  }
-
  var actions = '';
  if(comparisonUrl){
  actions += '<a class="ov-compare" href="' + comparisonUrl + '">Read ' + toolA.name + ' vs ' + toolB.name + ' comparison</a>';
  }
  actions += '<a class="ov-review" href="/tools/' + a + '.html">Read ' + toolA.name + ' review</a>';
  actions += '<a class="ov-review" href="/tools/' + b + '.html">Read ' + toolB.name + ' review</a>';
-
  if(D.alternatives[a]){
  actions += '<a class="ov-review" href="/alternatives/' + a + '-alternatives.html">' + toolA.name + ' alternatives</a>';
  }
@@ -351,22 +479,65 @@
  actions += '<a class="ov-review" href="/alternatives/' + b + '-alternatives.html">' + toolB.name + ' alternatives</a>';
  }
 
- var sharedJobsHtml = '';
- if(sharedJob){
- sharedJobsHtml = '<div class="ov-shared"><h4>Shared job context</h4><p class="ov-detail">These tools are recognized as serving overlapping job functions. Check the comparison page for specific trade-offs.</p></div>';
+ // Build evidence quality section
+ var evidenceHtml = '';
+ if(evidenceSignals.length > 0){
+ evidenceHtml = '<div class="ov-evidence"><h4>Evidence quality</h4>';
+ for(var e=0; e<evidenceSignals.length; e++){
+ var sig = evidenceSignals[e];
+ var sigClass = sig.type === 'confirmed' ? 'ov-evidence-confirmed' : sig.type === 'editorial' ? 'ov-evidence-editorial' : sig.type === 'evidence' ? 'ov-evidence-page' : 'ov-evidence-weak';
+ evidenceHtml += '<div class="ov-evidence-item ' + sigClass + '"><strong>' + sig.label + ':</strong> ' + sig.desc + '</div>';
+ }
+ evidenceHtml += '</div>';
+ }
+
+ // Build shared/unique tags section
+ var tagsHtml = '';
+ if(sharedTags.length > 0 || uniqueATags.length > 0 || uniqueBTags.length > 0){
+ tagsHtml = '<div class="ov-tags-section">';
+ if(sharedTags.length > 0){
+ tagsHtml += '<div class="ov-tags-shared"><h4>Shared capabilities</h4><ul>';
+ for(var t=0; t<sharedTags.length; t++){
+ tagsHtml += '<li>' + sharedTags[t] + '</li>';
+ }
+ tagsHtml += '</ul></div>';
+ }
+ if(uniqueATags.length > 0){
+ tagsHtml += '<div class="ov-tags-unique"><h4>Unique to ' + toolA.name + '</h4><ul>';
+ for(var t=0; t<uniqueATags.length; t++){
+ tagsHtml += '<li>' + uniqueATags[t] + '</li>';
+ }
+ tagsHtml += '</ul></div>';
+ }
+ if(uniqueBTags.length > 0){
+ tagsHtml += '<div class="ov-tags-unique"><h4>Unique to ' + toolB.name + '</h4><ul>';
+ for(var t=0; t<uniqueBTags.length; t++){
+ tagsHtml += '<li>' + uniqueBTags[t] + '</li>';
+ }
+ tagsHtml += '</ul></div>';
+ }
+ tagsHtml += '</div>';
+ }
+
+ // Insufficient data warning
+ var dataWarning = '';
+ if(evidenceSignals.length === 0){
+ dataWarning = '<div class="ov-data-warning"><strong>Insufficient data:</strong> No overlap signals were detected between these tools. This does not guarantee they are non-overlapping — ToolNest data coverage is incomplete for all 153 tools.</div>';
  }
 
  var html = '<div class="ov-card">';
  html += '<p class="ov-verdict ' + verdictClass + '">' + verdict + '</p>';
+ if(evidenceQuality) html += '<p class="ov-evidence-quality">' + evidenceQuality + '</p>';
  html += '<p class="ov-detail">' + detail + '</p>';
  html += '<div class="ov-tools">';
- html += '<div class="ov-tool-card"><h4>' + toolA.name + '</h4><p class="ov-cat">' + toolA.cat + '</p><p class="ov-best">' + toolA.best + '</p></div>';
- html += '<div class="ov-tool-card"><h4>' + toolB.name + '</h4><p class="ov-cat">' + toolB.cat + '</p><p class="ov-best">' + toolB.best + '</p></div>';
+ html += '<div class="ov-tool-card"><h4>' + toolA.name + '</h4><p class="ov-cat">' + toolA.cat + '</p>' + (toolA.best ? '<p class="ov-best">' + toolA.best + '</p>' : '') + '</div>';
+ html += '<div class="ov-tool-card"><h4>' + toolB.name + '</h4><p class="ov-cat">' + toolB.cat + '</p>' + (toolB.best ? '<p class="ov-best">' + toolB.best + '</p>' : '') + '</div>';
  html += '</div>';
- html += sharedJobsHtml;
+ html += tagsHtml;
+ html += evidenceHtml;
+ html += dataWarning;
  html += '<div class="ov-actions">' + actions + '</div>';
  html += '</div>';
-
  result.innerHTML = html;
  result.classList.add('visible');
  }
@@ -374,7 +545,32 @@
  selA.addEventListener('change', analyze);
  selB.addEventListener('change', analyze);
 
+ // Swap button
+ var swapBtn = document.getElementById('ovSwapBtn');
+ if(swapBtn){
+ swapBtn.addEventListener('click', function(){
+ var temp = selA.value;
+ selA.value = selB.value;
+ selB.value = temp;
+ analyze();
+ });
+ }
+
+ // Reset button
+ var resetBtn = document.getElementById('ovResetBtn');
+ if(resetBtn){
+ resetBtn.addEventListener('click', function(){
+ selA.value = '';
+ selB.value = '';
+ result.classList.remove('visible');
+ result.innerHTML = '';
+ });
+ }
+
  populateSelects('all');
+ }
+
+ init();
 })();
 </script>
 

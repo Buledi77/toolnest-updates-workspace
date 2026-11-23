@@ -289,8 +289,39 @@
         "alternatives": {
           "type": "array",
           "items": {
-            "type": "string",
-            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            "oneOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["tool_id"],
+                "properties": {
+                  "tool_id": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+                  },
+                  "shared_use_case": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "major_difference": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "when_preferable": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "evidence_basis": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            ]
           }
         },
         "meaningful_comparisons": {
@@ -343,6 +374,22 @@
             "type": "string",
             "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
           }
+        },
+        "verification_status": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Overall verification status for this tool's evidence. A tool must not automatically become verified_official just because one field is verified.",
+          "enum": [
+            "verified_official",
+            "verified_official_dynamic",
+            "editorial_assessment",
+            "research_required",
+            "official_source_unavailable",
+            "official_source_conflict",
+            "do_not_publish"
+          ]
         }
       }
     },

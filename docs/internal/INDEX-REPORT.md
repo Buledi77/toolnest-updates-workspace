@@ -119,7 +119,7 @@ Current allowlist overrides: /, /about.html, /affiliate-disclosure.html, /altern
 - None
 
 ### `category`
-- `/category/accounting.html` (333 words; below the configured minimum word threshold)
+- `/category/accounting.html` (60 words; below the configured minimum word threshold)
 
 ### `compare`
 - None
@@ -131,8 +131,8 @@ Current allowlist overrides: /, /about.html, /affiliate-disclosure.html, /altern
 - None
 
 ### `tools`
-- `/tools/decision-engine.html` (379 words; below the configured minimum word threshold)
-- `/tools/stack-analyzer.html` (217 words; below the configured minimum word threshold)
+- `/tools/decision-engine.html` (544 words; no unique marked section)
+- `/tools/stack-analyzer.html` (236 words; below the configured minimum word threshold)
 
 ## Comparison canonicalization
 

@@ -15,9 +15,17 @@
       "Email Marketing"
     ],
     "use_cases": [
-      "email campaigns, basic automation and audience management"
+      "email campaigns",
+      "basic automation",
+      "audience management",
+      "small business marketing"
     ],
-    "audiences": [],
+    "audiences": [
+      "small businesses",
+      "startups",
+      "e-commerce stores",
+      "nonprofits"
+    ],
     "platforms": [
       "web"
     ],
@@ -43,7 +51,9 @@
     "trial_status": [],
     "pricing_status": [],
     "pricing_regions": [],
-    "availability_regions": []
+    "availability_regions": [],
+    "concise_summary": "All-in-one marketing platform for small businesses, offering email campaigns, automation, landing pages, and basic CRM with AI-powered content tools.",
+    "primary_purpose": "Email marketing and multi-channel campaign management for small businesses"
   },
   "editorial": {
     "editorial_tier": "A",
@@ -77,8 +87,53 @@
     "replaced_by": []
   },
   "evidence": {
-    "claim_refs": [],
-    "source_ids": []
+    "claim_refs": [
+      {
+        "claim_id": "mailchimp-pricing-verified"
+      },
+      {
+        "claim_id": "mailchimp-capability-0"
+      },
+      {
+        "claim_id": "mailchimp-capability-1"
+      },
+      {
+        "claim_id": "mailchimp-capability-2"
+      },
+      {
+        "claim_id": "mailchimp-limitation-0"
+      },
+      {
+        "claim_id": "mailchimp-limitation-1"
+      },
+      {
+        "claim_id": "mailchimp-capabilities"
+      },
+      {
+        "claim_id": "mailchimp-core-use-case"
+      },
+      {
+        "claim_id": "mailchimp-free-plan"
+      },
+      {
+        "claim_id": "mailchimp-limitations"
+      },
+      {
+        "claim_id": "mailchimp-platforms"
+      },
+      {
+        "claim_id": "mailchimp-pricing-model"
+      },
+      {
+        "claim_id": "mailchimp-target-user"
+      },
+      {
+        "claim_id": "mailchimp-trial"
+      }
+    ],
+    "source_ids": [
+      "mailchimp-pricing"
+    ]
   },
   "monetization": {
     "affiliate_status": "unknown",
@@ -107,5 +162,84 @@
     "next_review_at": null,
     "stale_fields": [],
     "change_history_reference": null
+  },
+  "decision_readiness": {
+    "state": "DECISION_READY",
+    "verified_fields": 10,
+    "total_fields": 11,
+    "verification_percentage": 91,
+    "total_evidence_claims": 14,
+    "strong_verified_count": 10,
+    "editorial_count": 0,
+    "data_present_count": 1,
+    "field_details": {
+      "core_use_case": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "0 v1 tags, 4 v2 tags"
+      },
+      "meaningful_capabilities": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "3 v1 pros, 3 v2 caps"
+      },
+      "important_limitations": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": false,
+        "detail": "0 v1 cons, 0 skipIf, 0 v2 lims"
+      },
+      "platform": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "0 v1 platforms, 1 v2 platforms"
+      },
+      "pricing_model": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "model=tiered subscription by contacts"
+      },
+      "pricing_state": {
+        "verified": true,
+        "evidence_status": "VERIFIED_OFFICIAL",
+        "has_data": true,
+        "detail": "4 tiers"
+      },
+      "free_plan_status": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "available=True"
+      },
+      "trial_status": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "available=True"
+      },
+      "target_user": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "0 v1 bestFor, 1 v2 best_for"
+      },
+      "meaningful_alternatives": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "0 v1 alts, 3 v2 alts, 0 verified"
+      },
+      "evidence_freshness": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "14 total claims, 14 recent"
+      }
+    },
+    "evaluated_at": "2026-11-23T05:26:50.840843"
   }
 }

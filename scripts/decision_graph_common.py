@@ -20,6 +20,31 @@ ISO_DATETIME_PATTERN = re.compile(
     r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})$"
 )
 
+# Recognized claim status values for the evidence ledger
+VALID_CLAIM_STATUSES = {
+    "verified",
+    "verified_official",
+    "verified_official_dynamic",
+    "editorial_assessment",
+    "research_required",
+    "official_source_unavailable",
+    "official_source_conflict",
+    "needs_review",
+    "stale",
+    "disputed",
+}
+
+# Field-level verification status vocabulary
+VALID_VERIFICATION_STATUSES = {
+    "verified_official",
+    "verified_official_dynamic",
+    "editorial_assessment",
+    "research_required",
+    "official_source_unavailable",
+    "official_source_conflict",
+    "do_not_publish",
+}
+
 
 def load_json(path: Path):
     with path.open(encoding="utf-8") as handle:
@@ -145,9 +170,14 @@ def validate_ledger_shape(ledger=None):
             not isinstance(currency, str) or not re.fullmatch(r"[A-Z]{3}", currency)
         ):
             error(errors, f"claim {claim_id} has an invalid currency")
-        if claim.get("status") in {"stale", "needs_review", "disputed"}:
-            if claim.get("status") == "disputed" and not claim.get("disputed_by"):
-                error(errors, f"disputed claim {claim_id} has no disputed_by value")
+        status = claim.get("status")
+        if status not in VALID_CLAIM_STATUSES:
+            error(errors, f"claim {claim_id} has an invalid status: {status}")
+        if status == "disputed" and not claim.get("disputed_by"):
+            error(errors, f"disputed claim {claim_id} has no disputed_by value")
+        verification_status = claim.get("verification_status")
+        if verification_status is not None and verification_status not in VALID_VERIFICATION_STATUSES:
+            error(errors, f"claim {claim_id} has an invalid verification_status: {verification_status}")
         replacement = claim.get("replacement_claim_id")
         if replacement is not None and replacement not in claim_map:
             error(errors, f"claim {claim_id} references missing replacement claim {replacement}")
@@ -187,6 +217,9 @@ def validate_tool_records(records=None, ledger=None):
         record_claim_refs = {
             ref.get("claim_id") for ref in evidence.get("claim_refs", [])
         }
+        evidence_verification = evidence.get("verification_status")
+        if evidence_verification is not None and evidence_verification not in VALID_VERIFICATION_STATUSES:
+            error(errors, f"record {record_id} has an invalid evidence.verification_status: {evidence_verification}")
         for claim_id in record_claim_refs:
             claim = claims.get(claim_id)
             if claim is None:
@@ -231,7 +264,14 @@ def validate_tool_records(records=None, ledger=None):
             "replaces",
             "replaced_by",
         ):
-            for related_id in record.get("relationships", {}).get(relation_field, []):
+            for item in record.get("relationships", {}).get(relation_field, []):
+                # Handle both string IDs and structured alternative objects
+                if isinstance(item, dict):
+                    related_id = item.get("tool_id", "")
+                    if not SLUG_PATTERN.fullmatch(related_id):
+                        error(errors, f"record {record_id} has an invalid alternative tool_id: {related_id}")
+                else:
+                    related_id = item
                 if related_id not in all_ids:
                     error(errors, f"record {record_id} references missing tool {related_id}")
     if len(ids) != len(set(ids)):
@@ -278,6 +318,8 @@ def validate_freshness(as_of=None, ledger=None, records=None):
             "stale",
             "needs_review",
             "disputed",
+            "official_source_unavailable",
+            "official_source_conflict",
         }:
             error(
                 errors,

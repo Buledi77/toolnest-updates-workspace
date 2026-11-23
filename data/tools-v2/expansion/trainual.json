@@ -55,8 +55,20 @@
     ]
   },
   "evidence": {
-    "claim_refs": [],
-    "source_ids": [],
+    "claim_refs": [
+      {
+        "claim_id": "trainual-pricing-verified"
+      },
+      {
+        "claim_id": "trainual-capabilities"
+      },
+      {
+        "claim_id": "trainual-limitations"
+      }
+    ],
+    "source_ids": [
+      "trainual-pricing"
+    ],
     "confidence": "unverified",
     "test_status": "research_only"
   },
@@ -66,7 +78,87 @@
   "publishing": {
     "indexability": "index",
     "canonical_url": "https://www.toolnestai.tech/tools/trainual.html",
-    "sitemap_eligible": true
+    "sitemap_eligible": true,
+    "content_quality_status": "assessed"
   },
-  "freshness": {}
+  "freshness": {},
+  "decision_readiness": {
+    "state": "PARTIALLY_VERIFIED",
+    "verified_fields": 3,
+    "total_fields": 11,
+    "verification_percentage": 27,
+    "total_evidence_claims": 3,
+    "strong_verified_count": 3,
+    "editorial_count": 1,
+    "data_present_count": 5,
+    "field_details": {
+      "core_use_case": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "3 v1 tags, 3 v2 tags"
+      },
+      "meaningful_capabilities": {
+        "verified": true,
+        "evidence_status": "VERIFIED_OFFICIAL",
+        "has_data": true,
+        "detail": "3 v1 pros, 0 v2 caps"
+      },
+      "important_limitations": {
+        "verified": false,
+        "evidence_status": "EDITORIAL",
+        "has_data": true,
+        "detail": "3 v1 cons, 3 skipIf, 0 v2 lims"
+      },
+      "platform": {
+        "verified": false,
+        "evidence_status": "UNKNOWN",
+        "has_data": false,
+        "detail": "0 v1 platforms, 0 v2 platforms"
+      },
+      "pricing_model": {
+        "verified": true,
+        "evidence_status": "VERIFIED_OFFICIAL",
+        "has_data": true,
+        "detail": "model=custom quote-based"
+      },
+      "pricing_state": {
+        "verified": false,
+        "evidence_status": "UNKNOWN",
+        "has_data": false,
+        "detail": "0 tiers"
+      },
+      "free_plan_status": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "available=False"
+      },
+      "trial_status": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "available=False"
+      },
+      "target_user": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "3 v1 bestFor, 3 v2 best_for"
+      },
+      "meaningful_alternatives": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "3 v1 alts, 3 v2 alts, 3 verified"
+      },
+      "evidence_freshness": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "3 total claims, 3 recent"
+      }
+    },
+    "evaluated_at": "2026-11-23T05:26:50.860417"
+  }
 }

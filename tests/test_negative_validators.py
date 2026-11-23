@@ -131,7 +131,7 @@ def _make_valid_ledger():
                 "accessed_at": "2026-01-01",
                 "verified_at": "2026-01-01",
                 "stale_after": "2027-01-01",
-                "status": "current",
+                "status": "verified",
             }
         ],
     }
@@ -233,7 +233,7 @@ class TestAffiliateUrlAsEvidence(unittest.TestCase):
             "accessed_at": "2026-01-01",
             "verified_at": "2026-01-01",
             "stale_after": "2027-01-01",
-            "status": "current",
+            "status": "verified",
         })
         rec = _make_valid_record({
             "evidence": {

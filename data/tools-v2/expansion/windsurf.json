@@ -14,9 +14,19 @@
     "categories": [
       "Developer Tools"
     ],
-    "use_cases": [],
-    "audiences": [],
+    "use_cases": [
+      "full-stack development",
+      "code refactoring",
+      "automated testing",
+      "agentic coding"
+    ],
+    "audiences": [
+      "software developers",
+      "engineering teams",
+      "full-stack developers"
+    ],
     "platforms": [
+      "desktop",
       "web"
     ],
     "integrations": [],
@@ -33,7 +43,9 @@
     "trial_status": [],
     "pricing_status": [],
     "pricing_regions": [],
-    "availability_regions": []
+    "availability_regions": [],
+    "concise_summary": "AI-powered IDE (formerly Codeium) with agentic coding capabilities, supporting multiple AI models and autonomous code generation.",
+    "primary_purpose": "AI-assisted software development with agentic coding"
   },
   "editorial": {
     "editorial_tier": "C",
@@ -53,8 +65,29 @@
     "replaced_by": []
   },
   "evidence": {
-    "claim_refs": [],
-    "source_ids": []
+    "claim_refs": [
+      {
+        "claim_id": "windsurf-pricing-verified"
+      },
+      {
+        "claim_id": "windsurf-capability-0"
+      },
+      {
+        "claim_id": "windsurf-capability-1"
+      },
+      {
+        "claim_id": "windsurf-capability-2"
+      },
+      {
+        "claim_id": "windsurf-limitation-0"
+      },
+      {
+        "claim_id": "windsurf-limitation-1"
+      }
+    ],
+    "source_ids": [
+      "windsurf-pricing"
+    ]
   },
   "monetization": {
     "affiliate_status": "unknown",

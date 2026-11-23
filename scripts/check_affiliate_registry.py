@@ -26,7 +26,7 @@ def validate_registry():
         if official != record["monetization"]["official_non_affiliate_url"] or not is_url(official):
             errors.append(f"{tool_id}: official URL mismatch")
         status = entry.get("affiliate_status")
-        if status not in {"none", "not_applied", "needs_review", "unknown", "active", "expired"}:
+        if status not in {"none", "not_applied", "needs_review", "unknown", "active", "expired", "approved"}:
             errors.append(f"{tool_id}: invalid affiliate status")
         if entry.get("last_link_check") is not None and not is_date(entry["last_link_check"]):
             errors.append(f"{tool_id}: invalid last_link_check")

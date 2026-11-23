@@ -1,0 +1,109 @@
+name: Source Monitor
+
+# Concurrency protection — prevent overlapping runs
+concurrency:
+  group: source-monitor
+  cancel-in-progress: false
+
+# Least-privilege permissions
+permissions:
+  contents: read
+
+on:
+  schedule:
+    # Weekly on Monday at 06:00 UTC for HIGH volatility (pricing, free plans, trials)
+    - cron: '0 6 * * 1'
+    # Monthly on 1st at 06:00 UTC for MEDIUM volatility (features, platforms, integrations)
+    - cron: '0 6 1 * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Run mode'
+        required: true
+        default: 'report-only'
+        type: choice
+        options:
+          - report-only
+          - dry-run
+          - controlled-fetch
+      volatility:
+        description: 'Volatility tier to check'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - high
+          - medium
+          - low
+      tool:
+        description: 'Specific tool to check (optional)'
+        required: false
+        type: string
+      batch_size:
+        description: 'Max tools per batch (default 10)'
+        required: false
+        default: '10'
+        type: string
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Run source monitor
+        env:
+          MODE: ${{ github.event.inputs.mode || 'report-only' }}
+          VOLATILITY: ${{ github.event.inputs.volatility || 'all' }}
+          TOOL: ${{ github.event.inputs.tool || '' }}
+          BATCH_SIZE: ${{ github.event.inputs.batch_size || '10' }}
+        run: |
+          echo "Running source monitor in $MODE mode"
+          
+          # Production scope validation
+          python3 scripts/validate_production_scope.py
+          
+          # Source monitor (report-only by default)
+          if [ -n "$TOOL" ]; then
+            python3 scripts/source_monitor.py --tool "$TOOL" --report-only
+          else
+            python3 scripts/source_monitor.py --report-only
+          fi
+          
+          # Controlled fetch mode only — never automatic
+          if [ "$MODE" = "controlled-fetch" ]; then
+            echo "Controlled fetch mode — fetching in batches of $BATCH_SIZE"
+            python3 scripts/source_fetcher.py --all
+          fi
+          
+          # Canonical facts check
+          python3 scripts/canonical_facts.py
+          
+          echo "Source monitor complete"
+
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        if: always()  # Always upload, even on failure
+        with:
+          name: source-monitor-report
+          path: reports/phase6/source-monitor-report.json
+          retention-days: 30
+
+      - name: Upload automation dashboard
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: automation-dashboard
+          path: reports/phase6/automation-dashboard.json
+          retention-days: 30

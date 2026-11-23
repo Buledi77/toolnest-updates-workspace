@@ -21,16 +21,32 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription by contacts",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Starter",
+            "price": 19,
+            "period": "month"
+          },
+          {
+            "name": "Plus",
+            "price": 59,
+            "period": "month"
+          },
+          {
+            "name": "Pro",
+            "price": 99,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": false
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": true,
+          "duration_days": 14
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -81,16 +97,37 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Starter",
+            "price": 39,
+            "period": "month"
+          },
+          {
+            "name": "Professional",
+            "price": 249,
+            "period": "month"
+          },
+          {
+            "name": "Ultimate",
+            "price": 999,
+            "period": "month"
+          },
+          {
+            "name": "Enterprise",
+            "price": null,
+            "period": "custom"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": false
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": true,
+          "duration_days": 7
+        }
       },
       "cons": [
         "Creative quality varies by prompt and niche",
@@ -124,9 +161,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "canva",
-        "adobeexpress",
-        "figma"
+        {
+          "tool_id": "canva",
+          "shared_use_case": "Tool A: AI-generated ad creatives with proven templates... | Tool B: Social graphics, presentations and simple brand de...",
+          "major_difference": "Canva offers a free plan; AdCreative.ai is Marketing, Canva is Design",
+          "when_preferable": "When a free plan is required",
+          "evidence_basis": "both_verified",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "adobeexpress",
+          "shared_use_case": "Tool A: AI-generated ad creatives with proven templates... | Tool B: Quick social graphics, videos and brand content...",
+          "major_difference": "Adobe Express offers a free plan; AdCreative.ai is Marketing, Adobe Express is Design",
+          "when_preferable": "When a free plan is required",
+          "evidence_basis": "both_verified",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "figma",
+          "shared_use_case": "Tool A: AI-generated ad creatives with proven templates... | Tool B: Collaborative interface design and prototyping...",
+          "major_difference": "Figma offers a free plan; AdCreative.ai is Marketing, Figma is Design",
+          "when_preferable": "When a free plan is required",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "canva"
@@ -163,16 +221,32 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Premium",
+            "price": 9.99,
+            "period": "month"
+          },
+          {
+            "name": "Firefly Pro",
+            "price": 19.99,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": true,
+          "duration_days": 30
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -266,9 +340,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "semrush",
-        "getresponse",
-        "manychat"
+        {
+          "tool_id": "semrush",
+          "shared_use_case": "Tool A: AI-powered Meta and Google ads... | Tool B: Finding keywords and checking competitors...",
+          "major_difference": "Adwisely is Marketing, Semrush is SEO; Different strengths: Adwisely excels at AI-powered Meta and Google ads, Semrush at Finding keywords and checking competitor",
+          "when_preferable": "When finding keywords and checking competitors is the priority",
+          "evidence_basis": "both_verified",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "getresponse",
+          "shared_use_case": "Tool A: AI-powered Meta and Google ads... | Tool B: AI-powered tool...",
+          "major_difference": "Adwisely is Marketing, GetResponse is Email Marketing; Different strengths: Adwisely excels at AI-powered Meta and Google ads, GetResponse at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "both_verified",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "manychat",
+          "shared_use_case": "Both serve the Marketing use case",
+          "major_difference": "Different strengths: Adwisely excels at AI-powered Meta and Google ads, Manychat at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "semrush"
@@ -305,16 +400,42 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Starter",
+            "price": 29,
+            "period": "month"
+          },
+          {
+            "name": "Lite",
+            "price": 129,
+            "period": "month"
+          },
+          {
+            "name": "Standard",
+            "price": 249,
+            "period": "month"
+          },
+          {
+            "name": "Advanced",
+            "price": 449,
+            "period": "month"
+          },
+          {
+            "name": "Enterprise",
+            "price": 1499,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true,
+          "limits": "Webmaster Tools for verified sites"
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -408,8 +529,22 @@
         "lastVerified": null
       },
       "alternatives": [
-        "quo",
-        "krispcall"
+        {
+          "tool_id": "quo",
+          "shared_use_case": "Both serve the Customer Support use case",
+          "major_difference": "Different strengths: Aircall excels at Clean, modern cloud phone interface, Quo at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "krispcall",
+          "shared_use_case": "Both serve the Customer Support use case",
+          "major_difference": "Different strengths: Aircall excels at Clean, modern cloud phone interface, KrispCall at AI noise cancellation included on all pl",
+          "when_preferable": "When ai noise cancellation included on all plans is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "quo",
@@ -490,9 +625,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "mixpanel",
-        "semrush",
-        "wingify"
+        {
+          "tool_id": "mixpanel",
+          "shared_use_case": "Both serve the Marketing use case",
+          "major_difference": "Different strengths: Amplitude excels at Generous free plan with 1M events/mo, Mixpanel at Free plan with 10,000 tracked users",
+          "when_preferable": "When free plan with 10,000 tracked users is the priority",
+          "evidence_basis": "shared_category; shared_use_case_tags; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "semrush",
+          "shared_use_case": "Tool A: Generous free plan with 1M events/mo... | Tool B: Finding keywords and checking competitors...",
+          "major_difference": "Amplitude is Marketing, Semrush is SEO; Different strengths: Amplitude excels at Generous free plan with 1M events/mo, Semrush at Finding keywords and checking competitor",
+          "when_preferable": "When finding keywords and checking competitors is the priority",
+          "evidence_basis": "both_verified",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "wingify",
+          "shared_use_case": "Both serve the Marketing use case",
+          "major_difference": "Different strengths: Amplitude excels at Generous free plan with 1M events/mo, Wingify (now VWO) at A/B testing and visual editor",
+          "when_preferable": "When a/b testing and visual editor is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "mixpanel"
@@ -529,16 +685,37 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Basic",
+            "price": 49,
+            "period": "month"
+          },
+          {
+            "name": "Professional",
+            "price": 79,
+            "period": "month"
+          },
+          {
+            "name": "Organization",
+            "price": 119,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true,
+          "limits": "limited credits"
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [
         "Data accuracy outside US is lower",
@@ -572,9 +749,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "close",
-        "pipedrive",
-        "lusha"
+        {
+          "tool_id": "close",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Apollo.io excels at 275M+ contact database, Close at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "pipedrive",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Apollo.io offers a free plan; Different strengths: Apollo.io excels at 275M+ contact database, Pipedrive at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "lusha",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Apollo.io excels at 275M+ contact database, Lusha at Contact and company data platform",
+          "when_preferable": "When contact and company data platform is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        }
       ],
       "comparisons": [
         "close"
@@ -611,16 +809,23 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Premium",
+            "price": 10.99,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
-        "lastChecked": null,
-        "sourceRefs": []
+          "available": true
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -667,16 +872,27 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Pro",
+            "price": 12,
+            "period": "month"
+          },
+          {
+            "name": "Team",
+            "price": 40,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": false
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": true,
+          "duration_days": 14
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -727,16 +943,28 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription by subscribers",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Lite",
+            "price": 49,
+            "period": "month"
+          },
+          {
+            "name": "Pro",
+            "price": 95,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
-        "lastChecked": null,
-        "sourceRefs": []
+          "available": true
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -787,16 +1015,28 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription per user",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Essentials",
+            "price": 49,
+            "period": "month"
+          },
+          {
+            "name": "Team",
+            "price": 65,
+            "period": "month"
+          },
+          {
+            "name": "Corporate",
+            "price": 89,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
-        "lastChecked": null,
-        "sourceRefs": []
+          "available": false
+        }
       },
       "cons": [
         "Premium pricing",
@@ -830,9 +1070,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "quickbooks",
-        "xero",
-        "freshbooks"
+        {
+          "tool_id": "quickbooks",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: BILL excels at AP/automation, QuickBooks at Industry-standard accounting",
+          "when_preferable": "When industry-standard accounting is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "xero",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: BILL excels at AP/automation, Xero at Cloud accounting for SMB",
+          "when_preferable": "When cloud accounting for smb is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "freshbooks",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: BILL excels at AP/automation, FreshBooks at Intuitive accounting for SMB",
+          "when_preferable": "When intuitive accounting for smb is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "quickbooks"
@@ -912,9 +1173,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "manychat",
-        "getresponse",
-        "semrush"
+        {
+          "tool_id": "manychat",
+          "shared_use_case": "Both serve the Marketing use case",
+          "major_difference": "Different strengths: Brand24 excels at Comprehensive brand monitoring, Manychat at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "getresponse",
+          "shared_use_case": "Tool A: Comprehensive brand monitoring... | Tool B: AI-powered tool...",
+          "major_difference": "Brand24 is Marketing, GetResponse is Email Marketing; Different strengths: Brand24 excels at Comprehensive brand monitoring, GetResponse at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "semrush",
+          "shared_use_case": "Tool A: Comprehensive brand monitoring... | Tool B: Finding keywords and checking competitors...",
+          "major_difference": "Brand24 is Marketing, Semrush is SEO; Different strengths: Brand24 excels at Comprehensive brand monitoring, Semrush at Finding keywords and checking competitor",
+          "when_preferable": "When finding keywords and checking competitors is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [],
       "goals": [],
@@ -992,9 +1274,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "semrush",
-        "mixpanel",
-        "amplitude"
+        {
+          "tool_id": "semrush",
+          "shared_use_case": "Tool A: Tracks what converts into revenue... | Tool B: Finding keywords and checking competitors...",
+          "major_difference": "Bread & Butter is Research, Semrush is SEO; Different strengths: Bread & Butter excels at Tracks what converts into revenue, Semrush at Finding keywords and checking competitor",
+          "when_preferable": "When finding keywords and checking competitors is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "mixpanel",
+          "shared_use_case": "Tool A: Tracks what converts into revenue... | Tool B: Free plan with 10,000 tracked users...",
+          "major_difference": "Bread & Butter is Research, Mixpanel is Marketing; Different strengths: Bread & Butter excels at Tracks what converts into revenue, Mixpanel at Free plan with 10,000 tracked users",
+          "when_preferable": "When free plan with 10,000 tracked users is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "amplitude",
+          "shared_use_case": "Tool A: Tracks what converts into revenue... | Tool B: Generous free plan with 1M events/mo...",
+          "major_difference": "Bread & Butter is Research, Amplitude is Marketing; Different strengths: Bread & Butter excels at Tracks what converts into revenue, Amplitude at Generous free plan with 1M events/mo",
+          "when_preferable": "When generous free plan with 1m events/mo is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "semrush"
@@ -1031,16 +1334,36 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription by email volume",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Starter",
+            "price": 9,
+            "period": "month"
+          },
+          {
+            "name": "Standard",
+            "price": 18,
+            "period": "month"
+          },
+          {
+            "name": "Professional",
+            "price": 499,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -1141,9 +1464,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "Apify",
-        "Octoparse",
-        "ParseHub"
+        {
+          "tool_id": "Apify",
+          "shared_use_case": null,
+          "major_difference": null,
+          "when_preferable": null,
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "Octoparse",
+          "shared_use_case": null,
+          "major_difference": null,
+          "when_preferable": null,
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "ParseHub",
+          "shared_use_case": null,
+          "major_difference": null,
+          "when_preferable": null,
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "Apify"
@@ -1232,9 +1576,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "Invoca",
-        "Megalytics",
-        "Revenue.io"
+        {
+          "tool_id": "Invoca",
+          "shared_use_case": null,
+          "major_difference": null,
+          "when_preferable": null,
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "Megalytics",
+          "shared_use_case": null,
+          "major_difference": null,
+          "when_preferable": null,
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "Revenue.io",
+          "shared_use_case": null,
+          "major_difference": null,
+          "when_preferable": null,
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "Invoca"
@@ -1321,9 +1686,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "Mailchimp",
-        "ActiveCampaign",
-        "GetResponse"
+        {
+          "tool_id": "mailchimp",
+          "shared_use_case": "Both serve the Email Marketing use case",
+          "major_difference": "Mailchimp offers a free plan; Different strengths: Campaign Monitor by Marigold excels at email marketing, Mailchimp at Email campaigns, basic automation and au",
+          "when_preferable": "When a free plan is required",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "activecampaign",
+          "shared_use_case": "Both serve the Email Marketing use case",
+          "major_difference": "Different strengths: Campaign Monitor by Marigold excels at email marketing, ActiveCampaign at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "getresponse",
+          "shared_use_case": "Both serve the Email Marketing use case",
+          "major_difference": "GetResponse offers a free plan; Different strengths: Campaign Monitor by Marigold excels at email marketing, GetResponse at AI-powered tool",
+          "when_preferable": "When a free plan is required",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "Mailchimp",
@@ -1361,16 +1747,32 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Pro",
+            "price": 12,
+            "period": "month"
+          },
+          {
+            "name": "Business",
+            "price": 20.83,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": true,
+          "duration_days": 30
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -1421,16 +1823,37 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription per user",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Starter",
+            "price": 18,
+            "period": "month"
+          },
+          {
+            "name": "Growth",
+            "price": 36,
+            "period": "month"
+          },
+          {
+            "name": "Advanced",
+            "price": 54,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": true,
+          "duration_days": 14
+        }
       },
       "cons": [
         "Very basic CRM",
@@ -1464,9 +1887,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "pipedrive",
-        "close",
-        "hubspot"
+        {
+          "tool_id": "pipedrive",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Capsule offers a free plan; Different strengths: Capsule excels at Simple and intuitive CRM, Pipedrive at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "close",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Capsule excels at Simple and intuitive CRM, Close at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "hubspot",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Capsule excels at Simple and intuitive CRM, HubSpot at CRM, marketing and sales workflows in on",
+          "when_preferable": "When crm, marketing and sales workflows in one platform is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "pipedrive"
@@ -1546,9 +1990,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "otter",
-        "fireflies",
-        "descript"
+        {
+          "tool_id": "otter",
+          "shared_use_case": "Tool A: Transforms audio/video into blog posts and social ... | Tool B: Meeting transcription and searchable notes...",
+          "major_difference": "Castmagic is Voice & Video, Otter.ai is Productivity; Different strengths: Castmagic excels at Transforms audio/video into blog posts a, Otter.ai at Meeting transcription and searchable not",
+          "when_preferable": "When meeting transcription and searchable notes is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "fireflies",
+          "shared_use_case": "Tool A: Transforms audio/video into blog posts and social ... | Tool B: Recording, transcribing and reviewing meetings...",
+          "major_difference": "Castmagic is Voice & Video, Fireflies.ai is Productivity; Different strengths: Castmagic excels at Transforms audio/video into blog posts a, Fireflies.ai at Recording, transcribing and reviewing me",
+          "when_preferable": "When recording, transcribing and reviewing meetings is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "descript",
+          "shared_use_case": "Both serve the Voice & Video use case",
+          "major_difference": "Different strengths: Castmagic excels at Transforms audio/video into blog posts a, Descript at Editing video and podcasts like a docume",
+          "when_preferable": "When editing video and podcasts like a document is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "descript"
@@ -1585,16 +2050,23 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Plus",
+            "price": 20,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
-        "lastChecked": null,
-        "sourceRefs": []
+          "available": true
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -1701,21 +2173,48 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Pro",
+            "price": 20,
+            "period": "month"
+          },
+          {
+            "name": "Max",
+            "price": 100,
+            "period": "month"
+          },
+          {
+            "name": "Ultra",
+            "price": 200,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true,
+          "limits": "limited usage"
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [],
       "bestFor": [],
       "skipIf": [],
-      "platforms": [],
+      "platforms": [
+        "web",
+        "iOS",
+        "Android",
+        "Windows",
+        "macOS"
+      ],
       "integrations": [],
       "useCaseTags": [],
       "sources": [],
@@ -1804,9 +2303,22 @@
         "lastVerified": null
       },
       "alternatives": [
-        "activecampaign",
-        "hubspot",
-        "activecampaign"
+        {
+          "tool_id": "activecampaign",
+          "shared_use_case": "Tool A: AI-native customer engagement... | Tool B: AI-powered tool...",
+          "major_difference": "CleverTap is Sales, ActiveCampaign is Email Marketing; Different strengths: CleverTap excels at AI-native customer engagement, ActiveCampaign at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "both_verified",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "hubspot",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: CleverTap excels at AI-native customer engagement, HubSpot at CRM, marketing and sales workflows in on",
+          "when_preferable": "When crm, marketing and sales workflows in one platform is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        }
       ],
       "comparisons": [
         "activecampaign"
@@ -1843,16 +2355,23 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Unlimited",
+            "price": 7,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
-        "lastChecked": null,
-        "sourceRefs": []
+          "available": true
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -2002,9 +2521,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "close",
-        "replyio",
-        "apollo"
+        {
+          "tool_id": "close",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Closely excels at Sales engagement platform, Close at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "replyio",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Closely excels at Sales engagement platform, Reply.io at Multi-channel outreach",
+          "when_preferable": "When multi-channel outreach is the priority",
+          "evidence_basis": "shared_category; shared_use_case_tags; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "apollo",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Closely excels at Sales engagement platform, Apollo.io at 275M+ contact database",
+          "when_preferable": "When 275m+ contact database is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        }
       ],
       "comparisons": [
         "close"
@@ -2084,9 +2624,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "aircall",
-        "krispcall",
-        "zendesk"
+        {
+          "tool_id": "aircall",
+          "shared_use_case": "Both serve the Customer Support use case",
+          "major_difference": "Different strengths: CloudTalk excels at All-in-one cloud contact center, Aircall at Clean, modern cloud phone interface",
+          "when_preferable": "When clean, modern cloud phone interface is the priority",
+          "evidence_basis": "shared_category; shared_use_case_tags",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "krispcall",
+          "shared_use_case": "Both serve the Customer Support use case",
+          "major_difference": "Different strengths: CloudTalk excels at All-in-one cloud contact center, KrispCall at AI noise cancellation included on all pl",
+          "when_preferable": "When ai noise cancellation included on all plans is the priority",
+          "evidence_basis": "shared_category; shared_use_case_tags",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "zendesk",
+          "shared_use_case": "Both serve the Customer Support use case",
+          "major_difference": "Different strengths: CloudTalk excels at All-in-one cloud contact center, Zendesk at Industry-standard omnichannel platform",
+          "when_preferable": "When industry-standard omnichannel platform is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "aircall"
@@ -2123,16 +2684,31 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "event-based pricing",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Pay-Per-Event",
+            "price": 30,
+            "period": "per user per event"
+          },
+          {
+            "name": "Pre-Fund",
+            "price": 5000,
+            "period": "year"
+          },
+          {
+            "name": "Enterprise",
+            "price": null,
+            "period": "custom"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": false
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [
         "Primarily for culture/EX",
@@ -2166,9 +2742,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "connecteam",
-        "deel",
-        "notion"
+        {
+          "tool_id": "connecteam",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Connecteam offers a free plan; Different strengths: Confetti excels at Employee experience platform, Connecteam at Free plan for up to 10 users",
+          "when_preferable": "When a free plan is required",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "deel",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: Confetti excels at Employee experience platform, Deel at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "notion",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Notion offers a free plan; Different strengths: Confetti excels at Employee experience platform, Notion at Notes, tasks and client work in one plac",
+          "when_preferable": "When a free plan is required",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        }
       ],
       "comparisons": [
         "connecteam"
@@ -2205,16 +2802,37 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "per-hub subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Small Business",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Basic",
+            "price": 29,
+            "period": "month"
+          },
+          {
+            "name": "Advanced",
+            "price": 49,
+            "period": "month"
+          },
+          {
+            "name": "Expert",
+            "price": 99,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true,
+          "limits": "up to 10 users"
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [
         "Free plan limited to 10 users",
@@ -2231,7 +2849,11 @@
         "Advanced features require paid plans",
         "Learning curve for setup"
       ],
-      "platforms": [],
+      "platforms": [
+        "web",
+        "iOS",
+        "Android"
+      ],
       "integrations": [],
       "useCaseTags": [
         "workforce management",
@@ -2248,7 +2870,14 @@
         "lastVerified": null
       },
       "alternatives": [
-        "deel"
+        {
+          "tool_id": "deel",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: Connecteam excels at Free plan for up to 10 users, Deel at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "deel"
@@ -2341,16 +2970,32 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Pro",
+            "price": 49,
+            "period": "month"
+          },
+          {
+            "name": "Enterprise",
+            "price": null,
+            "period": "custom"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true,
+          "limits": "limited generations"
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -2457,16 +3102,37 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Hobbyist",
+            "price": 16,
+            "period": "month"
+          },
+          {
+            "name": "Creator",
+            "price": 24,
+            "period": "month"
+          },
+          {
+            "name": "Business",
+            "price": 50,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true,
+          "limits": "1 hour media/mo"
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -2517,16 +3183,22 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Business",
+            "price": 31.5,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": false
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": true,
+          "duration_days": 14
+        }
       },
       "cons": [
         "Focused on expense management",
@@ -2560,9 +3232,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "shoeboxed",
-        "freshbooks",
-        "quickbooks"
+        {
+          "tool_id": "shoeboxed",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: Dext excels at AI-powered receipt scanning, Shoeboxed at Unlimited receipt scanning",
+          "when_preferable": "When unlimited receipt scanning is the priority",
+          "evidence_basis": "shared_category; shared_use_case_tags",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "freshbooks",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: Dext excels at AI-powered receipt scanning, FreshBooks at Intuitive accounting for SMB",
+          "when_preferable": "When intuitive accounting for smb is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "quickbooks",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: Dext excels at AI-powered receipt scanning, QuickBooks at Industry-standard accounting",
+          "when_preferable": "When industry-standard accounting is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "shoeboxed"
@@ -2642,9 +3335,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "apollo",
-        "close",
-        "pipedrive"
+        {
+          "tool_id": "apollo",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Dripify excels at LinkedIn outreach automation, Apollo.io at 275M+ contact database",
+          "when_preferable": "When 275m+ contact database is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "close",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Dripify excels at LinkedIn outreach automation, Close at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "pipedrive",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Dripify excels at LinkedIn outreach automation, Pipedrive at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        }
       ],
       "comparisons": [
         "apollo"
@@ -2681,16 +3395,47 @@
       "affiliateUrl": "https://try.elevenlabs.io/4kkksh8cm36q",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Starter",
+            "price": 6,
+            "period": "month"
+          },
+          {
+            "name": "Creator",
+            "price": 22,
+            "period": "month"
+          },
+          {
+            "name": "Pro",
+            "price": 99,
+            "period": "month"
+          },
+          {
+            "name": "Scale",
+            "price": 299,
+            "period": "month"
+          },
+          {
+            "name": "Business",
+            "price": 990,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true,
+          "limits": "10k credits/mo, non-commercial"
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -2784,9 +3529,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "midjourney",
-        "leonardo",
-        "canva"
+        {
+          "tool_id": "midjourney",
+          "shared_use_case": "Both serve the Image Generation use case",
+          "major_difference": "Different strengths: ExpertEx excels at Studio-quality product photos from basic, Midjourney at Stylized AI images and creative visual c",
+          "when_preferable": "When stylized ai images and creative visual concepts is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "leonardo",
+          "shared_use_case": "Both serve the Image Generation use case",
+          "major_difference": "Different strengths: ExpertEx excels at Studio-quality product photos from basic, Leonardo AI at AI images, assets and creative productio",
+          "when_preferable": "When ai images, assets and creative production is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "canva",
+          "shared_use_case": "Tool A: Studio-quality product photos from basic images... | Tool B: Social graphics, presentations and simple brand de...",
+          "major_difference": "ExpertEx is Image Generation, Canva is Design; Different strengths: ExpertEx excels at Studio-quality product photos from basic, Canva at Social graphics, presentations and simpl",
+          "when_preferable": "When social graphics, presentations and simple brand designs is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "midjourney"
@@ -2823,16 +3589,28 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription per editor",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Starter",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Professional",
+            "price": 16,
+            "period": "month"
+          },
+          {
+            "name": "Organization",
+            "price": 55,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
-        },
-        "lastChecked": null,
-        "sourceRefs": []
+          "available": true
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -2986,9 +3764,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "getresponse",
-        "manychat",
-        "adcreative"
+        {
+          "tool_id": "getresponse",
+          "shared_use_case": "Tool A: Easy quiz creation and embedding... | Tool B: AI-powered tool...",
+          "major_difference": "FlexiQuiz is Marketing, GetResponse is Email Marketing; Different strengths: FlexiQuiz excels at Easy quiz creation and embedding, GetResponse at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "manychat",
+          "shared_use_case": "Both serve the Marketing use case",
+          "major_difference": "Different strengths: FlexiQuiz excels at Easy quiz creation and embedding, Manychat at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "adcreative",
+          "shared_use_case": "Both serve the Marketing use case",
+          "major_difference": "Different strengths: FlexiQuiz excels at Easy quiz creation and embedding, AdCreative.ai at AI-generated ad creatives with proven te",
+          "when_preferable": "When ai-generated ad creatives with proven templates is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [],
       "goals": [],
@@ -3066,9 +3865,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "lemlist",
-        "mailchimp",
-        "activecampaign"
+        {
+          "tool_id": "lemlist",
+          "shared_use_case": "Tool A: Cold email outreach with AI copywriting... | Tool B: AI-powered tool...",
+          "major_difference": "Flocksy is Email Marketing, lemlist is Marketing; Different strengths: Flocksy excels at Cold email outreach with AI copywriting, lemlist at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "mailchimp",
+          "shared_use_case": "Both serve the Email Marketing use case",
+          "major_difference": "Different strengths: Flocksy excels at Cold email outreach with AI copywriting, Mailchimp at Email campaigns, basic automation and au",
+          "when_preferable": "When email campaigns, basic automation and audience management is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "activecampaign",
+          "shared_use_case": "Both serve the Email Marketing use case",
+          "major_difference": "Different strengths: Flocksy excels at Cold email outreach with AI copywriting, ActiveCampaign at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "lemlist"
@@ -3165,16 +3985,32 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription by clients",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Lite",
+            "price": 23,
+            "period": "month"
+          },
+          {
+            "name": "Plus",
+            "price": 43,
+            "period": "month"
+          },
+          {
+            "name": "Premium",
+            "price": 70,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": false
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": true,
+          "duration_days": 30
+        }
       },
       "cons": [
         "Limited for complex accounting needs",
@@ -3208,9 +4044,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "deel",
-        "shoeboxed",
-        "connecteam"
+        {
+          "tool_id": "deel",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: FreshBooks excels at Intuitive accounting for SMB, Deel at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "shoeboxed",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: FreshBooks excels at Intuitive accounting for SMB, Shoeboxed at Unlimited receipt scanning",
+          "when_preferable": "When unlimited receipt scanning is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "connecteam",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Connecteam offers a free plan; Different strengths: FreshBooks excels at Intuitive accounting for SMB, Connecteam at Free plan for up to 10 users",
+          "when_preferable": "When a free plan is required",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "deel"
@@ -3415,16 +4272,37 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription by contacts",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Starter",
+            "price": 19,
+            "period": "month"
+          },
+          {
+            "name": "Marketer",
+            "price": 59,
+            "period": "month"
+          },
+          {
+            "name": "Creator",
+            "price": 69,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": true,
+          "duration_days": 30
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -3518,9 +4396,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "webflow",
-        "softr",
-        "unbounce"
+        {
+          "tool_id": "webflow",
+          "shared_use_case": "Both serve the Website Builder use case",
+          "major_difference": "Different strengths: Glide excels at No-code app builder from spreadsheets, Webflow at Visual websites with CMS and design cont",
+          "when_preferable": "When visual websites with cms and design control is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "softr",
+          "shared_use_case": "Both serve the Website Builder use case",
+          "major_difference": "Different strengths: Glide excels at No-code app builder from spreadsheets, Softr at No-code app and portal builder",
+          "when_preferable": "When no-code app and portal builder is the priority",
+          "evidence_basis": "shared_category; shared_use_case_tags",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "unbounce",
+          "shared_use_case": "Both serve the Website Builder use case",
+          "major_difference": "Different strengths: Glide excels at No-code app builder from spreadsheets, Unbounce at Purpose-built for landing pages",
+          "when_preferable": "When purpose-built for landing pages is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "softr"
@@ -3613,16 +4512,26 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Pro",
+            "price": 12,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -3716,9 +4625,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "freshdesk",
-        "gorgias",
-        "tidio"
+        {
+          "tool_id": "freshdesk",
+          "shared_use_case": "Tool A: Clean email-first interface... | Tool B: AI-powered tool...",
+          "major_difference": "Help Scout is Customer Support, Freshdesk is Sales; Different strengths: Help Scout excels at Clean email-first interface, Freshdesk at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "both_verified",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "gorgias",
+          "shared_use_case": "Tool A: Clean email-first interface... | Tool B: AI-powered tool...",
+          "major_difference": "Help Scout is Customer Support, Gorgias is Sales; Different strengths: Help Scout excels at Clean email-first interface, Gorgias at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "tidio",
+          "shared_use_case": "Both serve the Customer Support use case",
+          "major_difference": "Different strengths: Help Scout excels at Clean email-first interface, Tidio at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "freshdesk"
@@ -3815,16 +4745,15 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
+        "model": "custom per-employee pricing",
+        "currency": "USD",
         "tiers": [],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": false
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [
         "Custom pricing unclear for SMB",
@@ -3858,9 +4787,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "connecteam",
-        "deel",
-        "clickup"
+        {
+          "tool_id": "connecteam",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Connecteam offers a free plan; Different strengths: HiBob excels at Modern HRIS platform, Connecteam at Free plan for up to 10 users",
+          "when_preferable": "When a free plan is required",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "deel",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: HiBob excels at Modern HRIS platform, Deel at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "clickup",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "ClickUp offers a free plan; Different strengths: HiBob excels at Modern HRIS platform, ClickUp at Tasks, documents and team project manage",
+          "when_preferable": "When a free plan is required",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        }
       ],
       "comparisons": [
         "connecteam"
@@ -3940,9 +4890,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "zapier",
-        "make",
-        "n8n"
+        {
+          "tool_id": "zapier",
+          "shared_use_case": "Both serve the Automation use case",
+          "major_difference": "Different strengths: Hightouch excels at Reverse ETL leader, Zapier at Connecting apps and automating repetitiv",
+          "when_preferable": "When connecting apps and automating repetitive workflows is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "make",
+          "shared_use_case": "Both serve the Automation use case",
+          "major_difference": "Different strengths: Hightouch excels at Reverse ETL leader, Make at Visual multi-step workflow automation ac",
+          "when_preferable": "When visual multi-step workflow automation across apps is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "n8n",
+          "shared_use_case": "Both serve the Automation use case",
+          "major_difference": "Different strengths: Hightouch excels at Reverse ETL leader, n8n at Flexible workflow automation with techni",
+          "when_preferable": "When flexible workflow automation with technical control is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "zapier"
@@ -4039,16 +5010,37 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Starter",
+            "price": 20,
+            "period": "month"
+          },
+          {
+            "name": "Professional",
+            "price": 800,
+            "period": "month"
+          },
+          {
+            "name": "Enterprise",
+            "price": 3600,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true,
+          "limits": "basic CRM"
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -4202,9 +5194,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "lemlist",
-        "flocksy",
-        "smartlead"
+        {
+          "tool_id": "lemlist",
+          "shared_use_case": "Tool A: Built-in email warmup... | Tool B: AI-powered tool...",
+          "major_difference": "Instantly is Email Marketing, lemlist is Marketing; Different strengths: Instantly excels at Built-in email warmup, lemlist at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "flocksy",
+          "shared_use_case": "Both serve the Email Marketing use case",
+          "major_difference": "Different strengths: Instantly excels at Built-in email warmup, Flocksy at Cold email outreach with AI copywriting",
+          "when_preferable": "When cold email outreach with ai copywriting is the priority",
+          "evidence_basis": "shared_category; shared_use_case_tags",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "smartlead",
+          "shared_use_case": "Both serve the Email Marketing use case",
+          "major_difference": "Different strengths: Instantly excels at Built-in email warmup, Smartlead at Cold email automation",
+          "when_preferable": "When cold email automation is the priority",
+          "evidence_basis": "shared_category; shared_use_case_tags",
+          "verification_status": "PARTIALLY_VERIFIED"
+        }
       ],
       "comparisons": [
         "lemlist"
@@ -4340,9 +5353,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "freshdesk",
-        "gorgias",
-        "helpscout"
+        {
+          "tool_id": "freshdesk",
+          "shared_use_case": "Tool A: AI-powered customer messaging... | Tool B: AI-powered tool...",
+          "major_difference": "Intercom is Customer Support, Freshdesk is Sales; Different strengths: Intercom excels at AI-powered customer messaging, Freshdesk at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "both_verified",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "gorgias",
+          "shared_use_case": "Tool A: AI-powered customer messaging... | Tool B: AI-powered tool...",
+          "major_difference": "Intercom is Customer Support, Gorgias is Sales; Different strengths: Intercom excels at AI-powered customer messaging, Gorgias at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "helpscout",
+          "shared_use_case": "Both serve the Customer Support use case",
+          "major_difference": "Different strengths: Intercom excels at AI-powered customer messaging, Help Scout at Clean email-first interface",
+          "when_preferable": "When clean email-first interface is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        }
       ],
       "comparisons": [
         "freshdesk"
@@ -4439,16 +5473,27 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Creator",
+            "price": 49,
+            "period": "month"
+          },
+          {
+            "name": "Pro",
+            "price": 69,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": false
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": true,
+          "duration_days": 5
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -4611,9 +5656,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "ActiveCampaign",
-        "HubSpot",
-        "Nutshell"
+        {
+          "tool_id": "activecampaign",
+          "shared_use_case": "Tool A: CRM... | Tool B: AI-powered tool...",
+          "major_difference": "Keap (formerly Infusionsoft) is Sales, ActiveCampaign is Email Marketing; Different strengths: Keap (formerly Infusionsoft) excels at CRM, ActiveCampaign at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "hubspot",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "HubSpot offers a free plan; Different strengths: Keap (formerly Infusionsoft) excels at CRM, HubSpot at CRM, marketing and sales workflows in on",
+          "when_preferable": "When a free plan is required",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "nutshell",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Keap (formerly Infusionsoft) excels at CRM, Nutshell at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "ActiveCampaign",
@@ -4651,16 +5717,31 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription by subscribers",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Newsletter",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Creator",
+            "price": 39,
+            "period": "month"
+          },
+          {
+            "name": "Creator Pro",
+            "price": 79,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -4754,8 +5835,22 @@
         "lastVerified": null
       },
       "alternatives": [
-        "aircall",
-        "quo"
+        {
+          "tool_id": "aircall",
+          "shared_use_case": "Both serve the Customer Support use case",
+          "major_difference": "Different strengths: KrispCall excels at AI noise cancellation included on all pl, Aircall at Clean, modern cloud phone interface",
+          "when_preferable": "When clean, modern cloud phone interface is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "quo",
+          "shared_use_case": "Both serve the Customer Support use case",
+          "major_difference": "Different strengths: KrispCall excels at AI noise cancellation included on all pl, Quo at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "aircall",
@@ -4836,9 +5931,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "teachable",
-        "circle",
-        "getresponse"
+        {
+          "tool_id": "teachable",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: LearnWorlds excels at Interactive course builder, Teachable at Easy course creation and hosting",
+          "when_preferable": "When easy course creation and hosting is the priority",
+          "evidence_basis": "shared_category; shared_use_case_tags; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "circle",
+          "shared_use_case": "Tool A: Interactive course builder... | Tool B: AI-powered tool...",
+          "major_difference": "LearnWorlds is Sales, Circle is Marketing; Different strengths: LearnWorlds excels at Interactive course builder, Circle at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "getresponse",
+          "shared_use_case": "Tool A: Interactive course builder... | Tool B: AI-powered tool...",
+          "major_difference": "LearnWorlds is Sales, GetResponse is Email Marketing; Different strengths: LearnWorlds excels at Interactive course builder, GetResponse at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "both_verified",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "teachable"
@@ -5034,9 +6150,22 @@
         "lastVerified": null
       },
       "alternatives": [
-        "canva",
-        "canva",
-        "adobeexpress"
+        {
+          "tool_id": "canva",
+          "shared_use_case": "Both serve the Design use case",
+          "major_difference": "Different strengths: Logome.ai excels at AI-powered logo generation, Canva at Social graphics, presentations and simpl",
+          "when_preferable": "When social graphics, presentations and simple brand designs is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "adobeexpress",
+          "shared_use_case": "Both serve the Design use case",
+          "major_difference": "Different strengths: Logome.ai excels at AI-powered logo generation, Adobe Express at Quick social graphics, videos and brand ",
+          "when_preferable": "When quick social graphics, videos and brand content is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "canva"
@@ -5116,9 +6245,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "apollo",
-        "close",
-        "pipedrive"
+        {
+          "tool_id": "apollo",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Lusha excels at Contact and company data platform, Apollo.io at 275M+ contact database",
+          "when_preferable": "When 275m+ contact database is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "close",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Lusha excels at Contact and company data platform, Close at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "pipedrive",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Lusha excels at Contact and company data platform, Pipedrive at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        }
       ],
       "comparisons": [
         "apollo"
@@ -5155,16 +6305,37 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription by contacts",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Essentials",
+            "price": 13,
+            "period": "month"
+          },
+          {
+            "name": "Standard",
+            "price": 20,
+            "period": "month"
+          },
+          {
+            "name": "Premium",
+            "price": 350,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": true,
+          "duration_days": 14
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -5331,16 +6502,38 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Basic",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Pro",
+            "price": 9.99,
+            "period": "month"
+          },
+          {
+            "name": "Business",
+            "price": 17,
+            "period": "month"
+          },
+          {
+            "name": "Enterprise",
+            "price": null,
+            "period": "custom"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true,
+          "limits": "3 hours transcription/mo"
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": true,
+          "duration_days": 14
+        }
       },
       "cons": [
         "Meeting limits on free tier",
@@ -5374,9 +6567,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "otter",
-        "fireflies",
-        "descript"
+        {
+          "tool_id": "otter",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: MeetGeek excels at AI meeting automation, Otter.ai at Meeting transcription and searchable not",
+          "when_preferable": "When meeting transcription and searchable notes is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "fireflies",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: MeetGeek excels at AI meeting automation, Fireflies.ai at Recording, transcribing and reviewing me",
+          "when_preferable": "When recording, transcribing and reviewing meetings is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "descript",
+          "shared_use_case": "Tool A: AI meeting automation... | Tool B: Editing video and podcasts like a document...",
+          "major_difference": "MeetGeek is Productivity, Descript is Voice & Video; Different strengths: MeetGeek excels at AI meeting automation, Descript at Editing video and podcasts like a docume",
+          "when_preferable": "When editing video and podcasts like a document is the priority",
+          "evidence_basis": "both_verified",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "otter"
@@ -5413,16 +6627,31 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Basic",
+            "price": 10,
+            "period": "month"
+          },
+          {
+            "name": "Standard",
+            "price": 30,
+            "period": "month"
+          },
+          {
+            "name": "Pro",
+            "price": 60,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": false
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -5516,9 +6745,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "amplitude",
-        "semrush",
-        "wingify"
+        {
+          "tool_id": "amplitude",
+          "shared_use_case": "Both serve the Marketing use case",
+          "major_difference": "Different strengths: Mixpanel excels at Free plan with 10,000 tracked users, Amplitude at Generous free plan with 1M events/mo",
+          "when_preferable": "When generous free plan with 1m events/mo is the priority",
+          "evidence_basis": "shared_category; shared_use_case_tags; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "semrush",
+          "shared_use_case": "Tool A: Free plan with 10,000 tracked users... | Tool B: Finding keywords and checking competitors...",
+          "major_difference": "Mixpanel is Marketing, Semrush is SEO; Different strengths: Mixpanel excels at Free plan with 10,000 tracked users, Semrush at Finding keywords and checking competitor",
+          "when_preferable": "When finding keywords and checking competitors is the priority",
+          "evidence_basis": "both_verified",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "wingify",
+          "shared_use_case": "Both serve the Marketing use case",
+          "major_difference": "Different strengths: Mixpanel excels at Free plan with 10,000 tracked users, Wingify (now VWO) at A/B testing and visual editor",
+          "when_preferable": "When a/b testing and visual editor is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "amplitude"
@@ -5555,16 +6805,36 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Basic",
+            "price": 9,
+            "period": "month"
+          },
+          {
+            "name": "Standard",
+            "price": 17,
+            "period": "month"
+          },
+          {
+            "name": "Pro",
+            "price": 26,
+            "period": "month"
+          },
+          {
+            "name": "Enterprise",
+            "price": null,
+            "period": "custom"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": false
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -5963,16 +7233,37 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Plus",
+            "price": 10,
+            "period": "month"
+          },
+          {
+            "name": "Business",
+            "price": 20,
+            "period": "month"
+          },
+          {
+            "name": "Enterprise",
+            "price": null,
+            "period": "custom"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true,
+          "limits": "10 guests max"
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -6122,9 +7413,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "mailchimp",
-        "getresponse",
-        "activecampaign"
+        {
+          "tool_id": "mailchimp",
+          "shared_use_case": "Both serve the Email Marketing use case",
+          "major_difference": "Different strengths: Omnisend excels at eCommerce-focused marketing automation, Mailchimp at Email campaigns, basic automation and au",
+          "when_preferable": "When email campaigns, basic automation and audience management is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "getresponse",
+          "shared_use_case": "Both serve the Email Marketing use case",
+          "major_difference": "Different strengths: Omnisend excels at eCommerce-focused marketing automation, GetResponse at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "activecampaign",
+          "shared_use_case": "Both serve the Email Marketing use case",
+          "major_difference": "Different strengths: Omnisend excels at eCommerce-focused marketing automation, ActiveCampaign at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        }
       ],
       "comparisons": [
         "mailchimp"
@@ -6204,9 +7516,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "semrush",
-        "surferseo",
-        "ahrefs"
+        {
+          "tool_id": "semrush",
+          "shared_use_case": "Tool A: AI visibility measurement platform... | Tool B: Finding keywords and checking competitors...",
+          "major_difference": "OmniSEO is Marketing, Semrush is SEO; Different strengths: OmniSEO excels at AI visibility measurement platform, Semrush at Finding keywords and checking competitor",
+          "when_preferable": "When finding keywords and checking competitors is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "surferseo",
+          "shared_use_case": "Tool A: AI visibility measurement platform... | Tool B: Optimizing articles around search intent and on-pa...",
+          "major_difference": "OmniSEO is Marketing, Surfer SEO is SEO; Different strengths: OmniSEO excels at AI visibility measurement platform, Surfer SEO at Optimizing articles around search intent",
+          "when_preferable": "When optimizing articles around search intent and on-page signals is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "ahrefs",
+          "shared_use_case": "Tool A: AI visibility measurement platform... | Tool B: Backlink research, keywords and competitor SEO ana...",
+          "major_difference": "OmniSEO is Marketing, Ahrefs is SEO; Different strengths: OmniSEO excels at AI visibility measurement platform, Ahrefs at Backlink research, keywords and competit",
+          "when_preferable": "When backlink research, keywords and competitor seo analysis is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "semrush"
@@ -6303,16 +7636,38 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free eSign",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Starter",
+            "price": 19,
+            "period": "month"
+          },
+          {
+            "name": "Business",
+            "price": 49,
+            "period": "month"
+          },
+          {
+            "name": "Enterprise",
+            "price": null,
+            "period": "custom"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true,
+          "limits": "60 docs/year"
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": true,
+          "duration_days": 14
+        }
       },
       "cons": [
         "Per-user pricing scales cost",
@@ -6346,9 +7701,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "notion",
-        "deel",
-        "connecteam"
+        {
+          "tool_id": "notion",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: PandaDoc excels at Document automation and e-signatures, Notion at Notes, tasks and client work in one plac",
+          "when_preferable": "When notes, tasks and client work in one place is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "deel",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: PandaDoc excels at Document automation and e-signatures, Deel at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "connecteam",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: PandaDoc excels at Document automation and e-signatures, Connecteam at Free plan for up to 10 users",
+          "when_preferable": "When free plan for up to 10 users is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        }
       ],
       "comparisons": [
         "notion"
@@ -6441,16 +7817,37 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Lite",
+            "price": 14,
+            "period": "month"
+          },
+          {
+            "name": "Essential",
+            "price": 27,
+            "period": "month"
+          },
+          {
+            "name": "Scale",
+            "price": 49,
+            "period": "month"
+          },
+          {
+            "name": "Premium",
+            "price": 79,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": false
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": true,
+          "duration_days": 14
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -6544,9 +7941,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "canva",
-        "removebg",
-        "adobeexpress"
+        {
+          "tool_id": "canva",
+          "shared_use_case": "Both serve the Design use case",
+          "major_difference": "Different strengths: Pixel Union excels at AI product photography, Canva at Social graphics, presentations and simpl",
+          "when_preferable": "When social graphics, presentations and simple brand designs is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "removebg",
+          "shared_use_case": "Both serve the Design use case",
+          "major_difference": "Different strengths: Pixel Union excels at AI product photography, remove.bg at Removing image backgrounds quickly",
+          "when_preferable": "When removing image backgrounds quickly is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "adobeexpress",
+          "shared_use_case": "Both serve the Design use case",
+          "major_difference": "Different strengths: Pixel Union excels at AI product photography, Adobe Express at Quick social graphics, videos and brand ",
+          "when_preferable": "When quick social graphics, videos and brand content is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "canva"
@@ -6643,16 +8061,36 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Simple Start",
+            "price": 38,
+            "period": "month"
+          },
+          {
+            "name": "Essentials",
+            "price": 75,
+            "period": "month"
+          },
+          {
+            "name": "Plus",
+            "price": 115,
+            "period": "month"
+          },
+          {
+            "name": "Advanced",
+            "price": 275,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": false
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [
         "Can be complex for simple needs",
@@ -6669,7 +8107,11 @@
         "Per-user pricing scales cost",
         "Limited for enterprise"
       ],
-      "platforms": [],
+      "platforms": [
+        "web",
+        "iOS",
+        "Android"
+      ],
       "integrations": [],
       "useCaseTags": [
         "accounting software",
@@ -6686,9 +8128,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "xero",
-        "freshbooks",
-        "bill"
+        {
+          "tool_id": "xero",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: QuickBooks excels at Industry-standard accounting, Xero at Cloud accounting for SMB",
+          "when_preferable": "When cloud accounting for smb is the priority",
+          "evidence_basis": "shared_category; shared_use_case_tags; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "freshbooks",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: QuickBooks excels at Industry-standard accounting, FreshBooks at Intuitive accounting for SMB",
+          "when_preferable": "When intuitive accounting for smb is the priority",
+          "evidence_basis": "shared_category; shared_use_case_tags",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "bill",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: QuickBooks excels at Industry-standard accounting, BILL at AP/automation",
+          "when_preferable": "When ap/automation is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "xero"
@@ -6725,16 +8188,26 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Premium",
+            "price": 8.33,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -6884,9 +8357,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "getresponse",
-        "mailchimp",
-        "activecampaign"
+        {
+          "tool_id": "getresponse",
+          "shared_use_case": "Both serve the Email Marketing use case",
+          "major_difference": "Different strengths: Really Good Emails excels at Email design platform and inspiration, GetResponse at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "mailchimp",
+          "shared_use_case": "Both serve the Email Marketing use case",
+          "major_difference": "Different strengths: Really Good Emails excels at Email design platform and inspiration, Mailchimp at Email campaigns, basic automation and au",
+          "when_preferable": "When email campaigns, basic automation and audience management is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "activecampaign",
+          "shared_use_case": "Both serve the Email Marketing use case",
+          "major_difference": "Different strengths: Really Good Emails excels at Email design platform and inspiration, ActiveCampaign at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "getresponse"
@@ -7026,9 +8520,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "apollo",
-        "close",
-        "pipedrive"
+        {
+          "tool_id": "apollo",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Reply.io excels at Multi-channel outreach, Apollo.io at 275M+ contact database",
+          "when_preferable": "When 275m+ contact database is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "close",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Reply.io excels at Multi-channel outreach, Close at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "pipedrive",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Reply.io excels at Multi-channel outreach, Pipedrive at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        }
       ],
       "comparisons": [
         "apollo"
@@ -7168,9 +8683,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "hubspot",
-        "pipedrive",
-        "close"
+        {
+          "tool_id": "hubspot",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Salesforce Essentials excels at Salesforce ecosystem access, HubSpot at CRM, marketing and sales workflows in on",
+          "when_preferable": "When crm, marketing and sales workflows in one platform is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "pipedrive",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Salesforce Essentials excels at Salesforce ecosystem access, Pipedrive at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "close",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Salesforce Essentials excels at Salesforce ecosystem access, Close at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "hubspot"
@@ -7327,16 +8863,37 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Starter",
+            "price": 9,
+            "period": "month"
+          },
+          {
+            "name": "Pro",
+            "price": 29,
+            "period": "month"
+          },
+          {
+            "name": "Plus",
+            "price": 79,
+            "period": "month"
+          },
+          {
+            "name": "Paper Plus",
+            "price": 179,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": false
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": true,
+          "duration_days": 30
+        }
       },
       "cons": [
         "Advanced features require higher tiers",
@@ -7353,7 +8910,11 @@
         "No free plan",
         "Mail-in receipts may have delays"
       ],
-      "platforms": [],
+      "platforms": [
+        "web",
+        "iOS",
+        "Android"
+      ],
       "integrations": [],
       "useCaseTags": [
         "receipt scanning",
@@ -7370,9 +8931,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "deel",
-        "connecteam",
-        "notion"
+        {
+          "tool_id": "deel",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: Shoeboxed excels at Unlimited receipt scanning, Deel at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "connecteam",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Connecteam offers a free plan; Different strengths: Shoeboxed excels at Unlimited receipt scanning, Connecteam at Free plan for up to 10 users",
+          "when_preferable": "When a free plan is required",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "notion",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Notion offers a free plan; Different strengths: Shoeboxed excels at Unlimited receipt scanning, Notion at Notes, tasks and client work in one plac",
+          "when_preferable": "When a free plan is required",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        }
       ],
       "comparisons": [
         "deel"
@@ -7452,9 +9034,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "getresponse",
-        "manychat",
-        "textline"
+        {
+          "tool_id": "getresponse",
+          "shared_use_case": "Tool A: SMS marketing platform... | Tool B: AI-powered tool...",
+          "major_difference": "SimpleTexting is Marketing, GetResponse is Email Marketing; Different strengths: SimpleTexting excels at SMS marketing platform, GetResponse at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "both_verified",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "manychat",
+          "shared_use_case": "Both serve the Marketing use case",
+          "major_difference": "Different strengths: SimpleTexting excels at SMS marketing platform, Manychat at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "textline",
+          "shared_use_case": "Tool A: SMS marketing platform... | Tool B: Two-way SMS for customer communication...",
+          "major_difference": "SimpleTexting is Marketing, Textline is Customer Support; Different strengths: SimpleTexting excels at SMS marketing platform, Textline at Two-way SMS for customer communication",
+          "when_preferable": "When two-way sms for customer communication is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "textline"
@@ -7534,9 +9137,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "instantly",
-        "lemlist",
-        "flocksy"
+        {
+          "tool_id": "instantly",
+          "shared_use_case": "Both serve the Email Marketing use case",
+          "major_difference": "Different strengths: Smartlead excels at Cold email automation, Instantly at Built-in email warmup",
+          "when_preferable": "When built-in email warmup is the priority",
+          "evidence_basis": "shared_category; shared_use_case_tags",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "lemlist",
+          "shared_use_case": "Tool A: Cold email automation... | Tool B: AI-powered tool...",
+          "major_difference": "Smartlead is Email Marketing, lemlist is Marketing; Different strengths: Smartlead excels at Cold email automation, lemlist at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "flocksy",
+          "shared_use_case": "Both serve the Email Marketing use case",
+          "major_difference": "Different strengths: Smartlead excels at Cold email automation, Flocksy at Cold email outreach with AI copywriting",
+          "when_preferable": "When cold email outreach with ai copywriting is the priority",
+          "evidence_basis": "shared_category; shared_use_case_tags",
+          "verification_status": "PARTIALLY_VERIFIED"
+        }
       ],
       "comparisons": [
         "instantly"
@@ -7616,9 +9240,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "jasper",
-        "copyai",
-        "writesonic"
+        {
+          "tool_id": "jasper",
+          "shared_use_case": "Tool A: eCommerce-specific AI copywriting... | Tool B: Ad copy and product page writing...",
+          "major_difference": "Smartli is Writing, Jasper is Marketing; Different strengths: Smartli excels at eCommerce-specific AI copywriting, Jasper at Ad copy and product page writing",
+          "when_preferable": "When ad copy and product page writing is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "copyai",
+          "shared_use_case": "Tool A: eCommerce-specific AI copywriting... | Tool B: Sales and marketing content workflows...",
+          "major_difference": "Smartli is Writing, Copy.ai is Marketing; Different strengths: Smartli excels at eCommerce-specific AI copywriting, Copy.ai at Sales and marketing content workflows",
+          "when_preferable": "When sales and marketing content workflows is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "writesonic",
+          "shared_use_case": "Both serve the Writing use case",
+          "major_difference": "Different strengths: Smartli excels at eCommerce-specific AI copywriting, Writesonic at Marketing articles, landing pages and ca",
+          "when_preferable": "When marketing articles, landing pages and campaign drafts is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "jasper"
@@ -7698,9 +9343,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "webflow",
-        "framer",
-        "unbounce"
+        {
+          "tool_id": "webflow",
+          "shared_use_case": "Both serve the Website Builder use case",
+          "major_difference": "Different strengths: Softr excels at No-code app and portal builder, Webflow at Visual websites with CMS and design cont",
+          "when_preferable": "When visual websites with cms and design control is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "framer",
+          "shared_use_case": "Both serve the Website Builder use case",
+          "major_difference": "Different strengths: Softr excels at No-code app and portal builder, Framer at Modern landing pages and design-led mark",
+          "when_preferable": "When modern landing pages and design-led marketing websites is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "unbounce",
+          "shared_use_case": "Both serve the Website Builder use case",
+          "major_difference": "Different strengths: Softr excels at No-code app and portal builder, Unbounce at Purpose-built for landing pages",
+          "when_preferable": "When purpose-built for landing pages is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "webflow"
@@ -7780,9 +9446,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "pipedrive",
-        "hubspot",
-        "close"
+        {
+          "tool_id": "pipedrive",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: SoftSync AI excels at CRM inside Claude and ChatGPT, Pipedrive at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "hubspot",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: SoftSync AI excels at CRM inside Claude and ChatGPT, HubSpot at CRM, marketing and sales workflows in on",
+          "when_preferable": "When crm, marketing and sales workflows in one platform is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "close",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: SoftSync AI excels at CRM inside Claude and ChatGPT, Close at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "pipedrive"
@@ -7862,9 +9549,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "close",
-        "nutshell",
-        "pipedrive"
+        {
+          "tool_id": "close",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Spiky excels at AI-powered conversation intelligence, Close at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "nutshell",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Spiky excels at AI-powered conversation intelligence, Nutshell at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "pipedrive",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Spiky excels at AI-powered conversation intelligence, Pipedrive at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        }
       ],
       "comparisons": [
         "close"
@@ -7944,9 +9652,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "manychat",
-        "getresponse",
-        "semrush"
+        {
+          "tool_id": "manychat",
+          "shared_use_case": "Both serve the Marketing use case",
+          "major_difference": "Different strengths: Sprout Social excels at Comprehensive social media management, Manychat at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "getresponse",
+          "shared_use_case": "Tool A: Comprehensive social media management... | Tool B: AI-powered tool...",
+          "major_difference": "Sprout Social is Marketing, GetResponse is Email Marketing; Different strengths: Sprout Social excels at Comprehensive social media management, GetResponse at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "both_verified",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "semrush",
+          "shared_use_case": "Tool A: Comprehensive social media management... | Tool B: Finding keywords and checking competitors...",
+          "major_difference": "Sprout Social is Marketing, Semrush is SEO; Different strengths: Sprout Social excels at Comprehensive social media management, Semrush at Finding keywords and checking competitor",
+          "when_preferable": "When finding keywords and checking competitors is the priority",
+          "evidence_basis": "both_verified",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "manychat"
@@ -8086,9 +9815,22 @@
         "lastVerified": null
       },
       "alternatives": [
-        "manychat",
-        "manychat",
-        "getresponse"
+        {
+          "tool_id": "manychat",
+          "shared_use_case": "Both serve the Marketing use case",
+          "major_difference": "Different strengths: Stamped.io excels at Product review platform, Manychat at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "getresponse",
+          "shared_use_case": "Tool A: Product review platform... | Tool B: AI-powered tool...",
+          "major_difference": "Stamped.io is Marketing, GetResponse is Email Marketing; Different strengths: Stamped.io excels at Product review platform, GetResponse at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "yotpo"
@@ -8168,9 +9910,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "pandadoc",
-        "notion",
-        "gamma"
+        {
+          "tool_id": "pandadoc",
+          "shared_use_case": "Both address: proposals",
+          "major_difference": "Storydoc is Writing, PandaDoc is Productivity; Different strengths: Storydoc excels at Interactive content and proposals, PandaDoc at Document automation and e-signatures",
+          "when_preferable": "When document automation and e-signatures is the priority",
+          "evidence_basis": "shared_use_case_tags",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "notion",
+          "shared_use_case": "Tool A: Interactive content and proposals... | Tool B: Notes, tasks and client work in one place...",
+          "major_difference": "Storydoc is Writing, Notion is Productivity; Different strengths: Storydoc excels at Interactive content and proposals, Notion at Notes, tasks and client work in one plac",
+          "when_preferable": "When notes, tasks and client work in one place is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "gamma",
+          "shared_use_case": "Tool A: Interactive content and proposals... | Tool B: AI-powered tool...",
+          "major_difference": "Storydoc is Writing, Gamma is Design; Different strengths: Storydoc excels at Interactive content and proposals, Gamma at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "pandadoc"
@@ -8250,9 +10013,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "pipedrive",
-        "close",
-        "spiky"
+        {
+          "tool_id": "pipedrive",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Storylane excels at All-in-one sales enablement platform, Pipedrive at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "close",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Storylane excels at All-in-one sales enablement platform, Close at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "spiky",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Storylane excels at All-in-one sales enablement platform, Spiky at AI-powered conversation intelligence",
+          "when_preferable": "When ai-powered conversation intelligence is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "pipedrive"
@@ -8332,9 +10116,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "pipedrive",
-        "close",
-        "hubspot"
+        {
+          "tool_id": "pipedrive",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Streak excels at CRM inside Gmail, Pipedrive at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "close",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Streak excels at CRM inside Gmail, Close at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "hubspot",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Streak excels at CRM inside Gmail, HubSpot at CRM, marketing and sales workflows in on",
+          "when_preferable": "When crm, marketing and sales workflows in one platform is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        }
       ],
       "comparisons": [
         "pipedrive"
@@ -8474,9 +10279,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "flexiquiz",
-        "getresponse",
-        "survicate"
+        {
+          "tool_id": "flexiquiz",
+          "shared_use_case": "Both serve the Marketing use case",
+          "major_difference": "Different strengths: SurveyMonkey excels at Industry-standard survey platform, FlexiQuiz at Easy quiz creation and embedding",
+          "when_preferable": "When easy quiz creation and embedding is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "getresponse",
+          "shared_use_case": "Tool A: Industry-standard survey platform... | Tool B: AI-powered tool...",
+          "major_difference": "SurveyMonkey is Marketing, GetResponse is Email Marketing; Different strengths: SurveyMonkey excels at Industry-standard survey platform, GetResponse at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "both_verified",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "survicate",
+          "shared_use_case": "Tool A: Industry-standard survey platform... | Tool B: AI-powered tool...",
+          "major_difference": "SurveyMonkey is Marketing, Survicate is Customer Support; Different strengths: SurveyMonkey excels at Industry-standard survey platform, Survicate at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "survicate"
@@ -8732,9 +10558,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "circle",
-        "getresponse",
-        "systeme"
+        {
+          "tool_id": "circle",
+          "shared_use_case": "Tool A: Easy course creation and hosting... | Tool B: AI-powered tool...",
+          "major_difference": "Teachable is Sales, Circle is Marketing; Different strengths: Teachable excels at Easy course creation and hosting, Circle at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "getresponse",
+          "shared_use_case": "Tool A: Easy course creation and hosting... | Tool B: AI-powered tool...",
+          "major_difference": "Teachable is Sales, GetResponse is Email Marketing; Different strengths: Teachable excels at Easy course creation and hosting, GetResponse at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "both_verified",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "systeme",
+          "shared_use_case": "Both serve the Sales use case",
+          "major_difference": "Different strengths: Teachable excels at Easy course creation and hosting, Systeme.io at Sales pages, email lists and online cour",
+          "when_preferable": "When sales pages, email lists and online courses is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "circle"
@@ -8771,16 +10618,38 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Basics",
+            "price": 9.99,
+            "period": "month"
+          },
+          {
+            "name": "Accelerate",
+            "price": 24.99,
+            "period": "month"
+          },
+          {
+            "name": "Optimize",
+            "price": null,
+            "period": "custom"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true,
+          "limits": "5 users, 5 projects"
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": true,
+          "duration_days": 14
+        }
       },
       "cons": [
         "No free plan",
@@ -8814,9 +10683,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "clickup",
-        "asana",
-        "notion"
+        {
+          "tool_id": "clickup",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: Teamwork excels at Project management for client work, ClickUp at Tasks, documents and team project manage",
+          "when_preferable": "When tasks, documents and team project management is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "asana",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: Teamwork excels at Project management for client work, Asana at Planning projects and coordinating team ",
+          "when_preferable": "When planning projects and coordinating team work is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "notion",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: Teamwork excels at Project management for client work, Notion at Notes, tasks and client work in one plac",
+          "when_preferable": "When notes, tasks and client work in one place is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        }
       ],
       "comparisons": [
         "clickup"
@@ -8896,9 +10786,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "semrush",
-        "surferseo",
-        "ahrefs"
+        {
+          "tool_id": "semrush",
+          "shared_use_case": "Both serve the SEO use case",
+          "major_difference": "Different strengths: Teikametrics excels at AI-powered marketplace optimization, Semrush at Finding keywords and checking competitor",
+          "when_preferable": "When finding keywords and checking competitors is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "surferseo",
+          "shared_use_case": "Both serve the SEO use case",
+          "major_difference": "Different strengths: Teikametrics excels at AI-powered marketplace optimization, Surfer SEO at Optimizing articles around search intent",
+          "when_preferable": "When optimizing articles around search intent and on-page signals is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "ahrefs",
+          "shared_use_case": "Both serve the SEO use case",
+          "major_difference": "Different strengths: Teikametrics excels at AI-powered marketplace optimization, Ahrefs at Backlink research, keywords and competit",
+          "when_preferable": "When backlink research, keywords and competitor seo analysis is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "semrush"
@@ -8978,9 +10889,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "tidio",
-        "quo",
-        "krispcall"
+        {
+          "tool_id": "tidio",
+          "shared_use_case": "Both serve the Customer Support use case",
+          "major_difference": "Different strengths: Textline excels at Two-way SMS for customer communication, Tidio at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "quo",
+          "shared_use_case": "Both serve the Customer Support use case",
+          "major_difference": "Different strengths: Textline excels at Two-way SMS for customer communication, Quo at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "krispcall",
+          "shared_use_case": "Both serve the Customer Support use case",
+          "major_difference": "Different strengths: Textline excels at Two-way SMS for customer communication, KrispCall at AI noise cancellation included on all pl",
+          "when_preferable": "When ai noise cancellation included on all plans is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "tidio"
@@ -9060,9 +10992,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "chatgpt",
-        "claude",
-        "gemini"
+        {
+          "tool_id": "chatgpt",
+          "shared_use_case": "Both serve the AI Assistants use case",
+          "major_difference": "Different strengths: TheTop excels at Consolidates notifications into one dail, ChatGPT at General writing, brainstorming, analysis",
+          "when_preferable": "When general writing, brainstorming, analysis and everyday ai hel is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "claude",
+          "shared_use_case": "Both serve the AI Assistants use case",
+          "major_difference": "Different strengths: TheTop excels at Consolidates notifications into one dail, Claude at Long-form analysis, writing and structur",
+          "when_preferable": "When long-form analysis, writing and structured reasoning is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "gemini",
+          "shared_use_case": "Both serve the AI Assistants use case",
+          "major_difference": "Different strengths: TheTop excels at Consolidates notifications into one dail, Gemini at AI help connected with Google products a",
+          "when_preferable": "When ai help connected with google products and multimodal work is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "chatgpt"
@@ -9155,16 +11108,37 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Basic",
+            "price": 6.67,
+            "period": "month"
+          },
+          {
+            "name": "Standard",
+            "price": 11.67,
+            "period": "month"
+          },
+          {
+            "name": "Premium",
+            "price": 16.7,
+            "period": "month"
+          },
+          {
+            "name": "Enterprise",
+            "price": null,
+            "period": "custom"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": false
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": true,
+          "duration_days": 14
+        }
       },
       "cons": [
         "Privacy concerns with activity monitoring",
@@ -9198,9 +11172,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "notion",
-        "connecteam",
-        "deel"
+        {
+          "tool_id": "notion",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Notion offers a free plan; Different strengths: Time Doctor excels at Affordable time tracking, Notion at Notes, tasks and client work in one plac",
+          "when_preferable": "When a free plan is required",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "connecteam",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Connecteam offers a free plan; Different strengths: Time Doctor excels at Affordable time tracking, Connecteam at Free plan for up to 10 users",
+          "when_preferable": "When a free plan is required",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "deel",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: Time Doctor excels at Affordable time tracking, Deel at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "connecteam"
@@ -9237,21 +11232,44 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Pro",
+            "price": 4,
+            "period": "month"
+          },
+          {
+            "name": "Business",
+            "price": 6,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true,
+          "limits": "5 active projects"
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [],
       "bestFor": [],
       "skipIf": [],
-      "platforms": [],
+      "platforms": [
+        "web",
+        "iOS",
+        "Android",
+        "Windows",
+        "macOS",
+        "Chrome"
+      ],
       "integrations": [],
       "useCaseTags": [],
       "sources": [],
@@ -9297,16 +11315,15 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
+        "model": "custom quote-based",
+        "currency": "USD",
         "tiers": [],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": false
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [
         "Primarily for SMB",
@@ -9340,9 +11357,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "notion",
-        "connecteam",
-        "deel"
+        {
+          "tool_id": "notion",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Notion offers a free plan; Different strengths: Trainual excels at SOP and training platform, Notion at Notes, tasks and client work in one plac",
+          "when_preferable": "When a free plan is required",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "connecteam",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Connecteam offers a free plan; Different strengths: Trainual excels at SOP and training platform, Connecteam at Free plan for up to 10 users",
+          "when_preferable": "When a free plan is required",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "deel",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: Trainual excels at SOP and training platform, Deel at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "notion"
@@ -9422,9 +11460,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "getresponse",
-        "mailchimp",
-        "activecampaign"
+        {
+          "tool_id": "getresponse",
+          "shared_use_case": "Tool A: Email marketing for CRM users... | Tool B: AI-powered tool...",
+          "major_difference": "Transpond is Marketing, GetResponse is Email Marketing; Different strengths: Transpond excels at Email marketing for CRM users, GetResponse at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "mailchimp",
+          "shared_use_case": "Tool A: Email marketing for CRM users... | Tool B: Email campaigns, basic automation and audience man...",
+          "major_difference": "Transpond is Marketing, Mailchimp is Email Marketing; Different strengths: Transpond excels at Email marketing for CRM users, Mailchimp at Email campaigns, basic automation and au",
+          "when_preferable": "When email campaigns, basic automation and audience management is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "activecampaign",
+          "shared_use_case": "Tool A: Email marketing for CRM users... | Tool B: AI-powered tool...",
+          "major_difference": "Transpond is Marketing, ActiveCampaign is Email Marketing; Different strengths: Transpond excels at Email marketing for CRM users, ActiveCampaign at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "getresponse"
@@ -9504,9 +11563,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "synthesia",
-        "murf",
-        "runway"
+        {
+          "tool_id": "synthesia",
+          "shared_use_case": "Both serve the Voice & Video use case",
+          "major_difference": "Different strengths: UENI excels at AI video creation, Synthesia at Presenter-style videos using AI avatars",
+          "when_preferable": "When presenter-style videos using ai avatars is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "murf",
+          "shared_use_case": "Both serve the Voice & Video use case",
+          "major_difference": "Different strengths: UENI excels at AI video creation, Murf AI at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "runway",
+          "shared_use_case": "Both serve the Voice & Video use case",
+          "major_difference": "Different strengths: UENI excels at AI video creation, Runway at AI-assisted video generation and creativ",
+          "when_preferable": "When ai-assisted video generation and creative editing is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "synthesia"
@@ -9586,9 +11666,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "instapage",
-        "webflow",
-        "framer"
+        {
+          "tool_id": "instapage",
+          "shared_use_case": "Tool A: Purpose-built for landing pages... | Tool B: AI-powered tool...",
+          "major_difference": "Unbounce is Website Builder, Instapage is Marketing; Different strengths: Unbounce excels at Purpose-built for landing pages, Instapage at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "webflow",
+          "shared_use_case": "Both serve the Website Builder use case",
+          "major_difference": "Different strengths: Unbounce excels at Purpose-built for landing pages, Webflow at Visual websites with CMS and design cont",
+          "when_preferable": "When visual websites with cms and design control is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "framer",
+          "shared_use_case": "Both serve the Website Builder use case",
+          "major_difference": "Different strengths: Unbounce excels at Purpose-built for landing pages, Framer at Modern landing pages and design-led mark",
+          "when_preferable": "When modern landing pages and design-led marketing websites is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "instapage"
@@ -9668,9 +11769,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "manychat",
-        "getresponse",
-        "sproutsocial"
+        {
+          "tool_id": "manychat",
+          "shared_use_case": "Both serve the Marketing use case",
+          "major_difference": "Different strengths: Upfluence excels at Influencer marketing platform, Manychat at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "getresponse",
+          "shared_use_case": "Tool A: Influencer marketing platform... | Tool B: AI-powered tool...",
+          "major_difference": "Upfluence is Marketing, GetResponse is Email Marketing; Different strengths: Upfluence excels at Influencer marketing platform, GetResponse at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "sproutsocial",
+          "shared_use_case": "Both serve the Marketing use case",
+          "major_difference": "Different strengths: Upfluence excels at Influencer marketing platform, Sprout Social at Comprehensive social media management",
+          "when_preferable": "When comprehensive social media management is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "sproutsocial"
@@ -9707,16 +11829,15 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
+        "model": "marketplace fees",
+        "currency": "USD",
         "tiers": [],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": false
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [
         "Client service fee",
@@ -9750,9 +11871,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "deel",
-        "connecteam",
-        "clickup"
+        {
+          "tool_id": "deel",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: Upwork excels at Large talent pool, Deel at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "connecteam",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Connecteam offers a free plan; Different strengths: Upwork excels at Large talent pool, Connecteam at Free plan for up to 10 users",
+          "when_preferable": "When a free plan is required",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "clickup",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "ClickUp offers a free plan; Different strengths: Upwork excels at Large talent pool, ClickUp at Tasks, documents and team project manage",
+          "when_preferable": "When a free plan is required",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        }
       ],
       "comparisons": [
         "deel"
@@ -9892,9 +12034,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "brand24",
-        "semrush",
-        "getresponse"
+        {
+          "tool_id": "brand24",
+          "shared_use_case": "Both serve the Marketing use case",
+          "major_difference": "Different strengths: Windsor.ai excels at Automated review generation, Brand24 at Comprehensive brand monitoring",
+          "when_preferable": "When comprehensive brand monitoring is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "semrush",
+          "shared_use_case": "Tool A: Automated review generation... | Tool B: Finding keywords and checking competitors...",
+          "major_difference": "Windsor.ai is Marketing, Semrush is SEO; Different strengths: Windsor.ai excels at Automated review generation, Semrush at Finding keywords and checking competitor",
+          "when_preferable": "When finding keywords and checking competitors is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "getresponse",
+          "shared_use_case": "Tool A: Automated review generation... | Tool B: AI-powered tool...",
+          "major_difference": "Windsor.ai is Marketing, GetResponse is Email Marketing; Different strengths: Windsor.ai excels at Automated review generation, GetResponse at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "brand24"
@@ -9974,9 +12137,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "mixpanel",
-        "amplitude",
-        "semrush"
+        {
+          "tool_id": "mixpanel",
+          "shared_use_case": "Both serve the Marketing use case",
+          "major_difference": "Different strengths: Wingify (now VWO) excels at A/B testing and visual editor, Mixpanel at Free plan with 10,000 tracked users",
+          "when_preferable": "When free plan with 10,000 tracked users is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "amplitude",
+          "shared_use_case": "Both serve the Marketing use case",
+          "major_difference": "Different strengths: Wingify (now VWO) excels at A/B testing and visual editor, Amplitude at Generous free plan with 1M events/mo",
+          "when_preferable": "When generous free plan with 1m events/mo is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "semrush",
+          "shared_use_case": "Tool A: A/B testing and visual editor... | Tool B: Finding keywords and checking competitors...",
+          "major_difference": "Wingify (now VWO) is Marketing, Semrush is SEO; Different strengths: Wingify (now VWO) excels at A/B testing and visual editor, Semrush at Finding keywords and checking competitor",
+          "when_preferable": "When finding keywords and checking competitors is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "mixpanel"
@@ -10013,16 +12197,42 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Team",
+            "price": 10,
+            "period": "month"
+          },
+          {
+            "name": "Business",
+            "price": 25,
+            "period": "month"
+          },
+          {
+            "name": "Pinnacle",
+            "price": null,
+            "period": "custom"
+          },
+          {
+            "name": "Apex",
+            "price": null,
+            "period": "custom"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": true,
+          "limits": "unlimited users, 2GB storage"
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [
         "Can feel complex for simple needs",
@@ -10039,7 +12249,13 @@
         "Per-user pricing scales cost",
         "Learning curve for advanced features"
       ],
-      "platforms": [],
+      "platforms": [
+        "web",
+        "Windows",
+        "macOS",
+        "iOS",
+        "Android"
+      ],
       "integrations": [],
       "useCaseTags": [
         "work management",
@@ -10056,9 +12272,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "clickup",
-        "asana",
-        "monday"
+        {
+          "tool_id": "clickup",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: Wrike excels at Collaborative work management, ClickUp at Tasks, documents and team project manage",
+          "when_preferable": "When tasks, documents and team project management is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "asana",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: Wrike excels at Collaborative work management, Asana at Planning projects and coordinating team ",
+          "when_preferable": "When planning projects and coordinating team work is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "monday",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Wrike offers a free plan; Different strengths: Wrike excels at Collaborative work management, monday.com at Custom work boards for projects and oper",
+          "when_preferable": "When custom work boards for projects and operations is the priority",
+          "evidence_basis": "shared_category; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        }
       ],
       "comparisons": [
         "clickup"
@@ -10095,16 +12332,31 @@
       "affiliateUrl": "",
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Starter",
+            "price": 79,
+            "period": "month"
+          },
+          {
+            "name": "Basic",
+            "price": 199,
+            "period": "month"
+          },
+          {
+            "name": "Growth",
+            "price": 399,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": false
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": false
+        }
       },
       "cons": [],
       "bestFor": [],
@@ -10155,16 +12407,32 @@
       },
       "shortDescription": null,
       "pricing": {
-        "model": null,
-        "currency": null,
-        "tiers": [],
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Early",
+            "price": 27,
+            "period": "month"
+          },
+          {
+            "name": "Growing",
+            "price": 59,
+            "period": "month"
+          },
+          {
+            "name": "Established",
+            "price": 97,
+            "period": "month"
+          }
+        ],
         "freePlan": {
-          "available": null,
-          "limits": [],
-          "notes": null
+          "available": false
         },
-        "lastChecked": null,
-        "sourceRefs": []
+        "freeTrial": {
+          "available": true,
+          "duration_days": 30
+        }
       },
       "cons": [
         "Limited for complex accounting",
@@ -10181,7 +12449,11 @@
         "No built-in CRM",
         "Inventory management basic"
       ],
-      "platforms": [],
+      "platforms": [
+        "web",
+        "iOS",
+        "Android"
+      ],
       "integrations": [],
       "useCaseTags": [
         "cloud accounting",
@@ -10198,9 +12470,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "quickbooks",
-        "freshbooks",
-        "bill"
+        {
+          "tool_id": "quickbooks",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: Xero excels at Cloud accounting for SMB, QuickBooks at Industry-standard accounting",
+          "when_preferable": "When industry-standard accounting is the priority",
+          "evidence_basis": "shared_category; shared_use_case_tags; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "freshbooks",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: Xero excels at Cloud accounting for SMB, FreshBooks at Intuitive accounting for SMB",
+          "when_preferable": "When intuitive accounting for smb is the priority",
+          "evidence_basis": "shared_category; shared_use_case_tags",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "bill",
+          "shared_use_case": "Both serve the Productivity use case",
+          "major_difference": "Different strengths: Xero excels at Cloud accounting for SMB, BILL at AP/automation",
+          "when_preferable": "When ap/automation is the priority",
+          "evidence_basis": "shared_category",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "quickbooks"
@@ -10280,9 +12573,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "notion",
-        "clickup",
-        "asana"
+        {
+          "tool_id": "notion",
+          "shared_use_case": "Tool A: Visual drag-and-drop canvas... | Tool B: Notes, tasks and client work in one place...",
+          "major_difference": "xTiles is Design, Notion is Productivity; Different strengths: xTiles excels at Visual drag-and-drop canvas, Notion at Notes, tasks and client work in one plac",
+          "when_preferable": "When notes, tasks and client work in one place is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "clickup",
+          "shared_use_case": "Tool A: Visual drag-and-drop canvas... | Tool B: Tasks, documents and team project management...",
+          "major_difference": "xTiles is Design, ClickUp is Productivity; Different strengths: xTiles excels at Visual drag-and-drop canvas, ClickUp at Tasks, documents and team project manage",
+          "when_preferable": "When tasks, documents and team project management is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "asana",
+          "shared_use_case": "Tool A: Visual drag-and-drop canvas... | Tool B: Planning projects and coordinating team work...",
+          "major_difference": "xTiles is Design, Asana is Productivity; Different strengths: xTiles excels at Visual drag-and-drop canvas, Asana at Planning projects and coordinating team ",
+          "when_preferable": "When planning projects and coordinating team work is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "notion"
@@ -10422,9 +12736,30 @@
         "lastVerified": null
       },
       "alternatives": [
-        "freshdesk",
-        "helpscout",
-        "gorgias"
+        {
+          "tool_id": "freshdesk",
+          "shared_use_case": "Tool A: Industry-standard omnichannel platform... | Tool B: AI-powered tool...",
+          "major_difference": "Zendesk is Customer Support, Freshdesk is Sales; Different strengths: Zendesk excels at Industry-standard omnichannel platform, Freshdesk at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "both_verified",
+          "verification_status": "RESEARCH_REQUIRED"
+        },
+        {
+          "tool_id": "helpscout",
+          "shared_use_case": "Both serve the Customer Support use case",
+          "major_difference": "Different strengths: Zendesk excels at Industry-standard omnichannel platform, Help Scout at Clean email-first interface",
+          "when_preferable": "When clean email-first interface is the priority",
+          "evidence_basis": "shared_category; shared_use_case_tags; both_verified",
+          "verification_status": "PARTIALLY_VERIFIED"
+        },
+        {
+          "tool_id": "gorgias",
+          "shared_use_case": "Tool A: Industry-standard omnichannel platform... | Tool B: AI-powered tool...",
+          "major_difference": "Zendesk is Customer Support, Gorgias is Sales; Different strengths: Zendesk excels at Industry-standard omnichannel platform, Gorgias at AI-powered tool",
+          "when_preferable": "When ai-powered tool is the priority",
+          "evidence_basis": "no supporting evidence found",
+          "verification_status": "RESEARCH_REQUIRED"
+        }
       ],
       "comparisons": [
         "freshdesk"
@@ -10448,8 +12783,33 @@
       "badge": "",
       "featured": false,
       "best": "Browser-based full-stack application builder by StackBlitz",
-      "logo": "/assets/logos/bolt.png",
-      "affiliateUrl": ""
+      "logo": null,
+      "affiliateUrl": "",
+      "pricing": {
+        "model": "tiered subscription by tokens",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Pro",
+            "price": 25,
+            "period": "month"
+          },
+          {
+            "name": "Teams",
+            "price": 30,
+            "period": "month"
+          }
+        ],
+        "freePlan": {
+          "available": true
+        }
+      },
+      "alternatives": []
     },
     {
       "id": "cursor",
@@ -10461,7 +12821,27 @@
       "featured": false,
       "best": "AI-native code editor with chat and agent modes",
       "logo": "/assets/logos/cursor.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "pricing": {
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Pro",
+            "price": 20,
+            "period": "month"
+          }
+        ],
+        "freePlan": {
+          "available": true
+        }
+      },
+      "alternatives": []
     },
     {
       "id": "github-copilot",
@@ -10473,7 +12853,8 @@
       "featured": false,
       "best": "AI code completions and chat in VS Code, JetBrains, and other editors",
       "logo": "/assets/logos/github-copilot.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "alternatives": []
     },
     {
       "id": "heygen",
@@ -10485,7 +12866,8 @@
       "featured": false,
       "best": "AI-powered video generation with custom avatars",
       "logo": "/assets/logos/heygen.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "alternatives": []
     },
     {
       "id": "ideogram",
@@ -10497,7 +12879,35 @@
       "featured": false,
       "best": "AI image generation specialist in text rendering within images",
       "logo": "/assets/logos/ideogram.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "pricing": {
+        "model": "tiered subscription",
+        "currency": "USD",
+        "tiers": [
+          {
+            "name": "Free",
+            "price": 0,
+            "period": "month"
+          },
+          {
+            "name": "Plus",
+            "price": 20,
+            "period": "month"
+          },
+          {
+            "name": "Pro",
+            "price": 60,
+            "period": "month"
+          }
+        ],
+        "freePlan": {
+          "available": true
+        },
+        "freeTrial": {
+          "available": false
+        }
+      },
+      "alternatives": []
     },
     {
       "id": "lovable",
@@ -10509,7 +12919,8 @@
       "featured": false,
       "best": "AI-powered full-stack application builder",
       "logo": "/assets/logos/lovable.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "alternatives": []
     }
   ]
 }

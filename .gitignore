@@ -55,6 +55,10 @@ data/prioritized-shortlist.json
 data/task-page-backlog.json
 data/evidence/
 
+# Generated data files (rebuild from source)
+data/decision-engine-bundle.json
+data/research-priority.json
+
 # Temporary scripts
 generate_massive_tools.py
 

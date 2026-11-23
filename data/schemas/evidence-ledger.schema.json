@@ -249,9 +249,31 @@
           "type": "string",
           "enum": [
             "verified",
+            "verified_official",
+            "verified_official_dynamic",
+            "editorial_assessment",
+            "research_required",
+            "official_source_unavailable",
+            "official_source_conflict",
             "needs_review",
             "stale",
             "disputed"
+          ]
+        },
+        "verification_status": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Explicit field-level verification status when different from claim status. Allows granular tracking: a claim may be 'verified' overall while a specific field within it is 'research_required'.",
+          "enum": [
+            "verified_official",
+            "verified_official_dynamic",
+            "editorial_assessment",
+            "research_required",
+            "official_source_unavailable",
+            "official_source_conflict",
+            "do_not_publish"
           ]
         },
         "disputed_by": {

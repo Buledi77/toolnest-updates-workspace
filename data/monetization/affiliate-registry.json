@@ -3,8 +3,41 @@
   "editorial_independence": true,
   "entries": [
     {
+      "tool_id": "activecampaign",
+      "official_non_affiliate_url": "https://www.activecampaign.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "adcreative",
+      "official_non_affiliate_url": "https://www.adcreative.ai",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
       "tool_id": "adobeexpress",
       "official_non_affiliate_url": "https://www.adobe.com/express/",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "adwisely",
+      "official_non_affiliate_url": "https://www.adwisely.com",
       "affiliate_status": "unknown",
       "affiliate_network": null,
       "affiliate_url": null,
@@ -23,6 +56,39 @@
       "restrictions": [],
       "disclosure_required": true,
       "last_link_check": "2026-11-14"
+    },
+    {
+      "tool_id": "aircall",
+      "official_non_affiliate_url": "https://www.aircall.io",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "amplitude",
+      "official_non_affiliate_url": "https://amplitude.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "apollo",
+      "official_non_affiliate_url": "https://www.apollo.io",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
     },
     {
       "tool_id": "asana",
@@ -47,8 +113,30 @@
       "last_link_check": "2026-11-14"
     },
     {
+      "tool_id": "beautifulai",
+      "official_non_affiliate_url": "https://www.beautiful.ai",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
       "tool_id": "beehiiv",
       "official_non_affiliate_url": "https://www.beehiiv.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "bill",
+      "official_non_affiliate_url": "https://www.bill.com",
       "affiliate_status": "unknown",
       "affiliate_network": null,
       "affiliate_url": null,
@@ -66,11 +154,44 @@
       "approved_regions": [],
       "restrictions": [],
       "disclosure_required": null,
-      "last_link_check": "2026-11-14"
+      "last_link_check": "2026-11-22"
+    },
+    {
+      "tool_id": "brand24",
+      "official_non_affiliate_url": "https://brand24.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "breadbutter",
+      "official_non_affiliate_url": "https://www.breadandbutter.io",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
     },
     {
       "tool_id": "brevo",
       "official_non_affiliate_url": "https://www.brevo.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "browseai",
+      "official_non_affiliate_url": "https://www.browse.ai",
       "affiliate_status": "unknown",
       "affiliate_network": null,
       "affiliate_url": null,
@@ -91,8 +212,52 @@
       "last_link_check": "2026-11-14"
     },
     {
+      "tool_id": "callrail",
+      "official_non_affiliate_url": "https://www.callrail.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "campaignmonitor",
+      "official_non_affiliate_url": "https://www.campaignmonitor.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
       "tool_id": "canva",
       "official_non_affiliate_url": "https://www.canva.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "capsule",
+      "official_non_affiliate_url": "https://www.capsulecrm.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "castmagic",
+      "official_non_affiliate_url": "https://castmagic.ai",
       "affiliate_status": "unknown",
       "affiliate_network": null,
       "affiliate_url": null,
@@ -113,6 +278,17 @@
       "last_link_check": null
     },
     {
+      "tool_id": "circle",
+      "official_non_affiliate_url": "https://www.circle.so",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
       "tool_id": "claude",
       "official_non_affiliate_url": "https://claude.ai",
       "affiliate_status": "unknown",
@@ -124,8 +300,85 @@
       "last_link_check": null
     },
     {
+      "tool_id": "clevertap",
+      "official_non_affiliate_url": "https://www.clevertap.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
       "tool_id": "clickup",
       "official_non_affiliate_url": "https://clickup.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "close",
+      "official_non_affiliate_url": "https://www.closerm.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "closely",
+      "official_non_affiliate_url": "https://www.closely.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "cloudtalk",
+      "official_non_affiliate_url": "https://www.cloudtalk.io",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "confetti",
+      "official_non_affiliate_url": "https://www.confetti.life",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "connecteam",
+      "official_non_affiliate_url": "https://www.connecteam.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "consensus",
+      "official_non_affiliate_url": "https://consensus.app",
       "affiliate_status": "unknown",
       "affiliate_network": null,
       "affiliate_url": null,
@@ -154,11 +407,44 @@
       "approved_regions": [],
       "restrictions": [],
       "disclosure_required": null,
-      "last_link_check": "2026-11-14"
+      "last_link_check": "2026-11-22"
+    },
+    {
+      "tool_id": "deel",
+      "official_non_affiliate_url": "https://www.deel.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
     },
     {
       "tool_id": "descript",
       "official_non_affiliate_url": "https://www.descript.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "dext",
+      "official_non_affiliate_url": "https://www.go-dext.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "dripify",
+      "official_non_affiliate_url": "https://dripify.org",
       "affiliate_status": "unknown",
       "affiliate_network": null,
       "affiliate_url": null,
@@ -177,6 +463,17 @@
       "restrictions": [],
       "disclosure_required": true,
       "last_link_check": "2026-11-18"
+    },
+    {
+      "tool_id": "expertex",
+      "official_non_affiliate_url": "https://www.expertex.ai",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
     },
     {
       "tool_id": "figma",
@@ -212,8 +509,52 @@
       "last_link_check": null
     },
     {
+      "tool_id": "flexiquiz",
+      "official_non_affiliate_url": "https://www.flexiquiz.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "flocksy",
+      "official_non_affiliate_url": "https://www.flocksy.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
       "tool_id": "framer",
       "official_non_affiliate_url": "https://www.framer.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "freshbooks",
+      "official_non_affiliate_url": "https://www.freshbooks.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "freshdesk",
+      "official_non_affiliate_url": "https://www.freshworks.com/freshdesk",
       "affiliate_status": "unknown",
       "affiliate_network": null,
       "affiliate_url": null,
@@ -245,6 +586,28 @@
       "last_link_check": null
     },
     {
+      "tool_id": "getresponse",
+      "official_non_affiliate_url": "https://www.getresponse.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "github-copilot",
+      "official_non_affiliate_url": "https://github.com/features/copilot",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": "2026-11-22"
+    },
+    {
       "tool_id": "glean",
       "official_non_affiliate_url": "https://www.glean.com",
       "affiliate_status": "unknown",
@@ -254,6 +617,28 @@
       "restrictions": [],
       "disclosure_required": null,
       "last_link_check": "2026-11-14"
+    },
+    {
+      "tool_id": "glide",
+      "official_non_affiliate_url": "https://www.glideapps.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "gorgias",
+      "official_non_affiliate_url": "https://www.gorgias.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
     },
     {
       "tool_id": "grammarly",
@@ -278,6 +663,17 @@
       "last_link_check": "2026-11-14"
     },
     {
+      "tool_id": "helpscout",
+      "official_non_affiliate_url": "https://www.helpscout.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
       "tool_id": "hemingway",
       "official_non_affiliate_url": "https://hemingwayapp.com",
       "affiliate_status": "unknown",
@@ -297,7 +693,29 @@
       "approved_regions": [],
       "restrictions": [],
       "disclosure_required": null,
-      "last_link_check": "2026-11-14"
+      "last_link_check": "2026-11-22"
+    },
+    {
+      "tool_id": "hibob",
+      "official_non_affiliate_url": "https://www.hibob.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "hightouch",
+      "official_non_affiliate_url": "https://www.hightouch.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
     },
     {
       "tool_id": "hostinger",
@@ -330,11 +748,44 @@
       "approved_regions": [],
       "restrictions": [],
       "disclosure_required": null,
-      "last_link_check": "2026-11-14"
+      "last_link_check": "2026-11-22"
     },
     {
       "tool_id": "ifttt",
       "official_non_affiliate_url": "https://ifttt.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "instantly",
+      "official_non_affiliate_url": "https://instantly.ai",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "instapage",
+      "official_non_affiliate_url": "https://www.instapage.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "intercom",
+      "official_non_affiliate_url": "https://www.intercom.com",
       "affiliate_status": "unknown",
       "affiliate_network": null,
       "affiliate_url": null,
@@ -377,8 +828,52 @@
       "last_link_check": null
     },
     {
+      "tool_id": "keap",
+      "official_non_affiliate_url": "https://www.keap.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
       "tool_id": "kit",
       "official_non_affiliate_url": "https://kit.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "krispcall",
+      "official_non_affiliate_url": "https://www.krispcall.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "learnworlds",
+      "official_non_affiliate_url": "https://www.learnworlds.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "lemlist",
+      "official_non_affiliate_url": "https://www.lemlist.com",
       "affiliate_status": "unknown",
       "affiliate_network": null,
       "affiliate_url": null,
@@ -399,6 +894,17 @@
       "last_link_check": null
     },
     {
+      "tool_id": "logome",
+      "official_non_affiliate_url": "https://www.logome.ai",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
       "tool_id": "lovable",
       "official_non_affiliate_url": "https://lovable.dev",
       "affiliate_status": "unknown",
@@ -407,7 +913,18 @@
       "approved_regions": [],
       "restrictions": [],
       "disclosure_required": null,
-      "last_link_check": "2026-11-14"
+      "last_link_check": "2026-11-22"
+    },
+    {
+      "tool_id": "lusha",
+      "official_non_affiliate_url": "https://www.lusha.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
     },
     {
       "tool_id": "mailchimp",
@@ -423,6 +940,28 @@
     {
       "tool_id": "make",
       "official_non_affiliate_url": "https://www.make.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "manychat",
+      "official_non_affiliate_url": "https://manychat.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "meetgeek",
+      "official_non_affiliate_url": "https://www.meetgeek.ai",
       "affiliate_status": "unknown",
       "affiliate_network": null,
       "affiliate_url": null,
@@ -454,8 +993,30 @@
       "last_link_check": "2026-11-14"
     },
     {
+      "tool_id": "mixpanel",
+      "official_non_affiliate_url": "https://mixpanel.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
       "tool_id": "monday",
       "official_non_affiliate_url": "https://monday.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "moosend",
+      "official_non_affiliate_url": "https://www.moosend.com",
       "affiliate_status": "unknown",
       "affiliate_network": null,
       "affiliate_url": null,
@@ -473,11 +1034,33 @@
       "approved_regions": [],
       "restrictions": [],
       "disclosure_required": true,
-      "last_link_check": "2026-11-14"
+      "last_link_check": "2026-11-22"
+    },
+    {
+      "tool_id": "murf",
+      "official_non_affiliate_url": "https://murf.ai",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
     },
     {
       "tool_id": "n8n",
       "official_non_affiliate_url": "https://n8n.io",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "netlify",
+      "official_non_affiliate_url": "https://www.netlify.com",
       "affiliate_status": "unknown",
       "affiliate_network": null,
       "affiliate_url": null,
@@ -509,8 +1092,52 @@
       "last_link_check": null
     },
     {
+      "tool_id": "nutshell",
+      "official_non_affiliate_url": "https://www.nutshell.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "omnisend",
+      "official_non_affiliate_url": "https://www.omnisend.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "omniseo",
+      "official_non_affiliate_url": "https://www.omniseo.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
       "tool_id": "otter",
       "official_non_affiliate_url": "https://otter.ai",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "pandadoc",
+      "official_non_affiliate_url": "https://www.pandadoc.com",
       "affiliate_status": "unknown",
       "affiliate_network": null,
       "affiliate_url": null,
@@ -531,6 +1158,28 @@
       "last_link_check": null
     },
     {
+      "tool_id": "pipedrive",
+      "official_non_affiliate_url": "https://www.pipedrive.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "pixelunion",
+      "official_non_affiliate_url": "https://www.pixelunion.ai",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
       "tool_id": "prowritingaid",
       "official_non_affiliate_url": "https://prowritingaid.com",
       "affiliate_status": "unknown",
@@ -542,8 +1191,30 @@
       "last_link_check": null
     },
     {
+      "tool_id": "quickbooks",
+      "official_non_affiliate_url": "https://quickbooks.intuit.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
       "tool_id": "quillbot",
       "official_non_affiliate_url": "https://quillbot.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "quo",
+      "official_non_affiliate_url": "https://www.quo.com",
       "affiliate_status": "unknown",
       "affiliate_network": null,
       "affiliate_url": null,
@@ -575,8 +1246,41 @@
       "last_link_check": "2026-11-14"
     },
     {
+      "tool_id": "replyio",
+      "official_non_affiliate_url": "https://www.reply.io",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "rgestudio",
+      "official_non_affiliate_url": "https://www.reallygoodemails.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
       "tool_id": "runway",
       "official_non_affiliate_url": "https://runwayml.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "salesforce-smb",
+      "official_non_affiliate_url": "https://www.salesforce.com/products/crm/essentials/",
       "affiliate_status": "unknown",
       "affiliate_network": null,
       "affiliate_url": null,
@@ -594,7 +1298,7 @@
       "approved_regions": [],
       "restrictions": [],
       "disclosure_required": true,
-      "last_link_check": "2026-11-14"
+      "last_link_check": "2026-11-22"
     },
     {
       "tool_id": "semrush",
@@ -605,11 +1309,143 @@
       "approved_regions": [],
       "restrictions": [],
       "disclosure_required": true,
-      "last_link_check": "2026-11-14"
+      "last_link_check": "2026-11-22"
+    },
+    {
+      "tool_id": "shoeboxed",
+      "official_non_affiliate_url": "https://www.shoeboxed.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "simpletexting",
+      "official_non_affiliate_url": "https://www.simpletexting.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "smartlead",
+      "official_non_affiliate_url": "https://www.smartlead.ai",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "smartli",
+      "official_non_affiliate_url": "https://www.smartli.io",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "softr",
+      "official_non_affiliate_url": "https://www.softr.io",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "softsync",
+      "official_non_affiliate_url": "https://www.softsync.ai",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "spiky",
+      "official_non_affiliate_url": "https://www.spiky.ai",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "sproutsocial",
+      "official_non_affiliate_url": "https://sproutsocial.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
     },
     {
       "tool_id": "squarespace",
       "official_non_affiliate_url": "https://www.squarespace.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "stamped",
+      "official_non_affiliate_url": "https://www.stamped.io",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "storydoc",
+      "official_non_affiliate_url": "https://www.storydoc.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "storylane",
+      "official_non_affiliate_url": "https://www.storylane.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "streak",
+      "official_non_affiliate_url": "https://www.streak.com",
       "affiliate_status": "unknown",
       "affiliate_network": null,
       "affiliate_url": null,
@@ -627,7 +1463,29 @@
       "approved_regions": [],
       "restrictions": [],
       "disclosure_required": true,
-      "last_link_check": "2026-11-14"
+      "last_link_check": "2026-11-22"
+    },
+    {
+      "tool_id": "surveymonkey",
+      "official_non_affiliate_url": "https://www.surveymonkey.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "survicate",
+      "official_non_affiliate_url": "https://www.survicate.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
     },
     {
       "tool_id": "synthesia",
@@ -649,6 +1507,83 @@
       "approved_regions": [],
       "restrictions": [],
       "disclosure_required": true,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "teachable",
+      "official_non_affiliate_url": "https://www.teachable.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "teamwork",
+      "official_non_affiliate_url": "https://www.teamwork.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "teikametrics",
+      "official_non_affiliate_url": "https://www.teikametrics.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "textline",
+      "official_non_affiliate_url": "https://www.textline.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "thetop",
+      "official_non_affiliate_url": "https://www.thetop.ai",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "tidio",
+      "official_non_affiliate_url": "https://www.tidio.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "timedoctor",
+      "official_non_affiliate_url": "https://www.timedoctor.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
       "last_link_check": null
     },
     {
@@ -674,6 +1609,72 @@
       "last_link_check": "2026-11-14"
     },
     {
+      "tool_id": "trainual",
+      "official_non_affiliate_url": "https://www.trainual.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "transpond",
+      "official_non_affiliate_url": "https://www.transpond.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "ueni",
+      "official_non_affiliate_url": "https://ueni.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "unbounce",
+      "official_non_affiliate_url": "https://unbounce.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "upfluence",
+      "official_non_affiliate_url": "https://www.upfluence.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "upwork",
+      "official_non_affiliate_url": "https://www.upwork.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
       "tool_id": "v0",
       "official_non_affiliate_url": "https://v0.dev",
       "affiliate_status": "unknown",
@@ -696,6 +1697,17 @@
       "last_link_check": null
     },
     {
+      "tool_id": "windsorai",
+      "official_non_affiliate_url": "https://www.windsor.ai",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
       "tool_id": "windsurf",
       "official_non_affiliate_url": "https://windsurf.com",
       "affiliate_status": "unknown",
@@ -705,6 +1717,28 @@
       "restrictions": [],
       "disclosure_required": null,
       "last_link_check": "2026-11-14"
+    },
+    {
+      "tool_id": "wingify",
+      "official_non_affiliate_url": "https://vwo.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "wrike",
+      "official_non_affiliate_url": "https://www.wrike.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
     },
     {
       "tool_id": "writesonic",
@@ -718,8 +1752,41 @@
       "last_link_check": null
     },
     {
+      "tool_id": "xero",
+      "official_non_affiliate_url": "https://www.xero.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "xtiles",
+      "official_non_affiliate_url": "https://www.xtiles.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
       "tool_id": "zapier",
       "official_non_affiliate_url": "https://zapier.com",
+      "affiliate_status": "unknown",
+      "affiliate_network": null,
+      "affiliate_url": null,
+      "approved_regions": [],
+      "restrictions": [],
+      "disclosure_required": null,
+      "last_link_check": null
+    },
+    {
+      "tool_id": "zendesk",
+      "official_non_affiliate_url": "https://www.zendesk.com",
       "affiliate_status": "unknown",
       "affiliate_network": null,
       "affiliate_url": null,

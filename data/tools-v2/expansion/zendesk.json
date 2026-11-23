@@ -55,7 +55,32 @@
     ]
   },
   "evidence": {
-    "claim_refs": [],
+    "claim_refs": [
+      {
+        "claim_id": "zendesk-capabilities"
+      },
+      {
+        "claim_id": "zendesk-core-use-case"
+      },
+      {
+        "claim_id": "zendesk-free-plan"
+      },
+      {
+        "claim_id": "zendesk-limitations"
+      },
+      {
+        "claim_id": "zendesk-platforms"
+      },
+      {
+        "claim_id": "zendesk-pricing-model"
+      },
+      {
+        "claim_id": "zendesk-target-user"
+      },
+      {
+        "claim_id": "zendesk-trial"
+      }
+    ],
     "source_ids": [],
     "confidence": "unverified",
     "test_status": "research_only"
@@ -66,7 +91,87 @@
   "publishing": {
     "indexability": "index",
     "canonical_url": "https://www.toolnestai.tech/tools/zendesk.html",
-    "sitemap_eligible": true
+    "sitemap_eligible": true,
+    "content_quality_status": "assessed"
   },
-  "freshness": {}
+  "freshness": {},
+  "decision_readiness": {
+    "state": "DECISION_READY",
+    "verified_fields": 9,
+    "total_fields": 11,
+    "verification_percentage": 82,
+    "total_evidence_claims": 8,
+    "strong_verified_count": 9,
+    "editorial_count": 0,
+    "data_present_count": 1,
+    "field_details": {
+      "core_use_case": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "3 v1 tags, 3 v2 tags"
+      },
+      "meaningful_capabilities": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "3 v1 pros, 0 v2 caps"
+      },
+      "important_limitations": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "3 v1 cons, 3 skipIf, 0 v2 lims"
+      },
+      "platform": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": false,
+        "detail": "0 v1 platforms, 0 v2 platforms"
+      },
+      "pricing_model": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": false,
+        "detail": "model=None"
+      },
+      "pricing_state": {
+        "verified": false,
+        "evidence_status": "UNKNOWN",
+        "has_data": false,
+        "detail": "0 tiers"
+      },
+      "free_plan_status": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": false,
+        "detail": "available=None"
+      },
+      "trial_status": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": false,
+        "detail": "available=None"
+      },
+      "target_user": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "3 v1 bestFor, 3 v2 best_for"
+      },
+      "meaningful_alternatives": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "3 v1 alts, 3 v2 alts, 0 verified"
+      },
+      "evidence_freshness": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "8 total claims, 8 recent"
+      }
+    },
+    "evaluated_at": "2026-11-23T05:26:50.868336"
+  }
 }

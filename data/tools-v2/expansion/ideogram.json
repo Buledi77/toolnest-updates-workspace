@@ -15,19 +15,20 @@
       "Image Generation"
     ],
     "use_cases": [
-      "AI image generation with text rendering",
-      "logo and poster design",
-      "ad creative with legible text",
-      "character consistency workflows"
+      "text-in-image generation",
+      "logo design",
+      "marketing visuals",
+      "creative content"
     ],
     "audiences": [
       "designers",
       "marketers",
-      "content creators",
-      "small design teams"
+      "developers",
+      "creators"
     ],
     "platforms": [
-      "web"
+      "web",
+      "api"
     ],
     "integrations": [],
     "tags": [
@@ -75,7 +76,9 @@
       "Pricing verified from official sources on 2026-11-22"
     ],
     "pricing_regions": [],
-    "availability_regions": []
+    "availability_regions": [],
+    "concise_summary": "AI image generation platform specializing in text rendering within images, offering web app, API, and open-weights models.",
+    "primary_purpose": "AI image generation with legible text rendering"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -101,8 +104,29 @@
     "replaced_by": []
   },
   "evidence": {
-    "claim_refs": [],
-    "source_ids": [],
+    "claim_refs": [
+      {
+        "claim_id": "ideogram-pricing-verified"
+      },
+      {
+        "claim_id": "ideogram-capability-0"
+      },
+      {
+        "claim_id": "ideogram-capability-1"
+      },
+      {
+        "claim_id": "ideogram-capability-2"
+      },
+      {
+        "claim_id": "ideogram-limitation-0"
+      },
+      {
+        "claim_id": "ideogram-limitation-1"
+      }
+    ],
+    "source_ids": [
+      "ideogram-pricing"
+    ],
     "handsOn": false,
     "evidenceStatus": "Research-based, not a ToolNest hands-on test"
   },
@@ -246,5 +270,84 @@
       "checkedOn": "2026-11-22"
     }
   ],
-  "lastReviewed": "2026-11-22"
+  "lastReviewed": "2026-11-22",
+  "decision_readiness": {
+    "state": "PARTIALLY_VERIFIED",
+    "verified_fields": 2,
+    "total_fields": 11,
+    "verification_percentage": 18,
+    "total_evidence_claims": 6,
+    "strong_verified_count": 2,
+    "editorial_count": 2,
+    "data_present_count": 7,
+    "field_details": {
+      "core_use_case": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "0 v1 tags, 4 v2 tags"
+      },
+      "meaningful_capabilities": {
+        "verified": false,
+        "evidence_status": "EDITORIAL",
+        "has_data": true,
+        "detail": "0 v1 pros, 6 v2 caps"
+      },
+      "important_limitations": {
+        "verified": false,
+        "evidence_status": "EDITORIAL",
+        "has_data": true,
+        "detail": "0 v1 cons, 0 skipIf, 4 v2 lims"
+      },
+      "platform": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "0 v1 platforms, 2 v2 platforms"
+      },
+      "pricing_model": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "model=tiered subscription"
+      },
+      "pricing_state": {
+        "verified": true,
+        "evidence_status": "VERIFIED_OFFICIAL",
+        "has_data": true,
+        "detail": "3 tiers"
+      },
+      "free_plan_status": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "available=True"
+      },
+      "trial_status": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "available=False"
+      },
+      "target_user": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "0 v1 bestFor, 3 v2 best_for"
+      },
+      "meaningful_alternatives": {
+        "verified": false,
+        "evidence_status": "DATA_PRESENT",
+        "has_data": true,
+        "detail": "0 v1 alts, 1 v2 alts, 0 verified"
+      },
+      "evidence_freshness": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "6 total claims, 6 recent"
+      }
+    },
+    "evaluated_at": "2026-11-23T05:26:50.833796"
+  }
 }

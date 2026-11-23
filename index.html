@@ -172,19 +172,19 @@
  </div>
  </section>
 
- <section id="paths" aria-labelledby="pathsTitle">
+ <section id="paths" class="section--decision" aria-labelledby="pathsTitle">
 <div class="wrap">
 <p class="kicker">Start with the decision</p>
 <h2 class="h2" id="pathsTitle">Start with the decision you need to make</h2>
 <p class="sub">ToolNest is organised around buyer decisions. Pick the one you are facing; each route ends in a shortlist with trade-offs, not a wall of logos.</p>
 <div class="linkgrid">
-<a class="decision-primary" href="/goals/index.html"><b>Get a recommendation</b><small>Start from your goal, then follow the tools and decisions that fit the workflow</small></a>
-<a href="/compare/index.html"><b>Compare tools</b><small>See pricing, limits, trade-offs and a direct verdict side by side</small></a>
-<a href="/tools/index.html"><b>Browse researched profiles</b><small>Source-verified reviews, labelled honestly</small></a>
-<a href="/alternatives/index.html"><b>Find an alternative</b><small>What to try when a tool does not fit</small></a>
-<a href="/tools/stack-analyzer.html"><b>Analyze my stack</b><small>Estimate costs and find overlap in your current software stack <span class="beta-tag">Beta</span></small></a>
-<a href="/tools/overlap-checker.html"><b>Check tool overlap</b><small>See if two tools share functionality before you buy both</small></a>
-<a href="/tools/decision-engine.html"><b>Decision Engine</b><small>Score-based recommendations from your requirements <span class="beta-tag">Beta</span></small></a>
+<a data-accent="decision" href="/goals/index.html"><b>Get a recommendation</b><small>Start from your goal, then follow the tools and decisions that fit the workflow</small></a>
+<a data-accent="compare" href="/compare/index.html"><b>Compare tools</b><small>See pricing, limits, trade-offs and a direct verdict side by side</small></a>
+<a data-accent="discovery" href="/tools/index.html"><b>Browse researched profiles</b><small>Research-backed reviews, labelled honestly</small></a>
+<a data-accent="discovery" href="/alternatives/index.html"><b>Find an alternative</b><small>What to try when a tool does not fit</small></a>
+<a data-accent="pricing" href="/tools/stack-analyzer.html"><b>Analyze my stack</b><small>Estimate costs and find overlap in your current software stack <span class="beta-tag">Beta</span></small></a>
+<a data-accent="compare" href="/tools/overlap-checker.html"><b>Check tool overlap</b><small>See if two tools share functionality before you buy both</small></a>
+<a data-accent="decision" href="/tools/decision-engine.html"><b>Decision Engine</b><small>Score-based recommendations from your requirements <span class="beta-tag">Beta</span></small></a>
 </div>
 <p style="margin-top:22px"><a class="rlink" href="/about.html">How we research and label evidence &rarr;</a></p>
 </div>
@@ -207,7 +207,7 @@
  </div>
  </section>
 
- <section id="compare" aria-labelledby="cmpTitle">
+ <section id="compare" class="section--compare" aria-labelledby="cmpTitle">
  <div class="wrap">
  <p class="kicker">Compare</p>
  <h2 class="h2" id="cmpTitle">Compare real competitors</h2>
@@ -224,10 +224,10 @@
  </div>
  </section>
 
- <section id="featured" aria-labelledby="featTitle">
+ <section id="featured" class="section--discovery" aria-labelledby="featTitle">
  <div class="wrap">
  <p class="kicker">Start here</p>
- <h2 class="h2" id="featTitle">Flagship software guides</h2>
+ <h2 class="h2" id="featTitle">Featured tools</h2>
  <p class="sub">Eight tools we cover closely. Each card says what the tool is best for. Open the profile for pricing, trade-offs, who should skip it and what to try instead.</p>
  <p class="aff-note"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg><span>Visit buttons open the tool's official site. Some are affiliate links, so we may earn a commission at no extra cost to you. Picks are never for sale. <a href="/affiliate-disclosure.html">Disclosure</a></span></p>
  <div class="grid" id="featuredGrid">
@@ -260,6 +260,8 @@
  <a href="/category/ai-assistants.html"><b>AI Assistants</b><small>General-purpose AI chat and drafting</small><span class="cn"><span data-count="AI Assistants"></span> tools</span></a>
  <a href="/category/research.html"><b>Research</b><small>Source-led research and document Q&amp;A</small><span class="cn"><span data-count="Research"></span> tools</span></a>
  <a href="/category/image-generation.html"><b>Image Generation</b><small>Create images and visual assets</small><span class="cn"><span data-count="Image Generation"></span> tools</span></a>
+ <a href="/category/customer-support.html"><b>Customer Support</b><small>Help desks, live chat and ticketing</small><span class="cn"><span data-count="Customer Support"></span> tools</span></a>
+ <a href="/category/developer-tools.html"><b>Developer Tools</b><small>Code assistants and dev productivity</small><span class="cn"><span data-count="Developer Tools"></span> tools</span></a>
  </div>
  </div>
  </section>
@@ -362,7 +364,7 @@
  var pros = (t.pros || []).slice(0, 3).map(function (p) {
  return '<li>' + TICK + '<span>' + esc(p) + '</span></li>';
  }).join("");
- return '<article class="card" id="t-' + esc(t.id) + '">' +
+ return '<article class="card card--featured" id="t-' + esc(t.id) + '">' +
  '<div class="c-top">' + tile(t) + '<div><h3>' + esc(t.name) + '</h3><p class="cat">' + esc(t.cat) + '</p></div>' + badge + '</div>' +
  '<p class="best"><b>Best for</b> ' + esc(t.best) + '</p>' +
  '<div class="c-side"><ul class="pros">' + pros + '</ul></div>' +

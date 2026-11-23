@@ -113,9 +113,9 @@ class TestMissingFieldsNoFalsePenalty(unittest.TestCase):
         html = _read_html("tools/decision-engine.html")
         # The transparency note should mention insufficient structured evidence
         self.assertIn(
-            "insufficient structured evidence",
+            "Insufficient structured evidence",
             html,
-            "Should mention 'insufficient structured evidence' for missing data",
+            "Should mention 'Insufficient structured evidence' for missing data",
         )
 
 

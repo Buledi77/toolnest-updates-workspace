@@ -2,7 +2,7 @@
   "schema_version": "legacy-to-v2-map-v1",
   "generated_at": "2026-11-14",
   "source_path": "data/tools.json",
-  "source_count": 50,
+  "source_count": 153,
   "benchmark_records_preserved": [
     "hostinger",
     "moz-pro",
@@ -11,965 +11,14 @@
   "generated_shadow_record_count": 47,
   "records": [
     {
-      "legacy_id": "notion",
-      "v2_id": "notion",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "Featured",
-        "featured": false,
-        "best": "Notes, tasks and client work in one place",
-        "pros": [
-          "One home for notes and to-dos",
-          "Templates to start fast",
-          "Good for solo work"
-        ]
-      },
-      "presentation_hue": 260,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/notion.json"
+      "legacy_id": "activecampaign",
+      "record_path": "tools-v2/expansion/activecampaign.json",
+      "migration_status": "migrated"
     },
     {
-      "legacy_id": "grammarly",
-      "v2_id": "grammarly",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "Featured",
-        "featured": false,
-        "best": "Clear English in emails and proposals",
-        "pros": [
-          "Fixes mistakes as you type",
-          "Works in many apps",
-          "Helps with polite tone"
-        ]
-      },
-      "presentation_hue": 150,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/grammarly.json"
-    },
-    {
-      "legacy_id": "elevenlabs",
-      "v2_id": "elevenlabs",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Voiceovers for videos and courses",
-        "pros": [
-          "Very natural voices",
-          "Many languages",
-          "Narrate without recording"
-        ]
-      },
-      "presentation_hue": 30,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/elevenlabs.json"
-    },
-    {
-      "legacy_id": "descript",
-      "v2_id": "descript",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Editing video and podcasts like a document",
-        "pros": [
-          "Edit by editing the text",
-          "Automatic transcripts",
-          "Removes filler words fast"
-        ]
-      },
-      "presentation_hue": 330,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/descript.json"
-    },
-    {
-      "legacy_id": "jasper",
-      "v2_id": "jasper",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Ad copy and product page writing",
-        "pros": [
-          "Templates made for marketing",
-          "Keeps your brand voice",
-          "Good for teams"
-        ]
-      },
-      "presentation_hue": 20,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/jasper.json"
-    },
-    {
-      "legacy_id": "semrush",
-      "v2_id": "semrush",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Finding keywords and checking competitors",
-        "pros": [
-          "Deep keyword research",
-          "Shows what rivals rank for",
-          "Many SEO tools in one"
-        ]
-      },
-      "presentation_hue": 170,
-      "affiliate_present": false,
-      "migration_status": "benchmark_record_preserved",
-      "record_path": "data/tools-v2/semrush.json"
-    },
-    {
-      "legacy_id": "systeme",
-      "v2_id": "systeme",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Sales pages, email lists and online courses",
-        "pros": [
-          "Pages, email and checkout together",
-          "Easy to start with",
-          "Can replace several separate subscriptions"
-        ]
-      },
-      "presentation_hue": 100,
-      "affiliate_present": true,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/systeme.json"
-    },
-    {
-      "legacy_id": "hostinger",
-      "v2_id": "hostinger",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Hosting and building a website or online store",
-        "pros": [
-          "Hosting, domain and site builder in one account",
-          "Beginner-friendly plans",
-          "Free SSL listed on its plans"
-        ]
-      },
-      "presentation_hue": 262,
-      "affiliate_present": false,
-      "migration_status": "benchmark_record_preserved",
-      "record_path": "data/tools-v2/hostinger.json"
-    },
-    {
-      "legacy_id": "canva",
-      "v2_id": "canva",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Social graphics, presentations and simple brand designs",
-        "pros": [
-          "Large template library",
-          "Easy drag-and-drop editor",
-          "Useful for teams and brand kits"
-        ]
-      },
-      "presentation_hue": 150,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/canva.json"
-    },
-    {
-      "legacy_id": "framer",
-      "v2_id": "framer",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Modern landing pages and design-led marketing websites",
-        "pros": [
-          "Visual responsive design",
-          "Fast publishing and hosting",
-          "Strong animation and interaction tools"
-        ]
-      },
-      "presentation_hue": 210,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/framer.json"
-    },
-    {
-      "legacy_id": "beehiiv",
-      "v2_id": "beehiiv",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Publishing and growing a monetized newsletter",
-        "pros": [
-          "Newsletter publishing tools",
-          "Audience growth features",
-          "Built-in monetization options"
-        ]
-      },
-      "presentation_hue": 45,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/beehiiv.json"
-    },
-    {
-      "legacy_id": "kit",
-      "v2_id": "kit",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Creator email lists, automations and digital product funnels",
-        "pros": [
-          "Creator-focused automations",
-          "Landing pages and forms",
-          "Tag-based subscriber organization"
-        ]
-      },
-      "presentation_hue": 180,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/kit.json"
-    },
-    {
-      "legacy_id": "zapier",
-      "v2_id": "zapier",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Connecting apps and automating repetitive workflows",
-        "pros": [
-          "Large app integration ecosystem",
-          "No-code workflow builder",
-          "Useful templates for common automations"
-        ]
-      },
-      "presentation_hue": 110,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/zapier.json"
-    },
-    {
-      "legacy_id": "chatgpt",
-      "v2_id": "chatgpt",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "General writing, brainstorming, analysis and everyday AI help",
-        "pros": [
-          "Flexible general assistant",
-          "Works across many task types",
-          "Supports iterative conversations"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/chatgpt.json"
-    },
-    {
-      "legacy_id": "claude",
-      "v2_id": "claude",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Long-form analysis, writing and structured reasoning",
-        "pros": [
-          "Handles long documents",
-          "Clear structured responses",
-          "Useful for writing and coding"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/claude.json"
-    },
-    {
-      "legacy_id": "gemini",
-      "v2_id": "gemini",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "AI help connected with Google products and multimodal work",
-        "pros": [
-          "Google ecosystem fit",
-          "Multimodal prompts",
-          "General research and drafting"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/gemini.json"
-    },
-    {
-      "legacy_id": "perplexity",
-      "v2_id": "perplexity",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Web research with visible source links",
-        "pros": [
-          "Source-led answers",
-          "Fast topic summaries",
-          "Useful follow-up questions"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/perplexity.json"
-    },
-    {
-      "legacy_id": "notebooklm",
-      "v2_id": "notebooklm",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Studying and asking questions across your own sources",
-        "pros": [
-          "Source-grounded notebooks",
-          "Document summaries",
-          "Research organization"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/notebooklm.json"
-    },
-    {
-      "legacy_id": "quillbot",
-      "v2_id": "quillbot",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Paraphrasing, rewriting and summarizing text",
-        "pros": [
-          "Multiple rewrite modes",
-          "Summarizer included",
-          "Browser-based workflow"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/quillbot.json"
-    },
-    {
-      "legacy_id": "prowritingaid",
-      "v2_id": "prowritingaid",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Detailed writing reports for long-form authors",
-        "pros": [
-          "Style reports",
-          "Grammar checking",
-          "Long-form writing focus"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/prowritingaid.json"
-    },
-    {
-      "legacy_id": "hemingway",
-      "v2_id": "hemingway",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Making sentences clearer and easier to read",
-        "pros": [
-          "Readability guidance",
-          "Highlights complex sentences",
-          "Simple editing workflow"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/hemingway.json"
-    },
-    {
-      "legacy_id": "copyai",
-      "v2_id": "copyai",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Sales and marketing content workflows",
-        "pros": [
-          "Marketing templates",
-          "Workflow automation",
-          "Team-oriented content"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/copyai.json"
-    },
-    {
-      "legacy_id": "writesonic",
-      "v2_id": "writesonic",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Marketing articles, landing pages and campaign drafts",
-        "pros": [
-          "Content drafting",
-          "Marketing use cases",
-          "Built-in editing tools"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/writesonic.json"
-    },
-    {
-      "legacy_id": "ahrefs",
-      "v2_id": "ahrefs",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Backlink research, keywords and competitor SEO analysis",
-        "pros": [
-          "Backlink data",
-          "Keyword research",
-          "Competitive analysis"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/ahrefs.json"
-    },
-    {
-      "legacy_id": "mozpro",
-      "v2_id": "moz-pro",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Keyword tracking and site SEO campaigns",
-        "pros": [
-          "Rank tracking",
-          "Site crawling",
-          "Keyword research"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "benchmark_record_preserved",
-      "record_path": "data/tools-v2/moz-pro.json"
-    },
-    {
-      "legacy_id": "surferseo",
-      "v2_id": "surferseo",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Optimizing articles around search intent and on-page signals",
-        "pros": [
-          "Content editor",
-          "On-page guidance",
-          "SERP-based suggestions"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/surferseo.json"
-    },
-    {
-      "legacy_id": "screamingfrog",
-      "v2_id": "screamingfrog",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Technical crawling and finding website SEO issues",
-        "pros": [
-          "Deep site crawl",
-          "Redirect checks",
-          "Metadata auditing"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/screamingfrog.json"
-    },
-    {
-      "legacy_id": "make",
-      "v2_id": "make",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Visual multi-step workflow automation across apps",
-        "pros": [
-          "Visual scenario builder",
-          "Advanced branching",
-          "Large integration library"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/make.json"
-    },
-    {
-      "legacy_id": "n8n",
-      "v2_id": "n8n",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Flexible workflow automation with technical control",
-        "pros": [
-          "Self-hosting option",
-          "Custom workflow logic",
-          "Developer-friendly integrations"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/n8n.json"
-    },
-    {
-      "legacy_id": "ifttt",
-      "v2_id": "ifttt",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Simple personal and smart-device automations",
-        "pros": [
-          "Easy applets",
-          "Consumer app support",
-          "Quick trigger-action setup"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/ifttt.json"
-    },
-    {
-      "legacy_id": "figma",
-      "v2_id": "figma",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Collaborative interface design and prototyping",
-        "pros": [
-          "Real-time collaboration",
-          "Interactive prototypes",
-          "Reusable design systems"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/figma.json"
+      "legacy_id": "adcreative",
+      "record_path": "tools-v2/expansion/adcreative.json",
+      "migration_status": "migrated"
     },
     {
       "legacy_id": "adobeexpress",
@@ -1003,39 +52,13 @@
       "record_path": "data/tools-v2/legacy/adobeexpress.json"
     },
     {
-      "legacy_id": "midjourney",
-      "v2_id": "midjourney",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Stylized AI images and creative visual concepts",
-        "pros": [
-          "Strong artistic output",
-          "Style exploration",
-          "Rapid visual ideation"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/midjourney.json"
+      "legacy_id": "adwisely",
+      "record_path": "tools-v2/expansion/adwisely.json",
+      "migration_status": "migrated"
     },
     {
-      "legacy_id": "leonardo",
-      "v2_id": "leonardo",
+      "legacy_id": "ahrefs",
+      "v2_id": "ahrefs",
       "source_fields": [
         "id",
         "name",
@@ -1052,265 +75,32 @@
       "legacy_editorial_draft": {
         "badge": "",
         "featured": false,
-        "best": "AI images, assets and creative production",
+        "best": "Backlink research, keywords and competitor SEO analysis",
         "pros": [
-          "Multiple image models",
-          "Asset generation",
-          "Creative controls"
+          "Backlink data",
+          "Keyword research",
+          "Competitive analysis"
         ]
       },
       "presentation_hue": 120,
       "affiliate_present": false,
       "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/leonardo.json"
+      "record_path": "data/tools-v2/legacy/ahrefs.json"
     },
     {
-      "legacy_id": "removebg",
-      "v2_id": "removebg",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Removing image backgrounds quickly",
-        "pros": [
-          "Automatic cutouts",
-          "Fast web workflow",
-          "API available"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/removebg.json"
+      "legacy_id": "aircall",
+      "record_path": "tools-v2/expansion/aircall.json",
+      "migration_status": "migrated"
     },
     {
-      "legacy_id": "runway",
-      "v2_id": "runway",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "AI-assisted video generation and creative editing",
-        "pros": [
-          "Generative video tools",
-          "Browser-based editing",
-          "Visual effects workflows"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/runway.json"
+      "legacy_id": "amplitude",
+      "record_path": "tools-v2/expansion/amplitude.json",
+      "migration_status": "migrated"
     },
     {
-      "legacy_id": "synthesia",
-      "v2_id": "synthesia",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Presenter-style videos using AI avatars",
-        "pros": [
-          "Avatar presentations",
-          "Multiple languages",
-          "Business video templates"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/synthesia.json"
-    },
-    {
-      "legacy_id": "invideo",
-      "v2_id": "invideo",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Creating marketing and social videos from prompts",
-        "pros": [
-          "Template library",
-          "Prompt-based creation",
-          "Stock media workflow"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/invideo.json"
-    },
-    {
-      "legacy_id": "kapwing",
-      "v2_id": "kapwing",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Collaborative online video editing for social content",
-        "pros": [
-          "Browser-based editor",
-          "Captions and resizing",
-          "Team collaboration"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/kapwing.json"
-    },
-    {
-      "legacy_id": "otter",
-      "v2_id": "otter",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Meeting transcription and searchable notes",
-        "pros": [
-          "Live transcription",
-          "Speaker notes",
-          "Meeting summaries"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/otter.json"
-    },
-    {
-      "legacy_id": "fireflies",
-      "v2_id": "fireflies",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Recording, transcribing and reviewing meetings",
-        "pros": [
-          "Meeting transcripts",
-          "Searchable conversations",
-          "CRM integrations"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/fireflies.json"
-    },
-    {
-      "legacy_id": "clickup",
-      "v2_id": "clickup",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Tasks, documents and team project management",
-        "pros": [
-          "Flexible task views",
-          "Docs and goals",
-          "Team workflows"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/clickup.json"
+      "legacy_id": "apollo",
+      "record_path": "tools-v2/expansion/apollo.json",
+      "migration_status": "migrated"
     },
     {
       "legacy_id": "asana",
@@ -1344,39 +134,13 @@
       "record_path": "data/tools-v2/legacy/asana.json"
     },
     {
-      "legacy_id": "monday",
-      "v2_id": "monday",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Custom work boards for projects and operations",
-        "pros": [
-          "Customizable boards",
-          "Automation recipes",
-          "Visual dashboards"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/monday.json"
+      "legacy_id": "beautifulai",
+      "record_path": "tools-v2/expansion/beautifulai.json",
+      "migration_status": "migrated"
     },
     {
-      "legacy_id": "todoist",
-      "v2_id": "todoist",
+      "legacy_id": "beehiiv",
+      "v2_id": "beehiiv",
       "source_fields": [
         "id",
         "name",
@@ -1393,110 +157,37 @@
       "legacy_editorial_draft": {
         "badge": "",
         "featured": false,
-        "best": "Personal tasks and lightweight team planning",
+        "best": "Publishing and growing a monetized newsletter",
         "pros": [
-          "Quick task capture",
-          "Recurring tasks",
-          "Cross-device apps"
+          "Newsletter publishing tools",
+          "Audience growth features",
+          "Built-in monetization options"
         ]
       },
-      "presentation_hue": 120,
+      "presentation_hue": 45,
       "affiliate_present": false,
       "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/todoist.json"
+      "record_path": "data/tools-v2/legacy/beehiiv.json"
     },
     {
-      "legacy_id": "webflow",
-      "v2_id": "webflow",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Visual websites with CMS and design control",
-        "pros": [
-          "Visual web design",
-          "Built-in CMS",
-          "Managed hosting"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/webflow.json"
+      "legacy_id": "bill",
+      "record_path": "tools-v2/expansion/bill.json",
+      "migration_status": "migrated"
     },
     {
-      "legacy_id": "squarespace",
-      "v2_id": "squarespace",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Polished websites and portfolios with templates",
-        "pros": [
-          "Professional templates",
-          "Built-in commerce",
-          "Managed hosting"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/squarespace.json"
+      "legacy_id": "bolt",
+      "record_path": "tools-v2/expansion/bolt.json",
+      "migration_status": "migrated"
     },
     {
-      "legacy_id": "mailchimp",
-      "v2_id": "mailchimp",
-      "source_fields": [
-        "id",
-        "name",
-        "cat",
-        "h",
-        "site",
-        "badge",
-        "featured",
-        "best",
-        "pros",
-        "logo",
-        "affiliateUrl"
-      ],
-      "legacy_editorial_draft": {
-        "badge": "",
-        "featured": false,
-        "best": "Email campaigns, basic automation and audience management",
-        "pros": [
-          "Campaign builder",
-          "Audience segmentation",
-          "Marketing automations"
-        ]
-      },
-      "presentation_hue": 120,
-      "affiliate_present": false,
-      "migration_status": "tier_c_shadow_record",
-      "record_path": "data/tools-v2/legacy/mailchimp.json"
+      "legacy_id": "brand24",
+      "record_path": "tools-v2/expansion/brand24.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "breadbutter",
+      "record_path": "tools-v2/expansion/breadbutter.json",
+      "migration_status": "migrated"
     },
     {
       "legacy_id": "brevo",
@@ -1530,6 +221,595 @@
       "record_path": "data/tools-v2/legacy/brevo.json"
     },
     {
+      "legacy_id": "browseai",
+      "record_path": "tools-v2/expansion/browseai.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "callrail",
+      "record_path": "tools-v2/expansion/callrail.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "campaignmonitor",
+      "record_path": "tools-v2/expansion/campaignmonitor.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "canva",
+      "v2_id": "canva",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Social graphics, presentations and simple brand designs",
+        "pros": [
+          "Large template library",
+          "Easy drag-and-drop editor",
+          "Useful for teams and brand kits"
+        ]
+      },
+      "presentation_hue": 150,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/canva.json"
+    },
+    {
+      "legacy_id": "capsule",
+      "record_path": "tools-v2/expansion/capsule.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "castmagic",
+      "record_path": "tools-v2/expansion/castmagic.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "chatgpt",
+      "v2_id": "chatgpt",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "General writing, brainstorming, analysis and everyday AI help",
+        "pros": [
+          "Flexible general assistant",
+          "Works across many task types",
+          "Supports iterative conversations"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/chatgpt.json"
+    },
+    {
+      "legacy_id": "circle",
+      "record_path": "tools-v2/expansion/circle.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "claude",
+      "v2_id": "claude",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Long-form analysis, writing and structured reasoning",
+        "pros": [
+          "Handles long documents",
+          "Clear structured responses",
+          "Useful for writing and coding"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/claude.json"
+    },
+    {
+      "legacy_id": "clevertap",
+      "record_path": "tools-v2/expansion/clevertap.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "clickup",
+      "v2_id": "clickup",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Tasks, documents and team project management",
+        "pros": [
+          "Flexible task views",
+          "Docs and goals",
+          "Team workflows"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/clickup.json"
+    },
+    {
+      "legacy_id": "close",
+      "record_path": "tools-v2/expansion/close.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "closely",
+      "record_path": "tools-v2/expansion/closely.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "cloudtalk",
+      "record_path": "tools-v2/expansion/cloudtalk.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "confetti",
+      "record_path": "tools-v2/expansion/confetti.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "connecteam",
+      "record_path": "tools-v2/expansion/connecteam.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "consensus",
+      "record_path": "tools-v2/expansion/consensus.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "copyai",
+      "v2_id": "copyai",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Sales and marketing content workflows",
+        "pros": [
+          "Marketing templates",
+          "Workflow automation",
+          "Team-oriented content"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/copyai.json"
+    },
+    {
+      "legacy_id": "cursor",
+      "record_path": "tools-v2/expansion/cursor.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "deel",
+      "record_path": "tools-v2/expansion/deel.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "descript",
+      "v2_id": "descript",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Editing video and podcasts like a document",
+        "pros": [
+          "Edit by editing the text",
+          "Automatic transcripts",
+          "Removes filler words fast"
+        ]
+      },
+      "presentation_hue": 330,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/descript.json"
+    },
+    {
+      "legacy_id": "dext",
+      "record_path": "tools-v2/expansion/dext.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "dripify",
+      "record_path": "tools-v2/expansion/dripify.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "elevenlabs",
+      "v2_id": "elevenlabs",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Voiceovers for videos and courses",
+        "pros": [
+          "Very natural voices",
+          "Many languages",
+          "Narrate without recording"
+        ]
+      },
+      "presentation_hue": 30,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/elevenlabs.json"
+    },
+    {
+      "legacy_id": "expertex",
+      "record_path": "tools-v2/expansion/expertex.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "figma",
+      "v2_id": "figma",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Collaborative interface design and prototyping",
+        "pros": [
+          "Real-time collaboration",
+          "Interactive prototypes",
+          "Reusable design systems"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/figma.json"
+    },
+    {
+      "legacy_id": "fireflies",
+      "v2_id": "fireflies",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Recording, transcribing and reviewing meetings",
+        "pros": [
+          "Meeting transcripts",
+          "Searchable conversations",
+          "CRM integrations"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/fireflies.json"
+    },
+    {
+      "legacy_id": "flexiquiz",
+      "record_path": "tools-v2/expansion/flexiquiz.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "flocksy",
+      "record_path": "tools-v2/expansion/flocksy.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "framer",
+      "v2_id": "framer",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Modern landing pages and design-led marketing websites",
+        "pros": [
+          "Visual responsive design",
+          "Fast publishing and hosting",
+          "Strong animation and interaction tools"
+        ]
+      },
+      "presentation_hue": 210,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/framer.json"
+    },
+    {
+      "legacy_id": "freshbooks",
+      "record_path": "tools-v2/expansion/freshbooks.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "freshdesk",
+      "record_path": "tools-v2/expansion/freshdesk.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "gamma",
+      "record_path": "tools-v2/expansion/gamma.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "gemini",
+      "v2_id": "gemini",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "AI help connected with Google products and multimodal work",
+        "pros": [
+          "Google ecosystem fit",
+          "Multimodal prompts",
+          "General research and drafting"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/gemini.json"
+    },
+    {
+      "legacy_id": "getresponse",
+      "record_path": "tools-v2/expansion/getresponse.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "github-copilot",
+      "record_path": "tools-v2/github-copilot.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "glide",
+      "record_path": "tools-v2/expansion/glide.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "gorgias",
+      "record_path": "tools-v2/expansion/gorgias.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "grammarly",
+      "v2_id": "grammarly",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "Featured",
+        "featured": false,
+        "best": "Clear English in emails and proposals",
+        "pros": [
+          "Fixes mistakes as you type",
+          "Works in many apps",
+          "Helps with polite tone"
+        ]
+      },
+      "presentation_hue": 150,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/grammarly.json"
+    },
+    {
+      "legacy_id": "helpscout",
+      "record_path": "tools-v2/expansion/helpscout.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "hemingway",
+      "v2_id": "hemingway",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Making sentences clearer and easier to read",
+        "pros": [
+          "Readability guidance",
+          "Highlights complex sentences",
+          "Simple editing workflow"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/hemingway.json"
+    },
+    {
+      "legacy_id": "heygen",
+      "record_path": "tools-v2/expansion/heygen.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "hibob",
+      "record_path": "tools-v2/expansion/hibob.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "hightouch",
+      "record_path": "tools-v2/expansion/hightouch.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "hostinger",
+      "v2_id": "hostinger",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Hosting and building a website or online store",
+        "pros": [
+          "Hosting, domain and site builder in one account",
+          "Beginner-friendly plans",
+          "Free SSL listed on its plans"
+        ]
+      },
+      "presentation_hue": 262,
+      "affiliate_present": false,
+      "migration_status": "benchmark_record_preserved",
+      "record_path": "data/tools-v2/hostinger.json"
+    },
+    {
       "legacy_id": "hubspot",
       "v2_id": "hubspot",
       "source_fields": [
@@ -1559,6 +839,1241 @@
       "affiliate_present": false,
       "migration_status": "tier_c_shadow_record",
       "record_path": "data/tools-v2/legacy/hubspot.json"
+    },
+    {
+      "legacy_id": "ideogram",
+      "record_path": "tools-v2/expansion/ideogram.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "ifttt",
+      "v2_id": "ifttt",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Simple personal and smart-device automations",
+        "pros": [
+          "Easy applets",
+          "Consumer app support",
+          "Quick trigger-action setup"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/ifttt.json"
+    },
+    {
+      "legacy_id": "instantly",
+      "record_path": "tools-v2/expansion/instantly.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "instapage",
+      "record_path": "tools-v2/expansion/instapage.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "intercom",
+      "record_path": "tools-v2/expansion/intercom.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "invideo",
+      "v2_id": "invideo",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Creating marketing and social videos from prompts",
+        "pros": [
+          "Template library",
+          "Prompt-based creation",
+          "Stock media workflow"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/invideo.json"
+    },
+    {
+      "legacy_id": "jasper",
+      "v2_id": "jasper",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Ad copy and product page writing",
+        "pros": [
+          "Templates made for marketing",
+          "Keeps your brand voice",
+          "Good for teams"
+        ]
+      },
+      "presentation_hue": 20,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/jasper.json"
+    },
+    {
+      "legacy_id": "kapwing",
+      "v2_id": "kapwing",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Collaborative online video editing for social content",
+        "pros": [
+          "Browser-based editor",
+          "Captions and resizing",
+          "Team collaboration"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/kapwing.json"
+    },
+    {
+      "legacy_id": "keap",
+      "record_path": "tools-v2/expansion/keap.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "kit",
+      "v2_id": "kit",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Creator email lists, automations and digital product funnels",
+        "pros": [
+          "Creator-focused automations",
+          "Landing pages and forms",
+          "Tag-based subscriber organization"
+        ]
+      },
+      "presentation_hue": 180,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/kit.json"
+    },
+    {
+      "legacy_id": "krispcall",
+      "record_path": "tools-v2/expansion/krispcall.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "learnworlds",
+      "record_path": "tools-v2/expansion/learnworlds.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "lemlist",
+      "record_path": "tools-v2/expansion/lemlist.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "leonardo",
+      "v2_id": "leonardo",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "AI images, assets and creative production",
+        "pros": [
+          "Multiple image models",
+          "Asset generation",
+          "Creative controls"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/leonardo.json"
+    },
+    {
+      "legacy_id": "logome",
+      "record_path": "tools-v2/expansion/logome.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "lovable",
+      "record_path": "tools-v2/expansion/lovable.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "lusha",
+      "record_path": "tools-v2/expansion/lusha.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "mailchimp",
+      "v2_id": "mailchimp",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Email campaigns, basic automation and audience management",
+        "pros": [
+          "Campaign builder",
+          "Audience segmentation",
+          "Marketing automations"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/mailchimp.json"
+    },
+    {
+      "legacy_id": "make",
+      "v2_id": "make",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Visual multi-step workflow automation across apps",
+        "pros": [
+          "Visual scenario builder",
+          "Advanced branching",
+          "Large integration library"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/make.json"
+    },
+    {
+      "legacy_id": "manychat",
+      "record_path": "tools-v2/expansion/manychat.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "meetgeek",
+      "record_path": "tools-v2/expansion/meetgeek.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "midjourney",
+      "v2_id": "midjourney",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Stylized AI images and creative visual concepts",
+        "pros": [
+          "Strong artistic output",
+          "Style exploration",
+          "Rapid visual ideation"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/midjourney.json"
+    },
+    {
+      "legacy_id": "mixpanel",
+      "record_path": "tools-v2/expansion/mixpanel.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "monday",
+      "v2_id": "monday",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Custom work boards for projects and operations",
+        "pros": [
+          "Customizable boards",
+          "Automation recipes",
+          "Visual dashboards"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/monday.json"
+    },
+    {
+      "legacy_id": "moosend",
+      "record_path": "tools-v2/expansion/moosend.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "mozpro",
+      "v2_id": "moz-pro",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Keyword tracking and site SEO campaigns",
+        "pros": [
+          "Rank tracking",
+          "Site crawling",
+          "Keyword research"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "benchmark_record_preserved",
+      "record_path": "data/tools-v2/moz-pro.json"
+    },
+    {
+      "legacy_id": "murf",
+      "record_path": "tools-v2/expansion/murf.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "n8n",
+      "v2_id": "n8n",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Flexible workflow automation with technical control",
+        "pros": [
+          "Self-hosting option",
+          "Custom workflow logic",
+          "Developer-friendly integrations"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/n8n.json"
+    },
+    {
+      "legacy_id": "netlify",
+      "record_path": "tools-v2/expansion/netlify.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "notebooklm",
+      "v2_id": "notebooklm",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Studying and asking questions across your own sources",
+        "pros": [
+          "Source-grounded notebooks",
+          "Document summaries",
+          "Research organization"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/notebooklm.json"
+    },
+    {
+      "legacy_id": "notion",
+      "v2_id": "notion",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "Featured",
+        "featured": false,
+        "best": "Notes, tasks and client work in one place",
+        "pros": [
+          "One home for notes and to-dos",
+          "Templates to start fast",
+          "Good for solo work"
+        ]
+      },
+      "presentation_hue": 260,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/notion.json"
+    },
+    {
+      "legacy_id": "nutshell",
+      "record_path": "tools-v2/expansion/nutshell.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "omnisend",
+      "record_path": "tools-v2/expansion/omnisend.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "omniseo",
+      "record_path": "tools-v2/expansion/omniseo.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "otter",
+      "v2_id": "otter",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Meeting transcription and searchable notes",
+        "pros": [
+          "Live transcription",
+          "Speaker notes",
+          "Meeting summaries"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/otter.json"
+    },
+    {
+      "legacy_id": "pandadoc",
+      "record_path": "tools-v2/expansion/pandadoc.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "perplexity",
+      "v2_id": "perplexity",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Web research with visible source links",
+        "pros": [
+          "Source-led answers",
+          "Fast topic summaries",
+          "Useful follow-up questions"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/perplexity.json"
+    },
+    {
+      "legacy_id": "pipedrive",
+      "record_path": "tools-v2/expansion/pipedrive.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "pixelunion",
+      "record_path": "tools-v2/expansion/pixelunion.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "prowritingaid",
+      "v2_id": "prowritingaid",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Detailed writing reports for long-form authors",
+        "pros": [
+          "Style reports",
+          "Grammar checking",
+          "Long-form writing focus"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/prowritingaid.json"
+    },
+    {
+      "legacy_id": "quickbooks",
+      "record_path": "tools-v2/expansion/quickbooks.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "quillbot",
+      "v2_id": "quillbot",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Paraphrasing, rewriting and summarizing text",
+        "pros": [
+          "Multiple rewrite modes",
+          "Summarizer included",
+          "Browser-based workflow"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/quillbot.json"
+    },
+    {
+      "legacy_id": "quo",
+      "record_path": "tools-v2/expansion/quo.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "removebg",
+      "v2_id": "removebg",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Removing image backgrounds quickly",
+        "pros": [
+          "Automatic cutouts",
+          "Fast web workflow",
+          "API available"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/removebg.json"
+    },
+    {
+      "legacy_id": "replyio",
+      "record_path": "tools-v2/expansion/replyio.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "rgestudio",
+      "record_path": "tools-v2/expansion/rgestudio.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "runway",
+      "v2_id": "runway",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "AI-assisted video generation and creative editing",
+        "pros": [
+          "Generative video tools",
+          "Browser-based editing",
+          "Visual effects workflows"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/runway.json"
+    },
+    {
+      "legacy_id": "salesforce-smb",
+      "record_path": "tools-v2/expansion/salesforce-smb.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "screamingfrog",
+      "v2_id": "screamingfrog",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Technical crawling and finding website SEO issues",
+        "pros": [
+          "Deep site crawl",
+          "Redirect checks",
+          "Metadata auditing"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/screamingfrog.json"
+    },
+    {
+      "legacy_id": "semrush",
+      "v2_id": "semrush",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Finding keywords and checking competitors",
+        "pros": [
+          "Deep keyword research",
+          "Shows what rivals rank for",
+          "Many SEO tools in one"
+        ]
+      },
+      "presentation_hue": 170,
+      "affiliate_present": false,
+      "migration_status": "benchmark_record_preserved",
+      "record_path": "data/tools-v2/semrush.json"
+    },
+    {
+      "legacy_id": "shoeboxed",
+      "record_path": "tools-v2/expansion/shoeboxed.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "simpletexting",
+      "record_path": "tools-v2/expansion/simpletexting.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "smartlead",
+      "record_path": "tools-v2/expansion/smartlead.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "smartli",
+      "record_path": "tools-v2/expansion/smartli.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "softr",
+      "record_path": "tools-v2/expansion/softr.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "softsync",
+      "record_path": "tools-v2/expansion/softsync.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "spiky",
+      "record_path": "tools-v2/expansion/spiky.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "sproutsocial",
+      "record_path": "tools-v2/expansion/sproutsocial.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "squarespace",
+      "v2_id": "squarespace",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Polished websites and portfolios with templates",
+        "pros": [
+          "Professional templates",
+          "Built-in commerce",
+          "Managed hosting"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/squarespace.json"
+    },
+    {
+      "legacy_id": "stamped",
+      "record_path": "tools-v2/expansion/stamped.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "storydoc",
+      "record_path": "tools-v2/expansion/storydoc.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "storylane",
+      "record_path": "tools-v2/expansion/storylane.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "streak",
+      "record_path": "tools-v2/expansion/streak.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "surferseo",
+      "v2_id": "surferseo",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Optimizing articles around search intent and on-page signals",
+        "pros": [
+          "Content editor",
+          "On-page guidance",
+          "SERP-based suggestions"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/surferseo.json"
+    },
+    {
+      "legacy_id": "surveymonkey",
+      "record_path": "tools-v2/expansion/surveymonkey.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "survicate",
+      "record_path": "tools-v2/expansion/survicate.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "synthesia",
+      "v2_id": "synthesia",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Presenter-style videos using AI avatars",
+        "pros": [
+          "Avatar presentations",
+          "Multiple languages",
+          "Business video templates"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/synthesia.json"
+    },
+    {
+      "legacy_id": "systeme",
+      "v2_id": "systeme",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Sales pages, email lists and online courses",
+        "pros": [
+          "Pages, email and checkout together",
+          "Easy to start with",
+          "Can replace several separate subscriptions"
+        ]
+      },
+      "presentation_hue": 100,
+      "affiliate_present": true,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/systeme.json"
+    },
+    {
+      "legacy_id": "teachable",
+      "record_path": "tools-v2/expansion/teachable.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "teamwork",
+      "record_path": "tools-v2/expansion/teamwork.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "teikametrics",
+      "record_path": "tools-v2/expansion/teikametrics.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "textline",
+      "record_path": "tools-v2/expansion/textline.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "thetop",
+      "record_path": "tools-v2/expansion/thetop.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "tidio",
+      "record_path": "tools-v2/expansion/tidio.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "timedoctor",
+      "record_path": "tools-v2/expansion/timedoctor.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "todoist",
+      "v2_id": "todoist",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Personal tasks and lightweight team planning",
+        "pros": [
+          "Quick task capture",
+          "Recurring tasks",
+          "Cross-device apps"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/todoist.json"
+    },
+    {
+      "legacy_id": "trainual",
+      "record_path": "tools-v2/expansion/trainual.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "transpond",
+      "record_path": "tools-v2/expansion/transpond.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "ueni",
+      "record_path": "tools-v2/expansion/ueni.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "unbounce",
+      "record_path": "tools-v2/expansion/unbounce.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "upfluence",
+      "record_path": "tools-v2/expansion/upfluence.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "upwork",
+      "record_path": "tools-v2/expansion/upwork.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "webflow",
+      "v2_id": "webflow",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Visual websites with CMS and design control",
+        "pros": [
+          "Visual web design",
+          "Built-in CMS",
+          "Managed hosting"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/webflow.json"
+    },
+    {
+      "legacy_id": "windsorai",
+      "record_path": "tools-v2/expansion/windsorai.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "wingify",
+      "record_path": "tools-v2/expansion/wingify.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "wrike",
+      "record_path": "tools-v2/expansion/wrike.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "writesonic",
+      "v2_id": "writesonic",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Marketing articles, landing pages and campaign drafts",
+        "pros": [
+          "Content drafting",
+          "Marketing use cases",
+          "Built-in editing tools"
+        ]
+      },
+      "presentation_hue": 120,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/writesonic.json"
+    },
+    {
+      "legacy_id": "xero",
+      "record_path": "tools-v2/expansion/xero.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "xtiles",
+      "record_path": "tools-v2/expansion/xtiles.json",
+      "migration_status": "migrated"
+    },
+    {
+      "legacy_id": "zapier",
+      "v2_id": "zapier",
+      "source_fields": [
+        "id",
+        "name",
+        "cat",
+        "h",
+        "site",
+        "badge",
+        "featured",
+        "best",
+        "pros",
+        "logo",
+        "affiliateUrl"
+      ],
+      "legacy_editorial_draft": {
+        "badge": "",
+        "featured": false,
+        "best": "Connecting apps and automating repetitive workflows",
+        "pros": [
+          "Large app integration ecosystem",
+          "No-code workflow builder",
+          "Useful templates for common automations"
+        ]
+      },
+      "presentation_hue": 110,
+      "affiliate_present": false,
+      "migration_status": "tier_c_shadow_record",
+      "record_path": "data/tools-v2/legacy/zapier.json"
+    },
+    {
+      "legacy_id": "zendesk",
+      "record_path": "tools-v2/expansion/zendesk.json",
+      "migration_status": "migrated"
     }
   ]
 }

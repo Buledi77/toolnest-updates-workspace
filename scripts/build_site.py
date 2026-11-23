@@ -28,6 +28,7 @@ FONT_CSS_URL = (
 )
 SEO_SUFFIXES = {".html", ".xml", ".txt", ".json", ".css", ".js"}
 SKIP_PAGES = {"googlef7f3d54afb5d5344.html"}
+NOINDEX_PAGES = {"tools/decision-engine.html", "tools/stack-analyzer.html"}
 
 
 def write_utf8(path: Path, content: str) -> None:
@@ -1827,6 +1828,59 @@ def page_route(relative: str) -> str:
     return "/" if relative == "index.html" else f"/{relative}"
 
 
+def mark_active_nav(content: str, relative: str) -> str:
+    """Mark the header nav link matching the current page with aria-current='page'."""
+    route = page_route(relative)
+    # Map routes to nav link hrefs
+    nav_map = {
+        "/": "/",
+        "/tools/index.html": "/tools/index.html",
+        "/category/index.html": "/category/index.html",
+        "/compare/index.html": "/compare/index.html",
+        "/best/index.html": "/best/index.html",
+    }
+    # Determine which nav link matches
+    target_href = None
+    if route in nav_map:
+        target_href = nav_map[route]
+    elif route.startswith("/tools/") and route != "/tools/index.html":
+        target_href = "/tools/index.html"
+    elif route.startswith("/category/") and route != "/category/index.html":
+        target_href = "/category/index.html"
+    elif route.startswith("/compare/") and route != "/compare/index.html":
+        target_href = "/compare/index.html"
+    elif route.startswith("/best/") and route != "/best/index.html":
+        target_href = "/best/index.html"
+    if target_href is None:
+        return content
+    # Only process the desktop nav inside the header, not mobile nav or footer
+    # Find the desktop nav: <nav aria-label="Main">
+    nav_pattern = r'(<nav\s+aria-label="Main">)'
+    def _replace_nav_link(m):
+        nav_open = m.group(1)
+        # This is just the opening tag; we need to process links inside
+        return nav_open
+    # Process each nav link in the desktop nav
+    # Match links inside <nav aria-label="Main">...</nav>
+    import re as _re
+    def _process_nav_section(nav_block: str):
+        def _mark_link(link_m):
+            full = link_m.group(0)
+            href_m = _re.search(r'href="([^"]*)"', full)
+            if href_m and href_m.group(1) == target_href:
+                if 'aria-current' not in full:
+                    # Insert aria-current before the closing >
+                    full = full.replace('>', ' aria-current="page">', 1)
+            return full
+        # Match <a ...> inside the nav block (non-greedy, single line)
+        return _re.sub(r'<a\b[^>]*>', _mark_link, nav_block)
+
+    # Find and process the desktop nav section
+    desktop_nav_pattern = r'(<nav\s+aria-label="Main">.*?</nav>)'
+    content = _re.sub(desktop_nav_pattern, lambda m: _process_nav_section(m.group(0)), content, flags=_re.DOTALL)
+    return content
+
+
 def filter_homepage_featured(
     content: str, indexable: dict[str, bool], featured_ids: list[str] | None = None
 ) -> str:
@@ -1973,8 +2027,10 @@ def main() -> None:
             metrics[relative] = measure(content)
     unique = unique_marked_sections(metrics)
     indexable = {
-        relative: page_route(relative) in allowlist
-        or (item.words >= MIN_INDEXABLE_WORDS and bool(unique[relative]))
+        relative: False if relative in NOINDEX_PAGES else (
+            page_route(relative) in allowlist
+            or (item.words >= MIN_INDEXABLE_WORDS and bool(unique[relative]))
+        )
         for relative, item in metrics.items()
     }
     featured_ids = homepage_quality_ids(indexable, metrics)
@@ -2038,6 +2094,7 @@ def main() -> None:
         breadcrumb_items = page_breadcrumbs(relative, parser.h1_text or title)
         content = add_breadcrumbs(content, breadcrumb_items)
         content = add_breadcrumb_schema(content, breadcrumb_items, route)
+        content = mark_active_nav(content, relative)
         content = add_structured_data(content, config, relative, title, description, url)
         if relative in indexable:
             content = set_robots(content, indexable[relative])

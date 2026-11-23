@@ -1,123 +1,28 @@
 {
-  "total_pages": 385,
+  "total_pages": 396,
   "grade_distribution": {
-    "tool_review:A": 118,
-    "tool_review:B": 29,
-    "compare:A": 63,
+    "tool_review:A": 137,
+    "tool_review:B": 16,
+    "compare:A": 67,
     "alternatives:B": 38,
     "alternatives:A": 100,
     "best:A": 21,
-    "category:B": 1,
-    "category:A": 15
+    "category:C": 1,
+    "category:A": 15,
+    "category:B": 1
   },
   "priority_distribution": {
-    "none": 302,
-    "medium": 68,
+    "none": 325,
+    "medium": 56,
     "low": 15
   },
   "upgrade_queue": [
-    {
-      "path": "/tools/adobeexpress.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 569,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/asana.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 510,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "B",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/brevo.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 529,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/clickup.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 516,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "B",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/copyai.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 531,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "B",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/figma.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 514,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
     {
       "path": "/tools/fireflies.html",
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 523,
+      "words": 550,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
@@ -133,7 +38,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 585,
+      "words": 602,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -149,23 +54,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 572,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/hubspot.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 524,
+      "words": 607,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -181,7 +70,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 528,
+      "words": 557,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -197,23 +86,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 530,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/mailchimp.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 542,
+      "words": 553,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -229,42 +102,10 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 546,
+      "words": 563,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/midjourney.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 518,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/monday.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 549,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "B",
       "pub_quality": "assessed",
       "missing": [
         "no_evidence_sources",
@@ -277,7 +118,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 543,
+      "words": 560,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -293,7 +134,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 514,
+      "words": 537,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
@@ -309,7 +150,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 523,
+      "words": 550,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
@@ -325,7 +166,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 503,
+      "words": 526,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
@@ -341,23 +182,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 548,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/quillbot.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 541,
+      "words": 583,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -373,7 +198,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 531,
+      "words": 560,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
@@ -389,7 +214,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 545,
+      "words": 584,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -405,7 +230,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 510,
+      "words": 539,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -421,26 +246,10 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 521,
+      "words": 560,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/todoist.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 513,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "B",
       "pub_quality": "assessed",
       "missing": [
         "no_evidence_sources",
@@ -453,23 +262,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 520,
-      "sections": 10,
-      "unique_marked": 7,
-      "editorial_tier": "A",
-      "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources",
-        "research_based"
-      ],
-      "priority": "medium"
-    },
-    {
-      "path": "/tools/writesonic.html",
-      "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 546,
+      "words": 549,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -1013,15 +806,30 @@
       "priority": "medium"
     },
     {
-      "path": "/category/accounting.html",
+      "path": "/category/developer-tools.html",
       "type": "category",
       "grade": "B",
       "score": 3,
-      "words": 331,
-      "sections": 7,
-      "unique_marked": 3,
+      "words": 328,
+      "sections": 6,
+      "unique_marked": 2,
       "missing": [
         "no_sub_use_cases"
+      ],
+      "priority": "medium"
+    },
+    {
+      "path": "/category/accounting.html",
+      "type": "category",
+      "grade": "C",
+      "score": 0,
+      "words": 0,
+      "sections": 0,
+      "unique_marked": 0,
+      "missing": [
+        "low_word_count",
+        "no_sub_use_cases",
+        "no_navigation_routes"
       ],
       "priority": "medium"
     },
@@ -1030,8 +838,8 @@
       "type": "category",
       "grade": "A",
       "score": 6,
-      "words": 603,
-      "sections": 10,
+      "words": 667,
+      "sections": 12,
       "unique_marked": 5,
       "missing": [],
       "priority": "low"
@@ -1041,8 +849,8 @@
       "type": "category",
       "grade": "A",
       "score": 6,
-      "words": 1120,
-      "sections": 11,
+      "words": 1141,
+      "sections": 12,
       "unique_marked": 5,
       "missing": [],
       "priority": "low"
@@ -1052,8 +860,8 @@
       "type": "category",
       "grade": "A",
       "score": 6,
-      "words": 573,
-      "sections": 10,
+      "words": 591,
+      "sections": 12,
       "unique_marked": 5,
       "missing": [],
       "priority": "low"
@@ -1063,8 +871,8 @@
       "type": "category",
       "grade": "A",
       "score": 6,
-      "words": 1195,
-      "sections": 11,
+      "words": 1211,
+      "sections": 12,
       "unique_marked": 5,
       "missing": [],
       "priority": "low"
@@ -1074,8 +882,8 @@
       "type": "category",
       "grade": "A",
       "score": 6,
-      "words": 681,
-      "sections": 9,
+      "words": 713,
+      "sections": 11,
       "unique_marked": 4,
       "missing": [],
       "priority": "low"
@@ -1085,8 +893,8 @@
       "type": "category",
       "grade": "A",
       "score": 5,
-      "words": 471,
-      "sections": 11,
+      "words": 478,
+      "sections": 12,
       "unique_marked": 5,
       "missing": [],
       "priority": "low"
@@ -1096,8 +904,8 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 577,
-      "sections": 10,
+      "words": 595,
+      "sections": 11,
       "unique_marked": 4,
       "missing": [
         "no_sub_use_cases"
@@ -1109,7 +917,7 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 641,
+      "words": 646,
       "sections": 11,
       "unique_marked": 4,
       "missing": [
@@ -1122,7 +930,7 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 885,
+      "words": 886,
       "sections": 10,
       "unique_marked": 5,
       "missing": [
@@ -1135,8 +943,8 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 654,
-      "sections": 9,
+      "words": 686,
+      "sections": 11,
       "unique_marked": 4,
       "missing": [
         "no_sub_use_cases"
@@ -1148,7 +956,7 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 770,
+      "words": 793,
       "sections": 11,
       "unique_marked": 4,
       "missing": [
@@ -1161,8 +969,8 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 1158,
-      "sections": 10,
+      "words": 1183,
+      "sections": 11,
       "unique_marked": 4,
       "missing": [
         "no_sub_use_cases"
@@ -1174,7 +982,7 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 694,
+      "words": 695,
       "sections": 11,
       "unique_marked": 4,
       "missing": [
@@ -1187,7 +995,7 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 782,
+      "words": 814,
       "sections": 11,
       "unique_marked": 4,
       "missing": [
@@ -1200,8 +1008,8 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 613,
-      "sections": 9,
+      "words": 663,
+      "sections": 11,
       "unique_marked": 4,
       "missing": [
         "no_sub_use_cases"
@@ -1214,15 +1022,14 @@
       "path": "/tools/activecampaign.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
+      "score": 12,
       "words": 518,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
@@ -1230,44 +1037,42 @@
       "path": "/tools/adcreative.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 600,
+      "score": 12,
+      "words": 612,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
     {
       "path": "/tools/adobeexpress.html",
       "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 569,
+      "grade": "A",
+      "score": 13,
+      "words": 604,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
       "pub_quality": "assessed",
       "missing": [
-        "no_evidence_sources",
         "research_based"
       ],
-      "priority": "medium"
+      "priority": "none"
     },
     {
       "path": "/tools/adwisely.html",
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 585,
+      "words": 597,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -1278,15 +1083,13 @@
       "path": "/tools/ahrefs.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 14,
-      "words": 1097,
-      "sections": 13,
-      "unique_marked": 11,
+      "score": 15,
+      "words": 1312,
+      "sections": 15,
+      "unique_marked": 12,
       "editorial_tier": "A",
       "pub_quality": "ready",
-      "missing": [
-        "no_evidence_sources"
-      ],
+      "missing": [],
       "priority": "none"
     },
     {
@@ -1294,11 +1097,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 586,
+      "words": 594,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -1310,11 +1113,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 589,
+      "words": 601,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -1325,47 +1128,44 @@
       "path": "/tools/apollo.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 527,
+      "score": 12,
+      "words": 539,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
     {
       "path": "/tools/asana.html",
       "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 510,
+      "grade": "A",
+      "score": 13,
+      "words": 545,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
       "pub_quality": "assessed",
       "missing": [
-        "no_evidence_sources",
         "research_based"
       ],
-      "priority": "medium"
+      "priority": "none"
     },
     {
       "path": "/tools/beautifulai.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 652,
-      "sections": 12,
-      "unique_marked": 9,
+      "score": 12,
+      "words": 529,
+      "sections": 10,
+      "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
@@ -1373,31 +1173,41 @@
       "path": "/tools/beehiiv.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 12,
-      "words": 615,
+      "score": 13,
+      "words": 639,
       "sections": 10,
       "unique_marked": 5,
       "editorial_tier": "A",
       "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources"
-      ],
+      "missing": [],
       "priority": "none"
     },
     {
       "path": "/tools/bill.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 589,
+      "score": 12,
+      "words": 601,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/bolt.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 14,
+      "words": 838,
+      "sections": 14,
+      "unique_marked": 10,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [],
       "priority": "none"
     },
     {
@@ -1405,11 +1215,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 575,
+      "words": 587,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -1421,11 +1231,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 518,
+      "words": 530,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -1435,18 +1245,17 @@
     {
       "path": "/tools/brevo.html",
       "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 529,
+      "grade": "A",
+      "score": 13,
+      "words": 564,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
       "pub_quality": "assessed",
       "missing": [
-        "no_evidence_sources",
         "research_based"
       ],
-      "priority": "medium"
+      "priority": "none"
     },
     {
       "path": "/tools/browseai.html",
@@ -1456,8 +1265,8 @@
       "words": 681,
       "sections": 10,
       "unique_marked": 7,
-      "editorial_tier": "?",
-      "pub_quality": "?",
+      "editorial_tier": "B",
+      "pub_quality": "adequate",
       "missing": [
         "no_skip_if",
         "no_comparisons",
@@ -1473,8 +1282,8 @@
       "words": 680,
       "sections": 10,
       "unique_marked": 8,
-      "editorial_tier": "?",
-      "pub_quality": "?",
+      "editorial_tier": "B",
+      "pub_quality": "adequate",
       "missing": [
         "no_skip_if",
         "no_comparisons",
@@ -1490,8 +1299,8 @@
       "words": 639,
       "sections": 10,
       "unique_marked": 8,
-      "editorial_tier": "?",
-      "pub_quality": "?",
+      "editorial_tier": "B",
+      "pub_quality": "adequate",
       "missing": [
         "no_skip_if",
         "no_comparisons",
@@ -1503,30 +1312,27 @@
       "path": "/tools/canva.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 12,
-      "words": 660,
+      "score": 13,
+      "words": 695,
       "sections": 10,
       "unique_marked": 5,
       "editorial_tier": "A",
       "pub_quality": "assessed",
-      "missing": [
-        "no_evidence_sources"
-      ],
+      "missing": [],
       "priority": "none"
     },
     {
       "path": "/tools/capsule.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 492,
+      "score": 12,
+      "words": 504,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
@@ -1535,11 +1341,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 498,
+      "words": 510,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -1550,15 +1356,14 @@
       "path": "/tools/chatgpt.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 12,
-      "words": 807,
+      "score": 13,
+      "words": 824,
       "sections": 12,
       "unique_marked": 6,
       "editorial_tier": "A",
       "pub_quality": "assessed",
       "missing": [
-        "no_skip_if",
-        "no_evidence_sources"
+        "no_skip_if"
       ],
       "priority": "none"
     },
@@ -1571,7 +1376,7 @@
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "C",
-      "pub_quality": "?",
+      "pub_quality": "unassessed",
       "missing": [
         "no_skip_if",
         "no_comparisons",
@@ -1583,15 +1388,14 @@
       "path": "/tools/claude.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 12,
-      "words": 892,
+      "score": 13,
+      "words": 909,
       "sections": 12,
       "unique_marked": 7,
       "editorial_tier": "A",
       "pub_quality": "assessed",
       "missing": [
-        "no_skip_if",
-        "no_evidence_sources"
+        "no_skip_if"
       ],
       "priority": "none"
     },
@@ -1600,11 +1404,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 592,
+      "words": 604,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -1614,29 +1418,28 @@
     {
       "path": "/tools/clickup.html",
       "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 516,
+      "grade": "A",
+      "score": 13,
+      "words": 539,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
       "pub_quality": "assessed",
       "missing": [
-        "no_evidence_sources",
         "research_based"
       ],
-      "priority": "medium"
+      "priority": "none"
     },
     {
       "path": "/tools/close.html",
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 629,
-      "sections": 12,
-      "unique_marked": 9,
+      "words": 506,
+      "sections": 10,
+      "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -1647,12 +1450,12 @@
       "path": "/tools/closely.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 790,
+      "score": 12,
+      "words": 802,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -1664,11 +1467,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 507,
+      "words": 519,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -1679,15 +1482,14 @@
       "path": "/tools/confetti.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 532,
+      "score": 12,
+      "words": 544,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
@@ -1695,15 +1497,14 @@
       "path": "/tools/connecteam.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 569,
+      "score": 12,
+      "words": 573,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
@@ -1712,11 +1513,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 641,
-      "sections": 12,
-      "unique_marked": 9,
+      "words": 520,
+      "sections": 10,
+      "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -1726,18 +1527,30 @@
     {
       "path": "/tools/copyai.html",
       "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 531,
+      "grade": "A",
+      "score": 13,
+      "words": 560,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
       "pub_quality": "assessed",
       "missing": [
-        "no_evidence_sources",
         "research_based"
       ],
-      "priority": "medium"
+      "priority": "none"
+    },
+    {
+      "path": "/tools/cursor.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 14,
+      "words": 891,
+      "sections": 14,
+      "unique_marked": 10,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [],
+      "priority": "none"
     },
     {
       "path": "/tools/deel.html",
@@ -1748,7 +1561,7 @@
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "C",
-      "pub_quality": "?",
+      "pub_quality": "unassessed",
       "missing": [
         "no_skip_if",
         "no_comparisons",
@@ -1760,15 +1573,14 @@
       "path": "/tools/descript.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 9,
-      "words": 581,
+      "score": 10,
+      "words": 620,
       "sections": 10,
       "unique_marked": 3,
       "editorial_tier": "A",
       "pub_quality": "assessed",
       "missing": [
         "no_limitations",
-        "no_evidence_sources",
         "no_verdict"
       ],
       "priority": "none"
@@ -1777,15 +1589,14 @@
       "path": "/tools/dext.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 589,
+      "score": 12,
+      "words": 601,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
@@ -1794,11 +1605,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 492,
+      "words": 504,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -1809,15 +1620,14 @@
       "path": "/tools/elevenlabs.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 12,
-      "words": 1160,
+      "score": 13,
+      "words": 1183,
       "sections": 11,
       "unique_marked": 5,
       "editorial_tier": "A",
       "pub_quality": "assessed",
       "missing": [
         "no_limitations",
-        "no_evidence_sources",
         "no_verdict"
       ],
       "priority": "none"
@@ -1827,11 +1637,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 513,
+      "words": 525,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -1841,25 +1651,24 @@
     {
       "path": "/tools/figma.html",
       "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 514,
+      "grade": "A",
+      "score": 13,
+      "words": 543,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
       "pub_quality": "assessed",
       "missing": [
-        "no_evidence_sources",
         "research_based"
       ],
-      "priority": "medium"
+      "priority": "none"
     },
     {
       "path": "/tools/fireflies.html",
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 523,
+      "words": 550,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
@@ -1875,11 +1684,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 566,
+      "words": 578,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -1891,11 +1700,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 609,
+      "words": 621,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -1907,7 +1716,7 @@
       "type": "tool_review",
       "grade": "A",
       "score": 12,
-      "words": 650,
+      "words": 679,
       "sections": 10,
       "unique_marked": 5,
       "editorial_tier": "A",
@@ -1921,15 +1730,14 @@
       "path": "/tools/freshbooks.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 500,
+      "score": 12,
+      "words": 512,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
@@ -1938,11 +1746,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 675,
-      "sections": 12,
-      "unique_marked": 9,
+      "words": 547,
+      "sections": 10,
+      "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -1971,7 +1779,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 585,
+      "words": 602,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -1986,15 +1794,29 @@
       "path": "/tools/getresponse.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 10,
-      "words": 751,
+      "score": 11,
+      "words": 767,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_skip_if",
-        "no_comparisons",
+        "no_comparisons"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/github-copilot.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 13,
+      "words": 854,
+      "sections": 14,
+      "unique_marked": 10,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [
         "no_evidence_sources"
       ],
       "priority": "none"
@@ -2004,11 +1826,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 501,
+      "words": 513,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2024,7 +1846,7 @@
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_skip_if",
         "no_comparisons",
@@ -2036,15 +1858,14 @@
       "path": "/tools/grammarly.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 9,
-      "words": 590,
+      "score": 10,
+      "words": 625,
       "sections": 10,
       "unique_marked": 4,
       "editorial_tier": "A",
       "pub_quality": "assessed",
       "missing": [
         "no_limitations",
-        "no_evidence_sources",
         "no_verdict"
       ],
       "priority": "none"
@@ -2054,11 +1875,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 523,
+      "words": 535,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2070,7 +1891,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 572,
+      "words": 607,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -2082,18 +1903,32 @@
       "priority": "medium"
     },
     {
+      "path": "/tools/heygen.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 13,
+      "words": 829,
+      "sections": 14,
+      "unique_marked": 11,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
       "path": "/tools/hibob.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 525,
+      "score": 12,
+      "words": 537,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
@@ -2102,11 +1937,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 503,
+      "words": 515,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2118,7 +1953,7 @@
       "type": "tool_review",
       "grade": "A",
       "score": 15,
-      "words": 1152,
+      "words": 1169,
       "sections": 12,
       "unique_marked": 9,
       "editorial_tier": "A",
@@ -2129,25 +1964,37 @@
     {
       "path": "/tools/hubspot.html",
       "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 524,
+      "grade": "A",
+      "score": 13,
+      "words": 547,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
       "pub_quality": "assessed",
       "missing": [
-        "no_evidence_sources",
         "research_based"
       ],
-      "priority": "medium"
+      "priority": "none"
+    },
+    {
+      "path": "/tools/ideogram.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 14,
+      "words": 839,
+      "sections": 14,
+      "unique_marked": 10,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [],
+      "priority": "none"
     },
     {
       "path": "/tools/ifttt.html",
       "type": "tool_review",
       "grade": "A",
       "score": 13,
-      "words": 1098,
+      "words": 1110,
       "sections": 11,
       "unique_marked": 6,
       "editorial_tier": "A",
@@ -2164,11 +2011,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 506,
+      "words": 518,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2184,7 +2031,7 @@
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2196,11 +2043,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 633,
+      "words": 645,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2212,7 +2059,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 528,
+      "words": 557,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -2227,15 +2074,14 @@
       "path": "/tools/jasper.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 8,
-      "words": 588,
+      "score": 9,
+      "words": 617,
       "sections": 10,
       "unique_marked": 2,
       "editorial_tier": "A",
       "pub_quality": "assessed",
       "missing": [
         "no_limitations",
-        "no_evidence_sources",
         "no_verdict"
       ],
       "priority": "none"
@@ -2245,7 +2091,7 @@
       "type": "tool_review",
       "grade": "A",
       "score": 13,
-      "words": 1261,
+      "words": 1285,
       "sections": 12,
       "unique_marked": 8,
       "editorial_tier": "A",
@@ -2265,8 +2111,8 @@
       "words": 642,
       "sections": 10,
       "unique_marked": 7,
-      "editorial_tier": "?",
-      "pub_quality": "?",
+      "editorial_tier": "B",
+      "pub_quality": "adequate",
       "missing": [
         "no_skip_if",
         "no_comparisons",
@@ -2278,15 +2124,14 @@
       "path": "/tools/kit.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 13,
-      "words": 1213,
+      "score": 14,
+      "words": 1248,
       "sections": 11,
       "unique_marked": 8,
       "editorial_tier": "A",
       "pub_quality": "assessed",
       "missing": [
         "no_limitations",
-        "no_evidence_sources",
         "research_based"
       ],
       "priority": "none"
@@ -2296,11 +2141,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 591,
+      "words": 599,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2312,11 +2157,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 496,
+      "words": 508,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2332,7 +2177,7 @@
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2344,7 +2189,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 530,
+      "words": 553,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -2360,13 +2205,28 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 524,
+      "words": 536,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
+        "no_evidence_sources"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/tools/lovable.html",
+      "type": "tool_review",
+      "grade": "A",
+      "score": 12,
+      "words": 785,
+      "sections": 14,
+      "unique_marked": 11,
+      "editorial_tier": "B",
+      "pub_quality": "assessed",
+      "missing": [
         "no_evidence_sources"
       ],
       "priority": "none"
@@ -2376,11 +2236,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 498,
+      "words": 510,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2390,25 +2250,24 @@
     {
       "path": "/tools/mailchimp.html",
       "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 542,
+      "grade": "A",
+      "score": 13,
+      "words": 571,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
       "pub_quality": "assessed",
       "missing": [
-        "no_evidence_sources",
         "research_based"
       ],
-      "priority": "medium"
+      "priority": "none"
     },
     {
       "path": "/tools/make.html",
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 546,
+      "words": 563,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "A",
@@ -2424,11 +2283,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 656,
-      "sections": 12,
-      "unique_marked": 9,
+      "words": 530,
+      "sections": 10,
+      "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2439,44 +2298,42 @@
       "path": "/tools/meetgeek.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 492,
+      "score": 12,
+      "words": 504,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
     {
       "path": "/tools/midjourney.html",
       "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 518,
+      "grade": "A",
+      "score": 13,
+      "words": 541,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
       "pub_quality": "assessed",
       "missing": [
-        "no_evidence_sources",
         "research_based"
       ],
-      "priority": "medium"
+      "priority": "none"
     },
     {
       "path": "/tools/mixpanel.html",
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 571,
+      "words": 583,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2486,18 +2343,17 @@
     {
       "path": "/tools/monday.html",
       "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 549,
+      "grade": "A",
+      "score": 13,
+      "words": 566,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
       "pub_quality": "assessed",
       "missing": [
-        "no_evidence_sources",
         "research_based"
       ],
-      "priority": "medium"
+      "priority": "none"
     },
     {
       "path": "/tools/moosend.html",
@@ -2508,7 +2364,7 @@
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2520,7 +2376,7 @@
       "type": "tool_review",
       "grade": "A",
       "score": 14,
-      "words": 1875,
+      "words": 1881,
       "sections": 14,
       "unique_marked": 10,
       "editorial_tier": "?",
@@ -2539,7 +2395,7 @@
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_skip_if",
         "no_comparisons",
@@ -2552,7 +2408,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 543,
+      "words": 560,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -2568,11 +2424,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 614,
-      "sections": 12,
-      "unique_marked": 9,
+      "words": 496,
+      "sections": 10,
+      "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2584,7 +2440,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 514,
+      "words": 537,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
@@ -2599,15 +2455,14 @@
       "path": "/tools/notion.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 10,
-      "words": 587,
+      "score": 11,
+      "words": 620,
       "sections": 8,
       "unique_marked": 5,
       "editorial_tier": "A",
       "pub_quality": "assessed",
       "missing": [
         "no_limitations",
-        "no_evidence_sources",
         "no_verdict"
       ],
       "priority": "none"
@@ -2621,7 +2476,7 @@
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "C",
-      "pub_quality": "?",
+      "pub_quality": "unassessed",
       "missing": [
         "no_skip_if",
         "no_comparisons",
@@ -2634,11 +2489,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 502,
+      "words": 514,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2650,11 +2505,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 487,
+      "words": 499,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2666,7 +2521,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 523,
+      "words": 550,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
@@ -2681,15 +2536,14 @@
       "path": "/tools/pandadoc.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 494,
+      "score": 12,
+      "words": 506,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
@@ -2698,7 +2552,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 503,
+      "words": 526,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
@@ -2713,15 +2567,14 @@
       "path": "/tools/pipedrive.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
+      "score": 12,
       "words": 505,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
@@ -2730,11 +2583,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 519,
+      "words": 531,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2746,7 +2599,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 548,
+      "words": 583,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -2761,33 +2614,31 @@
       "path": "/tools/quickbooks.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 611,
+      "score": 12,
+      "words": 623,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
     {
       "path": "/tools/quillbot.html",
       "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 541,
+      "grade": "A",
+      "score": 13,
+      "words": 576,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
       "pub_quality": "assessed",
       "missing": [
-        "no_evidence_sources",
         "research_based"
       ],
-      "priority": "medium"
+      "priority": "none"
     },
     {
       "path": "/tools/quo.html",
@@ -2798,7 +2649,7 @@
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "C",
-      "pub_quality": "?",
+      "pub_quality": "unassessed",
       "missing": [
         "no_skip_if",
         "no_comparisons",
@@ -2811,7 +2662,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 531,
+      "words": 560,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
@@ -2827,11 +2678,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 590,
+      "words": 602,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2843,11 +2694,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 546,
+      "words": 558,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2859,7 +2710,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 545,
+      "words": 584,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -2875,11 +2726,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 529,
+      "words": 541,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2891,7 +2742,7 @@
       "type": "tool_review",
       "grade": "A",
       "score": 14,
-      "words": 1049,
+      "words": 1110,
       "sections": 13,
       "unique_marked": 9,
       "editorial_tier": "A",
@@ -2905,30 +2756,27 @@
       "path": "/tools/semrush.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 14,
-      "words": 1340,
+      "score": 15,
+      "words": 1326,
       "sections": 15,
       "unique_marked": 12,
       "editorial_tier": "A",
       "pub_quality": "ready",
-      "missing": [
-        "no_evidence_sources"
-      ],
+      "missing": [],
       "priority": "none"
     },
     {
       "path": "/tools/shoeboxed.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 569,
+      "score": 12,
+      "words": 581,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
@@ -2937,11 +2785,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 591,
+      "words": 603,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2953,11 +2801,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 500,
+      "words": 512,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2969,11 +2817,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 510,
+      "words": 522,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -2985,11 +2833,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 515,
+      "words": 527,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3001,11 +2849,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 516,
+      "words": 528,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3017,11 +2865,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 568,
+      "words": 580,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3033,11 +2881,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 515,
+      "words": 527,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3049,7 +2897,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 510,
+      "words": 539,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -3065,11 +2913,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 602,
+      "words": 614,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3081,11 +2929,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 605,
+      "words": 617,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3097,11 +2945,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 570,
+      "words": 582,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3113,11 +2961,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 567,
+      "words": 579,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3128,8 +2976,8 @@
       "path": "/tools/surferseo.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 13,
-      "words": 982,
+      "score": 14,
+      "words": 1005,
       "sections": 13,
       "unique_marked": 9,
       "editorial_tier": "A",
@@ -3144,11 +2992,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 494,
+      "words": 506,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3164,7 +3012,7 @@
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "C",
-      "pub_quality": "?",
+      "pub_quality": "unassessed",
       "missing": [
         "no_skip_if",
         "no_comparisons",
@@ -3177,7 +3025,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 521,
+      "words": 560,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -3193,7 +3041,7 @@
       "type": "tool_review",
       "grade": "A",
       "score": 14,
-      "words": 1986,
+      "words": 2009,
       "sections": 19,
       "unique_marked": 11,
       "editorial_tier": "A",
@@ -3208,11 +3056,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 580,
+      "words": 592,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3223,15 +3071,14 @@
       "path": "/tools/teamwork.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 497,
+      "score": 12,
+      "words": 509,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
@@ -3240,11 +3087,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 576,
+      "words": 588,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3256,11 +3103,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 536,
+      "words": 548,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3272,11 +3119,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 515,
+      "words": 527,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3292,7 +3139,7 @@
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "C",
-      "pub_quality": "?",
+      "pub_quality": "unassessed",
       "missing": [
         "no_skip_if",
         "no_comparisons",
@@ -3304,47 +3151,44 @@
       "path": "/tools/timedoctor.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 511,
+      "score": 12,
+      "words": 523,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
     {
       "path": "/tools/todoist.html",
       "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 513,
+      "grade": "A",
+      "score": 13,
+      "words": 536,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "B",
       "pub_quality": "assessed",
       "missing": [
-        "no_evidence_sources",
         "research_based"
       ],
-      "priority": "medium"
+      "priority": "none"
     },
     {
       "path": "/tools/trainual.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 495,
+      "score": 12,
+      "words": 507,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
@@ -3353,11 +3197,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 489,
+      "words": 501,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3369,11 +3213,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 505,
+      "words": 517,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3385,11 +3229,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 496,
+      "words": 508,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3401,11 +3245,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 560,
+      "words": 572,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3416,15 +3260,14 @@
       "path": "/tools/upwork.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 496,
+      "score": 12,
+      "words": 508,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
@@ -3433,7 +3276,7 @@
       "type": "tool_review",
       "grade": "B",
       "score": 12,
-      "words": 520,
+      "words": 549,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
@@ -3449,11 +3292,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 514,
+      "words": 526,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3465,11 +3308,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 578,
+      "words": 590,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3480,47 +3323,44 @@
       "path": "/tools/wrike.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 510,
+      "score": 12,
+      "words": 522,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
     {
       "path": "/tools/writesonic.html",
       "type": "tool_review",
-      "grade": "B",
-      "score": 12,
-      "words": 546,
+      "grade": "A",
+      "score": 13,
+      "words": 581,
       "sections": 10,
       "unique_marked": 7,
       "editorial_tier": "A",
       "pub_quality": "assessed",
       "missing": [
-        "no_evidence_sources",
         "research_based"
       ],
-      "priority": "medium"
+      "priority": "none"
     },
     {
       "path": "/tools/xero.html",
       "type": "tool_review",
       "grade": "A",
-      "score": 11,
-      "words": 594,
+      "score": 12,
+      "words": 606,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
-        "no_comparisons",
-        "no_evidence_sources"
+        "no_comparisons"
       ],
       "priority": "none"
     },
@@ -3529,11 +3369,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 504,
+      "words": 516,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3545,7 +3385,7 @@
       "type": "tool_review",
       "grade": "A",
       "score": 13,
-      "words": 1138,
+      "words": 1150,
       "sections": 11,
       "unique_marked": 8,
       "editorial_tier": "A",
@@ -3562,11 +3402,11 @@
       "type": "tool_review",
       "grade": "A",
       "score": 11,
-      "words": 498,
+      "words": 510,
       "sections": 10,
       "unique_marked": 8,
       "editorial_tier": "B",
-      "pub_quality": "?",
+      "pub_quality": "assessed",
       "missing": [
         "no_comparisons",
         "no_evidence_sources"
@@ -3851,6 +3691,19 @@
       "priority": "none"
     },
     {
+      "path": "/compare/cursor-vs-github-copilot.html",
+      "type": "compare",
+      "grade": "A",
+      "score": 7,
+      "words": 743,
+      "sections": 7,
+      "unique_marked": 5,
+      "missing": [
+        "no_switching_reasons"
+      ],
+      "priority": "none"
+    },
+    {
       "path": "/compare/descript-vs-invideo.html",
       "type": "compare",
       "grade": "A",
@@ -3911,7 +3764,7 @@
       "type": "compare",
       "grade": "A",
       "score": 6,
-      "words": 570,
+      "words": 569,
       "sections": 7,
       "unique_marked": 3,
       "missing": [
@@ -4074,11 +3927,24 @@
       "priority": "none"
     },
     {
+      "path": "/compare/heygen-vs-synthesia.html",
+      "type": "compare",
+      "grade": "A",
+      "score": 7,
+      "words": 678,
+      "sections": 7,
+      "unique_marked": 4,
+      "missing": [
+        "no_switching_reasons"
+      ],
+      "priority": "none"
+    },
+    {
       "path": "/compare/hostinger-vs-systeme.html",
       "type": "compare",
       "grade": "A",
       "score": 7,
-      "words": 637,
+      "words": 636,
       "sections": 7,
       "unique_marked": 3,
       "missing": [
@@ -4096,6 +3962,19 @@
       "unique_marked": 2,
       "missing": [
         "low_word_count",
+        "no_switching_reasons"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/compare/ideogram-vs-midjourney.html",
+      "type": "compare",
+      "grade": "A",
+      "score": 7,
+      "words": 684,
+      "sections": 7,
+      "unique_marked": 4,
+      "missing": [
         "no_switching_reasons"
       ],
       "priority": "none"
@@ -4156,7 +4035,7 @@
       "type": "compare",
       "grade": "A",
       "score": 6,
-      "words": 557,
+      "words": 556,
       "sections": 7,
       "unique_marked": 3,
       "missing": [
@@ -4202,6 +4081,19 @@
       "unique_marked": 2,
       "missing": [
         "low_word_count",
+        "no_switching_reasons"
+      ],
+      "priority": "none"
+    },
+    {
+      "path": "/compare/lovable-vs-bolt.html",
+      "type": "compare",
+      "grade": "A",
+      "score": 7,
+      "words": 712,
+      "sections": 7,
+      "unique_marked": 5,
+      "missing": [
         "no_switching_reasons"
       ],
       "priority": "none"
@@ -4263,7 +4155,7 @@
       "type": "compare",
       "grade": "A",
       "score": 8,
-      "words": 1346,
+      "words": 1379,
       "sections": 11,
       "unique_marked": 10,
       "missing": [],
@@ -6293,7 +6185,7 @@
       "type": "best",
       "grade": "A",
       "score": 12,
-      "words": 1099,
+      "words": 1098,
       "sections": 9,
       "unique_marked": 3,
       "missing": [],
@@ -6304,7 +6196,7 @@
       "type": "best",
       "grade": "A",
       "score": 13,
-      "words": 746,
+      "words": 745,
       "sections": 9,
       "unique_marked": 5,
       "missing": [],
@@ -6315,7 +6207,7 @@
       "type": "best",
       "grade": "A",
       "score": 12,
-      "words": 845,
+      "words": 844,
       "sections": 9,
       "unique_marked": 3,
       "missing": [],
@@ -6326,7 +6218,7 @@
       "type": "best",
       "grade": "A",
       "score": 12,
-      "words": 866,
+      "words": 874,
       "sections": 10,
       "unique_marked": 3,
       "missing": [],
@@ -6337,7 +6229,7 @@
       "type": "best",
       "grade": "A",
       "score": 12,
-      "words": 825,
+      "words": 833,
       "sections": 10,
       "unique_marked": 4,
       "missing": [],
@@ -6348,7 +6240,7 @@
       "type": "best",
       "grade": "A",
       "score": 12,
-      "words": 905,
+      "words": 904,
       "sections": 10,
       "unique_marked": 4,
       "missing": [],
@@ -6405,7 +6297,7 @@
       "type": "best",
       "grade": "A",
       "score": 10,
-      "words": 564,
+      "words": 576,
       "sections": 7,
       "unique_marked": 3,
       "missing": [],
@@ -6471,7 +6363,7 @@
       "type": "best",
       "grade": "A",
       "score": 13,
-      "words": 2255,
+      "words": 2264,
       "sections": 11,
       "unique_marked": 9,
       "missing": [
@@ -6484,7 +6376,7 @@
       "type": "best",
       "grade": "A",
       "score": 13,
-      "words": 774,
+      "words": 773,
       "sections": 9,
       "unique_marked": 5,
       "missing": [],
@@ -6495,7 +6387,7 @@
       "type": "best",
       "grade": "A",
       "score": 11,
-      "words": 773,
+      "words": 780,
       "sections": 7,
       "unique_marked": 3,
       "missing": [],
@@ -6515,13 +6407,15 @@
     {
       "path": "/category/accounting.html",
       "type": "category",
-      "grade": "B",
-      "score": 3,
-      "words": 331,
-      "sections": 7,
-      "unique_marked": 3,
+      "grade": "C",
+      "score": 0,
+      "words": 0,
+      "sections": 0,
+      "unique_marked": 0,
       "missing": [
-        "no_sub_use_cases"
+        "low_word_count",
+        "no_sub_use_cases",
+        "no_navigation_routes"
       ],
       "priority": "medium"
     },
@@ -6530,8 +6424,8 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 577,
-      "sections": 10,
+      "words": 595,
+      "sections": 11,
       "unique_marked": 4,
       "missing": [
         "no_sub_use_cases"
@@ -6543,7 +6437,7 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 641,
+      "words": 646,
       "sections": 11,
       "unique_marked": 4,
       "missing": [
@@ -6556,7 +6450,7 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 885,
+      "words": 886,
       "sections": 10,
       "unique_marked": 5,
       "missing": [
@@ -6569,8 +6463,8 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 654,
-      "sections": 9,
+      "words": 686,
+      "sections": 11,
       "unique_marked": 4,
       "missing": [
         "no_sub_use_cases"
@@ -6578,11 +6472,24 @@
       "priority": "low"
     },
     {
+      "path": "/category/developer-tools.html",
+      "type": "category",
+      "grade": "B",
+      "score": 3,
+      "words": 328,
+      "sections": 6,
+      "unique_marked": 2,
+      "missing": [
+        "no_sub_use_cases"
+      ],
+      "priority": "medium"
+    },
+    {
       "path": "/category/email-marketing.html",
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 770,
+      "words": 793,
       "sections": 11,
       "unique_marked": 4,
       "missing": [
@@ -6595,8 +6502,8 @@
       "type": "category",
       "grade": "A",
       "score": 5,
-      "words": 471,
-      "sections": 11,
+      "words": 478,
+      "sections": 12,
       "unique_marked": 5,
       "missing": [],
       "priority": "low"
@@ -6606,8 +6513,8 @@
       "type": "category",
       "grade": "A",
       "score": 6,
-      "words": 603,
-      "sections": 10,
+      "words": 667,
+      "sections": 12,
       "unique_marked": 5,
       "missing": [],
       "priority": "low"
@@ -6617,8 +6524,8 @@
       "type": "category",
       "grade": "A",
       "score": 6,
-      "words": 1120,
-      "sections": 11,
+      "words": 1141,
+      "sections": 12,
       "unique_marked": 5,
       "missing": [],
       "priority": "low"
@@ -6628,8 +6535,8 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 1158,
-      "sections": 10,
+      "words": 1183,
+      "sections": 11,
       "unique_marked": 4,
       "missing": [
         "no_sub_use_cases"
@@ -6641,8 +6548,8 @@
       "type": "category",
       "grade": "A",
       "score": 6,
-      "words": 573,
-      "sections": 10,
+      "words": 591,
+      "sections": 12,
       "unique_marked": 5,
       "missing": [],
       "priority": "low"
@@ -6652,8 +6559,8 @@
       "type": "category",
       "grade": "A",
       "score": 6,
-      "words": 1195,
-      "sections": 11,
+      "words": 1211,
+      "sections": 12,
       "unique_marked": 5,
       "missing": [],
       "priority": "low"
@@ -6663,7 +6570,7 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 694,
+      "words": 695,
       "sections": 11,
       "unique_marked": 4,
       "missing": [
@@ -6676,7 +6583,7 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 782,
+      "words": 814,
       "sections": 11,
       "unique_marked": 4,
       "missing": [
@@ -6689,8 +6596,8 @@
       "type": "category",
       "grade": "A",
       "score": 4,
-      "words": 613,
-      "sections": 9,
+      "words": 663,
+      "sections": 11,
       "unique_marked": 4,
       "missing": [
         "no_sub_use_cases"
@@ -6702,8 +6609,8 @@
       "type": "category",
       "grade": "A",
       "score": 6,
-      "words": 681,
-      "sections": 9,
+      "words": 713,
+      "sections": 11,
       "unique_marked": 4,
       "missing": [],
       "priority": "low"

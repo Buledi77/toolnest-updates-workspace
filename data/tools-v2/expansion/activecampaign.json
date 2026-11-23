@@ -30,8 +30,38 @@
   },
   "relationships": {},
   "evidence": {
-    "claim_refs": [],
-    "source_ids": [],
+    "claim_refs": [
+      {
+        "claim_id": "activecampaign-pricing-verified"
+      },
+      {
+        "claim_id": "activecampaign-capabilities"
+      },
+      {
+        "claim_id": "activecampaign-core-use-case"
+      },
+      {
+        "claim_id": "activecampaign-free-plan"
+      },
+      {
+        "claim_id": "activecampaign-limitations"
+      },
+      {
+        "claim_id": "activecampaign-platforms"
+      },
+      {
+        "claim_id": "activecampaign-pricing-model"
+      },
+      {
+        "claim_id": "activecampaign-target-user"
+      },
+      {
+        "claim_id": "activecampaign-trial"
+      }
+    ],
+    "source_ids": [
+      "activecampaign-pricing"
+    ],
     "confidence": "unverified",
     "test_status": "research_only"
   },
@@ -41,7 +71,87 @@
   "publishing": {
     "indexability": "index",
     "canonical_url": "https://www.toolnestai.tech/tools/activecampaign.html",
-    "sitemap_eligible": true
+    "sitemap_eligible": true,
+    "content_quality_status": "assessed"
   },
-  "freshness": {}
+  "freshness": {},
+  "decision_readiness": {
+    "state": "DECISION_READY",
+    "verified_fields": 9,
+    "total_fields": 11,
+    "verification_percentage": 82,
+    "total_evidence_claims": 9,
+    "strong_verified_count": 9,
+    "editorial_count": 1,
+    "data_present_count": 0,
+    "field_details": {
+      "core_use_case": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": false,
+        "detail": "0 v1 tags, 0 v2 tags"
+      },
+      "meaningful_capabilities": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": false,
+        "detail": "0 v1 pros, 0 v2 caps"
+      },
+      "important_limitations": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": false,
+        "detail": "0 v1 cons, 0 skipIf, 0 v2 lims"
+      },
+      "platform": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": false,
+        "detail": "0 v1 platforms, 0 v2 platforms"
+      },
+      "pricing_model": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "model=tiered subscription by contacts"
+      },
+      "pricing_state": {
+        "verified": false,
+        "evidence_status": "EDITORIAL",
+        "has_data": true,
+        "detail": "3 tiers"
+      },
+      "free_plan_status": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "available=False"
+      },
+      "trial_status": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "available=True"
+      },
+      "target_user": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": false,
+        "detail": "0 v1 bestFor, 0 v2 best_for"
+      },
+      "meaningful_alternatives": {
+        "verified": false,
+        "evidence_status": "UNKNOWN",
+        "has_data": false,
+        "detail": "0 v1 alts, 0 v2 alts, 0 verified"
+      },
+      "evidence_freshness": {
+        "verified": true,
+        "evidence_status": "VERIFIED",
+        "has_data": true,
+        "detail": "9 total claims, 9 recent"
+      }
+    },
+    "evaluated_at": "2026-11-23T05:26:50.807677"
+  }
 }

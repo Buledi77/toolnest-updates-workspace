@@ -11,7 +11,10 @@
     "aliases": []
   },
   "discovery": {
-    "categories": ["SEO", "Marketing"],
+    "categories": [
+      "SEO",
+      "Marketing"
+    ],
     "use_cases": [
       "research keywords",
       "track rankings",
@@ -25,9 +28,17 @@
       "content teams",
       "in-house marketing teams"
     ],
-    "platforms": ["web"],
+    "platforms": [
+      "web"
+    ],
     "integrations": [],
-    "tags": ["seo", "keyword-research", "competitor-research", "rank-tracking", "ai-search"]
+    "tags": [
+      "seo",
+      "keyword-research",
+      "competitor-research",
+      "rank-tracking",
+      "ai-search"
+    ]
   },
   "pricing": {
     "checkedOn": "2026-11-22",
@@ -40,7 +51,14 @@
     "freePlan": true,
     "freeLimits": "10 reports per day, 1 demo project",
     "trial": "7-day free trial on paid plans",
-    "columns": ["plan", "priceMonthly", "priceAnnual", "websites", "keywords", "aiPrompts"],
+    "columns": [
+      "plan",
+      "priceMonthly",
+      "priceAnnual",
+      "websites",
+      "keywords",
+      "aiPrompts"
+    ],
     "plans": [
       {
         "name": "Free",
@@ -138,10 +156,26 @@
       ]
     },
     "addOns": [
-      {"name": "Extra seat (Starter)", "price": 45, "unit": "per month"},
-      {"name": "Extra seat (Pro+)", "price": 80, "unit": "per month"},
-      {"name": "Extra seat (Advanced)", "price": 100, "unit": "per month"},
-      {"name": "AI Visibility extra domain", "price": 99, "unit": "per month per domain"}
+      {
+        "name": "Extra seat (Starter)",
+        "price": 45,
+        "unit": "per month"
+      },
+      {
+        "name": "Extra seat (Pro+)",
+        "price": 80,
+        "unit": "per month"
+      },
+      {
+        "name": "Extra seat (Advanced)",
+        "price": 100,
+        "unit": "per month"
+      },
+      {
+        "name": "AI Visibility extra domain",
+        "price": 99,
+        "unit": "per month per domain"
+      }
     ],
     "billingCaveat": "Annual billing saves up to 17 percent. Every plan includes one user. Extra seats cost $45-$100 per month depending on plan. AI Visibility covers one domain; additional domains cost $99 per month each. Regional pricing and taxes vary. SEO Toolkit prices are reported by multiple sources; vendor page not confirmed. Semrush One Advanced ($549) is confirmed from the vendor's pricing page.",
     "conflicts": [
@@ -306,6 +340,30 @@
       },
       {
         "claim_id": "semrush-workflow-coverage"
+      },
+      {
+        "claim_id": "semrush-capabilities"
+      },
+      {
+        "claim_id": "semrush-core-use-case"
+      },
+      {
+        "claim_id": "semrush-free-plan"
+      },
+      {
+        "claim_id": "semrush-limitations"
+      },
+      {
+        "claim_id": "semrush-platforms"
+      },
+      {
+        "claim_id": "semrush-pricing-model"
+      },
+      {
+        "claim_id": "semrush-target-user"
+      },
+      {
+        "claim_id": "semrush-trial"
       }
     ],
     "source_ids": [
@@ -346,9 +404,20 @@
     }
   ],
   "relationships": {
-    "alternatives": ["mozpro", "ahrefs", "screamingfrog"],
-    "meaningful_comparisons": ["mozpro-vs-semrush", "ahrefs-vs-semrush"],
-    "related_tools": ["mozpro", "ahrefs", "screamingfrog"],
+    "alternatives": [
+      "mozpro",
+      "ahrefs",
+      "screamingfrog"
+    ],
+    "meaningful_comparisons": [
+      "mozpro-vs-semrush",
+      "ahrefs-vs-semrush"
+    ],
+    "related_tools": [
+      "mozpro",
+      "ahrefs",
+      "screamingfrog"
+    ],
     "compatible_tools": [],
     "replaces": [],
     "replaced_by": []
