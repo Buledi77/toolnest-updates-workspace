@@ -372,24 +372,6 @@
 /tools/zapier /tools/zapier.html 301
 
 # Directory roots and trailing-slash forms -> canonical index.html.
-/alternatives /alternatives/index.html 301
-/alternatives/ /alternatives/index.html 301
-/alternatives/index /alternatives/index.html 301
-/best /best/index.html 301
-/best/ /best/index.html 301
-/best/index /best/index.html 301
-/category /category/index.html 301
-/category/ /category/index.html 301
-/category/index /category/index.html 301
-/compare /compare/index.html 301
-/compare/ /compare/index.html 301
-/compare/index /compare/index.html 301
-/goals /goals/index.html 301
-/goals/ /goals/index.html 301
-/goals/index /goals/index.html 301
-/tools /tools/index.html 301
-/tools/ /tools/index.html 301
-/tools/index /tools/index.html 301
 
 # Homepage duplicate forms.
 /index.html / 301
