@@ -26,22 +26,22 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "migrated_from_v1",
-    "free_plan_status": "Free plan available (details not verified)"
+    "pricing_status": "official-pricing-page-checked",
+    "free_plan_status": "No permanent free plan; 7-day free trial"
   },
   "editorial": {
     "editorial_tier": "B",
     "best_for": [
-      "AI-generated ad creatives with proven templates",
-      "Copywriting suggestions included",
-      "Fast generation of multiple ad variations"
+      "Generating multiple image and video ad creative variations",
+      "Marketers who want creative scoring and competitor creative insights",
+      "Teams that need reusable brand and template controls"
     ],
     "not_recommended_for": [
-      "Creative quality varies by prompt and niche",
-      "Limited customization on lower tiers",
-      "No free plan"
+      "Users who need a permanent free tier",
+      "Teams with low or occasional creative volume",
+      "Buyers who expect AI output to replace human creative review"
     ],
-    "editorial_summary": "",
+    "editorial_summary": "AdCreative.ai is a paid AI creative platform for generating ad assets and variants. Its published feature set includes creative scoring, video generation, custom templates and competitor insights. Plans are credit- and brand-limited, so buyers should compare the included monthly credits with their campaign volume before subscribing.",
     "review_status": "published",
     "review_url": "https://www.toolnestai.tech/tools/adcreative.html",
     "review_owner": "ToolNest Editorial",
@@ -58,9 +58,15 @@
     ]
   },
   "evidence": {
-    "claim_refs": [],
-    "source_ids": [],
-    "confidence": "unverified",
+    "claim_refs": [
+      "https://www.adcreative.ai/",
+      "https://www.adcreative.ai/?view=Schedule"
+    ],
+    "source_ids": [
+      "adcreative-product-2026-11-24",
+      "adcreative-pricing-2026-11-24"
+    ],
+    "confidence": "official-source-verified",
     "test_status": "research_only"
   },
   "monetization": {
@@ -73,53 +79,61 @@
     "sitemap_eligible": true
   },
   "freshness": {
-    "updated_at": "2026-11-23T20:00:00Z"
+    "updated_at": "2026-11-24T08:40:00Z"
   },
   "pricing": {
     "checkedOn": "2026-11-24",
     "sourceUrls": [
-      ""
+      "https://www.adcreative.ai/",
+      "https://www.adcreative.ai/?view=Schedule"
     ],
     "currency": "USD",
-    "billingBasis": "monthly",
+    "billingBasis": "monthly; quarterly and annual discounts may apply",
     "freePlan": false,
+    "freeLimits": null,
     "trial": "7 days",
     "plans": [
       {
         "name": "Starter",
         "priceMonthly": 39,
         "priceAnnualMonthlyEquivalent": null,
-        "sourceTier": "v1-migration",
-        "limits": {},
-        "notes": ""
+        "sourceTier": "official-pricing-page",
+        "limits": {
+          "monthlyCredits": 10,
+          "brands": 1
+        },
+        "notes": "Monthly pricing page; included credits and brand limits depend on selected billing option."
       },
       {
         "name": "Professional",
         "priceMonthly": 249,
         "priceAnnualMonthlyEquivalent": null,
-        "sourceTier": "v1-migration",
-        "limits": {},
-        "notes": ""
+        "sourceTier": "official-pricing-page",
+        "limits": {
+          "monthlyCredits": 50,
+          "brands": 10
+        },
+        "notes": "Published monthly list price; verify current selected configuration."
       },
       {
         "name": "Ultimate",
         "priceMonthly": 999,
         "priceAnnualMonthlyEquivalent": null,
-        "sourceTier": "v1-migration",
-        "limits": {},
-        "notes": ""
-      },
-      {
-        "name": "Enterprise",
-        "priceMonthly": null,
-        "priceAnnualMonthlyEquivalent": null,
-        "sourceTier": "v1-migration",
-        "limits": {},
-        "notes": ""
+        "sourceTier": "official-pricing-page",
+        "limits": {
+          "monthlyCredits": 300,
+          "brands": 25
+        },
+        "notes": "Published monthly list price; verify current selected configuration."
       }
     ],
-    "billingCaveat": "Pricing migrated from legacy data. Please verify on official website.",
+    "billingCaveat": "Official pricing varies by billing cadence, credit bundle and brand count. Prices shown are starting monthly list prices; confirm checkout before purchase.",
     "conflicts": [],
-    "changeLog": []
+    "changeLog": [
+      {
+        "date": "2026-11-24",
+        "change": "Removed the unverified free-plan claim; recorded the official 7-day trial and plan pricing."
+      }
+    ]
   }
 }
