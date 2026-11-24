@@ -10,10 +10,18 @@
       "site": "https://www.activecampaign.com",
       "badge": "",
       "featured": false,
-      "best": "AI-powered tool",
-      "pros": [],
+      "best": "Email marketing and customer automation for growing businesses",
+      "pros": [
+        "Visual multi-step marketing automation",
+        "Email campaigns, segmentation and personalization",
+        "CRM and ecommerce integrations"
+      ],
       "logo": "/assets/logos/activecampaign.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "Custom quote",
+      "freePlan": false,
+      "checkedOn": "2026-11-24",
+      "pricingStatus": "14-day free trial; paid pricing is quote-based and varies by contacts, plan and billing"
     },
     {
       "id": "adcreative",
@@ -23,14 +31,18 @@
       "site": "https://www.adcreative.ai",
       "badge": "",
       "featured": false,
-      "best": "AI-generated ad creatives with proven templates",
+      "best": "Generating and scoring ad creatives, banners and short-form video assets",
       "pros": [
-        "AI-generated ad creatives with proven templates",
-        "Copywriting suggestions included",
-        "Fast generation of multiple ad variations"
+        "AI-generated image and video ad variations",
+        "Creative scoring and competitor-insight features",
+        "Brand and template controls for repeat campaigns"
       ],
       "logo": "/assets/logos/adcreative.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "$39/mo",
+      "freePlan": false,
+      "checkedOn": "2026-11-24",
+      "pricingStatus": "7-day free trial; paid plans from $39/month, with credits and brand limits varying by plan"
     },
     {
       "id": "adobeexpress",
@@ -51,7 +63,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $9.99/month"
+      "pricingStatus": "Freemium — free tier plus paid subscriptions from $9.99/month"
     },
     {
       "id": "adwisely",
@@ -108,7 +120,7 @@
       "affiliateUrl": "",
       "startingPrice": "$40/mo",
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Paid \u2014 subscriptions from $30/license/month"
+      "pricingStatus": "Paid — subscriptions from $30/license/month"
     },
     {
       "id": "amplitude",
@@ -196,7 +208,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $49/month"
+      "pricingStatus": "Freemium — free tier plus paid subscriptions from $49/month"
     },
     {
       "id": "bill",
@@ -268,7 +280,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $9/month"
+      "pricingStatus": "Freemium — free tier plus paid subscriptions from $9/month"
     },
     {
       "id": "browseai",
@@ -376,7 +388,7 @@
       "affiliateUrl": "",
       "startingPrice": "$29/mo",
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Paid \u2014 subscriptions from $19/month"
+      "pricingStatus": "Paid — subscriptions from $19/month"
     },
     {
       "id": "chatgpt",
@@ -397,7 +409,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $8/month"
+      "pricingStatus": "Freemium — free tier plus paid subscriptions from $8/month"
     },
     {
       "id": "circle",
@@ -431,7 +443,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $20/month"
+      "pricingStatus": "Freemium — free tier plus paid subscriptions from $20/month"
     },
     {
       "id": "clevertap",
@@ -518,7 +530,7 @@
       "affiliateUrl": "",
       "startingPrice": "$34/mo",
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Paid \u2014 subscriptions from $25/user/month"
+      "pricingStatus": "Paid — subscriptions from $25/user/month"
     },
     {
       "id": "confetti",
@@ -585,7 +597,7 @@
       "affiliateUrl": "",
       "startingPrice": "$29/mo",
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Paid \u2014 subscriptions from $24/month for 5 seats"
+      "pricingStatus": "Paid — subscriptions from $24/month for 5 seats"
     },
     {
       "id": "deel",
@@ -619,7 +631,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $16/month"
+      "pricingStatus": "Freemium — free tier plus paid subscriptions from $16/month"
     },
     {
       "id": "dext",
@@ -674,7 +686,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $6/month"
+      "pricingStatus": "Freemium — free tier plus paid subscriptions from $6/month"
     },
     {
       "id": "expertex",
@@ -712,7 +724,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $16/month"
+      "pricingStatus": "Freemium — free tier plus paid subscriptions from $16/month"
     },
     {
       "id": "fireflies",
@@ -733,7 +745,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $10/user/month"
+      "pricingStatus": "Freemium — free tier plus paid subscriptions from $10/user/month"
     },
     {
       "id": "flexiquiz",
@@ -755,19 +767,23 @@
     {
       "id": "flocksy",
       "name": "Flocksy",
-      "cat": "Email Marketing",
+      "cat": "Design",
       "h": 120,
       "site": "https://www.flocksy.com",
       "badge": "",
       "featured": false,
-      "best": "Cold email outreach with AI copywriting",
+      "best": "A dedicated creative team for ongoing design, video, motion and copy production",
       "pros": [
-        "Cold email outreach with AI copywriting",
-        "Email warmup included",
-        "Lead generation tools"
+        "140+ creative services across design, video, motion and illustration",
+        "Dedicated team with tracked daily creative hours",
+        "Unlimited requests and revisions within the plan's available hours"
       ],
       "logo": "/assets/logos/flocksy.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "$1,199/mo billed annually",
+      "freePlan": false,
+      "checkedOn": "2026-11-24",
+      "pricingStatus": "Paid subscription; plans start at $1,199/month on annual billing or $1,699/month month-to-month"
     },
     {
       "id": "framer",
@@ -788,7 +804,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $10/month"
+      "pricingStatus": "Freemium — free tier plus paid subscriptions from $10/month"
     },
     {
       "id": "freshbooks",
@@ -882,7 +898,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $19/month"
+      "pricingStatus": "Freemium — free tier plus paid subscriptions from $19/month"
     },
     {
       "id": "gorgias",
@@ -936,7 +952,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $25/user/month"
+      "pricingStatus": "Freemium — free tier plus paid subscriptions from $25/user/month"
     },
     {
       "id": "hemingway",
@@ -957,7 +973,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free web editor plus paid subscriptions from $8.33/month"
+      "pricingStatus": "Freemium — free web editor plus paid subscriptions from $8.33/month"
     },
     {
       "id": "hibob",
@@ -1059,7 +1075,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $2/month"
+      "pricingStatus": "Freemium — free tier plus paid subscriptions from $2/month"
     },
     {
       "id": "instantly",
@@ -1079,7 +1095,7 @@
       "affiliateUrl": "",
       "startingPrice": "$47/mo",
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Paid \u2014 subscriptions from $47/month"
+      "pricingStatus": "Paid — subscriptions from $47/month"
     },
     {
       "id": "instapage",
@@ -1112,7 +1128,7 @@
       "affiliateUrl": "",
       "startingPrice": "$39/mo",
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Paid \u2014 subscriptions from $29/seat/month"
+      "pricingStatus": "Paid — subscriptions from $29/seat/month"
     },
     {
       "id": "invideo",
@@ -1133,7 +1149,7 @@
       "startingPrice": "$20/mo",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $10/month"
+      "pricingStatus": "Freemium — free tier plus paid subscriptions from $10/month"
     },
     {
       "id": "jasper",
@@ -1153,7 +1169,7 @@
       "affiliateUrl": "",
       "startingPrice": "$69/mo",
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Paid \u2014 subscriptions from $59/seat/month"
+      "pricingStatus": "Paid — subscriptions from $59/seat/month"
     },
     {
       "id": "kapwing",
@@ -1174,7 +1190,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $16/month"
+      "pricingStatus": "Freemium — free tier plus paid subscriptions from $16/month"
     },
     {
       "id": "keap",
@@ -1212,7 +1228,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $39/month"
+      "pricingStatus": "Freemium — free tier plus paid subscriptions from $39/month"
     },
     {
       "id": "krispcall",
@@ -1232,7 +1248,7 @@
       "affiliateUrl": "",
       "startingPrice": "$15/mo",
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Paid \u2014 subscriptions from $12/user/month"
+      "pricingStatus": "Paid — subscriptions from $12/user/month"
     },
     {
       "id": "learnworlds",
@@ -1354,7 +1370,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $9/month"
+      "pricingStatus": "Freemium — free tier plus paid subscriptions from $9/month"
     },
     {
       "id": "manychat",
@@ -1503,7 +1519,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free self-hosted tier plus cloud subscriptions from $20/month"
+      "pricingStatus": "Freemium — free self-hosted tier plus cloud subscriptions from $20/month"
     },
     {
       "id": "netlify",
@@ -1587,7 +1603,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $16/month"
+      "pricingStatus": "Freemium — free tier plus paid subscriptions from $16/month"
     },
     {
       "id": "omniseo",
@@ -2135,7 +2151,7 @@
       "startingPrice": "Free",
       "freePlan": true,
       "checkedOn": "2026-11-23",
-      "pricingStatus": "Freemium \u2014 free tier plus paid subscriptions from $25/month"
+      "pricingStatus": "Freemium — free tier plus paid subscriptions from $25/month"
     },
     {
       "id": "survicate",

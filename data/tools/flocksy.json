@@ -12,36 +12,40 @@
   },
   "discovery": {
     "categories": [
-      "Email Marketing"
+      "Design"
     ],
     "use_cases": [
-      "cold email outreach",
-      "lead generation",
-      "email automation"
+      "graphic design subscription",
+      "video editing",
+      "motion graphics",
+      "illustration",
+      "creative production",
+      "copywriting support"
     ],
     "audiences": [
-      "sales teams",
+      "marketing teams",
+      "creative teams",
       "agencies",
-      "SMBs"
+      "growing brands"
     ]
   },
   "factual_profile": {
-    "pricing_status": "web-researched",
-    "free_plan_status": "Free plan available (details not verified)"
+    "pricing_status": "official-pricing-page-checked",
+    "free_plan_status": "No free plan; 14-day money-back guarantee for new clients"
   },
   "editorial": {
     "editorial_tier": "B",
     "best_for": [
-      "Cold email outreach with AI copywriting",
-      "Email warmup included",
-      "Lead generation tools"
+      "Teams with a steady volume of design and creative production",
+      "Agencies that need recurring design, video and motion support",
+      "Businesses that want a dedicated creative team with tracked hours"
     ],
     "not_recommended_for": [
-      "Email volume capped by plan tier",
-      "Single user on Starter plan",
-      "No free plan"
+      "Solo users or small teams with occasional design needs",
+      "Buyers looking for a low-cost self-serve design app",
+      "Teams that need software-only automation rather than human creative services"
     ],
-    "editorial_summary": "",
+    "editorial_summary": "Flocksy is a subscription creative-production service, not an email marketing or cold-outreach platform. Plans provide a dedicated multidisciplinary team for design, video, motion, illustration and copy support, with capacity measured in daily creative hours. It suits teams with recurring creative work; its monthly commitment is likely excessive for occasional one-off tasks.",
     "review_status": "published",
     "review_url": "https://www.toolnestai.tech/tools/flocksy.html",
     "review_owner": "ToolNest Editorial",
@@ -58,9 +62,16 @@
     ]
   },
   "evidence": {
-    "claim_refs": [],
-    "source_ids": [],
-    "confidence": "unverified",
+    "claim_refs": [
+      "https://flocksy.com/pricing/",
+      "https://flocksy.com/graphic-design-subscription/",
+      "https://help.flocksy.com/what-can-i-request-an-overview-of-creative-services"
+    ],
+    "source_ids": [
+      "flocksy-pricing-2026-11-24",
+      "flocksy-services-2026-11-24"
+    ],
+    "confidence": "official-source-verified",
     "test_status": "research_only"
   },
   "monetization": {
@@ -73,52 +84,58 @@
     "sitemap_eligible": true
   },
   "freshness": {
-    "updated_at": "2026-11-23T20:00:00Z"
+    "updated_at": "2026-11-24T08:30:00Z"
   },
   "pricing": {
     "checkedOn": "2026-11-24",
     "sourceUrls": [
-      "https://www.flocksy.com/pricing"
+      "https://flocksy.com/pricing/",
+      "https://flocksy.com/graphic-design-subscription/"
     ],
     "currency": "USD",
-    "billingBasis": "monthly",
+    "billingBasis": "monthly-and-annual",
     "freePlan": false,
     "freeLimits": null,
-    "trial": null,
+    "trial": "14-day money-back guarantee for new clients (not a free trial)",
     "plans": [
       {
         "name": "2 Daily Hours",
         "priceMonthly": 1699,
         "priceAnnualMonthlyEquivalent": 1199,
-        "sourceTier": "web-research",
+        "sourceTier": "official-pricing",
         "limits": {
-          "hours": 42
+          "hoursPerMonth": 42
         },
-        "notes": "Dedicated creative team"
+        "notes": "Dedicated creative team; annual equivalent is billed annually"
       },
       {
         "name": "4 Daily Hours",
         "priceMonthly": 3099,
         "priceAnnualMonthlyEquivalent": 2199,
-        "sourceTier": "web-research",
+        "sourceTier": "official-pricing",
         "limits": {
-          "hours": 84
+          "hoursPerMonth": 84
         },
-        "notes": "Dedicated creative team"
+        "notes": "Production Coordinator included"
       },
       {
-        "name": "8 Daily Hours",
-        "priceMonthly": 5899,
-        "priceAnnualMonthlyEquivalent": 3799,
-        "sourceTier": "web-research",
+        "name": "6 Daily Hours",
+        "priceMonthly": 4499,
+        "priceAnnualMonthlyEquivalent": 2999,
+        "sourceTier": "official-pricing",
         "limits": {
-          "hours": 168
+          "hoursPerMonth": 126
         },
-        "notes": "Dedicated creative team"
+        "notes": "Production Coordinator and Art Director included"
       }
     ],
-    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "billingCaveat": "Prices are USD per month; annual prices are billed annually. Confirm current plan details on Flocksy's official pricing page.",
     "conflicts": [],
-    "changeLog": []
+    "changeLog": [
+      {
+        "date": "2026-11-24",
+        "change": "Corrected category and positioning from email outreach software to creative-services subscription; verified plans and guarantee on official pages."
+      }
+    ]
   }
 }

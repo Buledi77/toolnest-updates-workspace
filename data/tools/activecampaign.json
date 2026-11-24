@@ -14,18 +14,34 @@
     "categories": [
       "Email Marketing"
     ],
-    "use_cases": [],
-    "audiences": []
+    "use_cases": [
+      "email marketing",
+      "marketing automation",
+      "customer segmentation",
+      "CRM workflows"
+    ],
+    "audiences": [
+      "small and midsize businesses",
+      "marketing teams",
+      "ecommerce businesses"
+    ]
   },
   "factual_profile": {
-    "pricing_status": "migrated_from_v1",
-    "free_plan_status": "Free plan available (details not verified)"
+    "pricing_status": "official-pricing-page-checked",
+    "free_plan_status": "No permanent free plan; 14-day free trial"
   },
   "editorial": {
     "editorial_tier": "B",
-    "best_for": [],
-    "not_recommended_for": [],
-    "editorial_summary": "",
+    "best_for": [
+      "Email campaigns and customer journeys",
+      "Multi-step marketing automation",
+      "Teams that need segmentation and CRM/ecommerce integrations"
+    ],
+    "not_recommended_for": [
+      "Users who need a permanently free email marketing plan",
+      "Very small senders who do not need advanced automation"
+    ],
+    "editorial_summary": "ActiveCampaign combines email marketing, marketing automation and CRM-related workflows. Its visual automation builder and segmentation are useful for teams coordinating campaigns across customer stages. It is less suitable if a permanent free plan or a simple one-off newsletter sender is the main requirement.",
     "review_status": "published",
     "review_url": "https://www.toolnestai.tech/tools/activecampaign.html",
     "review_owner": "ToolNest Editorial",
@@ -33,9 +49,16 @@
   },
   "relationships": {},
   "evidence": {
-    "claim_refs": [],
-    "source_ids": [],
-    "confidence": "unverified",
+    "claim_refs": [
+      "https://www.activecampaign.com/pricing",
+      "https://www.activecampaign.com/free",
+      "https://help.activecampaign.com/hc/en-us/articles/218789987-Free-trial-capabilities"
+    ],
+    "source_ids": [
+      "activecampaign-pricing-2026-11-24",
+      "activecampaign-trial-2026-11-24"
+    ],
+    "confidence": "official-source-verified",
     "test_status": "research_only"
   },
   "monetization": {
@@ -48,45 +71,30 @@
     "sitemap_eligible": true
   },
   "freshness": {
-    "updated_at": "2026-11-23T20:00:00Z"
+    "updated_at": "2026-11-24T08:30:00Z"
   },
   "pricing": {
     "checkedOn": "2026-11-24",
     "sourceUrls": [
-      ""
+      "https://www.activecampaign.com/pricing",
+      "https://www.activecampaign.com/free",
+      "https://help.activecampaign.com/hc/en-us/articles/218789987-Free-trial-capabilities"
     ],
     "currency": "USD",
-    "billingBasis": "monthly",
+    "billingBasis": "quote-based",
     "freePlan": false,
-    "trial": "14 days",
-    "plans": [
-      {
-        "name": "Starter",
-        "priceMonthly": 19,
-        "priceAnnualMonthlyEquivalent": null,
-        "sourceTier": "v1-migration",
-        "limits": {},
-        "notes": ""
-      },
-      {
-        "name": "Plus",
-        "priceMonthly": 59,
-        "priceAnnualMonthlyEquivalent": null,
-        "sourceTier": "v1-migration",
-        "limits": {},
-        "notes": ""
-      },
-      {
-        "name": "Pro",
-        "priceMonthly": 99,
-        "priceAnnualMonthlyEquivalent": null,
-        "sourceTier": "v1-migration",
-        "limits": {},
-        "notes": ""
-      }
+    "freeLimits": null,
+    "trial": "14 days; trial supports up to 100 email sends and one user",
+    "plans": [],
+    "billingCaveat": "The official pricing page asks visitors to configure contacts and currency or request tailored pricing; do not rely on legacy fixed prices. Confirm the quote on the official site.",
+    "conflicts": [
+      "Legacy migrated prices of $19/$59/$99 are not confirmed on the current official pricing page."
     ],
-    "billingCaveat": "Pricing migrated from legacy data. Please verify on official website.",
-    "conflicts": [],
-    "changeLog": []
+    "changeLog": [
+      {
+        "date": "2026-11-24",
+        "change": "Removed legacy fixed prices and incorrect free-plan claim after checking official pricing and trial pages."
+      }
+    ]
   }
 }
