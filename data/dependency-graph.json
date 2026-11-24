@@ -1,0 +1,4254 @@
+{
+  "description": "Machine-readable dependency graph for fact propagation",
+  "direction": "FACT -> TOOL -> TOOL_PROFILE -> DECISION_ENGINE -> STACK -> COMPARISONS -> ALTERNATIVES -> GOALS -> CATEGORY -> OTHER",
+  "tools": {
+    "activecampaign": {
+      "fact_sources": [
+        {
+          "claim_id": "activecampaign-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/activecampaign.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/email-marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "adcreative": {
+      "fact_sources": [
+        {
+          "claim_id": "adcreative-trial",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "adcreative-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/adcreative.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "adobeexpress": {
+      "fact_sources": [
+        {
+          "claim_id": "adobeexpress-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/adobeexpress.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/design.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "adwisely": {
+      "fact_sources": [
+        {
+          "claim_id": "adwisely-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "adwisely-free-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "adwisely-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "adwisely-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "adwisely-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "adwisely-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "adwisely-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "adwisely-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/adwisely.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "ahrefs": {
+      "fact_sources": [
+        {
+          "claim_id": "ahrefs-free-plan",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "ahrefs-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/ahrefs.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/seo.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "aircall": {
+      "fact_sources": [],
+      "tool_profile": "tools/aircall.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/customer-support.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "amplitude": {
+      "fact_sources": [
+        {
+          "claim_id": "amplitude-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "amplitude-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "amplitude-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "amplitude-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "amplitude-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "amplitude-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "amplitude-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "amplitude-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/amplitude.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "apollo": {
+      "fact_sources": [
+        {
+          "claim_id": "apollo-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "apollo-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "apollo-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "apollo-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "apollo-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "apollo-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "apollo-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/apollo.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "asana": {
+      "fact_sources": [
+        {
+          "claim_id": "asana-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/asana.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "beautifulai": {
+      "fact_sources": [
+        {
+          "claim_id": "beautifulai-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/beautifulai.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "beehiiv": {
+      "fact_sources": [
+        {
+          "claim_id": "beehiiv-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "needs_review",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/beehiiv.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/email-marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "bill": {
+      "fact_sources": [
+        {
+          "claim_id": "bill-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "needs_review",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/bill.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "brand24": {
+      "fact_sources": [],
+      "tool_profile": "tools/brand24.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "breadbutter": {
+      "fact_sources": [],
+      "tool_profile": "tools/breadbutter.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/research.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "brevo": {
+      "fact_sources": [
+        {
+          "claim_id": "brevo-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/brevo.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/email-marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "browseai": {
+      "fact_sources": [],
+      "tool_profile": "tools/browseai.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/automation.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "callrail": {
+      "fact_sources": [],
+      "tool_profile": "tools/callrail.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "campaignmonitor": {
+      "fact_sources": [],
+      "tool_profile": "tools/campaignmonitor.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/email-marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "canva": {
+      "fact_sources": [
+        {
+          "claim_id": "canva-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/canva.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/design.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "capsule": {
+      "fact_sources": [
+        {
+          "claim_id": "capsule-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "needs_review",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/capsule.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "castmagic": {
+      "fact_sources": [],
+      "tool_profile": "tools/castmagic.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/voice-&-video.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "chatgpt": {
+      "fact_sources": [
+        {
+          "claim_id": "chatgpt-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/chatgpt.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/ai-assistants.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "circle": {
+      "fact_sources": [],
+      "tool_profile": "tools/circle.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "claude": {
+      "fact_sources": [
+        {
+          "claim_id": "claude-free-plan",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "claude-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "claude-platform",
+          "claim_type": "feature",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/claude.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/ai-assistants.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "clevertap": {
+      "fact_sources": [
+        {
+          "claim_id": "clevertap-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "clevertap-free-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "clevertap-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "clevertap-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "clevertap-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "clevertap-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "clevertap-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "clevertap-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/clevertap.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "clickup": {
+      "fact_sources": [
+        {
+          "claim_id": "clickup-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/clickup.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "close": {
+      "fact_sources": [],
+      "tool_profile": "tools/close.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "closely": {
+      "fact_sources": [
+        {
+          "claim_id": "closely-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "closely-free-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "closely-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "closely-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "closely-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "closely-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "closely-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "closely-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/closely.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "cloudtalk": {
+      "fact_sources": [],
+      "tool_profile": "tools/cloudtalk.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/customer-support.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "confetti": {
+      "fact_sources": [
+        {
+          "claim_id": "confetti-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "confetti-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/confetti.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "connecteam": {
+      "fact_sources": [
+        {
+          "claim_id": "connecteam-free-plan",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "connecteam-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "connecteam-platform",
+          "claim_type": "feature",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/connecteam.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "consensus": {
+      "fact_sources": [],
+      "tool_profile": "tools/consensus.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/research.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "copyai": {
+      "fact_sources": [
+        {
+          "claim_id": "copyai-free-plan",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "copyai-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/copyai.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "deel": {
+      "fact_sources": [],
+      "tool_profile": "tools/deel.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "descript": {
+      "fact_sources": [
+        {
+          "claim_id": "descript-free-plan",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "descript-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/descript.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/voice-&-video.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "dext": {
+      "fact_sources": [
+        {
+          "claim_id": "dext-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "needs_review",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/dext.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "dripify": {
+      "fact_sources": [
+        {
+          "claim_id": "dripify-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "dripify-free-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "dripify-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "dripify-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "dripify-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "dripify-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "dripify-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "dripify-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/dripify.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "elevenlabs": {
+      "fact_sources": [
+        {
+          "claim_id": "elevenlabs-free-plan",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "elevenlabs-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/elevenlabs.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/voice-&-video.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "expertex": {
+      "fact_sources": [],
+      "tool_profile": "tools/expertex.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/image-generation.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "figma": {
+      "fact_sources": [
+        {
+          "claim_id": "figma-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "needs_review",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/figma.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/design.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "fireflies": {
+      "fact_sources": [],
+      "tool_profile": "tools/fireflies.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "flexiquiz": {
+      "fact_sources": [],
+      "tool_profile": "tools/flexiquiz.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "flocksy": {
+      "fact_sources": [],
+      "tool_profile": "tools/flocksy.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/email-marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "framer": {
+      "fact_sources": [],
+      "tool_profile": "tools/framer.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/website-builder.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "freshbooks": {
+      "fact_sources": [
+        {
+          "claim_id": "freshbooks-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "needs_review",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/freshbooks.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "freshdesk": {
+      "fact_sources": [
+        {
+          "claim_id": "freshdesk-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "freshdesk-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "freshdesk-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "freshdesk-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "freshdesk-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "freshdesk-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "freshdesk-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "freshdesk-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/freshdesk.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "gamma": {
+      "fact_sources": [],
+      "tool_profile": "tools/gamma.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/design.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "gemini": {
+      "fact_sources": [],
+      "tool_profile": "tools/gemini.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/ai-assistants.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "getresponse": {
+      "fact_sources": [
+        {
+          "claim_id": "getresponse-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/getresponse.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/email-marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "glide": {
+      "fact_sources": [],
+      "tool_profile": "tools/glide.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/website-builder.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "gorgias": {
+      "fact_sources": [],
+      "tool_profile": "tools/gorgias.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "grammarly": {
+      "fact_sources": [
+        {
+          "claim_id": "grammarly-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/grammarly.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/writing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "helpscout": {
+      "fact_sources": [
+        {
+          "claim_id": "helpscout-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "helpscout-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "helpscout-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "helpscout-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "helpscout-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "helpscout-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "helpscout-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "helpscout-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/helpscout.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/customer-support.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "hemingway": {
+      "fact_sources": [],
+      "tool_profile": "tools/hemingway.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/writing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "hibob": {
+      "fact_sources": [
+        {
+          "claim_id": "hibob-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "hibob-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "hibob-platform",
+          "claim_type": "feature",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/hibob.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "hightouch": {
+      "fact_sources": [],
+      "tool_profile": "tools/hightouch.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/automation.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "hostinger": {
+      "fact_sources": [
+        {
+          "claim_id": "hostinger-fair-use",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/hostinger.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/hosting.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "hubspot": {
+      "fact_sources": [
+        {
+          "claim_id": "hubspot-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "hubspot-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "hubspot-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "hubspot-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "hubspot-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "hubspot-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "hubspot-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/hubspot.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "ifttt": {
+      "fact_sources": [],
+      "tool_profile": "tools/ifttt.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/automation.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "instantly": {
+      "fact_sources": [],
+      "tool_profile": "tools/instantly.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/email-marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "instapage": {
+      "fact_sources": [],
+      "tool_profile": "tools/instapage.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "intercom": {
+      "fact_sources": [
+        {
+          "claim_id": "intercom-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "intercom-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "intercom-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "intercom-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "intercom-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "intercom-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "intercom-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "intercom-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/intercom.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/customer-support.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "invideo": {
+      "fact_sources": [],
+      "tool_profile": "tools/invideo.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/voice-&-video.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "jasper": {
+      "fact_sources": [
+        {
+          "claim_id": "jasper-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/jasper.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "kapwing": {
+      "fact_sources": [],
+      "tool_profile": "tools/kapwing.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/voice-&-video.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "keap": {
+      "fact_sources": [],
+      "tool_profile": "tools/keap.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "kit": {
+      "fact_sources": [
+        {
+          "claim_id": "kit-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/kit.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/email-marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "krispcall": {
+      "fact_sources": [],
+      "tool_profile": "tools/krispcall.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/customer-support.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "learnworlds": {
+      "fact_sources": [
+        {
+          "claim_id": "learnworlds-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "learnworlds-free-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "learnworlds-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "learnworlds-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "learnworlds-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "learnworlds-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "learnworlds-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "learnworlds-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/learnworlds.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "lemlist": {
+      "fact_sources": [],
+      "tool_profile": "tools/lemlist.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "leonardo": {
+      "fact_sources": [],
+      "tool_profile": "tools/leonardo.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/image-generation.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "logome": {
+      "fact_sources": [],
+      "tool_profile": "tools/logome.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/design.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "lusha": {
+      "fact_sources": [
+        {
+          "claim_id": "lusha-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "lusha-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "lusha-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "lusha-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "lusha-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "lusha-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "lusha-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "lusha-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/lusha.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "mailchimp": {
+      "fact_sources": [
+        {
+          "claim_id": "mailchimp-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "mailchimp-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "mailchimp-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "mailchimp-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "mailchimp-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "mailchimp-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "mailchimp-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "mailchimp-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/mailchimp.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/email-marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "make": {
+      "fact_sources": [],
+      "tool_profile": "tools/make.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/automation.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "manychat": {
+      "fact_sources": [],
+      "tool_profile": "tools/manychat.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "meetgeek": {
+      "fact_sources": [
+        {
+          "claim_id": "meetgeek-trial",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "meetgeek-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/meetgeek.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "midjourney": {
+      "fact_sources": [
+        {
+          "claim_id": "midjourney-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/midjourney.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/image-generation.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "mixpanel": {
+      "fact_sources": [
+        {
+          "claim_id": "mixpanel-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "mixpanel-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "mixpanel-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "mixpanel-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "mixpanel-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "mixpanel-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "mixpanel-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "mixpanel-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/mixpanel.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "monday": {
+      "fact_sources": [
+        {
+          "claim_id": "monday-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "monday-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/monday.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "moosend": {
+      "fact_sources": [],
+      "tool_profile": "tools/moosend.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/email-marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "mozpro": {
+      "fact_sources": [],
+      "tool_profile": "tools/mozpro.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/seo.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "murf": {
+      "fact_sources": [],
+      "tool_profile": "tools/murf.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/voice-&-video.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "n8n": {
+      "fact_sources": [],
+      "tool_profile": "tools/n8n.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/automation.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "netlify": {
+      "fact_sources": [],
+      "tool_profile": "tools/netlify.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/website-builder.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "notebooklm": {
+      "fact_sources": [],
+      "tool_profile": "tools/notebooklm.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/research.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "notion": {
+      "fact_sources": [
+        {
+          "claim_id": "notion-free-plan",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "notion-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/notion.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "nutshell": {
+      "fact_sources": [],
+      "tool_profile": "tools/nutshell.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "omnisend": {
+      "fact_sources": [
+        {
+          "claim_id": "omnisend-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "omnisend-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "omnisend-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "omnisend-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "omnisend-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "omnisend-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "omnisend-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "omnisend-limitations",
+          "claim_type": "",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/omnisend.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/email-marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "omniseo": {
+      "fact_sources": [],
+      "tool_profile": "tools/omniseo.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "otter": {
+      "fact_sources": [],
+      "tool_profile": "tools/otter.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "pandadoc": {
+      "fact_sources": [
+        {
+          "claim_id": "pandadoc-trial",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "pandadoc-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/pandadoc.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "perplexity": {
+      "fact_sources": [],
+      "tool_profile": "tools/perplexity.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/research.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "pipedrive": {
+      "fact_sources": [
+        {
+          "claim_id": "pipedrive-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "pipedrive-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "pipedrive-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "pipedrive-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "pipedrive-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "pipedrive-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "pipedrive-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/pipedrive.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "pixelunion": {
+      "fact_sources": [],
+      "tool_profile": "tools/pixelunion.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/design.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "prowritingaid": {
+      "fact_sources": [],
+      "tool_profile": "tools/prowritingaid.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/writing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "quickbooks": {
+      "fact_sources": [
+        {
+          "claim_id": "quickbooks-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "quickbooks-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "quickbooks-platform",
+          "claim_type": "feature",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/quickbooks.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "quillbot": {
+      "fact_sources": [
+        {
+          "claim_id": "quillbot-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/quillbot.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/writing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "quo": {
+      "fact_sources": [],
+      "tool_profile": "tools/quo.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/customer-support.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "rgestudio": {
+      "fact_sources": [],
+      "tool_profile": "tools/rgestudio.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/email-marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "removebg": {
+      "fact_sources": [],
+      "tool_profile": "tools/removebg.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/design.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "replyio": {
+      "fact_sources": [
+        {
+          "claim_id": "replyio-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "replyio-free-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "replyio-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "replyio-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "replyio-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "replyio-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "replyio-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "replyio-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/replyio.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "runway": {
+      "fact_sources": [],
+      "tool_profile": "tools/runway.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/voice-&-video.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "salesforce-smb": {
+      "fact_sources": [],
+      "tool_profile": "tools/salesforce-smb.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "screamingfrog": {
+      "fact_sources": [],
+      "tool_profile": "tools/screamingfrog.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/seo.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "semrush": {
+      "fact_sources": [
+        {
+          "claim_id": "semrush-ai-visibility-addon",
+          "claim_type": "feature",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "semrush-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/semrush.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/seo.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "shoeboxed": {
+      "fact_sources": [
+        {
+          "claim_id": "shoeboxed-trial",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "shoeboxed-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "shoeboxed-platform",
+          "claim_type": "feature",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/shoeboxed.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "simpletexting": {
+      "fact_sources": [
+        {
+          "claim_id": "simpletexting-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "simpletexting-free-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "simpletexting-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "simpletexting-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "simpletexting-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "simpletexting-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "simpletexting-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "simpletexting-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/simpletexting.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "smartlead": {
+      "fact_sources": [
+        {
+          "claim_id": "smartlead-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "smartlead-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "smartlead-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "smartlead-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "smartlead-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "smartlead-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "smartlead-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "smartlead-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/smartlead.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/email-marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "smartli": {
+      "fact_sources": [],
+      "tool_profile": "tools/smartli.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/writing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "softr": {
+      "fact_sources": [],
+      "tool_profile": "tools/softr.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/website-builder.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "softsync": {
+      "fact_sources": [
+        {
+          "claim_id": "softsync-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "softsync-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "softsync-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "softsync-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "softsync-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "softsync-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "softsync-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "softsync-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/softsync.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "spiky": {
+      "fact_sources": [
+        {
+          "claim_id": "spiky-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "spiky-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "spiky-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "spiky-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "spiky-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "spiky-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "spiky-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "spiky-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/spiky.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "sproutsocial": {
+      "fact_sources": [
+        {
+          "claim_id": "sproutsocial-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "sproutsocial-free-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "sproutsocial-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "sproutsocial-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "sproutsocial-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "sproutsocial-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "sproutsocial-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "sproutsocial-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/sproutsocial.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "squarespace": {
+      "fact_sources": [],
+      "tool_profile": "tools/squarespace.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/website-builder.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "stamped": {
+      "fact_sources": [],
+      "tool_profile": "tools/stamped.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "storydoc": {
+      "fact_sources": [],
+      "tool_profile": "tools/storydoc.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/writing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "storylane": {
+      "fact_sources": [],
+      "tool_profile": "tools/storylane.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "streak": {
+      "fact_sources": [
+        {
+          "claim_id": "streak-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "streak-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "streak-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "streak-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "streak-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "streak-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "streak-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "streak-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/streak.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "surferseo": {
+      "fact_sources": [],
+      "tool_profile": "tools/surferseo.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/seo.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "surveymonkey": {
+      "fact_sources": [
+        {
+          "claim_id": "surveymonkey-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "surveymonkey-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "surveymonkey-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "surveymonkey-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "surveymonkey-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "surveymonkey-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "surveymonkey-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "surveymonkey-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/surveymonkey.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "survicate": {
+      "fact_sources": [],
+      "tool_profile": "tools/survicate.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/customer-support.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "synthesia": {
+      "fact_sources": [],
+      "tool_profile": "tools/synthesia.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/voice-&-video.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "systeme": {
+      "fact_sources": [],
+      "tool_profile": "tools/systeme.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "teachable": {
+      "fact_sources": [
+        {
+          "claim_id": "teachable-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "teachable-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "teachable-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "teachable-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "teachable-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "teachable-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "teachable-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "teachable-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/teachable.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/sales.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "teamwork": {
+      "fact_sources": [
+        {
+          "claim_id": "teamwork-trial",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "teamwork-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/teamwork.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "teikametrics": {
+      "fact_sources": [],
+      "tool_profile": "tools/teikametrics.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/seo.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "textline": {
+      "fact_sources": [],
+      "tool_profile": "tools/textline.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/customer-support.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "thetop": {
+      "fact_sources": [],
+      "tool_profile": "tools/thetop.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/ai-assistants.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "tidio": {
+      "fact_sources": [],
+      "tool_profile": "tools/tidio.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/customer-support.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "timedoctor": {
+      "fact_sources": [
+        {
+          "claim_id": "timedoctor-trial",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "timedoctor-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/timedoctor.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "todoist": {
+      "fact_sources": [
+        {
+          "claim_id": "todoist-free-plan",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "todoist-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "todoist-platform",
+          "claim_type": "feature",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/todoist.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "trainual": {
+      "fact_sources": [
+        {
+          "claim_id": "trainual-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "trainual-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/trainual.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "transpond": {
+      "fact_sources": [],
+      "tool_profile": "tools/transpond.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "ueni": {
+      "fact_sources": [],
+      "tool_profile": "tools/ueni.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/voice-&-video.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "unbounce": {
+      "fact_sources": [],
+      "tool_profile": "tools/unbounce.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/website-builder.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "upfluence": {
+      "fact_sources": [],
+      "tool_profile": "tools/upfluence.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "upwork": {
+      "fact_sources": [
+        {
+          "claim_id": "upwork-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "upwork-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/upwork.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "webflow": {
+      "fact_sources": [],
+      "tool_profile": "tools/webflow.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/website-builder.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "windsorai": {
+      "fact_sources": [],
+      "tool_profile": "tools/windsorai.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "wingify": {
+      "fact_sources": [],
+      "tool_profile": "tools/wingify.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/marketing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "wrike": {
+      "fact_sources": [
+        {
+          "claim_id": "wrike-free-plan",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "wrike-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "wrike-platform",
+          "claim_type": "feature",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/wrike.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "writesonic": {
+      "fact_sources": [
+        {
+          "claim_id": "writesonic-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/writesonic.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/writing.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "xero": {
+      "fact_sources": [
+        {
+          "claim_id": "xero-trial",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "xero-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "xero-platform",
+          "claim_type": "feature",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/xero.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/productivity.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "xtiles": {
+      "fact_sources": [],
+      "tool_profile": "tools/xtiles.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/design.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "zapier": {
+      "fact_sources": [],
+      "tool_profile": "tools/zapier.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/automation.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "zendesk": {
+      "fact_sources": [
+        {
+          "claim_id": "zendesk-pricing-model",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "zendesk-free-plan",
+          "claim_type": "free_plan",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "zendesk-trial",
+          "claim_type": "trial",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "zendesk-capabilities",
+          "claim_type": "capability",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "zendesk-platforms",
+          "claim_type": "platform",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "zendesk-core-use-case",
+          "claim_type": "use_case",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "zendesk-target-user",
+          "claim_type": "target_user",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        },
+        {
+          "claim_id": "zendesk-limitations",
+          "claim_type": "limitation",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/zendesk.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/customer-support.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "bolt": {
+      "fact_sources": [
+        {
+          "claim_id": "bolt-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "needs_review",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/bolt.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/developer-tools.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "cursor": {
+      "fact_sources": [
+        {
+          "claim_id": "cursor-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/cursor.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/developer-tools.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "github-copilot": {
+      "fact_sources": [],
+      "tool_profile": "tools/github-copilot.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/developer-tools.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "heygen": {
+      "fact_sources": [],
+      "tool_profile": "tools/heygen.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/voice-&-video.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "ideogram": {
+      "fact_sources": [
+        {
+          "claim_id": "ideogram-pricing-verified",
+          "claim_type": "pricing",
+          "canonical_source": "data/evidence/evidence-ledger.json",
+          "status": "verified_official",
+          "verified_at": "2026-11-23"
+        }
+      ],
+      "tool_profile": "tools/ideogram.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/image-generation.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    },
+    "lovable": {
+      "fact_sources": [],
+      "tool_profile": "tools/lovable.html",
+      "decision_engine": "data/decision-engine-bundle.json",
+      "stack_analyzer": "tools/stack-analyzer.html",
+      "comparisons": [],
+      "alternatives": [],
+      "goals": [],
+      "category": "category/website-builder.html",
+      "other": [
+        "sitemap.xml",
+        "index.html"
+      ]
+    }
+  },
+  "canonical_propagation": {
+    "enabled": true,
+    "canonical_source": "data/evidence/evidence-ledger.json",
+    "derived_surfaces": [
+      "data/tools/*.json",
+      "tools/*.html",
+      "data/decision-engine-bundle.json"
+    ],
+    "classification_types": [
+      "MUTABLE_CANONICAL_FACT",
+      "ACTUAL_DUPLICATE",
+      "DERIVED_PRESENTATION",
+      "EDITORIAL_REFERENCE",
+      "SAFE_STATIC_COPY",
+      "GENERATOR_OUTPUT",
+      "RESEARCH_REQUIRED",
+      "CANONICALIZED",
+      "SAFE_DERIVED_COPY",
+      "EDITORIAL_COPY",
+      "REQUIRES_REFACTOR"
+    ],
+    "summary": {
+      "total_canonical_facts": 332,
+      "duplicated_surfaces": 301,
+      "high_stale_risk": 90,
+      "medium_stale_risk": 0,
+      "low_stale_risk": 211,
+      "classification_counts": {
+        "MUTABLE_CANONICAL_FACT": 0,
+        "ACTUAL_DUPLICATE": 90,
+        "DERIVED_PRESENTATION": 0,
+        "EDITORIAL_REFERENCE": 58,
+        "SAFE_STATIC_COPY": 0,
+        "GENERATOR_OUTPUT": 301,
+        "RESEARCH_REQUIRED": 0,
+        "CANONICALIZED": 359,
+        "SAFE_DERIVED_COPY": 0,
+        "EDITORIAL_COPY": 0,
+        "REQUIRES_REFACTOR": 0
+      },
+      "actual_duplicates_needing_refactor": 90,
+      "tool_json_mutable_field_count": 74
+    }
+  }
+}

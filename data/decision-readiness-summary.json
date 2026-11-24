@@ -1,0 +1,1481 @@
+{
+  "generated_at": "2026-11-23T05:26:50.869998",
+  "evaluation_mode": "strict_evidence",
+  "total_tools": 153,
+  "state_distribution": {
+    "DECISION_READY": 36,
+    "PARTIALLY_VERIFIED": 100,
+    "INSUFFICIENT_OFFICIAL_INFORMATION": 16,
+    "CONFLICTING_EVIDENCE": 1
+  },
+  "downgrades_from_decision_ready": [],
+  "field_verification_rates": {
+    "core_use_case": {
+      "verified": 28,
+      "editorial": 0,
+      "data_present": 109,
+      "unknown": 16,
+      "total": 153,
+      "percentage": 18
+    },
+    "meaningful_capabilities": {
+      "verified": 51,
+      "editorial": 11,
+      "data_present": 75,
+      "unknown": 16,
+      "total": 153,
+      "percentage": 33
+    },
+    "important_limitations": {
+      "verified": 29,
+      "editorial": 17,
+      "data_present": 55,
+      "unknown": 52,
+      "total": 153,
+      "percentage": 19
+    },
+    "platform": {
+      "verified": 36,
+      "editorial": 0,
+      "data_present": 58,
+      "unknown": 59,
+      "total": 153,
+      "percentage": 24
+    },
+    "pricing_model": {
+      "verified": 32,
+      "editorial": 0,
+      "data_present": 45,
+      "unknown": 76,
+      "total": 153,
+      "percentage": 21
+    },
+    "pricing_state": {
+      "verified": 39,
+      "editorial": 9,
+      "data_present": 1,
+      "unknown": 104,
+      "total": 153,
+      "percentage": 25
+    },
+    "free_plan_status": {
+      "verified": 40,
+      "editorial": 0,
+      "data_present": 37,
+      "unknown": 76,
+      "total": 153,
+      "percentage": 26
+    },
+    "trial_status": {
+      "verified": 35,
+      "editorial": 0,
+      "data_present": 30,
+      "unknown": 88,
+      "total": 153,
+      "percentage": 23
+    },
+    "target_user": {
+      "verified": 28,
+      "editorial": 0,
+      "data_present": 104,
+      "unknown": 21,
+      "total": 153,
+      "percentage": 18
+    },
+    "meaningful_alternatives": {
+      "verified": 0,
+      "editorial": 0,
+      "data_present": 135,
+      "unknown": 18,
+      "total": 153,
+      "percentage": 0
+    },
+    "evidence_freshness": {
+      "verified": 74,
+      "editorial": 0,
+      "data_present": 0,
+      "unknown": 79,
+      "total": 153,
+      "percentage": 48
+    }
+  },
+  "tools": [
+    {
+      "tool_id": "apollo",
+      "state": "DECISION_READY",
+      "verification_percentage": 91,
+      "evidence_claims": 9,
+      "strong_verified_count": 10,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "hubspot",
+      "state": "DECISION_READY",
+      "verification_percentage": 91,
+      "evidence_claims": 9,
+      "strong_verified_count": 10,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "mailchimp",
+      "state": "DECISION_READY",
+      "verification_percentage": 91,
+      "evidence_claims": 14,
+      "strong_verified_count": 10,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "pipedrive",
+      "state": "DECISION_READY",
+      "verification_percentage": 91,
+      "evidence_claims": 9,
+      "strong_verified_count": 10,
+      "editorial_count": 0,
+      "data_present_count": 0
+    },
+    {
+      "tool_id": "activecampaign",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 9,
+      "strong_verified_count": 9,
+      "editorial_count": 1,
+      "data_present_count": 0
+    },
+    {
+      "tool_id": "adwisely",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "amplitude",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "clevertap",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "closely",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "dripify",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "freshdesk",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 0
+    },
+    {
+      "tool_id": "helpscout",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "intercom",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "learnworlds",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "lusha",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "mixpanel",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "omnisend",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "replyio",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "semrush",
+      "state": "CONFLICTING_EVIDENCE",
+      "verification_percentage": 82,
+      "evidence_claims": 11,
+      "strong_verified_count": 9,
+      "editorial_count": 1,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "simpletexting",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "smartlead",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "softsync",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "spiky",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "sproutsocial",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "streak",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "surveymonkey",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "teachable",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "zendesk",
+      "state": "DECISION_READY",
+      "verification_percentage": 82,
+      "evidence_claims": 8,
+      "strong_verified_count": 9,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "claude",
+      "state": "DECISION_READY",
+      "verification_percentage": 45,
+      "evidence_claims": 4,
+      "strong_verified_count": 5,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "connecteam",
+      "state": "DECISION_READY",
+      "verification_percentage": 45,
+      "evidence_claims": 5,
+      "strong_verified_count": 5,
+      "editorial_count": 1,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "meetgeek",
+      "state": "DECISION_READY",
+      "verification_percentage": 45,
+      "evidence_claims": 4,
+      "strong_verified_count": 5,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "pandadoc",
+      "state": "DECISION_READY",
+      "verification_percentage": 45,
+      "evidence_claims": 4,
+      "strong_verified_count": 5,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "shoeboxed",
+      "state": "DECISION_READY",
+      "verification_percentage": 45,
+      "evidence_claims": 4,
+      "strong_verified_count": 5,
+      "editorial_count": 0,
+      "data_present_count": 6
+    },
+    {
+      "tool_id": "teamwork",
+      "state": "DECISION_READY",
+      "verification_percentage": 45,
+      "evidence_claims": 4,
+      "strong_verified_count": 5,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "todoist",
+      "state": "DECISION_READY",
+      "verification_percentage": 45,
+      "evidence_claims": 4,
+      "strong_verified_count": 5,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "wrike",
+      "state": "DECISION_READY",
+      "verification_percentage": 45,
+      "evidence_claims": 4,
+      "strong_verified_count": 5,
+      "editorial_count": 0,
+      "data_present_count": 6
+    },
+    {
+      "tool_id": "xero",
+      "state": "DECISION_READY",
+      "verification_percentage": 45,
+      "evidence_claims": 4,
+      "strong_verified_count": 5,
+      "editorial_count": 0,
+      "data_present_count": 6
+    },
+    {
+      "tool_id": "adcreative",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 36,
+      "evidence_claims": 3,
+      "strong_verified_count": 4,
+      "editorial_count": 0,
+      "data_present_count": 6
+    },
+    {
+      "tool_id": "ahrefs",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 36,
+      "evidence_claims": 3,
+      "strong_verified_count": 4,
+      "editorial_count": 0,
+      "data_present_count": 7
+    },
+    {
+      "tool_id": "copyai",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 36,
+      "evidence_claims": 3,
+      "strong_verified_count": 4,
+      "editorial_count": 0,
+      "data_present_count": 6
+    },
+    {
+      "tool_id": "descript",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 36,
+      "evidence_claims": 3,
+      "strong_verified_count": 4,
+      "editorial_count": 0,
+      "data_present_count": 6
+    },
+    {
+      "tool_id": "elevenlabs",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 36,
+      "evidence_claims": 3,
+      "strong_verified_count": 4,
+      "editorial_count": 0,
+      "data_present_count": 6
+    },
+    {
+      "tool_id": "hibob",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 36,
+      "evidence_claims": 4,
+      "strong_verified_count": 4,
+      "editorial_count": 1,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "hostinger",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 36,
+      "evidence_claims": 6,
+      "strong_verified_count": 4,
+      "editorial_count": 0,
+      "data_present_count": 4
+    },
+    {
+      "tool_id": "notion",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 36,
+      "evidence_claims": 4,
+      "strong_verified_count": 4,
+      "editorial_count": 1,
+      "data_present_count": 6
+    },
+    {
+      "tool_id": "quickbooks",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 36,
+      "evidence_claims": 3,
+      "strong_verified_count": 4,
+      "editorial_count": 0,
+      "data_present_count": 7
+    },
+    {
+      "tool_id": "timedoctor",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 36,
+      "evidence_claims": 4,
+      "strong_verified_count": 4,
+      "editorial_count": 1,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "confetti",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 27,
+      "evidence_claims": 3,
+      "strong_verified_count": 3,
+      "editorial_count": 1,
+      "data_present_count": 6
+    },
+    {
+      "tool_id": "monday",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 27,
+      "evidence_claims": 2,
+      "strong_verified_count": 3,
+      "editorial_count": 0,
+      "data_present_count": 7
+    },
+    {
+      "tool_id": "trainual",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 27,
+      "evidence_claims": 3,
+      "strong_verified_count": 3,
+      "editorial_count": 1,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "upwork",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 27,
+      "evidence_claims": 2,
+      "strong_verified_count": 3,
+      "editorial_count": 0,
+      "data_present_count": 6
+    },
+    {
+      "tool_id": "adobeexpress",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 18,
+      "evidence_claims": 6,
+      "strong_verified_count": 2,
+      "editorial_count": 2,
+      "data_present_count": 7
+    },
+    {
+      "tool_id": "asana",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 18,
+      "evidence_claims": 1,
+      "strong_verified_count": 2,
+      "editorial_count": 0,
+      "data_present_count": 7
+    },
+    {
+      "tool_id": "beautifulai",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 18,
+      "evidence_claims": 6,
+      "strong_verified_count": 2,
+      "editorial_count": 2,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "brevo",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 18,
+      "evidence_claims": 6,
+      "strong_verified_count": 2,
+      "editorial_count": 2,
+      "data_present_count": 7
+    },
+    {
+      "tool_id": "canva",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 18,
+      "evidence_claims": 1,
+      "strong_verified_count": 2,
+      "editorial_count": 0,
+      "data_present_count": 8
+    },
+    {
+      "tool_id": "chatgpt",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 18,
+      "evidence_claims": 1,
+      "strong_verified_count": 2,
+      "editorial_count": 0,
+      "data_present_count": 7
+    },
+    {
+      "tool_id": "clickup",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 18,
+      "evidence_claims": 1,
+      "strong_verified_count": 2,
+      "editorial_count": 0,
+      "data_present_count": 7
+    },
+    {
+      "tool_id": "cursor",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 18,
+      "evidence_claims": 1,
+      "strong_verified_count": 2,
+      "editorial_count": 0,
+      "data_present_count": 8
+    },
+    {
+      "tool_id": "getresponse",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 18,
+      "evidence_claims": 6,
+      "strong_verified_count": 2,
+      "editorial_count": 2,
+      "data_present_count": 6
+    },
+    {
+      "tool_id": "grammarly",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 18,
+      "evidence_claims": 6,
+      "strong_verified_count": 2,
+      "editorial_count": 2,
+      "data_present_count": 7
+    },
+    {
+      "tool_id": "ideogram",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 18,
+      "evidence_claims": 6,
+      "strong_verified_count": 2,
+      "editorial_count": 2,
+      "data_present_count": 7
+    },
+    {
+      "tool_id": "jasper",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 18,
+      "evidence_claims": 6,
+      "strong_verified_count": 2,
+      "editorial_count": 2,
+      "data_present_count": 7
+    },
+    {
+      "tool_id": "kit",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 18,
+      "evidence_claims": 6,
+      "strong_verified_count": 2,
+      "editorial_count": 2,
+      "data_present_count": 7
+    },
+    {
+      "tool_id": "midjourney",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 18,
+      "evidence_claims": 6,
+      "strong_verified_count": 2,
+      "editorial_count": 2,
+      "data_present_count": 7
+    },
+    {
+      "tool_id": "quillbot",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 18,
+      "evidence_claims": 6,
+      "strong_verified_count": 2,
+      "editorial_count": 2,
+      "data_present_count": 7
+    },
+    {
+      "tool_id": "writesonic",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 18,
+      "evidence_claims": 6,
+      "strong_verified_count": 2,
+      "editorial_count": 2,
+      "data_present_count": 7
+    },
+    {
+      "tool_id": "beehiiv",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 9,
+      "evidence_claims": 1,
+      "strong_verified_count": 1,
+      "editorial_count": 1,
+      "data_present_count": 7
+    },
+    {
+      "tool_id": "bill",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 9,
+      "evidence_claims": 1,
+      "strong_verified_count": 1,
+      "editorial_count": 1,
+      "data_present_count": 7
+    },
+    {
+      "tool_id": "bolt",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 9,
+      "evidence_claims": 1,
+      "strong_verified_count": 1,
+      "editorial_count": 1,
+      "data_present_count": 8
+    },
+    {
+      "tool_id": "capsule",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 9,
+      "evidence_claims": 1,
+      "strong_verified_count": 1,
+      "editorial_count": 1,
+      "data_present_count": 8
+    },
+    {
+      "tool_id": "dext",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 9,
+      "evidence_claims": 1,
+      "strong_verified_count": 1,
+      "editorial_count": 1,
+      "data_present_count": 8
+    },
+    {
+      "tool_id": "figma",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 9,
+      "evidence_claims": 1,
+      "strong_verified_count": 1,
+      "editorial_count": 1,
+      "data_present_count": 7
+    },
+    {
+      "tool_id": "freshbooks",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 9,
+      "evidence_claims": 1,
+      "strong_verified_count": 1,
+      "editorial_count": 1,
+      "data_present_count": 8
+    },
+    {
+      "tool_id": "aircall",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "brand24",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "breadbutter",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "browseai",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 8
+    },
+    {
+      "tool_id": "callrail",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 8
+    },
+    {
+      "tool_id": "campaignmonitor",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 8
+    },
+    {
+      "tool_id": "castmagic",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "circle",
+      "state": "INSUFFICIENT_OFFICIAL_INFORMATION",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 0
+    },
+    {
+      "tool_id": "close",
+      "state": "INSUFFICIENT_OFFICIAL_INFORMATION",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 0
+    },
+    {
+      "tool_id": "cloudtalk",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "consensus",
+      "state": "INSUFFICIENT_OFFICIAL_INFORMATION",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 0
+    },
+    {
+      "tool_id": "deel",
+      "state": "INSUFFICIENT_OFFICIAL_INFORMATION",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "expertex",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "fireflies",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "flexiquiz",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "flocksy",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "framer",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "gamma",
+      "state": "INSUFFICIENT_OFFICIAL_INFORMATION",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "gemini",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "github-copilot",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 6
+    },
+    {
+      "tool_id": "glide",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "gorgias",
+      "state": "INSUFFICIENT_OFFICIAL_INFORMATION",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 0
+    },
+    {
+      "tool_id": "hemingway",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "heygen",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 6
+    },
+    {
+      "tool_id": "hightouch",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "ifttt",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "instantly",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "instapage",
+      "state": "INSUFFICIENT_OFFICIAL_INFORMATION",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 0
+    },
+    {
+      "tool_id": "invideo",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "kapwing",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "keap",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 8
+    },
+    {
+      "tool_id": "krispcall",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "lemlist",
+      "state": "INSUFFICIENT_OFFICIAL_INFORMATION",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 0
+    },
+    {
+      "tool_id": "leonardo",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "logome",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "lovable",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 6
+    },
+    {
+      "tool_id": "make",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "manychat",
+      "state": "INSUFFICIENT_OFFICIAL_INFORMATION",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 0
+    },
+    {
+      "tool_id": "moosend",
+      "state": "INSUFFICIENT_OFFICIAL_INFORMATION",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 0
+    },
+    {
+      "tool_id": "mozpro",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 4
+    },
+    {
+      "tool_id": "murf",
+      "state": "INSUFFICIENT_OFFICIAL_INFORMATION",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 1
+    },
+    {
+      "tool_id": "n8n",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "netlify",
+      "state": "INSUFFICIENT_OFFICIAL_INFORMATION",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 0
+    },
+    {
+      "tool_id": "notebooklm",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "nutshell",
+      "state": "INSUFFICIENT_OFFICIAL_INFORMATION",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 0
+    },
+    {
+      "tool_id": "omniseo",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "otter",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "perplexity",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "pixelunion",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "prowritingaid",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "quo",
+      "state": "INSUFFICIENT_OFFICIAL_INFORMATION",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 0
+    },
+    {
+      "tool_id": "removebg",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "rgestudio",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "runway",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "salesforce-smb",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "screamingfrog",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 4
+    },
+    {
+      "tool_id": "smartli",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "softr",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "squarespace",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "stamped",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "storydoc",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "storylane",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "surferseo",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 4
+    },
+    {
+      "tool_id": "survicate",
+      "state": "INSUFFICIENT_OFFICIAL_INFORMATION",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 0
+    },
+    {
+      "tool_id": "synthesia",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "systeme",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "teikametrics",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "textline",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "thetop",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "tidio",
+      "state": "INSUFFICIENT_OFFICIAL_INFORMATION",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 0
+    },
+    {
+      "tool_id": "transpond",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "ueni",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "unbounce",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "upfluence",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "webflow",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "windsorai",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "wingify",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "xtiles",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    },
+    {
+      "tool_id": "zapier",
+      "state": "PARTIALLY_VERIFIED",
+      "verification_percentage": 0,
+      "evidence_claims": 0,
+      "strong_verified_count": 0,
+      "editorial_count": 0,
+      "data_present_count": 5
+    }
+  ]
+}

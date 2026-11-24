@@ -1,0 +1,3406 @@
+{
+  "hostinger": {
+    "tool_id": "hostinger",
+    "sources": [
+      {
+        "source_url": "https://www.hostinger.com/web-hosting",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "hostinger-web-hosting",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "hostinger_product_features_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.hostinger.com/ai-website-builder",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "hostinger-ai-builder",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "hostinger_product_features_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.hostinger.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "hostinger-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "hostinger_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.hostinger.com/legal/hosting-agreement",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "hostinger-hosting-agreement",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "hostinger_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "semrush": {
+    "tool_id": "semrush",
+    "sources": [
+      {
+        "source_url": "https://www.semrush.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "semrush-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "semrush_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.semrush.com/pricing/ai/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "semrush-ai-visibility-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "semrush_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.semrush.com/pricing/seo-ai-search",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "semrush-pricing-seo",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "semrush_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.semrush.com/pricing/content",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "semrush-pricing-content",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "semrush_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.semrush.com/pricing/local",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "semrush-pricing-local",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "semrush_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "activecampaign": {
+    "tool_id": "activecampaign",
+    "sources": [
+      {
+        "source_url": "https://www.activecampaign.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "activecampaign-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "activecampaign_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.activecampaign.com/compare/marketo",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "activecampaign-compare-marketo",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "activecampaign_product_features_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://help.activecampaign.com/hc/en-us/articles/14251311251356-Overview-of-ActiveCampaign-plans",
+        "source_role": "DOCUMENTATION",
+        "first_party": true,
+        "source_id": "activecampaign-help-plans",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "activecampaign_documentation_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "asana": {
+    "tool_id": "asana",
+    "sources": [
+      {
+        "source_url": "https://asana.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "asana-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "asana_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "beehiiv": {
+    "tool_id": "beehiiv",
+    "sources": [
+      {
+        "source_url": "https://www.beehiiv.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "beehiiv-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "beehiiv_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "bill": {
+    "tool_id": "bill",
+    "sources": [
+      {
+        "source_url": "https://www.bill.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "bill-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "bill_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "canva": {
+    "tool_id": "canva",
+    "sources": [
+      {
+        "source_url": "https://www.canva.com/en/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "canva-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "canva_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "capsule": {
+    "tool_id": "capsule",
+    "sources": [
+      {
+        "source_url": "https://capsulecrm.com/signup",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "capsule-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "capsule_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "chatgpt": {
+    "tool_id": "chatgpt",
+    "sources": [
+      {
+        "source_url": "https://chatgpt.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "chatgpt-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "chatgpt_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "clickup": {
+    "tool_id": "clickup",
+    "sources": [
+      {
+        "source_url": "https://clickup.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "clickup-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "clickup_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "dext": {
+    "tool_id": "dext",
+    "sources": [
+      {
+        "source_url": "https://dext.com/us/business/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "dext-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "dext_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "figma": {
+    "tool_id": "figma",
+    "sources": [
+      {
+        "source_url": "https://www.figma.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "figma-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "figma_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "freshbooks": {
+    "tool_id": "freshbooks",
+    "sources": [
+      {
+        "source_url": "https://www.freshbooks.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "freshbooks-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "freshbooks_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "bolt": {
+    "tool_id": "bolt",
+    "sources": [
+      {
+        "source_url": "https://bolt.new/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "bolt-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "bolt_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "cursor": {
+    "tool_id": "cursor",
+    "sources": [
+      {
+        "source_url": "https://cursor.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "cursor-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "cursor_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "kit": {
+    "tool_id": "kit",
+    "sources": [
+      {
+        "source_url": "https://kit.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "kit-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "kit_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "mailchimp": {
+    "tool_id": "mailchimp",
+    "sources": [
+      {
+        "source_url": "https://mailchimp.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "mailchimp-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "mailchimp_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://mailchimp.com/help/about-mailchimp-pricing-plans",
+        "source_role": "DOCUMENTATION",
+        "first_party": true,
+        "source_id": "mailchimp-help-plans",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "mailchimp_documentation_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://mailchimp.com/pricing/marketing/compare-plans",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "mailchimp-compare-plans",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "mailchimp_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "brevo": {
+    "tool_id": "brevo",
+    "sources": [
+      {
+        "source_url": "https://www.brevo.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "brevo-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "brevo_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "getresponse": {
+    "tool_id": "getresponse",
+    "sources": [
+      {
+        "source_url": "https://www.getresponse.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "getresponse-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "getresponse_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "grammarly": {
+    "tool_id": "grammarly",
+    "sources": [
+      {
+        "source_url": "https://www.grammarly.com/plans",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "grammarly-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "grammarly_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "jasper": {
+    "tool_id": "jasper",
+    "sources": [
+      {
+        "source_url": "https://www.jasper.ai/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "jasper-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "jasper_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "writesonic": {
+    "tool_id": "writesonic",
+    "sources": [
+      {
+        "source_url": "https://writesonic.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "writesonic-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "writesonic_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "quillbot": {
+    "tool_id": "quillbot",
+    "sources": [
+      {
+        "source_url": "https://quillbot.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "quillbot-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "quillbot_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "adobeexpress": {
+    "tool_id": "adobeexpress",
+    "sources": [
+      {
+        "source_url": "https://www.adobe.com/express/pricing.html",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "adobeexpress-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "adobeexpress_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "beautifulai": {
+    "tool_id": "beautifulai",
+    "sources": [
+      {
+        "source_url": "https://www.beautiful.ai/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "beautifulai-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "beautifulai_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "midjourney": {
+    "tool_id": "midjourney",
+    "sources": [
+      {
+        "source_url": "https://docs.midjourney.com/plans",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "midjourney-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "midjourney_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "ideogram": {
+    "tool_id": "ideogram",
+    "sources": [
+      {
+        "source_url": "https://ideogram.ai/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "ideogram-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "ideogram_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "notion": {
+    "tool_id": "notion",
+    "sources": [
+      {
+        "source_url": "https://www.notion.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "notion-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "notion_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.notion.com/product",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "notion-product",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "notion_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "confetti": {
+    "tool_id": "confetti",
+    "sources": [
+      {
+        "source_url": "https://www.withconfetti.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "confetti-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "confetti_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "connecteam": {
+    "tool_id": "connecteam",
+    "sources": [
+      {
+        "source_url": "https://connecteam.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "connecteam-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "connecteam_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://connecteam.com/product",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "connecteam-product",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "connecteam_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "hibob": {
+    "tool_id": "hibob",
+    "sources": [
+      {
+        "source_url": "https://www.hibob.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "hibob-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "hibob_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "meetgeek": {
+    "tool_id": "meetgeek",
+    "sources": [
+      {
+        "source_url": "https://meetgeek.ai/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "meetgeek-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "meetgeek_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "pandadoc": {
+    "tool_id": "pandadoc",
+    "sources": [
+      {
+        "source_url": "https://www.pandadoc.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "pandadoc-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "pandadoc_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "quickbooks": {
+    "tool_id": "quickbooks",
+    "sources": [
+      {
+        "source_url": "https://quickbooks.intuit.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "quickbooks-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "quickbooks_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "shoeboxed": {
+    "tool_id": "shoeboxed",
+    "sources": [
+      {
+        "source_url": "https://www.shoeboxed.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "shoeboxed-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "shoeboxed_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "teamwork": {
+    "tool_id": "teamwork",
+    "sources": [
+      {
+        "source_url": "https://www.teamwork.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "teamwork-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "teamwork_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "timedoctor": {
+    "tool_id": "timedoctor",
+    "sources": [
+      {
+        "source_url": "https://www.timedoctor.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "timedoctor-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "timedoctor_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "trainual": {
+    "tool_id": "trainual",
+    "sources": [
+      {
+        "source_url": "https://www.trainual.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "trainual-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "trainual_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "upwork": {
+    "tool_id": "upwork",
+    "sources": [
+      {
+        "source_url": "https://www.upwork.com/pricing/client",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "upwork-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "upwork_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "wrike": {
+    "tool_id": "wrike",
+    "sources": [
+      {
+        "source_url": "https://www.wrike.com/price",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "wrike-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "wrike_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "xero": {
+    "tool_id": "xero",
+    "sources": [
+      {
+        "source_url": "https://www.xero.com/us/pricing-plans",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "xero-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "xero_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "adcreative": {
+    "tool_id": "adcreative",
+    "sources": [
+      {
+        "source_url": "https://www.adcreative.ai/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "adcreative-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "adcreative_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "ahrefs": {
+    "tool_id": "ahrefs",
+    "sources": [
+      {
+        "source_url": "https://ahrefs.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "ahrefs-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "ahrefs_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "apollo": {
+    "tool_id": "apollo",
+    "sources": [
+      {
+        "source_url": "https://www.apollo.io/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "apollo-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "apollo_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.apollo.io/insights/apollo-alternatives",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "apollo-alternatives",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "apollo_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "descript": {
+    "tool_id": "descript",
+    "sources": [
+      {
+        "source_url": "https://www.descript.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "descript-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "descript_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "elevenlabs": {
+    "tool_id": "elevenlabs",
+    "sources": [
+      {
+        "source_url": "https://elevenlabs.io/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "elevenlabs-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "elevenlabs_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "claude": {
+    "tool_id": "claude",
+    "sources": [
+      {
+        "source_url": "https://claude.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "claude-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "claude_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "hubspot": {
+    "tool_id": "hubspot",
+    "sources": [
+      {
+        "source_url": "https://www.hubspot.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "hubspot-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "hubspot_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.hubspot.com/pricing/suite",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "hubspot-pricing-suite",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "hubspot_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.hubspot.com/pricing/sales",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "hubspot-pricing-sales",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "hubspot_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.hubspot.com/pricing/marketing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "hubspot-pricing-marketing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "hubspot_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "pipedrive": {
+    "tool_id": "pipedrive",
+    "sources": [
+      {
+        "source_url": "https://www.pipedrive.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "pipedrive-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "pipedrive_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://axisconsulting.io/pipedrive-pricing-plans",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": false,
+        "source_id": "pipedrive-axis",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "pipedrive_product_features_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.forbes.com/advisor/business/software/pipedrive-pricing",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": false,
+        "source_id": "pipedrive-forbes",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "pipedrive_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "monday": {
+    "tool_id": "monday",
+    "sources": [
+      {
+        "source_url": "https://monday.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "monday-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "monday_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "todoist": {
+    "tool_id": "todoist",
+    "sources": [
+      {
+        "source_url": "https://todoist.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "todoist-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "todoist_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "copyai": {
+    "tool_id": "copyai",
+    "sources": [
+      {
+        "source_url": "https://www.copy.ai/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "copyai-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "copyai_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "adwisely": {
+    "tool_id": "adwisely",
+    "sources": [
+      {
+        "source_url": "https://adwisely.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "adwisely-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "adwisely_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://adwisely.com",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "adwisely-homepage",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "adwisely_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "amplitude": {
+    "tool_id": "amplitude",
+    "sources": [
+      {
+        "source_url": "https://amplitude.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "amplitude-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "amplitude_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://amplitude.com/docs/admin/billing-use/plans-and-billing",
+        "source_role": "DOCUMENTATION",
+        "first_party": true,
+        "source_id": "amplitude-docs-plans",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "amplitude_documentation_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://amplitude.com/amplitude-analytics",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "amplitude-analytics",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "amplitude_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "mixpanel": {
+    "tool_id": "mixpanel",
+    "sources": [
+      {
+        "source_url": "https://docs.mixpanel.com/docs/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "mixpanel-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "mixpanel_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://docs.mixpanel.com/changelogs",
+        "source_role": "DOCUMENTATION",
+        "first_party": true,
+        "source_id": "mixpanel-changelogs",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "mixpanel_documentation_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "clevertap": {
+    "tool_id": "clevertap",
+    "sources": [
+      {
+        "source_url": "https://clevertap.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "clevertap-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "clevertap_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://clevertap.com/blog/clevertap-vs-braze-customer-engagement-platform",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "clevertap-vs-braze",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "clevertap_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "dripify": {
+    "tool_id": "dripify",
+    "sources": [
+      {
+        "source_url": "https://dripify.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "dripify-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "dripify_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "sproutsocial": {
+    "tool_id": "sproutsocial",
+    "sources": [
+      {
+        "source_url": "https://sproutsocial.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "sproutsocial-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "sproutsocial_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://sproutsocial.com/insights/which-sprout-social-plan-is-right-for-you",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "sproutsocial-plans-guide",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "sproutsocial_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "lusha": {
+    "tool_id": "lusha",
+    "sources": [
+      {
+        "source_url": "https://www.lusha.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "lusha-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "lusha_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.lusha.com/faq",
+        "source_role": "DOCUMENTATION",
+        "first_party": true,
+        "source_id": "lusha-faq",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "lusha_documentation_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://docs.lusha.com/user-guide/billing-and-plans",
+        "source_role": "DOCUMENTATION",
+        "first_party": true,
+        "source_id": "lusha-docs-billing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "lusha_documentation_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "learnworlds": {
+    "tool_id": "learnworlds",
+    "sources": [
+      {
+        "source_url": "https://www.learnworlds.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "learnworlds-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "learnworlds_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.learnworlds.com/product/features/flexible-courses",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "learnworlds-features",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "learnworlds_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "replyio": {
+    "tool_id": "replyio",
+    "sources": [
+      {
+        "source_url": "https://reply.io",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "replyio-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "replyio_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "simpletexting": {
+    "tool_id": "simpletexting",
+    "sources": [
+      {
+        "source_url": "https://simpletexting.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "simpletexting-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "simpletexting_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://simpletexting.com/blog/what-simpletexting-plan-should-you-choose",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "simpletexting-plan-guide",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "simpletexting_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "softsync": {
+    "tool_id": "softsync",
+    "sources": [
+      {
+        "source_url": "https://softsync.ai/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "softsync-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "softsync_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://softsync.ai",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "softsync-homepage",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "softsync_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "closely": {
+    "tool_id": "closely",
+    "sources": [
+      {
+        "source_url": "https://closelyhq.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "closely-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "closely_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://blog.closelyhq.com/closely-pricing-plans-breakdown-vs-competitors",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "closely-blog-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "closely_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "spiky": {
+    "tool_id": "spiky",
+    "sources": [
+      {
+        "source_url": "https://spiky.ai/en/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "spiky-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "spiky_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://spiky.ai/en/compare",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "spiky-compare",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "spiky_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "streak": {
+    "tool_id": "streak",
+    "sources": [
+      {
+        "source_url": "https://www.streak.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "streak-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "streak_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.streak.com/sales-crm",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "streak-sales-crm",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "streak_product_features_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://support.streak.com/en/articles/2542950-what-is-streak",
+        "source_role": "DOCUMENTATION",
+        "first_party": true,
+        "source_id": "streak-support",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "streak_documentation_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "surveymonkey": {
+    "tool_id": "surveymonkey",
+    "sources": [
+      {
+        "source_url": "https://www.surveymonkey.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "surveymonkey-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "surveymonkey_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.surveymonkey.com/pricing/details",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "surveymonkey-pricing-details",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "surveymonkey_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://help.surveymonkey.com/en/surveymonkey/billing/surveymonkey-plans",
+        "source_role": "DOCUMENTATION",
+        "first_party": true,
+        "source_id": "surveymonkey-help-plans",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "surveymonkey_documentation_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "teachable": {
+    "tool_id": "teachable",
+    "sources": [
+      {
+        "source_url": "https://www.teachable.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "teachable-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "teachable_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.teachable.com/online-courses",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "teachable-online-courses",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "teachable_product_features_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://support.teachable.com/en/articles/11682410-new-teachable-plans-in-june-2025",
+        "source_role": "DOCUMENTATION",
+        "first_party": true,
+        "source_id": "teachable-support-plans",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "teachable_documentation_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "intercom": {
+    "tool_id": "intercom",
+    "sources": [
+      {
+        "source_url": "https://www.intercom.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "intercom-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "intercom_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.intercom.com/learning-center/intercom-pricing",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "intercom-learning-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "intercom_product_features_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.intercom.com/help/en/articles/8344190-pricing-faqs",
+        "source_role": "DOCUMENTATION",
+        "first_party": true,
+        "source_id": "intercom-help-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "intercom_documentation_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "helpscout": {
+    "tool_id": "helpscout",
+    "sources": [
+      {
+        "source_url": "https://www.helpscout.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "helpscout-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "helpscout_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.helpscout.com/compare/gorgias",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "helpscout-compare-gorgias",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "helpscout_product_features_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.helpscout.com/compare/zendesk",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "helpscout-compare-zendesk",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "helpscout_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "smartlead": {
+    "tool_id": "smartlead",
+    "sources": [
+      {
+        "source_url": "https://www.smartlead.ai",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "smartlead-homepage",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "smartlead_product_features_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.smartlead.ai/blog/ai-cold-email-outreach-tools",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "smartlead-blog-tools",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "smartlead_product_features_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.smartlead.ai/comparison/smartlead-vs-snov",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "smartlead-comparison",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "smartlead_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "omnisend": {
+    "tool_id": "omnisend",
+    "sources": [
+      {
+        "source_url": "https://www.omnisend.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "omnisend-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "omnisend_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://support.omnisend.com/en/articles/3533018-omnisend-pricing-plans-2026",
+        "source_role": "DOCUMENTATION",
+        "first_party": true,
+        "source_id": "omnisend-support-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "omnisend_documentation_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.omnisend.com/blog/cheap-email-marketing",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "omnisend-blog-email",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "omnisend_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "freshdesk": {
+    "tool_id": "freshdesk",
+    "sources": [
+      {
+        "source_url": "https://freshdesk.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "freshdesk-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "freshdesk_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://support.freshdesk.com/support/solutions/articles/50000011778-understanding-freshdesk-pricing-plans",
+        "source_role": "DOCUMENTATION",
+        "first_party": true,
+        "source_id": "freshdesk-support-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "freshdesk_documentation_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://support.freshdesk.com/support/solutions/articles/50000010099-explore-freshdesk-free-program-freshdesk-only",
+        "source_role": "DOCUMENTATION",
+        "first_party": true,
+        "source_id": "freshdesk-support-free",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "freshdesk_documentation_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "zendesk": {
+    "tool_id": "zendesk",
+    "sources": [
+      {
+        "source_url": "https://www.zendesk.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "zendesk-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "zendesk_pricing_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.intercom.com/learning-center/zendesk-pricing",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": false,
+        "source_id": "zendesk-intercom-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "zendesk_product_features_v1",
+        "verification_status": "unverified"
+      },
+      {
+        "source_url": "https://www.helpdesk.com/blog/zendesk-pricing",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": false,
+        "source_id": "zendesk-helpdesk-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "zendesk_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "aircall": {
+    "tool_id": "aircall",
+    "sources": [
+      {
+        "source_url": "https://www.aircall.io/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "aircall-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "aircall_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "callrail": {
+    "tool_id": "callrail",
+    "sources": [
+      {
+        "source_url": "https://www.callrail.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "callrail-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "callrail_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "cloudtalk": {
+    "tool_id": "cloudtalk",
+    "sources": [
+      {
+        "source_url": "https://www.cloudtalk.io/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "cloudtalk-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "cloudtalk_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "krispcall": {
+    "tool_id": "krispcall",
+    "sources": [
+      {
+        "source_url": "https://www.krispcall.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "krispcall-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "krispcall_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "textline": {
+    "tool_id": "textline",
+    "sources": [
+      {
+        "source_url": "https://www.textline.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "textline-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "textline_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "brand24": {
+    "tool_id": "brand24",
+    "sources": [
+      {
+        "source_url": "https://brand24.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "brand24-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "brand24_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "campaignmonitor": {
+    "tool_id": "campaignmonitor",
+    "sources": [
+      {
+        "source_url": "https://www.campaignmonitor.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "campaignmonitor-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "campaignmonitor_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "instantly": {
+    "tool_id": "instantly",
+    "sources": [
+      {
+        "source_url": "https://instantly.ai/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "instantly-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "instantly_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "lemlist": {
+    "tool_id": "lemlist",
+    "sources": [
+      {
+        "source_url": "https://www.lemlist.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "lemlist-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "lemlist_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "moosend": {
+    "tool_id": "moosend",
+    "sources": [
+      {
+        "source_url": "https://www.moosend.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "moosend-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "moosend_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "omniseo": {
+    "tool_id": "omniseo",
+    "sources": [
+      {
+        "source_url": "https://www.omniseo.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "omniseo-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "omniseo_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "surferseo": {
+    "tool_id": "surferseo",
+    "sources": [
+      {
+        "source_url": "https://surferseo.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "surferseo-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "surferseo_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "teikametrics": {
+    "tool_id": "teikametrics",
+    "sources": [
+      {
+        "source_url": "https://www.teikametrics.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "teikametrics-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "teikametrics_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "unbounce": {
+    "tool_id": "unbounce",
+    "sources": [
+      {
+        "source_url": "https://unbounce.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "unbounce-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "unbounce_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "upfluence": {
+    "tool_id": "upfluence",
+    "sources": [
+      {
+        "source_url": "https://www.upfluence.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "upfluence-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "upfluence_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "windsorai": {
+    "tool_id": "windsorai",
+    "sources": [
+      {
+        "source_url": "https://www.windsor.ai/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "windsorai-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "windsorai_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "close": {
+    "tool_id": "close",
+    "sources": [
+      {
+        "source_url": "https://www.closerm.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "close-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "close_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "nutshell": {
+    "tool_id": "nutshell",
+    "sources": [
+      {
+        "source_url": "https://www.nutshell.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "nutshell-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "nutshell_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "salesforce-smb": {
+    "tool_id": "salesforce-smb",
+    "sources": [
+      {
+        "source_url": "https://www.salesforce.com/products/crm/essentials/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "salesforce-smb-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "salesforce-smb_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "framer": {
+    "tool_id": "framer",
+    "sources": [
+      {
+        "source_url": "https://www.framer.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "framer-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "framer_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "gamma": {
+    "tool_id": "gamma",
+    "sources": [
+      {
+        "source_url": "https://gamma.app/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "gamma-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "gamma_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "invideo": {
+    "tool_id": "invideo",
+    "sources": [
+      {
+        "source_url": "https://invideo.io/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "invideo-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "invideo_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "kapwing": {
+    "tool_id": "kapwing",
+    "sources": [
+      {
+        "source_url": "https://www.kapwing.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "kapwing-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "kapwing_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "leonardo": {
+    "tool_id": "leonardo",
+    "sources": [
+      {
+        "source_url": "https://leonardo.ai/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "leonardo-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "leonardo_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "logome": {
+    "tool_id": "logome",
+    "sources": [
+      {
+        "source_url": "https://www.logome.ai/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "logome-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "logome_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "murf": {
+    "tool_id": "murf",
+    "sources": [
+      {
+        "source_url": "https://murf.ai/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "murf-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "murf_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "pixelunion": {
+    "tool_id": "pixelunion",
+    "sources": [
+      {
+        "source_url": "https://www.pixelunion.ai/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "pixelunion-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "pixelunion_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "removebg": {
+    "tool_id": "removebg",
+    "sources": [
+      {
+        "source_url": "https://www.remove.bg/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "removebg-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "removebg_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "runway": {
+    "tool_id": "runway",
+    "sources": [
+      {
+        "source_url": "https://runwayml.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "runway-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "runway_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "synthesia": {
+    "tool_id": "synthesia",
+    "sources": [
+      {
+        "source_url": "https://www.synthesia.io/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "synthesia-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "synthesia_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "webflow": {
+    "tool_id": "webflow",
+    "sources": [
+      {
+        "source_url": "https://webflow.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "webflow-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "webflow_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "browseai": {
+    "tool_id": "browseai",
+    "sources": [
+      {
+        "source_url": "https://www.browse.ai/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "browseai-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "browseai_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "consensus": {
+    "tool_id": "consensus",
+    "sources": [
+      {
+        "source_url": "https://consensus.app/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "consensus-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "consensus_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "expertex": {
+    "tool_id": "expertex",
+    "sources": [
+      {
+        "source_url": "https://www.expertex.ai/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "expertex-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "expertex_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "gemini": {
+    "tool_id": "gemini",
+    "sources": [
+      {
+        "source_url": "https://gemini.google.com/",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "gemini-product-features",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "gemini_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "github-copilot": {
+    "tool_id": "github-copilot",
+    "sources": [
+      {
+        "source_url": "https://github.com/features/copilot/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "github-copilot-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "github-copilot_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "lovable": {
+    "tool_id": "lovable",
+    "sources": [
+      {
+        "source_url": "https://lovable.dev/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "lovable-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "lovable_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "notebooklm": {
+    "tool_id": "notebooklm",
+    "sources": [
+      {
+        "source_url": "https://notebooklm.google.com/",
+        "source_role": "PRODUCT_FEATURES",
+        "first_party": true,
+        "source_id": "notebooklm-product-features",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "notebooklm_product_features_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "perplexity": {
+    "tool_id": "perplexity",
+    "sources": [
+      {
+        "source_url": "https://www.perplexity.ai/pro",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "perplexity-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "perplexity_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "thetop": {
+    "tool_id": "thetop",
+    "sources": [
+      {
+        "source_url": "https://www.thetop.ai/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "thetop-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "thetop_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "ifttt": {
+    "tool_id": "ifttt",
+    "sources": [
+      {
+        "source_url": "https://ifttt.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "ifttt-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "ifttt_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "make": {
+    "tool_id": "make",
+    "sources": [
+      {
+        "source_url": "https://www.make.com/en/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "make-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "make_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "n8n": {
+    "tool_id": "n8n",
+    "sources": [
+      {
+        "source_url": "https://n8n.io/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "n8n-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "n8n_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "zapier": {
+    "tool_id": "zapier",
+    "sources": [
+      {
+        "source_url": "https://zapier.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "zapier-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "zapier_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "glide": {
+    "tool_id": "glide",
+    "sources": [
+      {
+        "source_url": "https://www.glideapps.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "glide-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "glide_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "instapage": {
+    "tool_id": "instapage",
+    "sources": [
+      {
+        "source_url": "https://www.instapage.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "instapage-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "instapage_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "netlify": {
+    "tool_id": "netlify",
+    "sources": [
+      {
+        "source_url": "https://www.netlify.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "netlify-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "netlify_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "softr": {
+    "tool_id": "softr",
+    "sources": [
+      {
+        "source_url": "https://www.softr.io/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "softr-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "softr_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "squarespace": {
+    "tool_id": "squarespace",
+    "sources": [
+      {
+        "source_url": "https://www.squarespace.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "squarespace-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "squarespace_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "systeme": {
+    "tool_id": "systeme",
+    "sources": [
+      {
+        "source_url": "https://systeme.io/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "systeme-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "systeme_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "stamped": {
+    "tool_id": "stamped",
+    "sources": [
+      {
+        "source_url": "https://www.stamped.io/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "stamped-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "stamped_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "gorgias": {
+    "tool_id": "gorgias",
+    "sources": [
+      {
+        "source_url": "https://www.gorgias.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "gorgias-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "gorgias_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "tidio": {
+    "tool_id": "tidio",
+    "sources": [
+      {
+        "source_url": "https://www.tidio.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "tidio-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "tidio_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "survicate": {
+    "tool_id": "survicate",
+    "sources": [
+      {
+        "source_url": "https://www.survicate.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "survicate-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "survicate_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "breadbutter": {
+    "tool_id": "breadbutter",
+    "sources": [
+      {
+        "source_url": "https://www.breadandbutter.io/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "breadbutter-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "breadbutter_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "castmagic": {
+    "tool_id": "castmagic",
+    "sources": [
+      {
+        "source_url": "https://castmagic.ai/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "castmagic-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "castmagic_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "circle": {
+    "tool_id": "circle",
+    "sources": [
+      {
+        "source_url": "https://www.circle.so/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "circle-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "circle_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "deel": {
+    "tool_id": "deel",
+    "sources": [
+      {
+        "source_url": "https://www.deel.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "deel-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "deel_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "fireflies": {
+    "tool_id": "fireflies",
+    "sources": [
+      {
+        "source_url": "https://fireflies.ai/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "fireflies-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "fireflies_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "flexiquiz": {
+    "tool_id": "flexiquiz",
+    "sources": [
+      {
+        "source_url": "https://www.flexiquiz.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "flexiquiz-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "flexiquiz_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "flocksy": {
+    "tool_id": "flocksy",
+    "sources": [
+      {
+        "source_url": "https://www.flocksy.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "flocksy-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "flocksy_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "hemingway": {
+    "tool_id": "hemingway",
+    "sources": [
+      {
+        "source_url": "https://hemingwayapp.com/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "hemingway-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "hemingway_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "heygen": {
+    "tool_id": "heygen",
+    "sources": [
+      {
+        "source_url": "https://www.heygen.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "heygen-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "heygen_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "hightouch": {
+    "tool_id": "hightouch",
+    "sources": [
+      {
+        "source_url": "https://www.hightouch.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "hightouch-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "hightouch_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "manychat": {
+    "tool_id": "manychat",
+    "sources": [
+      {
+        "source_url": "https://manychat.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "manychat-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "manychat_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "mozpro": {
+    "tool_id": "mozpro",
+    "sources": [
+      {
+        "source_url": "https://moz.com/products/pro",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "mozpro-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "mozpro_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "otter": {
+    "tool_id": "otter",
+    "sources": [
+      {
+        "source_url": "https://otter.ai/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "otter-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "otter_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "prowritingaid": {
+    "tool_id": "prowritingaid",
+    "sources": [
+      {
+        "source_url": "https://prowritingaid.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "prowritingaid-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "prowritingaid_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "quo": {
+    "tool_id": "quo",
+    "sources": [
+      {
+        "source_url": "https://www.quo.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "quo-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "quo_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "rgestudio": {
+    "tool_id": "rgestudio",
+    "sources": [
+      {
+        "source_url": "https://www.reallygoodemails.com/studio",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "rgestudio-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "rgestudio_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "smartli": {
+    "tool_id": "smartli",
+    "sources": [
+      {
+        "source_url": "https://www.smartli.io/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "smartli-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "smartli_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "storydoc": {
+    "tool_id": "storydoc",
+    "sources": [
+      {
+        "source_url": "https://www.storydoc.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "storydoc-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "storydoc_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "storylane": {
+    "tool_id": "storylane",
+    "sources": [
+      {
+        "source_url": "https://www.storylane.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "storylane-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "storylane_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "transpond": {
+    "tool_id": "transpond",
+    "sources": [
+      {
+        "source_url": "https://www.transpond.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "transpond-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "transpond_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "ueni": {
+    "tool_id": "ueni",
+    "sources": [
+      {
+        "source_url": "https://ueni.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "ueni-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "ueni_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "wingify": {
+    "tool_id": "wingify",
+    "sources": [
+      {
+        "source_url": "https://vwo.com/pricing/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "wingify-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "wingify_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "xtiles": {
+    "tool_id": "xtiles",
+    "sources": [
+      {
+        "source_url": "https://www.xtiles.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "xtiles-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "xtiles_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "screamingfrog": {
+    "tool_id": "screamingfrog",
+    "sources": [
+      {
+        "source_url": "https://www.screamingfrog.co.uk/seo-spider/",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "screamingfrog-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "screamingfrog_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  },
+  "keap": {
+    "tool_id": "keap",
+    "sources": [
+      {
+        "source_url": "https://www.keap.com/pricing",
+        "source_role": "PRICING",
+        "first_party": true,
+        "source_id": "keap-pricing",
+        "last_fetch_attempt": null,
+        "last_successful_fetch": null,
+        "last_verified": null,
+        "content_fingerprint": null,
+        "fetch_status": "pending",
+        "extractor": "keap_pricing_v1",
+        "verification_status": "unverified"
+      }
+    ]
+  }
+}

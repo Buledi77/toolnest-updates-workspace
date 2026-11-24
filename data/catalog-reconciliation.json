@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-11-23T18:23:03.025215",
+  "validation_rule": "v1 catalog count must equal authoritative tools; v2 enriched count may exceed v1 for expansion research records",
+  "counts": {
+    "v1_authoritative": 153,
+    "v2_enriched": 163,
+    "v2_legacy": 45,
+    "v2_expansion": 112,
+    "v2_root": 6,
+    "expansion_only_not_in_v1": 10
+  },
+  "expansion_only_tools": [
+    "assemblyai",
+    "browserbase",
+    "firecrawl",
+    "glean",
+    "granola",
+    "mistral-le-chat",
+    "replit",
+    "together-ai",
+    "v0",
+    "windsurf"
+  ],
+  "missing_v2_records": [],
+  "name_conflicts": [
+    {
+      "tool_id": "screamingfrog",
+      "v1_name": "Screaming Frog",
+      "v2_name": "Screaming Frog SEO Spider"
+    },
+    {
+      "tool_id": "keap",
+      "v1_name": "Keap (formerly Infusionsoft)",
+      "v2_name": "Keap"
+    }
+  ],
+  "sitemap_coverage": {
+    "status": "PASS",
+    "total_v1_tools": 153,
+    "tools_in_sitemap": 153,
+    "missing_from_sitemap": []
+  },
+  "issues": [
+    {
+      "type": "NAME_CONFLICT",
+      "severity": "INFO",
+      "description": "2 tools have different names in v1 vs v2 (rebranding/product name changes)",
+      "conflicts": [
+        {
+          "tool_id": "screamingfrog",
+          "v1_name": "Screaming Frog",
+          "v2_name": "Screaming Frog SEO Spider"
+        },
+        {
+          "tool_id": "keap",
+          "v1_name": "Keap (formerly Infusionsoft)",
+          "v2_name": "Keap"
+        }
+      ]
+    }
+  ],
+  "validation_passed": true
+}

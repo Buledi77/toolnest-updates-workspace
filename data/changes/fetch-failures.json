@@ -1,0 +1,10 @@
+[
+  {
+    "tool_id": "unbounce",
+    "source_id": "unbounce-pricing",
+    "url": "https://unbounce.com/pricing/",
+    "status": "unavailable",
+    "error": "HTTP 403 — access denied (possible bot protection)",
+    "timestamp": "2026-11-23T06:04:39.656795+00:00"
+  }
+]

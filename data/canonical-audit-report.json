@@ -1,0 +1,2019 @@
+{
+  "pipeline": "canonical_audit",
+  "timestamp": "2026-11-23T21:42:45.607243+00:00",
+  "summary": {
+    "total_canonical_facts": 332,
+    "duplicated_surfaces": 301,
+    "actual_duplicates_needing_refactor": 90,
+    "tool_json_mutable_field_count": 74,
+    "classification_counts": {
+      "MUTABLE_CANONICAL_FACT": 0,
+      "ACTUAL_DUPLICATE": 90,
+      "DERIVED_PRESENTATION": 0,
+      "EDITORIAL_REFERENCE": 58,
+      "SAFE_STATIC_COPY": 0,
+      "GENERATOR_OUTPUT": 301,
+      "RESEARCH_REQUIRED": 0,
+      "CANONICALIZED": 359,
+      "SAFE_DERIVED_COPY": 0,
+      "EDITORIAL_COPY": 0,
+      "REQUIRES_REFACTOR": 0
+    },
+    "claim_type_counts": {
+      "limitation": 35,
+      "feature": 10,
+      "pricing": 69,
+      "free_plan": 31,
+      "trial": 32,
+      "capability": 55,
+      "platform": 33,
+      "use_case": 33,
+      "target_user": 33,
+      "": 1
+    },
+    "stale_risk_counts": {
+      "LOW": 211,
+      "HIGH": 90
+    }
+  },
+  "actual_duplicates": [
+    {
+      "tool_id": "canva",
+      "claim_type": "pricing",
+      "claim_id": "canva-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/canva.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "cursor",
+      "claim_type": "pricing",
+      "claim_id": "cursor-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/cursor.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "kit",
+      "claim_type": "pricing",
+      "claim_id": "kit-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/kit.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "mailchimp",
+      "claim_type": "pricing",
+      "claim_id": "mailchimp-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/mailchimp.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "mailchimp",
+      "claim_type": "pricing",
+      "claim_id": "mailchimp-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/mailchimp.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "mailchimp",
+      "claim_type": "platform",
+      "claim_id": "mailchimp-platforms",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/mailchimp.json",
+      "matched_fields": [
+        "discovery.platforms"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "brevo",
+      "claim_type": "pricing",
+      "claim_id": "brevo-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/brevo.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "getresponse",
+      "claim_type": "pricing",
+      "claim_id": "getresponse-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/getresponse.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "grammarly",
+      "claim_type": "pricing",
+      "claim_id": "grammarly-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/grammarly.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "jasper",
+      "claim_type": "pricing",
+      "claim_id": "jasper-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/jasper.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "writesonic",
+      "claim_type": "pricing",
+      "claim_id": "writesonic-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/writesonic.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "quillbot",
+      "claim_type": "pricing",
+      "claim_id": "quillbot-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/quillbot.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "adobeexpress",
+      "claim_type": "pricing",
+      "claim_id": "adobeexpress-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/adobeexpress.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "beautifulai",
+      "claim_type": "pricing",
+      "claim_id": "beautifulai-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/beautifulai.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "midjourney",
+      "claim_type": "pricing",
+      "claim_id": "midjourney-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/midjourney.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "ideogram",
+      "claim_type": "pricing",
+      "claim_id": "ideogram-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/ideogram.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "notion",
+      "claim_type": "pricing",
+      "claim_id": "notion-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/notion.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "notion",
+      "claim_type": "pricing",
+      "claim_id": "notion-free-plan",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/notion.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "confetti",
+      "claim_type": "pricing",
+      "claim_id": "confetti-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/confetti.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "connecteam",
+      "claim_type": "pricing",
+      "claim_id": "connecteam-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/connecteam.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "connecteam",
+      "claim_type": "pricing",
+      "claim_id": "connecteam-free-plan",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/connecteam.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "hibob",
+      "claim_type": "pricing",
+      "claim_id": "hibob-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/hibob.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "meetgeek",
+      "claim_type": "pricing",
+      "claim_id": "meetgeek-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/meetgeek.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "meetgeek",
+      "claim_type": "pricing",
+      "claim_id": "meetgeek-free-plan",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/meetgeek.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "meetgeek",
+      "claim_type": "pricing",
+      "claim_id": "meetgeek-trial",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/meetgeek.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "pandadoc",
+      "claim_type": "pricing",
+      "claim_id": "pandadoc-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/pandadoc.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "pandadoc",
+      "claim_type": "pricing",
+      "claim_id": "pandadoc-free-plan",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/pandadoc.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "pandadoc",
+      "claim_type": "pricing",
+      "claim_id": "pandadoc-trial",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/pandadoc.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "quickbooks",
+      "claim_type": "pricing",
+      "claim_id": "quickbooks-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/quickbooks.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "shoeboxed",
+      "claim_type": "pricing",
+      "claim_id": "shoeboxed-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/shoeboxed.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "shoeboxed",
+      "claim_type": "pricing",
+      "claim_id": "shoeboxed-trial",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/shoeboxed.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "teamwork",
+      "claim_type": "pricing",
+      "claim_id": "teamwork-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/teamwork.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "teamwork",
+      "claim_type": "pricing",
+      "claim_id": "teamwork-free-plan",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/teamwork.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "teamwork",
+      "claim_type": "pricing",
+      "claim_id": "teamwork-trial",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/teamwork.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "timedoctor",
+      "claim_type": "pricing",
+      "claim_id": "timedoctor-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/timedoctor.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "timedoctor",
+      "claim_type": "pricing",
+      "claim_id": "timedoctor-trial",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/timedoctor.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "trainual",
+      "claim_type": "pricing",
+      "claim_id": "trainual-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/trainual.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "upwork",
+      "claim_type": "pricing",
+      "claim_id": "upwork-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/upwork.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "wrike",
+      "claim_type": "pricing",
+      "claim_id": "wrike-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/wrike.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "wrike",
+      "claim_type": "pricing",
+      "claim_id": "wrike-free-plan",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/wrike.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "xero",
+      "claim_type": "pricing",
+      "claim_id": "xero-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/xero.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "xero",
+      "claim_type": "pricing",
+      "claim_id": "xero-trial",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/xero.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "adcreative",
+      "claim_type": "pricing",
+      "claim_id": "adcreative-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/adcreative.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "adcreative",
+      "claim_type": "pricing",
+      "claim_id": "adcreative-trial",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/adcreative.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "ahrefs",
+      "claim_type": "pricing",
+      "claim_id": "ahrefs-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/ahrefs.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "ahrefs",
+      "claim_type": "pricing",
+      "claim_id": "ahrefs-free-plan",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/ahrefs.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "ahrefs",
+      "claim_type": "capability",
+      "claim_id": "ahrefs-capabilities",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/ahrefs.json",
+      "matched_fields": [
+        "features"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "apollo",
+      "claim_type": "pricing",
+      "claim_id": "apollo-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/apollo.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "apollo",
+      "claim_type": "pricing",
+      "claim_id": "apollo-free-plan",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/apollo.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "apollo",
+      "claim_type": "pricing",
+      "claim_id": "apollo-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/apollo.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "descript",
+      "claim_type": "pricing",
+      "claim_id": "descript-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/descript.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "descript",
+      "claim_type": "pricing",
+      "claim_id": "descript-free-plan",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/descript.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "elevenlabs",
+      "claim_type": "pricing",
+      "claim_id": "elevenlabs-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/elevenlabs.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "elevenlabs",
+      "claim_type": "pricing",
+      "claim_id": "elevenlabs-free-plan",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/elevenlabs.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "claude",
+      "claim_type": "pricing",
+      "claim_id": "claude-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/claude.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "claude",
+      "claim_type": "pricing",
+      "claim_id": "claude-free-plan",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/claude.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "hubspot",
+      "claim_type": "pricing",
+      "claim_id": "hubspot-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/hubspot.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "hubspot",
+      "claim_type": "pricing",
+      "claim_id": "hubspot-free-plan",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/hubspot.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "hubspot",
+      "claim_type": "pricing",
+      "claim_id": "hubspot-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/hubspot.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "hubspot",
+      "claim_type": "platform",
+      "claim_id": "hubspot-platforms",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/hubspot.json",
+      "matched_fields": [
+        "discovery.platforms"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "pipedrive",
+      "claim_type": "pricing",
+      "claim_id": "pipedrive-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/pipedrive.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "pipedrive",
+      "claim_type": "pricing",
+      "claim_id": "pipedrive-trial",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/pipedrive.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "pipedrive",
+      "claim_type": "pricing",
+      "claim_id": "pipedrive-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/pipedrive.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "monday",
+      "claim_type": "pricing",
+      "claim_id": "monday-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/monday.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "todoist",
+      "claim_type": "pricing",
+      "claim_id": "todoist-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/todoist.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "todoist",
+      "claim_type": "pricing",
+      "claim_id": "todoist-free-plan",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/todoist.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "copyai",
+      "claim_type": "pricing",
+      "claim_id": "copyai-pricing-verified",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/copyai.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "copyai",
+      "claim_type": "pricing",
+      "claim_id": "copyai-free-plan",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/copyai.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "adwisely",
+      "claim_type": "pricing",
+      "claim_id": "adwisely-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/adwisely.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "amplitude",
+      "claim_type": "pricing",
+      "claim_id": "amplitude-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/amplitude.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "mixpanel",
+      "claim_type": "pricing",
+      "claim_id": "mixpanel-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/mixpanel.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "clevertap",
+      "claim_type": "pricing",
+      "claim_id": "clevertap-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/clevertap.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "dripify",
+      "claim_type": "pricing",
+      "claim_id": "dripify-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/dripify.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "sproutsocial",
+      "claim_type": "pricing",
+      "claim_id": "sproutsocial-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/sproutsocial.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "lusha",
+      "claim_type": "pricing",
+      "claim_id": "lusha-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/lusha.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "learnworlds",
+      "claim_type": "pricing",
+      "claim_id": "learnworlds-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/learnworlds.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "replyio",
+      "claim_type": "pricing",
+      "claim_id": "replyio-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/replyio.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "simpletexting",
+      "claim_type": "pricing",
+      "claim_id": "simpletexting-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/simpletexting.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "softsync",
+      "claim_type": "pricing",
+      "claim_id": "softsync-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/softsync.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "closely",
+      "claim_type": "pricing",
+      "claim_id": "closely-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/closely.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "spiky",
+      "claim_type": "pricing",
+      "claim_id": "spiky-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/spiky.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "streak",
+      "claim_type": "pricing",
+      "claim_id": "streak-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/streak.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "surveymonkey",
+      "claim_type": "pricing",
+      "claim_id": "surveymonkey-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/surveymonkey.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "teachable",
+      "claim_type": "pricing",
+      "claim_id": "teachable-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/teachable.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "intercom",
+      "claim_type": "pricing",
+      "claim_id": "intercom-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/intercom.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "helpscout",
+      "claim_type": "pricing",
+      "claim_id": "helpscout-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/helpscout.json",
+      "matched_fields": [
+        "pricing.annualDiscount",
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "smartlead",
+      "claim_type": "pricing",
+      "claim_id": "smartlead-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/smartlead.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "omnisend",
+      "claim_type": "pricing",
+      "claim_id": "omnisend-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/omnisend.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.billingBasis",
+        "pricing.currency",
+        "pricing.checkedOn",
+        "pricing.trial",
+        "pricing.freeLimits",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "freshdesk",
+      "claim_type": "pricing",
+      "claim_id": "freshdesk-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/freshdesk.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    },
+    {
+      "tool_id": "zendesk",
+      "claim_type": "pricing",
+      "claim_id": "zendesk-pricing-model",
+      "surface_type": "tool_json",
+      "surface_path": "data/tools/zendesk.json",
+      "matched_fields": [
+        "pricing.freePlan",
+        "pricing.checkedOn",
+        "pricing.plans",
+        "pricing"
+      ],
+      "stale_risk": "HIGH"
+    }
+  ],
+  "tools_with_mutable_fields": {
+    "hostinger": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "semrush": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "activecampaign": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "asana": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "beehiiv": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "bill": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "canva": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "capsule": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "chatgpt": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "clickup": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "dext": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "figma": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "freshbooks": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "bolt": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "cursor": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "kit": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "mailchimp": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "brevo": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "getresponse": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "grammarly": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "jasper": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.plans"
+    ],
+    "writesonic": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "quillbot": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "adobeexpress": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "beautifulai": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "midjourney": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "ideogram": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "notion": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "confetti": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "connecteam": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "hibob": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "meetgeek": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "pandadoc": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "quickbooks": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "shoeboxed": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "teamwork": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "timedoctor": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "trainual": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "upwork": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "wrike": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "xero": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "adcreative": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "ahrefs": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "apollo": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "descript": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "elevenlabs": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "claude": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "hubspot": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "pipedrive": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "monday": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "todoist": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "copyai": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.plans"
+    ],
+    "adwisely": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "amplitude": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "mixpanel": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "clevertap": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "dripify": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "sproutsocial": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "lusha": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "learnworlds": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "replyio": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "simpletexting": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "softsync": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "closely": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "spiky": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "streak": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "surveymonkey": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "teachable": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "intercom": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.plans"
+    ],
+    "helpscout": [
+      "pricing",
+      "pricing.annualDiscount",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "smartlead": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "omnisend": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.billingBasis",
+      "pricing.currency",
+      "pricing.checkedOn",
+      "pricing.trial",
+      "pricing.freeLimits",
+      "pricing.plans"
+    ],
+    "freshdesk": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ],
+    "zendesk": [
+      "pricing",
+      "pricing.freePlan",
+      "pricing.checkedOn",
+      "pricing.plans"
+    ]
+  }
+}

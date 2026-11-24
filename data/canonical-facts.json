@@ -1,0 +1,3096 @@
+{
+  "hostinger": {
+    "tool_id": "hostinger",
+    "source_claim_ids": [
+      "hostinger-ecommerce-caveat",
+      "hostinger-fair-use"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "semrush": {
+    "tool_id": "semrush",
+    "source_claim_ids": [
+      "semrush-ai-visibility-addon",
+      "semrush-limitations"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "moz-pro": {
+    "tool_id": "moz-pro",
+    "source_claim_ids": [
+      "moz-pro-plan-structure",
+      "moz-pro-ai-visibility"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Standard",
+          "monthly_usd": 99,
+          "annual_monthly_equivalent_usd": 79,
+          "tracked_sites": 3,
+          "tracked_keywords": 300,
+          "pages_crawled_monthly": 400000
+        },
+        {
+          "name": "Medium",
+          "monthly_usd": 179,
+          "annual_monthly_equivalent_usd": 143,
+          "tracked_sites": 10,
+          "tracked_keywords": 1500,
+          "pages_crawled_monthly": 2000000
+        },
+        {
+          "name": "Large",
+          "monthly_usd": 299,
+          "annual_monthly_equivalent_usd": 239,
+          "tracked_sites": 25,
+          "tracked_keywords": 3000,
+          "pages_crawled_monthly": 5000000
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "monthly and yearly billing options displayed",
+      "checkedOn": "2026-11-18"
+    },
+    "capabilities": [
+      "AI visibility dashboards",
+      "tracked prompts",
+      "GPT tracking",
+      "Gemini tracking",
+      "Google AI Mode tracking",
+      "AI content briefs on applicable tiers"
+    ],
+    "facts_checked": "2026-11-18",
+    "confidence": "medium"
+  },
+  "canva": {
+    "tool_id": "canva",
+    "source_claim_ids": [
+      "canva-pricing-verified"
+    ],
+    "pricing": {
+      "currency": "USD",
+      "billingBasis": "annual",
+      "checkedOn": "2026-11-23"
+    },
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "cursor": {
+    "tool_id": "cursor",
+    "source_claim_ids": [
+      "cursor-pricing-verified"
+    ],
+    "pricing": {
+      "currency": "USD",
+      "billingBasis": "monthly",
+      "checkedOn": "2026-11-23"
+    },
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "kit": {
+    "tool_id": "kit",
+    "source_claim_ids": [
+      "kit-pricing-verified"
+    ],
+    "pricing": {
+      "currency": "USD",
+      "billingBasis": "monthly",
+      "checkedOn": "2026-11-23"
+    },
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "mailchimp": {
+    "tool_id": "mailchimp",
+    "source_claim_ids": [
+      "mailchimp-pricing-verified",
+      "mailchimp-pricing-model",
+      "mailchimp-free-plan",
+      "mailchimp-trial",
+      "mailchimp-capabilities",
+      "mailchimp-platforms",
+      "mailchimp-core-use-case",
+      "mailchimp-target-user",
+      "mailchimp-limitations"
+    ],
+    "pricing": {
+      "currency": "USD",
+      "billingBasis": "monthly",
+      "checkedOn": "2026-11-23"
+    },
+    "free_plan": {
+      "status": "permanent_free_plan",
+      "description": "Free plan available: up to 500 contacts, 1,000 emails/mo (max 500/mo or 250/day), 1 audience, 1 seat, email support for first 30 days, limited templates, popup forms, 300+ integrations. No email scheduling, automation, or A/B testing.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "14-day free trial available on paid plans with no credit card required.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS"
+    ],
+    "capabilities": [
+      "Email marketing campaigns",
+      "Pre-built email templates",
+      "Marketing automation flows (Essentials+)",
+      "A/B testing (Essentials+)",
+      "Multivariate testing (Standard+)",
+      "Email scheduling (Essentials+)",
+      "Advanced segmentation (Standard+)",
+      "Custom-coded email templates (Standard+)",
+      "Generative AI features (Standard+)",
+      "SMS and MMS marketing add-on",
+      "Popup forms",
+      "Landing pages",
+      "300+ integrations",
+      "Custom reports (Standard+)",
+      "Predictive segmentation (Premium)",
+      "Enterprise SSO (Premium)",
+      "Unlimited audiences (Premium)",
+      "Unlimited seats (Premium)",
+      "Phone and priority support (Premium)",
+      "Pay As You Go option"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "brevo": {
+    "tool_id": "brevo",
+    "source_claim_ids": [
+      "brevo-pricing-verified"
+    ],
+    "pricing": {
+      "currency": "USD",
+      "billingBasis": "monthly",
+      "checkedOn": "2026-11-23"
+    },
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "getresponse": {
+    "tool_id": "getresponse",
+    "source_claim_ids": [
+      "getresponse-pricing-verified"
+    ],
+    "pricing": {
+      "currency": "USD",
+      "billingBasis": "monthly",
+      "checkedOn": "2026-11-23"
+    },
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "grammarly": {
+    "tool_id": "grammarly",
+    "source_claim_ids": [
+      "grammarly-pricing-verified"
+    ],
+    "pricing": {
+      "currency": "USD",
+      "billingBasis": "monthly",
+      "checkedOn": "2026-11-23"
+    },
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "jasper": {
+    "tool_id": "jasper",
+    "source_claim_ids": [
+      "jasper-pricing-verified"
+    ],
+    "pricing": {
+      "currency": "USD",
+      "billingBasis": "monthly",
+      "checkedOn": "2026-11-23"
+    },
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "writesonic": {
+    "tool_id": "writesonic",
+    "source_claim_ids": [
+      "writesonic-pricing-verified"
+    ],
+    "pricing": {
+      "currency": "USD",
+      "billingBasis": "monthly",
+      "checkedOn": "2026-11-23"
+    },
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "quillbot": {
+    "tool_id": "quillbot",
+    "source_claim_ids": [
+      "quillbot-pricing-verified"
+    ],
+    "pricing": {
+      "currency": "USD",
+      "billingBasis": "monthly",
+      "checkedOn": "2026-11-23"
+    },
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "adobeexpress": {
+    "tool_id": "adobeexpress",
+    "source_claim_ids": [
+      "adobeexpress-pricing-verified"
+    ],
+    "pricing": {
+      "currency": "USD",
+      "billingBasis": "monthly",
+      "checkedOn": "2026-11-23"
+    },
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "beautifulai": {
+    "tool_id": "beautifulai",
+    "source_claim_ids": [
+      "beautifulai-pricing-verified"
+    ],
+    "pricing": {
+      "currency": "USD",
+      "billingBasis": "monthly",
+      "checkedOn": "2026-11-23"
+    },
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "midjourney": {
+    "tool_id": "midjourney",
+    "source_claim_ids": [
+      "midjourney-pricing-verified"
+    ],
+    "pricing": {
+      "currency": "USD",
+      "billingBasis": "monthly",
+      "checkedOn": "2026-11-23"
+    },
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "ideogram": {
+    "tool_id": "ideogram",
+    "source_claim_ids": [
+      "ideogram-pricing-verified"
+    ],
+    "pricing": {
+      "currency": "USD",
+      "billingBasis": "monthly",
+      "checkedOn": "2026-11-23"
+    },
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "notion": {
+    "tool_id": "notion",
+    "source_claim_ids": [
+      "notion-pricing-verified",
+      "notion-free-plan",
+      "notion-capabilities"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Free",
+          "displayed_monthly_usd": 0,
+          "selected_limits": [
+            "unlimited personal workspace",
+            "10 guests max"
+          ]
+        },
+        {
+          "name": "Plus",
+          "displayed_monthly_usd": 10,
+          "upfront_annual_usd": 120,
+          "monthly_billing_usd": 12,
+          "selected_limits": [
+            "file uploads",
+            "workspace sharing",
+            "100 guests"
+          ]
+        },
+        {
+          "name": "Business",
+          "displayed_monthly_usd": 20,
+          "upfront_annual_usd": 240,
+          "monthly_billing_usd": 24,
+          "selected_limits": [
+            "SAML SSO",
+            "AI bundled",
+            "250 guests"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "custom": true,
+          "selected_limits": [
+            "SCIM",
+            "audit logs",
+            "dedicated support"
+          ]
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "annual and monthly billing",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "notes",
+      "tasks",
+      "databases",
+      "wiki",
+      "AI writing assistant",
+      "templates",
+      "collaboration",
+      "real-time editing"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "confetti": {
+    "tool_id": "confetti",
+    "source_claim_ids": [
+      "confetti-pricing-verified",
+      "confetti-capabilities"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Pay-Per-Event",
+          "price_per_user": "$30",
+          "billing": "one-time per event"
+        },
+        {
+          "name": "Pre-Fund",
+          "price_annual": "$5000",
+          "billing": "annual credits"
+        },
+        {
+          "name": "Enterprise",
+          "custom": true
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "as listed on official pricing page",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "virtual team building",
+      "hybrid events",
+      "in-person events",
+      "DEI events",
+      "event coordination",
+      "professional hosting",
+      "400+ curated experiences"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "connecteam": {
+    "tool_id": "connecteam",
+    "source_claim_ids": [
+      "connecteam-pricing-verified",
+      "connecteam-free-plan",
+      "connecteam-capabilities",
+      "connecteam-platform"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Small Business",
+          "displayed_monthly_usd": 0,
+          "selected_limits": [
+            "up to 10 users",
+            "all 3 hubs free"
+          ]
+        },
+        {
+          "name": "Basic",
+          "displayed_monthly_usd": 29,
+          "selected_limits": [
+            "30 users",
+            "per hub",
+            "$0.80/user above 30 (Ops)"
+          ]
+        },
+        {
+          "name": "Advanced",
+          "displayed_monthly_usd": 49,
+          "selected_limits": [
+            "30 users",
+            "per hub",
+            "$2.50/user above 30 (Ops)"
+          ]
+        },
+        {
+          "name": "Expert",
+          "displayed_monthly_usd": 99,
+          "selected_limits": [
+            "30 users",
+            "per hub",
+            "$4.20/user above 30 (Ops)"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "custom": true
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "annual billing",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "workforce management",
+      "scheduling",
+      "time tracking",
+      "communications",
+      "HR & skills",
+      "GPS tracking",
+      "mobile-first",
+      "AI scheduling",
+      "deskless workforce",
+      "web",
+      "iOS",
+      "Android"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "hibob": {
+    "tool_id": "hibob",
+    "source_claim_ids": [
+      "hibob-pricing-verified",
+      "hibob-capabilities",
+      "hibob-platform"
+    ],
+    "pricing": {
+      "currency": "USD",
+      "billingBasis": "as listed on official pricing page",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "HRIS",
+      "HCM",
+      "employee database",
+      "onboarding",
+      "performance management",
+      "engagement",
+      "compensation",
+      "Bob AI",
+      "org charts",
+      "document management",
+      "time off",
+      "multi-country",
+      "web",
+      "iOS",
+      "Android"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "meetgeek": {
+    "tool_id": "meetgeek",
+    "source_claim_ids": [
+      "meetgeek-pricing-verified",
+      "meetgeek-free-plan",
+      "meetgeek-trial",
+      "meetgeek-capabilities"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Basic",
+          "displayed_monthly_usd": 0,
+          "selected_limits": [
+            "3 hours transcription/mo",
+            "unlimited AI summaries",
+            "core integrations"
+          ]
+        },
+        {
+          "name": "Pro",
+          "displayed_monthly_usd": 9.99,
+          "monthly_billing_usd": 15.99,
+          "selected_limits": [
+            "20 hours transcription/mo",
+            "meeting templates",
+            "AI agents",
+            "Zapier/Make/n8n"
+          ]
+        },
+        {
+          "name": "Business",
+          "displayed_monthly_usd": 17,
+          "monthly_billing_usd": 27,
+          "selected_limits": [
+            "unlimited transcription",
+            "team spaces",
+            "team analytics",
+            "custom branding"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "custom": true,
+          "selected_limits": [
+            "SSO/SCIM",
+            "HIPAA BAA",
+            "custom data retention"
+          ]
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "annual and monthly billing",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "meeting transcription",
+      "AI summaries",
+      "100+ languages",
+      "AI agents",
+      "workflow automation",
+      "team analytics",
+      "Chrome extension",
+      "mobile app",
+      "API/MCP access"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "pandadoc": {
+    "tool_id": "pandadoc",
+    "source_claim_ids": [
+      "pandadoc-pricing-verified",
+      "pandadoc-free-plan",
+      "pandadoc-trial",
+      "pandadoc-capabilities"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Free eSign",
+          "displayed_monthly_usd": 0,
+          "selected_limits": [
+            "60 docs/year",
+            "2 recipients per doc"
+          ]
+        },
+        {
+          "name": "Starter",
+          "displayed_monthly_usd": 19,
+          "monthly_billing_usd": 35,
+          "selected_limits": [
+            "unlimited docs",
+            "5 templates",
+            "custom branding"
+          ]
+        },
+        {
+          "name": "Business",
+          "displayed_monthly_usd": 49,
+          "monthly_billing_usd": 65,
+          "selected_limits": [
+            "CRM integrations",
+            "approval workflows",
+            "payment collection"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "custom": true,
+          "selected_limits": [
+            "CPQ",
+            "API",
+            "SSO",
+            "content locking"
+          ]
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "annual and monthly billing",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "document automation",
+      "e-signatures",
+      "proposals",
+      "quotes",
+      "CRM integrations",
+      "approval workflows",
+      "payment collection",
+      "CPQ",
+      "templates"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "quickbooks": {
+    "tool_id": "quickbooks",
+    "source_claim_ids": [
+      "quickbooks-pricing-verified",
+      "quickbooks-capabilities",
+      "quickbooks-platform"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Simple Start",
+          "displayed_monthly_usd": 38,
+          "selected_limits": [
+            "basic bookkeeping",
+            "expense tracking"
+          ]
+        },
+        {
+          "name": "Essentials",
+          "displayed_monthly_usd": 75,
+          "selected_limits": [
+            "multi-user",
+            "invoicing",
+            "bill tracking"
+          ]
+        },
+        {
+          "name": "Plus",
+          "displayed_monthly_usd": 115,
+          "selected_limits": [
+            "inventory tracking",
+            "project profitability",
+            "advanced reporting"
+          ]
+        },
+        {
+          "name": "Advanced",
+          "displayed_monthly_usd": 275,
+          "selected_limits": [
+            "batch invoicing",
+            "dedicated support",
+            "custom roles"
+          ]
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "monthly billing",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "accounting",
+      "invoicing",
+      "expense tracking",
+      "payroll",
+      "inventory",
+      "tax management",
+      "bank reconciliation",
+      "reporting",
+      "multi-user",
+      "web",
+      "iOS",
+      "Android"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "shoeboxed": {
+    "tool_id": "shoeboxed",
+    "source_claim_ids": [
+      "shoeboxed-pricing-verified",
+      "shoeboxed-trial",
+      "shoeboxed-capabilities",
+      "shoeboxed-platform"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Starter",
+          "displayed_monthly_usd": 9,
+          "annual_usd": 97,
+          "selected_limits": [
+            "50 digital scans/mo",
+            "20 paper scans/yr",
+            "3 users"
+          ]
+        },
+        {
+          "name": "Pro",
+          "displayed_monthly_usd": 29,
+          "annual_usd": 297,
+          "selected_limits": [
+            "250 digital scans/mo",
+            "50 paper scans/mo",
+            "5 users",
+            "accounting integrations"
+          ]
+        },
+        {
+          "name": "Plus",
+          "displayed_monthly_usd": 79,
+          "annual_usd": 797,
+          "selected_limits": [
+            "1000 digital scans/mo",
+            "150 paper scans/mo",
+            "10 users"
+          ]
+        },
+        {
+          "name": "Paper Plus",
+          "displayed_monthly_usd": 179,
+          "annual_usd": 1997,
+          "selected_limits": [
+            "5000 digital scans/mo",
+            "300 paper scans/mo",
+            "10 users"
+          ]
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "annual and monthly billing",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "receipt scanning",
+      "mileage tracking",
+      "Magic Envelope",
+      "QuickBooks integration",
+      "Xero integration",
+      "document management",
+      "audit-proof reports",
+      "web",
+      "iOS",
+      "Android"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "teamwork": {
+    "tool_id": "teamwork",
+    "source_claim_ids": [
+      "teamwork-pricing-verified",
+      "teamwork-free-plan",
+      "teamwork-trial",
+      "teamwork-capabilities"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Free",
+          "displayed_monthly_usd": 0,
+          "selected_limits": [
+            "5 users",
+            "5 projects",
+            "100 automations/mo"
+          ]
+        },
+        {
+          "name": "Basics",
+          "displayed_monthly_usd": 9.99,
+          "monthly_billing_usd": 13.99,
+          "selected_limits": [
+            "Gantt charts",
+            "templates",
+            "time tracking"
+          ]
+        },
+        {
+          "name": "Accelerate",
+          "displayed_monthly_usd": 24.99,
+          "monthly_billing_usd": 29.99,
+          "selected_limits": [
+            "workload management",
+            "budgeting",
+            "advanced reporting"
+          ]
+        },
+        {
+          "name": "Optimize",
+          "custom": true,
+          "selected_limits": [
+            "resource scheduling",
+            "custom reports"
+          ]
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "annual and monthly billing",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "project management",
+      "time tracking",
+      "Gantt charts",
+      "workload management",
+      "budgeting",
+      "client management",
+      "CRM",
+      "help desk"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "timedoctor": {
+    "tool_id": "timedoctor",
+    "source_claim_ids": [
+      "timedoctor-pricing-verified",
+      "timedoctor-trial",
+      "timedoctor-capabilities"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Basic",
+          "displayed_monthly_usd": 6.67,
+          "monthly_billing_usd": 8,
+          "selected_limits": [
+            "time tracking",
+            "screenshots",
+            "timeline report"
+          ]
+        },
+        {
+          "name": "Standard",
+          "displayed_monthly_usd": 11.67,
+          "monthly_billing_usd": 14,
+          "selected_limits": [
+            "scheduling",
+            "payroll",
+            "60+ integrations",
+            "productivity ratings"
+          ]
+        },
+        {
+          "name": "Premium",
+          "displayed_monthly_usd": 16.7,
+          "monthly_billing_usd": 20,
+          "selected_limits": [
+            "AI benchmarks",
+            "video recording",
+            "executive dashboard",
+            "SSO"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "custom": true
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "annual and monthly billing",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "time tracking",
+      "screenshots",
+      "activity monitoring",
+      "productivity ratings",
+      "payroll",
+      "scheduling",
+      "attendance",
+      "AI benchmarks",
+      "video recording",
+      "60+ integrations"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "trainual": {
+    "tool_id": "trainual",
+    "source_claim_ids": [
+      "trainual-pricing-verified",
+      "trainual-capabilities"
+    ],
+    "pricing": {
+      "currency": "USD",
+      "billingBasis": "as listed on official pricing page",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "employee onboarding",
+      "SOP documentation",
+      "video training",
+      "completion tracking",
+      "role-based training",
+      "e-signatures",
+      "org charts",
+      "HRIS integrations"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "upwork": {
+    "tool_id": "upwork",
+    "source_claim_ids": [
+      "upwork-pricing-verified",
+      "upwork-capabilities"
+    ],
+    "pricing": {
+      "currency": "USD",
+      "billingBasis": "as listed on official pricing page",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "freelance marketplace",
+      "talent discovery",
+      "project catalog",
+      "escrow payments",
+      "time tracking",
+      "invoicing",
+      "Direct Contracts",
+      "18M+ freelancers"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "wrike": {
+    "tool_id": "wrike",
+    "source_claim_ids": [
+      "wrike-pricing-verified",
+      "wrike-free-plan",
+      "wrike-capabilities",
+      "wrike-platform"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Free",
+          "displayed_monthly_usd": 0,
+          "selected_limits": [
+            "unlimited users",
+            "2GB storage",
+            "basic task management"
+          ]
+        },
+        {
+          "name": "Team",
+          "displayed_monthly_usd": 10,
+          "selected_limits": [
+            "2-15 users",
+            "Gantt charts",
+            "AI Essentials",
+            "shareable dashboards"
+          ]
+        },
+        {
+          "name": "Business",
+          "displayed_monthly_usd": 25,
+          "selected_limits": [
+            "5-200 users",
+            "AI Elite",
+            "resource planning",
+            "standard integrations"
+          ]
+        },
+        {
+          "name": "Pinnacle",
+          "custom": true,
+          "selected_limits": [
+            "advanced resource planning",
+            "budgeting",
+            "custom roles"
+          ]
+        },
+        {
+          "name": "Apex",
+          "custom": true,
+          "selected_limits": [
+            "enterprise features",
+            "advanced analytics"
+          ]
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "annual billing",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "project management",
+      "Gantt charts",
+      "resource planning",
+      "workflow automation",
+      "AI features",
+      "reporting",
+      "Kanban boards",
+      "time tracking",
+      "budgeting",
+      "web",
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "xero": {
+    "tool_id": "xero",
+    "source_claim_ids": [
+      "xero-pricing-verified",
+      "xero-trial",
+      "xero-capabilities",
+      "xero-platform"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Early",
+          "displayed_monthly_usd": 27,
+          "selected_limits": [
+            "20 invoices",
+            "5 bills",
+            "bank reconciliation",
+            "sales tax"
+          ]
+        },
+        {
+          "name": "Growing",
+          "displayed_monthly_usd": 59,
+          "selected_limits": [
+            "unlimited invoices",
+            "budgeting",
+            "auto-reconcile",
+            "dashboards"
+          ]
+        },
+        {
+          "name": "Established",
+          "displayed_monthly_usd": 97,
+          "selected_limits": [
+            "180-day forecast",
+            "unlimited budgets",
+            "projects",
+            "inventory"
+          ]
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "monthly billing",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "accounting",
+      "invoicing",
+      "bank reconciliation",
+      "payroll",
+      "tax management",
+      "budgeting",
+      "1000+ integrations",
+      "multi-currency",
+      "project tracking",
+      "web",
+      "iOS",
+      "Android"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "adcreative": {
+    "tool_id": "adcreative",
+    "source_claim_ids": [
+      "adcreative-pricing-verified",
+      "adcreative-trial",
+      "adcreative-capabilities"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Starter",
+          "displayed_monthly_usd": 39,
+          "annual_usd": 249,
+          "selected_limits": [
+            "20 credits/mo",
+            "1 brand",
+            "1 user"
+          ]
+        },
+        {
+          "name": "Professional",
+          "displayed_monthly_usd": 249,
+          "annual_usd": 1500,
+          "selected_limits": [
+            "300 credits/mo",
+            "3 brands",
+            "10 users"
+          ]
+        },
+        {
+          "name": "Ultimate",
+          "displayed_monthly_usd": 999,
+          "annual_usd": 6000,
+          "selected_limits": [
+            "300 credits/mo",
+            "25 brands",
+            "20 users"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "custom": true
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "annual and monthly billing",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "AI ad creative generation",
+      "ad copywriting",
+      "performance scoring",
+      "iStock integration",
+      "ad platform integrations",
+      "competitor insights",
+      "compliance checker"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "ahrefs": {
+    "tool_id": "ahrefs",
+    "source_claim_ids": [
+      "ahrefs-pricing-verified",
+      "ahrefs-free-plan",
+      "ahrefs-capabilities"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Starter",
+          "displayed_monthly_usd": 29
+        },
+        {
+          "name": "Lite",
+          "displayed_monthly_usd": 129
+        },
+        {
+          "name": "Standard",
+          "displayed_monthly_usd": 249
+        },
+        {
+          "name": "Advanced",
+          "displayed_monthly_usd": 449
+        },
+        {
+          "name": "Enterprise",
+          "displayed_monthly_usd": 1499
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "monthly and annual billing",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "SEO",
+      "keyword research",
+      "backlink analysis",
+      "site audit",
+      "rank tracking",
+      "content explorer",
+      "competitor analysis"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "apollo": {
+    "tool_id": "apollo",
+    "source_claim_ids": [
+      "apollo-pricing-verified",
+      "apollo-free-plan",
+      "apollo-capabilities",
+      "apollo-pricing-model",
+      "apollo-trial",
+      "apollo-platforms",
+      "apollo-core-use-case",
+      "apollo-target-user",
+      "apollo-limitations"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Free",
+          "displayed_monthly_usd": 0
+        },
+        {
+          "name": "Basic",
+          "displayed_monthly_usd": 49
+        },
+        {
+          "name": "Professional",
+          "displayed_monthly_usd": 79
+        },
+        {
+          "name": "Organization",
+          "displayed_monthly_usd": 119
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "annual billing",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "Free trial available giving access to most features before committing. Free plan also available.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS",
+      "Chrome extension"
+    ],
+    "capabilities": [
+      "sales intelligence",
+      "lead database",
+      "email sequencing",
+      "CRM integration",
+      "dialer",
+      "call recording",
+      "buying intent"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "descript": {
+    "tool_id": "descript",
+    "source_claim_ids": [
+      "descript-pricing-verified",
+      "descript-free-plan",
+      "descript-capabilities"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Free",
+          "displayed_monthly_usd": 0
+        },
+        {
+          "name": "Hobbyist",
+          "displayed_monthly_usd": 16
+        },
+        {
+          "name": "Creator",
+          "displayed_monthly_usd": 24
+        },
+        {
+          "name": "Business",
+          "displayed_monthly_usd": 50
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "annual billing",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "video editing",
+      "audio editing",
+      "text-based editing",
+      "AI voice cloning",
+      "screen recording",
+      "podcast editing",
+      "captions",
+      "AI dubbing"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "elevenlabs": {
+    "tool_id": "elevenlabs",
+    "source_claim_ids": [
+      "elevenlabs-pricing-verified",
+      "elevenlabs-free-plan",
+      "elevenlabs-capabilities"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Free",
+          "displayed_monthly_usd": 0
+        },
+        {
+          "name": "Starter",
+          "displayed_monthly_usd": 6
+        },
+        {
+          "name": "Creator",
+          "displayed_monthly_usd": 22
+        },
+        {
+          "name": "Pro",
+          "displayed_monthly_usd": 99
+        },
+        {
+          "name": "Scale",
+          "displayed_monthly_usd": 299
+        },
+        {
+          "name": "Business",
+          "displayed_monthly_usd": 990
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "monthly and annual billing",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "text-to-speech",
+      "voice cloning",
+      "speech-to-text",
+      "AI voice generation",
+      "dubbing",
+      "sound effects",
+      "music generation"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "claude": {
+    "tool_id": "claude",
+    "source_claim_ids": [
+      "claude-pricing-verified",
+      "claude-free-plan",
+      "claude-capabilities",
+      "claude-platform"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Free",
+          "displayed_monthly_usd": 0
+        },
+        {
+          "name": "Pro",
+          "displayed_monthly_usd": 20
+        },
+        {
+          "name": "Max",
+          "displayed_monthly_usd": 100
+        },
+        {
+          "name": "Ultra",
+          "displayed_monthly_usd": 200
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "monthly billing",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "AI chat",
+      "code generation",
+      "Claude Code",
+      "document analysis",
+      "web search",
+      "artifacts",
+      "memory",
+      "API access",
+      "web",
+      "iOS",
+      "Android",
+      "Windows",
+      "macOS"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "hubspot": {
+    "tool_id": "hubspot",
+    "source_claim_ids": [
+      "hubspot-pricing-verified",
+      "hubspot-free-plan",
+      "hubspot-capabilities",
+      "hubspot-pricing-model",
+      "hubspot-trial",
+      "hubspot-platforms",
+      "hubspot-core-use-case",
+      "hubspot-target-user",
+      "hubspot-limitations"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Free",
+          "displayed_monthly_usd": 0
+        },
+        {
+          "name": "Starter",
+          "displayed_monthly_usd": 20
+        },
+        {
+          "name": "Professional",
+          "displayed_monthly_usd": 800
+        },
+        {
+          "name": "Enterprise",
+          "displayed_monthly_usd": 3600
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "annual billing",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "14-day free trial available on paid plans with no credit card required.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS",
+      "iOS app",
+      "Android app"
+    ],
+    "capabilities": [
+      "CRM",
+      "marketing automation",
+      "sales pipeline",
+      "customer service",
+      "CMS",
+      "workflows",
+      "reporting",
+      "2000+ integrations"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "pipedrive": {
+    "tool_id": "pipedrive",
+    "source_claim_ids": [
+      "pipedrive-pricing-verified",
+      "pipedrive-trial",
+      "pipedrive-capabilities",
+      "pipedrive-pricing-model",
+      "pipedrive-free-plan",
+      "pipedrive-platforms",
+      "pipedrive-core-use-case",
+      "pipedrive-target-user",
+      "pipedrive-limitations"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Lite",
+          "displayed_monthly_usd": 14
+        },
+        {
+          "name": "Essential",
+          "displayed_monthly_usd": 27
+        },
+        {
+          "name": "Scale",
+          "displayed_monthly_usd": 49
+        },
+        {
+          "name": "Premium",
+          "displayed_monthly_usd": 79
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "annual billing",
+      "checkedOn": "2026-11-23"
+    },
+    "free_plan": {
+      "status": "no_free_plan",
+      "description": "No free plan. Only a 14-day free trial available with no credit card required.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS",
+      "iOS app",
+      "Android app"
+    ],
+    "capabilities": [
+      "sales CRM",
+      "pipeline management",
+      "deal tracking",
+      "email integration",
+      "automation",
+      "reporting",
+      "mobile app"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "monday": {
+    "tool_id": "monday",
+    "source_claim_ids": [
+      "monday-pricing-verified",
+      "monday-capabilities"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Basic",
+          "displayed_monthly_usd": 9
+        },
+        {
+          "name": "Standard",
+          "displayed_monthly_usd": 17
+        },
+        {
+          "name": "Pro",
+          "displayed_monthly_usd": 26
+        },
+        {
+          "name": "Enterprise",
+          "custom": true
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "annual billing, 3-seat minimum",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "work management",
+      "project management",
+      "CRM",
+      "automation",
+      "Gantt charts",
+      "time tracking",
+      "dashboards",
+      "200+ integrations"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "todoist": {
+    "tool_id": "todoist",
+    "source_claim_ids": [
+      "todoist-pricing-verified",
+      "todoist-free-plan",
+      "todoist-capabilities",
+      "todoist-platform"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Free",
+          "displayed_monthly_usd": 0
+        },
+        {
+          "name": "Pro",
+          "displayed_monthly_usd": 4
+        },
+        {
+          "name": "Business",
+          "displayed_monthly_usd": 6
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "annual billing",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "task management",
+      "project organization",
+      "reminders",
+      "collaboration",
+      "integrations",
+      "natural language input",
+      "keyboard shortcuts",
+      "web",
+      "iOS",
+      "Android",
+      "Windows",
+      "macOS",
+      "Chrome"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "copyai": {
+    "tool_id": "copyai",
+    "source_claim_ids": [
+      "copyai-pricing-verified",
+      "copyai-free-plan",
+      "copyai-capabilities"
+    ],
+    "pricing": {
+      "plans": [
+        {
+          "name": "Free",
+          "displayed_monthly_usd": 0
+        },
+        {
+          "name": "Pro",
+          "displayed_monthly_usd": 49
+        },
+        {
+          "name": "Enterprise",
+          "custom": true
+        }
+      ],
+      "currency": "USD",
+      "billingBasis": "monthly and annual billing",
+      "checkedOn": "2026-11-23"
+    },
+    "capabilities": [
+      "AI copywriting",
+      "marketing content",
+      "social media posts",
+      "email copy",
+      "ad copy",
+      "brand voice",
+      "workflow automation"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "high"
+  },
+  "adwisely": {
+    "tool_id": "adwisely",
+    "source_claim_ids": [
+      "adwisely-pricing-model",
+      "adwisely-free-trial",
+      "adwisely-free-plan",
+      "adwisely-capabilities",
+      "adwisely-platforms",
+      "adwisely-core-use-case",
+      "adwisely-target-user",
+      "adwisely-limitations"
+    ],
+    "pricing": {
+      "model": "Performance-based: 10% of ad spend with minimum monthly fee. Self-Serve minimum $49/mo, Concierge minimum $249/mo. Cap at $3,250/mo regardless of ad spend.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "no_free_plan",
+      "description": "No free plan. Only a 7-day free trial.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "7-day free trial available on both Self-Serve and Concierge plans.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Shopify (app)",
+      "Web-based dashboard"
+    ],
+    "capabilities": [
+      "AI-powered ad campaign creation and optimization",
+      "Meta (Facebook & Instagram) ads automation",
+      "Google Ads automation (Search, Shopping, Display, YouTube, Gmail)",
+      "Retargeting and prospecting campaigns",
+      "Shopify-native integration with inventory sync",
+      "Order matching for sales verification",
+      "Auto-pause for out-of-stock products",
+      "Dedicated ad experts on Concierge plan"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "amplitude": {
+    "tool_id": "amplitude",
+    "source_claim_ids": [
+      "amplitude-pricing-model",
+      "amplitude-free-plan",
+      "amplitude-trial",
+      "amplitude-capabilities",
+      "amplitude-platforms",
+      "amplitude-core-use-case",
+      "amplitude-target-user",
+      "amplitude-limitations"
+    ],
+    "pricing": {
+      "model": "Event-based usage pricing. Free plan includes 2M events/month. Plus starts at $0 and scales with event volume. Growth and Enterprise are custom-priced.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "permanent_free_plan",
+      "description": "Free plan available: 2M events/month, 10K session replays/month, unlimited seats, no credit card required, no time limit.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "No separate trial — free plan serves as the entry point with no time limit.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS"
+    ],
+    "capabilities": [
+      "Product analytics and web analytics",
+      "Session replay",
+      "Feature experimentation (A/B testing)",
+      "Feature flags",
+      "Heatmaps",
+      "Guides and surveys (in-app messaging)",
+      "Activation (reverse-ETL)",
+      "AI Feedback, AI Visibility, AI Agents",
+      "AI Assistant (natural language queries)",
+      "Portfolio cross-project analysis",
+      "Behavioral cohorts",
+      "Forecasting and anomaly detection (Growth+)"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "mixpanel": {
+    "tool_id": "mixpanel",
+    "source_claim_ids": [
+      "mixpanel-pricing-model",
+      "mixpanel-free-plan",
+      "mixpanel-trial",
+      "mixpanel-capabilities",
+      "mixpanel-platforms",
+      "mixpanel-core-use-case",
+      "mixpanel-target-user",
+      "mixpanel-limitations"
+    ],
+    "pricing": {
+      "model": "Event-based usage pricing. Free plan includes 1M events/month. Growth includes first 1M events free, then $0.00028/event overage. Enterprise custom pricing. Optional MTU-based Enterprise billing available.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "permanent_free_plan",
+      "description": "Free plan available: 1M events/month, unlimited seats, core reports (Insights, Flows, Funnels, Retention, Explore), 10K session replays/month, 5 saved reports per user.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "No separate trial — free plan serves as entry point. Startup program offers up to $50,000 in credits for qualifying companies.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS"
+    ],
+    "capabilities": [
+      "Product analytics (Insights, Funnels, Retention, Flows, Explore)",
+      "Session replay (10K free, 20K on Growth/Enterprise)",
+      "Cohort analysis",
+      "A/B testing and feature flags",
+      "Group analytics (B2B, add-on)",
+      "Data pipelines / warehouse exports (add-on)",
+      "Lookback windows and custom properties (Growth+)",
+      "Permissions and governance (Enterprise)"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "clevertap": {
+    "tool_id": "clevertap",
+    "source_claim_ids": [
+      "clevertap-pricing-model",
+      "clevertap-free-trial",
+      "clevertap-free-plan",
+      "clevertap-capabilities",
+      "clevertap-platforms",
+      "clevertap-core-use-case",
+      "clevertap-target-user",
+      "clevertap-limitations"
+    ],
+    "pricing": {
+      "model": "Tiered subscription by MAU (Monthly Active Users). Core plan starts at ₹2,000/month (~$85/mo). Pro and Ultimate are custom-priced. Add-ons available for advanced analytics, premium channels, email, WhatsApp, and promos.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "permanent_free_plan",
+      "description": "No perpetual free plan. Startup program available with credits. 30-day trial for qualifying apps.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "30-day free trial available for apps with MAUs less than 100K.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS",
+      "iOS SDK",
+      "Android SDK"
+    ],
+    "capabilities": [
+      "Behavioral analytics and real-time segmentation",
+      "Omnichannel engagement (push, email, SMS, WhatsApp, RCS, in-app)",
+      "Automated user journeys",
+      "A/B testing and experimentation",
+      "AI-powered personalization (CleverAI)",
+      "Predictive analytics and recommendations (Ultimate)",
+      "Content creation and image generation",
+      "Send time and channel optimization",
+      "Loyalty and rewards platform (add-on)",
+      "Decisioning agents for 1:1 personalization (Ultimate)"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "dripify": {
+    "tool_id": "dripify",
+    "source_claim_ids": [
+      "dripify-pricing-model",
+      "dripify-free-trial",
+      "dripify-free-plan",
+      "dripify-capabilities",
+      "dripify-platforms",
+      "dripify-core-use-case",
+      "dripify-target-user",
+      "dripify-limitations"
+    ],
+    "pricing": {
+      "model": "Per-user subscription. Basic $59/mo annual ($79 monthly), Pro $79/mo annual ($99 monthly), Advanced $99/mo annual. Enterprise custom. All paid plans include 100 email finder credits/month.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "no_free_plan",
+      "description": "No free plan. Only a 7-day free trial.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "7-day free trial available with no credit card required.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS",
+      "LinkedIn (browser extension)"
+    ],
+    "capabilities": [
+      "LinkedIn outreach automation (connection requests, messages, follow-ups)",
+      "Email campaign sequences",
+      "Multi-step drip campaigns",
+      "Built-in LinkedIn protection and safety limits",
+      "Analytics and reporting",
+      "Dedicated inbox for LinkedIn conversations",
+      "HubSpot integration",
+      "Lead tagging and organization (Advanced+)",
+      "A/B testing (Advanced+)",
+      "Team management (Advanced+)",
+      "Email finder (100 credits/month per user)"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "sproutsocial": {
+    "tool_id": "sproutsocial",
+    "source_claim_ids": [
+      "sproutsocial-pricing-model",
+      "sproutsocial-free-trial",
+      "sproutsocial-free-plan",
+      "sproutsocial-capabilities",
+      "sproutsocial-platforms",
+      "sproutsocial-core-use-case",
+      "sproutsocial-target-user",
+      "sproutsocial-limitations"
+    ],
+    "pricing": {
+      "model": "Per-seat subscription. Essentials $79/seat/mo annual ($99 monthly), Standard $199, Professional $299, Advanced $399. Enterprise custom. Add-ons available for Listening, Premium Analytics, Advocacy.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "no_free_plan",
+      "description": "No free plan. Only a 30-day free trial.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "30-day free trial available on all plans, no credit card required.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS",
+      "iOS app",
+      "Android app"
+    ],
+    "capabilities": [
+      "Social media publishing and scheduling",
+      "Smart Inbox for consolidated messaging",
+      "Keyword and location monitoring",
+      "Review management",
+      "Competitor and paid insights (Professional+)",
+      "AI-powered content assistance (AI Assist)",
+      "Sentiment analysis (Advanced+)",
+      "SproutLink (link management)",
+      "Influencer marketing tools",
+      "Helpdesk integrations (Salesforce, Zendesk, Advanced+)",
+      "Custom reporting and analytics",
+      "Mobile app for iOS and Android"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "lusha": {
+    "tool_id": "lusha",
+    "source_claim_ids": [
+      "lusha-pricing-model",
+      "lusha-free-plan",
+      "lusha-trial",
+      "lusha-capabilities",
+      "lusha-platforms",
+      "lusha-core-use-case",
+      "lusha-target-user",
+      "lusha-limitations"
+    ],
+    "pricing": {
+      "model": "Credit-based subscription. Free plan: 40 credits/month permanent. Starter $37/mo annual ($49.90 monthly), Pro $69.90/mo, Premium $399.90/mo, Scale custom. Credits: 1 per email, 5 per phone number.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "permanent_free_plan",
+      "description": "Free plan available: 40 credits/month permanent, no credit card required, basic prospecting features, browser extension, CRM integrations.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "No separate trial — free plan serves as entry point with 40 credits/month permanently.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS",
+      "Chrome browser extension",
+      "CRM integrations"
+    ],
+    "capabilities": [
+      "Contact data enrichment (email and phone)",
+      "B2B contact database (515M+ contacts, 29M+ company profiles)",
+      "Browser extension for LinkedIn and web prospecting",
+      "CRM integrations (Salesforce, HubSpot, etc.)",
+      "Bulk enrichment",
+      "Data Waterfall (Pro+)",
+      "Buyer intent data signals",
+      "AI agent access via MCP",
+      "Do Not Call status on phone records",
+      "98% email accuracy, 86% phone accuracy (published)"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "learnworlds": {
+    "tool_id": "learnworlds",
+    "source_claim_ids": [
+      "learnworlds-pricing-model",
+      "learnworlds-free-trial",
+      "learnworlds-free-plan",
+      "learnworlds-capabilities",
+      "learnworlds-platforms",
+      "learnworlds-core-use-case",
+      "learnworlds-target-user",
+      "learnworlds-limitations"
+    ],
+    "pricing": {
+      "model": "Tiered subscription. Starter $49/mo ($44 annual + $5 per enrollment), Pro Trainer $99/mo ($79 annual, no enrollment fees), Learning Center $299/mo ($194 annual), Corporate custom. White-label mobile app add-on $149/mo.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "no_free_plan",
+      "description": "No free plan. Only a 30-day free trial.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "30-day free trial available on all plans.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS",
+      "White-label mobile app (add-on)"
+    ],
+    "capabilities": [
+      "Course creation and hosting with AI course builder",
+      "Interactive video with quizzes and assessments",
+      "SCORM support (up to 20 uploads on Pro Trainer, full on Learning Center)",
+      "Course certificates",
+      "Live 1:1 and group sessions",
+      "Subscriptions, memberships, and payment plans",
+      "Unlimited courses and learning paths",
+      "50+ built-in integrations",
+      "White-label mobile app (add-on)",
+      "AI assistant (capped by plan)",
+      "Custom domain hosting",
+      "Stripe and PayPal payment processing"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "salesforce": {
+    "tool_id": "salesforce",
+    "source_claim_ids": [
+      "salesforce-pricing-model",
+      "salesforce-free-plan",
+      "salesforce-trial",
+      "salesforce-capabilities",
+      "salesforce-platforms",
+      "salesforce-core-use-case",
+      "salesforce-target-user",
+      "salesforce-limitations"
+    ],
+    "pricing": {
+      "model": "Per-user subscription. Free CRM for up to 2 users. Starter Suite $25/user/mo (monthly or annual). Pro Suite $100/user/mo annual. Enterprise and Unlimited custom. Transaction fees apply on commerce features.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "permanent_free_plan",
+      "description": "Free CRM available for up to 2 users with core features including sales pipeline, service case management, email marketing, and AI (Agentforce).",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "30-day free trial available for paid plans. Free CRM also available for up to 2 users.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS",
+      "iOS app",
+      "Android app"
+    ],
+    "capabilities": [
+      "CRM with account, contact, lead, and opportunity management",
+      "Sales pipeline and forecast management",
+      "Service case management",
+      "Email marketing (2,000 emails/mo on Starter)",
+      "AI assistant (Agentforce Coworker)",
+      "Customizable reports and dashboards",
+      "Process automation with Flows",
+      "Email integration (Gmail, Outlook)",
+      "Connected Slack channels",
+      "AppExchange access",
+      "Quote creation and management",
+      "Knowledge management (Pro Suite+)"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "replyio": {
+    "tool_id": "replyio",
+    "source_claim_ids": [
+      "replyio-pricing-model",
+      "replyio-free-trial",
+      "replyio-free-plan",
+      "replyio-capabilities",
+      "replyio-platforms",
+      "replyio-core-use-case",
+      "replyio-target-user",
+      "replyio-limitations"
+    ],
+    "pricing": {
+      "model": "Tiered subscription by contacts. Email Volume $49/user/mo annual (1,000 active contacts), Multichannel $89/user/mo annual (unlimited contacts). AI SDR Starter $500/mo. LinkedIn automation $69/mo/account add-on. Calls & SMS $29/mo/account add-on.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "no_free_plan",
+      "description": "No free plan. Only a 14-day free trial.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "14-day free trial available.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS",
+      "Chrome extension"
+    ],
+    "capabilities": [
+      "Multichannel sales outreach (email, LinkedIn, SMS, calls)",
+      "Email automation with sequences",
+      "Email warmup included with every mailbox",
+      "Unlimited emails to active contacts",
+      "LinkedIn automation ($69/mo/account add-on)",
+      "Calls & SMS automation ($29/mo/account add-on)",
+      "AI-powered personalization",
+      "Live data credits (50/month) from 1B+ B2B contacts",
+      "Anti-spam and deliverability suite",
+      "Reply management and meeting scheduling",
+      "Contact enrichment",
+      "Team performance and channel efficiency reports"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "simpletexting": {
+    "tool_id": "simpletexting",
+    "source_claim_ids": [
+      "simpletexting-pricing-model",
+      "simpletexting-free-trial",
+      "simpletexting-free-plan",
+      "simpletexting-capabilities",
+      "simpletexting-platforms",
+      "simpletexting-core-use-case",
+      "simpletexting-target-user",
+      "simpletexting-limitations"
+    ],
+    "pricing": {
+      "model": "Credit-based tiered subscription. $29/mo for 500 SMS credits (toll-free number), $39/mo (local number). Scales to $899/mo for 50,000 messages. Extra credits $0.055 each. MMS costs 3 credits per message. Additional users $20/mo, additional numbers $10/mo.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "no_free_plan",
+      "description": "No free plan. Only a 14-day free trial.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "14-day free trial available.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS"
+    ],
+    "capabilities": [
+      "Mass SMS texting and two-way messaging",
+      "MMS (picture messaging)",
+      "Auto-replies and drip campaigns",
+      "AI Assist message generator",
+      "API access",
+      "Reporting and analytics",
+      "Unlimited contacts",
+      "Advanced audience segments",
+      "Unlimited text-to-join keywords",
+      "Mailchimp and Zapier integrations",
+      "Opt-in forms and pop-ups",
+      "10DLC registration guidance",
+      "Enterprise-grade deliverability",
+      "Live support 7 days/week"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "softsync": {
+    "tool_id": "softsync",
+    "source_claim_ids": [
+      "softsync-pricing-model",
+      "softsync-free-plan",
+      "softsync-trial",
+      "softsync-capabilities",
+      "softsync-platforms",
+      "softsync-core-use-case",
+      "softsync-target-user",
+      "softsync-limitations"
+    ],
+    "pricing": {
+      "model": "Per-seat subscription. Pro $29/seat/mo annual ($39 monthly), Business $59/seat/mo annual. Enterprise custom. All plans include AI, MCP, and API access.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "no_free_plan",
+      "description": "No free plan mentioned. Paid plans start at $29/seat/mo.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "Trial status unclear from official sources. 'Get access' CTA on pricing page.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS",
+      "Desktop app (Mac/Windows)",
+      "Chrome extension"
+    ],
+    "capabilities": [
+      "CRM with flexible records, custom objects, and fields",
+      "Table, pipeline, and calendar views",
+      "Email sync, campaigns, and templates",
+      "Meeting notes and summaries with desktop recorder",
+      "Reports and dashboards",
+      "AI Assistant",
+      "Autopilot workflows",
+      "Record and contact enrichment",
+      "Integrations and connectors",
+      "API and MCP access",
+      "Chrome extension",
+      "Booking pages and forms",
+      "Team roles and group permissions"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "closely": {
+    "tool_id": "closely",
+    "source_claim_ids": [
+      "closely-pricing-model",
+      "closely-free-trial",
+      "closely-free-plan",
+      "closely-capabilities",
+      "closely-platforms",
+      "closely-core-use-case",
+      "closely-target-user",
+      "closely-limitations"
+    ],
+    "pricing": {
+      "model": "Credit-based tiered subscription. Starter $39/mo annual ($65 monthly, 1 LinkedIn account, 1,000 credits), Growth $95/mo annual ($159 monthly, 3 accounts, 3,000 credits), Essential $205/mo (5 accounts, 5,000 credits), Custom $350/mo (10+ accounts). 40% annual billing discount.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "no_free_plan",
+      "description": "No free plan. Only a free trial.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "Free trial available ('Start free trial' on pricing page).",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS"
+    ],
+    "capabilities": [
+      "LinkedIn outreach automation with AI personalization",
+      "Email campaign sequences (unlimited email accounts)",
+      "Multichannel campaigns (LinkedIn + email)",
+      "Data enrichment (email finder, phone finder)",
+      "AI-powered content personalization",
+      "LinkedIn account warmup",
+      "Dedicated residential IPs",
+      "Smart Inbox for unified responses",
+      "CRM integrations",
+      "Webhooks",
+      "White-label (custom domain, colors, logo)",
+      "Advanced analytics and reports",
+      "Team management",
+      "Conditional sequence builder"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "spiky": {
+    "tool_id": "spiky",
+    "source_claim_ids": [
+      "spiky-pricing-model",
+      "spiky-free-plan",
+      "spiky-trial",
+      "spiky-capabilities",
+      "spiky-platforms",
+      "spiky-core-use-case",
+      "spiky-target-user",
+      "spiky-limitations"
+    ],
+    "pricing": {
+      "model": "Per-user subscription. Free plan available. Plus $12/mo/user, Pro $24/mo/user (30 meetings/user), Premium $40/mo/user (unlimited meetings), Enterprise custom. No credit card required for paid plans.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "permanent_free_plan",
+      "description": "Free plan available with limited recording usage and basic meeting intelligence features.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "Trial equivalent to Premium plan excluding CRM functionality. Free plan also available.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS",
+      "Desktop audio capture"
+    ],
+    "capabilities": [
+      "Meeting recording and transcription (Zoom, Google Meet, Microsoft Teams)",
+      "AI-powered sales coaching and scorecards",
+      "Live coaching (Whisper) with real-time guidance",
+      "Deal risk and pipeline insights",
+      "Revenue forecasting (Signals)",
+      "Sentiment analysis and voice emotion analysis",
+      "Talk ratio and speaker analytics",
+      "CRM and Slack integrations",
+      "Keyword tracking",
+      "Playbook tracking and battlecards",
+      "AI-based coaching and report customization",
+      "Custom branding",
+      "Bot-free desktop audio capture",
+      "People Board and team management"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "textmagic": {
+    "tool_id": "textmagic",
+    "source_claim_ids": [
+      "textmagic-pricing-model",
+      "textmagic-free-trial",
+      "textmagic-free-plan",
+      "textmagic-capabilities",
+      "textmagic-platforms",
+      "textmagic-core-use-case",
+      "textmagic-target-user",
+      "textmagic-limitations"
+    ],
+    "pricing": {
+      "model": "Pay-as-you-go credit-based. US outbound SMS $0.049/msg standard. Professional monthly plans $0.02-$0.04/msg depending on volume. Toll-free number $10/mo, local 10DLC number $10/mo + $10/mo campaign registration. MMS $0.08/msg. Email $0.006/email. No contracts, credits never expire.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "permanent_free_plan",
+      "description": "No perpetual free plan. Only a free trial. Inbound SMS is free on all plans.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "Free trial available with no credit card required.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS"
+    ],
+    "capabilities": [
+      "Mass SMS texting and two-way messaging",
+      "MMS (multimedia messaging)",
+      "Automation workflows",
+      "Shared team inbox",
+      "Omnichannel chat widget",
+      "Email campaigns",
+      "AI writing and templates",
+      "Unlimited contacts and users",
+      "Delivery reporting",
+      "Integrations and API access",
+      "Compliance tools",
+      "Dedicated numbers and Sender IDs",
+      "Global SMS to 200+ countries",
+      "Voice call forwarding"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "phantombuster": {
+    "tool_id": "phantombuster",
+    "source_claim_ids": [
+      "phantombuster-pricing-model",
+      "phantombuster-free-plan",
+      "phantombuster-trial",
+      "phantombuster-capabilities",
+      "phantombuster-platforms",
+      "phantombuster-core-use-case",
+      "phantombuster-target-user",
+      "phantombuster-limitations"
+    ],
+    "pricing": {
+      "model": "Workspace-based subscription. Start $69/mo ($56 annual, 20h execution, 5 slots, 10K AI credits, 500 email credits). Grow $159/mo ($128 annual, 80h, 15 slots, 30K AI, 2,500 email). Scale $439/mo ($352 annual, 300h, 50 slots, 90K AI, 10K email). Free plan: 30 min/month, 1 slot, 50 MB storage.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "permanent_free_plan",
+      "description": "Free plan available: 30 min/month execution time, 1 slot, 50 MB storage. No AI, email, URL Finder, or CAPTCHA credits. Exports limited to 10 rows.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "14-day free trial available with no credit card required. 2 hours total execution time, 5 slots, 1,000 AI credits, 50 email credits.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS"
+    ],
+    "capabilities": [
+      "130+ automation Phantoms for LinkedIn and other platforms",
+      "LinkedIn data extraction (profiles, companies, posts, groups)",
+      "Email discovery and verification",
+      "AI-powered data enrichment",
+      "Workflow automation (multi-step Flows)",
+      "URL Finder for website discovery",
+      "CAPTCHA-solving credits",
+      "CRM integrations (HubSpot bi-directional)",
+      "Google Sheets, n8n, Zapier, Make integrations",
+      "LinkedIn Sales Navigator integration",
+      "Unlimited CSV/JSON exports (paid plans)",
+      "API access",
+      "Up to 100 workspace members"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "streak": {
+    "tool_id": "streak",
+    "source_claim_ids": [
+      "streak-pricing-model",
+      "streak-free-plan",
+      "streak-trial",
+      "streak-capabilities",
+      "streak-platforms",
+      "streak-core-use-case",
+      "streak-target-user",
+      "streak-limitations"
+    ],
+    "pricing": {
+      "model": "Per-user subscription. Free plan available. Pro $49/user/mo annual ($59 monthly, 20 AI credits). Pro+ $69/user/mo annual ($89 monthly, 150 AI credits, integrations, automations). Enterprise $129/user/mo annual ($159 monthly, custom roles, dedicated support). 20% annual billing discount.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "permanent_free_plan",
+      "description": "Free plan available: email tracking, link tracking, email snippets, 50 mail merge sends/day, Streak Share, thread splitter. No CRM pipelines on free plan.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "14-day free trial of Pro+ plan available, including integrations, automation, unlimited contacts and CRM records, and 1,000 AI credits.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Gmail (Chrome extension)",
+      "iOS app",
+      "Android app"
+    ],
+    "capabilities": [
+      "Gmail-native CRM with visual pipelines",
+      "Unlimited contacts, pipelines, and records",
+      "Shared pipelines and real-time collaboration",
+      "Mail merge (50/day free, unlimited on paid)",
+      "Email tracking and link tracking",
+      "Email snippets and templates",
+      "AI-powered features (20 credits Pro, 150 Pro+)",
+      "Integrations and automations (Pro+)",
+      "Advanced report dashboards (Pro+)",
+      "Custom roles and permissions (Enterprise)",
+      "Data validation rules (Enterprise)",
+      "Mobile apps for iOS and Android",
+      "Thread splitter and Streak Share"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "surveymonkey": {
+    "tool_id": "surveymonkey",
+    "source_claim_ids": [
+      "surveymonkey-pricing-model",
+      "surveymonkey-free-plan",
+      "surveymonkey-trial",
+      "surveymonkey-capabilities",
+      "surveymonkey-platforms",
+      "surveymonkey-core-use-case",
+      "surveymonkey-target-user",
+      "surveymonkey-limitations"
+    ],
+    "pricing": {
+      "model": "Response-based tiered subscription. Basic (Free) with limited responses. Standard monthly billing available. Advantage €30/user/mo annual (10K responses/year). Premier €75/user/mo annual (100K responses/year). Team plans start at 3 users. Enterprise custom. Overage €0.10/response.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "permanent_free_plan",
+      "description": "Free plan available: create and send surveys, limited responses per survey, 10 questions per survey. No survey logic, no export, no custom reports.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "No separate trial — free plan serves as entry point. Paid plans available with monthly billing.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS"
+    ],
+    "capabilities": [
+      "Survey creation and distribution",
+      "Forms and quizzes",
+      "500+ expert templates",
+      "Survey logic and branching (paid plans)",
+      "Question randomization and A/B testing (Advantage+)",
+      "Response quotas (Advantage+)",
+      "Custom reports and dashboards",
+      "Data export (paid plans)",
+      "200+ native integrations",
+      "7,000+ Zapier integrations",
+      "Embed surveys in apps",
+      "Custom themes and branding",
+      "Team collaboration (Team plans)",
+      "Enterprise admin tools and SSO"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "teachable": {
+    "tool_id": "teachable",
+    "source_claim_ids": [
+      "teachable-pricing-model",
+      "teachable-free-plan",
+      "teachable-trial",
+      "teachable-capabilities",
+      "teachable-platforms",
+      "teachable-core-use-case",
+      "teachable-target-user",
+      "teachable-limitations"
+    ],
+    "pricing": {
+      "model": "Product-based tiered subscription. Starter $29/mo annual ($39 monthly, 7.5% transaction fee, 5 products). Builder $69/mo annual ($89 monthly, 0% fee, 10 products). Growth $139/mo annual ($189 monthly, 0% fee, 50 products). Custom for high-volume. Payment processing 2.9% + $0.30 US, 3.9% + $0.30 international.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "no_free_plan",
+      "description": "No free plan. Only a 7-day free trial with 30-day money-back guarantee.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "7-day free trial available on all plans with 30-day money-back guarantee.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS",
+      "iOS student app",
+      "Android student app"
+    ],
+    "capabilities": [
+      "Course creation with AI builder",
+      "Memberships and subscriptions",
+      "Community (unlimited spaces)",
+      "Auto-graded quizzes and short answer assessments",
+      "Course certificates and compliance",
+      "Drip content and lesson comments",
+      "Built-in email marketing",
+      "Affiliate program",
+      "Coupons, upsells, and order bumps",
+      "Abandoned cart emails",
+      "Bundles",
+      "Student referrals",
+      "Custom reporting",
+      "iOS and Android student apps",
+      "Global payments with VAT/GST handling",
+      "Custom domain and branding",
+      "Zapier and webhook integrations",
+      "Public API access (Growth+)"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "intercom": {
+    "tool_id": "intercom",
+    "source_claim_ids": [
+      "intercom-pricing-model",
+      "intercom-free-plan",
+      "intercom-trial",
+      "intercom-capabilities",
+      "intercom-platforms",
+      "intercom-core-use-case",
+      "intercom-target-user",
+      "intercom-limitations"
+    ],
+    "pricing": {
+      "model": "Per-seat subscription. Essential $29/seat/mo annual ($39 monthly). Advanced $85/seat/mo annual ($99 monthly, includes 20 Lite seats). Expert $132/seat/mo annual ($139 monthly, includes 50 Lite seats). Fin AI Agent $0.99/outcome on all plans. Proactive Support Plus add-on $99/mo. Copilot add-on $29/agent/mo.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "no_free_plan",
+      "description": "No free plan. Early Stage program available for qualifying startups. 14-day free trial available.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "14-day free trial available with no credit card required.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS"
+    ],
+    "capabilities": [
+      "Customer messaging (Messenger)",
+      "Shared inbox and ticketing system",
+      "Fin AI Agent ($0.99/outcome)",
+      "Public help center",
+      "Pre-built reports",
+      "Simple automations",
+      "Slack integration",
+      "Workflows automation builder (Advanced+)",
+      "Multiple team inboxes (Advanced+)",
+      "Round-robin assignment (Advanced+)",
+      "Private and multilingual help center (Advanced+)",
+      "Custom reports (Advanced+)",
+      "Salesforce and Marketo integration (Advanced+)",
+      "SSO and HIPAA support (Expert)",
+      "SLAs and workload management (Expert)",
+      "Proactive Support Plus add-on (product tours, surveys, in-app messages)",
+      "Copilot AI assistant add-on"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "helpscout": {
+    "tool_id": "helpscout",
+    "source_claim_ids": [
+      "helpscout-pricing-model",
+      "helpscout-free-plan",
+      "helpscout-trial",
+      "helpscout-capabilities",
+      "helpscout-platforms",
+      "helpscout-core-use-case",
+      "helpscout-target-user",
+      "helpscout-limitations"
+    ],
+    "pricing": {
+      "model": "Per-user subscription. Free plan for up to 5 users (email only, 1 help center). Standard $25/user/mo (live chat, SMS, WhatsApp, Instagram, Messenger, 2 help centers). Plus $45/user/mo (advanced workflows, 3 help centers, AI Drafts, Salesforce/Jira/HubSpot). Pro $75/user/mo (SSO/SAML, HIPAA, 5 help centers, unlimited workflows). Envoy AI agent add-on $0.75/resolution.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "permanent_free_plan",
+      "description": "Free plan available: up to 5 users, 1 shared inbox (email only), 1 help center, 10 tags, 10 saved replies, basic reporting. No live chat, SMS, or social channels.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "Free trial available on paid plans ('Try for Free' on pricing page). Envoy AI agent has 3-month free trial.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS"
+    ],
+    "capabilities": [
+      "Shared inbox for email support",
+      "Live chat, SMS, WhatsApp, Instagram, Facebook Messenger",
+      "Knowledge base (help center)",
+      "AI Inbox assistant (all paid plans)",
+      "AI Assist and Topics (all paid plans)",
+      "AI Summarize and AI Drafts (Plus and Pro)",
+      "Multiple inboxes",
+      "Basic workflows (Standard), advanced (Plus), unlimited (Pro)",
+      "SLA policies",
+      "Round robin routing (Plus+)",
+      "Salesforce, Jira, HubSpot integrations (Plus+)",
+      "SSO/SAML (Pro)",
+      "HIPAA compliance (Pro)",
+      "Envoy AI agent add-on ($0.75/resolution)",
+      "Light users (view-only seats)"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "smartlead": {
+    "tool_id": "smartlead",
+    "source_claim_ids": [
+      "smartlead-pricing-model",
+      "smartlead-free-plan",
+      "smartlead-trial",
+      "smartlead-capabilities",
+      "smartlead-platforms",
+      "smartlead-core-use-case",
+      "smartlead-target-user",
+      "smartlead-limitations"
+    ],
+    "pricing": {
+      "model": "Volume-based subscription. Base $39/mo (2,000 contacts, 6,000 emails/mo). Pro $94/mo (30,000 contacts, 90,000 emails/mo, CRM included). Unlimited Smart $174/mo (unlimited contacts, 150,000 emails/mo). Unlimited Prime $379/mo (unlimited contacts, 500,000 emails/mo). All plans include unlimited email accounts. 17% annual billing discount.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "no_free_plan",
+      "description": "No free plan. Only a free trial with 50% off first month.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "Free trial available with 50% off first month on any plan.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS"
+    ],
+    "capabilities": [
+      "Cold email automation and sequences",
+      "Unlimited email accounts (mailboxes)",
+      "Automated email warmup",
+      "Unique IP servers per campaign",
+      "Sender reputation protection",
+      "Master inbox for unified replies",
+      "Custom CRM (Pro+)",
+      "Analytics and reporting",
+      "Personalization fields and spintax",
+      "Automated mailbox rotation",
+      "HubSpot, Salesforce, Pipedrive integrations",
+      "Webhooks and API access",
+      "White-label experience",
+      "Subsequences based on lead behavior",
+      "AI-powered outreach"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "omnisend": {
+    "tool_id": "omnisend",
+    "source_claim_ids": [
+      "omnisend-pricing-model",
+      "omnisend-free-plan",
+      "omnisend-trial",
+      "omnisend-capabilities",
+      "omnisend-platforms",
+      "omnisend-core-use-case",
+      "omnisend-target-user",
+      "omnisend-limitations"
+    ],
+    "pricing": {
+      "model": "Contact-based tiered subscription. Free plan: 500 emails/mo, 250 contacts, 500 web push notifications. Standard $16/mo (500 contacts, 6,000 emails/mo). Pro $59/mo (unlimited emails, SMS included at $0.007/SMS). SMS rates vary by country and volume. Email credits on Standard = contacts × 12.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "permanent_free_plan",
+      "description": "Free plan available: 500 emails/mo, 250 contacts, 500 web push notifications/mo, pre-built ecommerce workflows, segmentation, A/B testing, pop-ups, landing pages, 24/7 support. Omnisend branding on emails and forms.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "No separate trial — free plan serves as entry point. Paid plans available with monthly billing.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS"
+    ],
+    "capabilities": [
+      "Email marketing campaigns",
+      "SMS marketing (Pro plan)",
+      "Web push notifications",
+      "Pre-built ecommerce workflows and automations",
+      "Segmentation and A/B testing",
+      "Pop-ups and landing pages",
+      "AI features (subject line, copywriting, segment builder, Forms AI)",
+      "Personalized product recommendations (Pro)",
+      "Dynamic content (Pro)",
+      "Customer lifecycle stages and RFM analysis",
+      "Churn prediction",
+      "Omnisend MCP connection to ChatGPT and Claude",
+      "Shopify, WooCommerce, BigCommerce integrations",
+      "24/7 live chat and email support",
+      "Advanced reporting (Pro)"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "wishpond": {
+    "tool_id": "wishpond",
+    "source_claim_ids": [
+      "wishpond-pricing-model",
+      "wishpond-free-plan",
+      "wishpond-trial",
+      "wishpond-capabilities",
+      "wishpond-platforms",
+      "wishpond-core-use-case",
+      "wishpond-target-user",
+      "wishpond-limitations"
+    ],
+    "pricing": {
+      "model": "Tiered subscription. Starting Out $49/mo, Everything You Need $99/mo, Rapid Growth $199/mo. All plans include access to full suite of marketing tools. Annual billing discount available.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "no_free_plan",
+      "description": "No free plan mentioned. Paid plans start at $49/mo.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "Trial status unclear from official sources. 'Get Started Now' CTA on landing page.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS"
+    ],
+    "capabilities": [
+      "Landing page builder with drag-and-drop editor",
+      "Contests and giveaways",
+      "Popups and forms",
+      "Email marketing and automation",
+      "SMS marketing",
+      "Website builder with AI",
+      "A/B testing and AI optimization",
+      "Lead generation and capture",
+      "Marketing funnels",
+      "Appointments scheduling",
+      "Outbound sales tools",
+      "CRM and email platform integrations (Mailchimp, HubSpot, Salesforce)",
+      "Analytics and reporting",
+      "Mobile-responsive templates",
+      "Custom domains",
+      "Dedicated marketing expert support"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "activecampaign": {
+    "tool_id": "activecampaign",
+    "source_claim_ids": [
+      "activecampaign-limitations"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "convertkit": {
+    "tool_id": "convertkit",
+    "source_claim_ids": [
+      "convertkit-pricing-model",
+      "convertkit-free-plan",
+      "convertkit-trial",
+      "convertkit-capabilities",
+      "convertkit-platforms",
+      "convertkit-core-use-case",
+      "convertkit-target-user",
+      "convertkit-limitations"
+    ],
+    "pricing": {
+      "model": "Subscriber-based subscription. Free plan: up to 1,000 subscribers. Creator $9/mo (10,000 subscribers). Pro $79/mo (10,000 subscribers). Pricing scales with subscriber count. No per-email charges. 14-day free trial on paid plans.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "permanent_free_plan",
+      "description": "Free plan available: up to 1,000 subscribers, landing pages, forms, newsletter site, email designer and templates, A/B subject line testing, tags and segments, analytics, Recommendations, digital products, paid newsletters, tips. No email sequences or Visual Automations.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "14-day free trial available on paid plans with no credit card required.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS"
+    ],
+    "capabilities": [
+      "Email marketing campaigns and newsletters",
+      "Visual automation builder (Creator+)",
+      "Automated email sequences (Creator+)",
+      "RSS campaigns (Creator+)",
+      "Landing pages and forms",
+      "Newsletter site",
+      "Email designer with templates",
+      "A/B subject line testing",
+      "Tags and segments",
+      "Analytics and reporting",
+      "Digital products and paid newsletters",
+      "Tips and donations",
+      "Recommendations (cross-promotion network)",
+      "Kit App Store integrations (Creator+)",
+      "API access",
+      "Subscriber Signals (Pro)",
+      "Engagement analytics (Pro)",
+      "Revenue attribution (Pro)",
+      "Subscriber engagement scoring (Pro)",
+      "Growth Concierge services (Pro)",
+      "Team seats (2 on Creator, unlimited on Pro)"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "zohocrm": {
+    "tool_id": "zohocrm",
+    "source_claim_ids": [
+      "zohocrm-pricing-model",
+      "zohocrm-free-plan",
+      "zohocrm-trial",
+      "zohocrm-capabilities",
+      "zohocrm-platforms",
+      "zohocrm-core-use-case",
+      "zohocrm-target-user",
+      "zohocrm-limitations"
+    ],
+    "pricing": {
+      "model": "Per-user subscription. Free: up to 3 users. Standard $14/user/mo annual ($20 monthly). Professional $23/user/mo annual ($35 monthly). Enterprise $40/user/mo annual ($50 monthly). Ultimate $52/user/mo annual ($65 monthly). 15-day free trial on paid plans. Monthly billing costs 20-34% more.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "permanent_free_plan",
+      "description": "Free plan available: up to 3 users, 5,000 records, contact management, reminders, workflow automation, 10 email templates, standard reports, mobile apps. No mass email, limited workflow rules (5 per module).",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "15-day free trial available on paid plans.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS",
+      "iOS app",
+      "Android app"
+    ],
+    "capabilities": [
+      "CRM with contact and deal management",
+      "Sales pipeline management",
+      "Workflow automation",
+      "Blueprint process automation (Professional+)",
+      "Inventory management (quotes, orders, invoices) (Professional+)",
+      "Zia AI assistant and predictive scoring (Enterprise+)",
+      "Custom modules and multi-page layouts (Enterprise+)",
+      "Territory management (Enterprise+)",
+      "Advanced analytics and CommandCenter (Enterprise+)",
+      "Zoho Analytics bundle (Ultimate)",
+      "Multi-user portals (Enterprise+)",
+      "Sandbox environment (Enterprise+)",
+      "Webhooks and validation rules (Professional+)",
+      "Mass email campaigns",
+      "Mobile apps for iOS and Android",
+      "Zoho ecosystem integrations (50+ apps)",
+      "Custom reporting and dashboards"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "freshdesk": {
+    "tool_id": "freshdesk",
+    "source_claim_ids": [
+      "freshdesk-pricing-model",
+      "freshdesk-free-plan",
+      "freshdesk-trial",
+      "freshdesk-capabilities",
+      "freshdesk-platforms",
+      "freshdesk-core-use-case",
+      "freshdesk-target-user",
+      "freshdesk-limitations"
+    ],
+    "pricing": {
+      "model": "Per-agent subscription. Two product lines: Freshdesk Omni (multichannel) and Freshdesk (email-first). Growth $19/agent/mo annual, Pro $55/agent/mo annual, Enterprise $89/agent/mo annual. Free program for 6 months (2 agents max). Freddy AI Agent included (500 sessions). Add-ons: Freddy AI Copilot $29/agent/mo, additional AI sessions $49/100 sessions.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "permanent_free_plan",
+      "description": "Free program available for 6 months: up to 2 agents, ticketing, knowledge base, ticket dispatch, analytics, team collaboration, 24x5 email support. After 6 months, must upgrade or reduce to 2 agents permanently.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "14-day free trial available with full feature access and no credit card required.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS",
+      "iOS app",
+      "Android app"
+    ],
+    "capabilities": [
+      "Ticketing and shared inbox",
+      "Customer portal and knowledge base",
+      "Automation rules and workflows",
+      "Freddy AI Agent (500 sessions included)",
+      "Freddy AI Copilot add-on ($29/agent/mo)",
+      "Freddy AI Insights (Enterprise)",
+      "Advanced ticket routing (Pro+)",
+      "Custom roles and permissions (Pro+)",
+      "Analytics dashboards and reporting",
+      "Multiple SLA policies (Enterprise)",
+      "Skill-based routing (Enterprise)",
+      "Sandbox environment (Enterprise)",
+      "Audit logs (Enterprise)",
+      "IP whitelisting (Enterprise)",
+      "WhatsApp campaigns (Pro+)",
+      "Multilingual helpdesk (Pro+)",
+      "Voice add-on available",
+      "Marketplace integrations",
+      "Mobile apps for iOS and Android"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "zendesk": {
+    "tool_id": "zendesk",
+    "source_claim_ids": [
+      "zendesk-pricing-model",
+      "zendesk-free-plan",
+      "zendesk-trial",
+      "zendesk-capabilities",
+      "zendesk-platforms",
+      "zendesk-core-use-case",
+      "zendesk-target-user",
+      "zendesk-limitations"
+    ],
+    "pricing": {
+      "model": "Per-agent subscription. Support Team $19/agent/mo annual ($25 monthly, email ticketing only). Suite Team $55/agent/mo annual ($69 monthly, multichannel). Suite Professional $115/agent/mo annual ($149 monthly). Suite Enterprise + Copilot quote-only. AI agent resolutions billed separately at $1.50-$2.00 per resolution beyond included allowance. Add-ons: Copilot $50/agent/mo, QA $35, WFM $25.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "no_free_plan",
+      "description": "No free plan. Only a 14-day free trial available.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "14-day free trial available on Suite Professional level features.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS",
+      "iOS app",
+      "Android app"
+    ],
+    "capabilities": [
+      "Ticketing and shared inbox",
+      "Multichannel support (email, chat, messaging, voice, social)",
+      "Knowledge base and help center",
+      "AI agents with automated resolutions",
+      "Skills-based routing (Professional+)",
+      "Advanced analytics and reporting",
+      "SLA policies (Growth+)",
+      "CSAT surveys (Growth+)",
+      "Multiple ticket forms (Growth+)",
+      "Light agents (Growth+)",
+      "IVR and App Builder (Professional+)",
+      "Side conversations (Professional+)",
+      "Custom roles (Enterprise)",
+      "Sandbox environment (Enterprise)",
+      "Approval workflows (Enterprise)",
+      "HIPAA enablement add-on (Professional+)",
+      "Data residency add-on (Professional+)",
+      "Copilot AI assistant add-on ($50/agent/mo)",
+      "QA add-on ($35/agent/mo)",
+      "WFM add-on ($25/agent/mo)",
+      "1,800+ marketplace integrations",
+      "Mobile apps for iOS and Android"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  },
+  "klaviyo": {
+    "tool_id": "klaviyo",
+    "source_claim_ids": [
+      "klaviyo-pricing-model",
+      "klaviyo-free-plan",
+      "klaviyo-trial",
+      "klaviyo-capabilities",
+      "klaviyo-platforms",
+      "klaviyo-core-use-case",
+      "klaviyo-target-user",
+      "klaviyo-limitations"
+    ],
+    "pricing": {
+      "model": "Profile-based tiered subscription. Free plan: 250 active profiles, 500 emails/mo, $5 Composer usage, $5 mobile messages, 250 social profiles, 50 review orders, 10 Customer Agent resolutions, 10 Helpdesk tickets. Email plan $20/mo (500 profiles, 5K emails). Marketing plan $25/mo (500 profiles, 5K emails, SMS add-on). Custom plan for high-volume. Pricing scales with active profiles.",
+      "currency": "USD",
+      "billing_term": "monthly"
+    },
+    "free_plan": {
+      "status": "permanent_free_plan",
+      "description": "Free plan available: 250 active profiles, 500 emails/mo, $5 Composer usage, $5 mobile messages, 250 social profiles, 50 review orders, 10 Customer Agent resolutions, 10 Helpdesk tickets, mobile app marketing.",
+      "checkedOn": "2026-11-23"
+    },
+    "trial": {
+      "status": "free_trial",
+      "description": "No separate trial — free plan serves as entry point. Paid plans available with monthly billing.",
+      "checkedOn": "2026-11-23"
+    },
+    "platform": [
+      "Web-based SaaS"
+    ],
+    "capabilities": [
+      "Email marketing campaigns and flows",
+      "SMS and MMS marketing",
+      "AI-powered Composer for content creation",
+      "Customer Agent for automated resolutions",
+      "Social marketing and paid ads",
+      "Reviews collection and display",
+      "Customer Hub for unified profiles",
+      "Helpdesk for customer support",
+      "Mobile app push notifications",
+      "Advanced segmentation",
+      "A/B testing",
+      "Automated email flows",
+      "Ecommerce integrations (Shopify, BigCommerce, WooCommerce, Magento)",
+      "Custom reporting and analytics",
+      "Event tracking and behavioral targeting",
+      "GDPR and CCPA compliance tools"
+    ],
+    "facts_checked": "2026-11-23",
+    "confidence": "medium"
+  }
+}
