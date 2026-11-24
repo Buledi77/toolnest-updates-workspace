@@ -31,14 +31,18 @@
       "site": "https://www.adcreative.ai",
       "badge": "",
       "featured": false,
-      "best": "AI-generated ad creatives with proven templates",
+      "best": "Generating and scoring ad creatives, banners and short-form video assets",
       "pros": [
-        "AI-generated ad creatives with proven templates",
-        "Copywriting suggestions included",
-        "Fast generation of multiple ad variations"
+        "AI-generated image and video ad variations",
+        "Creative scoring and competitor-insight features",
+        "Brand and template controls for repeat campaigns"
       ],
       "logo": "/assets/logos/adcreative.png",
-      "affiliateUrl": ""
+      "affiliateUrl": "",
+      "startingPrice": "$39/mo",
+      "freePlan": false,
+      "checkedOn": "2026-11-24",
+      "pricingStatus": "7-day free trial; paid plans from $39/month, with credits and brand limits varying by plan"
     },
     {
       "id": "adobeexpress",
