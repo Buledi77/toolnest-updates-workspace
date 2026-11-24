@@ -7,7 +7,7 @@
     "slug": "freshdesk",
     "official_url": "https://www.freshworks.com/freshdesk",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/freshdesk.png",
     "aliases": []
   },
   "discovery": {
@@ -23,7 +23,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -55,12 +55,62 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.freshworks.com/freshdesk/pricing"
+    ],
     "currency": "USD",
-    "trial": "14-day free trial available with full feature access and no credit card required."
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "14-day free trial",
+    "plans": [
+      {
+        "name": "Growth",
+        "priceMonthly": 23,
+        "priceAnnualMonthlyEquivalent": 19,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Ticketing",
+            "shared inbox",
+            "knowledge base"
+          ]
+        },
+        "notes": "Per agent per month"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 66,
+        "priceAnnualMonthlyEquivalent": 55,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Multilingual",
+            "custom dashboards",
+            "SLA policies"
+          ]
+        },
+        "notes": "Per agent per month"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": 107,
+        "priceAnnualMonthlyEquivalent": 89,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Freddy AI Insights",
+            "skill-based routing",
+            "sandbox",
+            "audit logs"
+          ]
+        },
+        "notes": "Per agent per month"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

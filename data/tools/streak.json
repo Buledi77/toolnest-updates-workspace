@@ -7,7 +7,7 @@
     "slug": "streak",
     "official_url": "https://www.streak.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/streak.png",
     "aliases": []
   },
   "discovery": {
@@ -31,7 +31,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Freemium (details not verified)",
+    "pricing_status": "web-researched",
     "free_plan_status": "Free plan available (details not verified)"
   },
   "editorial": {
@@ -81,12 +81,76 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Freemium (details not verified)",
-    "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.streak.com/pricing"
+    ],
     "currency": "USD",
-    "trial": "14-day free trial of Pro+ plan available, including integrations, automation, unlimited contacts and CRM records, and 1,000 AI credits."
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "50 mail merges/day, email tracking, snippets, thread splitter",
+    "trial": "14-day free trial of Pro+",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "mailMerge": "50/day",
+          "features": [
+            "Email tracking",
+            "snippets"
+          ]
+        },
+        "notes": "Permanent free plan"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 59,
+        "priceAnnualMonthlyEquivalent": 49,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Shared pipelines",
+            "mail merge",
+            "20 AI credits"
+          ]
+        },
+        "notes": "Per user per month"
+      },
+      {
+        "name": "Pro+",
+        "priceMonthly": 89,
+        "priceAnnualMonthlyEquivalent": 69,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Automations",
+            "integrations",
+            "advanced reports",
+            "150 AI credits"
+          ]
+        },
+        "notes": "Per user per month"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": 159,
+        "priceAnnualMonthlyEquivalent": 129,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Custom roles",
+            "data validation",
+            "dedicated support"
+          ]
+        },
+        "notes": "Per user per month"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

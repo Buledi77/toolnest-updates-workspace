@@ -7,7 +7,7 @@
     "slug": "moosend",
     "official_url": "https://www.moosend.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/moosend.png",
     "aliases": []
   },
   "discovery": {
@@ -18,7 +18,7 @@
     "audiences": []
   },
   "factual_profile": {
-    "pricing_status": "Freemium (details not verified)",
+    "pricing_status": "web-researched",
     "free_plan_status": "Free plan available (details not verified)"
   },
   "editorial": {
@@ -51,10 +51,74 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Freemium (details not verified)",
-    "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.moosend.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "30-day free trial, no credit card",
+    "plans": [
+      {
+        "name": "Pro (500 contacts)",
+        "priceMonthly": 9,
+        "priceAnnualMonthlyEquivalent": 7,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": 500,
+          "emails": "Unlimited"
+        },
+        "notes": "Automation, landing pages, forms"
+      },
+      {
+        "name": "Pro (1,000 contacts)",
+        "priceMonthly": 16,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": 1000,
+          "emails": "Unlimited"
+        },
+        "notes": ""
+      },
+      {
+        "name": "Pro (2,000 contacts)",
+        "priceMonthly": 24,
+        "priceAnnualMonthlyEquivalent": 19,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": 2000,
+          "emails": "Unlimited"
+        },
+        "notes": ""
+      },
+      {
+        "name": "Pro (5,000 contacts)",
+        "priceMonthly": 48,
+        "priceAnnualMonthlyEquivalent": 38,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": 5000,
+          "emails": "Unlimited"
+        },
+        "notes": ""
+      },
+      {
+        "name": "Pro (10,000 contacts)",
+        "priceMonthly": 88,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": 10000,
+          "emails": "Unlimited"
+        },
+        "notes": ""
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

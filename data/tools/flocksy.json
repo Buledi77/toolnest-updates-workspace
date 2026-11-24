@@ -7,7 +7,7 @@
     "slug": "flocksy",
     "official_url": "https://www.flocksy.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/flocksy.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Freemium (details not verified)",
+    "pricing_status": "web-researched",
     "free_plan_status": "Free plan available (details not verified)"
   },
   "editorial": {
@@ -76,10 +76,49 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Freemium (details not verified)",
-    "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.flocksy.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": null,
+    "plans": [
+      {
+        "name": "2 Daily Hours",
+        "priceMonthly": 1699,
+        "priceAnnualMonthlyEquivalent": 1199,
+        "sourceTier": "web-research",
+        "limits": {
+          "hours": 42
+        },
+        "notes": "Dedicated creative team"
+      },
+      {
+        "name": "4 Daily Hours",
+        "priceMonthly": 3099,
+        "priceAnnualMonthlyEquivalent": 2199,
+        "sourceTier": "web-research",
+        "limits": {
+          "hours": 84
+        },
+        "notes": "Dedicated creative team"
+      },
+      {
+        "name": "8 Daily Hours",
+        "priceMonthly": 5899,
+        "priceAnnualMonthlyEquivalent": 3799,
+        "sourceTier": "web-research",
+        "limits": {
+          "hours": 168
+        },
+        "notes": "Dedicated creative team"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

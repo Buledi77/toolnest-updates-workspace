@@ -7,7 +7,7 @@
     "slug": "murf",
     "official_url": "https://murf.ai",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/murf.png",
     "aliases": []
   },
   "discovery": {
@@ -18,7 +18,7 @@
     "audiences": []
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -50,10 +50,57 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://murf.ai/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "10 minutes of voice generation, no downloads, no commercial rights",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "voiceGeneration": "10 minutes",
+          "projects": 10,
+          "commercialRights": false
+        },
+        "notes": "No downloads, no commercial rights"
+      },
+      {
+        "name": "Creator",
+        "priceMonthly": 29,
+        "priceAnnualMonthlyEquivalent": 19,
+        "sourceTier": "web-research",
+        "limits": {
+          "voiceGeneration": "24 hours per year",
+          "projects": 100,
+          "editors": 1,
+          "commercialRights": true
+        },
+        "notes": "Unlimited downloads, 200+ voices, 30+ languages"
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 99,
+        "priceAnnualMonthlyEquivalent": 66,
+        "sourceTier": "web-research",
+        "limits": {
+          "voiceGeneration": "96 hours per year",
+          "projects": 500,
+          "editors": 1,
+          "commercialRights": true
+        },
+        "notes": "Business license, PowerPoint and Google Slides integrations"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

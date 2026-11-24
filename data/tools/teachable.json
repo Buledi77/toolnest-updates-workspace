@@ -7,7 +7,7 @@
     "slug": "teachable",
     "official_url": "https://www.teachable.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/teachable.png",
     "aliases": []
   },
   "discovery": {
@@ -32,7 +32,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Freemium (details not verified)",
+    "pricing_status": "web-researched",
     "free_plan_status": "Free plan available (details not verified)"
   },
   "editorial": {
@@ -82,12 +82,71 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Freemium (details not verified)",
-    "freePlan": false,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://teachable.com/pricing"
+    ],
     "currency": "USD",
-    "trial": "7-day free trial available on all plans with 30-day money-back guarantee."
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "7-day free trial",
+    "plans": [
+      {
+        "name": "Starter",
+        "priceMonthly": 39,
+        "priceAnnualMonthlyEquivalent": 29,
+        "sourceTier": "web-research",
+        "limits": {
+          "products": 5,
+          "transactionFee": "7.5%"
+        },
+        "notes": "First course creators"
+      },
+      {
+        "name": "Builder",
+        "priceMonthly": 89,
+        "priceAnnualMonthlyEquivalent": 69,
+        "sourceTier": "web-research",
+        "limits": {
+          "products": 10,
+          "transactionFee": "0%"
+        },
+        "notes": "Affiliates, advanced features"
+      },
+      {
+        "name": "Growth",
+        "priceMonthly": 189,
+        "priceAnnualMonthlyEquivalent": 139,
+        "sourceTier": "web-research",
+        "limits": {
+          "products": 50,
+          "transactionFee": "0%",
+          "features": [
+            "Certificates",
+            "white label"
+          ]
+        },
+        "notes": "Multi-product schools"
+      },
+      {
+        "name": "Advanced",
+        "priceMonthly": 399,
+        "priceAnnualMonthlyEquivalent": 309,
+        "sourceTier": "web-research",
+        "limits": {
+          "products": 100,
+          "transactionFee": "0%",
+          "features": [
+            "Unlimited integrations",
+            "custom admin"
+          ]
+        },
+        "notes": "Enterprise users"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

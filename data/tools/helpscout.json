@@ -7,7 +7,7 @@
     "slug": "helpscout",
     "official_url": "https://www.helpscout.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/helpscout.png",
     "aliases": []
   },
   "discovery": {
@@ -31,7 +31,7 @@
   "factual_profile": {
     "free_plan_status": "Free plan for up to 5 users, 100 contacts per month",
     "trial_status": "15-day free trial on paid plans, no credit card required",
-    "pricing_status": "Freemium — free tier plus paid subscriptions from $25/user/month",
+    "pricing_status": "Freemium \u2014 free tier plus paid subscriptions from $25/user/month",
     "pricing_regions": [
       "US",
       "Global"

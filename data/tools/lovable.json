@@ -7,7 +7,7 @@
     "slug": "lovable",
     "official_url": "https://lovable.dev",
     "status": "active",
-    "logo": null,
+    "logo": "/assets/logos/lovable.png",
     "aliases": []
   },
   "discovery": {
@@ -64,13 +64,13 @@
       "Free plan limited to 5 daily credits (30/month max)",
       "Free plan projects are public",
       "Custom domains require Pro plan or higher",
-      "No per-seat billing — workspace-based credit system"
+      "No per-seat billing \u2014 workspace-based credit system"
     ],
     "free_plan_status": [
       "Free plan available with 5 daily credits (up to 30 per month), public projects"
     ],
     "trial_status": [
-      "No separate trial — Free plan serves as entry point"
+      "No separate trial \u2014 Free plan serves as entry point"
     ],
     "pricing_status": [
       "Pricing verified from official sources on 2026-11-22"
@@ -187,7 +187,7 @@
           "annualPrice": 250,
           "features": "Private projects, custom domains, badge removal"
         },
-        "notes": "Solo developers — student 50% discount available"
+        "notes": "Solo developers \u2014 student 50% discount available"
       },
       {
         "name": "Business",
@@ -214,11 +214,11 @@
       }
     ],
     "billingCaveats": [
-      "Credit-based system — credits spent on building, hosting, and AI features",
+      "Credit-based system \u2014 credits spent on building, hosting, and AI features",
       "One credit balance covers all workspace activities",
       "Annual billing offers discounted rates",
       "Student 50% discount on Pro plan",
-      "No per-seat billing — workspace-based credits"
+      "No per-seat billing \u2014 workspace-based credits"
     ]
   },
   "claims": [

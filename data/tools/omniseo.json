@@ -7,7 +7,7 @@
     "slug": "omniseo",
     "official_url": "https://www.omniseo.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/omniseo.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Freemium (details not verified)",
+    "pricing_status": "web-researched",
     "free_plan_status": "Free plan available (details not verified)"
   },
   "editorial": {
@@ -76,10 +76,62 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Freemium (details not verified)",
-    "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://omniseo.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "7-day free trial",
+    "plans": [
+      {
+        "name": "Starter",
+        "priceMonthly": 45,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "prompts": 25,
+          "seats": 5
+        },
+        "notes": "AI visibility tracking"
+      },
+      {
+        "name": "Essentials",
+        "priceMonthly": 89,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "prompts": 50,
+          "seats": 5
+        },
+        "notes": "Most popular"
+      },
+      {
+        "name": "Professional",
+        "priceMonthly": 349,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "prompts": 100,
+          "seats": 10
+        },
+        "notes": "Enhanced placement"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": 899,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "prompts": "Custom"
+        },
+        "notes": "Custom quote"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

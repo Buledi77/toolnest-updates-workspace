@@ -7,7 +7,7 @@
     "slug": "zendesk",
     "official_url": "https://www.zendesk.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/zendesk.png",
     "aliases": []
   },
   "discovery": {
@@ -31,7 +31,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Paid (details not verified)",
+    "pricing_status": "web-researched",
     "free_plan_status": "No free plan (details not verified)"
   },
   "editorial": {
@@ -81,12 +81,77 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Paid (details not verified)",
-    "freePlan": false,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.zendesk.com/pricing"
+    ],
     "currency": "USD",
-    "trial": "14-day free trial available on Suite Professional level features."
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "14-day free trial",
+    "plans": [
+      {
+        "name": "Support Team",
+        "priceMonthly": 25,
+        "priceAnnualMonthlyEquivalent": 19,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Email ticketing",
+            "basic automations"
+          ]
+        },
+        "notes": "Per agent per month"
+      },
+      {
+        "name": "Suite Team",
+        "priceMonthly": 69,
+        "priceAnnualMonthlyEquivalent": 55,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Multichannel",
+            "chat",
+            "messaging",
+            "voice",
+            "AI agents"
+          ]
+        },
+        "notes": "Per agent per month"
+      },
+      {
+        "name": "Suite Professional",
+        "priceMonthly": 149,
+        "priceAnnualMonthlyEquivalent": 115,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Skills-based routing",
+            "IVR",
+            "custom roles",
+            "HIPAA"
+          ]
+        },
+        "notes": "Per agent per month"
+      },
+      {
+        "name": "Suite Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Sandbox",
+            "audit logs",
+            "multi-brand"
+          ]
+        },
+        "notes": "Quote-only, per agent per month"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

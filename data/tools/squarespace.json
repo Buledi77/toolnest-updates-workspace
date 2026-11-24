@@ -41,7 +41,7 @@
     "limitations": [],
     "free_plan_status": [],
     "trial_status": [],
-    "pricing_status": "Pricing Not Publicly Listed",
+    "pricing_status": "web-researched",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -107,10 +107,70 @@
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.squarespace.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "14-day free trial",
+    "plans": [
+      {
+        "name": "Basic",
+        "priceMonthly": 25,
+        "priceAnnualMonthlyEquivalent": 19,
+        "sourceTier": "web-research",
+        "limits": {
+          "transactionFee": "2%"
+        },
+        "notes": "Blogs, portfolios, small business websites"
+      },
+      {
+        "name": "Core",
+        "priceMonthly": 39,
+        "priceAnnualMonthlyEquivalent": 29,
+        "sourceTier": "web-research",
+        "limits": {
+          "transactionFee": "0%",
+          "features": [
+            "Sales analytics",
+            "CSS/JS customization"
+          ]
+        },
+        "notes": "Small business with ecommerce"
+      },
+      {
+        "name": "Plus",
+        "priceMonthly": 65,
+        "priceAnnualMonthlyEquivalent": 49,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Quantity limits",
+            "reserved cart",
+            "lower card rates"
+          ]
+        },
+        "notes": "Mid-level online stores"
+      },
+      {
+        "name": "Advanced",
+        "priceMonthly": 139,
+        "priceAnnualMonthlyEquivalent": 99,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Advanced ecommerce",
+            "abandoned cart recovery"
+          ]
+        },
+        "notes": "Large-scale ecommerce"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

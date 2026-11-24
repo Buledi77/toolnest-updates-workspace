@@ -7,7 +7,7 @@
     "slug": "windsorai",
     "official_url": "https://www.windsor.ai",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/windsorai.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Freemium (details not verified)",
+    "pricing_status": "web-researched",
     "free_plan_status": "Free plan available (details not verified)"
   },
   "editorial": {
@@ -76,10 +76,79 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Freemium (details not verified)",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://windsor.ai/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
     "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "freeLimits": "1 data source, 1 account, 5M MAR included",
+    "trial": "30-day free trial on all paid plans",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "dataSources": 1,
+          "accounts": 1,
+          "mar": "5M included"
+        },
+        "notes": "Forever free plan"
+      },
+      {
+        "name": "Basic",
+        "priceMonthly": 23,
+        "priceAnnualMonthlyEquivalent": 19,
+        "sourceTier": "web-research",
+        "limits": {
+          "dataSources": 3,
+          "accounts": 75,
+          "mar": "5M included"
+        },
+        "notes": "$20 per 1M overage"
+      },
+      {
+        "name": "Standard",
+        "priceMonthly": 118,
+        "priceAnnualMonthlyEquivalent": 99,
+        "sourceTier": "web-research",
+        "limits": {
+          "dataSources": 7,
+          "accounts": 75,
+          "mar": "7.5M included"
+        },
+        "notes": "$10 per 1M overage"
+      },
+      {
+        "name": "Plus",
+        "priceMonthly": 299,
+        "priceAnnualMonthlyEquivalent": 249,
+        "sourceTier": "web-research",
+        "limits": {
+          "dataSources": 10,
+          "accounts": 200,
+          "mar": "10M included"
+        },
+        "notes": "$8 per 1M overage"
+      },
+      {
+        "name": "Professional",
+        "priceMonthly": 598,
+        "priceAnnualMonthlyEquivalent": 499,
+        "sourceTier": "web-research",
+        "limits": {
+          "dataSources": 14,
+          "accounts": 500,
+          "mar": "50M included"
+        },
+        "notes": "$4 per 1M overage, 15-minute sync intervals"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

@@ -7,7 +7,7 @@
     "slug": "stamped",
     "official_url": "https://www.stamped.io",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/stamped.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Freemium (details not verified)",
+    "pricing_status": "web-researched",
     "free_plan_status": "Free plan available (details not verified)"
   },
   "editorial": {
@@ -76,10 +76,59 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Freemium (details not verified)",
-    "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://apps.shopify.com/product-reviews-addon"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": null,
+    "plans": [
+      {
+        "name": "Reviews",
+        "priceMonthly": 23,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "orders": 200
+        },
+        "notes": "Per month"
+      },
+      {
+        "name": "Reviews (1k)",
+        "priceMonthly": 99,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "orders": 1000
+        },
+        "notes": "Per month"
+      },
+      {
+        "name": "Reviews (5k)",
+        "priceMonthly": 199,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "orders": 5000
+        },
+        "notes": "Per month"
+      },
+      {
+        "name": "Reviews (20K)",
+        "priceMonthly": 399,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "orders": 20000
+        },
+        "notes": "Per month"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

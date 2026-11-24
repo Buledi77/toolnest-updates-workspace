@@ -7,7 +7,7 @@
     "slug": "unbounce",
     "official_url": "https://unbounce.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/unbounce.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -75,10 +75,82 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://unbounce.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "14-day free trial, no credit card",
+    "plans": [
+      {
+        "name": "Starter",
+        "priceMonthly": 29,
+        "priceAnnualMonthlyEquivalent": 22,
+        "sourceTier": "web-research",
+        "limits": {
+          "visitors": "500 per month",
+          "pages": 5
+        },
+        "notes": "Drag-and-drop builder, lead forms"
+      },
+      {
+        "name": "Build",
+        "priceMonthly": 99,
+        "priceAnnualMonthlyEquivalent": 74,
+        "sourceTier": "web-research",
+        "limits": {
+          "visitors": "20,000 per month",
+          "pages": "Unlimited"
+        },
+        "notes": "Popups, sticky bars, AI copywriting"
+      },
+      {
+        "name": "Experiment",
+        "priceMonthly": 149,
+        "priceAnnualMonthlyEquivalent": 112,
+        "sourceTier": "web-research",
+        "limits": {
+          "visitors": "30,000 per month",
+          "features": [
+            "A/B testing",
+            "dynamic text replacement"
+          ]
+        },
+        "notes": "Unlimited A/B tests"
+      },
+      {
+        "name": "Optimize",
+        "priceMonthly": 249,
+        "priceAnnualMonthlyEquivalent": 187,
+        "sourceTier": "web-research",
+        "limits": {
+          "visitors": "50,000 per month",
+          "features": [
+            "Smart Traffic AI",
+            "audience insights"
+          ]
+        },
+        "notes": "AI traffic routing"
+      },
+      {
+        "name": "Agency",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": 349,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "White-label",
+            "client management"
+          ]
+        },
+        "notes": "Billed annually"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

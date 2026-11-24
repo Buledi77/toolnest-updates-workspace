@@ -41,7 +41,7 @@
     "limitations": [],
     "free_plan_status": [],
     "trial_status": [],
-    "pricing_status": "Pricing Not Publicly Listed",
+    "pricing_status": "web-researched",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -111,10 +111,56 @@
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://prowritingaid.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "500 words per check, 5 reports/day",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "words": 500,
+          "reports": "5/day"
+        },
+        "notes": "500 words per check"
+      },
+      {
+        "name": "Premium",
+        "priceMonthly": 30,
+        "priceAnnualMonthlyEquivalent": 10,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Unlimited checks",
+            "25+ reports"
+          ]
+        },
+        "notes": "Lifetime $399 available"
+      },
+      {
+        "name": "Premium Pro",
+        "priceMonthly": 36,
+        "priceAnnualMonthlyEquivalent": 12,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "AI features",
+            "coaching"
+          ]
+        },
+        "notes": "Lifetime $699 available"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

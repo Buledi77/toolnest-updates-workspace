@@ -7,7 +7,7 @@
     "slug": "deel",
     "official_url": "https://www.deel.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/deel.png",
     "aliases": []
   },
   "discovery": {
@@ -18,7 +18,7 @@
     "audiences": []
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "C",
@@ -50,10 +50,76 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.deel.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": null,
+    "plans": [
+      {
+        "name": "HR Core",
+        "priceMonthly": 5,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "perEmployee": true
+        },
+        "notes": "Per employee per month"
+      },
+      {
+        "name": "Global Payroll",
+        "priceMonthly": 29,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "perEmployee": true,
+          "features": [
+            "Multi-currency",
+            "local tax filings"
+          ]
+        },
+        "notes": "Per employee per month"
+      },
+      {
+        "name": "Contractor Management",
+        "priceMonthly": 49,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "perContractor": true
+        },
+        "notes": "Per contractor per month"
+      },
+      {
+        "name": "Contractor of Record",
+        "priceMonthly": 325,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "perContractor": true
+        },
+        "notes": "Per contractor per month"
+      },
+      {
+        "name": "EOR",
+        "priceMonthly": 599,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "perEmployee": true,
+          "features": [
+            "Legal employment in 130+ countries"
+          ]
+        },
+        "notes": "Per employee per month, salary on top"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

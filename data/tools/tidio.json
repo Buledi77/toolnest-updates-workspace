@@ -7,7 +7,7 @@
     "slug": "tidio",
     "official_url": "https://www.tidio.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/tidio.png",
     "aliases": []
   },
   "discovery": {
@@ -19,7 +19,7 @@
     "audiences": []
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "C",
@@ -51,10 +51,66 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.tidio.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "50 billable conversations, 100 Flows visitors, 10 seats",
+    "trial": "7-day free trial",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "conversations": 50,
+          "seats": 10
+        },
+        "notes": "50 Flows visitors"
+      },
+      {
+        "name": "Starter",
+        "priceMonthly": 29,
+        "priceAnnualMonthlyEquivalent": 24.17,
+        "sourceTier": "web-research",
+        "limits": {
+          "conversations": 100,
+          "seats": 10
+        },
+        "notes": "Live chat, ticketing"
+      },
+      {
+        "name": "Growth",
+        "priceMonthly": 59,
+        "priceAnnualMonthlyEquivalent": 49.17,
+        "sourceTier": "web-research",
+        "limits": {
+          "conversations": 250,
+          "seats": 10
+        },
+        "notes": "Advanced analytics, permissions"
+      },
+      {
+        "name": "Plus",
+        "priceMonthly": 300,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "conversations": "Custom",
+          "features": [
+            "Lyro Connect",
+            "dedicated CSM"
+          ]
+        },
+        "notes": "Plus usage-based pricing"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

@@ -7,7 +7,7 @@
     "slug": "logome",
     "official_url": "https://www.logome.ai",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/logome.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Freemium (details not verified)",
+    "pricing_status": "web-researched",
     "free_plan_status": "Free plan available (details not verified)"
   },
   "editorial": {
@@ -76,10 +76,49 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Freemium (details not verified)",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://logome.ai/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
     "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "freeLimits": "Free preview and design, paid for downloads",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Basic Logo Pack",
+        "priceMonthly": 29,
+        "priceAnnualMonthlyEquivalent": 19,
+        "sourceTier": "web-research",
+        "limits": {
+          "outputs": "Logo variations, high-res exports"
+        },
+        "notes": "PNG, SVG, PDF, EPS formats"
+      },
+      {
+        "name": "Premium Logo Pack",
+        "priceMonthly": 99,
+        "priceAnnualMonthlyEquivalent": 49,
+        "sourceTier": "web-research",
+        "limits": {
+          "outputs": "Logo + brand elements"
+        },
+        "notes": "Expanded brand collateral"
+      },
+      {
+        "name": "Logo + Brand Kit",
+        "priceMonthly": 199,
+        "priceAnnualMonthlyEquivalent": 99,
+        "sourceTier": "web-research",
+        "limits": {
+          "outputs": "Full brand kit with mockups"
+        },
+        "notes": "Complete branding package"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

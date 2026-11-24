@@ -7,7 +7,7 @@
     "slug": "hightouch",
     "official_url": "https://www.hightouch.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/hightouch.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Paid (details not verified)",
+    "pricing_status": "web-researched",
     "free_plan_status": "No free plan (details not verified)"
   },
   "editorial": {
@@ -76,10 +76,61 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Paid (details not verified)",
-    "freePlan": false,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.hightouch.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "2 active syncs, unlimited destinations, unlimited seats",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Basic Reverse ETL (Free)",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "syncs": 2,
+          "destinations": "Unlimited",
+          "seats": "Unlimited"
+        },
+        "notes": "Free tier"
+      },
+      {
+        "name": "Composable CDP",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Reverse ETL",
+            "Events",
+            "Customer Studio",
+            "Identity Resolution"
+          ]
+        },
+        "notes": "Usage-based, custom quote"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "SOC 2",
+            "ISO 27001",
+            "custom SLAs",
+            "dedicated support"
+          ]
+        },
+        "notes": "Custom quote, $10K-$100K+/mo"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

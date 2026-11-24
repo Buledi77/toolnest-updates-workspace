@@ -7,7 +7,7 @@
     "slug": "heygen",
     "official_url": "https://www.heygen.com",
     "status": "active",
-    "logo": null,
+    "logo": "/assets/logos/heygen.png",
     "aliases": []
   },
   "discovery": {
@@ -62,7 +62,7 @@
     "limitations": [
       "Free plan limited to 3 videos/month, 1 minute max, watermarked",
       "Credits consumed at different rates depending on model and features",
-      "Creator plan cannot buy extra credits — must upgrade to Pro",
+      "Creator plan cannot buy extra credits \u2014 must upgrade to Pro",
       "Business extra seats do not increase shared credit balance",
       "API usage billed separately"
     ],
@@ -70,7 +70,7 @@
       "Free plan available with 3 videos per month, 1 minute max, watermarked"
     ],
     "trial_status": [
-      "No separate trial — Free plan serves as entry point"
+      "No separate trial \u2014 Free plan serves as entry point"
     ],
     "pricing_status": [
       "Pricing verified from official sources on 2026-11-22"
@@ -185,7 +185,7 @@
           "watermark": false,
           "annualPrice": 288
         },
-        "notes": "Individual publishing — cannot buy extra credits"
+        "notes": "Individual publishing \u2014 cannot buy extra credits"
       },
       {
         "name": "Pro",
@@ -199,7 +199,7 @@
           "watermark": false,
           "annualPrice": 488
         },
-        "notes": "Higher volume or quality — 4K export, Avatar 6 Pro"
+        "notes": "Higher volume or quality \u2014 4K export, Avatar 6 Pro"
       },
       {
         "name": "Business",
@@ -214,7 +214,7 @@
           "features": "SSO, SCORM export, LMS integrations",
           "extraCredits": "$5 per 100 credits"
         },
-        "notes": "Teams — extra seats do not increase credit balance"
+        "notes": "Teams \u2014 extra seats do not increase credit balance"
       },
       {
         "name": "Enterprise",
@@ -229,10 +229,10 @@
       }
     ],
     "billingCaveats": [
-      "Credit-based system — credits consumed at different rates by model and feature",
+      "Credit-based system \u2014 credits consumed at different rates by model and feature",
       "Avatar IV approximately 20 credits per minute",
       "API billed separately from subscription credits",
-      "Creator plan cannot buy extra credits — must upgrade to Pro",
+      "Creator plan cannot buy extra credits \u2014 must upgrade to Pro",
       "Business extra seats cost $20/month but do not add credits",
       "Audio dubbing (translation without lip-sync) is unlimited"
     ]

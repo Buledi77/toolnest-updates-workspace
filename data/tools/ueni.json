@@ -7,7 +7,7 @@
     "slug": "ueni",
     "official_url": "https://ueni.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/ueni.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -75,10 +75,68 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.ueni.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": null,
+    "plans": [
+      {
+        "name": "Launch",
+        "priceMonthly": 24.99,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Website builder",
+            "AI"
+          ]
+        },
+        "notes": "Per month"
+      },
+      {
+        "name": "Plus",
+        "priceMonthly": 59,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Advanced features"
+          ]
+        },
+        "notes": "Per month"
+      },
+      {
+        "name": "Growth",
+        "priceMonthly": 124.99,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "E-commerce"
+          ]
+        },
+        "notes": "Per month"
+      },
+      {
+        "name": "Platinum",
+        "priceMonthly": 199,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Premium support"
+          ]
+        },
+        "notes": "Per month"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

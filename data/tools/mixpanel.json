@@ -7,7 +7,7 @@
     "slug": "mixpanel",
     "official_url": "https://mixpanel.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/mixpanel.png",
     "aliases": []
   },
   "discovery": {
@@ -29,7 +29,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Freemium (details not verified)",
+    "pricing_status": "web-researched",
     "free_plan_status": "Free plan available (details not verified)"
   },
   "editorial": {
@@ -79,12 +79,51 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Freemium (details not verified)",
-    "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://mixpanel.com/pricing"
+    ],
     "currency": "USD",
-    "trial": "No separate trial — free plan serves as entry point. Startup program offers up to $50,000 in credits for qualifying companies."
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "1M events/month, unlimited seats",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "events": "1M/month",
+          "seats": "Unlimited"
+        },
+        "notes": "Permanent free plan"
+      },
+      {
+        "name": "Growth",
+        "priceMonthly": 24,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "events": "1M-20M",
+          "overage": "$0.28/1K events"
+        },
+        "notes": "First 1M events free, scales with usage"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "events": "Unlimited"
+        },
+        "notes": "Custom quote"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

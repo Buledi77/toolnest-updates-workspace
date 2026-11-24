@@ -7,7 +7,7 @@
     "slug": "ideogram",
     "official_url": "https://ideogram.ai",
     "status": "active",
-    "logo": null,
+    "logo": "/assets/logos/ideogram.png",
     "aliases": []
   },
   "discovery": {
@@ -69,7 +69,7 @@
       "Free plan available with 30 credits per week, public generations only"
     ],
     "trial_status": [
-      "No separate trial — Free plan serves as entry point"
+      "No separate trial \u2014 Free plan serves as entry point"
     ],
     "pricing_status": [
       "Pricing verified from official sources on 2026-11-22"
@@ -205,7 +205,7 @@
           "credits": "3,600 per user per month",
           "minUsers": 2
         },
-        "notes": "Teams of 2+ — credits per user, not pooled"
+        "notes": "Teams of 2+ \u2014 credits per user, not pooled"
       },
       {
         "name": "Enterprise",
@@ -226,11 +226,11 @@
         "limits": {
           "perCredit": "$0.01 per credit"
         },
-        "notes": "No subscription — credits on demand"
+        "notes": "No subscription \u2014 credits on demand"
       }
     ],
     "billingCaveats": [
-      "Credits increased in October 2026 — older sources may show lower numbers",
+      "Credits increased in October 2026 \u2014 older sources may show lower numbers",
       "Old Basic plan ($8/mo) retired for new subscribers",
       "Team credits belong to individual users, not pooled",
       "API draws on same credits as the app",

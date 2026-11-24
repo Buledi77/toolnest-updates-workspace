@@ -7,7 +7,7 @@
     "slug": "cursor",
     "official_url": "https://www.cursor.com",
     "status": "active",
-    "logo": null,
+    "logo": "/assets/logos/cursor.png",
     "aliases": []
   },
   "discovery": {
@@ -57,7 +57,7 @@
     ],
     "limitations": [
       "Third-party models billed separately at API list price on new plans",
-      "Usage limits vary by plan tier — heavy agent use can exhaust credits quickly",
+      "Usage limits vary by plan tier \u2014 heavy agent use can exhaust credits quickly",
       "Legacy plans not available to new customers",
       "No offline mode"
     ],
@@ -65,7 +65,7 @@
       "Free plan available with limited AI usage"
     ],
     "trial_status": [
-      "No trial — Free plan serves as entry point"
+      "No trial \u2014 Free plan serves as entry point"
     ],
     "pricing_status": [
       "Pricing verified from official sources on 2026-11-22"
@@ -187,7 +187,7 @@
           "thirdPartyModels": "Not available",
           "annualPrice": 80
         },
-        "notes": "Introductory plan — only Grok models available"
+        "notes": "Introductory plan \u2014 only Grok models available"
       },
       {
         "name": "Premium",
@@ -199,7 +199,7 @@
           "thirdPartyModels": "API list price, from prepaid credit",
           "annualPrice": 300
         },
-        "notes": "Most popular tier — includes third-party model access"
+        "notes": "Most popular tier \u2014 includes third-party model access"
       },
       {
         "name": "Super",
@@ -250,7 +250,7 @@
       }
     ],
     "billingCaveats": [
-      "Part of The X Subscription — shared with Grok and X",
+      "Part of The X Subscription \u2014 shared with Grok and X",
       "Usage-based billing with AI credits at underlying model rates",
       "Legacy Cursor plans (Hobby, Pro, Pro+, etc.) still active for existing customers",
       "Third-party models billed separately on new plans",

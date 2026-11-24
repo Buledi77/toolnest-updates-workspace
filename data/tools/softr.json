@@ -7,7 +7,7 @@
     "slug": "softr",
     "official_url": "https://www.softr.io",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/softr.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -75,10 +75,81 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.softr.io/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "3 builders, 5 app users, 5K records",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "builders": 3,
+          "appUsers": 5,
+          "records": 5000
+        },
+        "notes": "Softr branding"
+      },
+      {
+        "name": "Basic",
+        "priceMonthly": 25,
+        "priceAnnualMonthlyEquivalent": 19,
+        "sourceTier": "web-research",
+        "limits": {
+          "builders": 1,
+          "appUsers": 10,
+          "records": 50000
+        },
+        "notes": "Custom domain"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 119,
+        "priceAnnualMonthlyEquivalent": 99,
+        "sourceTier": "web-research",
+        "limits": {
+          "builders": 2,
+          "appUsers": 60,
+          "records": 500000
+        },
+        "notes": "No Softr branding"
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 395,
+        "priceAnnualMonthlyEquivalent": 329,
+        "sourceTier": "web-research",
+        "limits": {
+          "builders": 3,
+          "appUsers": 130,
+          "records": 1000000
+        },
+        "notes": "SQL connections, 2FA"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "SSO",
+            "SCIM",
+            "audit logs"
+          ]
+        },
+        "notes": "Custom quote"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

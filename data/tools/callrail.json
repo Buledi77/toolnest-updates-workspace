@@ -37,7 +37,7 @@
     "limitations": [],
     "free_plan_status": [],
     "trial_status": [],
-    "pricing_status": "Pricing Not Publicly Listed",
+    "pricing_status": "web-researched",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -82,10 +82,68 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.callrail.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "14-day free trial, no credit card",
+    "plans": [
+      {
+        "name": "Lead Tracking",
+        "priceMonthly": 55,
+        "priceAnnualMonthlyEquivalent": 50,
+        "sourceTier": "web-research",
+        "limits": {
+          "numbers": 5,
+          "minutes": 250,
+          "texts": 25
+        },
+        "notes": "Extra numbers $3/mo, extra minutes $0.06/min"
+      },
+      {
+        "name": "Lead Tracking Complete",
+        "priceMonthly": 105,
+        "priceAnnualMonthlyEquivalent": 95,
+        "sourceTier": "web-research",
+        "limits": {
+          "numbers": 5,
+          "minutes": 250,
+          "formSubmissions": 1000
+        },
+        "notes": "Form tracking and attribution"
+      },
+      {
+        "name": "Lead Conversion",
+        "priceMonthly": 165,
+        "priceAnnualMonthlyEquivalent": 150,
+        "sourceTier": "web-research",
+        "limits": {
+          "numbers": 5,
+          "minutes": 250,
+          "transcriptionMinutes": 10000
+        },
+        "notes": "AI call summaries and sentiment"
+      },
+      {
+        "name": "Lead Conversion Complete",
+        "priceMonthly": 215,
+        "priceAnnualMonthlyEquivalent": 195,
+        "sourceTier": "web-research",
+        "limits": {
+          "numbers": 5,
+          "minutes": 250,
+          "formSubmissions": 1000,
+          "transcriptionMinutes": 10000
+        },
+        "notes": "All features combined"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

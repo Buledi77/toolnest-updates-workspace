@@ -7,7 +7,7 @@
     "slug": "upwork",
     "official_url": "https://www.upwork.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/upwork.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -75,12 +75,44 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
-    "billingBasis": "as listed on official pricing page",
-    "currency": "USD"
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.upwork.com/resources/is-upwork-free"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "10 connects/month, 0-15% service fee",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Basic (Free)",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "connects": 10,
+          "serviceFee": "0-15%"
+        },
+        "notes": "Free to join"
+      },
+      {
+        "name": "Freelancer Plus",
+        "priceMonthly": 19.99,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "connects": 100,
+          "features": [
+            "Job alerts",
+            "profile customization"
+          ]
+        },
+        "notes": "Optional subscription"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

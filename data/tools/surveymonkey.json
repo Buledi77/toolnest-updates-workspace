@@ -7,7 +7,7 @@
     "slug": "surveymonkey",
     "official_url": "https://www.surveymonkey.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/surveymonkey.png",
     "aliases": []
   },
   "discovery": {
@@ -31,7 +31,7 @@
   "factual_profile": {
     "free_plan_status": "Free Basic plan with 10 questions per survey, limited responses",
     "trial_status": "No free trial; free plan serves as ongoing trial",
-    "pricing_status": "Freemium — free tier plus paid subscriptions from $25/month",
+    "pricing_status": "Freemium \u2014 free tier plus paid subscriptions from $25/month",
     "pricing_regions": [
       "US",
       "Global"
@@ -93,7 +93,7 @@
     "billingBasis": "annual",
     "freePlan": true,
     "freeLimits": "10 questions per survey, limited viewable responses, no data export",
-    "trial": "No separate trial — free plan serves as entry point. Paid plans available with monthly billing.",
+    "trial": "No separate trial \u2014 free plan serves as entry point. Paid plans available with monthly billing.",
     "plans": [
       {
         "name": "Basic",

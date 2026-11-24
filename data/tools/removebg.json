@@ -41,7 +41,7 @@
     "limitations": [],
     "free_plan_status": [],
     "trial_status": [],
-    "pricing_status": "Pricing Not Publicly Listed",
+    "pricing_status": "web-researched",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -107,10 +107,61 @@
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.remove.bg/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "Low-res preview (0.25 MP), first 50 API calls per month free",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "resolution": "0.25 MP preview",
+          "apiCalls": "First 50 free per month"
+        },
+        "notes": "Preview only, non-commercial"
+      },
+      {
+        "name": "Subscription",
+        "priceMonthly": 9,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": 40,
+          "resolution": "Full resolution up to 50 MP"
+        },
+        "notes": "API access, commercial-use rights, 1 credit per image"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 39,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": 200
+        },
+        "notes": "Bulk processing, $0.195 per image"
+      },
+      {
+        "name": "Volume+",
+        "priceMonthly": 99,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": 500
+        },
+        "notes": "High volume, $0.198 per image"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

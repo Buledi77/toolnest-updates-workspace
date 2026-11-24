@@ -7,7 +7,7 @@
     "slug": "timedoctor",
     "official_url": "https://www.timedoctor.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/timedoctor.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "migrated_from_v1"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -75,12 +75,50 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
-    "billingBasis": "annual and monthly billing",
-    "currency": "USD"
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      ""
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "trial": "14 days",
+    "plans": [
+      {
+        "name": "Basic",
+        "priceMonthly": 6.67,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      },
+      {
+        "name": "Standard",
+        "priceMonthly": 11.67,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      },
+      {
+        "name": "Premium",
+        "priceMonthly": 16.7,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      }
+    ],
+    "billingCaveat": "Pricing migrated from legacy data. Please verify on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

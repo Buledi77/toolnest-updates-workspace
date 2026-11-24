@@ -41,7 +41,7 @@
     "limitations": [],
     "free_plan_status": "Free plan available (details not verified)",
     "trial_status": [],
-    "pricing_status": "Freemium (details not verified)",
+    "pricing_status": "web-researched",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -107,10 +107,65 @@
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Freemium (details not verified)",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://systeme.io/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
     "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "freeLimits": "2,000 contacts, 3 funnels",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": 2000,
+          "funnels": 3
+        },
+        "notes": "Permanent free plan"
+      },
+      {
+        "name": "Startup",
+        "priceMonthly": 17,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": 5000,
+          "funnels": 5
+        },
+        "notes": "0% transaction fees"
+      },
+      {
+        "name": "Webinar",
+        "priceMonthly": 47,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": 10000,
+          "features": [
+            "Webinars"
+          ]
+        },
+        "notes": "0% transaction fees"
+      },
+      {
+        "name": "Unlimited",
+        "priceMonthly": 97,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": "Unlimited",
+          "funnels": "Unlimited"
+        },
+        "notes": "0% transaction fees"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

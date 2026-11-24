@@ -7,7 +7,7 @@
     "slug": "gamma",
     "official_url": "https://gamma.app",
     "status": "active",
-    "logo": null,
+    "logo": "/assets/logos/gamma.png",
     "aliases": []
   },
   "discovery": {
@@ -31,7 +31,7 @@
     "limitations": [],
     "free_plan_status": [],
     "trial_status": [],
-    "pricing_status": "Pricing Not Publicly Listed",
+    "pricing_status": "web-researched",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -90,10 +90,65 @@
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://gamma.app/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "400 one-time AI credits, up to 10 cards per prompt, Gamma branding",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": "400 one-time",
+          "cardsPerPrompt": 10
+        },
+        "notes": "Gamma branding on all output"
+      },
+      {
+        "name": "Plus",
+        "priceMonthly": 12,
+        "priceAnnualMonthlyEquivalent": 9,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": "1,500 per month",
+          "cardsPerPrompt": 100
+        },
+        "notes": "Remove branding, custom fonts and domains"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 25,
+        "priceAnnualMonthlyEquivalent": 18,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": "4,000 per month",
+          "cardsPerPrompt": 100,
+          "domains": 10
+        },
+        "notes": "Unlimited AI creation, premium AI models, API access, analytics"
+      },
+      {
+        "name": "Ultra",
+        "priceMonthly": 100,
+        "priceAnnualMonthlyEquivalent": 90,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": "20,000 per month",
+          "cardsPerPrompt": 100,
+          "domains": 100
+        },
+        "notes": "Most advanced AI, Studio Mode"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

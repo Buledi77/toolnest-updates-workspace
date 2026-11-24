@@ -7,7 +7,7 @@
     "slug": "pipedrive",
     "official_url": "https://www.pipedrive.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/pipedrive.png",
     "aliases": []
   },
   "discovery": {
@@ -23,7 +23,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Paid (details not verified)",
+    "pricing_status": "migrated_from_v1",
     "free_plan_status": "No free plan (details not verified)"
   },
   "editorial": {
@@ -56,12 +56,50 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Paid (details not verified)",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      ""
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
     "freePlan": false,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
-    "billingBasis": "annual billing",
-    "currency": "USD"
+    "trial": "14 days",
+    "plans": [
+      {
+        "name": "Lite",
+        "priceMonthly": 14,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      },
+      {
+        "name": "Essential",
+        "priceMonthly": 27,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      },
+      {
+        "name": "Scale",
+        "priceMonthly": 49,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      },
+      {
+        "name": "Premium",
+        "priceMonthly": 79,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      }
+    ],
+    "billingCaveat": "Pricing migrated from legacy data. Please verify on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

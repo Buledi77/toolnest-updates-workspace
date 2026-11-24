@@ -7,7 +7,7 @@
     "slug": "storylane",
     "official_url": "https://www.storylane.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/storylane.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Freemium (details not verified)",
+    "pricing_status": "web-researched",
     "free_plan_status": "Free plan available (details not verified)"
   },
   "editorial": {
@@ -76,10 +76,84 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Freemium (details not verified)",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.storylane.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
     "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "freeLimits": "1 seat, 1 published demo",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "seats": 1,
+          "demos": 1
+        },
+        "notes": "1 published demo"
+      },
+      {
+        "name": "Starter",
+        "priceMonthly": 50,
+        "priceAnnualMonthlyEquivalent": 40,
+        "sourceTier": "web-research",
+        "limits": {
+          "seats": 1,
+          "extraSeats": "$40/seat"
+        },
+        "notes": "Unlimited demos"
+      },
+      {
+        "name": "Growth",
+        "priceMonthly": 625,
+        "priceAnnualMonthlyEquivalent": 500,
+        "sourceTier": "web-research",
+        "limits": {
+          "seats": 5,
+          "extraSeats": "$100/seat",
+          "features": [
+            "HTML editor",
+            "A/B testing"
+          ]
+        },
+        "notes": "HTML capture starts here"
+      },
+      {
+        "name": "Premium",
+        "priceMonthly": 1500,
+        "priceAnnualMonthlyEquivalent": 1200,
+        "sourceTier": "web-research",
+        "limits": {
+          "seats": 10,
+          "features": [
+            "Salesforce",
+            "SSO",
+            "whitelabel"
+          ]
+        },
+        "notes": "Deal intelligence"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "API",
+            "sandbox demos"
+          ]
+        },
+        "notes": "Custom quote"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

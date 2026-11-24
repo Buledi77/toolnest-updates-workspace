@@ -2640,7 +2640,7 @@
       "badge": "",
       "featured": false,
       "best": "Browser-based full-stack application builder by StackBlitz",
-      "logo": null,
+      "logo": "/assets/logos/bolt.png",
       "affiliateUrl": "",
       "startingPrice": "Free",
       "freePlan": true,

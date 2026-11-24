@@ -7,7 +7,7 @@
     "slug": "quo",
     "official_url": "https://www.quo.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/quo.png",
     "aliases": []
   },
   "discovery": {
@@ -19,7 +19,7 @@
     "audiences": []
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "C",
@@ -51,10 +51,59 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.quo.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "7-day free trial",
+    "plans": [
+      {
+        "name": "Starter",
+        "priceMonthly": 19,
+        "priceAnnualMonthlyEquivalent": 15,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Calling",
+            "texting",
+            "voicemail transcription"
+          ]
+        },
+        "notes": "Per user per month"
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 33,
+        "priceAnnualMonthlyEquivalent": 23,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "AI agent",
+            "call recording"
+          ]
+        },
+        "notes": "Per user per month"
+      },
+      {
+        "name": "Scale",
+        "priceMonthly": 47,
+        "priceAnnualMonthlyEquivalent": 35,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Advanced admin",
+            "compliance"
+          ]
+        },
+        "notes": "Per user per month"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

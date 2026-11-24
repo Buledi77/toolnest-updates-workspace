@@ -7,7 +7,7 @@
     "slug": "trainual",
     "official_url": "https://www.trainual.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/trainual.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -75,12 +75,62 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
-    "billingBasis": "as listed on official pricing page",
-    "currency": "USD"
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.trainual.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "7-day free trial",
+    "plans": [
+      {
+        "name": "Core",
+        "priceMonthly": 249,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "seats": 10,
+          "extraSeats": "$3/seat"
+        },
+        "notes": "AI documentation, flowcharts, screen recording"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 319,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "seats": 10,
+          "extraSeats": "$4/seat",
+          "features": [
+            "Video transcription",
+            "e-signatures",
+            "SCORM"
+          ]
+        },
+        "notes": "Individual training paths"
+      },
+      {
+        "name": "Premium",
+        "priceMonthly": 399,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "seats": 10,
+          "extraSeats": "$5/seat",
+          "features": [
+            "SSO",
+            "custom branding",
+            "unlimited video"
+          ]
+        },
+        "notes": "Custom domain, unlimited version history"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

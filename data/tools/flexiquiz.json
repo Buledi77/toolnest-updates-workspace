@@ -7,7 +7,7 @@
     "slug": "flexiquiz",
     "official_url": "https://www.flexiquiz.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/flexiquiz.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -73,10 +73,69 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.flexiquiz.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "3 quizzes, 30 responses/month",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "quizzes": 3,
+          "responses": 30
+        },
+        "notes": "Permanent free plan"
+      },
+      {
+        "name": "Essentials",
+        "priceMonthly": 25,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Unlimited quizzes",
+            "certificates"
+          ]
+        },
+        "notes": "Per month"
+      },
+      {
+        "name": "Premium",
+        "priceMonthly": 39,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Advanced reporting",
+            "API"
+          ]
+        },
+        "notes": "Per month"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": 89,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "SSO",
+            "white-label"
+          ]
+        },
+        "notes": "Per month"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

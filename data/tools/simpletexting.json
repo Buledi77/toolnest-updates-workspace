@@ -7,7 +7,7 @@
     "slug": "simpletexting",
     "official_url": "https://www.simpletexting.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/simpletexting.png",
     "aliases": []
   },
   "discovery": {
@@ -29,7 +29,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -78,12 +78,74 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": false,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.simpletexting.com/pricing"
+    ],
     "currency": "USD",
-    "trial": "14-day free trial available."
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "Free trial available",
+    "plans": [
+      {
+        "name": "Starter",
+        "priceMonthly": 29,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": 500,
+          "costPerCredit": 0.058
+        },
+        "notes": "Toll-free number; local number +$10/mo"
+      },
+      {
+        "name": "Basic",
+        "priceMonthly": 49,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": 1000,
+          "costPerCredit": 0.049
+        },
+        "notes": ""
+      },
+      {
+        "name": "Growth",
+        "priceMonthly": 79,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": 2000,
+          "costPerCredit": 0.0395
+        },
+        "notes": ""
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 109,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": 3000,
+          "costPerCredit": 0.0363
+        },
+        "notes": ""
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 229,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": 7500,
+          "costPerCredit": 0.0305
+        },
+        "notes": ""
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

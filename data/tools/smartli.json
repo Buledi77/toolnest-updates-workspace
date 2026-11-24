@@ -7,7 +7,7 @@
     "slug": "smartli",
     "official_url": "https://www.smartli.io",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/smartli.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -75,10 +75,62 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.smartli.ai/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "7-day free trial",
+    "plans": [
+      {
+        "name": "Starter",
+        "priceMonthly": 39,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "descriptions": 20
+        },
+        "notes": "Per month"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 59,
+        "priceAnnualMonthlyEquivalent": 24,
+        "sourceTier": "web-research",
+        "limits": {
+          "descriptions": 100,
+          "blogs": 10
+        },
+        "notes": "Per month"
+      },
+      {
+        "name": "Empire",
+        "priceMonthly": 99,
+        "priceAnnualMonthlyEquivalent": 57,
+        "sourceTier": "web-research",
+        "limits": {
+          "descriptions": 1000,
+          "blogs": 50
+        },
+        "notes": "Per month"
+      },
+      {
+        "name": "Unicorn",
+        "priceMonthly": 299,
+        "priceAnnualMonthlyEquivalent": 79,
+        "sourceTier": "web-research",
+        "limits": {
+          "descriptions": "Unlimited",
+          "blogs": "Unlimited"
+        },
+        "notes": "Per month"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

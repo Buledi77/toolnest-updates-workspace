@@ -7,7 +7,7 @@
     "slug": "nutshell",
     "official_url": "https://www.nutshell.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/nutshell.png",
     "aliases": []
   },
   "discovery": {
@@ -18,7 +18,7 @@
     "audiences": []
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "C",
@@ -50,10 +50,93 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.nutshell.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "14-day free trial, no credit card",
+    "plans": [
+      {
+        "name": "Foundation",
+        "priceMonthly": 19,
+        "priceAnnualMonthlyEquivalent": 13,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": "Unlimited",
+          "openLeads": 100,
+          "pipelines": 1,
+          "aiOutcomes": 10
+        },
+        "notes": "Per user per month"
+      },
+      {
+        "name": "Growth",
+        "priceMonthly": 32,
+        "priceAnnualMonthlyEquivalent": 25,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": "Unlimited",
+          "aiOutcomes": 20,
+          "features": [
+            "Activity reports",
+            "lead assignment"
+          ]
+        },
+        "notes": "Per user per month"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 49,
+        "priceAnnualMonthlyEquivalent": 42,
+        "sourceTier": "web-research",
+        "limits": {
+          "pipelines": 5,
+          "aiOutcomes": 40,
+          "features": [
+            "Automation",
+            "sequences",
+            "advanced reporting"
+          ]
+        },
+        "notes": "Per user per month"
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 67,
+        "priceAnnualMonthlyEquivalent": 59,
+        "sourceTier": "web-research",
+        "limits": {
+          "pipelines": 10,
+          "aiOutcomes": 100,
+          "features": [
+            "Audit log",
+            "advanced scheduler"
+          ]
+        },
+        "notes": "Per user per month"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": 89,
+        "priceAnnualMonthlyEquivalent": 79,
+        "sourceTier": "web-research",
+        "limits": {
+          "pipelines": "Unlimited",
+          "aiOutcomes": 150,
+          "features": [
+            "SSO",
+            "read-only SQL"
+          ]
+        },
+        "notes": "Per user per month"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

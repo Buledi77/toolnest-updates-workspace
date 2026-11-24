@@ -37,7 +37,7 @@
     "limitations": [],
     "free_plan_status": [],
     "trial_status": [],
-    "pricing_status": "Pricing Not Publicly Listed",
+    "pricing_status": "web-researched",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -82,10 +82,52 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.campaignmonitor.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "30-day trial with 500 contacts",
+    "plans": [
+      {
+        "name": "Lite",
+        "priceMonthly": 13,
+        "priceAnnualMonthlyEquivalent": 11.7,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": 500,
+          "emails": "5x contacts"
+        },
+        "notes": "Capped send volume"
+      },
+      {
+        "name": "Essentials",
+        "priceMonthly": 31,
+        "priceAnnualMonthlyEquivalent": 27.9,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": 500,
+          "emails": "Unlimited"
+        },
+        "notes": "Best value, automation, segmentation"
+      },
+      {
+        "name": "Premier",
+        "priceMonthly": 171,
+        "priceAnnualMonthlyEquivalent": 153.9,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": 500,
+          "emails": "Unlimited"
+        },
+        "notes": "Phone support, send time optimization, advanced segments"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

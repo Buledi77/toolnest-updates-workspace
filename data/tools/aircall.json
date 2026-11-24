@@ -7,7 +7,7 @@
     "slug": "aircall",
     "official_url": "https://www.aircall.io",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/aircall.png",
     "aliases": []
   },
   "discovery": {

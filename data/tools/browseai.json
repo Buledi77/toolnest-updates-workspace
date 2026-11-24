@@ -37,7 +37,7 @@
     "limitations": [],
     "free_plan_status": "Free plan available (details not verified)",
     "trial_status": [],
-    "pricing_status": "Freemium (details not verified)",
+    "pricing_status": "web-researched",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -82,10 +82,62 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Freemium (details not verified)",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.browse.ai/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
     "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "freeLimits": "50 credits/month, 2 websites",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": 50,
+          "websites": 2
+        },
+        "notes": "No credit card"
+      },
+      {
+        "name": "Personal",
+        "priceMonthly": 48,
+        "priceAnnualMonthlyEquivalent": 19,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": 2000,
+          "websites": 5
+        },
+        "notes": "Per month"
+      },
+      {
+        "name": "Professional",
+        "priceMonthly": 87,
+        "priceAnnualMonthlyEquivalent": 69,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": "5K-30K",
+          "websites": 10
+        },
+        "notes": "Per month"
+      },
+      {
+        "name": "Premium",
+        "priceMonthly": 500,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": "600K+/yr"
+        },
+        "notes": "Managed onboarding"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

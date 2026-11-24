@@ -7,7 +7,7 @@
     "slug": "smartlead",
     "official_url": "https://www.smartlead.ai",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/smartlead.png",
     "aliases": []
   },
   "discovery": {
@@ -29,7 +29,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -78,12 +78,71 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": false,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://smartlead.ai/pricing"
+    ],
     "currency": "USD",
-    "trial": "Free trial available with 50% off first month on any plan."
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "14-day free trial, no credit card",
+    "plans": [
+      {
+        "name": "Base",
+        "priceMonthly": 39,
+        "priceAnnualMonthlyEquivalent": 32,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": 2000,
+          "emails": "6,000 per month",
+          "mailboxes": "Unlimited"
+        },
+        "notes": "Warmup included"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 94,
+        "priceAnnualMonthlyEquivalent": 78,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": 30000,
+          "emails": "90,000 per month",
+          "features": [
+            "API",
+            "CRM",
+            "client workspaces"
+          ]
+        },
+        "notes": "Warmup included"
+      },
+      {
+        "name": "Unlimited Smart",
+        "priceMonthly": 174,
+        "priceAnnualMonthlyEquivalent": 144,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": "Unlimited",
+          "emails": "150,000 per month",
+          "prospectEmails": 50000
+        },
+        "notes": "Warmup included"
+      },
+      {
+        "name": "Unlimited Prime",
+        "priceMonthly": 379,
+        "priceAnnualMonthlyEquivalent": 315,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": "Unlimited",
+          "emails": "500,000 per month",
+          "prospectEmails": 170000
+        },
+        "notes": "Warmup included"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

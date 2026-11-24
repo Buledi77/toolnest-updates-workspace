@@ -7,7 +7,7 @@
     "slug": "survicate",
     "official_url": "https://www.survicate.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/survicate.png",
     "aliases": []
   },
   "discovery": {
@@ -19,7 +19,7 @@
     "audiences": []
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "C",
@@ -51,10 +51,84 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://survicate.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "25 responses per month, 1 active survey",
+    "trial": "10-day free trial",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "responses": 25,
+          "surveys": 1
+        },
+        "notes": "30-day data retention"
+      },
+      {
+        "name": "Starter",
+        "priceMonthly": 89,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "responses": 100,
+          "surveys": 2,
+          "seats": 5
+        },
+        "notes": "Monthly billing only"
+      },
+      {
+        "name": "Growth",
+        "priceMonthly": 114,
+        "priceAnnualMonthlyEquivalent": 56,
+        "sourceTier": "web-research",
+        "limits": {
+          "responses": 250,
+          "surveys": "Unlimited",
+          "seats": 10
+        },
+        "notes": "AI analysis, branding removal"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 349,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "responses": "Custom",
+          "features": [
+            "Advanced analytics",
+            "SSO",
+            "CSM"
+          ]
+        },
+        "notes": "Quote-based"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": 569,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "responses": "Custom",
+          "features": [
+            "HIPAA",
+            "DORA",
+            "dedicated CSM"
+          ]
+        },
+        "notes": "Quote-based"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

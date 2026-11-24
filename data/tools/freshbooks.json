@@ -7,7 +7,7 @@
     "slug": "freshbooks",
     "official_url": "https://www.freshbooks.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/freshbooks.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "migrated_from_v1"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -75,10 +75,42 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      ""
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "trial": "30 days",
+    "plans": [
+      {
+        "name": "Lite",
+        "priceMonthly": 23,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      },
+      {
+        "name": "Plus",
+        "priceMonthly": 43,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      },
+      {
+        "name": "Premium",
+        "priceMonthly": 70,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      }
+    ],
+    "billingCaveat": "Pricing migrated from legacy data. Please verify on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

@@ -41,7 +41,7 @@
     "limitations": [],
     "free_plan_status": "Free plan available (details not verified)",
     "trial_status": [],
-    "pricing_status": "Freemium (details not verified)",
+    "pricing_status": "web-researched",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -107,10 +107,74 @@
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Freemium (details not verified)",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.aipricing.guru/gemini-subscription-pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
     "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "freeLimits": "Free-tier limits on image creation, Deep Research, Live, Canvas, and Gems",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "model": "Gemini Flash-Lite",
+          "usage": "Free-tier limits on image creation, Deep Research, Live, Canvas, Gems"
+        },
+        "notes": "Free includes access to Flash-Lite model family"
+      },
+      {
+        "name": "Google AI Plus",
+        "priceMonthly": 4.99,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "model": "Gemini Flash",
+          "usage": "2x Free usage, 200 Google Flow credits monthly, 400 GB storage"
+        },
+        "notes": "Cheapest paid plan"
+      },
+      {
+        "name": "Google AI Pro",
+        "priceMonthly": 19.99,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "model": "Gemini 4 Argon, Gemini Flash",
+          "usage": "4x Free usage, 1 TB storage"
+        },
+        "notes": "Most popular for daily work"
+      },
+      {
+        "name": "Google AI Ultra 5x",
+        "priceMonthly": 99.99,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "model": "Gemini 4 Argon, Gemini 3.1 Pro",
+          "usage": "5x AI Pro usage, 20 TB storage"
+        },
+        "notes": "Heavy daily Gemini use"
+      },
+      {
+        "name": "Google AI Ultra 20x",
+        "priceMonthly": 199.99,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "model": "Gemini 4 Argon, Gemini 3.1 Pro",
+          "usage": "20x AI Pro usage"
+        },
+        "notes": "Highest Gemini limits"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

@@ -7,7 +7,7 @@
     "slug": "softsync",
     "official_url": "https://www.softsync.ai",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/softsync.png",
     "aliases": []
   },
   "discovery": {
@@ -31,7 +31,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -80,12 +80,59 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": false,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://softsync.ai/pricing"
+    ],
     "currency": "USD",
-    "trial": "Trial status unclear from official sources. 'Get access' CTA on pricing page."
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": null,
+    "plans": [
+      {
+        "name": "Pro",
+        "priceMonthly": 39,
+        "priceAnnualMonthlyEquivalent": 29,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "CRM",
+            "AI Assistant",
+            "email sync"
+          ]
+        },
+        "notes": "Per seat per month"
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 79,
+        "priceAnnualMonthlyEquivalent": 59,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Priority support",
+            "custom integrations"
+          ]
+        },
+        "notes": "Per seat per month"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Unlimited capacity",
+            "custom integrations"
+          ]
+        },
+        "notes": "Custom quote"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

@@ -41,7 +41,7 @@
     "limitations": [],
     "free_plan_status": "No free plan (details not verified)",
     "trial_status": [],
-    "pricing_status": "Paid (details not verified)",
+    "pricing_status": "migrated_from_v1",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -105,12 +105,42 @@
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Paid (details not verified)",
-    "freePlan": false,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      ""
+    ],
+    "currency": "USD",
     "billingBasis": "monthly",
-    "currency": "USD"
+    "freePlan": false,
+    "trial": null,
+    "plans": [
+      {
+        "name": "Basic",
+        "priceMonthly": 10,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      },
+      {
+        "name": "Standard",
+        "priceMonthly": 30,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 60,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      }
+    ],
+    "billingCaveat": "Pricing migrated from legacy data. Please verify on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

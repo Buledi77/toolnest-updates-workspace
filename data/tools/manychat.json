@@ -7,7 +7,7 @@
     "slug": "manychat",
     "official_url": "https://manychat.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/manychat.png",
     "aliases": []
   },
   "discovery": {
@@ -18,7 +18,7 @@
     "audiences": []
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -50,10 +50,83 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://manychat.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "25 active contacts/month, 4 active automations",
+    "trial": "14-day free trial on Essential and Pro",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "activeContacts": 25,
+          "automations": 4,
+          "users": 1
+        },
+        "notes": "ManyChat branding"
+      },
+      {
+        "name": "Essential",
+        "priceMonthly": 17,
+        "priceAnnualMonthlyEquivalent": 14,
+        "sourceTier": "web-research",
+        "limits": {
+          "activeContacts": 250,
+          "users": 2,
+          "channels": 2
+        },
+        "notes": "$0.10/overage contact"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 39,
+        "priceAnnualMonthlyEquivalent": 29,
+        "sourceTier": "web-research",
+        "limits": {
+          "activeContacts": 2500,
+          "users": 3,
+          "channels": 3,
+          "features": [
+            "WhatsApp",
+            "AI"
+          ]
+        },
+        "notes": "$0.05/overage contact"
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 99,
+        "priceAnnualMonthlyEquivalent": 69,
+        "sourceTier": "web-research",
+        "limits": {
+          "activeContacts": 7500,
+          "users": 5,
+          "channels": "All"
+        },
+        "notes": "$0.025/overage contact"
+      },
+      {
+        "name": "Advanced",
+        "priceMonthly": 199,
+        "priceAnnualMonthlyEquivalent": 139,
+        "sourceTier": "web-research",
+        "limits": {
+          "activeContacts": 25000,
+          "users": 10,
+          "channels": "All"
+        },
+        "notes": "$0.004/overage contact"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

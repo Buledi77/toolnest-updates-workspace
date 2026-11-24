@@ -37,7 +37,7 @@
     "limitations": [],
     "free_plan_status": [],
     "trial_status": [],
-    "pricing_status": "Pricing Not Publicly Listed",
+    "pricing_status": "web-researched",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -82,10 +82,48 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.keap.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "14-day free trial",
+    "plans": [
+      {
+        "name": "Platform",
+        "priceMonthly": 299,
+        "priceAnnualMonthlyEquivalent": 249,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": 1500,
+          "users": 2,
+          "features": [
+            "CRM",
+            "marketing automation",
+            "email",
+            "SMS",
+            "sales pipeline"
+          ]
+        },
+        "notes": "$500 one-time implementation fee required"
+      },
+      {
+        "name": "Higher Volume",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "contacts": "Custom",
+          "users": "Custom"
+        },
+        "notes": "Custom pricing based on contacts and users"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

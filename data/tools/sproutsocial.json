@@ -7,7 +7,7 @@
     "slug": "sproutsocial",
     "official_url": "https://sproutsocial.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/sproutsocial.png",
     "aliases": []
   },
   "discovery": {
@@ -31,7 +31,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -80,12 +80,79 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": false,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://sproutsocial.com/pricing"
+    ],
     "currency": "USD",
-    "trial": "30-day free trial available on all plans, no credit card required."
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "30-day free trial, no credit card",
+    "plans": [
+      {
+        "name": "Essentials",
+        "priceMonthly": 99,
+        "priceAnnualMonthlyEquivalent": 79,
+        "sourceTier": "web-research",
+        "limits": {
+          "socialProfiles": 5,
+          "features": [
+            "Publishing",
+            "optimal send times",
+            "Trellis AI"
+          ]
+        },
+        "notes": "Per seat per month"
+      },
+      {
+        "name": "Standard",
+        "priceMonthly": 249,
+        "priceAnnualMonthlyEquivalent": 199,
+        "sourceTier": "web-research",
+        "limits": {
+          "socialProfiles": 5,
+          "features": [
+            "Consolidated inbox",
+            "keyword monitoring",
+            "review management"
+          ]
+        },
+        "notes": "Per seat per month"
+      },
+      {
+        "name": "Professional",
+        "priceMonthly": 399,
+        "priceAnnualMonthlyEquivalent": 299,
+        "sourceTier": "web-research",
+        "limits": {
+          "socialProfiles": "Unlimited",
+          "features": [
+            "Message tagging",
+            "competitor insights",
+            "AI Assist"
+          ]
+        },
+        "notes": "Per seat per month"
+      },
+      {
+        "name": "Advanced",
+        "priceMonthly": 499,
+        "priceAnnualMonthlyEquivalent": 399,
+        "sourceTier": "web-research",
+        "limits": {
+          "socialProfiles": "Unlimited",
+          "features": [
+            "Sprout API",
+            "helpdesk integrations",
+            "chatbots"
+          ]
+        },
+        "notes": "Per seat per month"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

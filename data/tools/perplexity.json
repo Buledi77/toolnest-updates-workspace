@@ -41,7 +41,7 @@
     "limitations": [],
     "free_plan_status": [],
     "trial_status": [],
-    "pricing_status": "Pricing Not Publicly Listed",
+    "pricing_status": "web-researched",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -105,10 +105,74 @@
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.perplexity.ai/pro"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "Sonar auto-selected, capped daily Pro searches",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "model": "Sonar auto-selected",
+          "usage": "Capped daily Pro searches, free Comet browser"
+        },
+        "notes": "Casual search and Q&A"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 20,
+        "priceAnnualMonthlyEquivalent": 17,
+        "sourceTier": "web-research",
+        "limits": {
+          "model": "All Sonar and third-party models",
+          "usage": "Expanded Computer access, 4,000 bonus credits"
+        },
+        "notes": "Deep research, model selection, document and app creation"
+      },
+      {
+        "name": "Max",
+        "priceMonthly": 200,
+        "priceAnnualMonthlyEquivalent": 167,
+        "sourceTier": "web-research",
+        "limits": {
+          "model": "Frontier models",
+          "usage": "10,000 Computer credits/mo, 35,000 bonus credits, Model Council"
+        },
+        "notes": "Heavy, sustained work"
+      },
+      {
+        "name": "Enterprise Pro",
+        "priceMonthly": 40,
+        "priceAnnualMonthlyEquivalent": 34,
+        "sourceTier": "web-research",
+        "limits": {
+          "minSeats": 1,
+          "usage": "Admin controls, central billing"
+        },
+        "notes": "Per seat per month"
+      },
+      {
+        "name": "Enterprise Max",
+        "priceMonthly": 325,
+        "priceAnnualMonthlyEquivalent": 271,
+        "sourceTier": "web-research",
+        "limits": {
+          "minSeats": 1,
+          "usage": "Highest limits, enterprise security"
+        },
+        "notes": "Per seat per month"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

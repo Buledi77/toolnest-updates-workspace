@@ -7,7 +7,7 @@
     "slug": "textline",
     "official_url": "https://www.textline.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/textline.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -75,10 +75,64 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.textline.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "14-day free trial",
+    "plans": [
+      {
+        "name": "Essentials",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "agents": 3,
+          "credits": 600,
+          "numbers": 1,
+          "history": "3 years"
+        },
+        "notes": "Quote-based, $50/extra agent, $0.03/credit"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "agents": 5,
+          "credits": 2000,
+          "numbers": 2,
+          "history": "Unlimited",
+          "features": [
+            "Unified inbox",
+            "Salesforce",
+            "custom surveys"
+          ]
+        },
+        "notes": "Quote-based, $70/extra agent"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "agents": "Unlimited",
+          "features": [
+            "Custom plans",
+            "QBRs"
+          ]
+        },
+        "notes": "Custom pricing"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

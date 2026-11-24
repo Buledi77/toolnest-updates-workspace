@@ -7,7 +7,7 @@
     "slug": "expertex",
     "official_url": "https://www.expertex.ai",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/expertex.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -75,10 +75,67 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://expertex.ai/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "Limited credits in Starter plan",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {},
+        "notes": "Available in Starter"
+      },
+      {
+        "name": "Starter",
+        "priceMonthly": 10,
+        "priceAnnualMonthlyEquivalent": 5.83,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": 1000
+        },
+        "notes": "Credits do not roll over"
+      },
+      {
+        "name": "Premium",
+        "priceMonthly": 30,
+        "priceAnnualMonthlyEquivalent": 16.67,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": 3000
+        },
+        "notes": "Credits do not roll over"
+      },
+      {
+        "name": "Ultra",
+        "priceMonthly": 75,
+        "priceAnnualMonthlyEquivalent": 37.5,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": 7500
+        },
+        "notes": "Most popular, credits do not roll over"
+      },
+      {
+        "name": "Professional",
+        "priceMonthly": 250,
+        "priceAnnualMonthlyEquivalent": 124.17,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": 25000
+        },
+        "notes": "Credits do not roll over"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

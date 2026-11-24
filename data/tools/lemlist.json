@@ -7,7 +7,7 @@
     "slug": "lemlist",
     "official_url": "https://www.lemlist.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/lemlist.png",
     "aliases": []
   },
   "discovery": {
@@ -18,7 +18,7 @@
     "audiences": []
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -50,10 +50,69 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://lemlist.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "14-day free trial, no credit card",
+    "plans": [
+      {
+        "name": "Email (50K)",
+        "priceMonthly": 69,
+        "priceAnnualMonthlyEquivalent": 55,
+        "sourceTier": "web-research",
+        "limits": {
+          "emails": "50,000 per month",
+          "users": "Unlimited",
+          "senders": "Unlimited"
+        },
+        "notes": "Warmup included"
+      },
+      {
+        "name": "Email (200K)",
+        "priceMonthly": 159,
+        "priceAnnualMonthlyEquivalent": 127,
+        "sourceTier": "web-research",
+        "limits": {
+          "emails": "200,000 per month",
+          "users": "Unlimited"
+        },
+        "notes": ""
+      },
+      {
+        "name": "Email (1M)",
+        "priceMonthly": 659,
+        "priceAnnualMonthlyEquivalent": 527,
+        "sourceTier": "web-research",
+        "limits": {
+          "emails": "1,000,000 per month",
+          "users": "Unlimited"
+        },
+        "notes": ""
+      },
+      {
+        "name": "Multichannel",
+        "priceMonthly": 109,
+        "priceAnnualMonthlyEquivalent": 87,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "LinkedIn",
+            "SMS",
+            "calls"
+          ],
+          "credits": 400,
+          "senders": 5
+        },
+        "notes": "Per user per month"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

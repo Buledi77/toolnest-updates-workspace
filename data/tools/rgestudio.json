@@ -7,7 +7,7 @@
     "slug": "rgestudio",
     "official_url": "https://www.reallygoodemails.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/rgestudio.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -75,10 +75,59 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://support.reallygoodemails.com/hc/en-us/articles/360004496272"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "Basic email design features",
+    "trial": "15-day free trial",
+    "plans": [
+      {
+        "name": "Starter",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Email design",
+            "templates"
+          ]
+        },
+        "notes": "Free forever"
+      },
+      {
+        "name": "Professional",
+        "priceMonthly": 30,
+        "priceAnnualMonthlyEquivalent": 25,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Unlimited designs",
+            "team collaboration"
+          ]
+        },
+        "notes": "Per month"
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 160,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "White-label",
+            "API",
+            "SSO"
+          ]
+        },
+        "notes": "Per month"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

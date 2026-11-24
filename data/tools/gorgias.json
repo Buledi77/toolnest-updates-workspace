@@ -7,7 +7,7 @@
     "slug": "gorgias",
     "official_url": "https://www.gorgias.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/gorgias.png",
     "aliases": []
   },
   "discovery": {
@@ -18,7 +18,7 @@
     "audiences": []
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -50,10 +50,63 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.gorgias.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": null,
+    "plans": [
+      {
+        "name": "Starter",
+        "priceMonthly": 10,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "tickets": 50,
+          "users": 3
+        },
+        "notes": "Monthly billing only, $0.40/overage ticket"
+      },
+      {
+        "name": "Basic",
+        "priceMonthly": 60,
+        "priceAnnualMonthlyEquivalent": 50,
+        "sourceTier": "web-research",
+        "limits": {
+          "tickets": 300,
+          "users": 500
+        },
+        "notes": "$0.40/overage ticket"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 360,
+        "priceAnnualMonthlyEquivalent": 300,
+        "sourceTier": "web-research",
+        "limits": {
+          "tickets": 2000,
+          "users": 500
+        },
+        "notes": "$0.36/overage ticket"
+      },
+      {
+        "name": "Advanced",
+        "priceMonthly": 900,
+        "priceAnnualMonthlyEquivalent": 750,
+        "sourceTier": "web-research",
+        "limits": {
+          "tickets": 5000,
+          "users": 500
+        },
+        "notes": "$0.36/overage ticket"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

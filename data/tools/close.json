@@ -7,7 +7,7 @@
     "slug": "close",
     "official_url": "https://www.closerm.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/close.png",
     "aliases": []
   },
   "discovery": {
@@ -18,7 +18,7 @@
     "audiences": []
   },
   "factual_profile": {
-    "pricing_status": "Paid (details not verified)",
+    "pricing_status": "web-researched",
     "free_plan_status": "No free plan (details not verified)"
   },
   "editorial": {
@@ -51,10 +51,75 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Paid (details not verified)",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.close.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
     "freePlan": false,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "freeLimits": null,
+    "trial": "14-day free trial, no credit card",
+    "plans": [
+      {
+        "name": "Solo",
+        "priceMonthly": 19,
+        "priceAnnualMonthlyEquivalent": 9,
+        "sourceTier": "web-research",
+        "limits": {
+          "users": 1,
+          "leads": 10000,
+          "mailboxes": 3
+        },
+        "notes": "Built-in calling, email, SMS"
+      },
+      {
+        "name": "Essentials",
+        "priceMonthly": 49,
+        "priceAnnualMonthlyEquivalent": 35,
+        "sourceTier": "web-research",
+        "limits": {
+          "leads": "Unlimited",
+          "mailboxes": 3,
+          "features": [
+            "Team inbox",
+            "open tracking"
+          ]
+        },
+        "notes": "Per user per month"
+      },
+      {
+        "name": "Growth",
+        "priceMonthly": 109,
+        "priceAnnualMonthlyEquivalent": 99,
+        "sourceTier": "web-research",
+        "limits": {
+          "mailboxes": 10,
+          "features": [
+            "Workflows",
+            "power dialer",
+            "bulk email"
+          ]
+        },
+        "notes": "Per user per month"
+      },
+      {
+        "name": "Scale",
+        "priceMonthly": 149,
+        "priceAnnualMonthlyEquivalent": 139,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Predictive dialer",
+            "call coaching",
+            "role-based permissions"
+          ]
+        },
+        "notes": "Per user per month"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

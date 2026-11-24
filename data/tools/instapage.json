@@ -7,7 +7,7 @@
     "slug": "instapage",
     "official_url": "https://www.instapage.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/instapage.png",
     "aliases": []
   },
   "discovery": {
@@ -18,7 +18,7 @@
     "audiences": []
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -50,10 +50,71 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://instapage.com/plans"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "14-day free trial, credit card required",
+    "plans": [
+      {
+        "name": "Create",
+        "priceMonthly": 99,
+        "priceAnnualMonthlyEquivalent": 79,
+        "sourceTier": "web-research",
+        "limits": {
+          "visitors": "15,000 per month",
+          "subdomains": 2,
+          "teamMembers": 10
+        },
+        "notes": "No A/B testing"
+      },
+      {
+        "name": "Optimize",
+        "priceMonthly": 199,
+        "priceAnnualMonthlyEquivalent": 159,
+        "sourceTier": "web-research",
+        "limits": {
+          "visitors": "30,000 per month",
+          "features": [
+            "A/B testing",
+            "AdMap",
+            "dynamic text replacement"
+          ]
+        },
+        "notes": "Server-side A/B testing"
+      },
+      {
+        "name": "Optimize (50K)",
+        "priceMonthly": 299,
+        "priceAnnualMonthlyEquivalent": 239,
+        "sourceTier": "web-research",
+        "limits": {
+          "visitors": "50,000 per month",
+          "subdomains": 10
+        },
+        "notes": ""
+      },
+      {
+        "name": "Convert",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Heatmaps",
+            "root-domain publishing",
+            "dedicated CSM"
+          ]
+        },
+        "notes": "Custom enterprise pricing"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

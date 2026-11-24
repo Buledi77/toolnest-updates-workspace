@@ -41,7 +41,7 @@
     "limitations": [],
     "free_plan_status": [],
     "trial_status": [],
-    "pricing_status": "Pricing Not Publicly Listed",
+    "pricing_status": "web-researched",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -110,10 +110,69 @@
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.synthesia.io/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "10 minutes of video and 500 credits a month, watermarked, share link only",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Basic",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "video": "10 minutes per month",
+          "credits": 500,
+          "avatars": 9
+        },
+        "notes": "Watermarked, share by link only"
+      },
+      {
+        "name": "Starter",
+        "priceMonthly": 19,
+        "priceAnnualMonthlyEquivalent": 14,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": "1,250 extra per month",
+          "avatars": "125+",
+          "personalAvatars": 3,
+          "editors": 1
+        },
+        "notes": "Downloads without logo"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 89,
+        "priceAnnualMonthlyEquivalent": 59,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": "6,000 extra per month",
+          "avatars": "180+",
+          "personalAvatars": 5,
+          "editors": 1
+        },
+        "notes": "Interactive videos, custom fonts, priority support"
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 99,
+        "priceAnnualMonthlyEquivalent": 79,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": "6,000 shared per month",
+          "editors": 10,
+          "guests": "unlimited"
+        },
+        "notes": "Per member, plus 0/month for each extra member. SCORM export, 140+ language translation"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

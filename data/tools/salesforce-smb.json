@@ -7,7 +7,7 @@
     "slug": "salesforce-smb",
     "official_url": "https://www.salesforce.com/products/crm/essentials/",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/salesforce-smb.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Paid (details not verified)",
+    "pricing_status": "web-researched",
     "free_plan_status": "No free plan (details not verified)"
   },
   "editorial": {
@@ -76,10 +76,72 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Paid (details not verified)",
-    "freePlan": false,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.salesforce.com/pricing/"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "2 user licenses, 100 marketing emails/month",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free Suite",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "users": 2,
+          "marketingEmails": 100
+        },
+        "notes": "Permanent free, deactivates after 60 days of inactivity"
+      },
+      {
+        "name": "Starter Suite",
+        "priceMonthly": 25,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "CRM",
+            "marketing",
+            "basic automation"
+          ]
+        },
+        "notes": "Per user per month, monthly or annual billing"
+      },
+      {
+        "name": "Pro Suite",
+        "priceMonthly": 100,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Forecasting",
+            "advanced reporting",
+            "campaign management"
+          ]
+        },
+        "notes": "Per user per month, annual contract required"
+      },
+      {
+        "name": "Core",
+        "priceMonthly": 195,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Custom objects",
+            "customer portal",
+            "sandbox"
+          ]
+        },
+        "notes": "Per user per month, annual billing"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

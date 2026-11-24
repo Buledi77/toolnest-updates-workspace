@@ -41,7 +41,7 @@
     "limitations": [],
     "free_plan_status": [],
     "trial_status": [],
-    "pricing_status": "Pricing Not Publicly Listed",
+    "pricing_status": "web-researched",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -106,10 +106,74 @@
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://otter.ai/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "300 transcription minutes per month, 30 minutes per conversation, 3 lifetime file imports",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Basic",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "minutes": "300 per month",
+          "maxConversation": "30 minutes",
+          "fileImports": "3 for life",
+          "aiChat": "20 per month"
+        },
+        "notes": "Zoom/Teams/Google Meet integration"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 16.99,
+        "priceAnnualMonthlyEquivalent": 8.33,
+        "sourceTier": "web-research",
+        "limits": {
+          "minutes": "1,200 per month",
+          "maxConversation": "90 minutes",
+          "fileImports": "10 per month",
+          "aiChat": 50
+        },
+        "notes": "Per user per month, up to 5 workspace members"
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 30,
+        "priceAnnualMonthlyEquivalent": 19.99,
+        "sourceTier": "web-research",
+        "limits": {
+          "minutes": "Unlimited",
+          "maxConversation": "4 hours",
+          "fileImports": "Unlimited",
+          "aiChat": 200
+        },
+        "notes": "Per user per month, up to 25 billed users"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "minutes": "Unlimited",
+          "features": [
+            "SSO",
+            "SCIM",
+            "HIPAA add-on",
+            "API"
+          ]
+        },
+        "notes": "Custom quote"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

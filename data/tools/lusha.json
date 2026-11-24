@@ -7,7 +7,7 @@
     "slug": "lusha",
     "official_url": "https://www.lusha.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/lusha.png",
     "aliases": []
   },
   "discovery": {
@@ -31,7 +31,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -80,12 +80,63 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.lusha.com/pricing"
+    ],
     "currency": "USD",
-    "trial": "No separate trial — free plan serves as entry point with 40 credits/month permanently."
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "40 credits per month, 1 seat",
+    "trial": "7-day free trial on every plan",
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": 40,
+          "seats": 1
+        },
+        "notes": "Email = 1 credit, phone = 10 credits"
+      },
+      {
+        "name": "Starter",
+        "priceMonthly": 49.9,
+        "priceAnnualMonthlyEquivalent": 37.45,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": 400,
+          "seats": 1
+        },
+        "notes": "Per month"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 69.9,
+        "priceAnnualMonthlyEquivalent": 52.45,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": 600,
+          "seats": 2
+        },
+        "notes": "CSV enrichment, signals, webhooks"
+      },
+      {
+        "name": "Premium",
+        "priceMonthly": 399.9,
+        "priceAnnualMonthlyEquivalent": 299.95,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": 3400,
+          "seats": 5
+        },
+        "notes": "Advanced API, credit limits per user"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

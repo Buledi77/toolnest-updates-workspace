@@ -7,7 +7,7 @@
     "slug": "consensus",
     "official_url": "https://consensus.app",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/consensus.png",
     "aliases": []
   },
   "discovery": {
@@ -18,7 +18,7 @@
     "audiences": []
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -50,10 +50,64 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://consensus.app/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "10 Pro Messages/month, 3 Deep Reviews/month, 10 Study Snapshots/month",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "proMessages": 10,
+          "deepReviews": 3,
+          "studySnapshots": 10
+        },
+        "notes": "Unlimited Papers search, no credit card required"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 20,
+        "priceAnnualMonthlyEquivalent": 12,
+        "sourceTier": "web-research",
+        "limits": {
+          "proMessages": "Unlimited",
+          "deepReviews": 15
+        },
+        "notes": "Unlimited Study Snapshots"
+      },
+      {
+        "name": "Deep",
+        "priceMonthly": 65,
+        "priceAnnualMonthlyEquivalent": 45,
+        "sourceTier": "web-research",
+        "limits": {
+          "proMessages": "Unlimited",
+          "deepReviews": 200
+        },
+        "notes": "For frequent literature reviews"
+      },
+      {
+        "name": "Teams",
+        "priceMonthly": 30,
+        "priceAnnualMonthlyEquivalent": 20,
+        "sourceTier": "web-research",
+        "limits": {
+          "deepReviews": "50 per user per month",
+          "maxSeats": 200
+        },
+        "notes": "Per seat per month, centralized billing"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

@@ -7,7 +7,7 @@
     "slug": "omnisend",
     "official_url": "https://www.omnisend.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/omnisend.png",
     "aliases": []
   },
   "discovery": {
@@ -31,7 +31,7 @@
   "factual_profile": {
     "free_plan_status": "Free plan with 250 contacts and 500 emails per month",
     "trial_status": "No free trial; free plan serves as ongoing trial",
-    "pricing_status": "Freemium — free tier plus paid subscriptions from $16/month",
+    "pricing_status": "Freemium \u2014 free tier plus paid subscriptions from $16/month",
     "pricing_regions": [
       "US",
       "Global"
@@ -93,7 +93,7 @@
     "billingBasis": "monthly",
     "freePlan": true,
     "freeLimits": "250 contacts, 500 emails per month, 500 web push messages",
-    "trial": "No separate trial — free plan serves as entry point. Paid plans available with monthly billing.",
+    "trial": "No separate trial \u2014 free plan serves as entry point. Paid plans available with monthly billing.",
     "plans": [
       {
         "name": "Free",

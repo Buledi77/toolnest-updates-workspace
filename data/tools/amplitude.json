@@ -7,7 +7,7 @@
     "slug": "amplitude",
     "official_url": "https://amplitude.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/amplitude.png",
     "aliases": []
   },
   "discovery": {
@@ -29,7 +29,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Freemium (details not verified)",
+    "pricing_status": "web-researched",
     "free_plan_status": "Free plan available (details not verified)"
   },
   "editorial": {
@@ -79,12 +79,61 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Freemium (details not verified)",
-    "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://amplitude.com/pricing"
+    ],
     "currency": "USD",
-    "trial": "No separate trial — free plan serves as the entry point with no time limit."
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "50,000 MTUs, 2M events/month",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Starter (Free)",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "mtus": 50000,
+          "events": "2M/month"
+        },
+        "notes": "Permanent free plan"
+      },
+      {
+        "name": "Plus",
+        "priceMonthly": 61,
+        "priceAnnualMonthlyEquivalent": 49,
+        "sourceTier": "web-research",
+        "limits": {
+          "mtus": "1K-300K",
+          "events": "up to 70M"
+        },
+        "notes": "Per MTU scaling"
+      },
+      {
+        "name": "Growth",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "mtus": "300K+"
+        },
+        "notes": "Custom quote"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "mtus": "500K-1M+"
+        },
+        "notes": "Custom quote"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

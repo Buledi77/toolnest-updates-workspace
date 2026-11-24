@@ -593,7 +593,7 @@
         "lastChecked": null,
         "sourceRefs": [],
         "checkedOn": "2026-11-23",
-        "trial": "No separate trial — free plan serves as the entry point with no time limit."
+        "trial": "No separate trial \u2014 free plan serves as the entry point with no time limit."
       },
       "cons": [
         "Pricing scales with event volume",
@@ -5653,7 +5653,7 @@
         "High starting price at $299/mo",
         "Required $500 implementation fee",
         "Steep price increase for additional contacts",
-        "Trustpilot rating 1.1/5 — billing and cancellation complaints"
+        "Trustpilot rating 1.1/5 \u2014 billing and cancellation complaints"
       ],
       "platforms": [
         "web",
@@ -6231,7 +6231,7 @@
         "lastChecked": null,
         "sourceRefs": [],
         "checkedOn": "2026-11-23",
-        "trial": "No separate trial — free plan serves as entry point with 40 credits/month permanently."
+        "trial": "No separate trial \u2014 free plan serves as entry point with 40 credits/month permanently."
       },
       "cons": [
         "Credit-based system limits usage",
@@ -6734,7 +6734,7 @@
         "lastChecked": null,
         "sourceRefs": [],
         "checkedOn": "2026-11-23",
-        "trial": "No separate trial — free plan serves as entry point. Startup program offers up to $50,000 in credits for qualifying companies."
+        "trial": "No separate trial \u2014 free plan serves as entry point. Startup program offers up to $50,000 in credits for qualifying companies."
       },
       "cons": [
         "Pricing scales with event volume",
@@ -7404,7 +7404,7 @@
         "lastChecked": null,
         "sourceRefs": [],
         "checkedOn": "2026-11-23",
-        "trial": "No separate trial — free plan serves as entry point. Paid plans available with monthly billing."
+        "trial": "No separate trial \u2014 free plan serves as entry point. Paid plans available with monthly billing."
       },
       "cons": [
         "Primarily for eCommerce",
@@ -10262,7 +10262,7 @@
         "lastChecked": null,
         "sourceRefs": [],
         "checkedOn": "2026-11-23",
-        "trial": "No separate trial — free plan serves as entry point. Paid plans available with monthly billing."
+        "trial": "No separate trial \u2014 free plan serves as entry point. Paid plans available with monthly billing."
       },
       "cons": [
         "Limited free plan",
@@ -12812,7 +12812,7 @@
       "badge": "",
       "featured": false,
       "best": "Browser-based full-stack application builder by StackBlitz",
-      "logo": null,
+      "logo": "/assets/logos/bolt.png",
       "affiliateUrl": "",
       "pricing": {
         "model": "tiered subscription by tokens",

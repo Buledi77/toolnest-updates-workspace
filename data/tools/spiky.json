@@ -7,7 +7,7 @@
     "slug": "spiky",
     "official_url": "https://www.spiky.ai",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/spiky.png",
     "aliases": []
   },
   "discovery": {
@@ -30,7 +30,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -79,12 +79,85 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.spiky.ai/pricing"
+    ],
     "currency": "USD",
-    "trial": "Trial equivalent to Premium plan excluding CRM functionality. Free plan also available."
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "3 meetings/user/month",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "meetings": 3
+        },
+        "notes": "Per user per month"
+      },
+      {
+        "name": "Plus",
+        "priceMonthly": 18,
+        "priceAnnualMonthlyEquivalent": 15,
+        "sourceTier": "web-research",
+        "limits": {
+          "meetings": 30,
+          "features": [
+            "Spiky Agent",
+            "custom branding"
+          ]
+        },
+        "notes": "Per user per month"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 29,
+        "priceAnnualMonthlyEquivalent": 24,
+        "sourceTier": "web-research",
+        "limits": {
+          "meetings": 30,
+          "features": [
+            "CRM",
+            "Slack",
+            "AI coaching"
+          ]
+        },
+        "notes": "Per user per month"
+      },
+      {
+        "name": "Premium",
+        "priceMonthly": 49,
+        "priceAnnualMonthlyEquivalent": 40,
+        "sourceTier": "web-research",
+        "limits": {
+          "meetings": "Unlimited",
+          "features": [
+            "Real-time coaching",
+            "executive dashboard"
+          ]
+        },
+        "notes": "Per user per month"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Custom AI models",
+            "dedicated CSM"
+          ]
+        },
+        "notes": "Custom quote"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

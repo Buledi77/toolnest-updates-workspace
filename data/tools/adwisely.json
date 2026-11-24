@@ -7,7 +7,7 @@
     "slug": "adwisely",
     "official_url": "https://www.adwisely.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/adwisely.png",
     "aliases": []
   },
   "discovery": {
@@ -30,7 +30,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Freemium (details not verified)",
+    "pricing_status": "web-researched",
     "free_plan_status": "Free plan available (details not verified)"
   },
   "editorial": {
@@ -80,12 +80,42 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Freemium (details not verified)",
-    "freePlan": false,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.adwisely.com/pricing"
+    ],
     "currency": "USD",
-    "trial": "7-day free trial available on both Self-Serve and Concierge plans."
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "7-day free trial",
+    "plans": [
+      {
+        "name": "Self-Serve",
+        "priceMonthly": 49,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "fee": "10% of ad spend",
+          "cap": "$3,250/month"
+        },
+        "notes": "AI-powered Meta/Google ads"
+      },
+      {
+        "name": "Concierge",
+        "priceMonthly": 249,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "fee": "10% of ad spend",
+          "cap": "$3,250/month",
+          "hours": "10 hours/month"
+        },
+        "notes": "Hands-on ad experts"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

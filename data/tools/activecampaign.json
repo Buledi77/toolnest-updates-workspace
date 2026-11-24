@@ -7,7 +7,7 @@
     "slug": "activecampaign",
     "official_url": "https://www.activecampaign.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/activecampaign.png",
     "aliases": []
   },
   "discovery": {
@@ -18,7 +18,7 @@
     "audiences": []
   },
   "factual_profile": {
-    "pricing_status": "Freemium (details not verified)",
+    "pricing_status": "migrated_from_v1",
     "free_plan_status": "Free plan available (details not verified)"
   },
   "editorial": {
@@ -51,10 +51,42 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Freemium (details not verified)",
-    "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      ""
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "trial": "14 days",
+    "plans": [
+      {
+        "name": "Starter",
+        "priceMonthly": 19,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      },
+      {
+        "name": "Plus",
+        "priceMonthly": 59,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 99,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      }
+    ],
+    "billingCaveat": "Pricing migrated from legacy data. Please verify on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

@@ -7,7 +7,7 @@
     "slug": "intercom",
     "official_url": "https://www.intercom.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/intercom.png",
     "aliases": []
   },
   "discovery": {
@@ -31,7 +31,7 @@
   "factual_profile": {
     "free_plan_status": "No free plan; 14-day free trial available",
     "trial_status": "14-day free trial, no credit card required",
-    "pricing_status": "Paid — subscriptions from $29/seat/month",
+    "pricing_status": "Paid \u2014 subscriptions from $29/seat/month",
     "pricing_regions": [
       "US",
       "Global"

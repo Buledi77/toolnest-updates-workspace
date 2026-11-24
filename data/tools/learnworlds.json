@@ -7,7 +7,7 @@
     "slug": "learnworlds",
     "official_url": "https://www.learnworlds.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/learnworlds.png",
     "aliases": []
   },
   "discovery": {
@@ -30,7 +30,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -79,12 +79,68 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": false,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.learnworlds.com/pricing"
+    ],
     "currency": "USD",
-    "trial": "30-day free trial available on all plans."
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "30-day free trial",
+    "plans": [
+      {
+        "name": "Starter",
+        "priceMonthly": 29,
+        "priceAnnualMonthlyEquivalent": 24,
+        "sourceTier": "web-research",
+        "limits": {
+          "admins": 1,
+          "learners": 1000,
+          "txFee": "$5/enrollment"
+        },
+        "notes": "Per enrollment fee"
+      },
+      {
+        "name": "Pro Trainer",
+        "priceMonthly": 99,
+        "priceAnnualMonthlyEquivalent": 79,
+        "sourceTier": "web-research",
+        "limits": {
+          "admins": 5,
+          "learners": 2000,
+          "txFee": "0%"
+        },
+        "notes": "No enrollment fee"
+      },
+      {
+        "name": "Learning Center",
+        "priceMonthly": 299,
+        "priceAnnualMonthlyEquivalent": 249,
+        "sourceTier": "web-research",
+        "limits": {
+          "admins": 25,
+          "learners": 2000,
+          "txFee": "0%"
+        },
+        "notes": "White-label, SSO"
+      },
+      {
+        "name": "Corporate",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Dedicated CSM",
+            "SLA"
+          ]
+        },
+        "notes": "Custom quote"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

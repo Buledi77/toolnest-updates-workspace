@@ -41,7 +41,7 @@
     "limitations": [],
     "free_plan_status": [],
     "trial_status": [],
-    "pricing_status": "Pricing Not Publicly Listed",
+    "pricing_status": "web-researched",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -112,10 +112,81 @@
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://runwayml.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "freeLimits": "125 one-time credits, 5GB storage, watermarked output",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": "125 one-time",
+          "storage": "5GB"
+        },
+        "notes": "Watermarked videos, limited model selection"
+      },
+      {
+        "name": "Standard",
+        "priceMonthly": 15,
+        "priceAnnualMonthlyEquivalent": 12,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": "625 per month",
+          "storage": "20GB",
+          "projects": 3
+        },
+        "notes": "All AI video and image models, no watermark"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 35,
+        "priceAnnualMonthlyEquivalent": 28,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": "2,250 per month",
+          "storage": "100GB",
+          "projects": 5,
+          "brandKits": 1
+        },
+        "notes": "1 custom voice clone, unlimited 4K video upscaling"
+      },
+      {
+        "name": "Max",
+        "priceMonthly": 95,
+        "priceAnnualMonthlyEquivalent": 76,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": "9,500 per month",
+          "storage": "500GB",
+          "projects": 10,
+          "brandKits": 3
+        },
+        "notes": "Early access to new models, HDR and ProRes output"
+      },
+      {
+        "name": "Team",
+        "priceMonthly": 69,
+        "priceAnnualMonthlyEquivalent": 55,
+        "sourceTier": "web-research",
+        "limits": {
+          "credits": "6,900 per seat pooled",
+          "minSeats": 2,
+          "maxSeats": 9,
+          "storage": "1TB"
+        },
+        "notes": "Per seat per month, shared workspace"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

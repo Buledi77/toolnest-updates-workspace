@@ -7,7 +7,7 @@
     "slug": "brand24",
     "official_url": "https://brand24.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/brand24.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Paid (details not verified)",
+    "pricing_status": "web-researched",
     "free_plan_status": "No free plan (details not verified)"
   },
   "editorial": {
@@ -74,10 +74,74 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Paid (details not verified)",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://brand24.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
     "freePlan": false,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "freeLimits": null,
+    "trial": "14-day free trial",
+    "plans": [
+      {
+        "name": "Individual",
+        "priceMonthly": 249,
+        "priceAnnualMonthlyEquivalent": 199,
+        "sourceTier": "web-research",
+        "limits": {
+          "keywords": 3,
+          "mentions": 2000,
+          "users": 1
+        },
+        "notes": "12-hour updates"
+      },
+      {
+        "name": "Team",
+        "priceMonthly": 349,
+        "priceAnnualMonthlyEquivalent": 299,
+        "sourceTier": "web-research",
+        "limits": {
+          "keywords": 7,
+          "mentions": 5000
+        },
+        "notes": "Hourly updates"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 499,
+        "priceAnnualMonthlyEquivalent": 399,
+        "sourceTier": "web-research",
+        "limits": {
+          "keywords": 12,
+          "mentions": 25000
+        },
+        "notes": "Real-time updates"
+      },
+      {
+        "name": "Business",
+        "priceMonthly": 699,
+        "priceAnnualMonthlyEquivalent": 599,
+        "sourceTier": "web-research",
+        "limits": {
+          "keywords": 25,
+          "mentions": 100000
+        },
+        "notes": "AI Brand Assistant"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": 1499,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "keywords": "Custom"
+        },
+        "notes": "Custom quote"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

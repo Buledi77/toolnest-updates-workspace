@@ -41,7 +41,7 @@
     "limitations": [],
     "free_plan_status": "Free plan available (details not verified)",
     "trial_status": [],
-    "pricing_status": "Freemium (details not verified)",
+    "pricing_status": "web-researched",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -105,10 +105,66 @@
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Freemium (details not verified)",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://leonardo.ai/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
     "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "freeLimits": "150 fast tokens daily, public generations, basic models only",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "tokens": "150 per day",
+          "generations": "public"
+        },
+        "notes": "Auto model only, public creations"
+      },
+      {
+        "name": "Essential",
+        "priceMonthly": 12,
+        "priceAnnualMonthlyEquivalent": 10,
+        "sourceTier": "web-research",
+        "limits": {
+          "tokens": "8,500 per month",
+          "rollover": "Up to 25,500",
+          "modelTrainings": 10
+        },
+        "notes": "Private generations, 80+ models"
+      },
+      {
+        "name": "Premium",
+        "priceMonthly": 30,
+        "priceAnnualMonthlyEquivalent": 24,
+        "sourceTier": "web-research",
+        "limits": {
+          "tokens": "25,000 per month",
+          "rollover": "Up to 75,000",
+          "modelTrainings": 20
+        },
+        "notes": "Unlimited relaxed images on selected models"
+      },
+      {
+        "name": "Ultimate",
+        "priceMonthly": 60,
+        "priceAnnualMonthlyEquivalent": 48,
+        "sourceTier": "web-research",
+        "limits": {
+          "tokens": "60,000 per month",
+          "rollover": "Up to 180,000",
+          "modelTrainings": 50
+        },
+        "notes": "Unlimited relaxed images and selected video models"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

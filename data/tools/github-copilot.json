@@ -7,7 +7,7 @@
     "slug": "github-copilot",
     "official_url": "https://github.com/features/copilot",
     "status": "active",
-    "logo": null,
+    "logo": "/assets/logos/github-copilot.png",
     "aliases": []
   },
   "discovery": {
@@ -61,7 +61,7 @@
     ],
     "limitations": [
       "Free plan has limited allowance (2,000 completions/month)",
-      "AI Credits consumed by token usage — heavy agent use can exhaust credits",
+      "AI Credits consumed by token usage \u2014 heavy agent use can exhaust credits",
       "Overage charged at $0.01 per credit past the pool",
       "Enterprise requires GitHub Enterprise Cloud organization"
     ],
@@ -69,7 +69,7 @@
       "Free plan available with small allowance, approximately 2,000 completions per month"
     ],
     "trial_status": [
-      "No separate trial — Free plan serves as entry point"
+      "No separate trial \u2014 Free plan serves as entry point"
     ],
     "pricing_status": [
       "Pricing verified from official sources on 2026-11-22"
@@ -185,7 +185,7 @@
           "codeCompletions": "Unlimited",
           "usage": "About $15 of usage"
         },
-        "notes": "Most individual developers — includes cloud agent and code review"
+        "notes": "Most individual developers \u2014 includes cloud agent and code review"
       },
       {
         "name": "Pro+",
@@ -197,7 +197,7 @@
           "codeCompletions": "Unlimited",
           "usage": "About $70 of usage"
         },
-        "notes": "Heavy chat and agent users — includes premium models like Claude Opus"
+        "notes": "Heavy chat and agent users \u2014 includes premium models like Claude Opus"
       },
       {
         "name": "Max",
@@ -209,7 +209,7 @@
           "codeCompletions": "Unlimited",
           "usage": "About $200 of usage"
         },
-        "notes": "All-day agentic work — priority access to new models"
+        "notes": "All-day agentic work \u2014 priority access to new models"
       },
       {
         "name": "Business",
@@ -221,7 +221,7 @@
           "aiCredits": "1,900 per user, pooled",
           "codeCompletions": "Unlimited"
         },
-        "notes": "Teams in a GitHub organization — admin controls and IP indemnity"
+        "notes": "Teams in a GitHub organization \u2014 admin controls and IP indemnity"
       },
       {
         "name": "Enterprise",
@@ -233,11 +233,11 @@
           "aiCredits": "3,900 per user, pooled",
           "codeCompletions": "Unlimited"
         },
-        "notes": "GitHub Enterprise Cloud — codebase-aware chat and full feature set"
+        "notes": "GitHub Enterprise Cloud \u2014 codebase-aware chat and full feature set"
       }
     ],
     "billingCaveats": [
-      "GitHub AI Credits billing since June 2026 — one credit equals one cent",
+      "GitHub AI Credits billing since June 2026 \u2014 one credit equals one cent",
       "Code completions unlimited on all paid plans",
       "Overage charged at $0.01 per credit past the pool",
       "Multi-model support: Anthropic Claude, OpenAI GPT, Google Gemini, xAI Grok",

@@ -7,7 +7,7 @@
     "slug": "apollo",
     "official_url": "https://www.apollo.io",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/apollo.png",
     "aliases": []
   },
   "discovery": {
@@ -30,7 +30,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Freemium (details not verified)",
+    "pricing_status": "migrated_from_v1",
     "free_plan_status": "Free plan available (details not verified)"
   },
   "editorial": {
@@ -80,13 +80,51 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Freemium (details not verified)",
-    "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
-    "billingBasis": "annual billing",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      ""
+    ],
     "currency": "USD",
-    "trial": "Free trial available giving access to most features before committing. Free plan also available."
+    "billingBasis": "monthly",
+    "freePlan": true,
+    "trial": null,
+    "plans": [
+      {
+        "name": "Free",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      },
+      {
+        "name": "Basic",
+        "priceMonthly": 49,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      },
+      {
+        "name": "Professional",
+        "priceMonthly": 79,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      },
+      {
+        "name": "Organization",
+        "priceMonthly": 119,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "v1-migration",
+        "limits": {},
+        "notes": ""
+      }
+    ],
+    "billingCaveat": "Pricing migrated from legacy data. Please verify on official website.",
+    "conflicts": [],
+    "changeLog": [],
+    "freeLimits": "limited credits"
   }
 }

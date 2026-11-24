@@ -41,7 +41,7 @@
     "limitations": [],
     "free_plan_status": "Free plan available (details not verified)",
     "trial_status": [],
-    "pricing_status": "Freemium (details not verified)",
+    "pricing_status": "web-researched",
     "pricing_regions": [],
     "availability_regions": []
   },
@@ -105,10 +105,67 @@
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Freemium (details not verified)",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://notebook.google.com/plans"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
     "freePlan": true,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "freeLimits": "100 notebooks, 50 sources per notebook, compute-based usage allowance",
+    "trial": null,
+    "plans": [
+      {
+        "name": "Standard (Free)",
+        "priceMonthly": 0,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "notebooks": 100,
+          "sourcesPerNotebook": 50,
+          "usage": "Compute-based, refreshes every 5 hours"
+        },
+        "notes": "Free with Google account, not a trial"
+      },
+      {
+        "name": "Plus",
+        "priceMonthly": 4.99,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "notebooks": 200,
+          "sourcesPerNotebook": 100,
+          "usage": "2x Standard"
+        },
+        "notes": "Via Google AI Plus subscription"
+      },
+      {
+        "name": "Pro",
+        "priceMonthly": 19.99,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "notebooks": 500,
+          "sourcesPerNotebook": 300,
+          "usage": "4x Standard"
+        },
+        "notes": "Via Google AI Pro subscription"
+      },
+      {
+        "name": "Ultra",
+        "priceMonthly": 99.99,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "notebooks": "Unlimited",
+          "sourcesPerNotebook": 500,
+          "usage": "5x Pro"
+        },
+        "notes": "Via Google AI Ultra subscription"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

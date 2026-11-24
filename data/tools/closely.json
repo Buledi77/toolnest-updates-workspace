@@ -7,7 +7,7 @@
     "slug": "closely",
     "official_url": "https://www.closely.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/closely.png",
     "aliases": []
   },
   "discovery": {
@@ -29,7 +29,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "unavailable"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -78,12 +78,14 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Pricing Not Publicly Listed",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [],
+    "currency": "USD",
+    "billingBasis": "monthly",
     "freePlan": false,
     "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
-    "currency": "USD",
-    "trial": "Free trial available ('Start free trial' on pricing page)."
+    "billingCaveat": "Pricing not publicly available. Tool may have been acquired or discontinued.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

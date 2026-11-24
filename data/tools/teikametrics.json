@@ -7,7 +7,7 @@
     "slug": "teikametrics",
     "official_url": "https://www.teikametrics.com",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/teikametrics.png",
     "aliases": []
   },
   "discovery": {
@@ -26,7 +26,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -75,10 +75,50 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": null,
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": null,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing."
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://www.teikametrics.com/pricing"
+    ],
+    "currency": "USD",
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "Free trial available",
+    "plans": [
+      {
+        "name": "Essentials",
+        "priceMonthly": 179,
+        "priceAnnualMonthlyEquivalent": 149,
+        "sourceTier": "web-research",
+        "limits": {
+          "adSpend": "$10K/month"
+        },
+        "notes": "Amazon/Walmart PPC"
+      },
+      {
+        "name": "Advanced",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "adSpend": "Over $10K",
+          "fee": "3% of ad spend"
+        },
+        "notes": "Custom + 3% of ad spend"
+      },
+      {
+        "name": "Enterprise",
+        "priceMonthly": null,
+        "priceAnnualMonthlyEquivalent": null,
+        "sourceTier": "web-research",
+        "limits": {
+          "adSpend": "Over $100K"
+        },
+        "notes": "Custom quote"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }

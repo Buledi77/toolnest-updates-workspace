@@ -7,7 +7,7 @@
     "slug": "replyio",
     "official_url": "https://www.reply.io",
     "status": "active",
-    "logo": "",
+    "logo": "/assets/logos/replyio.png",
     "aliases": []
   },
   "discovery": {
@@ -30,7 +30,7 @@
     ]
   },
   "factual_profile": {
-    "pricing_status": "Pricing Not Publicly Listed"
+    "pricing_status": "web-researched"
   },
   "editorial": {
     "editorial_tier": "B",
@@ -79,12 +79,70 @@
     "updated_at": "2026-11-23T20:00:00Z"
   },
   "pricing": {
-    "checkedOn": "2026-11-23",
-    "pricing_status": "Pricing Not Publicly Listed",
-    "freePlan": false,
-    "plans": [],
-    "notes": "Pricing not yet verified by ToolNest research. Check the official site for current pricing.",
+    "checkedOn": "2026-11-24",
+    "sourceUrls": [
+      "https://reply.io/pricing"
+    ],
     "currency": "USD",
-    "trial": "14-day free trial available."
+    "billingBasis": "monthly",
+    "freePlan": false,
+    "freeLimits": null,
+    "trial": "14-day free trial",
+    "plans": [
+      {
+        "name": "Email Volume (1K)",
+        "priceMonthly": 59,
+        "priceAnnualMonthlyEquivalent": 49,
+        "sourceTier": "web-research",
+        "limits": {
+          "activeContacts": 1000
+        },
+        "notes": "Per user, email-only"
+      },
+      {
+        "name": "Email Volume (10K)",
+        "priceMonthly": 179,
+        "priceAnnualMonthlyEquivalent": 159,
+        "sourceTier": "web-research",
+        "limits": {
+          "activeContacts": 10000,
+          "users": "Unlimited"
+        },
+        "notes": "Unlimited users above 5K contacts"
+      },
+      {
+        "name": "Multichannel",
+        "priceMonthly": 99,
+        "priceAnnualMonthlyEquivalent": 89,
+        "sourceTier": "web-research",
+        "limits": {
+          "features": [
+            "Email",
+            "LinkedIn",
+            "calls",
+            "SMS",
+            "WhatsApp"
+          ]
+        },
+        "notes": "Per user per month"
+      },
+      {
+        "name": "Jason AI SDR",
+        "priceMonthly": 800,
+        "priceAnnualMonthlyEquivalent": 500,
+        "sourceTier": "web-research",
+        "limits": {
+          "activeContacts": 1000,
+          "features": [
+            "AI SDR agent",
+            "intent signals"
+          ]
+        },
+        "notes": "Per month, unlimited users"
+      }
+    ],
+    "billingCaveat": "Pricing verified via web research. Prices may change \u2014 confirm on official website.",
+    "conflicts": [],
+    "changeLog": []
   }
 }
