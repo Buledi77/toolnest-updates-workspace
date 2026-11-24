@@ -194,18 +194,6 @@
 <div class="ov-wrap">
 
 <section class="p-sec">
-<h2>How it works</h2>
-<p>ToolNest tracks which tools serve the same jobs based on existing review data, comparison pages, and alternatives pages. Select two tools below to see:</p>
-<ul>
-<li>Whether they share the same category or job</li>
-<li>What each tool does best</li>
-<li>Whether a side-by-side comparison exists</li>
-<li>Links to relevant alternatives pages</li>
-</ul>
-<p class="ov-note">This tool uses structured data from all 153 reviewed tools across ToolNest. Overlap is detected via shared categories, alternative relationships, and use-case tags.</p>
-</section>
-
-<section class="p-sec">
 <h2>Select two tools</h2>
 
 <div class="ov-filter" id="ovCategoryFilter" aria-label="Filter by category">
@@ -245,6 +233,18 @@
 <div class="ov-result" id="ovResult" role="region" aria-live="polite" aria-label="Overlap analysis result">
 </div>
 
+</section>
+
+<section class="p-sec">
+<h2>How it works</h2>
+<p>ToolNest tracks which tools serve the same jobs based on existing review data, comparison pages, and alternatives pages. The analysis shows:</p>
+<ul>
+<li>Whether they share the same category or job</li>
+<li>What each tool does best</li>
+<li>Whether a side-by-side comparison exists</li>
+<li>Links to relevant alternatives pages</li>
+</ul>
+<p class="ov-note">This tool uses structured data from all 153 reviewed tools across ToolNest. Overlap is detected via shared categories, alternative relationships, and use-case tags.</p>
 </section>
 
 <section class="p-sec">
@@ -629,7 +629,7 @@
  }
  if(a === b){
  result.classList.add('visible');
- result.innerHTML = '<div class="ov-card"><div style="text-align:center;padding:20px 0"><div style="font-size:40px;margin-bottom:12px;opacity:.5">🔄</div><h3 style="margin:0 0 8px;color:var(--ink)">Same tool selected</h3><p class="ov-detail" style="margin:0">Please choose two <strong>different</strong> tools to compare. You currently have <strong>' + escapeHtml(D.tools[a].name) + '</strong> in both slots.</p></div></div>';
+ result.innerHTML = '<div class="ov-card"><div style="text-align:center;padding:20px 0"><div style="font-size:40px;margin-bottom:12px;opacity:.5">🔄</div><h3 style="margin:0 0 8px;color:var(--ink)">Same tool selected</h3><p class="ov-detail" style="margin:0">Please choose two different tools to compare. You currently have <strong>' + escapeHtml(D.tools[a].name) + '</strong> in both slots.</p></div></div>';
  return;
  }
  var toolA = D.tools[a];

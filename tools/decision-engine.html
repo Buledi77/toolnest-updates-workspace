@@ -236,29 +236,6 @@
 <div class="de-wrap">
 
 <section class="p-sec">
-<h2>How it works</h2>
-<p>The Decision Engine scores every tool against your criteria using transparent rules you can inspect. No black-box AI — just structured data and explainable matching.</p>
-<div class="p-feats">
-<div class="p-feat">
-<b>Select your use cases</b>
-<p>Choose what you want to accomplish. The engine matches tools by their verified use case tags.</p>
-</div>
-<div class="p-feat">
-<b>Filter by category &amp; platform</b>
-<p>Narrow results to specific tool categories and platform availability.</p>
-</div>
-<div class="p-feat">
-<b>See the scoring breakdown</b>
-<p>Every recommendation shows exactly why it scored high — use case matches, category fit, and data quality.</p>
-</div>
-<div class="p-feat">
-<b>No fabricated data</b>
-<p>Scoring uses only verified structured data. When data is missing, the engine shows "unknown" instead of guessing.</p>
-</div>
-</div>
-</section>
-
-<section class="p-sec">
 <h2>Quick start — pick a goal</h2>
 <div class="de-goals-quick" id="deGoalsQuick" role="group" aria-label="Quick start goals">
 <button class="de-goal-btn" data-use-cases="project management,task tracking" data-categories="Project Management">📋 Manage projects</button>
@@ -356,6 +333,29 @@
 </div>
 </div>
 
+</section>
+
+<section class="p-sec">
+<h2>How it works</h2>
+<p>The Decision Engine scores every tool against your criteria using transparent rules you can inspect. No black-box AI — just structured data and explainable matching.</p>
+<div class="p-feats">
+<div class="p-feat">
+<b>Select your use cases</b>
+<p>Choose what you want to accomplish. The engine matches tools by their verified use case tags.</p>
+</div>
+<div class="p-feat">
+<b>Filter by category &amp; platform</b>
+<p>Narrow results to specific tool categories and platform availability.</p>
+</div>
+<div class="p-feat">
+<b>See the scoring breakdown</b>
+<p>Every recommendation shows exactly why it scored high — use case matches, category fit, and data quality.</p>
+</div>
+<div class="p-feat">
+<b>No fabricated data</b>
+<p>Scoring uses only verified structured data. When data is missing, the engine shows "unknown" instead of guessing.</p>
+</div>
+</div>
 </section>
 
 <section class="p-sec">
@@ -1168,7 +1168,7 @@ function renderFilters(){
  if(reqParts.length > 0){
  html += '<div class="de-req-summary">Criteria: ' + reqParts.join(' · ') + '</div>';
  }
- html += '<a href="#deFilters" class="de-refine-link">← Change answers</a>';
+ html += '<a href="#deFilters" class="de-refine-link">← Refine / Change answers</a>';
  html += '<div class="de-result-count">' + results.length + ' tool' + (results.length>1?'s':'') + ' found, scored and ranked</div>';
 
  // Summary stats
