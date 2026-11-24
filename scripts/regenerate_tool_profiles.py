@@ -137,9 +137,16 @@ def render_identity_section(data: dict) -> str:
     lines.append('<section class="p-sec" id="overview">')
     lines.append(f"<h2>{name} overview</h2>")
 
-    # Overview paragraph
-    if lede:
-        lines.append(f"<p>{esc(name)} is a tool for {esc(lede)}.</p>")
+    # Overview paragraph — use all use_cases in a natural sentence
+    if use_cases:
+        # Keep use_cases lowercase since they follow "helps you"
+        if len(use_cases) == 1:
+            cases_text = use_cases[0]
+        elif len(use_cases) == 2:
+            cases_text = f"{use_cases[0]} and {use_cases[1]}"
+        else:
+            cases_text = ", ".join(use_cases[:-1]) + f", and {use_cases[-1]}"
+        lines.append(f"<p>{esc(name)} helps you {esc(cases_text)}.</p>")
 
     # Why it may be a good fit
     if best_for_text:
@@ -665,12 +672,11 @@ def generate_page(data: dict) -> str:
             months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
             reviewed_month = f"Last reviewed {months[month_num - 1]} {year}"
 
-    # Build description
-    desc_parts = []
-    if lede:
-        desc_parts.append(esc(lede))
-    desc_parts.append("This review explains the strengths, trade-offs and ideal use cases in plain English.")
-    description = ". ".join(desc_parts) if desc_parts else "Editorial review covering strengths, trade-offs, pricing, and who should choose or skip this tool."
+    # Build description — substantive snippet for search results
+    if reviewed_month:
+        description = f"{esc(name)} review: verified pricing, plan limits, and who should choose or skip it. {esc(reviewed_month)}."
+    else:
+        description = f"{esc(name)} review: pricing, plan limits, and who should choose or skip it. Editorial analysis by ToolNest."
 
     # Title
     title = f"{esc(name)} Review: {esc(cat)} Platform | ToolNest"
@@ -809,8 +815,15 @@ def generate_page(data: dict) -> str:
     html_parts.append(f'<div class="p-plate"><div class="plate">{logo_html}</div><span class="badge">{esc(cat)}</span></div>')
     html_parts.append(f'<p class="eyebrow">Tool review   {esc(cat)}</p>')
     html_parts.append(f'<h1>{h1}</h1>')
-    if lede:
-        html_parts.append(f'<p class="lede">{esc(lede)}. This review explains the strengths, trade-offs and ideal use cases in plain English.</p>')
+    # Hero lede — proper decision summary using use_cases
+    if use_cases:
+        if len(use_cases) == 1:
+            hero_text = use_cases[0]
+        elif len(use_cases) == 2:
+            hero_text = f"{use_cases[0]} and {use_cases[1]}"
+        else:
+            hero_text = ", ".join(use_cases[:-1]) + f", and {use_cases[-1]}"
+        html_parts.append(f'<p class="lede">{esc(name)} is a {esc(cat).lower()} tool that helps you {esc(hero_text)}. This review covers verified pricing, real limitations, and who should choose or skip it.</p>')
     html_parts.append(f'<div class="s-cta">{cta_html}<a class="lnk" href="#best-for">Who it is for</a></div>')
     if reviewed_month:
         html_parts.append(f'<div class="pmeta"><span>{esc(reviewed_month)}</span><a href="/about.html">How we research and choose tools</a></div>')
