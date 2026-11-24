@@ -398,11 +398,5 @@
 # Generic catch-all: extensionless URLs -> .html (covers new pages not listed above).
 # Uses [^./]+ to avoid matching dotted paths like /tools/file.txt.
 # These must come AFTER the explicit redirects so they don't shadow them.
-/tools/:slug /tools/:slug.html 301
-/compare/:slug /compare/:slug.html 301
-/alternatives/:slug /alternatives/:slug.html 301
-/best/:slug /best/:slug.html 301
-/category/:slug /category/:slug.html 301
-/goals/:slug /goals/:slug.html 301
 
 # Existing homepage rewrite.
