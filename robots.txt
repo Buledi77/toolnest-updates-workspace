@@ -1,40 +1,21 @@
+# One shared group: every crawler listed here (including AI search and retrieval
+# crawlers) may access the public editorial corpus and follows the same rules.
 User-agent: *
-Allow: /
-Crawl-delay: 1
-
-# AI search and retrieval crawlers may access the public editorial corpus.
 User-agent: GPTBot
-Allow: /
-
 User-agent: OAI-SearchBot
-Allow: /
-
 User-agent: ClaudeBot
-Allow: /
-
 User-agent: PerplexityBot
-Allow: /
-
 User-agent: Google-Extended
-Allow: /
-
 User-agent: Applebot-Extended
-Allow: /
-
 User-agent: CCBot
-Allow: /
-
 User-agent: FacebookBot
-Allow: /
-
 User-agent: Twitterbot
-Allow: /
-
 User-agent: Googlebot
-Allow: /
-
 User-agent: Bingbot
 Allow: /
+
+# The homepage and tool search load this file with JavaScript, so it must stay crawlable.
+Allow: /data/tools-v1.json
 
 # Disallow admin and utility paths
 Disallow: /node_modules/
@@ -47,4 +28,3 @@ Disallow: /tests/
 Disallow: /chrome/
 
 Sitemap: https://www.toolnestai.tech/sitemap.xml
-

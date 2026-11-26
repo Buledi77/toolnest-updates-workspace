@@ -22,6 +22,16 @@
       "permanent": true
     },
     {
+      "source": "/category/accounting.html",
+      "destination": "https://www.toolnestai.tech/category/productivity.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/accounting",
+      "destination": "https://www.toolnestai.tech/category/productivity.html",
+      "permanent": true
+    },
+    {
       "source": "/compare/semrush-vs-ahrefs.html",
       "destination": "https://www.toolnestai.tech/compare/ahrefs-vs-semrush.html",
       "permanent": true
