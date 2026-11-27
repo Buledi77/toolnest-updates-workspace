@@ -235,6 +235,8 @@ def validate_file(path: Path, root: Path) -> list[str]:
 
 def iter_html_files(root: Path):
     for path in sorted(root.rglob("*.html")):
+        if path.name == "googlef7f3d54afb5d5344.html":
+            continue  # plain-text verification file, not a page
         if set(path.relative_to(root).parts) & SKIP_DIRS:
             continue
         yield path
