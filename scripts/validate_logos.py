@@ -123,6 +123,15 @@ def validate(root: Path | str = ROOT) -> tuple[list[str], list[str]]:
                 if "<img" not in inner and not re.search(r"[A-Za-z0-9]", inner):
                     errors.append(f"{rel}: empty logo tile")
 
+        # Every indexable head-to-head comparison should show both contenders'
+        # logos. A missing pair is a rendering regression, not a style choice.
+        if path.parent.name == "compare" and path.name != "index.html":
+            is_noindex = bool(
+                re.search(r'name=["\']robots["\'][^>]*noindex', text, re.IGNORECASE)
+            )
+            if not is_noindex and not LOGO_REF_RE.search(text):
+                errors.append(f"{rel}: comparison page has no tool logos")
+
     return errors, sorted(set(warnings))
 
 

@@ -57,6 +57,25 @@ class LogoValidationTests(unittest.TestCase):
             self.assertEqual(errors, [])
             self.assertTrue(any("below the 96px guideline" in w for w in warnings), warnings)
 
+    def test_comparison_without_logo_is_reported(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            compare = Path(tmp) / "compare"
+            compare.mkdir()
+            (compare / "a-vs-b.html").write_text(page("<h1>A vs B</h1>"), encoding="utf-8")
+            errors, _ = validate(tmp)
+            self.assertTrue(any("no tool logos" in e for e in errors), errors)
+
+    def test_noindex_comparison_may_omit_logos(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            compare = Path(tmp) / "compare"
+            compare.mkdir()
+            (compare / "a-vs-b.html").write_text(
+                page('<meta name="robots" content="noindex,follow"><h1>A vs B</h1>'),
+                encoding="utf-8",
+            )
+            errors, _ = validate(tmp)
+            self.assertEqual(errors, [])
+
 
 if __name__ == "__main__":
     unittest.main()

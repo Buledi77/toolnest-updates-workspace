@@ -27,7 +27,7 @@ def _find_noindex_pages():
             if not fname.endswith('.html'):
                 continue
             fpath = os.path.join(root, fname)
-            rel = os.path.relpath(fpath, BASE_DIR)
+            rel = os.path.relpath(fpath, BASE_DIR).replace(os.sep, "/")
             try:
                 content = open(fpath, encoding='utf-8').read()
             except (OSError, UnicodeDecodeError):

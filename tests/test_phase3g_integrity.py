@@ -151,7 +151,11 @@ class TestMetadataQuality:
 
             title = title_match.group(1)
             for phrase in broken_phrases:
-                assert phrase not in title, (
+                # Word boundaries avoid false positives such as "Call Review"
+                # inside the legitimate product name "KrispCall Review".
+                assert not re.search(
+                    r"\b" + re.escape(phrase) + r"\b", title, re.IGNORECASE
+                ), (
                     f"{os.path.basename(html_file)} title contains broken phrase "
                     f"'{phrase}': {title}"
                 )
