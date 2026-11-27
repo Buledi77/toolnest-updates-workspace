@@ -322,15 +322,15 @@
  var TICK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>';
 
  function esc(s) {
- return String(s).replace(/[&<>"]/g, function (c) {
+ return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
  return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
  });
  }
  function norm(s) {
- return String(s).toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+ return String(s == null ? "" : s).toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
  }
  function compareNames(a, b) {
- return a.name.localeCompare(b.name, undefined, { sensitivity: "base" });
+ return String(a.name == null ? "" : a.name).localeCompare(String(b.name == null ? "" : b.name), undefined, { sensitivity: "base" });
  }
  function search(list, term) {
  var words = norm(term).split(" ").filter(Boolean);
@@ -645,8 +645,17 @@ function readURL() {
  if (retry) retry.addEventListener("click", function () { window.location.reload(); });
  }
 
+ // A record that cannot be shown as a card must never break the whole directory.
+ function isRenderable(t) {
+ return !!t && typeof t.id === "string" && t.id !== "" && typeof t.name === "string" && t.name !== "" && typeof t.cat === "string" && t.cat !== "";
+ }
+
  function init(data) {
- TOOLS = (data && data.tools) || [];
+ var all = (data && data.tools) || [];
+ TOOLS = all.filter(isRenderable);
+ if (window.console && TOOLS.length !== all.length) {
+ console.warn("ToolNest: skipped " + (all.length - TOOLS.length) + " catalog record(s) missing id, name or cat: " + all.filter(function (t) { return !isRenderable(t); }).map(function (t) { return t && t.id; }).join(", "));
+ }
  if (!TOOLS.length) { showError(); return; }
  CATS = [];
  TOOLS.forEach(function (x) { if (CATS.indexOf(x.cat) < 0) CATS.push(x.cat); });
@@ -666,7 +675,10 @@ function readURL() {
  fetch("/data/tools-v1.json", { cache: "no-cache" })
  .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
  .then(init)
- .catch(showError);
+ .catch(function (err) {
+ if (window.console) console.error("ToolNest: the tool directory failed to render:", err);
+ showError();
+ });
 })();
 </script>
 </body></html>

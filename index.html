@@ -285,9 +285,11 @@
  var featuredGrid = document.getElementById("featuredGrid");
  var TOOLS = {};
  var cur = -1;
+ var loadState = "loading"; // loading | ready | failed
+ var FAILED_HTML = '<p class="s-why">We could not load the tool details.</p><p class="s-note" style="margin-top:14px">You can still <a href="/tools/index.html" style="color:#CFE6E1">browse every tool</a> or <a href="/goals/index.html" style="color:#CFE6E1">pick by goal</a>.</p>';
 
  function esc(s) {
- return String(s).replace(/[&<>"]/g, function (c) {
+ return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
  return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
  });
  }
@@ -306,7 +308,8 @@
  }
 
  function whyText(t) {
- return /[.!?]$/.test(t.best) ? t.best : t.best + ".";
+ var b = t.best == null ? "" : String(t.best);
+ return !b || /[.!?]$/.test(b) ? b : b + ".";
  }
 
  function featuredCardHTML(t) {
@@ -376,7 +379,13 @@
  });
  var t = TOOLS[g.tool];
  if (!t) {
+ if (loadState === "failed") {
+ stageBody.innerHTML = FAILED_HTML;
+ } else if (loadState === "ready") {
+ stageBody.innerHTML = '<p class="s-why">This pick is not available right now.</p><p class="s-note" style="margin-top:14px">You can still <a href="' + esc(g.guide) + '" style="color:#CFE6E1">open the goal guide</a> or <a href="/tools/index.html" style="color:#CFE6E1">browse every tool</a>.</p>';
+ } else {
  stageBody.innerHTML = '<p class="s-why">Loading the tool details&hellip;</p><p class="s-note" style="margin-top:14px">This only takes a moment. <a href="' + esc(g.guide) + '" style="color:#CFE6E1">Open the goal guide</a>.</p>';
+ }
  return;
  }
  stageBody.innerHTML = stageHTML(g, t);
@@ -432,20 +441,37 @@
  });
  }
 
+ function isRenderable(t) {
+ return !!t && typeof t.id === "string" && t.id !== "" && typeof t.name === "string" && t.name !== "";
+ }
+
  faq();
  showGoal(0, false);
 
- fetch("/data/tools-v1.json", { cache: "no-cache" })
+ // A request that never settles must not leave the picker on "Loading..." forever.
+ var ctl = typeof AbortController === "function" ? new AbortController() : null;
+ var timer = ctl ? setTimeout(function () { ctl.abort(); }, 10000) : null;
+
+ fetch("/data/tools-v1.json", ctl ? { cache: "no-cache", signal: ctl.signal } : { cache: "no-cache" })
  .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
  .then(function (data) {
- var list = (data && data.tools) || [];
+ if (timer) clearTimeout(timer);
+ var all = (data && data.tools) || [];
+ var list = all.filter(isRenderable);
+ if (window.console && list.length !== all.length) console.warn("ToolNest: skipped " + (all.length - list.length) + " catalog record(s) without an id or name.");
  list.forEach(function (t) { TOOLS[t.id] = t; });
+ if (window.console) FEATURED.forEach(function (id) { if (!TOOLS[id]) console.warn("ToolNest: featured tool is missing from the catalog: " + id); });
+ if (window.console) GOALS.forEach(function (g) { if (!TOOLS[g.tool]) console.warn('ToolNest: goal "' + g.id + '" points at a tool that is missing from the catalog: ' + g.tool); });
+ loadState = "ready";
  fillCounts(list);
  renderFeatured();
  showGoal(cur < 0 ? 0 : cur, false);
  })
- .catch(function () {
- stageBody.innerHTML = '<p class="s-why">We could not load the tool details.</p><p class="s-note" style="margin-top:14px">You can still <a href="/tools/index.html" style="color:#CFE6E1">browse every tool</a> or <a href="/goals/index.html" style="color:#CFE6E1">pick by goal</a>.</p>';
+ .catch(function (err) {
+ if (timer) clearTimeout(timer);
+ loadState = "failed";
+ if (window.console) console.error("ToolNest: could not load the tool catalog:", err);
+ showGoal(cur < 0 ? 0 : cur, false);
  });
 })();
 </script>
