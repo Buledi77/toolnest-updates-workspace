@@ -20,7 +20,7 @@ import json
 import sys
 from pathlib import Path
 
-ROOT = '/workspaces/toolnest-updates-workspace'
+ROOT = str(Path(__file__).resolve().parents[1])
 
 def find_html_files():
     html_files = []
@@ -185,6 +185,8 @@ def check_robots():
     return issues
 
 def main():
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8')  # the report prints emoji; legacy Windows consoles cannot
     print("=" * 60)
     print("ToolNest QA Validation (Expanded)")
     print("=" * 60)

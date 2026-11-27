@@ -139,7 +139,7 @@ def run_seo_check():
     # Parse all pages
     page_metas = {}
     for html_file in html_files:
-        rel_path = str(html_file.relative_to(ROOT))
+        rel_path = html_file.relative_to(ROOT).as_posix()
         meta = parse_page_meta(html_file)
         if meta:
             page_metas[rel_path] = meta
