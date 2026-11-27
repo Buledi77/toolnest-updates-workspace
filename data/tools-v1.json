@@ -1954,7 +1954,7 @@
       "affiliateUrl": "",
       "category": {
         "label": "Voice & Video",
-        "slug": "voice-and-video"
+        "slug": "voice-video"
       },
       "shortDescription": null,
       "pricing": {
@@ -4366,7 +4366,7 @@
       "affiliateUrl": "",
       "category": {
         "label": "Website Builder",
-        "slug": "website-builder"
+        "slug": "website-builders"
       },
       "shortDescription": null,
       "pricing": {
@@ -7018,7 +7018,7 @@
       "affiliateUrl": "",
       "category": {
         "label": "Voice & Video",
-        "slug": "voice-and-video"
+        "slug": "voice-video"
       },
       "shortDescription": null,
       "pricing": {
@@ -7134,7 +7134,7 @@
       "affiliateUrl": "",
       "category": {
         "label": "Website Builder",
-        "slug": "website-builder"
+        "slug": "website-builders"
       },
       "shortDescription": null,
       "pricing": {
@@ -9323,7 +9323,7 @@
       "affiliateUrl": "",
       "category": {
         "label": "Website Builder",
-        "slug": "website-builder"
+        "slug": "website-builders"
       },
       "shortDescription": null,
       "pricing": {
@@ -11539,7 +11539,7 @@
       "affiliateUrl": "",
       "category": {
         "label": "Voice & Video",
-        "slug": "voice-and-video"
+        "slug": "voice-video"
       },
       "shortDescription": null,
       "pricing": {
@@ -11642,7 +11642,7 @@
       "affiliateUrl": "",
       "category": {
         "label": "Website Builder",
-        "slug": "website-builder"
+        "slug": "website-builders"
       },
       "shortDescription": null,
       "pricing": {
@@ -12814,6 +12814,10 @@
       "best": "Browser-based full-stack application builder by StackBlitz",
       "logo": "/assets/logos/bolt.png",
       "affiliateUrl": "",
+      "category": {
+        "label": "Developer Tools",
+        "slug": "developer-tools"
+      },
       "pricing": {
         "model": "tiered subscription by tokens",
         "currency": "USD",
@@ -12851,6 +12855,10 @@
       "best": "AI-native code editor with chat and agent modes",
       "logo": "/assets/logos/cursor.png",
       "affiliateUrl": "",
+      "category": {
+        "label": "Developer Tools",
+        "slug": "developer-tools"
+      },
       "pricing": {
         "model": "tiered subscription",
         "currency": "USD",
@@ -12885,6 +12893,10 @@
       "best": "AI code completions and chat in VS Code, JetBrains, and other editors",
       "logo": "/assets/logos/github-copilot.png",
       "affiliateUrl": "",
+      "category": {
+        "label": "Developer Tools",
+        "slug": "developer-tools"
+      },
       "alternatives": []
     },
     {
@@ -12898,6 +12910,10 @@
       "best": "AI-powered video generation with custom avatars",
       "logo": "/assets/logos/heygen.png",
       "affiliateUrl": "",
+      "category": {
+        "label": "Voice & Video",
+        "slug": "voice-video"
+      },
       "alternatives": []
     },
     {
@@ -12911,6 +12927,10 @@
       "best": "AI image generation specialist in text rendering within images",
       "logo": "/assets/logos/ideogram.png",
       "affiliateUrl": "",
+      "category": {
+        "label": "Image Generation",
+        "slug": "image-generation"
+      },
       "pricing": {
         "model": "tiered subscription",
         "currency": "USD",
@@ -12953,31 +12973,11 @@
       "best": "AI-powered full-stack application builder",
       "logo": "/assets/logos/lovable.png",
       "affiliateUrl": "",
-      "alternatives": []
-    },
-    {
-      "id": "fixture-tool",
-      "name": "Fixture Tool",
-      "discovery": {
-        "platforms": [
-          "web"
-        ],
-        "categories": [
-          "Testing"
-        ]
+      "category": {
+        "label": "Website Builder",
+        "slug": "website-builders"
       },
-      "pricing": {
-        "checkedOn": "2026-01-01",
-        "currency": "USD",
-        "billingBasis": "monthly",
-        "freePlan": false,
-        "plans": [
-          {
-            "name": "Pro",
-            "priceMonthly": 50
-          }
-        ]
-      }
+      "alternatives": []
     }
   ]
 }
