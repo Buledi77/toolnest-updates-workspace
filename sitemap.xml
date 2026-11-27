@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.toolnestai.tech/</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
     <loc>https://www.toolnestai.tech/about.html</loc>
     <lastmod>2026-11-22</lastmod>
   </url>
@@ -697,10 +701,6 @@
     <lastmod>2026-11-23</lastmod>
   </url>
   <url>
-    <loc>https://www.toolnestai.tech/</loc>
-    <lastmod>2026-11-23</lastmod>
-  </url>
-  <url>
     <loc>https://www.toolnestai.tech/privacy.html</loc>
     <lastmod>2026-11-23</lastmod>
   </url>
@@ -729,12 +729,28 @@
     <lastmod>2026-11-23</lastmod>
   </url>
   <url>
+    <loc>https://www.toolnestai.tech/tools/claude.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
     <loc>https://www.toolnestai.tech/tools/cursor.html</loc>
     <lastmod>2026-11-23</lastmod>
   </url>
   <url>
+    <loc>https://www.toolnestai.tech/tools/gemini.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
     <loc>https://www.toolnestai.tech/tools/github-copilot.html</loc>
     <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.toolnestai.tech/tools/grammarly.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.toolnestai.tech/tools/helpscout.html</loc>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://www.toolnestai.tech/tools/heygen.html</loc>
@@ -745,6 +761,10 @@
     <lastmod>2026-11-23</lastmod>
   </url>
   <url>
+    <loc>https://www.toolnestai.tech/tools/hubspot.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
     <loc>https://www.toolnestai.tech/tools/ideogram.html</loc>
     <lastmod>2026-11-23</lastmod>
   </url>
@@ -753,8 +773,20 @@
     <lastmod>2026-11-23</lastmod>
   </url>
   <url>
+    <loc>https://www.toolnestai.tech/tools/krispcall.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
     <loc>https://www.toolnestai.tech/tools/lovable.html</loc>
     <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.toolnestai.tech/tools/mailchimp.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.toolnestai.tech/tools/monday.html</loc>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://www.toolnestai.tech/tools/mozpro.html</loc>
@@ -777,7 +809,15 @@
     <lastmod>2026-11-27</lastmod>
   </url>
   <url>
+    <loc>https://www.toolnestai.tech/tools/webflow.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
     <loc>https://www.toolnestai.tech/tools/workflow-explorer.html</loc>
     <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.toolnestai.tech/tools/zapier.html</loc>
+    <lastmod>2026-11-27</lastmod>
   </url>
 </urlset>
