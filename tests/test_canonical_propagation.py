@@ -58,13 +58,24 @@ class TestCanonicalPropagation(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        """Save original data files for restoration."""
-        cls.saved_ledger = load_json(LEDGER_PATH)
-        cls.saved_v1 = load_json(TOOLS_V1_PATH)
+        """Snapshot the production data files and prepare a fixture-bearing working copy.
 
-        # Create fixture tool JSON if it doesn't exist
+        The production files are restored byte-for-byte when the class finishes. ``saved_v1`` is a
+        pristine backup and must never be mutated: it used to receive the fixture record and was
+        then written back as the "restore", which leaked ``fixture-tool`` into the production
+        data/tools-v1.json (an extra tool and an "undefined" category on the live site).
+        """
+        cls._ledger_bytes = LEDGER_PATH.read_bytes()
+        cls._v1_bytes = TOOLS_V1_PATH.read_bytes()
         cls.fixture_tool_path = DATA_TOOLS_DIR / "fixture-tool.json"
         cls.fixture_existed = cls.fixture_tool_path.exists()
+        # Registered before anything is written, so it also runs if setUpClass fails half-way.
+        cls.addClassCleanup(cls._restore_production_files)
+
+        cls.saved_ledger = load_json(LEDGER_PATH)
+        cls.saved_v1 = load_json(TOOLS_V1_PATH)  # pristine backup, never mutated
+
+        # Create fixture tool JSON if it doesn't exist
         if not cls.fixture_existed:
             cls.saved_fixture = None
             fixture_data = {
@@ -82,14 +93,11 @@ class TestCanonicalPropagation(unittest.TestCase):
         else:
             cls.saved_fixture = load_json(cls.fixture_tool_path)
 
-        # Add fixture tool to tools-v1.json if not present
-        cls.fixture_in_v1 = False
-        for tool in cls.saved_v1.get("tools", []):
-            if tool.get("id") == "fixture-tool":
-                cls.fixture_in_v1 = True
-                break
+        # The tools-v1.json the tests run against is a COPY of the backup plus the fixture tool.
+        cls.working_v1 = copy.deepcopy(cls.saved_v1)
+        cls.fixture_in_v1 = any(t.get("id") == "fixture-tool" for t in cls.working_v1.get("tools", []))
         if not cls.fixture_in_v1:
-            cls.saved_v1["tools"].append({
+            cls.working_v1["tools"].append({
                 "id": "fixture-tool",
                 "name": "Fixture Tool",
                 "discovery": {"platforms": ["web"], "categories": ["Testing"]},
@@ -101,12 +109,13 @@ class TestCanonicalPropagation(unittest.TestCase):
                     "plans": [{"name": "Pro", "priceMonthly": 50}]
                 }
             })
+        save_json(TOOLS_V1_PATH, cls.working_v1)
 
     @classmethod
-    def tearDownClass(cls):
-        """Restore original data files."""
-        save_json(LEDGER_PATH, cls.saved_ledger)
-        save_json(TOOLS_V1_PATH, cls.saved_v1)
+    def _restore_production_files(cls):
+        """Put the production data back exactly as it was (raw bytes, no re-serialization)."""
+        LEDGER_PATH.write_bytes(cls._ledger_bytes)
+        TOOLS_V1_PATH.write_bytes(cls._v1_bytes)
 
         # Remove fixture tool JSON if it didn't exist before
         if not cls.fixture_existed and cls.fixture_tool_path.exists():
@@ -170,7 +179,7 @@ class TestCanonicalPropagation(unittest.TestCase):
             save_json(LEDGER_PATH, self.saved_ledger)
             if self.saved_fixture:
                 save_json(self.fixture_tool_path, self.saved_fixture)
-            save_json(TOOLS_V1_PATH, self.saved_v1)
+            save_json(TOOLS_V1_PATH, self.working_v1)
 
     def test_free_plan_propagation(self):
         """Test that free plan change propagates to all consumers."""
@@ -212,7 +221,7 @@ class TestCanonicalPropagation(unittest.TestCase):
             save_json(LEDGER_PATH, self.saved_ledger)
             if self.saved_fixture:
                 save_json(self.fixture_tool_path, self.saved_fixture)
-            save_json(TOOLS_V1_PATH, self.saved_v1)
+            save_json(TOOLS_V1_PATH, self.working_v1)
 
     def test_platform_propagation(self):
         """Test that platform change propagates to discovery fields."""
@@ -251,7 +260,7 @@ class TestCanonicalPropagation(unittest.TestCase):
             save_json(LEDGER_PATH, self.saved_ledger)
             if self.saved_fixture:
                 save_json(self.fixture_tool_path, self.saved_fixture)
-            save_json(TOOLS_V1_PATH, self.saved_v1)
+            save_json(TOOLS_V1_PATH, self.working_v1)
 
     def test_capability_propagation(self):
         """Test that capability change propagates to canonical facts."""
