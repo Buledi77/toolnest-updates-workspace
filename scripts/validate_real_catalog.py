@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Validate the real catalog data and report errors by severity."""
 
+import re
+
 from decision_graph_common import (
+    ROOT,
     LEDGER_PATH,
     load_json,
     load_legacy_ids,
@@ -12,8 +15,23 @@ from decision_graph_common import (
 
 
 def validate_real_catalog():
-    """Run validation against the real catalog and categorize errors by severity."""
+    """Run validation against the production catalog and categorize errors.
+
+    Expansion-only records (data/tools-v2/expansion) are not production pages;
+    they are governed by validate_production_scope.py and must not be counted
+    as production catalog defects.
+    """
     errors = validate_tool_records()
+
+    expansion_path = ROOT / "data" / "catalog-reconciliation.json"
+    expansion_ids = set()
+    if expansion_path.is_file():
+        expansion_ids = set(load_json(expansion_path).get("expansion_only_tools", []))
+    if expansion_ids:
+        errors = [
+            err for err in errors
+            if not any(re.search(rf"\b{re.escape(tid)}\b", err) for tid in expansion_ids)
+        ]
 
     high = []
     medium = []

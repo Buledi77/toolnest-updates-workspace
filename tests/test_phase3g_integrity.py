@@ -19,6 +19,16 @@ import pytest
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TOOLS_DIR = os.path.join(ROOT, "tools")
 DATA_DIR = os.path.join(ROOT, "data", "tools")
+UTILITY_PAGES = {
+    "index.html",
+    "automation-budget-estimator.html",
+    "overlap-checker.html",
+    "workflow-explorer.html",
+    "decision-engine.html",
+    "stack-analyzer.html",
+    "seo-cost-calculator.html",
+    "price-and-limit-changes.html",
+}
 SITEMAP = os.path.join(ROOT, "sitemap.xml")
 
 
@@ -151,7 +161,11 @@ class TestMetadataQuality:
 
             title = title_match.group(1)
             for phrase in broken_phrases:
-                assert phrase not in title, (
+                # Word boundaries avoid false positives such as "Call Review"
+                # inside the legitimate product name "KrispCall Review".
+                assert not re.search(
+                    r"\b" + re.escape(phrase) + r"\b", title, re.IGNORECASE
+                ), (
                     f"{os.path.basename(html_file)} title contains broken phrase "
                     f"'{phrase}': {title}"
                 )
@@ -253,23 +267,21 @@ class TestCatalogIntegrity:
             f"Expected 153 JSON files in data/tools/, found {len(json_files)}"
         )
 
-    def test_tools_html_count_is_159(self):
-        """Exactly 159 HTML files in tools/ (153 profiles + 6 utility)."""
+    def test_tools_html_count_matches_catalog_plus_utilities(self):
+        """HTML files in tools/ = 153 catalog profiles + known utility pages."""
         html_files = glob.glob(os.path.join(TOOLS_DIR, "*.html"))
-        assert len(html_files) == 159, (
-            f"Expected 159 HTML files in tools/, found {len(html_files)}"
+        expected = UTILITY_PAGES | {
+            f"{t['id']}.html" for t in json.load(
+                open(os.path.join(DATA_DIR, "..", "tools-v1.json"), encoding="utf-8")
+            )["tools"]
+        }
+        assert len(html_files) == len(expected), (
+            f"Expected {len(expected)} HTML files in tools/, found {len(html_files)}"
         )
 
     def test_utility_pages_excluded_from_catalog(self):
-        """The 6 utility pages are not counted as catalog tools."""
-        utility_pages = {
-            "index.html",
-            "automation-budget-estimator.html",
-            "overlap-checker.html",
-            "workflow-explorer.html",
-            "decision-engine.html",
-            "stack-analyzer.html",
-        }
+        """Utility pages are not counted as catalog tools."""
+        utility_pages = UTILITY_PAGES
 
         # These should NOT have corresponding JSON in data/tools/
         for page in utility_pages:
