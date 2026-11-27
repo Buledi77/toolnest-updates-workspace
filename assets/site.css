@@ -2370,12 +2370,12 @@ section{scroll-margin-top:82px}
 .tn-trust-strip{margin-top:18px}
 .tn-research-line{display:flex;flex-wrap:wrap;align-items:center;gap:7px 10px;margin:0;padding:12px 16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--muted);font-size:13.5px;line-height:1.45}
 .tn-research-line:first-letter{color:var(--text)}
-.tn-research-line a{color:var(--brand);font-weight:700;text-decoration:none}
-.tn-research-line a:hover{text-decoration:underline}
+.tn-research-line a{color:var(--brand);font-weight:700;text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--brand) 38%,transparent);text-underline-offset:3px}
+.tn-research-line a:hover{text-decoration-color:currentColor}
 @media(max-width:760px){.tn-research-line{padding:11px 13px;border-radius:12px;font-size:13px}}
 .tn-trust-links{display:flex;flex-wrap:wrap;gap:8px 16px;margin:10px 0 0;font-size:13px}
-.tn-trust-links a{color:var(--brand);font-weight:650;text-decoration:none}
-.tn-trust-links a:hover{text-decoration:underline}
+.tn-trust-links a{color:var(--brand);font-weight:650;text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--brand) 38%,transparent);text-underline-offset:3px;display:inline-flex;align-items:center;min-height:24px}
+.tn-trust-links a:hover{text-decoration-color:currentColor}
 @media(max-width:760px){.tn-trust-links{gap:7px 12px;font-size:12.5px}}
 
 /* Site-wide commercial CTA: professional deep-teal for external product links.
