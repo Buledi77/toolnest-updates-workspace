@@ -67,6 +67,7 @@ class HeadParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
         self.in_head = False
+        self.html_lang: str | None = None
         self.metas: list[dict[str, str]] = []
         self.links: list[dict[str, str]] = []
         self.title: str | None = None
@@ -75,6 +76,9 @@ class HeadParser(HTMLParser):
 
     def handle_starttag(self, tag: str, attrs) -> None:
         tag = tag.lower()
+        if tag == "html":
+            self.html_lang = {k.lower(): (v or "") for k, v in attrs}.get("lang")
+            return
         if tag == "head":
             self.in_head = True
             return
@@ -140,6 +144,9 @@ def validate_file(path: Path, root: Path) -> list[str]:
     parser.feed(text)
     metas = parser.metas
     links = parser.links
+
+    if not (parser.html_lang or "").strip():
+        errors.append(f"{label}: missing or empty <html lang> attribute")
 
     robots = _meta_by_key(metas, "name", "robots")
     noindex = any("noindex" in m.get("content", "").lower() for m in robots)

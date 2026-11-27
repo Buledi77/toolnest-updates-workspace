@@ -30,10 +30,12 @@ def page(
     canonical: str | None = CANONICAL,
     og_url: str | None = CANONICAL,
     robots: str | None = None,
+    lang: str | None = "en",
     extra_head: str = "",
 ) -> str:
+    html_open = f'<html lang="{lang}">' if lang else "<html>"
     parts = [
-        "<!doctype html><html lang=\"en\"><head>",
+        f"<!doctype html>{html_open}<head>",
         f"<title>{title}</title>",
     ]
     if description is not None:
@@ -131,6 +133,14 @@ class HeadMetadataTests(unittest.TestCase):
         )
         errors = self._errors_for(html)
         self.assertTrue(any("unclosed <meta>" in e for e in errors), errors)
+
+    def test_missing_lang_is_reported(self):
+        errors = self._errors_for(page(lang=None))
+        self.assertTrue(any("<html lang>" in e for e in errors), errors)
+
+    def test_noindex_page_still_requires_lang(self):
+        errors = self._errors_for(page(canonical=None, robots="noindex,follow", lang=None))
+        self.assertTrue(any("<html lang>" in e for e in errors), errors)
 
 
 if __name__ == "__main__":
