@@ -34,6 +34,18 @@ https://github.com/features/copilot publishes only the GitHub (Octocat) mark as 
 another product's mark. To resolve it, either take the official lockup from the GitHub brand toolkit
 (https://brand.github.com/GitHub_Logos.zip) or decide explicitly that the GitHub mark should represent Copilot.
 
+## Spot-checked against the vendor's own icons on 2026-11-27 (visual comparison, no change needed)
+
+These looked like they might be the wrong mark, so each was compared with what the vendor publishes.
+
+| Tool | Result |
+|---|---|
+| Semrush | `semrush.png` shows the same purple-comet mark on a dark tile as the apple-touch and manifest icons published at https://www.semrush.com/. Correct. |
+| n8n | `n8n.png` is the favicon published at https://n8n.io/favicon.ico (a small pink glyph). Correct but small; a larger official icon exists at https://n8n.io/apple-touch-icon.png (180x180) if a sharper mark is wanted. |
+| Adobe Express | `adobeexpress.png` is the Adobe corporate mark, the same icon https://www.adobe.com/apple-touch-icon.png serves for the Express page. The page declares no Express-specific icon, so none could be verified. An Express-specific mark would have to come from Adobe's brand resources. |
+| Freshdesk | `freshdesk.png` is the Freshworks corporate mark, the same as the apple-touch icon on https://www.freshworks.com/freshdesk/ (Freshdesk's official page). No Freshdesk-specific icon is published there. |
+| QuillBot | https://quillbot.com answers 403 to automated requests, so its icon could not be verified. Left unchanged. |
+
 ## Known limitations (not changed here)
 
 - Eleven logos are low resolution (48-64 px, shown up to 88 px): asana, chatgpt, grammarly, hemingway, hostinger,
