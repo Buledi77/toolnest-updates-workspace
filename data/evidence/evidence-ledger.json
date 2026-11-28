@@ -13394,6 +13394,29 @@
       "replacement_claim_id": null,
       "last_verified_date": "2026-11-23",
       "last_check_result": "recheck_passed_no_change"
+    },
+    {
+      "claim_id": "moz-free-trial-and-account-not-verified",
+      "tool_id": "moz-pro",
+      "field_path": "editorial.free_trial_and_free_account",
+      "claim_type": "limitation",
+      "value": "Moz's official pricing page (accessed 2026-11-28) displays 'Start My Free Trial' and links to information about a free Moz account, but does not publish a trial length or a Keyword Explorer query allowance for free accounts. Third-party pages disagree (7-day vs 30-day trial); neither figure is treated as verified.",
+      "source_ids": [
+        "moz-pro-pricing"
+      ],
+      "region": "global",
+      "currency": null,
+      "billing_term": null,
+      "status": "needs_review",
+      "disputed_by": null,
+      "replacement_claim_id": null,
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "stale_after": "2026-12-28",
+      "evidence_note": "Official page checked directly; unresolved figures deliberately not published.",
+      "last_check_result": "not_verified",
+      "anomalies_detected": [],
+      "last_change_type": "new_claim"
     }
   ],
   "disputes": [],
