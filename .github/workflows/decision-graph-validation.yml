@@ -55,7 +55,9 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install test dependencies
-        run: python3 -m pip install pytest lxml html5lib
+        run: python3 -m pip install pytest lxml html5lib playwright
+      - name: Install browser for browser QA
+        run: python3 -m playwright install chromium
       - name: Validate Decision Graph
         run: python3 scripts/validate_decision_graph.py
       - name: Validate evidence ledger
