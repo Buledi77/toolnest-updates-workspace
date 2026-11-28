@@ -1,0 +1,1037 @@
+{
+  "generated_from": "data/evidence/evidence-ledger.json",
+  "claims": [
+    {
+      "tool_id": "hostinger",
+      "claim_id": "hostinger-plan-examples",
+      "plan": "Premium",
+      "monthly_usd": 1.99,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"upfront_usd\": 95.52, \"renewal_monthly_usd\": 10.99, \"selected_limits\": [\"3 websites\", \"20 GB SSD\", \"weekly backups\", \"500 AI credits\"]}",
+      "verified_at": "2026-11-14",
+      "source_urls": "https://www.hostinger.com/pricing"
+    },
+    {
+      "tool_id": "hostinger",
+      "claim_id": "hostinger-plan-examples",
+      "plan": "Unlimited",
+      "monthly_usd": 2.79,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"upfront_usd\": 133.92, \"renewal_monthly_usd\": 16.99, \"selected_limits\": [\"unlimited websites\", \"50 GB NVMe\", \"daily backups\", \"1000 AI credits\"]}",
+      "verified_at": "2026-11-14",
+      "source_urls": "https://www.hostinger.com/pricing"
+    },
+    {
+      "tool_id": "hostinger",
+      "claim_id": "hostinger-plan-examples",
+      "plan": "Cloud Startup",
+      "monthly_usd": 7.99,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"upfront_usd\": 383.52, \"renewal_monthly_usd\": 25.99, \"selected_limits\": [\"unlimited websites\", \"100 GB NVMe\", \"daily and on-demand backups\", \"2000 AI credits\"]}",
+      "verified_at": "2026-11-14",
+      "source_urls": "https://www.hostinger.com/pricing"
+    },
+    {
+      "tool_id": "semrush",
+      "claim_id": "semrush-current-plan-structure",
+      "plan": "Free",
+      "monthly_usd": 0,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"projects\": 1, \"reports_per_day\": 10}",
+      "verified_at": "2026-11-18",
+      "source_urls": "https://www.semrush.com/pricing/"
+    },
+    {
+      "tool_id": "semrush",
+      "claim_id": "semrush-current-plan-structure",
+      "plan": "SEO",
+      "monthly_usd": 139,
+      "annual_monthly_equivalent_usd": 117.33,
+      "limits": "{\"websites\": 5, \"daily_tracked_keywords\": 500}",
+      "verified_at": "2026-11-18",
+      "source_urls": "https://www.semrush.com/pricing/"
+    },
+    {
+      "tool_id": "semrush",
+      "claim_id": "semrush-current-plan-structure",
+      "plan": "Starter",
+      "monthly_usd": 199,
+      "annual_monthly_equivalent_usd": 165.17,
+      "limits": "{\"websites\": 5, \"daily_tracked_keywords\": 500, \"daily_ai_prompts\": 50}",
+      "verified_at": "2026-11-18",
+      "source_urls": "https://www.semrush.com/pricing/"
+    },
+    {
+      "tool_id": "semrush",
+      "claim_id": "semrush-current-plan-structure",
+      "plan": "Pro+",
+      "monthly_usd": 299,
+      "annual_monthly_equivalent_usd": 248.17,
+      "limits": "{\"websites\": 15, \"daily_tracked_keywords\": 1500, \"daily_ai_prompts\": 100}",
+      "verified_at": "2026-11-18",
+      "source_urls": "https://www.semrush.com/pricing/"
+    },
+    {
+      "tool_id": "semrush",
+      "claim_id": "semrush-current-plan-structure",
+      "plan": "Advanced",
+      "monthly_usd": "",
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"price\": \"custom\", \"websites\": \"40+\", \"daily_tracked_keywords\": \"5000+\", \"daily_ai_prompts\": \"official sources conflict: pricing page says unlimited; Knowledge Base says 200\"}",
+      "verified_at": "2026-11-18",
+      "source_urls": "https://www.semrush.com/pricing/"
+    },
+    {
+      "tool_id": "moz-pro",
+      "claim_id": "moz-pro-plan-structure",
+      "plan": "Standard",
+      "monthly_usd": 99,
+      "annual_monthly_equivalent_usd": 79,
+      "limits": "{\"tracked_sites\": 3, \"tracked_keywords\": 300, \"pages_crawled_monthly\": 400000}",
+      "verified_at": "2026-11-18",
+      "source_urls": "https://moz.com/products/pro/pricing"
+    },
+    {
+      "tool_id": "moz-pro",
+      "claim_id": "moz-pro-plan-structure",
+      "plan": "Medium",
+      "monthly_usd": 179,
+      "annual_monthly_equivalent_usd": 143,
+      "limits": "{\"tracked_sites\": 10, \"tracked_keywords\": 1500, \"pages_crawled_monthly\": 2000000}",
+      "verified_at": "2026-11-18",
+      "source_urls": "https://moz.com/products/pro/pricing"
+    },
+    {
+      "tool_id": "moz-pro",
+      "claim_id": "moz-pro-plan-structure",
+      "plan": "Large",
+      "monthly_usd": 299,
+      "annual_monthly_equivalent_usd": 239,
+      "limits": "{\"tracked_sites\": 25, \"tracked_keywords\": 3000, \"pages_crawled_monthly\": 5000000}",
+      "verified_at": "2026-11-18",
+      "source_urls": "https://moz.com/products/pro/pricing"
+    },
+    {
+      "tool_id": "notion",
+      "claim_id": "notion-pricing-verified",
+      "plan": "Free",
+      "monthly_usd": 0,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"selected_limits\": [\"unlimited personal workspace\", \"10 guests max\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.notion.com/pricing"
+    },
+    {
+      "tool_id": "notion",
+      "claim_id": "notion-pricing-verified",
+      "plan": "Plus",
+      "monthly_usd": 10,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"upfront_annual_usd\": 120, \"monthly_billing_usd\": 12, \"selected_limits\": [\"file uploads\", \"workspace sharing\", \"100 guests\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.notion.com/pricing"
+    },
+    {
+      "tool_id": "notion",
+      "claim_id": "notion-pricing-verified",
+      "plan": "Business",
+      "monthly_usd": 20,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"upfront_annual_usd\": 240, \"monthly_billing_usd\": 24, \"selected_limits\": [\"SAML SSO\", \"AI bundled\", \"250 guests\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.notion.com/pricing"
+    },
+    {
+      "tool_id": "notion",
+      "claim_id": "notion-pricing-verified",
+      "plan": "Enterprise",
+      "monthly_usd": "",
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"custom\": true, \"selected_limits\": [\"SCIM\", \"audit logs\", \"dedicated support\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.notion.com/pricing"
+    },
+    {
+      "tool_id": "confetti",
+      "claim_id": "confetti-pricing-verified",
+      "plan": "Pay-Per-Event",
+      "monthly_usd": "",
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"price_per_user\": \"$30\", \"billing\": \"one-time per event\"}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.withconfetti.com/pricing"
+    },
+    {
+      "tool_id": "confetti",
+      "claim_id": "confetti-pricing-verified",
+      "plan": "Pre-Fund",
+      "monthly_usd": "",
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"price_annual\": \"$5000\", \"billing\": \"annual credits\"}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.withconfetti.com/pricing"
+    },
+    {
+      "tool_id": "confetti",
+      "claim_id": "confetti-pricing-verified",
+      "plan": "Enterprise",
+      "monthly_usd": "",
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"custom\": true}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.withconfetti.com/pricing"
+    },
+    {
+      "tool_id": "connecteam",
+      "claim_id": "connecteam-pricing-verified",
+      "plan": "Small Business",
+      "monthly_usd": 0,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"selected_limits\": [\"up to 10 users\", \"all 3 hubs free\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://connecteam.com/pricing"
+    },
+    {
+      "tool_id": "connecteam",
+      "claim_id": "connecteam-pricing-verified",
+      "plan": "Basic",
+      "monthly_usd": 29,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"selected_limits\": [\"30 users\", \"per hub\", \"$0.80/user above 30 (Ops)\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://connecteam.com/pricing"
+    },
+    {
+      "tool_id": "connecteam",
+      "claim_id": "connecteam-pricing-verified",
+      "plan": "Advanced",
+      "monthly_usd": 49,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"selected_limits\": [\"30 users\", \"per hub\", \"$2.50/user above 30 (Ops)\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://connecteam.com/pricing"
+    },
+    {
+      "tool_id": "connecteam",
+      "claim_id": "connecteam-pricing-verified",
+      "plan": "Expert",
+      "monthly_usd": 99,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"selected_limits\": [\"30 users\", \"per hub\", \"$4.20/user above 30 (Ops)\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://connecteam.com/pricing"
+    },
+    {
+      "tool_id": "connecteam",
+      "claim_id": "connecteam-pricing-verified",
+      "plan": "Enterprise",
+      "monthly_usd": "",
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"custom\": true}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://connecteam.com/pricing"
+    },
+    {
+      "tool_id": "meetgeek",
+      "claim_id": "meetgeek-pricing-verified",
+      "plan": "Basic",
+      "monthly_usd": 0,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"selected_limits\": [\"3 hours transcription/mo\", \"unlimited AI summaries\", \"core integrations\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://meetgeek.ai/pricing"
+    },
+    {
+      "tool_id": "meetgeek",
+      "claim_id": "meetgeek-pricing-verified",
+      "plan": "Pro",
+      "monthly_usd": 9.99,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"monthly_billing_usd\": 15.99, \"selected_limits\": [\"20 hours transcription/mo\", \"meeting templates\", \"AI agents\", \"Zapier/Make/n8n\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://meetgeek.ai/pricing"
+    },
+    {
+      "tool_id": "meetgeek",
+      "claim_id": "meetgeek-pricing-verified",
+      "plan": "Business",
+      "monthly_usd": 17,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"monthly_billing_usd\": 27, \"selected_limits\": [\"unlimited transcription\", \"team spaces\", \"team analytics\", \"custom branding\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://meetgeek.ai/pricing"
+    },
+    {
+      "tool_id": "meetgeek",
+      "claim_id": "meetgeek-pricing-verified",
+      "plan": "Enterprise",
+      "monthly_usd": "",
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"custom\": true, \"selected_limits\": [\"SSO/SCIM\", \"HIPAA BAA\", \"custom data retention\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://meetgeek.ai/pricing"
+    },
+    {
+      "tool_id": "pandadoc",
+      "claim_id": "pandadoc-pricing-verified",
+      "plan": "Free eSign",
+      "monthly_usd": 0,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"selected_limits\": [\"60 docs/year\", \"2 recipients per doc\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.pandadoc.com/pricing"
+    },
+    {
+      "tool_id": "pandadoc",
+      "claim_id": "pandadoc-pricing-verified",
+      "plan": "Starter",
+      "monthly_usd": 19,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"monthly_billing_usd\": 35, \"selected_limits\": [\"unlimited docs\", \"5 templates\", \"custom branding\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.pandadoc.com/pricing"
+    },
+    {
+      "tool_id": "pandadoc",
+      "claim_id": "pandadoc-pricing-verified",
+      "plan": "Business",
+      "monthly_usd": 49,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"monthly_billing_usd\": 65, \"selected_limits\": [\"CRM integrations\", \"approval workflows\", \"payment collection\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.pandadoc.com/pricing"
+    },
+    {
+      "tool_id": "pandadoc",
+      "claim_id": "pandadoc-pricing-verified",
+      "plan": "Enterprise",
+      "monthly_usd": "",
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"custom\": true, \"selected_limits\": [\"CPQ\", \"API\", \"SSO\", \"content locking\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.pandadoc.com/pricing"
+    },
+    {
+      "tool_id": "quickbooks",
+      "claim_id": "quickbooks-pricing-verified",
+      "plan": "Simple Start",
+      "monthly_usd": 38,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"selected_limits\": [\"basic bookkeeping\", \"expense tracking\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://quickbooks.intuit.com/pricing"
+    },
+    {
+      "tool_id": "quickbooks",
+      "claim_id": "quickbooks-pricing-verified",
+      "plan": "Essentials",
+      "monthly_usd": 75,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"selected_limits\": [\"multi-user\", \"invoicing\", \"bill tracking\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://quickbooks.intuit.com/pricing"
+    },
+    {
+      "tool_id": "quickbooks",
+      "claim_id": "quickbooks-pricing-verified",
+      "plan": "Plus",
+      "monthly_usd": 115,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"selected_limits\": [\"inventory tracking\", \"project profitability\", \"advanced reporting\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://quickbooks.intuit.com/pricing"
+    },
+    {
+      "tool_id": "quickbooks",
+      "claim_id": "quickbooks-pricing-verified",
+      "plan": "Advanced",
+      "monthly_usd": 275,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"selected_limits\": [\"batch invoicing\", \"dedicated support\", \"custom roles\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://quickbooks.intuit.com/pricing"
+    },
+    {
+      "tool_id": "shoeboxed",
+      "claim_id": "shoeboxed-pricing-verified",
+      "plan": "Starter",
+      "monthly_usd": 9,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"annual_usd\": 97, \"selected_limits\": [\"50 digital scans/mo\", \"20 paper scans/yr\", \"3 users\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.shoeboxed.com/pricing"
+    },
+    {
+      "tool_id": "shoeboxed",
+      "claim_id": "shoeboxed-pricing-verified",
+      "plan": "Pro",
+      "monthly_usd": 29,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"annual_usd\": 297, \"selected_limits\": [\"250 digital scans/mo\", \"50 paper scans/mo\", \"5 users\", \"accounting integrations\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.shoeboxed.com/pricing"
+    },
+    {
+      "tool_id": "shoeboxed",
+      "claim_id": "shoeboxed-pricing-verified",
+      "plan": "Plus",
+      "monthly_usd": 79,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"annual_usd\": 797, \"selected_limits\": [\"1000 digital scans/mo\", \"150 paper scans/mo\", \"10 users\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.shoeboxed.com/pricing"
+    },
+    {
+      "tool_id": "shoeboxed",
+      "claim_id": "shoeboxed-pricing-verified",
+      "plan": "Paper Plus",
+      "monthly_usd": 179,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"annual_usd\": 1997, \"selected_limits\": [\"5000 digital scans/mo\", \"300 paper scans/mo\", \"10 users\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.shoeboxed.com/pricing"
+    },
+    {
+      "tool_id": "teamwork",
+      "claim_id": "teamwork-pricing-verified",
+      "plan": "Free",
+      "monthly_usd": 0,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"selected_limits\": [\"5 users\", \"5 projects\", \"100 automations/mo\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.teamwork.com/pricing"
+    },
+    {
+      "tool_id": "teamwork",
+      "claim_id": "teamwork-pricing-verified",
+      "plan": "Basics",
+      "monthly_usd": 9.99,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"monthly_billing_usd\": 13.99, \"selected_limits\": [\"Gantt charts\", \"templates\", \"time tracking\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.teamwork.com/pricing"
+    },
+    {
+      "tool_id": "teamwork",
+      "claim_id": "teamwork-pricing-verified",
+      "plan": "Accelerate",
+      "monthly_usd": 24.99,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"monthly_billing_usd\": 29.99, \"selected_limits\": [\"workload management\", \"budgeting\", \"advanced reporting\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.teamwork.com/pricing"
+    },
+    {
+      "tool_id": "teamwork",
+      "claim_id": "teamwork-pricing-verified",
+      "plan": "Optimize",
+      "monthly_usd": "",
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"custom\": true, \"selected_limits\": [\"resource scheduling\", \"custom reports\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.teamwork.com/pricing"
+    },
+    {
+      "tool_id": "timedoctor",
+      "claim_id": "timedoctor-pricing-verified",
+      "plan": "Basic",
+      "monthly_usd": 6.67,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"monthly_billing_usd\": 8, \"selected_limits\": [\"time tracking\", \"screenshots\", \"timeline report\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.timedoctor.com/pricing"
+    },
+    {
+      "tool_id": "timedoctor",
+      "claim_id": "timedoctor-pricing-verified",
+      "plan": "Standard",
+      "monthly_usd": 11.67,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"monthly_billing_usd\": 14, \"selected_limits\": [\"scheduling\", \"payroll\", \"60+ integrations\", \"productivity ratings\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.timedoctor.com/pricing"
+    },
+    {
+      "tool_id": "timedoctor",
+      "claim_id": "timedoctor-pricing-verified",
+      "plan": "Premium",
+      "monthly_usd": 16.7,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"monthly_billing_usd\": 20, \"selected_limits\": [\"AI benchmarks\", \"video recording\", \"executive dashboard\", \"SSO\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.timedoctor.com/pricing"
+    },
+    {
+      "tool_id": "timedoctor",
+      "claim_id": "timedoctor-pricing-verified",
+      "plan": "Enterprise",
+      "monthly_usd": "",
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"custom\": true}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.timedoctor.com/pricing"
+    },
+    {
+      "tool_id": "wrike",
+      "claim_id": "wrike-pricing-verified",
+      "plan": "Free",
+      "monthly_usd": 0,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"selected_limits\": [\"unlimited users\", \"2GB storage\", \"basic task management\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.wrike.com/price"
+    },
+    {
+      "tool_id": "wrike",
+      "claim_id": "wrike-pricing-verified",
+      "plan": "Team",
+      "monthly_usd": 10,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"selected_limits\": [\"2-15 users\", \"Gantt charts\", \"AI Essentials\", \"shareable dashboards\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.wrike.com/price"
+    },
+    {
+      "tool_id": "wrike",
+      "claim_id": "wrike-pricing-verified",
+      "plan": "Business",
+      "monthly_usd": 25,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"selected_limits\": [\"5-200 users\", \"AI Elite\", \"resource planning\", \"standard integrations\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.wrike.com/price"
+    },
+    {
+      "tool_id": "wrike",
+      "claim_id": "wrike-pricing-verified",
+      "plan": "Pinnacle",
+      "monthly_usd": "",
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"custom\": true, \"selected_limits\": [\"advanced resource planning\", \"budgeting\", \"custom roles\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.wrike.com/price"
+    },
+    {
+      "tool_id": "wrike",
+      "claim_id": "wrike-pricing-verified",
+      "plan": "Apex",
+      "monthly_usd": "",
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"custom\": true, \"selected_limits\": [\"enterprise features\", \"advanced analytics\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.wrike.com/price"
+    },
+    {
+      "tool_id": "xero",
+      "claim_id": "xero-pricing-verified",
+      "plan": "Early",
+      "monthly_usd": 27,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"selected_limits\": [\"20 invoices\", \"5 bills\", \"bank reconciliation\", \"sales tax\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.xero.com/us/pricing-plans"
+    },
+    {
+      "tool_id": "xero",
+      "claim_id": "xero-pricing-verified",
+      "plan": "Growing",
+      "monthly_usd": 59,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"selected_limits\": [\"unlimited invoices\", \"budgeting\", \"auto-reconcile\", \"dashboards\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.xero.com/us/pricing-plans"
+    },
+    {
+      "tool_id": "xero",
+      "claim_id": "xero-pricing-verified",
+      "plan": "Established",
+      "monthly_usd": 97,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"selected_limits\": [\"180-day forecast\", \"unlimited budgets\", \"projects\", \"inventory\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.xero.com/us/pricing-plans"
+    },
+    {
+      "tool_id": "adcreative",
+      "claim_id": "adcreative-pricing-verified",
+      "plan": "Starter",
+      "monthly_usd": 39,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"annual_usd\": 249, \"selected_limits\": [\"20 credits/mo\", \"1 brand\", \"1 user\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.adcreative.ai/pricing"
+    },
+    {
+      "tool_id": "adcreative",
+      "claim_id": "adcreative-pricing-verified",
+      "plan": "Professional",
+      "monthly_usd": 249,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"annual_usd\": 1500, \"selected_limits\": [\"300 credits/mo\", \"3 brands\", \"10 users\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.adcreative.ai/pricing"
+    },
+    {
+      "tool_id": "adcreative",
+      "claim_id": "adcreative-pricing-verified",
+      "plan": "Ultimate",
+      "monthly_usd": 999,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"annual_usd\": 6000, \"selected_limits\": [\"300 credits/mo\", \"25 brands\", \"20 users\"]}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.adcreative.ai/pricing"
+    },
+    {
+      "tool_id": "adcreative",
+      "claim_id": "adcreative-pricing-verified",
+      "plan": "Enterprise",
+      "monthly_usd": "",
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"custom\": true}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.adcreative.ai/pricing"
+    },
+    {
+      "tool_id": "ahrefs",
+      "claim_id": "ahrefs-pricing-verified",
+      "plan": "Starter",
+      "monthly_usd": 29,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://ahrefs.com/pricing"
+    },
+    {
+      "tool_id": "ahrefs",
+      "claim_id": "ahrefs-pricing-verified",
+      "plan": "Lite",
+      "monthly_usd": 129,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://ahrefs.com/pricing"
+    },
+    {
+      "tool_id": "ahrefs",
+      "claim_id": "ahrefs-pricing-verified",
+      "plan": "Standard",
+      "monthly_usd": 249,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://ahrefs.com/pricing"
+    },
+    {
+      "tool_id": "ahrefs",
+      "claim_id": "ahrefs-pricing-verified",
+      "plan": "Advanced",
+      "monthly_usd": 449,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://ahrefs.com/pricing"
+    },
+    {
+      "tool_id": "ahrefs",
+      "claim_id": "ahrefs-pricing-verified",
+      "plan": "Enterprise",
+      "monthly_usd": 1499,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://ahrefs.com/pricing"
+    },
+    {
+      "tool_id": "apollo",
+      "claim_id": "apollo-pricing-verified",
+      "plan": "Free",
+      "monthly_usd": 0,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.apollo.io/pricing"
+    },
+    {
+      "tool_id": "apollo",
+      "claim_id": "apollo-pricing-verified",
+      "plan": "Basic",
+      "monthly_usd": 49,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.apollo.io/pricing"
+    },
+    {
+      "tool_id": "apollo",
+      "claim_id": "apollo-pricing-verified",
+      "plan": "Professional",
+      "monthly_usd": 79,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.apollo.io/pricing"
+    },
+    {
+      "tool_id": "apollo",
+      "claim_id": "apollo-pricing-verified",
+      "plan": "Organization",
+      "monthly_usd": 119,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.apollo.io/pricing"
+    },
+    {
+      "tool_id": "descript",
+      "claim_id": "descript-pricing-verified",
+      "plan": "Free",
+      "monthly_usd": 0,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.descript.com/pricing"
+    },
+    {
+      "tool_id": "descript",
+      "claim_id": "descript-pricing-verified",
+      "plan": "Hobbyist",
+      "monthly_usd": 16,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.descript.com/pricing"
+    },
+    {
+      "tool_id": "descript",
+      "claim_id": "descript-pricing-verified",
+      "plan": "Creator",
+      "monthly_usd": 24,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.descript.com/pricing"
+    },
+    {
+      "tool_id": "descript",
+      "claim_id": "descript-pricing-verified",
+      "plan": "Business",
+      "monthly_usd": 50,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.descript.com/pricing"
+    },
+    {
+      "tool_id": "elevenlabs",
+      "claim_id": "elevenlabs-pricing-verified",
+      "plan": "Free",
+      "monthly_usd": 0,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://elevenlabs.io/pricing"
+    },
+    {
+      "tool_id": "elevenlabs",
+      "claim_id": "elevenlabs-pricing-verified",
+      "plan": "Starter",
+      "monthly_usd": 6,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://elevenlabs.io/pricing"
+    },
+    {
+      "tool_id": "elevenlabs",
+      "claim_id": "elevenlabs-pricing-verified",
+      "plan": "Creator",
+      "monthly_usd": 22,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://elevenlabs.io/pricing"
+    },
+    {
+      "tool_id": "elevenlabs",
+      "claim_id": "elevenlabs-pricing-verified",
+      "plan": "Pro",
+      "monthly_usd": 99,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://elevenlabs.io/pricing"
+    },
+    {
+      "tool_id": "elevenlabs",
+      "claim_id": "elevenlabs-pricing-verified",
+      "plan": "Scale",
+      "monthly_usd": 299,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://elevenlabs.io/pricing"
+    },
+    {
+      "tool_id": "elevenlabs",
+      "claim_id": "elevenlabs-pricing-verified",
+      "plan": "Business",
+      "monthly_usd": 990,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://elevenlabs.io/pricing"
+    },
+    {
+      "tool_id": "claude",
+      "claim_id": "claude-pricing-verified",
+      "plan": "Free",
+      "monthly_usd": 0,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://claude.com/pricing"
+    },
+    {
+      "tool_id": "claude",
+      "claim_id": "claude-pricing-verified",
+      "plan": "Pro",
+      "monthly_usd": 20,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://claude.com/pricing"
+    },
+    {
+      "tool_id": "claude",
+      "claim_id": "claude-pricing-verified",
+      "plan": "Max",
+      "monthly_usd": 100,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://claude.com/pricing"
+    },
+    {
+      "tool_id": "claude",
+      "claim_id": "claude-pricing-verified",
+      "plan": "Ultra",
+      "monthly_usd": 200,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://claude.com/pricing"
+    },
+    {
+      "tool_id": "hubspot",
+      "claim_id": "hubspot-pricing-verified",
+      "plan": "Free",
+      "monthly_usd": 0,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.hubspot.com/pricing"
+    },
+    {
+      "tool_id": "hubspot",
+      "claim_id": "hubspot-pricing-verified",
+      "plan": "Starter",
+      "monthly_usd": 20,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.hubspot.com/pricing"
+    },
+    {
+      "tool_id": "hubspot",
+      "claim_id": "hubspot-pricing-verified",
+      "plan": "Professional",
+      "monthly_usd": 800,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.hubspot.com/pricing"
+    },
+    {
+      "tool_id": "hubspot",
+      "claim_id": "hubspot-pricing-verified",
+      "plan": "Enterprise",
+      "monthly_usd": 3600,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.hubspot.com/pricing"
+    },
+    {
+      "tool_id": "pipedrive",
+      "claim_id": "pipedrive-pricing-verified",
+      "plan": "Lite",
+      "monthly_usd": 14,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.pipedrive.com/pricing"
+    },
+    {
+      "tool_id": "pipedrive",
+      "claim_id": "pipedrive-pricing-verified",
+      "plan": "Essential",
+      "monthly_usd": 27,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.pipedrive.com/pricing"
+    },
+    {
+      "tool_id": "pipedrive",
+      "claim_id": "pipedrive-pricing-verified",
+      "plan": "Scale",
+      "monthly_usd": 49,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.pipedrive.com/pricing"
+    },
+    {
+      "tool_id": "pipedrive",
+      "claim_id": "pipedrive-pricing-verified",
+      "plan": "Premium",
+      "monthly_usd": 79,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.pipedrive.com/pricing"
+    },
+    {
+      "tool_id": "monday",
+      "claim_id": "monday-pricing-verified",
+      "plan": "Basic",
+      "monthly_usd": 9,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://monday.com/pricing"
+    },
+    {
+      "tool_id": "monday",
+      "claim_id": "monday-pricing-verified",
+      "plan": "Standard",
+      "monthly_usd": 17,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://monday.com/pricing"
+    },
+    {
+      "tool_id": "monday",
+      "claim_id": "monday-pricing-verified",
+      "plan": "Pro",
+      "monthly_usd": 26,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://monday.com/pricing"
+    },
+    {
+      "tool_id": "monday",
+      "claim_id": "monday-pricing-verified",
+      "plan": "Enterprise",
+      "monthly_usd": "",
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"custom\": true}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://monday.com/pricing"
+    },
+    {
+      "tool_id": "todoist",
+      "claim_id": "todoist-pricing-verified",
+      "plan": "Free",
+      "monthly_usd": 0,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://todoist.com/pricing"
+    },
+    {
+      "tool_id": "todoist",
+      "claim_id": "todoist-pricing-verified",
+      "plan": "Pro",
+      "monthly_usd": 4,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://todoist.com/pricing"
+    },
+    {
+      "tool_id": "todoist",
+      "claim_id": "todoist-pricing-verified",
+      "plan": "Business",
+      "monthly_usd": 6,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://todoist.com/pricing"
+    },
+    {
+      "tool_id": "copyai",
+      "claim_id": "copyai-pricing-verified",
+      "plan": "Free",
+      "monthly_usd": 0,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.copy.ai/pricing"
+    },
+    {
+      "tool_id": "copyai",
+      "claim_id": "copyai-pricing-verified",
+      "plan": "Pro",
+      "monthly_usd": 49,
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.copy.ai/pricing"
+    },
+    {
+      "tool_id": "copyai",
+      "claim_id": "copyai-pricing-verified",
+      "plan": "Enterprise",
+      "monthly_usd": "",
+      "annual_monthly_equivalent_usd": "",
+      "limits": "{\"custom\": true}",
+      "verified_at": "2026-11-23",
+      "source_urls": "https://www.copy.ai/pricing"
+    }
+  ],
+  "changes": [
+    {
+      "event_id": "ev-disputed-semrush-current-plan-structure",
+      "tool_id": "semrush",
+      "event_type": "verification_correction",
+      "detected_at": "2026-11-20",
+      "effective_at": null,
+      "before": {
+        "claim_id": "semrush-current-plan-structure",
+        "claim_status": "verified"
+      },
+      "after": {
+        "claim_id": "semrush-current-plan-structure",
+        "claim_status": "disputed",
+        "disputed_by": "semrush-official-source-conflict"
+      },
+      "source_ids": [
+        "semrush-pricing"
+      ],
+      "confidence": "medium",
+      "status": "disputed",
+      "correction_note": "Official Semrush sources currently conflict on the Advanced AI-prompt quota: the live pricing page says unlimited prompts to track daily, while the Semrush Knowledge Base states 200 prompts daily. Do not present either figure as settled until Semrush reconciles the documentation.",
+      "affected_pages": [
+        "/tools/ahrefs.html",
+        "/tools/jasper.html",
+        "/tools/screamingfrog.html",
+        "/tools/semrush.html",
+        "/tools/surferseo.html"
+      ],
+      "note": "Claim semrush-current-plan-structure marked disputed by semrush-official-source-conflict"
+    }
+  ]
+}
