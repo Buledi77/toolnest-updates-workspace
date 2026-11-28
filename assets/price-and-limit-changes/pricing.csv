@@ -1,0 +1,101 @@
+tool_id,claim_id,plan,monthly_usd,annual_monthly_equivalent_usd,limits,verified_at,source_urls
+hostinger,hostinger-plan-examples,Premium,1.99,,"{""upfront_usd"": 95.52, ""renewal_monthly_usd"": 10.99, ""selected_limits"": [""3 websites"", ""20 GB SSD"", ""weekly backups"", ""500 AI credits""]}",2026-11-14,https://www.hostinger.com/pricing
+hostinger,hostinger-plan-examples,Unlimited,2.79,,"{""upfront_usd"": 133.92, ""renewal_monthly_usd"": 16.99, ""selected_limits"": [""unlimited websites"", ""50 GB NVMe"", ""daily backups"", ""1000 AI credits""]}",2026-11-14,https://www.hostinger.com/pricing
+hostinger,hostinger-plan-examples,Cloud Startup,7.99,,"{""upfront_usd"": 383.52, ""renewal_monthly_usd"": 25.99, ""selected_limits"": [""unlimited websites"", ""100 GB NVMe"", ""daily and on-demand backups"", ""2000 AI credits""]}",2026-11-14,https://www.hostinger.com/pricing
+semrush,semrush-current-plan-structure,Free,0,,"{""projects"": 1, ""reports_per_day"": 10}",2026-11-18,https://www.semrush.com/pricing/
+semrush,semrush-current-plan-structure,SEO,139,117.33,"{""websites"": 5, ""daily_tracked_keywords"": 500}",2026-11-18,https://www.semrush.com/pricing/
+semrush,semrush-current-plan-structure,Starter,199,165.17,"{""websites"": 5, ""daily_tracked_keywords"": 500, ""daily_ai_prompts"": 50}",2026-11-18,https://www.semrush.com/pricing/
+semrush,semrush-current-plan-structure,Pro+,299,248.17,"{""websites"": 15, ""daily_tracked_keywords"": 1500, ""daily_ai_prompts"": 100}",2026-11-18,https://www.semrush.com/pricing/
+semrush,semrush-current-plan-structure,Advanced,,,"{""price"": ""custom"", ""websites"": ""40+"", ""daily_tracked_keywords"": ""5000+"", ""daily_ai_prompts"": ""official sources conflict: pricing page says unlimited; Knowledge Base says 200""}",2026-11-18,https://www.semrush.com/pricing/
+moz-pro,moz-pro-plan-structure,Standard,99,79,"{""tracked_sites"": 3, ""tracked_keywords"": 300, ""pages_crawled_monthly"": 400000}",2026-11-18,https://moz.com/products/pro/pricing
+moz-pro,moz-pro-plan-structure,Medium,179,143,"{""tracked_sites"": 10, ""tracked_keywords"": 1500, ""pages_crawled_monthly"": 2000000}",2026-11-18,https://moz.com/products/pro/pricing
+moz-pro,moz-pro-plan-structure,Large,299,239,"{""tracked_sites"": 25, ""tracked_keywords"": 3000, ""pages_crawled_monthly"": 5000000}",2026-11-18,https://moz.com/products/pro/pricing
+notion,notion-pricing-verified,Free,0,,"{""selected_limits"": [""unlimited personal workspace"", ""10 guests max""]}",2026-11-23,https://www.notion.com/pricing
+notion,notion-pricing-verified,Plus,10,,"{""upfront_annual_usd"": 120, ""monthly_billing_usd"": 12, ""selected_limits"": [""file uploads"", ""workspace sharing"", ""100 guests""]}",2026-11-23,https://www.notion.com/pricing
+notion,notion-pricing-verified,Business,20,,"{""upfront_annual_usd"": 240, ""monthly_billing_usd"": 24, ""selected_limits"": [""SAML SSO"", ""AI bundled"", ""250 guests""]}",2026-11-23,https://www.notion.com/pricing
+notion,notion-pricing-verified,Enterprise,,,"{""custom"": true, ""selected_limits"": [""SCIM"", ""audit logs"", ""dedicated support""]}",2026-11-23,https://www.notion.com/pricing
+confetti,confetti-pricing-verified,Pay-Per-Event,,,"{""price_per_user"": ""$30"", ""billing"": ""one-time per event""}",2026-11-23,https://www.withconfetti.com/pricing
+confetti,confetti-pricing-verified,Pre-Fund,,,"{""price_annual"": ""$5000"", ""billing"": ""annual credits""}",2026-11-23,https://www.withconfetti.com/pricing
+confetti,confetti-pricing-verified,Enterprise,,,"{""custom"": true}",2026-11-23,https://www.withconfetti.com/pricing
+connecteam,connecteam-pricing-verified,Small Business,0,,"{""selected_limits"": [""up to 10 users"", ""all 3 hubs free""]}",2026-11-23,https://connecteam.com/pricing
+connecteam,connecteam-pricing-verified,Basic,29,,"{""selected_limits"": [""30 users"", ""per hub"", ""$0.80/user above 30 (Ops)""]}",2026-11-23,https://connecteam.com/pricing
+connecteam,connecteam-pricing-verified,Advanced,49,,"{""selected_limits"": [""30 users"", ""per hub"", ""$2.50/user above 30 (Ops)""]}",2026-11-23,https://connecteam.com/pricing
+connecteam,connecteam-pricing-verified,Expert,99,,"{""selected_limits"": [""30 users"", ""per hub"", ""$4.20/user above 30 (Ops)""]}",2026-11-23,https://connecteam.com/pricing
+connecteam,connecteam-pricing-verified,Enterprise,,,"{""custom"": true}",2026-11-23,https://connecteam.com/pricing
+meetgeek,meetgeek-pricing-verified,Basic,0,,"{""selected_limits"": [""3 hours transcription/mo"", ""unlimited AI summaries"", ""core integrations""]}",2026-11-23,https://meetgeek.ai/pricing
+meetgeek,meetgeek-pricing-verified,Pro,9.99,,"{""monthly_billing_usd"": 15.99, ""selected_limits"": [""20 hours transcription/mo"", ""meeting templates"", ""AI agents"", ""Zapier/Make/n8n""]}",2026-11-23,https://meetgeek.ai/pricing
+meetgeek,meetgeek-pricing-verified,Business,17,,"{""monthly_billing_usd"": 27, ""selected_limits"": [""unlimited transcription"", ""team spaces"", ""team analytics"", ""custom branding""]}",2026-11-23,https://meetgeek.ai/pricing
+meetgeek,meetgeek-pricing-verified,Enterprise,,,"{""custom"": true, ""selected_limits"": [""SSO/SCIM"", ""HIPAA BAA"", ""custom data retention""]}",2026-11-23,https://meetgeek.ai/pricing
+pandadoc,pandadoc-pricing-verified,Free eSign,0,,"{""selected_limits"": [""60 docs/year"", ""2 recipients per doc""]}",2026-11-23,https://www.pandadoc.com/pricing
+pandadoc,pandadoc-pricing-verified,Starter,19,,"{""monthly_billing_usd"": 35, ""selected_limits"": [""unlimited docs"", ""5 templates"", ""custom branding""]}",2026-11-23,https://www.pandadoc.com/pricing
+pandadoc,pandadoc-pricing-verified,Business,49,,"{""monthly_billing_usd"": 65, ""selected_limits"": [""CRM integrations"", ""approval workflows"", ""payment collection""]}",2026-11-23,https://www.pandadoc.com/pricing
+pandadoc,pandadoc-pricing-verified,Enterprise,,,"{""custom"": true, ""selected_limits"": [""CPQ"", ""API"", ""SSO"", ""content locking""]}",2026-11-23,https://www.pandadoc.com/pricing
+quickbooks,quickbooks-pricing-verified,Simple Start,38,,"{""selected_limits"": [""basic bookkeeping"", ""expense tracking""]}",2026-11-23,https://quickbooks.intuit.com/pricing
+quickbooks,quickbooks-pricing-verified,Essentials,75,,"{""selected_limits"": [""multi-user"", ""invoicing"", ""bill tracking""]}",2026-11-23,https://quickbooks.intuit.com/pricing
+quickbooks,quickbooks-pricing-verified,Plus,115,,"{""selected_limits"": [""inventory tracking"", ""project profitability"", ""advanced reporting""]}",2026-11-23,https://quickbooks.intuit.com/pricing
+quickbooks,quickbooks-pricing-verified,Advanced,275,,"{""selected_limits"": [""batch invoicing"", ""dedicated support"", ""custom roles""]}",2026-11-23,https://quickbooks.intuit.com/pricing
+shoeboxed,shoeboxed-pricing-verified,Starter,9,,"{""annual_usd"": 97, ""selected_limits"": [""50 digital scans/mo"", ""20 paper scans/yr"", ""3 users""]}",2026-11-23,https://www.shoeboxed.com/pricing
+shoeboxed,shoeboxed-pricing-verified,Pro,29,,"{""annual_usd"": 297, ""selected_limits"": [""250 digital scans/mo"", ""50 paper scans/mo"", ""5 users"", ""accounting integrations""]}",2026-11-23,https://www.shoeboxed.com/pricing
+shoeboxed,shoeboxed-pricing-verified,Plus,79,,"{""annual_usd"": 797, ""selected_limits"": [""1000 digital scans/mo"", ""150 paper scans/mo"", ""10 users""]}",2026-11-23,https://www.shoeboxed.com/pricing
+shoeboxed,shoeboxed-pricing-verified,Paper Plus,179,,"{""annual_usd"": 1997, ""selected_limits"": [""5000 digital scans/mo"", ""300 paper scans/mo"", ""10 users""]}",2026-11-23,https://www.shoeboxed.com/pricing
+teamwork,teamwork-pricing-verified,Free,0,,"{""selected_limits"": [""5 users"", ""5 projects"", ""100 automations/mo""]}",2026-11-23,https://www.teamwork.com/pricing
+teamwork,teamwork-pricing-verified,Basics,9.99,,"{""monthly_billing_usd"": 13.99, ""selected_limits"": [""Gantt charts"", ""templates"", ""time tracking""]}",2026-11-23,https://www.teamwork.com/pricing
+teamwork,teamwork-pricing-verified,Accelerate,24.99,,"{""monthly_billing_usd"": 29.99, ""selected_limits"": [""workload management"", ""budgeting"", ""advanced reporting""]}",2026-11-23,https://www.teamwork.com/pricing
+teamwork,teamwork-pricing-verified,Optimize,,,"{""custom"": true, ""selected_limits"": [""resource scheduling"", ""custom reports""]}",2026-11-23,https://www.teamwork.com/pricing
+timedoctor,timedoctor-pricing-verified,Basic,6.67,,"{""monthly_billing_usd"": 8, ""selected_limits"": [""time tracking"", ""screenshots"", ""timeline report""]}",2026-11-23,https://www.timedoctor.com/pricing
+timedoctor,timedoctor-pricing-verified,Standard,11.67,,"{""monthly_billing_usd"": 14, ""selected_limits"": [""scheduling"", ""payroll"", ""60+ integrations"", ""productivity ratings""]}",2026-11-23,https://www.timedoctor.com/pricing
+timedoctor,timedoctor-pricing-verified,Premium,16.7,,"{""monthly_billing_usd"": 20, ""selected_limits"": [""AI benchmarks"", ""video recording"", ""executive dashboard"", ""SSO""]}",2026-11-23,https://www.timedoctor.com/pricing
+timedoctor,timedoctor-pricing-verified,Enterprise,,,"{""custom"": true}",2026-11-23,https://www.timedoctor.com/pricing
+wrike,wrike-pricing-verified,Free,0,,"{""selected_limits"": [""unlimited users"", ""2GB storage"", ""basic task management""]}",2026-11-23,https://www.wrike.com/price
+wrike,wrike-pricing-verified,Team,10,,"{""selected_limits"": [""2-15 users"", ""Gantt charts"", ""AI Essentials"", ""shareable dashboards""]}",2026-11-23,https://www.wrike.com/price
+wrike,wrike-pricing-verified,Business,25,,"{""selected_limits"": [""5-200 users"", ""AI Elite"", ""resource planning"", ""standard integrations""]}",2026-11-23,https://www.wrike.com/price
+wrike,wrike-pricing-verified,Pinnacle,,,"{""custom"": true, ""selected_limits"": [""advanced resource planning"", ""budgeting"", ""custom roles""]}",2026-11-23,https://www.wrike.com/price
+wrike,wrike-pricing-verified,Apex,,,"{""custom"": true, ""selected_limits"": [""enterprise features"", ""advanced analytics""]}",2026-11-23,https://www.wrike.com/price
+xero,xero-pricing-verified,Early,27,,"{""selected_limits"": [""20 invoices"", ""5 bills"", ""bank reconciliation"", ""sales tax""]}",2026-11-23,https://www.xero.com/us/pricing-plans
+xero,xero-pricing-verified,Growing,59,,"{""selected_limits"": [""unlimited invoices"", ""budgeting"", ""auto-reconcile"", ""dashboards""]}",2026-11-23,https://www.xero.com/us/pricing-plans
+xero,xero-pricing-verified,Established,97,,"{""selected_limits"": [""180-day forecast"", ""unlimited budgets"", ""projects"", ""inventory""]}",2026-11-23,https://www.xero.com/us/pricing-plans
+adcreative,adcreative-pricing-verified,Starter,39,,"{""annual_usd"": 249, ""selected_limits"": [""20 credits/mo"", ""1 brand"", ""1 user""]}",2026-11-23,https://www.adcreative.ai/pricing
+adcreative,adcreative-pricing-verified,Professional,249,,"{""annual_usd"": 1500, ""selected_limits"": [""300 credits/mo"", ""3 brands"", ""10 users""]}",2026-11-23,https://www.adcreative.ai/pricing
+adcreative,adcreative-pricing-verified,Ultimate,999,,"{""annual_usd"": 6000, ""selected_limits"": [""300 credits/mo"", ""25 brands"", ""20 users""]}",2026-11-23,https://www.adcreative.ai/pricing
+adcreative,adcreative-pricing-verified,Enterprise,,,"{""custom"": true}",2026-11-23,https://www.adcreative.ai/pricing
+ahrefs,ahrefs-pricing-verified,Starter,29,,{},2026-11-23,https://ahrefs.com/pricing
+ahrefs,ahrefs-pricing-verified,Lite,129,,{},2026-11-23,https://ahrefs.com/pricing
+ahrefs,ahrefs-pricing-verified,Standard,249,,{},2026-11-23,https://ahrefs.com/pricing
+ahrefs,ahrefs-pricing-verified,Advanced,449,,{},2026-11-23,https://ahrefs.com/pricing
+ahrefs,ahrefs-pricing-verified,Enterprise,1499,,{},2026-11-23,https://ahrefs.com/pricing
+apollo,apollo-pricing-verified,Free,0,,{},2026-11-23,https://www.apollo.io/pricing
+apollo,apollo-pricing-verified,Basic,49,,{},2026-11-23,https://www.apollo.io/pricing
+apollo,apollo-pricing-verified,Professional,79,,{},2026-11-23,https://www.apollo.io/pricing
+apollo,apollo-pricing-verified,Organization,119,,{},2026-11-23,https://www.apollo.io/pricing
+descript,descript-pricing-verified,Free,0,,{},2026-11-23,https://www.descript.com/pricing
+descript,descript-pricing-verified,Hobbyist,16,,{},2026-11-23,https://www.descript.com/pricing
+descript,descript-pricing-verified,Creator,24,,{},2026-11-23,https://www.descript.com/pricing
+descript,descript-pricing-verified,Business,50,,{},2026-11-23,https://www.descript.com/pricing
+elevenlabs,elevenlabs-pricing-verified,Free,0,,{},2026-11-23,https://elevenlabs.io/pricing
+elevenlabs,elevenlabs-pricing-verified,Starter,6,,{},2026-11-23,https://elevenlabs.io/pricing
+elevenlabs,elevenlabs-pricing-verified,Creator,22,,{},2026-11-23,https://elevenlabs.io/pricing
+elevenlabs,elevenlabs-pricing-verified,Pro,99,,{},2026-11-23,https://elevenlabs.io/pricing
+elevenlabs,elevenlabs-pricing-verified,Scale,299,,{},2026-11-23,https://elevenlabs.io/pricing
+elevenlabs,elevenlabs-pricing-verified,Business,990,,{},2026-11-23,https://elevenlabs.io/pricing
+claude,claude-pricing-verified,Free,0,,{},2026-11-23,https://claude.com/pricing
+claude,claude-pricing-verified,Pro,20,,{},2026-11-23,https://claude.com/pricing
+claude,claude-pricing-verified,Max,100,,{},2026-11-23,https://claude.com/pricing
+claude,claude-pricing-verified,Ultra,200,,{},2026-11-23,https://claude.com/pricing
+hubspot,hubspot-pricing-verified,Free,0,,{},2026-11-23,https://www.hubspot.com/pricing
+hubspot,hubspot-pricing-verified,Starter,20,,{},2026-11-23,https://www.hubspot.com/pricing
+hubspot,hubspot-pricing-verified,Professional,800,,{},2026-11-23,https://www.hubspot.com/pricing
+hubspot,hubspot-pricing-verified,Enterprise,3600,,{},2026-11-23,https://www.hubspot.com/pricing
+pipedrive,pipedrive-pricing-verified,Lite,14,,{},2026-11-23,https://www.pipedrive.com/pricing
+pipedrive,pipedrive-pricing-verified,Essential,27,,{},2026-11-23,https://www.pipedrive.com/pricing
+pipedrive,pipedrive-pricing-verified,Scale,49,,{},2026-11-23,https://www.pipedrive.com/pricing
+pipedrive,pipedrive-pricing-verified,Premium,79,,{},2026-11-23,https://www.pipedrive.com/pricing
+monday,monday-pricing-verified,Basic,9,,{},2026-11-23,https://monday.com/pricing
+monday,monday-pricing-verified,Standard,17,,{},2026-11-23,https://monday.com/pricing
+monday,monday-pricing-verified,Pro,26,,{},2026-11-23,https://monday.com/pricing
+monday,monday-pricing-verified,Enterprise,,,"{""custom"": true}",2026-11-23,https://monday.com/pricing
+todoist,todoist-pricing-verified,Free,0,,{},2026-11-23,https://todoist.com/pricing
+todoist,todoist-pricing-verified,Pro,4,,{},2026-11-23,https://todoist.com/pricing
+todoist,todoist-pricing-verified,Business,6,,{},2026-11-23,https://todoist.com/pricing
+copyai,copyai-pricing-verified,Free,0,,{},2026-11-23,https://www.copy.ai/pricing
+copyai,copyai-pricing-verified,Pro,49,,{},2026-11-23,https://www.copy.ai/pricing
+copyai,copyai-pricing-verified,Enterprise,,,"{""custom"": true}",2026-11-23,https://www.copy.ai/pricing
