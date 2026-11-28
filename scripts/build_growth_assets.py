@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "data" / "evidence" / "evidence-ledger.json"
 CHANGES = ROOT / "data" / "changes" / "tool-change-ledger.json"
-OUT = ROOT / "data" / "price-and-limit-changes"
+OUT = ROOT / "assets" / "price-and-limit-changes"
 TOOLS = ROOT / "tools"
 
 
@@ -103,8 +103,8 @@ def main() -> None:
 <p class="lede">Entry prices for four SEO tools, each with the date it was verified and the official source. Numbers come only from the ToolNest evidence ledger; where a vendor publishes no figure, none is shown.</p></div></section>
 <div class="wrap p-layout"><div class="p-main"><section class="p-sec"><h2>Published entry prices</h2>
 <table class="p-pricing-table"><caption class="sr">Ledger-verified SEO tool prices</caption><thead><tr><th scope=col>Tool</th><th scope=col>Plan</th><th scope=col>Monthly USD</th><th scope=col>Annual monthly equivalent</th><th scope=col>Verified</th></tr></thead><tbody>{table}</tbody></table>
-<p>Download the underlying data as <a href="/data/price-and-limit-changes/pricing.csv">CSV</a> or <a href="/data/price-and-limit-changes/pricing.json">JSON</a>. Method: each value is copied from the cited official pricing page into the evidence ledger with its verification date; nothing is inferred or estimated.</p>
-<p><img src="/data/price-and-limit-changes/entry-price-chart.svg" alt="Bar chart of entry monthly prices by SEO tool" width="620"></p></section>
+<p>Download the underlying data as <a href="/assets/price-and-limit-changes/pricing.csv">CSV</a> or <a href="/assets/price-and-limit-changes/pricing.json">JSON</a>. Method: each value is copied from the cited official pricing page into the evidence ledger with its verification date; nothing is inferred or estimated.</p>
+<p><img src="/assets/price-and-limit-changes/entry-price-chart.svg" alt="Bar chart of entry monthly prices by SEO tool" width="620"></p></section>
 <section class="p-sec"><h2>How to cite this data</h2><p>ToolNest Editorial (2026). State of SEO tool pricing 2026. https://www.toolnestai.tech/tools/state-of-seo-pricing-2026.html. Figures verified as dated in the linked ledger sources.</p>
 <p>Related: <a href="/tools/seo-cost-calculator.html">SEO cost and fit calculator</a> and <a href="/tools/price-and-limit-changes.html">price and limit change log</a>.</p></section></div></main></body></html>
 '''
