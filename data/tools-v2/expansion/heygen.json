@@ -44,36 +44,38 @@
         "description": "AI-powered video generation with custom avatars"
       },
       {
-        "description": "Credit-based system (not minutes)"
+        "description": "Credit-based system with per-feature rates"
       },
       {
-        "description": "Avatar IV approximately 20 credits per minute"
+        "description": "Avatar IV costs 16 credits per minute for a photo look and 31 for a video look"
       },
       {
-        "description": "Video translation and dubbing in 175+ languages"
+        "description": "Video translation and dubbing in 175+ languages and dialects"
       },
       {
-        "description": "SCORM export on Business plan"
+        "description": "SCORM export and LMS integrations on Business"
       },
       {
-        "description": "API billed separately from subscription credits"
+        "description": "API credits billed separately from subscription credits"
       }
     ],
     "limitations": [
-      "Free plan limited to 3 videos/month, 1 minute max, watermarked",
-      "Credits consumed at different rates depending on model and features",
-      "Creator plan cannot buy extra credits — must upgrade to Pro",
-      "Business extra seats do not increase shared credit balance",
-      "API usage billed separately"
+      "Free plan limited to 3 videos per month, 1 minute each, watermarked",
+      "Credit rates vary by model, resolution and avatar look type",
+      "Creator cannot buy one-time credits; must upgrade to Pro",
+      "Business additional seats do not add credits to the shared 1,500-credit pool",
+      "No plan, including Enterprise, includes unlimited Avatar IV",
+      "Unused credits do not carry forward after cancellation",
+      "API usage is billed separately"
     ],
     "free_plan_status": [
-      "Free plan available with 3 videos per month, 1 minute max, watermarked"
+      "Free plan available with 3 videos per month, 1 minute each, watermarked, 30+ languages, and one custom video avatar plus 500+ ready-made presenters"
     ],
     "trial_status": [
-      "No separate trial — Free plan serves as entry point"
+      "No separate trial length is listed; the Free plan is the entry point and no credit card is required"
     ],
     "pricing_status": [
-      "Pricing verified from official sources on 2026-11-22"
+      "Pricing verified from official sources on 2026-11-28"
     ],
     "pricing_regions": [],
     "availability_regions": []
@@ -81,15 +83,19 @@
   "editorial": {
     "editorial_tier": "B",
     "best_for": [
-      "Content creators producing avatar-based videos",
-      "Teams needing video translation and dubbing",
-      "E-learning professionals requiring SCORM export"
+      "Solo creators and social teams producing avatar-led videos",
+      "Marketing and localization teams needing multilingual lip-sync",
+      "Learning and development teams requiring SCORM export"
     ],
-    "not_recommended_for": [],
+    "not_recommended_for": [
+      "Buyers who need a permanent free plan with meaningful monthly output",
+      "Teams that need a fixed per-minute price and cannot manage a credit budget",
+      "Anyone who needs unlimited Avatar IV generation"
+    ],
     "review_status": "draft",
-    "review_url": null,
-    "review_owner": null,
-    "editorial_last_reviewed": null
+    "review_url": "https://www.toolnestai.tech/tools/heygen.html",
+    "review_owner": "ToolNest Editorial",
+    "editorial_last_reviewed": "2026-11-28"
   },
   "relationships": {
     "alternatives": [
@@ -102,8 +108,107 @@
     "replaced_by": []
   },
   "evidence": {
-    "claim_refs": [],
-    "source_ids": [],
+    "claim_refs": [
+      {
+        "claim_id": "heygen-pricing-plans",
+        "claim": "HeyGen pricing plans and credit allowances",
+        "sourceUrl": "https://www.heygen.com/pricing",
+        "sourceType": "official_pricing_page",
+        "checkedOn": "2026-11-28"
+      },
+      {
+        "claim_id": "heygen-free-plan",
+        "claim": "HeyGen Free plan limits",
+        "sourceUrl": "https://www.heygen.com/pricing",
+        "sourceType": "official_pricing_page",
+        "checkedOn": "2026-11-28"
+      },
+      {
+        "claim_id": "heygen-trial",
+        "claim": "No separate trial length listed",
+        "sourceUrl": "https://www.heygen.com/pricing",
+        "sourceType": "official_pricing_page",
+        "checkedOn": "2026-11-28"
+      },
+      {
+        "claim_id": "heygen-credit-rates",
+        "claim": "Avatar and translation credit rates",
+        "sourceUrl": "https://help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen",
+        "sourceType": "official_help_center",
+        "checkedOn": "2026-11-28"
+      },
+      {
+        "claim_id": "heygen-plan-credit-rules",
+        "claim": "Plan credit allowances and add-on rules",
+        "sourceUrl": "https://help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen",
+        "sourceType": "official_help_center",
+        "checkedOn": "2026-11-28"
+      },
+      {
+        "claim_id": "heygen-language-coverage",
+        "claim": "Language coverage and translation modes",
+        "sourceUrl": "https://www.heygen.com/translate",
+        "sourceType": "official_product_page",
+        "checkedOn": "2026-11-28"
+      },
+      {
+        "claim_id": "heygen-scorm",
+        "claim": "SCORM export and LMS support",
+        "sourceUrl": "https://help.heygen.com/en/articles/10549082-how-to-export-heygen-videos-using-scorm",
+        "sourceType": "official_help_center",
+        "checkedOn": "2026-11-28"
+      },
+      {
+        "claim_id": "heygen-avatar-iv",
+        "claim": "Avatar IV credit rates and limits",
+        "sourceUrl": "https://help.heygen.com/en/articles/11269603-heygen-avatar-iv-complete-guide",
+        "sourceType": "official_help_center",
+        "checkedOn": "2026-11-28"
+      },
+      {
+        "claim_id": "heygen-duration-caps",
+        "claim": "Per-video duration limits",
+        "sourceUrl": "https://www.heygen.com/pricing",
+        "sourceType": "official_pricing_page",
+        "checkedOn": "2026-11-28"
+      },
+      {
+        "claim_id": "heygen-pro-tiers",
+        "claim": "Pro credit tiers",
+        "sourceUrl": "https://www.heygen.com/pricing",
+        "sourceType": "official_pricing_page",
+        "checkedOn": "2026-11-28"
+      },
+      {
+        "claim_id": "heygen-rollover",
+        "claim": "Credit rollover rules",
+        "sourceUrl": "https://www.heygen.com/pricing",
+        "sourceType": "official_pricing_page",
+        "checkedOn": "2026-11-28"
+      },
+      {
+        "claim_id": "heygen-cancellation",
+        "claim": "Cancellation and downgrade behaviour",
+        "sourceUrl": "https://www.heygen.com/pricing",
+        "sourceType": "official_pricing_page",
+        "checkedOn": "2026-11-28"
+      },
+      {
+        "claim_id": "heygen-limitations",
+        "claim": "Operational limitations",
+        "sourceUrl": "https://help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen",
+        "sourceType": "official_help_center",
+        "checkedOn": "2026-11-28"
+      }
+    ],
+    "source_ids": [
+      "heygen-pricing",
+      "heygen-credits",
+      "heygen-avatar-iv-guide",
+      "heygen-video-translation",
+      "heygen-scorm",
+      "heygen-translate-page"
+    ],
     "handsOn": false,
     "evidenceStatus": "Research-based, not a ToolNest hands-on test"
   },
@@ -115,7 +220,7 @@
     "approved_regions": [],
     "restrictions": [],
     "disclosure_required": null,
-    "last_link_check": "2026-11-22"
+    "last_link_check": "2026-11-28"
   },
   "publishing": {
     "directory_visibility": "public",
@@ -129,23 +234,24 @@
   },
   "freshness": {
     "created_at": "2026-11-14T22:03:16Z",
-    "updated_at": "2026-11-23T00:00:00Z",
-    "last_verified_at": "2026-11-22T23:52:00Z",
-    "next_review_at": null,
+    "updated_at": "2026-11-28T00:00:00Z",
+    "last_verified_at": "2026-11-28T00:00:00Z",
+    "next_review_at": "2026-12-28T00:00:00Z",
     "stale_fields": [],
     "change_history_reference": null
   },
   "pricing": {
-    "checkedOn": "2026-11-22",
+    "checkedOn": "2026-11-28",
     "sourceUrls": [
-      "https://www.heygen.com/pricing"
+      "https://www.heygen.com/pricing",
+      "https://help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen"
     ],
     "currency": "USD",
-    "billingBasis": "monthly",
+    "billingBasis": "monthly and annual billing displayed",
     "annualDiscount": null,
     "freePlan": true,
-    "freeLimits": "3 videos per month, 1 minute max, 720p, watermarked",
-    "trial": null,
+    "freeLimits": "3 videos per month, 1 minute max, watermarked",
+    "trial": "No separate trial length listed; Free plan is the entry point",
     "plans": [
       {
         "name": "Free",
@@ -155,10 +261,12 @@
         "limits": {
           "videos": "3 per month",
           "maxDuration": "1 minute",
-          "quality": "720p",
+          "languages": "30+",
+          "customVideoAvatars": 1,
+          "stockPresenters": "500+",
           "watermark": true
         },
-        "notes": "Entry-level access for testing the workflow"
+        "notes": "Entry-level access for testing the workflow; no credit balance"
       },
       {
         "name": "Creator",
@@ -170,9 +278,12 @@
           "maxDuration": "30 minutes",
           "quality": "1080p",
           "watermark": false,
-          "annualPrice": 288
+          "annualPrice": 288,
+          "languages": "175+ languages and dialects",
+          "rollover": "one month",
+          "oneTimeCredits": false
         },
-        "notes": "Individual publishing — cannot buy extra credits"
+        "notes": "Individual publishing - cannot buy extra credits"
       },
       {
         "name": "Pro",
@@ -184,24 +295,28 @@
           "maxDuration": "30 minutes",
           "quality": "4K",
           "watermark": false,
-          "annualPrice": 488
+          "annualPrice": 488,
+          "avatar6Pro": true,
+          "proTiers": "1,000 to 100,000 credits at $49 to $4,300/mo"
         },
-        "notes": "Higher volume or quality — 4K export, Avatar 6 Pro"
+        "notes": "Higher volume or quality - 4K export, Avatar 6 Pro"
       },
       {
         "name": "Business",
-        "priceMonthly": null,
+        "priceMonthly": 149,
         "priceAnnualMonthlyEquivalent": null,
         "sourceTier": "official",
         "limits": {
-          "firstSeat": "$149/month",
-          "additionalSeat": "$20/seat/month",
+          "firstSeat": 149,
+          "additionalSeat": 20,
           "credits": "1,500 shared per month",
           "maxDuration": "60 minutes",
-          "features": "SSO, SCORM export, LMS integrations",
-          "extraCredits": "$5 per 100 credits"
+          "quality": "4K",
+          "features": "SAML/SSO, SCORM export, LMS integrations",
+          "extraCredits": "$5 per 100 credits",
+          "additionalSeatsAddCredits": false
         },
-        "notes": "Teams — extra seats do not increase credit balance"
+        "notes": "Teams - extra seats do not increase the shared credit balance"
       },
       {
         "name": "Enterprise",
@@ -210,43 +325,60 @@
         "sourceTier": "official",
         "limits": {
           "pricing": "Custom",
-          "features": "Custom credits, no max video length, dedicated support"
+          "maxDuration": "No maximum",
+          "features": "SCIM user provisioning, team member MFA, priority support, invoice billing"
         },
         "notes": "Large organizations with custom requirements"
       }
     ],
     "billingCaveats": [
-      "Credit-based system — credits consumed at different rates by model and feature",
-      "Avatar IV approximately 20 credits per minute",
+      "Credit-based system - credits consumed at different rates by model, resolution and feature",
+      "Avatar IV costs 16 credits/min (photo look) or 31 credits/min (video look)",
+      "Avatar 6 Turbo costs 20 credits/min at 720p/1080p; Avatar 6 Pro costs 40 credits/min",
       "API billed separately from subscription credits",
-      "Creator plan cannot buy extra credits — must upgrade to Pro",
+      "Creator plan cannot buy extra credits - must upgrade to Pro",
       "Business extra seats cost $20/month but do not add credits",
-      "Audio dubbing (translation without lip-sync) is unlimited"
+      "Unused credits do not carry forward after cancellation"
     ]
   },
   "claims": [
     {
-      "text": "HeyGen Creator costs $29/month with 600 credits",
+      "text": "HeyGen Creator costs $29/month or $24/month billed annually ($288/year) with 600 credits",
       "sourceUrl": "https://www.heygen.com/pricing",
-      "checkedOn": "2026-11-22"
+      "checkedOn": "2026-11-28"
     },
     {
-      "text": "HeyGen Pro costs $49/month with 1,000 credits and 4K export",
+      "text": "HeyGen Pro costs $49/month or $41/month billed annually ($488/year) with 1,000 credits and 4K export",
       "sourceUrl": "https://www.heygen.com/pricing",
-      "checkedOn": "2026-11-22"
+      "checkedOn": "2026-11-28"
     },
     {
-      "text": "HeyGen Business costs $149/month for first seat plus $20 per additional seat",
+      "text": "HeyGen Business costs $149/month for the first seat plus $20 per additional seat, with 1,500 shared credits and SCORM/LMS support",
       "sourceUrl": "https://www.heygen.com/pricing",
-      "checkedOn": "2026-11-22"
+      "checkedOn": "2026-11-28"
     },
     {
       "text": "HeyGen Free offers 3 watermarked videos per month at 1 minute max",
       "sourceUrl": "https://www.heygen.com/pricing",
-      "checkedOn": "2026-11-22"
+      "checkedOn": "2026-11-28"
+    },
+    {
+      "text": "Avatar IV costs 16 credits/min for a photo look and 31 credits/min for a video look",
+      "sourceUrl": "https://help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen",
+      "checkedOn": "2026-11-28"
+    },
+    {
+      "text": "Avatar 6 Turbo costs 20 credits/min at 720p/1080p; Avatar 6 Pro costs 40 credits/min",
+      "sourceUrl": "https://help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen",
+      "checkedOn": "2026-11-28"
+    },
+    {
+      "text": "Cancellation moves the account to Free at the end of the billing cycle and unused credits do not carry forward",
+      "sourceUrl": "https://www.heygen.com/pricing",
+      "checkedOn": "2026-11-28"
     }
   ],
-  "lastReviewed": "2026-11-22",
+  "lastReviewed": "2026-11-28",
   "decision_readiness": {
     "state": "PARTIALLY_VERIFIED",
     "verified_fields": 0,
