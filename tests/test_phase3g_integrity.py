@@ -27,7 +27,7 @@ UTILITY_PAGES = {
     "decision-engine.html",
     "stack-analyzer.html",
     "seo-cost-calculator.html",
-    "price-and-limit-changes.html",
+    "price-and-limit-changes.html", "state-of-seo-pricing-2026.html",
 }
 SITEMAP = os.path.join(ROOT, "sitemap.xml")
 
