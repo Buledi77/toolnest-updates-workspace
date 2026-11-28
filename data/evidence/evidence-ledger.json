@@ -1721,6 +1721,90 @@
       "billing_term": "monthly",
       "status": "active",
       "source_history": []
+    },
+    {
+      "source_id": "heygen-pricing",
+      "url": "https://www.heygen.com/pricing",
+      "source_type": "official_pricing",
+      "publisher": "HeyGen",
+      "official": true,
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "region": "global-display-example",
+      "currency": "USD",
+      "billing_term": "monthly and annual billing displayed",
+      "status": "active",
+      "source_history": []
+    },
+    {
+      "source_id": "heygen-credits",
+      "url": "https://help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen",
+      "source_type": "official_docs",
+      "publisher": "HeyGen Help Center",
+      "official": true,
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "region": "global",
+      "currency": null,
+      "billing_term": null,
+      "status": "active",
+      "source_history": []
+    },
+    {
+      "source_id": "heygen-avatar-iv-guide",
+      "url": "https://help.heygen.com/en/articles/11269603-heygen-avatar-iv-complete-guide",
+      "source_type": "official_docs",
+      "publisher": "HeyGen Help Center",
+      "official": true,
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "region": "global",
+      "currency": null,
+      "billing_term": null,
+      "status": "active",
+      "source_history": []
+    },
+    {
+      "source_id": "heygen-video-translation",
+      "url": "https://help.heygen.com/en/articles/10029081-how-to-get-started-with-video-translation",
+      "source_type": "official_docs",
+      "publisher": "HeyGen Help Center",
+      "official": true,
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "region": "global",
+      "currency": null,
+      "billing_term": null,
+      "status": "active",
+      "source_history": []
+    },
+    {
+      "source_id": "heygen-scorm",
+      "url": "https://help.heygen.com/en/articles/10549082-how-to-export-heygen-videos-using-scorm",
+      "source_type": "official_docs",
+      "publisher": "HeyGen Help Center",
+      "official": true,
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "region": "global",
+      "currency": null,
+      "billing_term": null,
+      "status": "active",
+      "source_history": []
+    },
+    {
+      "source_id": "heygen-translate-page",
+      "url": "https://www.heygen.com/translate",
+      "source_type": "official_product",
+      "publisher": "HeyGen",
+      "official": true,
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "region": "global",
+      "currency": null,
+      "billing_term": null,
+      "status": "active",
+      "source_history": []
     }
   ],
   "claims": [
@@ -13417,6 +13501,432 @@
       "last_check_result": "not_verified",
       "anomalies_detected": [],
       "last_change_type": "new_claim"
+    },
+    {
+      "claim_id": "heygen-pricing-plans",
+      "tool_id": "heygen",
+      "field_path": "factual_profile.pricing_status",
+      "claim_type": "pricing",
+      "value": {
+        "plans": [
+          {
+            "name": "Free",
+            "monthly_usd": 0,
+            "videos_per_month": 3,
+            "max_video_minutes": 1,
+            "watermark": true,
+            "languages": "30+",
+            "custom_video_avatars": 1,
+            "stock_presenters": "500+"
+          },
+          {
+            "name": "Creator",
+            "monthly_usd": 29,
+            "annual_monthly_equivalent_usd": 24,
+            "annual_billed_usd": 288,
+            "credits_monthly": 600,
+            "max_video_minutes": 30,
+            "export_resolution": "1080p",
+            "languages": "175+ languages and dialects",
+            "custom_video_avatar": true,
+            "credit_rollover": "one additional billing cycle",
+            "one_time_credit_purchases": false
+          },
+          {
+            "name": "Pro",
+            "monthly_usd": 49,
+            "annual_monthly_equivalent_usd": 41,
+            "annual_billed_usd": 488,
+            "credits_monthly": 1000,
+            "max_video_minutes": 30,
+            "export_resolution": "4K",
+            "avatar_6_pro": true,
+            "professional_voice_clone": true,
+            "max_pro_tier_credits": 100000,
+            "max_pro_tier_monthly_usd": 4300
+          },
+          {
+            "name": "Business",
+            "first_seat_monthly_usd": 149,
+            "additional_seat_monthly_usd": 20,
+            "credits_monthly_shared": 1500,
+            "max_video_minutes": 60,
+            "export_resolution": "4K",
+            "custom_video_avatars": 5,
+            "saml_sso": true,
+            "scorm": true,
+            "lms_integrations": true,
+            "extra_credits_usd_per_100": 5,
+            "additional_seats_add_credits": false
+          },
+          {
+            "name": "Enterprise",
+            "pricing": "custom",
+            "max_video_duration": "no maximum",
+            "scim_user_provisioning": true,
+            "team_member_mfa": true
+          }
+        ],
+        "cancellation": {
+          "access_until": "end of current billing cycle",
+          "then": "Free plan",
+          "unused_credits_carry_forward": false
+        },
+        "rollover": {
+          "monthly": "one additional billing cycle",
+          "annual": "accumulate until annual renewal",
+          "after_cancellation": false
+        }
+      },
+      "source_ids": [
+        "heygen-pricing"
+      ],
+      "region": "global-display-example",
+      "currency": "USD",
+      "billing_term": "monthly and annual billing displayed",
+      "supporting_excerpt": "HeyGen's pricing page lists Free, Creator, Pro, Business and Enterprise plans with the prices, credits, duration caps, export resolutions, rollover and cancellation terms recorded here.",
+      "evidence_note": "Prices are USD as displayed on the official pricing page. Annual totals are the yearly billed amounts shown on the page. Some plan features and credit costs can vary by account or region; recheck before publishing.",
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "stale_after": "2026-12-28",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "heygen-free-plan",
+      "tool_id": "heygen",
+      "field_path": "factual_profile.free_plan_status",
+      "claim_type": "free_plan",
+      "value": {
+        "status": "permanent_free_plan",
+        "videos_per_month": 3,
+        "max_video_minutes": 1,
+        "watermark": true,
+        "credit_card_required": false,
+        "languages": "30+",
+        "custom_video_avatars": 1,
+        "stock_presenters": "500+"
+      },
+      "source_ids": [
+        "heygen-pricing"
+      ],
+      "region": "global-display-example",
+      "currency": "USD",
+      "billing_term": "monthly",
+      "supporting_excerpt": "The Free plan lists 3 videos per month with a watermark, videos up to 1 minute each, 30+ languages, and one custom video avatar plus 500+ ready-made presenters.",
+      "evidence_note": "The Free plan uses a video quota rather than credits. No separate trial length is listed on the pricing page.",
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "stale_after": "2026-12-28",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "heygen-trial",
+      "tool_id": "heygen",
+      "field_path": "factual_profile.trial_status",
+      "claim_type": "trial",
+      "value": "No separate trial length is listed on the pricing page; the Free plan is the entry point and no credit card is required.",
+      "source_ids": [
+        "heygen-pricing"
+      ],
+      "region": "global-display-example",
+      "currency": "USD",
+      "billing_term": "monthly",
+      "supporting_excerpt": "The pricing page presents the Free plan as the way to try HeyGen and does not publish a separate trial length.",
+      "evidence_note": "This records the absence of a published trial length rather than asserting that no trial exists.",
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "stale_after": "2026-12-28",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "heygen-credit-rates",
+      "tool_id": "heygen",
+      "field_path": "factual_profile.credit_rates",
+      "claim_type": "feature",
+      "value": {
+        "avatar_iv_photo_credits_per_minute": 16,
+        "avatar_iv_video_credits_per_minute": 31,
+        "avatar_6_turbo_credits_per_minute_720p_1080p": 20,
+        "avatar_6_turbo_credits_per_minute_2k": 35,
+        "avatar_6_pro_credits_per_minute_720p_1080p": 40,
+        "avatar_6_pro_credits_per_minute_2k": 58,
+        "custom_expressive_motion_credits_per_minute": 40,
+        "translation_audio_only_credits_per_minute": 4,
+        "translation_speed_credits_per_minute": 6,
+        "translation_precision_credits_per_minute": 10
+      },
+      "source_ids": [
+        "heygen-credits"
+      ],
+      "region": "global",
+      "currency": null,
+      "billing_term": null,
+      "supporting_excerpt": "The credits article lists Avatar IV at 16 credits per minute for a photo look and 31 for a video look; Avatar 6 Turbo at 20 (720p/1080p) and 35 (2K); Avatar 6 Pro at 40 (720p/1080p) and 58 (2K); translation at 4 (audio only), 6 (speed) and 10 (precision) credits per minute.",
+      "evidence_note": "Rates are standard rates for most accounts. HeyGen warns that some accounts may see different credit costs or limits for certain features.",
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "stale_after": "2026-12-28",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "heygen-plan-credit-rules",
+      "tool_id": "heygen",
+      "field_path": "factual_profile.plan_credit_rules",
+      "claim_type": "plan_limit",
+      "value": {
+        "creator_credits_monthly": 600,
+        "pro_credits_monthly": 1000,
+        "business_credits_monthly_shared": 1500,
+        "creator_one_time_credit_purchases": false,
+        "pro_one_time_credit_purchases": false,
+        "business_extra_credits_usd_per_100": 5,
+        "business_auto_reload": true,
+        "api_credits_separate": true,
+        "creator_includes_avatar_6_turbo_only": true,
+        "pro_includes_avatar_6_turbo_and_pro": true
+      },
+      "source_ids": [
+        "heygen-credits",
+        "heygen-pricing"
+      ],
+      "region": "global-display-example",
+      "currency": "USD",
+      "billing_term": "monthly",
+      "supporting_excerpt": "HeyGen lists 600 credits for Creator, 1,000 for Pro and 1,500 for Business; Creator cannot buy one-time credits, Business can buy 100 credits for $5 or enable auto-reload, and API credits are separate from subscription credits.",
+      "evidence_note": "Plan credit allowances and add-on rules were cross-checked against the pricing page and the credits article.",
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "stale_after": "2026-12-28",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "heygen-language-coverage",
+      "tool_id": "heygen",
+      "field_path": "factual_profile.language_coverage",
+      "claim_type": "feature",
+      "value": {
+        "free_languages": "30+",
+        "paid_languages": "175+ languages and dialects",
+        "simultaneous_translation_languages": 10,
+        "translation_modes": [
+          "audio only",
+          "speed lip-sync",
+          "precision lip-sync"
+        ]
+      },
+      "source_ids": [
+        "heygen-pricing",
+        "heygen-translate-page",
+        "heygen-video-translation"
+      ],
+      "region": "global-display-example",
+      "currency": null,
+      "billing_term": null,
+      "supporting_excerpt": "HeyGen's pricing page lists 30+ languages on Free and 175+ languages and dialects on paid plans; the translator page says up to 10 languages can be translated simultaneously.",
+      "evidence_note": "Language counts are HeyGen's own published figures. The translator page and pricing page agree on 175+ for paid plans.",
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "stale_after": "2026-12-28",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "heygen-scorm",
+      "tool_id": "heygen",
+      "field_path": "factual_profile.scorm",
+      "claim_type": "capability",
+      "value": [
+        "SCORM 1.2 and SCORM 2004 export on Business and Enterprise",
+        "LMS integration support on Business",
+        "Optional SCORM auto-update with video hosted on HeyGen"
+      ],
+      "source_ids": [
+        "heygen-scorm",
+        "heygen-pricing"
+      ],
+      "region": "global-display-example",
+      "currency": null,
+      "billing_term": null,
+      "supporting_excerpt": "HeyGen's SCORM guide lists SCORM 1.2 and SCORM 2004 (4th Edition) export, a completion threshold and an optional auto-update mode; the pricing page lists SCORM and LMS integrations on Business.",
+      "evidence_note": "SCORM export is not included on Creator or Pro according to the pricing page and the export guide.",
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "stale_after": "2026-12-28",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "heygen-avatar-iv",
+      "tool_id": "heygen",
+      "field_path": "factual_profile.avatar_iv",
+      "claim_type": "capability",
+      "value": [
+        "Avatar IV photo look costs 16 credits per minute",
+        "Avatar IV video look costs 31 credits per minute",
+        "Avatar IV always requires credits; no plan includes unlimited Avatar IV"
+      ],
+      "source_ids": [
+        "heygen-avatar-iv-guide",
+        "heygen-credits"
+      ],
+      "region": "global",
+      "currency": null,
+      "billing_term": null,
+      "supporting_excerpt": "The Avatar IV guide states 16 credits per minute for a photo look and 31 for a video look, and says no plan, including Enterprise, offers unlimited Avatar IV usage.",
+      "evidence_note": "The guide also lists a 5,000-character script limit for photo-to-video.",
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "stale_after": "2026-12-28",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "heygen-duration-caps",
+      "tool_id": "heygen",
+      "field_path": "factual_profile.duration_caps",
+      "claim_type": "plan_limit",
+      "value": {
+        "free_minutes_per_video": 1,
+        "creator_minutes_per_video": 30,
+        "pro_minutes_per_video": 30,
+        "business_minutes_per_video": 60,
+        "enterprise": "no maximum"
+      },
+      "source_ids": [
+        "heygen-pricing",
+        "heygen-video-translation"
+      ],
+      "region": "global-display-example",
+      "currency": "USD",
+      "billing_term": "monthly and annual billing displayed",
+      "supporting_excerpt": "HeyGen's comparison table lists a 1-minute maximum on Free, 30 minutes on Creator and Pro, 60 minutes on Business and no maximum video duration on Enterprise.",
+      "evidence_note": "The duration cap is separate from the credit balance; buying more credits does not raise it.",
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "stale_after": "2026-12-28",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "heygen-pro-tiers",
+      "tool_id": "heygen",
+      "field_path": "factual_profile.pro_tiers",
+      "claim_type": "plan_limit",
+      "value": {
+        "min_credits": 1000,
+        "min_monthly_usd": 49,
+        "max_credits": 100000,
+        "max_monthly_usd": 4300,
+        "features_same_across_tiers": true
+      },
+      "source_ids": [
+        "heygen-pricing"
+      ],
+      "region": "global-display-example",
+      "currency": "USD",
+      "billing_term": "monthly",
+      "supporting_excerpt": "HeyGen's FAQ says all Pro tiers offer the same features and range from 1,000 credits per month at $49 to 100,000 credits per month at $4,300.",
+      "evidence_note": "Pro tiers change the monthly credit allocation, not the feature set.",
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "stale_after": "2026-12-28",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "heygen-rollover",
+      "tool_id": "heygen",
+      "field_path": "factual_profile.credit_rollover",
+      "claim_type": "billing",
+      "value": {
+        "monthly": "one additional billing cycle",
+        "annual": "accumulate until annual renewal",
+        "after_cancellation": false
+      },
+      "source_ids": [
+        "heygen-pricing"
+      ],
+      "region": "global-display-example",
+      "currency": "USD",
+      "billing_term": "monthly and annual billing displayed",
+      "supporting_excerpt": "HeyGen's pricing FAQ says monthly subscribers' unused credits carry forward for one additional month, annual subscribers' credits accumulate until renewal, and credits do not carry forward after cancellation.",
+      "evidence_note": "The pricing page describes the monthly rollover as one additional month; the page also calls it one billing cycle.",
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "stale_after": "2026-12-28",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "heygen-cancellation",
+      "tool_id": "heygen",
+      "field_path": "factual_profile.cancellation",
+      "claim_type": "billing",
+      "value": {
+        "access_until": "end of current billing cycle",
+        "then": "Free plan",
+        "unused_credits_carry_forward": false
+      },
+      "source_ids": [
+        "heygen-pricing"
+      ],
+      "region": "global-display-example",
+      "currency": "USD",
+      "billing_term": "monthly and annual billing displayed",
+      "supporting_excerpt": "HeyGen's pricing FAQ says cancellation stops renewal, access and remaining credits continue until the end of the current billing cycle, then the account moves to the Free plan and unused credits do not carry forward.",
+      "evidence_note": "This is the published cancellation behaviour; account-level exceptions may exist.",
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "stale_after": "2026-12-28",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
+    },
+    {
+      "claim_id": "heygen-limitations",
+      "tool_id": "heygen",
+      "field_path": "factual_profile.limitations",
+      "claim_type": "limitation",
+      "value": [
+        "Credit costs vary by model, resolution and avatar look type",
+        "Creator cannot buy one-time credits and must upgrade to Pro",
+        "Business additional seats do not add credits",
+        "No plan, including Enterprise, includes unlimited Avatar IV",
+        "Unused credits do not carry forward after cancellation",
+        "API credits are separate from subscription credits"
+      ],
+      "source_ids": [
+        "heygen-pricing",
+        "heygen-credits",
+        "heygen-avatar-iv-guide"
+      ],
+      "region": "global",
+      "currency": null,
+      "billing_term": null,
+      "supporting_excerpt": "HeyGen's pricing page, credits article and Avatar IV guide support each limitation listed here.",
+      "evidence_note": "These are operational constraints, not judgments about output quality.",
+      "accessed_at": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "stale_after": "2026-12-28",
+      "status": "verified",
+      "disputed_by": null,
+      "replacement_claim_id": null
     }
   ],
   "disputes": [],
@@ -13645,6 +14155,110 @@
       "actor": "junie",
       "claim_id": "windsurf-pricing-verified",
       "note": "Phase B Batch 7: Developer Tools research for windsurf"
+    },
+    {
+      "event_id": "research-heygen-pricing-plans-2026-11-28",
+      "event_type": "created",
+      "occurred_at": "2026-11-28",
+      "actor": "junie",
+      "claim_id": "heygen-pricing-plans",
+      "note": "Phase F: HeyGen review rewrite with official pricing, credit-rate, translation and SCORM sources"
+    },
+    {
+      "event_id": "research-heygen-free-plan-2026-11-28",
+      "event_type": "created",
+      "occurred_at": "2026-11-28",
+      "actor": "junie",
+      "claim_id": "heygen-free-plan",
+      "note": "Phase F: HeyGen review rewrite with official pricing, credit-rate, translation and SCORM sources"
+    },
+    {
+      "event_id": "research-heygen-trial-2026-11-28",
+      "event_type": "created",
+      "occurred_at": "2026-11-28",
+      "actor": "junie",
+      "claim_id": "heygen-trial",
+      "note": "Phase F: HeyGen review rewrite with official pricing, credit-rate, translation and SCORM sources"
+    },
+    {
+      "event_id": "research-heygen-credit-rates-2026-11-28",
+      "event_type": "created",
+      "occurred_at": "2026-11-28",
+      "actor": "junie",
+      "claim_id": "heygen-credit-rates",
+      "note": "Phase F: HeyGen review rewrite with official pricing, credit-rate, translation and SCORM sources"
+    },
+    {
+      "event_id": "research-heygen-plan-credit-rules-2026-11-28",
+      "event_type": "created",
+      "occurred_at": "2026-11-28",
+      "actor": "junie",
+      "claim_id": "heygen-plan-credit-rules",
+      "note": "Phase F: HeyGen review rewrite with official pricing, credit-rate, translation and SCORM sources"
+    },
+    {
+      "event_id": "research-heygen-language-coverage-2026-11-28",
+      "event_type": "created",
+      "occurred_at": "2026-11-28",
+      "actor": "junie",
+      "claim_id": "heygen-language-coverage",
+      "note": "Phase F: HeyGen review rewrite with official pricing, credit-rate, translation and SCORM sources"
+    },
+    {
+      "event_id": "research-heygen-scorm-2026-11-28",
+      "event_type": "created",
+      "occurred_at": "2026-11-28",
+      "actor": "junie",
+      "claim_id": "heygen-scorm",
+      "note": "Phase F: HeyGen review rewrite with official pricing, credit-rate, translation and SCORM sources"
+    },
+    {
+      "event_id": "research-heygen-avatar-iv-2026-11-28",
+      "event_type": "created",
+      "occurred_at": "2026-11-28",
+      "actor": "junie",
+      "claim_id": "heygen-avatar-iv",
+      "note": "Phase F: HeyGen review rewrite with official pricing, credit-rate, translation and SCORM sources"
+    },
+    {
+      "event_id": "research-heygen-duration-caps-2026-11-28",
+      "event_type": "created",
+      "occurred_at": "2026-11-28",
+      "actor": "junie",
+      "claim_id": "heygen-duration-caps",
+      "note": "Phase F: HeyGen review rewrite with official pricing, credit-rate, translation and SCORM sources"
+    },
+    {
+      "event_id": "research-heygen-pro-tiers-2026-11-28",
+      "event_type": "created",
+      "occurred_at": "2026-11-28",
+      "actor": "junie",
+      "claim_id": "heygen-pro-tiers",
+      "note": "Phase F: HeyGen review rewrite with official pricing, credit-rate, translation and SCORM sources"
+    },
+    {
+      "event_id": "research-heygen-rollover-2026-11-28",
+      "event_type": "created",
+      "occurred_at": "2026-11-28",
+      "actor": "junie",
+      "claim_id": "heygen-rollover",
+      "note": "Phase F: HeyGen review rewrite with official pricing, credit-rate, translation and SCORM sources"
+    },
+    {
+      "event_id": "research-heygen-cancellation-2026-11-28",
+      "event_type": "created",
+      "occurred_at": "2026-11-28",
+      "actor": "junie",
+      "claim_id": "heygen-cancellation",
+      "note": "Phase F: HeyGen review rewrite with official pricing, credit-rate, translation and SCORM sources"
+    },
+    {
+      "event_id": "research-heygen-limitations-2026-11-28",
+      "event_type": "created",
+      "occurred_at": "2026-11-28",
+      "actor": "junie",
+      "claim_id": "heygen-limitations",
+      "note": "Phase F: HeyGen review rewrite with official pricing, credit-rate, translation and SCORM sources"
     }
   ]
 }
